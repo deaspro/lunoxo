@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Can Two Covid Patients Live Together - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Can Two Covid Patients Live Together",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/94/b4/d6/94b4d6173a29d59c3ad0c736f5590caf.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=can+two+covid+patients+live+together",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Can Two Covid Patients Live Together</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The single most important action we can all take is to stay at home to protect the NHS and save lives. Guidance for households with possible. The others who are ill must remain in isolation but may not be in the same place as the person who has recovered. <br>				
+			</p>
+										<a class="badge badge-warning" href="/navy-t-shirts-for-sale.html">navy t shirts for sale</a>
+											<a class="badge badge-danger" href="/navy-tee-shirt-ladies.html">navy tee shirt ladies</a>
+											<a class="badge badge-success" href="/navy-tuition-assistance-guidance.html">navy tuition assistance guidance</a>
+											<a class="badge badge-light" href="/navy-tuition-assistance-failed-class.html">navy tuition assistance failed class</a>
+											<a class="badge badge-danger" href="/navy-tuition-assistance-training.html">navy tuition assistance training</a>
+											<a class="badge badge-success" href="/navy-t-shirt-png.html">navy t shirt png</a>
+											<a class="badge badge-primary" href="/navy-tuition-assistance-top-up.html">navy tuition assistance top up</a>
+											<a class="badge badge-dark" href="/navy-tuition-assistance-for-masters-degree.html">navy tuition assistance for masters degree</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to pay a visit to the right site.  Our site provides you with hints for seeing the maximum quality video and image content, hunt and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video for you to see.  You can also contribute to supporting this website by sharing videos and images that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/bf/af/b6bfaf65677f65be2ec2cf7d1977ac72.png" data-lightbox="roadtrip" data-title="Break The Chain Of Infection Infection Prevention And You Chain Of Infection Infection Control Nursing Infection Control">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/bf/af/b6bfaf65677f65be2ec2cf7d1977ac72.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4vyMIDZIoy3hZKew3loW3zt2RkB5f76d4zA';" alt="Break The Chain Of Infection Infection Prevention And You Chain Of Infection Infection Control Nursing Infection Control">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Break The Chain Of Infection Infection Prevention And You Chain Of Infection Infection Control Nursing Infection Control</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/af/d7/41afd7d9272b751b598a891a29e59b61.png" data-lightbox="roadtrip" data-title="Pin On Ideas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/af/d7/41afd7d9272b751b598a891a29e59b61.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGABrU7gDyV5sWGBHNZzY2blXxJGCLDsQsEg';" alt="Pin On Ideas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ideas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/23/7b/9c237ba81455e69350ec5a468b0e9bda.jpg" data-lightbox="roadtrip" data-title="Pin On Corona Virus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/23/7b/9c237ba81455e69350ec5a468b0e9bda.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwyGyGB2XE9Fn3UcKAkpQG3A9NCuGJf0GqFg';" alt="Pin On Corona Virus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Corona Virus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/61/9d/64619da7da48de211dd279f1d35fcc93.png" data-lightbox="roadtrip" data-title="Pin By Amber Epler On Blue Inspirational Words Of Wisdom Quotable Quotes Mood Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/61/9d/64619da7da48de211dd279f1d35fcc93.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Oa-yTv1MEG5xaeryBeojSH1Zh8C2t28JBA';" alt="Pin By Amber Epler On Blue Inspirational Words Of Wisdom Quotable Quotes Mood Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Amber Epler On Blue Inspirational Words Of Wisdom Quotable Quotes Mood Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8b/bb/58/8bbb5829068cf7454e8286251d7faa8f.jpg" data-lightbox="roadtrip" data-title="Pin By Lave Neal On Corona Hygiene Activities Preventative Health Health And Safety">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8b/bb/58/8bbb5829068cf7454e8286251d7faa8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWiavuMBLVBZLQhHl0siviJ-L-ZORS_5_HyQ';" alt="Pin By Lave Neal On Corona Hygiene Activities Preventative Health Health And Safety">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Lave Neal On Corona Hygiene Activities Preventative Health Health And Safety</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/af/d1/65/afd165aecee31fd508b26e28eee0315d.jpg" data-lightbox="roadtrip" data-title="Pin On Face Mask">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/af/d1/65/afd165aecee31fd508b26e28eee0315d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS2EDi1NfpV5I6SsGtcS-pHXZ599br4UMIVg';" alt="Pin On Face Mask">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Face Mask</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/44/f1/2c/44f12c3d100df24527e9bc6e73c487c4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS2EDi1NfpV5I6SsGtcS-pHXZ599br4UMIVg';" alt="Pin On Face Mask">
+										<div class="card-body">
+						<h3 class="h5"><b>If you live in the same household as a person who has symptoms of coronavirus COVID-19 or who has received a positive test result follow the Stay at Home.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Can two covid patients live together</strong>. 
+								
+																	In England the vaccine is being offered in some hospitals and pharmacies at local vaccination centres run by GPs and at larger vaccination centres. 
+																	Mary Jean Loreche reported that a 28-year-old lady passenger tested positive for COVID-19 after arriving at Mactan Cebu International Airport. 
+																	People who live together and are all in isolation in the same place. 
+																	Who can get the COVID-19 vaccine The NHS is currently offering the COVID-19 vaccine to people most at risk from coronavirus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Answered January 12 2021. 
+																	Richard Burr R-NC asked Fauci to address the scenario of a married couple that lives together and the husband tests positive for the coronavirus but the wife never tests positive for it. 
+																	Alternatively you can provide your contact details. 
+																	Self-isolating couples who do not live together or who fall into one of the vulnerable categories should avoid sex when it comes to getting coronavirus says an expert. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thats because one of them may have contracted the virus and the other may not have and placing them in close proximity could result in both getting infected. 
+																	Two locals with no travel links to South Africa have tested positive for the. 
+																	Community Hospital in Los Angeles. 
+																	Hancock confirms 10000 fines and 10 years in prison if you break new travel rules Follow the latest updates and statistics Chiara Giordano Matt Mathers MattEm90. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Toliterallylive and let live will be enough. 
+																	The app will only work on a certain number of newer models. 
+																	That characterizes the living condition of many homesand yet spread from one person in a household to another fails to happen about 88 of the time. 
+																	Because in the middle of writing that last sentence I learned that an old friend has been felled by COVID-19. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	THE terrifying South African strain of coronavirus has been detected in Surrey sparking fears on a community outbreak. 
+																	Advice for people at higher risk from coronavirus COVID-19 including older people people with health conditions and pregnant women. 
+																	If you cant download the new NHS Covid-19 tracing app it is probably because your phone runs on an older operating system. 
+																	Close examination of COVID-19 cases worldwide has already taught us that new coronavirus infection spreads more readily when people are close to one another indoors for long periods of time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There Is No Evidence Your Pet Will Spread COVID-19 But Health Professionals Say Patients Should Avoid Contact With Dogs Cats Anyway Your dog or cat is not going to infect you with the coronavirus. 
+																	Covid UK news live. 
+																	Many health-care workers as we know should also not be living with other people especially since it is likely that you can transmit covid-19 before you exhibit symptoms. 
+																	3 Cebu Patients Suspected w New COVID-19 Variant Now Being Monitored by DOH-7 The Department of Health DOH 7 is currently monitoring 3 Cebu patients suspected to have the new COVID-19 variant. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Rest in peace Mark Blum. 
+																	Maria Arechiga an ICU charge nurse monitors the progress of two COVID-19 patients in the intensive care unit of Martin Luther King Jr. 
+																	No if both people are positive then they are no additional danger to each other. 
+																	At a Senate HELP. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You must stay at home. 
+																	Where possible check in using the NHS COVID-19 app if you enter a venue that has an official NHS COVID-19 QR code poster at the entrance. 
+																	Committee hearing providing an update on the federal response to COVID-19 Sen. 
+																	On Saturday January 23 2021 DOH-7 spokesperson Dr. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If two people in the same household need to quarantine then they should do so by themselves taking the same precautions as if they were trying to quarantine in a space with a healthy person who has no reason to believe theyve been exposed to COVID-19. 
+																	When the first individual in the group recovers from COVID-19 that person may be released from isolation. 
+																	Currently there are units in hospitals or assisted living facilities that house covid positive patients together but separate from the rest of the population. 
+																	What you can and cannot do during the national lockdown. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If one partner shows symptoms such as a cough or fever and lives separately from their other half couples should avoid sex for seven days Professor Paul Hunter advised. 
+																	The Health Ministry has issued guidelines for home isolation of very mild and pre-symptomatic Covid-19 cases under which a patient can stay at home but will have to be in touch. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/6f/7c/ef6f7c21c9971a1e12c2479b07d6dbff.png" data-lightbox="roadtrip" data-title="Pin On Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/6f/7c/ef6f7c21c9971a1e12c2479b07d6dbff.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj_dr_vSWP5mIQzuK6iM6KEDH-kLApUJ7eYQ';" alt="Pin On Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b2/d6/6b/b2d66b6c8de3679778da63b357c2332a.jpg" data-lightbox="roadtrip" data-title="How To Help Your Child Adapt To Wearing A Mask Bias How To Wear Task Analysis Pbis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b2/d6/6b/b2d66b6c8de3679778da63b357c2332a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEch82NojINBPxjPYH9P5Qi7HBlk8MhyOKIQ';" alt="How To Help Your Child Adapt To Wearing A Mask Bias How To Wear Task Analysis Pbis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Help Your Child Adapt To Wearing A Mask Bias How To Wear Task Analysis Pbis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/2a/43/3d2a43163c2dd516f2b4b3fc06bda965.jpg" data-lightbox="roadtrip" data-title="Pin On Education Lo Lv Ca Sk Ss Sw Computing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/2a/43/3d2a43163c2dd516f2b4b3fc06bda965.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzQpgJal7xIrA-NuK9_XDrMSfJ1MtLLCtJow';" alt="Pin On Education Lo Lv Ca Sk Ss Sw Computing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Education Lo Lv Ca Sk Ss Sw Computing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/15/20/5b1520d2b5fda82ca1b6d0e4a46746aa.jpg" data-lightbox="roadtrip" data-title="Pin On Conservation Environment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/15/20/5b1520d2b5fda82ca1b6d0e4a46746aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Sd14ZHph39vSdk-5CqrxSUXGvtA0Kkbb-g';" alt="Pin On Conservation Environment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Conservation Environment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/69/44/9d6944bf35664587fbcd0fa9fc1aa4da.jpg" data-lightbox="roadtrip" data-title="Pin By Kathy Carto Hannon On Things To Learn About In 2020 Health Ministry Economic Times Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/69/44/9d6944bf35664587fbcd0fa9fc1aa4da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDue6YoGVbuQ7NGkDSLuBR_BPfQi92inNF5A';" alt="Pin By Kathy Carto Hannon On Things To Learn About In 2020 Health Ministry Economic Times Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Kathy Carto Hannon On Things To Learn About In 2020 Health Ministry Economic Times Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a6/bd/2c/a6bd2c8a2079ebeca652954b76d6c70b.jpg" data-lightbox="roadtrip" data-title="Embracing A New Normal Lisa E Betz Normal Quotes Resilience Inspirational Quotes Motivation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a6/bd/2c/a6bd2c8a2079ebeca652954b76d6c70b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR--0KXmSYgduFIgL9Lb-bURTbCyhlAwuaRWQ';" alt="Embracing A New Normal Lisa E Betz Normal Quotes Resilience Inspirational Quotes Motivation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Embracing A New Normal Lisa E Betz Normal Quotes Resilience Inspirational Quotes Motivation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f7/8d/1d/f78d1dabce03f0ce2775fc0ef506c473.jpg" data-lightbox="roadtrip" data-title="Top 14 Funny Quotes From Bizwaremagic Funny Quotes Funny Nurse Quotes Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f7/8d/1d/f78d1dabce03f0ce2775fc0ef506c473.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiJ5Cw9rVzIlHkiCky8ufoymrwG2Eh_AOFeA';" alt="Top 14 Funny Quotes From Bizwaremagic Funny Quotes Funny Nurse Quotes Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 14 Funny Quotes From Bizwaremagic Funny Quotes Funny Nurse Quotes Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c6/37/27/c63727dee3d25b39947ccedd16b5229c.jpg" data-lightbox="roadtrip" data-title="Top 14 Funny Quotes From Bizwaremagic Funny Quotes Uplifting Quotes Funny Quotes About Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c6/37/27/c63727dee3d25b39947ccedd16b5229c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR3psUCDKXTuovVyVlGCq7siG6WHTN7BPw6Q';" alt="Top 14 Funny Quotes From Bizwaremagic Funny Quotes Uplifting Quotes Funny Quotes About Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 14 Funny Quotes From Bizwaremagic Funny Quotes Uplifting Quotes Funny Quotes About Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/b4/d6/94b4d6173a29d59c3ad0c736f5590caf.jpg" data-lightbox="roadtrip" data-title="Gray White Photo Live Streaming Wedding Invitation Zazzle Com Digital Wedding Invitations Wedding Invitations Wedding Announcement Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/b4/d6/94b4d6173a29d59c3ad0c736f5590caf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMnvZJ3kC4xsQuiSuP2lFgbc-tnXrBXKfI0g';" alt="Gray White Photo Live Streaming Wedding Invitation Zazzle Com Digital Wedding Invitations Wedding Invitations Wedding Announcement Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gray White Photo Live Streaming Wedding Invitation Zazzle Com Digital Wedding Invitations Wedding Invitations Wedding Announcement Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/63/75/6a63758134fddbacee5f386cfa83045d.jpg" data-lightbox="roadtrip" data-title="Pin On Wedding Invitations And Stationery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/63/75/6a63758134fddbacee5f386cfa83045d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWgAz0VIbEomfLR1mqOZFvWlkBU6NpwYThqA';" alt="Pin On Wedding Invitations And Stationery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wedding Invitations And Stationery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/f1/2c/44f12c3d100df24527e9bc6e73c487c4.jpg" data-lightbox="roadtrip" data-title="Pin On Healthy Aging">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/f1/2c/44f12c3d100df24527e9bc6e73c487c4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9pNH2xMbMgVQfENjKwU0smWgDSttafkYdgg';" alt="Pin On Healthy Aging">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Healthy Aging</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/fc/fc/bafcfc9a9f3ad42bef8135566d7d7041.jpg" data-lightbox="roadtrip" data-title="Pin By Lea Vanaman On Funny Simple Flow Chart Life Quotes Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/fc/fc/bafcfc9a9f3ad42bef8135566d7d7041.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSpYs6yITgr-Bic6uvsTSq-YYc8bXhak9hYg';" alt="Pin By Lea Vanaman On Funny Simple Flow Chart Life Quotes Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Lea Vanaman On Funny Simple Flow Chart Life Quotes Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/c3/b7/78c3b71f327e186c8cbe3cf9812e5e10.jpg" data-lightbox="roadtrip" data-title="Luxury Vie De Reve Luxe Vie De Riche Motivation Entrepreneur Boats Luxury Boat Girl Visit Dubai">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/c3/b7/78c3b71f327e186c8cbe3cf9812e5e10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0f06V4nwfVDTLkHBbIwa73UuaAGFR-l1sLA';" alt="Luxury Vie De Reve Luxe Vie De Riche Motivation Entrepreneur Boats Luxury Boat Girl Visit Dubai">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Luxury Vie De Reve Luxe Vie De Riche Motivation Entrepreneur Boats Luxury Boat Girl Visit Dubai</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/msn-us-business.html">Msn Us Business</a></li>
+													<li class="list-group-item"><a href="/msn-us-headlines.html">Msn Us Headlines</a></li>
+													<li class="list-group-item"><a href="/msn-uk-live-sign-in.html">Msn Uk Live Sign In</a></li>
+													<li class="list-group-item"><a href="/msn-uk-word-wipe.html">Msn Uk Word Wipe</a></li>
+													<li class="list-group-item"><a href="/msn-uk-logo.html">Msn Uk Logo</a></li>
+													<li class="list-group-item"><a href="/msn-usa-in-english.html">Msn Usa In English</a></li>
+													<li class="list-group-item"><a href="/msn-uk-recipes.html">Msn Uk Recipes</a></li>
+													<li class="list-group-item"><a href="/msn-uk-outlook-hotmail.html">Msn Uk Outlook Hotmail</a></li>
+													<li class="list-group-item"><a href="/msn-us-business-news.html">Msn Us Business News</a></li>
+													<li class="list-group-item"><a href="/msn-uk-new-account.html">Msn Uk New Account</a></li>
+													<li class="list-group-item"><a href="/msn-ukraine.html">Msn Ukraine</a></li>
+													<li class="list-group-item"><a href="/msn-us-election-results-map.html">Msn Us Election Results Map</a></li>
+													<li class="list-group-item"><a href="/msn-uk-latest-news-weather-hotmail-sign-in.html">Msn Uk Latest News Weather Hotmail Sign In</a></li>
+													<li class="list-group-item"><a href="/msn-uk-search.html">Msn Uk Search</a></li>
+													<li class="list-group-item"><a href="/msn-uk-hotmail-login.html">Msn Uk Hotmail Login</a></li>
+													<li class="list-group-item"><a href="/msn-us-news-in-english.html">Msn Us News In English</a></li>
+													<li class="list-group-item"><a href="/msn-usa-noticias.html">Msn Usa Noticias</a></li>
+													<li class="list-group-item"><a href="/msn-us-news-english.html">Msn Us News English</a></li>
+													<li class="list-group-item"><a href="/msn-usbreaking-newsbing.html">Msn Usbreaking Newsbing</a></li>
+													<li class="list-group-item"><a href="/msn-us-news-headlines.html">Msn Us News Headlines</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

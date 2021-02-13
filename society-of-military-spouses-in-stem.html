@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Society Of Military Spouses In Stem - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Society Of Military Spouses In Stem",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/d6/32/eb/d632ebfe8a38ebeaffb92ec8d141c681.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=society+of+military+spouses+in+stem",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Society Of Military Spouses In Stem</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Military spouses are the backbone of military families across our country. Our Mission is to support active and retired military spouses in science technology engineering and mathematics STEM Our Mission Support active and retired military spouses in science technology engineering and mathematics STEM fields reach their full potential to create a positive impact by advocating for. Society of Military Spouses in STEM. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/military-time-zone-now.html">military time zone now</a>
+											<a class="badge badge-light" href="/military-time-hours-chart.html">military time hours chart</a>
+											<a class="badge badge-warning" href="/military-time-conversion-tool.html">military time conversion tool</a>
+											<a class="badge badge-dark" href="/military-time-utc-converter.html">military time utc converter</a>
+											<a class="badge badge-primary" href="/military-time-minutes-conversion-chart-for-payroll.html">military time minutes conversion chart for payroll</a>
+											<a class="badge badge-light" href="/military-time-conversion-to-decimal.html">military time conversion to decimal</a>
+											<a class="badge badge-dark" href="/military-time-vs-12-hour-clock.html">military time vs 12 hour clock</a>
+											<a class="badge badge-success" href="/military-time-right-now-chicago.html">military time right now chicago</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to pay a visit to the right blog.  Our site gives you suggestions for viewing the highest quality video and image content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you see.  You can also contribute to supporting this website by sharing videos and graphics that you like on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/e6/1d/71e61dc94313a7a1f7f6a9fdb2ec8537.png" data-lightbox="roadtrip" data-title="Pin On Women And Technology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/e6/1d/71e61dc94313a7a1f7f6a9fdb2ec8537.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9K4Y8TpMK-GW7K-ri5Yz2QCw2BBFSLI14GA';" alt="Pin On Women And Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Women And Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1971841686469373" data-lightbox="roadtrip" data-title="Society Of Military Spouses In Stem Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1971841686469373" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR156ZAKTz8A_EVSKMhBLDpzT6gjzlCxEbjRQ';" alt="Society Of Military Spouses In Stem Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Society Of Military Spouses In Stem Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/91/98/1d919842e1daf5a7cb002cdbed27f6ce.jpg" data-lightbox="roadtrip" data-title="Dream Big Why Stem Matters Typography Drawing Colour Architecture Advertising Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/91/98/1d919842e1daf5a7cb002cdbed27f6ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_4M2op50VZghNxia8m7TZ01KIRQIfisLLOQ';" alt="Dream Big Why Stem Matters Typography Drawing Colour Architecture Advertising Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dream Big Why Stem Matters Typography Drawing Colour Architecture Advertising Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/89/96/998996d664e84fa2ccca1831ef41902d.jpg" data-lightbox="roadtrip" data-title="Lucky Bamboo A Military Marriage Military Marriage Lucky Bamboo Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/89/96/998996d664e84fa2ccca1831ef41902d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLlpUMkvOtla4f2zCHcy4R0u8dKx9O9wkzrw';" alt="Lucky Bamboo A Military Marriage Military Marriage Lucky Bamboo Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lucky Bamboo A Military Marriage Military Marriage Lucky Bamboo Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/f0/90/4bf090aa36bc127a94826ce13f4bd96a.jpg" data-lightbox="roadtrip" data-title="Pin On Women And Technology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/f0/90/4bf090aa36bc127a94826ce13f4bd96a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeU8eMTdDGTRVxYVYhDqlT9-d0LDF2ZfLZFg';" alt="Pin On Women And Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Women And Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/1e/70/001e70e1643c4780a7515e225263eeb9.jpg" data-lightbox="roadtrip" data-title="Pin By Suyashree Jadhav On Room Decor Organizing Army Brat Brat Quotes Brat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/1e/70/001e70e1643c4780a7515e225263eeb9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsxeu1ZrNCuh92xOLxTRZ8dXowgWo-kqneTw';" alt="Pin By Suyashree Jadhav On Room Decor Organizing Army Brat Brat Quotes Brat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Suyashree Jadhav On Room Decor Organizing Army Brat Brat Quotes Brat</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/f8/29/cb/f829cb8c8a82781564081647b6a725da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsxeu1ZrNCuh92xOLxTRZ8dXowgWo-kqneTw';" alt="Pin By Suyashree Jadhav On Room Decor Organizing Army Brat Brat Quotes Brat">
+										<div class="card-body">
+						<h3 class="h5"><b>They can also be talented brilliant driven loyal and curious individuals who are excellent students and extraordinary professionals interested and committed to pursuing STEM careers.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Society of military spouses in stem</strong>. 
+								
+																	Help military spouses in science technology engineering and mathematics STEM fields reach their full potential and create a positive impact through support visibility advocacy and opportunity. 
+																	We are so pleased to announce that the founding SMSS Memberships are NOW AVAILABLE. 
+																	November 3 2017. 
+																	Company is located in the register with the Company number E0199872016-3 and with the national number of State Nevada NV20161260553. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Shaneen strengthened the SMSS mission as our Volunteer Manager in 2020. 
+																	The Society of Military Spouses in STEM SMSS was formed by two military spouse engineers determined to overcome the challenges of maintaining a career with the military lifestyle. 
+																	1Gaining direct access to organizations and companies who are committed to supporting military spouses in STEM professions. 
+																	This legal entity was firstly registered on 3rd May 2016 under the legal form of Domestic Non-Profit Corporation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We exist to advocate for you and to help you connect with other military spouses in STEM and employers who are looking to enhance their talent diversity by on-boarding and retaining military spouse talent. 
+																	Its a great day because the Spotlight Book on Military Spouses in STEM is here. 
+																	Please consider making a tax-deductible donation to support SMSS. 
+																	Tax ID 81-2700327 Powered by Wild Apricot Membership Software. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Were proud of our military spouses in STEM. 
+																	Download your copy FREE and make sure to share it. 
+																	Government tracks data that highlights the critical need for STEM education and the growth of STEM fields. 
+																	This year Shaneen established the SMSS volunteer program and led a virtual team of 12 volunteers scattered across the country. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She is a longtime member of the Society of Women Engineers co-founder of the 501 c3 nonprofit organization Society of Military Spouses in STEM and a member of the Military Officers Association of America MOAA Presidents Currently Serving Spouse Advisory Council CSSAC. 
+																	She is a longtime member of the Society of Women Engineers co-founder of the 501 c3 nonprofit organization Society of Military Spouses in STEM and a member of the Military Officers Association of America MOAA Presidents Currently Serving Spouse Advisory Council CSSAC. 
+																	The Society of Military Spouses in STEM SMSS is a member-run organization focused on helping spouses in STEM fields support each other. 
+																	We also share job opportunities as we hear about them. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Business company SOCIETY OF MILITARY SPOUSES IN STEM is a legal entity registered under the law of State Nevada. 
+																	Learn more about SMSS. 
+																	Society of Military Spouses in STEM. 
+																	Financial contributions enable us to provide quality support to our members. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Society of Military Spouses in STEM SMSS 433 followers on LinkedIn. 
+																	The Society of Military Spouses in STEM SMSS a registered 501 c 3 nonprofit organization was formed in 2016 by two military spouse engineers determined to overcome the challenges of maintaining a career with the military lifestyle. 
+																	STEM Data The US. 
+																	SMSSs mission is to help military spouses in science technology engineering and mathematics STEM fields reach their full potential and create a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SMSS is a member-run organization focused on helping military spouses in science technology engineering and mathematics STEM fields reach their full potential. 
+																	The Society of Military Spouses in STEM SMSS was formed by two military spouse engineers determined to overcome the challenges of maintaining a career with the military lifestyle. 
+																	SMSS is a member-run organization focused on helping military spouses in science technology engineering and mathematics STEM fields reach their full potential and create a positive impact. 
+																	We are delighted to announce the very first Society of Military Spouses in STEM volunteer of the quarter Shaneen Waiters. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This membership provides great value to you by. 
+																	Society of Military Spouses in STEM SMSS is a 501c3 nonprofit organization. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-exp1.licdn.com/dms/image/C4E1BAQF9PftYGB39zg/company-background_10000/0/1567100379451?e=2159024400&amp;v=beta&amp;t=IelCXsc7zmfENW3Xn5TCjNsmOGPcpF8Pr444Zb_Dgdc" data-lightbox="roadtrip" data-title="Society Of Military Spouses In Stem Smss Linkedin">
+											<img class="card-img v-image ads-img " src="https://media-exp1.licdn.com/dms/image/C4E1BAQF9PftYGB39zg/company-background_10000/0/1567100379451?e=2159024400&amp;v=beta&amp;t=IelCXsc7zmfENW3Xn5TCjNsmOGPcpF8Pr444Zb_Dgdc" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKtsa5qBwZGQw5xcjEsnFGhSNOJg2ExsMjWg';" alt="Society Of Military Spouses In Stem Smss Linkedin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Society Of Military Spouses In Stem Smss Linkedin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/32/eb/d632ebfe8a38ebeaffb92ec8d141c681.jpg" data-lightbox="roadtrip" data-title="Kissing The Shorelines A Glimpse Into An Ocean Of Knowledge Military Couples Military Marriage Military Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/32/eb/d632ebfe8a38ebeaffb92ec8d141c681.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNz-3aqf6qHEs7_vFciYQeQkaV0cMzgHzBLg';" alt="Kissing The Shorelines A Glimpse Into An Ocean Of Knowledge Military Couples Military Marriage Military Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kissing The Shorelines A Glimpse Into An Ocean Of Knowledge Military Couples Military Marriage Military Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/82/be/8482beb432270d637a309462c8ec9c1d.jpg" data-lightbox="roadtrip" data-title="Social Justice Is Impossible Without God Madeinafreeworld Words Words Quotes Social Justice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/82/be/8482beb432270d637a309462c8ec9c1d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGN9Ul4BLz0-J2CEYs_Euo8NCG4vz4ZtHyQQ';" alt="Social Justice Is Impossible Without God Madeinafreeworld Words Words Quotes Social Justice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Justice Is Impossible Without God Madeinafreeworld Words Words Quotes Social Justice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/de/12/52de1240cba15e5c2313797bbe572771.png" data-lightbox="roadtrip" data-title="Building Pathways To Success Http Www Acteonline Org Funding Education Help Education Lessons Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/de/12/52de1240cba15e5c2313797bbe572771.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopmmeSY2FBAyIkNwgMtyC1_k2PxHH1rEQHw';" alt="Building Pathways To Success Http Www Acteonline Org Funding Education Help Education Lessons Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Building Pathways To Success Http Www Acteonline Org Funding Education Help Education Lessons Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ca/ae/af/caaeaf608ed9a6280b1f3d9f0b338c43--zombies-survival-navy-wife.jpg" data-lightbox="roadtrip" data-title="Zombie Zombie Care Package Zombie Supplies Deployment Package Zombie Jerky Military Care Package Soldier Care Packages Care Package">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ca/ae/af/caaeaf608ed9a6280b1f3d9f0b338c43--zombies-survival-navy-wife.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKClS3sx_4aY_WBG7CHAeVuVApJlTQU9NKTQ';" alt="Zombie Zombie Care Package Zombie Supplies Deployment Package Zombie Jerky Military Care Package Soldier Care Packages Care Package">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Zombie Zombie Care Package Zombie Supplies Deployment Package Zombie Jerky Military Care Package Soldier Care Packages Care Package</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.smsstem.org/wp-content/uploads/2020/07/SMSS-Website-Lower-Banner-768x240.png" data-lightbox="roadtrip" data-title="Society Of Military Spouses In Stem Envisioning What Doesn T Exist Yet">
+											<img class="card-img v-image ads-img " src="http://www.smsstem.org/wp-content/uploads/2020/07/SMSS-Website-Lower-Banner-768x240.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHEIgRroqvDfqhTgCilhl3yM6uHNXFlDUb3A';" alt="Society Of Military Spouses In Stem Envisioning What Doesn T Exist Yet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Society Of Military Spouses In Stem Envisioning What Doesn T Exist Yet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/02/15/2602156e0df8d380687ad7f861cacb5d.jpg" data-lightbox="roadtrip" data-title="Stem Cell Therapy Offers Hope For Better Vision Eye Exam Stem Cell Therapy Cool Eyes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/02/15/2602156e0df8d380687ad7f861cacb5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ3910TQk4NcIddU6ME9FFHaowb9F-a4RLgQ';" alt="Stem Cell Therapy Offers Hope For Better Vision Eye Exam Stem Cell Therapy Cool Eyes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stem Cell Therapy Offers Hope For Better Vision Eye Exam Stem Cell Therapy Cool Eyes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/25/c9/e8/25c9e8bfa06eb65b78ba8686e6a6073c.jpg" data-lightbox="roadtrip" data-title="Search For The Best Online Military Friendly Schools 2018 Online Education Master Degree Programs Best Online Colleges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/25/c9/e8/25c9e8bfa06eb65b78ba8686e6a6073c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzMukgfQLoTqxGzXzVxJcrW1OjhTXuL71Cgg';" alt="Search For The Best Online Military Friendly Schools 2018 Online Education Master Degree Programs Best Online Colleges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Search For The Best Online Military Friendly Schools 2018 Online Education Master Degree Programs Best Online Colleges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/1d/7f/251d7fd9c727232ad10e224807cf6289.png" data-lightbox="roadtrip" data-title="Girls A No Ceilings Conversation Time Quotes Girl Quotes Investing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/1d/7f/251d7fd9c727232ad10e224807cf6289.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT903d7qjfRNyUo-PADTinfPKMetHShrWn-ig';" alt="Girls A No Ceilings Conversation Time Quotes Girl Quotes Investing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Girls A No Ceilings Conversation Time Quotes Girl Quotes Investing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/a4/d4/b8a4d451ae88a295e1044489636f9421.png" data-lightbox="roadtrip" data-title="The 10 Best Online Colleges For Military In 2021 In 2020 Best Online Colleges Online College Military Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/a4/d4/b8a4d451ae88a295e1044489636f9421.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWF9lj2uYTC4X4vQAUY2CSw4MxcRws6eEZ0w';" alt="The 10 Best Online Colleges For Military In 2021 In 2020 Best Online Colleges Online College Military Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 10 Best Online Colleges For Military In 2021 In 2020 Best Online Colleges Online College Military Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/bf/fc/cf/bffccf1f59a789c8a230a5354dfef6e2.jpg" data-lightbox="roadtrip" data-title="Pin On Neuropathy Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/bf/fc/cf/bffccf1f59a789c8a230a5354dfef6e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAftAQq1kb0ImbqqPNnorPO3EOqdDu_XJywg';" alt="Pin On Neuropathy Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Neuropathy Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/8b/3d/6d8b3d34b561ab1e38302ab5df8e5b27.jpg" data-lightbox="roadtrip" data-title="Titanic S Boilers A New Theory Theories Titanic Boiler">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/8b/3d/6d8b3d34b561ab1e38302ab5df8e5b27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSVXZ4gJL_rVUAyPmDAiqvjbD3nFwecKe_0g';" alt="Titanic S Boilers A New Theory Theories Titanic Boiler">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Titanic S Boilers A New Theory Theories Titanic Boiler</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/29/cb/f829cb8c8a82781564081647b6a725da.jpg" data-lightbox="roadtrip" data-title="Family Literacy Means Family Literacy Family Learning Literacy Programs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/29/cb/f829cb8c8a82781564081647b6a725da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnWvgGLDxt0Xg0MUy8p2cpve1WfeKQMJGV1w';" alt="Family Literacy Means Family Literacy Family Learning Literacy Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Family Literacy Means Family Literacy Family Learning Literacy Programs</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/my-wife-cheated-on-me-now-she-is-pregnant.html">My Wife Cheated On Me Now She Is Pregnant</a></li>
+													<li class="list-group-item"><a href="/my-wife-cheated-on-me-can-i-get-full-custody.html">My Wife Cheated On Me Can I Get Full Custody</a></li>
+													<li class="list-group-item"><a href="/my-wife-and-i-have-nothing-in-common-anymore.html">My Wife And I Have Nothing In Common Anymore</a></li>
+													<li class="list-group-item"><a href="/my-wife-blames-me-for-cheating.html">My Wife Blames Me For Cheating</a></li>
+													<li class="list-group-item"><a href="/my-va-medical-records-online.html">My Va Medical Records Online</a></li>
+													<li class="list-group-item"><a href="/my-wife-anniversary-quotes.html">My Wife Anniversary Quotes</a></li>
+													<li class="list-group-item"><a href="/my-wife-always-talks-about-a-guy-at-work.html">My Wife Always Talks About A Guy At Work</a></li>
+													<li class="list-group-item"><a href="/my-wife-cheated-on-me-yahoo-answers.html">My Wife Cheated On Me Yahoo Answers</a></li>
+													<li class="list-group-item"><a href="/my-wife-died-quotes.html">My Wife Died Quotes</a></li>
+													<li class="list-group-item"><a href="/my-wife-annoys-me-constantly.html">My Wife Annoys Me Constantly</a></li>
+													<li class="list-group-item"><a href="/my-wife-died-from-breast-cancer.html">My Wife Died From Breast Cancer</a></li>
+													<li class="list-group-item"><a href="/my-wife-betrayed-me.html">My Wife Betrayed Me</a></li>
+													<li class="list-group-item"><a href="/my-wife-cheated-on-me-do-i-have-to-pay-alimony.html">My Wife Cheated On Me Do I Have To Pay Alimony</a></li>
+													<li class="list-group-item"><a href="/my-spouses-family-hates-me.html">My Spouses Family Hates Me</a></li>
+													<li class="list-group-item"><a href="/my-wife-birthday-quotes.html">My Wife Birthday Quotes</a></li>
+													<li class="list-group-item"><a href="/my-wife-died-2-years-ago.html">My Wife Died 2 Years Ago</a></li>
+													<li class="list-group-item"><a href="/my-wife-died-cancer.html">My Wife Died Cancer</a></li>
+													<li class="list-group-item"><a href="/my-wife-cheated-on-me-divorce.html">My Wife Cheated On Me Divorce</a></li>
+													<li class="list-group-item"><a href="/my-wife-calls-me-names-all-the-time.html">My Wife Calls Me Names All The Time</a></li>
+													<li class="list-group-item"><a href="/my-wife-cheated-on-me-now-what.html">My Wife Cheated On Me Now What</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Can I Keep My Military Id After Divorce - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Can I Keep My Military Id After Divorce",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/08/0a/dd/080adda3d6c4bbdd71b04cc36168b312.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=can+i+keep+my+military+id+after+divorce",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Can I Keep My Military Id After Divorce</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">To qualify the couple must have been married for at least 20 years overlapping the members military career. After a divorce if your child has health insurance from the non-uniformed service parent then TRICARE can still act as a second payer. The former spouse retains an ID card and all benefits that go along with it including Tricare medical access to military installations the commissary etc. <br>				
+			</p>
+										<a class="badge badge-light" href="/career-counselor-military-spouse.html">career counselor military spouse</a>
+											<a class="badge badge-primary" href="/cancidas-vs-mycamine.html">cancidas vs mycamine</a>
+											<a class="badge badge-light" href="/career-after-msc-environmental-science.html">career after msc environmental science</a>
+											<a class="badge badge-secondary" href="/capita-army-recruitment-contact-number.html">capita army recruitment contact number</a>
+											<a class="badge badge-danger" href="/canal-plus-replay.html">canal plus replay</a>
+											<a class="badge badge-success" href="/certificate-programs-for-military-spouses.html">certificate programs for military spouses</a>
+											<a class="badge badge-dark" href="/chapter-35-spouse-education-benefits.html">chapter 35 spouse education benefits</a>
+											<a class="badge badge-light" href="/china-military-hk.html">china military hk</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to visit the ideal site.  Our website provides you with suggestions for viewing the highest quality video and image content, search and locate more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this video that you view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/65/3a/98653a01272cd9a2d5bd45500cf142a8.jpg" data-lightbox="roadtrip" data-title="What Happens During A Military Divorce Or Separation Military Divorce Divorce Divorce Help">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/65/3a/98653a01272cd9a2d5bd45500cf142a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmORH7ZESelU9E8n2SJ8C0kRZsMFM1NBe9vw';" alt="What Happens During A Military Divorce Or Separation Military Divorce Divorce Divorce Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Happens During A Military Divorce Or Separation Military Divorce Divorce Divorce Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/fe/df/2afedf3f91210755a5c0d0c3e919660f.jpg" data-lightbox="roadtrip" data-title="Pin On Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/fe/df/2afedf3f91210755a5c0d0c3e919660f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQgsMeHXFTicOTU5GY-0e1xiUtgkVT5u0E7A';" alt="Pin On Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/79/34/00793447ac3afa75485da0a2c03d73db.png" data-lightbox="roadtrip" data-title="5 Things You Need To Thrive After Divorce Grief Scripture Christian Quotes Inspirational Bible Encouragement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/79/34/00793447ac3afa75485da0a2c03d73db.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ92CKnvfCkiBT_p9YLW5p7xYHnjDIp_mz_g';" alt="5 Things You Need To Thrive After Divorce Grief Scripture Christian Quotes Inspirational Bible Encouragement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Things You Need To Thrive After Divorce Grief Scripture Christian Quotes Inspirational Bible Encouragement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/77/ba/fd77ba1be4ef1ad68f7a58ff5210d2a1.jpg" data-lightbox="roadtrip" data-title="Marilyn Monroe S Military Id Card 1954 Marilyn Marilyn Monroe Art Marilyn Monroe Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/77/ba/fd77ba1be4ef1ad68f7a58ff5210d2a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtDIrTCQ0yk_moxgRNyfEwXx-KECgFUvrLuQ';" alt="Marilyn Monroe S Military Id Card 1954 Marilyn Marilyn Monroe Art Marilyn Monroe Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marilyn Monroe S Military Id Card 1954 Marilyn Marilyn Monroe Art Marilyn Monroe Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://nc.ng.mil/services/PublishingImages/Pages/ID-Cards-and-DEERS/army_mil-104075-2011-04-04-090414.png" data-lightbox="roadtrip" data-title="Pages Deers Rapids Id Card Service">
+											<img class="card-img v-image ads-img " src="https://nc.ng.mil/services/PublishingImages/Pages/ID-Cards-and-DEERS/army_mil-104075-2011-04-04-090414.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6KzUwOpVYRiJDjxTN4TF82obSecmR1hpx4g';" alt="Pages Deers Rapids Id Card Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pages Deers Rapids Id Card Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a3/70/95/a37095e3ae97a1500651605417f47bcb.jpg" data-lightbox="roadtrip" data-title="Augusta Ga Military Divorce Lawyer Services Military Divorce Lawyer Services Divorce Mediation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a3/70/95/a37095e3ae97a1500651605417f47bcb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ZwLF1lrMC68M38spYp6nF3G1gxkuKjVSLg';" alt="Augusta Ga Military Divorce Lawyer Services Military Divorce Lawyer Services Divorce Mediation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Augusta Ga Military Divorce Lawyer Services Military Divorce Lawyer Services Divorce Mediation</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/a3/70/95/a37095e3ae97a1500651605417f47bcb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ZwLF1lrMC68M38spYp6nF3G1gxkuKjVSLg';" alt="Augusta Ga Military Divorce Lawyer Services Military Divorce Lawyer Services Divorce Mediation">
+										<div class="card-body">
+						<h3 class="h5"><b>They can still keep it for keepsake purposes are as photo identification.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Can i keep my military id after divorce</strong>. 
+								
+																	In the coming weeks Ill attempt to cover all of the various aspects of a military-related divorce or separation situation including the rights of the military member and family members military family housing spousal child support ID Cards the Uniform Services Former Spouse Protection Act Soldiers. 
+																	Generally speaking once a divorce is final the non-military spouse must surrender the military ID as they are no longer eligible for any benefits previously granted by virtue of having said ID unless the parties were married for at least 20 years prior to the divorce and the service member had at least 20 years of military service. 
+																	Only former spouses that qualify under the 202020 rule can retain their military ID. 
+																	The military member has performed at least 20 years of service that is creditable in determining eligibility for retired pay the member does not have to be retired from active duty. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The legal process very much stays the same and as long as you live in the UK then the divorce process can take place in the UK. 
+																	An un-remarried former spouse may retain the military ID card if he or she meets the 202020 rule. 
+																	The parties were married to one another for 20 years or more. 
+																	The 202020 Non-Military Spouse The so-called 202020 rule grants full military ID benefits to a former spouse if. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In these cases the calculation you can do is multiply marital share by the disposable retired pay. 
+																	The 202020 rule requires at least twenty years of marriage at least twenty years of military service and at least twenty years of overlap of the marriage and the military service. 
+																	If such years of service exist full benefits including medical commissary base exchange theater and certain transportation benefits are provided. 
+																	Technically if the marriage has lasted for over 20 years and if the military member has more than 20 years of service the spouse retains eligibility for an ID card of his or her own. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When a Service Member divorces or enters into a legal separation judgment the former spouse must have at least 10 years of marriage overlapping with 10 years of military service in order to be eligible to receive direct payments from the military as a property award from the family court. 
+																	However there are often other more complex concerns which need to be considered when getting a divorce. 
+																	In this article we will try and make a little bit of sense out of the confusion. 
+																	You can also keep your military health insurance benefits after divorce if you were married for 20 years and your spouse served during those years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Regarding the 1010 rule. 
+																	If the marriage had not lasted 10 years or did not overlap with military service by 10 years then any ordered payments must be paid by the retiree. 
+																	If a couple gets divorced after the service member is already retired using a divorced military spouse retirement pay calculator gets a lot easier since The Frozen Benefit Rule would not apply. 
+																	In other words the military sponsor does not have the unilateral authority to decide who can and who cannot have a military identification card and if you and your spouse are still married even if there is a pending divorce you are still entitled to your identification card. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The former spouse was married to the military member for at least 20 years at the time of the divorce dissolution or annulment. 
+																	The 20-20-20 rule means that you had to be married for at least 20 years he had to. 
+																	If your child visits the uniformed service member TRICARE is still the second payer so make sure your child has the OHI information to get care away from home. 
+																	As the benefits are statutory entitlements they are automatic and not subject to negotiation or deviation by a divorce court and the member cannot confiscate the spouses ID card or otherwise. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Divorce in military families does not differ to divorce in a civilian family. 
+																	All other former spouses can no longer use their military ID. 
+																	Military ID cards are considered federal property and if youre no longer an authorized ID card holder -- and you wont be after your divorce -- youre expected to turn it over to its rightful. 
+																	If a division of marital property is ordered and the couple has been married at least 10 years that overlapped with 10 years of military service then the payment can be made directly from the DFAS. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In special cases spouses are eligible for medical benefits for up to a year after divorce as well. 
+																	There are however two exceptions to this rule that will allow a non-military spouse to keep their military ID after a Florida divorce. 
+																	Any child who is a legal dependent to the service member after divorce will retain full military benefits until age 22 or marriage. 
+																	However if you remarry you lose the insurance and a divorce or the death of your spouse does not reinstate it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Can I keep my military ID and privileges after the divorce is final. 
+																	Widows and Divorcees under the 20-20-20 rule keep their IDs and Tricare benefits until they remarry. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/98/3f/e9/983fe9503317401ff8bfaa5b1ed95bfd.jpg" data-lightbox="roadtrip" data-title="Pin By Khadyberry On Drivers License Passport Online Drivers License Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/98/3f/e9/983fe9503317401ff8bfaa5b1ed95bfd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSur4OS4-Cy-XNSTJWdU0wC44Li1lKqNGNCoA';" alt="Pin By Khadyberry On Drivers License Passport Online Drivers License Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Khadyberry On Drivers License Passport Online Drivers License Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/64/d3/dc/64d3dc9425ca0601b3c53eac806cfa0c.jpg" data-lightbox="roadtrip" data-title="Browse Our Example Of Free Blank Military Id Card Template Id Card Template Blank Id Cards Doctors Note Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/64/d3/dc/64d3dc9425ca0601b3c53eac806cfa0c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR49DzHikDdX7zzZN-HdSpDfiH1v6ZxZ7Q83g';" alt="Browse Our Example Of Free Blank Military Id Card Template Id Card Template Blank Id Cards Doctors Note Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Browse Our Example Of Free Blank Military Id Card Template Id Card Template Blank Id Cards Doctors Note Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/a1/a6/00a1a606bd9825c2284de0398d7429ec.png" data-lightbox="roadtrip" data-title="Pin By Maria Chunn Petrie On Divorce Records Id Card Template Passport Online Passport Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/a1/a6/00a1a606bd9825c2284de0398d7429ec.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVpfUKEEy4dVZW6rS9w4Y6JHn2VM5TVl3B-g';" alt="Pin By Maria Chunn Petrie On Divorce Records Id Card Template Passport Online Passport Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Maria Chunn Petrie On Divorce Records Id Card Template Passport Online Passport Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_MilitarySpouse1.jpg?itok=_Z72pqcw" data-lightbox="roadtrip" data-title="Explanation Of Divorced Military Spouse Benefits Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_MilitarySpouse1.jpg?itok=_Z72pqcw" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0D0IhbDAZyVxNIs2xA1O0SSEgzVTL0c5vQ';" alt="Explanation Of Divorced Military Spouse Benefits Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Explanation Of Divorced Military Spouse Benefits Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/b1/b9/beb1b93cff99c4d77f308c560c7d9d78.jpg" data-lightbox="roadtrip" data-title="Money Fights Are The Number One Predictor Of Divorce So Here Are 10 Ways To Work Together On Financial Discussions Marriage Budgeting Couple Finances Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/b1/b9/beb1b93cff99c4d77f308c560c7d9d78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-TC3JCjF4YAbxmja_VIqWz1d7_9EEGALiBg';" alt="Money Fights Are The Number One Predictor Of Divorce So Here Are 10 Ways To Work Together On Financial Discussions Marriage Budgeting Couple Finances Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Money Fights Are The Number One Predictor Of Divorce So Here Are 10 Ways To Work Together On Financial Discussions Marriage Budgeting Couple Finances Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/0a/dd/080adda3d6c4bbdd71b04cc36168b312.jpg" data-lightbox="roadtrip" data-title="How Is Military Retirement Pay Divided After Divorce Military Divorce Divorce Divorce Mediation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/0a/dd/080adda3d6c4bbdd71b04cc36168b312.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEXZQmswWLN9cdBpqurEV0zW-VJVJ-ZIXznA';" alt="How Is Military Retirement Pay Divided After Divorce Military Divorce Divorce Divorce Mediation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Is Military Retirement Pay Divided After Divorce Military Divorce Divorce Divorce Mediation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://federalsoup.com/-/media/GIG/FederalSOUP/NGUSID_card.jpg" data-lightbox="roadtrip" data-title="Dod Issuing New Uniformed Services Id Cards Federalsoup Com">
+											<img class="card-img v-image ads-img " src="https://federalsoup.com/-/media/GIG/FederalSOUP/NGUSID_card.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrZjX37FC0tyud5YKg4szqk3iixR5wK9d-tg';" alt="Dod Issuing New Uniformed Services Id Cards Federalsoup Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Issuing New Uniformed Services Id Cards Federalsoup Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/cc/00/79cc006873b3bb668d1b27208c7c21cd.jpg" data-lightbox="roadtrip" data-title="The Divorce Flipbook Flip Book Divorce Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/cc/00/79cc006873b3bb668d1b27208c7c21cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb8_hg4qMgiMYuKff54j7bfkkB1e99lghByA';" alt="The Divorce Flipbook Flip Book Divorce Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Divorce Flipbook Flip Book Divorce Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/88/09/94/8809944daea536779b9918e71ec429e2.jpg" data-lightbox="roadtrip" data-title="Pin On Criminal Lawyer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/88/09/94/8809944daea536779b9918e71ec429e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFxBVMPy_NyqRrhekuLr29CrfN_Q5OzK8odg';" alt="Pin On Criminal Lawyer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Criminal Lawyer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.tricare.mil/-/media/Images/TRICARE/ID_CardSamples/SSN-Removal-Image-DoDIDNumber.png?la=en&amp;hash=4F139986CEAD4DFCDE2157517AF8E7090CBE8CDAFA4A75D3410D8C186B2E9F5C" data-lightbox="roadtrip" data-title="Removal Of Social Security Numbers From Id Cards Tricare">
+											<img class="card-img v-image ads-img " src="https://www.tricare.mil/-/media/Images/TRICARE/ID_CardSamples/SSN-Removal-Image-DoDIDNumber.png?la=en&amp;hash=4F139986CEAD4DFCDE2157517AF8E7090CBE8CDAFA4A75D3410D8C186B2E9F5C" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTry-ave2ozGa1t8o0hTh76vNz8BxfMJAI1gQ';" alt="Removal Of Social Security Numbers From Id Cards Tricare">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Removal Of Social Security Numbers From Id Cards Tricare</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/ba/d3/15bad38ecca9a1845770099296b3b0d2.jpg" data-lightbox="roadtrip" data-title="Valid Military Id Cards Picture Id Card Http Www Semendre Org Photo Pantelides Apostol Us Navy Id Cards Department Of The Navy Us Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/ba/d3/15bad38ecca9a1845770099296b3b0d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2WK9nltHyFtF3_E9_NAOS8DROBszHXRmKCg';" alt="Valid Military Id Cards Picture Id Card Http Www Semendre Org Photo Pantelides Apostol Us Navy Id Cards Department Of The Navy Us Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Valid Military Id Cards Picture Id Card Http Www Semendre Org Photo Pantelides Apostol Us Navy Id Cards Department Of The Navy Us Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/0e/f0/930ef0e95880962b0a13461192fb338e.jpg" data-lightbox="roadtrip" data-title="Care Package I Made For Me Hubby For Our Anniversary Military Milso Armywife Carepackage Militar Deployment Gifts Diy Care Package Boyfriend Care Package">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/0e/f0/930ef0e95880962b0a13461192fb338e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdd-ZbElaubVfVmUm11coa8EqZ7J5urJuYFw';" alt="Care Package I Made For Me Hubby For Our Anniversary Military Milso Armywife Carepackage Militar Deployment Gifts Diy Care Package Boyfriend Care Package">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Care Package I Made For Me Hubby For Our Anniversary Military Milso Armywife Carepackage Militar Deployment Gifts Diy Care Package Boyfriend Care Package</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/2a/d4/902ad4f9c462194604fa808cc8499192.jpg" data-lightbox="roadtrip" data-title="Pin On Divorce And Separation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/2a/d4/902ad4f9c462194604fa808cc8499192.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkQqZwFSRZfxIQN-byvY_Qb34XVEa9zcn6CA';" alt="Pin On Divorce And Separation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Divorce And Separation</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/msn-uk-sport.html">Msn Uk Sport</a></li>
+													<li class="list-group-item"><a href="/msn-uk-hotmail-outlook.html">Msn Uk Hotmail Outlook</a></li>
+													<li class="list-group-item"><a href="/msn-us-games.html">Msn Us Games</a></li>
+													<li class="list-group-item"><a href="/msn-usa-breaking.html">Msn Usa Breaking</a></li>
+													<li class="list-group-item"><a href="/msn-uk-recipes.html">Msn Uk Recipes</a></li>
+													<li class="list-group-item"><a href="/msn-uk-news-page.html">Msn Uk News Page</a></li>
+													<li class="list-group-item"><a href="/msn-uk-latest-news-weather-hotmail-sign-in.html">Msn Uk Latest News Weather Hotmail Sign In</a></li>
+													<li class="list-group-item"><a href="/msn-usa-news-today.html">Msn Usa News Today</a></li>
+													<li class="list-group-item"><a href="/msn-uk-world-news.html">Msn Uk World News</a></li>
+													<li class="list-group-item"><a href="/msn-uk-monthly-unique-users.html">Msn Uk Monthly Unique Users</a></li>
+													<li class="list-group-item"><a href="/msn-us-business.html">Msn Us Business</a></li>
+													<li class="list-group-item"><a href="/msn-uk-vaccine.html">Msn Uk Vaccine</a></li>
+													<li class="list-group-item"><a href="/msn-uk-news-and-sport.html">Msn Uk News And Sport</a></li>
+													<li class="list-group-item"><a href="/msn-uk-latest-news.html">Msn Uk Latest News</a></li>
+													<li class="list-group-item"><a href="/msn-us-election-live.html">Msn Us Election Live</a></li>
+													<li class="list-group-item"><a href="/msn-us-headlines.html">Msn Us Headlines</a></li>
+													<li class="list-group-item"><a href="/msn-uk-news-headlines.html">Msn Uk News Headlines</a></li>
+													<li class="list-group-item"><a href="/msn-usa-phone-number.html">Msn Usa Phone Number</a></li>
+													<li class="list-group-item"><a href="/msn-usbreaking-newsbing.html">Msn Usbreaking Newsbing</a></li>
+													<li class="list-group-item"><a href="/msn-uk-register.html">Msn Uk Register</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

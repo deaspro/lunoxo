@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mycamine Patent Expiration - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mycamine Patent Expiration",
+  "datePublished": "2021-02-13",
+  "image": "https://www.grandviewresearch.com/static/img/research/global-antifungal-drugs-market.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mycamine+patent+expiration",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mycamine Patent Expiration</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">TREATMENT OF PATIENTS WITH CANDIDEMIA ACUTE DISSEMINATED CANDIDIASIS CANDIDA PERITONITIS AND ABCESSES. Patent Expiration Generic Entry Opportunity August 15 2021 Generic Entry Controlled by. What are the generic drug sources for micafungin sodium and what is the scope of freedom to operate. <br>				
+			</p>
+										<a class="badge badge-primary" href="/ncaa-login-eligibility-center.html">ncaa login eligibility center</a>
+											<a class="badge badge-secondary" href="/ncaa-hockey-eligibility-rules.html">ncaa hockey eligibility rules</a>
+											<a class="badge badge-info" href="/ncaa-eligibility-rules-dual-enrollment.html">ncaa eligibility rules dual enrollment</a>
+											<a class="badge badge-primary" href="/ncaa-football-eligibility-covid-19.html">ncaa football eligibility covid 19</a>
+											<a class="badge badge-light" href="/ncaa-gpa-requirements-for-division-2.html">ncaa gpa requirements for division 2</a>
+											<a class="badge badge-secondary" href="/ncaa-eligibility-rules-courses.html">ncaa eligibility rules courses</a>
+											<a class="badge badge-dark" href="/ncaa-eligibility-rules-sat-scores.html">ncaa eligibility rules sat scores</a>
+											<a class="badge badge-secondary" href="/ncaa-eligibility-with-covid-19.html">ncaa eligibility with covid 19</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to pay a visit to the ideal site.  Our website gives you hints for seeing the highest quality video and image content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie for you to view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.drugpatentwatch.com/p/graph/s/t/MYCAMINE-patent-expirations.png" data-lightbox="roadtrip" data-title="Mycamine Loss Of Exclusivity Loe When Do The Patents On Mycamine Expire And When Will Generic Mycamine Be Available">
+											<img class="card-img v-image ads-img " src="https://www.drugpatentwatch.com/p/graph/s/t/MYCAMINE-patent-expirations.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStwHRBl-BaTCOo5qJq6wlIwfHMuEi1YcoAcQ';" alt="Mycamine Loss Of Exclusivity Loe When Do The Patents On Mycamine Expire And When Will Generic Mycamine Be Available">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycamine Loss Of Exclusivity Loe When Do The Patents On Mycamine Expire And When Will Generic Mycamine Be Available</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.managingip.com/Media/images/managing-ip/briefings/january/volodymyr-hryshchenko-UbBGeiv5sbc-unsplash%20(1).jpg" data-lightbox="roadtrip" data-title="Drug Patent Expiry In 2021 Opportunities And Challenges In The Korean Market Managing Intellectual Property">
+											<img class="card-img v-image ads-img " src="https://www.managingip.com/Media/images/managing-ip/briefings/january/volodymyr-hryshchenko-UbBGeiv5sbc-unsplash%20(1).jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHBJPiC_FX1ibzpLBa3uHAgqLISGYKGJQZDA';" alt="Drug Patent Expiry In 2021 Opportunities And Challenges In The Korean Market Managing Intellectual Property">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Drug Patent Expiry In 2021 Opportunities And Challenges In The Korean Market Managing Intellectual Property</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=92044397&amp;t=l" data-lightbox="roadtrip" data-title="Mycamine C56h70n9nao23s Pubchem">
+											<img class="card-img v-image ads-img " src="https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=92044397&amp;t=l" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuTgd6VEs6sPNPsgH3z5szjJG-2cGr7qnmjw';" alt="Mycamine C56h70n9nao23s Pubchem">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycamine C56h70n9nao23s Pubchem</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.drugpatentwatch.com/p/graph/s/a/ASTELLAS-patent-expirations.png" data-lightbox="roadtrip" data-title="Astellas Branded And Generic Drugs International Patents">
+											<img class="card-img v-image ads-img " src="https://www.drugpatentwatch.com/p/graph/s/a/ASTELLAS-patent-expirations.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPmWIu35eTxxFH06B6WfXXrWBkjSFSiBmREQ';" alt="Astellas Branded And Generic Drugs International Patents">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Astellas Branded And Generic Drugs International Patents</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://182.92.230.50:82/drug/routeInfo/PN0034_D889Hv27MR.png" data-lightbox="roadtrip" data-title="Micafungin Sodium">
+											<img class="card-img v-image ads-img " src="http://182.92.230.50:82/drug/routeInfo/PN0034_D889Hv27MR.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHR7vMiftCZ_gyZPXUqFJWsNSsE8aFNemjFw';" alt="Micafungin Sodium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Micafungin Sodium</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="HQ8s8FdciMvvaM" data-lightbox="roadtrip" data-title="Https Ec Europa Eu Transparency Regdoc Rep 10102 2018 En Swd 2018 240 F1 En Main Part 1 Pdf">
+											<img class="card-img v-image ads-img " src="HQ8s8FdciMvvaM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUoCTaAxeI4ma01oay9KCKlLpQXIM9xYhkYg';" alt="Https Ec Europa Eu Transparency Regdoc Rep 10102 2018 En Swd 2018 240 F1 En Main Part 1 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Ec Europa Eu Transparency Regdoc Rep 10102 2018 En Swd 2018 240 F1 En Main Part 1 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://fbi-reports-file.s3.amazonaws.com/info_images/101188.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUoCTaAxeI4ma01oay9KCKlLpQXIM9xYhkYg';" alt="Https Ec Europa Eu Transparency Regdoc Rep 10102 2018 En Swd 2018 240 F1 En Main Part 1 Pdf">
+										<div class="card-body">
+						<h3 class="h5"><b>Micafungin purification procedure Prior art date 2011-04-20 Legal status The legal status is an assumption and is not a legal conclusion.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mycamine patent expiration</strong>. 
+								
+																	One tentatively approved generic is ready to enter the market. 
+																	Information Expiry Status of Health Canada Patents covering Mycamine. 
+																	Patent Number Expiration Date 6774104 the 104 patent January 8 2021 Your ANDA contains a paragraph IV certification to the 104 patent under section 505j2AviiIV of the FDC Act. 
+																	Drug Patent Status Review - Patent Expiries Supplementary Protection Certificates Paediatric Extensions The drug patent status review database covers major product preparation patents together with any related supplementary protection certificates SPCs and paediatric extensions for all products on the European market including all 27 EU countries plus Switzerland. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mycamine is a brand name of micafungin approved by the FDA in the following formulations. 
+																	Providing detailed information on Brand Name Drug Patent Expiration since 2006 and on Medicare Part D plans for every state including selected Medicare Part D plan features and costs organized by State. 
+																	Patent and Trademark Office at any time during a drugs development and may include a wide range of claims. 
+																	So there will be an increase in the competition in generic drug market. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If this can be avoided the product may face competition from generics. 
+																	April 16 2038 Patent use. 
+																	Additional patent term may also be privately granted by an Act of Congress and court decisions may establish patent expiration dates that are not reflected in USPTO records. 
+																	Jun 27 2006 Start Trial Start Trial. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Is a drug marketed by Ferring Pharms Inc. 
+																	At the same time the balance in terms of healthcare expenditure and. 
+																	Patent and Trademark Office at any time during a drugs development and may include a wide range of claims. 
+																	JP5818974B2 JP2014509598A JP2014509598A JP5818974B2 JP 5818974 B2 JP5818974 B2 JP 5818974B2 JP 2014509598 A JP2014509598 A JP 2014509598A JP 2014509598 A JP2014509598 A JP 2014509598A JP 5818974 B2 JP5818974 B2 JP 5818974B2 Authority JP Japan Prior art keywords compound formula sodium weak base solution Prior art date 2011-05-12 Legal status The legal status is an assumption and is not a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Patent expiries Patent Expiry Definitions 29 October 2020 Year The year in which the patent expires this will be either the UK patent expiry or the UK SPC expiry if later. 
+																	There are two patents protecting this drug and one Paragraph IV challenge. 
+																	In 2020 25 patents of 11 drug are going to expire and lose protection and exclusitivity. 
+																	Sign-up for our free Medicare Part D Newsletter Use the Online Calculators FAQs or contact us through our Helpdesk -- Powered by Q1Group LLC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With its patent expired on January 5 only one patent will remain until its expiration in March 2025. 
+																	Google has not performed a legal analysis and makes no representation as to the accuracy of the status listed Active Application number ES127139988T Other languages English en Other versions ES2547827T3. 
+																	A METHOD FOR THE IMPROVEMENT OF NEUROLOGICAL OUTCOME BY REDUCING THE INCIDENCE AND SEVERITY OF ISCHEMIC DEFICITS IN ADULT PATIENTS WITH SUBARACHNOID HEMORRHAGE SAH FROM RUPTURED INTRACRANIAL BERRY ANEURYSMS. 
+																	Additional information is available in the individual branded drug. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Similarly19 patents of 7 drugs and 11 patents of 4 drugs are expiring in 2021 and 2022 respectively. 
+																	Roche is forecasting a classic erosion of its injectable antibiotic Rocephin ceftriaxone after patent protection expired July 19 You may also be interested in. 
+																	Jun 27 2006 Start Trial Start Trial. 
+																	2010-2020 PATENT EXPIRY DATES 13 The global generic pharmaceuticals market is likely to witness strong growth in the next few years owing to the patent expiration of key blockbuster drugs and the judicious cost containment efforts of governments and healthcare service providers worldwide. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Patents are granted by the US. 
+																	December 20 2022 - TREATMENT OF CANDIDEMIA ACUTE DISSEMINATED CANDIDIASIS CANDIDA PERITONITIS AND ABSCESSES WITHOUT MENINGOENCEPHALITIS ANDOR OCULAR DISSEMINATION IN PEDIATRIC PATIENTS YOUNGER THAN 4 MONTHS OF AGE June 20 2023 - PEDIATRIC EXCLUSIVITY. 
+																	Mar 16 2005 Start Trial Start Trial. 
+																	_____ For questions on patent term USPTOs Office of Patent Legal Administration help line at 571-272-7702 is available as a resource. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Micafungin sodium is the generic ingredient in two branded drugs marketed by Apotex Fresenius Kabi Usa and Astellas and is included in three NDAsThere is one patent protecting this compound and one Paragraph IV challenge. 
+																	Patents are granted by the US. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/47/06/5f4706791e0bd269efa584e513ce7078.png" data-lightbox="roadtrip" data-title="Understanding Patents Logo Design Infographic Patent Agent Fun Facts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/47/06/5f4706791e0bd269efa584e513ce7078.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOmggYmIXrBXW90Qn9RgiqhGJvjcwJtdIlYA';" alt="Understanding Patents Logo Design Infographic Patent Agent Fun Facts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding Patents Logo Design Infographic Patent Agent Fun Facts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="o9mg7hkXd2xsTM" data-lightbox="roadtrip" data-title="Http Patentdocs Typepad Com Files Astellas V Fresenius 1 Pdf">
+											<img class="card-img v-image ads-img " src="o9mg7hkXd2xsTM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8STPM_EP51klvfqTmqe-iai9o1vlBYPjILA';" alt="Http Patentdocs Typepad Com Files Astellas V Fresenius 1 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Patentdocs Typepad Com Files Astellas V Fresenius 1 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="chNtkW_ctVrEBM" data-lightbox="roadtrip" data-title="Https Ir Cidara Com Static Files C4437ba1 1dc9 4b79 86ee 505b55114883">
+											<img class="card-img v-image ads-img " src="chNtkW_ctVrEBM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQnCNqWive_EA7T6mjEY4-JTNNqdD6gnUg1Q';" alt="Https Ir Cidara Com Static Files C4437ba1 1dc9 4b79 86ee 505b55114883">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Ir Cidara Com Static Files C4437ba1 1dc9 4b79 86ee 505b55114883</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.sec.gov/Archives/edgar/data/1651595/000119312515345529/g85138g19b79.jpg" data-lightbox="roadtrip" data-title="Form F 1">
+											<img class="card-img v-image ads-img " src="https://www.sec.gov/Archives/edgar/data/1651595/000119312515345529/g85138g19b79.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYoR06pwcicC5S3WCGX2vBQcsPcqYwxbLdVA';" alt="Form F 1">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Form F 1</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://patentdocs.typepad.com/.a/6a00d83451ca1469e201b7c74b6db9970b-pi" data-lightbox="roadtrip" data-title="Patent Docs February 2015">
+											<img class="card-img v-image ads-img " src="http://patentdocs.typepad.com/.a/6a00d83451ca1469e201b7c74b6db9970b-pi" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5LLky1Iwca2Q3psIRzGqK_AUjrxdmDtZjVA';" alt="Patent Docs February 2015">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Patent Docs February 2015</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.drugpatentwatch.com/newsletter/img/drugpatentwatch-daily-briefing-portrait.png" data-lightbox="roadtrip" data-title="Drugpatentwatch Html Sitemap">
+											<img class="card-img v-image ads-img " src="https://www.drugpatentwatch.com/newsletter/img/drugpatentwatch-daily-briefing-portrait.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4-Nxeu0vczzR1FKL7pK5KDBS1hNWy7gG4Uw';" alt="Drugpatentwatch Html Sitemap">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Drugpatentwatch Html Sitemap</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.researchgate.net/publication/333490034/figure/fig5/AS:764424218492928@1559264344503/Average-number-of-patents-added-per-drug-2005-2015_Q320.jpg" data-lightbox="roadtrip" data-title="Pdf May Your Drug Price Be Evergreen">
+											<img class="card-img v-image ads-img " src="https://www.researchgate.net/publication/333490034/figure/fig5/AS:764424218492928@1559264344503/Average-number-of-patents-added-per-drug-2005-2015_Q320.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFFxPxpoXhxaRyhJOlaebxIFQof3DQQwd1Pw';" alt="Pdf May Your Drug Price Be Evergreen">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pdf May Your Drug Price Be Evergreen</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.grandviewresearch.com/static/img/research/global-antifungal-drugs-market.png" data-lightbox="roadtrip" data-title="Antifungal Drugs Market Size Share Global Industry Report 2018 2025">
+											<img class="card-img v-image ads-img " src="https://www.grandviewresearch.com/static/img/research/global-antifungal-drugs-market.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSzEFxBHF9Sx5s4t48VxJOg6BKR4N71qn-ZQ';" alt="Antifungal Drugs Market Size Share Global Industry Report 2018 2025">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Antifungal Drugs Market Size Share Global Industry Report 2018 2025</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="_sFXU7F_dehsBM" data-lightbox="roadtrip" data-title="Https Www Astellas Com En News 11026">
+											<img class="card-img v-image ads-img " src="_sFXU7F_dehsBM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgx2IaKbGN5mcK8TwQ0bzf_1FxGPtHt7K39g';" alt="Https Www Astellas Com En News 11026">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Astellas Com En News 11026</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/95/b5/b795b509cbcbbe57480a6027626f58ac.jpg" data-lightbox="roadtrip" data-title="Pin On Medical Technology Infographics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/95/b5/b795b509cbcbbe57480a6027626f58ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKx1JyflG8uxKSQf9xp-R_4kGvYtt1pHBtmQ';" alt="Pin On Medical Technology Infographics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Medical Technology Infographics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fbi-reports-file.s3.amazonaws.com/info_images/101188.png" data-lightbox="roadtrip" data-title="Antifungal Drugs Market Size Share Global Industry Growth 2027">
+											<img class="card-img v-image ads-img " src="https://fbi-reports-file.s3.amazonaws.com/info_images/101188.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmz3S1E1F3rCE9vocbeiTNuXjvV77acme2WA';" alt="Antifungal Drugs Market Size Share Global Industry Growth 2027">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Antifungal Drugs Market Size Share Global Industry Growth 2027</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/1f/ae/021fae656fcb543d276f21e0a7b65f73.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/1f/ae/021fae656fcb543d276f21e0a7b65f73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA1WjJkNmw3iZazPyUh6DJoqDg1M9laFZd2g';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/aa/ad/b8aaad3e4348387a538f8217329f6d82.png" data-lightbox="roadtrip" data-title="News In Proteomics Research When Does The Orbitrap Patent Expire Mass Spectrometry Patent Research">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/aa/ad/b8aaad3e4348387a538f8217329f6d82.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCVnr_o8m-vUz4cjUXRYnFI-IK4h0sOqwIlA';" alt="News In Proteomics Research When Does The Orbitrap Patent Expire Mass Spectrometry Patent Research">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">News In Proteomics Research When Does The Orbitrap Patent Expire Mass Spectrometry Patent Research</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-if-my-wife-tests-positive-for-covid.html">What If My Wife Tests Positive For Covid</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-he-refuses-to-sign-divorce-papers.html">What Happens If He Refuses To Sign Divorce Papers</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-my-husband-dies-without-will.html">What Happens If My Husband Dies Without Will</a></li>
+													<li class="list-group-item"><a href="/what-is-a-military-dependent-card.html">What Is A Military Dependent Card</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-husband-won-t-sign-divorce-papers-in-florida.html">What Happens If Husband Won T Sign Divorce Papers In Florida</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-my-husband-dies-without-a-will-in-texas.html">What Happens If My Husband Dies Without A Will In Texas</a></li>
+													<li class="list-group-item"><a href="/what-is-a-hero-quotes.html">What Is A Hero Quotes</a></li>
+													<li class="list-group-item"><a href="/what-if-my-husband-refuses-to-sign-divorce-papers-uk.html">What If My Husband Refuses To Sign Divorce Papers Uk</a></li>
+													<li class="list-group-item"><a href="/what-is-24-hour-duty-in-the-army.html">What Is 24 Hour Duty In The Army</a></li>
+													<li class="list-group-item"><a href="/what-happens-when-your-spouse-refuses-to-sign-divorce-papers.html">What Happens When Your Spouse Refuses To Sign Divorce Papers</a></li>
+													<li class="list-group-item"><a href="/what-happens-when-you-lose-both-parents.html">What Happens When You Lose Both Parents</a></li>
+													<li class="list-group-item"><a href="/what-is-a-high-functioning-anxiety.html">What Is A High Functioning Anxiety</a></li>
+													<li class="list-group-item"><a href="/what-is-a-military-key-spouse.html">What Is A Military Key Spouse</a></li>
+													<li class="list-group-item"><a href="/what-if-a-patient-refuses-to-wear-a-mask.html">What If A Patient Refuses To Wear A Mask</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-your-husband-doesnt-want-to-divorce.html">What Happens If Your Husband Doesnt Want To Divorce</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-my-husband-refuses-to-sign-divorce-papers-uk.html">What Happens If My Husband Refuses To Sign Divorce Papers Uk</a></li>
+													<li class="list-group-item"><a href="/what-if-someone-forged-my-signature.html">What If Someone Forged My Signature</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-you-and-your-spouse-are-in-the-military.html">What Happens If You And Your Spouse Are In The Military</a></li>
+													<li class="list-group-item"><a href="/what-is-2400-hours-in-military-time.html">What Is 2400 Hours In Military Time</a></li>
+													<li class="list-group-item"><a href="/what-is-24-hour-military-time.html">What Is 24 Hour Military Time</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

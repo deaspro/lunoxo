@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Navy Spouse Pension - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Navy Spouse Pension",
+  "datePublished": "2021-02-13",
+  "image": "https://poorvasainik.com/images/front-page/articles/latest_pcda_circular.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=navy+spouse+pension",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Navy Spouse Pension</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Many people mistakenly believe that the spouse must be married to the service member or retired veteran for 10 years to be awarded pension benefits. Claim for payment of former spouse pension credit Form 8A PDF 894KB 9 pages. Department for Work and Pensions Ministry of Defence Baroness Altmann CBE and The Rt Hon Sir Michael Fallon Up to 20000 armed forces spouses may be eligible for a new National Insurance credit. <br>				
+			</p>
+										<a class="badge badge-info" href="/my-video-card.html">my video card</a>
+											<a class="badge badge-warning" href="/my-wife-anniversary-quotes.html">my wife anniversary quotes</a>
+											<a class="badge badge-light" href="/my-wife-cheated-on-me-divorce.html">my wife cheated on me divorce</a>
+											<a class="badge badge-danger" href="/my-wife-died-recently.html">my wife died recently</a>
+											<a class="badge badge-danger" href="/my-wife-cheated-on-me-yahoo-answers.html">my wife cheated on me yahoo answers</a>
+											<a class="badge badge-danger" href="/my-wife-died-cancer.html">my wife died cancer</a>
+											<a class="badge badge-success" href="/my-wife-binge-drinks.html">my wife binge drinks</a>
+											<a class="badge badge-primary" href="/my-wife-cheated-on-me-emotionally.html">my wife cheated on me emotionally</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to visit the ideal blog.  Our site gives you suggestions for viewing the highest quality video and image content, hunt and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this movie that you view.  You can also contribute to supporting this website by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images01.military.com/sites/default/files/styles/full/public/media/spouse/2016/05/spouse-retirement-ceremony-1200x800.jpg?itok=kNIGpM4j" data-lightbox="roadtrip" data-title="Are There Any Military Spouse Retirement Benefits Military Com">
+											<img class="card-img v-image ads-img " src="https://images01.military.com/sites/default/files/styles/full/public/media/spouse/2016/05/spouse-retirement-ceremony-1200x800.jpg?itok=kNIGpM4j" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlg-zR8ALQWtuZAkw3uFd08oLLHZ7LmHpHPg';" alt="Are There Any Military Spouse Retirement Benefits Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are There Any Military Spouse Retirement Benefits Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://poorvasainik.com/images/front-page/articles/Special-Pension-under-95-of-Navy-Pension-Regulations-1964.jpg" data-lightbox="roadtrip" data-title="Poorvasainik Com Ex Servicemen Welfare Latest News Progress Report Navy Special Pension Cases As On 18 Aug 20">
+											<img class="card-img v-image ads-img " src="https://poorvasainik.com/images/front-page/articles/Special-Pension-under-95-of-Navy-Pension-Regulations-1964.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRof9XSVJUo_evIRk5-I9McgTujzZlPMvB56A';" alt="Poorvasainik Com Ex Servicemen Welfare Latest News Progress Report Navy Special Pension Cases As On 18 Aug 20">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Poorvasainik Com Ex Servicemen Welfare Latest News Progress Report Navy Special Pension Cases As On 18 Aug 20</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_MilitarySpouse1.jpg?itok=_Z72pqcw" data-lightbox="roadtrip" data-title="Explanation Of Divorced Military Spouse Benefits Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_MilitarySpouse1.jpg?itok=_Z72pqcw" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0D0IhbDAZyVxNIs2xA1O0SSEgzVTL0c5vQ';" alt="Explanation Of Divorced Military Spouse Benefits Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Explanation Of Divorced Military Spouse Benefits Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/10/survivors-pension.jpg" data-lightbox="roadtrip" data-title="2021 Survivors Pension Rates Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/10/survivors-pension.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF1Rvft7cy6qIdHJV54NPzIiPikj7DPzu1pg';" alt="2021 Survivors Pension Rates Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Survivors Pension Rates Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Vv8s0E19pHySLM" data-lightbox="roadtrip" data-title="Https Www Buttecounty Net Portals 11 Pensiongeneraleliginfo12 09 13 Pdf">
+											<img class="card-img v-image ads-img " src="Vv8s0E19pHySLM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSISPn_Ph8B8IGJv4xsKhKOZHJXl3LXJpmCmg';" alt="Https Www Buttecounty Net Portals 11 Pensiongeneraleliginfo12 09 13 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Buttecounty Net Portals 11 Pensiongeneraleliginfo12 09 13 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://forcespensionsociety.org/wp-content/uploads/2020/04/image-1.png" data-lightbox="roadtrip" data-title="How Good Is Your Pension Forces Pension Society">
+											<img class="card-img v-image ads-img " src="https://forcespensionsociety.org/wp-content/uploads/2020/04/image-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQApCClSw1BwDupMXf21DdQTqhFdtxCSTjFcA';" alt="How Good Is Your Pension Forces Pension Society">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Good Is Your Pension Forces Pension Society</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://images05.military.com/sites/default/files/styles/full/public/2020-11/Uniformed%20Services%20Former%20Spouse%20Protection%20Act.jpg?itok=lrkVcgre" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQApCClSw1BwDupMXf21DdQTqhFdtxCSTjFcA';" alt="How Good Is Your Pension Forces Pension Society">
+										<div class="card-body">
+						<h3 class="h5"><b>SBP coverage costs 65 percent of the base covered amount.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Navy spouse pension</strong>. 
+								
+																	As of 2011 this benefit pays 1154 per month to the surviving spouse. 
+																	You need to be over State Pension age to claim extra payments from your husband wife or civil partners State Pension. 
+																	To award the spouse 50 of the military retired pay the court order would read as follows. 
+																	However with Pension Sharing and Pension Offsetting this is not the case. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A world class pension scheme for your military service. 
+																	The base amount begins at a minimum of 300. 
+																	So for example if your spouses full military retirement pay is 4000 per month and he elects to use his full retirement pay in the Survivor Benefits Plan you receive 55 percent or 2200 per month upon his death. 
+																	SBP can provide income to a spouse or former spouse with or without children children only or a third party called an insured interest. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A state court can award a portion of the disposable military retired pay to the spouse even if the marriage lasted less than a year. 
+																	Pension attachment is usually not very popular as the pension holder has control of when it is drawn down and what amount is taken as a lump sum. 
+																	If you are a retiree you need to give serious thought. 
+																	In the old days of Pension Earmarking it was the case that if either spouse remarried the earmarking order became null and void. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your spouse will receive monthly survivor annuity checks for life provided heshe does not remarry before age 55. 
+																	In 1982 Congress passed the Uniformed Services Former Spouse Protection Act which allows state courts to treat disposable retired pay either as property solely of the member or as property of the. 
+																	From 1 April 2015 all survivors pensions awarded to armed forces spouses and civil partners will be for life. 
+																	What you get and how you claim will depend on whether you reached State. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your income will probably change after the death of your husband wife or civil partner. 
+																	A monthly death pension may also be available to spouses with low-income if the service member served active-duty during war time or had a service-related disability and was not dishonorably discharged. 
+																	Those already in receipt of a survivors pension will be entitled to keep their. 
+																	This means that the surviving spouse will be left without a substantial income source. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It depends on whether your spouse chose a monthly payout based solely on hisher life expectancy or a monthly payout that continues through your life - that is the joint and survivor. 
+																	Being prepared includes knowing your military spouse benefits and where to find them as you navigate your way through the military community. 
+																	Learn to use your GI Bill. 
+																	Both Pension Sharing and Pension Offsetting enable a clean break divorce and are not affected by subsequent marriages. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The spouse shall receive 50 of the marital share of the service members disposable retired pay. 
+																	The marital share is a fraction the numerator is 216 months of marriage during the service members creditable military service divided by the total number of months of the members creditable military service. 
+																	As the spouse of a military retiree you may be eligible for. 
+																	When a military retiree dies their retirement pay stops. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whether you have a Medal of Honor pension survivors or veterans. 
+																	If you get extra money from pensions annuities benefits or an inheritance you may need to pay more tax. 
+																	A share of the pension holders pension is allocated to the spouse and when the pension is drawn down the spouse will receive a percentage of the lump sum and the monthly income. 
+																	If you want to claim for a former spouse pension credit payment please complete and return this form by post. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Getting the help youre entitled to. 
+																	That is not true. 
+																	When a member of the armed forces reaches their retirement age they receive one of the most generous pensions available in the UK. 
+																	Military Spouse Benefits The military life can be an exciting adventure for spouses as long as youre prepared. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your spouse will receive a monthly survivor annuity check of 55 of your retirement pay or the lesser amount that you designate as your base amount of coverage. 
+																	The retiring service member can select to cover up to 55 percent of his or her retirement pay with SBP coverage. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="gtWoosyur11IhM" data-lightbox="roadtrip" data-title="Https Www Csc Gov Au Media Files Militarysuper Forms Milsop Spouse Of A Deceased Pensioner Reversionary Pension Application Form Pdf">
+											<img class="card-img v-image ads-img " src="gtWoosyur11IhM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8nMtDDebFJekiMhOb2wH_qzDEIEmJWPQ2lA';" alt="Https Www Csc Gov Au Media Files Militarysuper Forms Milsop Spouse Of A Deceased Pensioner Reversionary Pension Application Form Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Csc Gov Au Media Files Militarysuper Forms Milsop Spouse Of A Deceased Pensioner Reversionary Pension Application Form Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://batsonnolan.com/wp-content/uploads/2019/10/divorce-words3_640-3.jpg" data-lightbox="roadtrip" data-title="Ex Wife Entitled To Military Pension If Remarries Batson Nolan Plc">
+											<img class="card-img v-image ads-img " src="https://batsonnolan.com/wp-content/uploads/2019/10/divorce-words3_640-3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlQQlI5Xi3c34Qstfl6VItuLsq9HIicE-SEA';" alt="Ex Wife Entitled To Military Pension If Remarries Batson Nolan Plc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ex Wife Entitled To Military Pension If Remarries Batson Nolan Plc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wiserwomen.org/wp-content/uploads/2018/04/widowhood-FSL-graphic.jpg" data-lightbox="roadtrip" data-title="Rights Of Surviving Spouses Wiser Women">
+											<img class="card-img v-image ads-img " src="https://www.wiserwomen.org/wp-content/uploads/2018/04/widowhood-FSL-graphic.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo6g5SBtLa14hQhbaiJj7iSdSEW6jTGhapYg';" alt="Rights Of Surviving Spouses Wiser Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rights Of Surviving Spouses Wiser Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.familylawpartners.co.uk/wp-content/uploads/2016/03/shutterstock_222603916.jpg" data-lightbox="roadtrip" data-title="Armed Forces Pensions On Divorce Part 1 Family Law Partners">
+											<img class="card-img v-image ads-img " src="https://www.familylawpartners.co.uk/wp-content/uploads/2016/03/shutterstock_222603916.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8eeD9fOCEIjeCtfip7tw77fSwmYP0WxRunQ';" alt="Armed Forces Pensions On Divorce Part 1 Family Law Partners">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armed Forces Pensions On Divorce Part 1 Family Law Partners</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.harrisonbrook.co.uk/wp-content/uploads/2019/11/screenshot-www.mnopf_.co_.uk-2019.11.20-16_56_11-1.png" data-lightbox="roadtrip" data-title="Merchant Navy Officers Pension Fund Harrison Brook">
+											<img class="card-img v-image ads-img " src="https://www.harrisonbrook.co.uk/wp-content/uploads/2019/11/screenshot-www.mnopf_.co_.uk-2019.11.20-16_56_11-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7iAzrQNGQZFKazi1Qge1GoTxxWg_A6edGyw';" alt="Merchant Navy Officers Pension Fund Harrison Brook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Merchant Navy Officers Pension Fund Harrison Brook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images05.military.com/sites/default/files/styles/full/public/2020-11/Uniformed%20Services%20Former%20Spouse%20Protection%20Act.jpg?itok=lrkVcgre" data-lightbox="roadtrip" data-title="Uniformed Services Former Spouse Protection Act Military Com">
+											<img class="card-img v-image ads-img " src="https://images05.military.com/sites/default/files/styles/full/public/2020-11/Uniformed%20Services%20Former%20Spouse%20Protection%20Act.jpg?itok=lrkVcgre" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR26di7_go7PpxHHeRtSDHMNiqqJeyIZt-TMQ';" alt="Uniformed Services Former Spouse Protection Act Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uniformed Services Former Spouse Protection Act Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/a8/67/afa8677881889fc606e41aaba24713f5.png" data-lightbox="roadtrip" data-title="Retiring On An Enlisted Military Pension Military Dollar Military Retirement Retirement Planning Finance Military Spouse Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/a8/67/afa8677881889fc606e41aaba24713f5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmnUNEJJ_kDYPWMF4eVcEjmml7hGwbZ7xylQ';" alt="Retiring On An Enlisted Military Pension Military Dollar Military Retirement Retirement Planning Finance Military Spouse Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Retiring On An Enlisted Military Pension Military Dollar Military Retirement Retirement Planning Finance Military Spouse Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/Veteran%203.jpg?itok=mmPlH0bd" data-lightbox="roadtrip" data-title="Calculation Of Military Retirement Pay Shares Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/Veteran%203.jpg?itok=mmPlH0bd" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIOD4H4NSDb5ZTQmLLbtIwZpAmXXNer1RF-g';" alt="Calculation Of Military Retirement Pay Shares Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Calculation Of Military Retirement Pay Shares Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://poorvasainik.com/images/front-page/articles/latest_pcda_circular.jpg" data-lightbox="roadtrip" data-title="Poorvasainik Com Ex Servicemen Welfare Latest News Implementation Of Hon Ble Supreme Court Order Grant Of Special Pension Under Regulation 95 Of Navy">
+											<img class="card-img v-image ads-img " src="https://poorvasainik.com/images/front-page/articles/latest_pcda_circular.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYB3k6S79MJecnOwTh-RnVj8erMzXI5qXqw';" alt="Poorvasainik Com Ex Servicemen Welfare Latest News Implementation Of Hon Ble Supreme Court Order Grant Of Special Pension Under Regulation 95 Of Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Poorvasainik Com Ex Servicemen Welfare Latest News Implementation Of Hon Ble Supreme Court Order Grant Of Special Pension Under Regulation 95 Of Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ea/8d/f8/ea8df841cc35022379a0740514d47d84.jpg" data-lightbox="roadtrip" data-title="Should You Continue Serving To Earn A Military Retirement The Golden Albatross Might Help You Military Retirement Military Spouse Blog Military Retirement Pay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ea/8d/f8/ea8df841cc35022379a0740514d47d84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXzKGBBkcfwCvM6X7srurCLmJG6uWx6qkrog';" alt="Should You Continue Serving To Earn A Military Retirement The Golden Albatross Might Help You Military Retirement Military Spouse Blog Military Retirement Pay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should You Continue Serving To Earn A Military Retirement The Golden Albatross Might Help You Military Retirement Military Spouse Blog Military Retirement Pay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="TA9DAY9a2lBbBM" data-lightbox="roadtrip" data-title="Https Www Indiannavy Nic In Navpen Sites Default Files Whatsnewfiles Pension 20handbook 20 Pdf">
+											<img class="card-img v-image ads-img " src="TA9DAY9a2lBbBM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLoP58fHsRk0EulAd80oAkozTT1kB-wi-1QQ';" alt="Https Www Indiannavy Nic In Navpen Sites Default Files Whatsnewfiles Pension 20handbook 20 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Indiannavy Nic In Navpen Sites Default Files Whatsnewfiles Pension 20handbook 20 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/e1/a1/20e1a16af64f46a8e18682ef809d52d4.png" data-lightbox="roadtrip" data-title="Retiring On An Officer S Pension Jane S Family Of Four Military Dollar Pensions Military Retirement Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/e1/a1/20e1a16af64f46a8e18682ef809d52d4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyY2KoLz0o38u_QbnNoWNDpj2WjGvnO1U3sQ';" alt="Retiring On An Officer S Pension Jane S Family Of Four Military Dollar Pensions Military Retirement Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Retiring On An Officer S Pension Jane S Family Of Four Military Dollar Pensions Military Retirement Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="paNZCFyESRHoPM" data-lightbox="roadtrip" data-title="Https Www Csc Gov Au Media Files Militarysuper Forms Assoc Pens Application For An Associate Pension By The Former Spouse Of A Militarysuper Pensioner Pdf">
+											<img class="card-img v-image ads-img " src="paNZCFyESRHoPM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSINrV9MSpaJ5csTdztW8p0ch_PYgovD59kzw';" alt="Https Www Csc Gov Au Media Files Militarysuper Forms Assoc Pens Application For An Associate Pension By The Former Spouse Of A Militarysuper Pensioner Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Csc Gov Au Media Files Militarysuper Forms Assoc Pens Application For An Associate Pension By The Former Spouse Of A Militarysuper Pensioner Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veteran-spouse-benefits-for-burial.html">Veteran Spouse Benefits For Burial</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-remarried-widows.html">Veterans Benefits Remarried Widows</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-spousal-support.html">Veterans Affairs Spousal Support</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-spouse-aid-and-assistance.html">Veterans Benefits Spouse Aid And Assistance</a></li>
+													<li class="list-group-item"><a href="/veteran-survivor-benefits-for-spouse.html">Veteran Survivor Benefits For Spouse</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-for-spouses-of-deceased.html">Veterans Benefits For Spouses Of Deceased</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-records-dd214.html">Veterans Administration Records Dd214</a></li>
+													<li class="list-group-item"><a href="/veteran-spouse-death-benefit.html">Veteran Spouse Death Benefit</a></li>
+													<li class="list-group-item"><a href="/veteran-dependent-insurance.html">Veteran Dependent Insurance</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-medical-records.html">Veterans Administration Medical Records</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-burial-records.html">Veterans Administration Burial Records</a></li>
+													<li class="list-group-item"><a href="/veteran-spouse-college-scholarships.html">Veteran Spouse College Scholarships</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-divorce-rights.html">Veterans Benefits Divorce Rights</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-military-records.html">Veterans Administration Military Records</a></li>
+													<li class="list-group-item"><a href="/veteran-records-national-archives.html">Veteran Records National Archives</a></li>
+													<li class="list-group-item"><a href="/veteran-dependent-loan-forgiveness.html">Veteran Dependent Loan Forgiveness</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-death-records.html">Veterans Administration Death Records</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-for-elderly-spouses.html">Veterans Benefits For Elderly Spouses</a></li>
+													<li class="list-group-item"><a href="/veteran-world-running-records.html">Veteran World Running Records</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-spouse-benefits-assisted-living.html">Veterans Administration Spouse Benefits Assisted Living</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

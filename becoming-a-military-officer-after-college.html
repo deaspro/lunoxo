@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Becoming A Military Officer After College - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Becoming A Military Officer After College",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/60/76/37/607637afee85529b8b357a365b94f171.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=becoming+a+military+officer+after+college",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Becoming A Military Officer After College</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Unlike enlisting becoming a military officer requires extra training education or expertise. In exchange for increased responsibility officers receive superior benefits and excellent credentials valued by both military and civilian employers. Hello Im really interested in becoming an officer in the US military after I graduate from college. <br>				
+			</p>
+										<a class="badge badge-success" href="/military-spouse-appreciation-day-message.html">military spouse appreciation day message</a>
+											<a class="badge badge-dark" href="/military-spouse-appreciation-day-pictures.html">military spouse appreciation day pictures</a>
+											<a class="badge badge-primary" href="/military-scholarships-for-veterans.html">military scholarships for veterans</a>
+											<a class="badge badge-dark" href="/military-scholarships-for-engineering-students.html">military scholarships for engineering students</a>
+											<a class="badge badge-warning" href="/military-scholarships-for-foreigners.html">military scholarships for foreigners</a>
+											<a class="badge badge-dark" href="/military-scholarships-for-masters-programs.html">military scholarships for masters programs</a>
+											<a class="badge badge-warning" href="/military-service-records-canada-ww2.html">military service records canada ww2</a>
+											<a class="badge badge-danger" href="/military-service-records-national-archives.html">military service records national archives</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to visit the right blog.  Our site provides you with hints for seeing the highest quality video and image content, hunt and locate more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this video for you to view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/52/ea/1452eab85f355a07b12509e7d1dfa4df.png" data-lightbox="roadtrip" data-title="7 Things I Wish I Knew Before I Decided To Join The Military In 2020 Joining The Military Army Basic Training Rotc Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/52/ea/1452eab85f355a07b12509e7d1dfa4df.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkeefH1d-EqlZmeDLNAfVhvSqqmMn54_HChg';" alt="7 Things I Wish I Knew Before I Decided To Join The Military In 2020 Joining The Military Army Basic Training Rotc Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Things I Wish I Knew Before I Decided To Join The Military In 2020 Joining The Military Army Basic Training Rotc Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/76/37/607637afee85529b8b357a365b94f171.png" data-lightbox="roadtrip" data-title="Enlisted Woman In 2021 Rotc Grants For College Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/76/37/607637afee85529b8b357a365b94f171.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbb1vTbns3zfbn-puLGU50l6MkDzH1-utJhQ';" alt="Enlisted Woman In 2021 Rotc Grants For College Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Enlisted Woman In 2021 Rotc Grants For College Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/4a/63/194a63c94a0fdc9ddb3b5dbf1ed3dd90.png" data-lightbox="roadtrip" data-title="I Ve Officially Graduated Air Force Officer Training School And Commissioned As A 2nd Lieutena Air Force Nurse Air Force Basic Training Officer Training School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/4a/63/194a63c94a0fdc9ddb3b5dbf1ed3dd90.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEJ0S1J1L4Sd1tf2L0q0jD46ufU78NYTK3RA';" alt="I Ve Officially Graduated Air Force Officer Training School And Commissioned As A 2nd Lieutena Air Force Nurse Air Force Basic Training Officer Training School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Ve Officially Graduated Air Force Officer Training School And Commissioned As A 2nd Lieutena Air Force Nurse Air Force Basic Training Officer Training School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/6e/02/456e02f9fb0d3a23d90e1da45bab5ef8.jpg" data-lightbox="roadtrip" data-title="Meet The Army S First Female Infantry Officer Army Rangers Military Women Infantry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/6e/02/456e02f9fb0d3a23d90e1da45bab5ef8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWtK2VdZRdc9WYtGWFvLkYgACgHjL1xP3qdg';" alt="Meet The Army S First Female Infantry Officer Army Rangers Military Women Infantry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet The Army S First Female Infantry Officer Army Rangers Military Women Infantry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e0/7e/98/e07e9891b5c7415e2561597374c19461.jpg" data-lightbox="roadtrip" data-title="Air Force Rotc Reserve Officer Training Corps Is A Program Offered During College For Those Aspiring To Join Th Rotc Reserve Officer Training Corps Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e0/7e/98/e07e9891b5c7415e2561597374c19461.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXDpGral_skI4z4ZaUS6e4OAipVftuCA81kA';" alt="Air Force Rotc Reserve Officer Training Corps Is A Program Offered During College For Those Aspiring To Join Th Rotc Reserve Officer Training Corps Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Rotc Reserve Officer Training Corps Is A Program Offered During College For Those Aspiring To Join Th Rotc Reserve Officer Training Corps Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/14/16/791416eb478d3b97b07901b11981a30e.png" data-lightbox="roadtrip" data-title="Army Officers Must Perform Their Duties With Fairness Patience And Respect They Must Obtain A Degree Before Attending Extensi Military Training Army Officer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/14/16/791416eb478d3b97b07901b11981a30e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT-LTUYVXfZQlw-U6mLLgEqcksf_2AZq1aJw';" alt="Army Officers Must Perform Their Duties With Fairness Patience And Respect They Must Obtain A Degree Before Attending Extensi Military Training Army Officer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Officers Must Perform Their Duties With Fairness Patience And Respect They Must Obtain A Degree Before Attending Extensi Military Training Army Officer</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/45/6e/02/456e02f9fb0d3a23d90e1da45bab5ef8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT-LTUYVXfZQlw-U6mLLgEqcksf_2AZq1aJw';" alt="Army Officers Must Perform Their Duties With Fairness Patience And Respect They Must Obtain A Degree Before Attending Extensi Military Training Army Officer">
+										<div class="card-body">
+						<h3 class="h5"><b>This 12-week course includes two phases.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Becoming a military officer after college</strong>. 
+								
+																	Expand the options below to explore the different paths to becoming an officer. 
+																	Officer Candidate School After nine weeks of basic training a college graduate is sent to Officer Candidate School. 
+																	Aged between 18 and 28 years and 11 months although some exceptions may apply meet the army nationality and residency requirements pass a full army medical. 
+																	The Paths to Becoming an Officer If youre interested in serving as an officer you have five options. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Those in pursuit of a degree may be able to become part of an officer training program while they attend college such as ROTC. 
+																	If you choose this career path you have a chance to make a difference in peoples lives and contribute to the greater good. 
+																	Individuals who have completed a bachelors degree prior to enlisting get the chance to become a military officer after completion of Officer Candidate School or Officer Training School and basic training. 
+																	Individuals who want to become a commissioned officer in any branch of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There is also a big catch that isnt known until its almost too lateBe sure to. 
+																	Military Academy at West Point you will become an Officer after completing four years of college. 
+																	What I want to know. 
+																	Officers are managers or specialized in fields that require professional degrees eg doctors lawyers and chaplains. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The path to becoming an Army Officer is vastly different than enlisted. 
+																	Becoming a Military Officer after college. 
+																	From what I understand college graduates are guaranteed officer rankingsSecond Lt I believeHowever Id have to apply to a military academy upon graduation. 
+																	Its the kind of career that provides an unparalleled sense of duty patriotism and honor leading to greater confidence and self-esteem. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Attend a senior military college or service academy Enroll at a traditional college or university with a Reserve Officer Training Corps ROTC program. 
+																	Officers lead and supervise platoons of 15 to 40 service members and they are essential to the structure and function of the military. 
+																	The first teaches the leadership skills. 
+																	To join as an officer you must have a 4-year degree. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you choose to become an Officer through the Army Reserve Officers Training Corps ROTC or the US. 
+																	Regular Officer Training at Royal Military Academy Sandhurst lasts for 44 weeks broken down into three 14-week terms. 
+																	Graduates rank as ensign. 
+																	Armed Forces must have a bachelors degree from a public or private university or from a US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Individuals who aspire to be military police would be well advised to prepare. 
+																	Enlisted midshipmen who want to attend Officer Candidate School must have a bachelors degree which is12 weeks long and done at the Naval Station in Newport RI. 
+																	To become an officer you will need to meet the following eligibility criteria. 
+																	Enlisting as a College Graduate Instead of Joining as an Officer While most college graduates think their best path forward to a career in the military is to join as an officer some want a different experience. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These are just a few of the many reasons for joining the military after college. 
+																	Officer training provides the most common path but the military does permit graduates to enter as enlisted members. 
+																	There are limited opportunities for senior Enlisted members to become Officers or to serve as Warrant Officers Limited Duty Officers or in another capacity. 
+																	Between each term there are adventurous training exercises and 2-3 weeks of leave. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Term One focuses on basic military skills fitness and decision making. 
+																	Starting with a degree in hand when you enlist means you just have to complete Officer Candidate School or Officer Training School and basic training to become a military officer. 
+																	Becoming a military officer isnt nearly as difficult if you join the military with a bachelors degree. 
+																	Becoming a member of the military police will require meeting certain metrics and undergoing intensive training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Officers either enter the Military after completing a four-year college degree or they receive officer training through enlisted service. 
+																	Becoming an Officer in the Military After College While its common knowledge that basic training sets recruits on the pathway toward becoming an enlisted service member those with a desire for leadership opportunities and a bachelors degree can take another route into a military career as a commissioned officer. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cc/b8/49/ccb849a2637bff080f4467982ce364a8.jpg" data-lightbox="roadtrip" data-title="How Military Basic Training Can Help You Succeed In College The Skills And Traits You Learn As While Serving In The Education College Education Future Career">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cc/b8/49/ccb849a2637bff080f4467982ce364a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmS6CfEhB_TXxJvN_-7remhykPnEt-PzpJTQ';" alt="How Military Basic Training Can Help You Succeed In College The Skills And Traits You Learn As While Serving In The Education College Education Future Career">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Military Basic Training Can Help You Succeed In College The Skills And Traits You Learn As While Serving In The Education College Education Future Career</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/44/cb/3e44cb791c55bb1c1850419ceaa0dbbd.png" data-lightbox="roadtrip" data-title="Salary And Compensation Today S Military Military Army Reserve Joining The Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/44/cb/3e44cb791c55bb1c1850419ceaa0dbbd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPryT6m5ktewEbg686noqJiz2Ynk1qvoupWA';" alt="Salary And Compensation Today S Military Military Army Reserve Joining The Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salary And Compensation Today S Military Military Army Reserve Joining The Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/f4/af/90f4afbd59ff287c3e3afed308c4c01b.jpg" data-lightbox="roadtrip" data-title="If You Re Heading Off To College Or Currently In College The Rotc Program Let S You Commission As An Officer When You Gra Build Your Resume Rotc After College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/f4/af/90f4afbd59ff287c3e3afed308c4c01b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShYZFfSyS4WZdsRRu5QCRBau_TyRWqDIR-og';" alt="If You Re Heading Off To College Or Currently In College The Rotc Program Let S You Commission As An Officer When You Gra Build Your Resume Rotc After College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Re Heading Off To College Or Currently In College The Rotc Program Let S You Commission As An Officer When You Gra Build Your Resume Rotc After College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/9f/98/529f981ae4efdd932d28d0eaf96881f8.jpg" data-lightbox="roadtrip" data-title="Is Military College Right For Your Student Parenting For College Student College Prep College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/9f/98/529f981ae4efdd932d28d0eaf96881f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg_aCH67lv_6Ybev_T84DwMQtPXqOW9zSrdw';" alt="Is Military College Right For Your Student Parenting For College Student College Prep College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Is Military College Right For Your Student Parenting For College Student College Prep College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/2b/97/4f2b97cdbbf6465634f06794e00eef91.jpg" data-lightbox="roadtrip" data-title="8 Things Every Graduate Should Do After Basic Training Life Insurance Beneficiary Financial Wellness Basic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/2b/97/4f2b97cdbbf6465634f06794e00eef91.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVB_q8aI6c7_RoUNrh7VroGNL0pPUKPwGaMw';" alt="8 Things Every Graduate Should Do After Basic Training Life Insurance Beneficiary Financial Wellness Basic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Things Every Graduate Should Do After Basic Training Life Insurance Beneficiary Financial Wellness Basic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/da/9e/d1da9ef7f63f2200fff800bbb90a8e48.jpg" data-lightbox="roadtrip" data-title="Pin On My Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/da/9e/d1da9ef7f63f2200fff800bbb90a8e48.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgg1PgwuhtylyaUxFVD-X4sUFrvQwJYFwpjw';" alt="Pin On My Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/c4/72/8fc47222e291c5fa07f6ebdd91dcd8fc.png" data-lightbox="roadtrip" data-title="Switching Careers In The Us Navy Airman To Mom In 2020 Joining The Navy Navy Military Women Reserve Officer Training Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/c4/72/8fc47222e291c5fa07f6ebdd91dcd8fc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP_d1NUaOHiKKqdQTa5zlOzDjEBbBrqVGGsA';" alt="Switching Careers In The Us Navy Airman To Mom In 2020 Joining The Navy Navy Military Women Reserve Officer Training Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Switching Careers In The Us Navy Airman To Mom In 2020 Joining The Navy Navy Military Women Reserve Officer Training Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/f5/78/c8f578a49c8d2d4e99a9c819b101b174.jpg" data-lightbox="roadtrip" data-title="Mtis At Ots Officer Training School Basic Military Training Military Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/f5/78/c8f578a49c8d2d4e99a9c819b101b174.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiLG27f1PmRGAlZfYdSg87b8B28Ek4dEYpiw';" alt="Mtis At Ots Officer Training School Basic Military Training Military Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mtis At Ots Officer Training School Basic Military Training Military Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/92/f1/db92f152b898b508327a1899b2f7d41b.jpg" data-lightbox="roadtrip" data-title="Army Certifies 1st Woman Combat Engineer Women In Combat Military Women Military Draft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/92/f1/db92f152b898b508327a1899b2f7d41b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuRq7dvOlVChxuP2MLmW3D7OjZAX4EQjKWBw';" alt="Army Certifies 1st Woman Combat Engineer Women In Combat Military Women Military Draft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Certifies 1st Woman Combat Engineer Women In Combat Military Women Military Draft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/85/0a/1d850abb422a09987c719d5d29af7c81.jpg" data-lightbox="roadtrip" data-title="Pin On The Sauce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/85/0a/1d850abb422a09987c719d5d29af7c81.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQua7mG7TAoHNHR7s1C_xsKWRMR6wPHMwnjTg';" alt="Pin On The Sauce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On The Sauce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/26/d7/1b26d7be90c7a41f6708a1592b218187.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/26/d7/1b26d7be90c7a41f6708a1592b218187.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_6bcCnsxfBB5Cu09AQ1ZJGm5fnsy-6UHgfA';" alt="Pin On Guard Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/80/31/758031294465b7024fe4c667abbe2766.jpg" data-lightbox="roadtrip" data-title="Serbian Military Officer In Dress Uniform Military Girl Military Women Army Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/80/31/758031294465b7024fe4c667abbe2766.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcjgk2TtDX1wGGt13zGFm4DvVtGbn2H32tpw';" alt="Serbian Military Officer In Dress Uniform Military Girl Military Women Army Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Serbian Military Officer In Dress Uniform Military Girl Military Women Army Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/22/16/022216e5652eb9bedb1ace804fcc3194.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/22/16/022216e5652eb9bedb1ace804fcc3194.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0dTG59Fuo4ErWwQdS-dZzAFH8OM9PGfkUeA';" alt="Pin On Guard Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/if-i-test-positive-for-chlamydia-can-my-partner-tested-negative.html">If I Test Positive For Chlamydia Can My Partner Tested Negative</a></li>
+													<li class="list-group-item"><a href="/i-love-my-wife-quotes-urdu.html">I Love My Wife Quotes Urdu</a></li>
+													<li class="list-group-item"><a href="/human-resources-specialist-army.html">Human Resources Specialist Army</a></li>
+													<li class="list-group-item"><a href="/human-resources-specialist-army-asvab-score.html">Human Resources Specialist Army Asvab Score</a></li>
+													<li class="list-group-item"><a href="/human-resources-specialist-for-the-military.html">Human Resources Specialist For The Military</a></li>
+													<li class="list-group-item"><a href="/i-feel-like-my-wife-and-i-are-drifting-apart.html">I Feel Like My Wife And I Are Drifting Apart</a></li>
+													<li class="list-group-item"><a href="/human-resources-officer-military-job-description.html">Human Resources Officer Military Job Description</a></li>
+													<li class="list-group-item"><a href="/humana-military-human-resources-phone-number.html">Humana Military Human Resources Phone Number</a></li>
+													<li class="list-group-item"><a href="/idme-military-spouse.html">Idme Military Spouse</a></li>
+													<li class="list-group-item"><a href="/human-resources-military-resume.html">Human Resources Military Resume</a></li>
+													<li class="list-group-item"><a href="/i-love-my-husband-picture-quotes.html">I Love My Husband Picture Quotes</a></li>
+													<li class="list-group-item"><a href="/human-resources-specialist-in-the-army.html">Human Resources Specialist In The Army</a></li>
+													<li class="list-group-item"><a href="/human-resources-officer-salary-army.html">Human Resources Officer Salary Army</a></li>
+													<li class="list-group-item"><a href="/human-resources-us-army.html">Human Resources Us Army</a></li>
+													<li class="list-group-item"><a href="/husband-my-life-quotes.html">Husband My Life Quotes</a></li>
+													<li class="list-group-item"><a href="/i-feel-like-my-spouse-hates-me.html">I Feel Like My Spouse Hates Me</a></li>
+													<li class="list-group-item"><a href="/husband-and-wife-in-the-army.html">Husband And Wife In The Army</a></li>
+													<li class="list-group-item"><a href="/i-love-my-husband-malayalam-quotes.html">I Love My Husband Malayalam Quotes</a></li>
+													<li class="list-group-item"><a href="/humana-military-tricare-resources.html">Humana Military Tricare Resources</a></li>
+													<li class="list-group-item"><a href="/i-love-my-wife-because-quotes.html">I Love My Wife Because Quotes</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

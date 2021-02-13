@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is A High Functioning Anxiety - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is A High Functioning Anxiety",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/0c/22/fb/0c22fbacb97129bbb484ec24bd5b7086.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+a+high+functioning+anxiety",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is A High Functioning Anxiety</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Generally a person who we might classify as having high-functioning anxiety is ambitious perfectionistic and set in their way of doing things says Khazan. High-functioning anxiety is not an official diagnosis but it is something many people identify with and something more therapists are starting to share with their clients. What is high functioning anxiety. <br>				
+			</p>
+										<a class="badge badge-success" href="/army-military-human-resource-record-is-comprised-of-4-pieces.html">army military human resource record is comprised of 4 pieces</a>
+											<a class="badge badge-danger" href="/army-human-resources-regulations.html">army human resources regulations</a>
+											<a class="badge badge-primary" href="/army-husband-wife-love.html">army husband wife love</a>
+											<a class="badge badge-secondary" href="/army-husband-and-wife-pic.html">army husband and wife pic</a>
+											<a class="badge badge-dark" href="/army-man-and-wife-photos.html">army man and wife photos</a>
+											<a class="badge badge-warning" href="/army-jungle-hats.html">army jungle hats</a>
+											<a class="badge badge-secondary" href="/army-human-resources-command-phone-number.html">army human resources command phone number</a>
+											<a class="badge badge-secondary" href="/army-medical-support-officer.html">army medical support officer</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to visit the ideal site.  Our website gives you suggestions for viewing the maximum quality video and picture content, hunt and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, so we recommend this video that you see.  It is also possible to contribute to supporting this website by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/f6/80/54f68049280387f08da474cfd0dce119.png" data-lightbox="roadtrip" data-title="Pin On Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/f6/80/54f68049280387f08da474cfd0dce119.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpv5JlQyzpQVTpYq-pVI3B_H_ucPnh3j-c2Q';" alt="Pin On Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/05/e7/dc05e70ffe4545aafe5348d1671911b4.jpg" data-lightbox="roadtrip" data-title="Pin On High Functioning Anxiety">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/05/e7/dc05e70ffe4545aafe5348d1671911b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMi1Pr483kiUkeIh2jllHWL93XLJgz0hBNXw';" alt="Pin On High Functioning Anxiety">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On High Functioning Anxiety</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/29/02/942902515e4aea79318ae32ef6450de8.png" data-lightbox="roadtrip" data-title="Pin On Health Beauty">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/29/02/942902515e4aea79318ae32ef6450de8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0D9v0Wie9kjeWFLLyN_Evp4ESRU4NgSpR_Q';" alt="Pin On Health Beauty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health Beauty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/45/2c/b9452c2b1a4984d106bb9c672ee70e27.jpg" data-lightbox="roadtrip" data-title="Pin On Mental Health Matters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/45/2c/b9452c2b1a4984d106bb9c672ee70e27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBf3-mFJcjQT_TqTXejvHygpOtzW2z5IGN2A';" alt="Pin On Mental Health Matters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mental Health Matters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/f2/8b/b0f28b57e11dd85c7d5fa1f925a9a6c0.jpg" data-lightbox="roadtrip" data-title="Pin On I Am Me">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/f2/8b/b0f28b57e11dd85c7d5fa1f925a9a6c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIC7795leRx4Sspc0sbaHYlP6ER6hW1uQpVQ';" alt="Pin On I Am Me">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On I Am Me</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d8/54/7e/d8547e6bdc0ac3c2960b1ef659efb1e1.jpg" data-lightbox="roadtrip" data-title="Pin On Anxiety">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d8/54/7e/d8547e6bdc0ac3c2960b1ef659efb1e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-8gPKaCVtAL740CLR9eDiBVlzkNasLAikDA';" alt="Pin On Anxiety">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Anxiety</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/1a/07/2d/1a072de912956eea5b4e1b34ff766054.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-8gPKaCVtAL740CLR9eDiBVlzkNasLAikDA';" alt="Pin On Anxiety">
+										<div class="card-body">
+						<h3 class="h5"><b>People suffering from high-functioning anxiety tend to keep it hidden but that only deepens the stress and anxiety they experience and prevents healing from occurring.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is a high functioning anxiety</strong>. 
+								
+																	In essence high-functioning anxiety is a form of anxiety that drives someone to be hyper-productive or hyper-perfectionistic thereby yielding seemingly good results in the material and social world. 
+																	There is a new concerning trend on the rise called high-functioning anxiety. 
+																	But some people dont meet those challenges and pressures like others do. 
+																	In other words someone with high-functioning anxiety might experience symptoms like worrying a lot racing thoughts and losing sleep some of the time but she gets through life anyway. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	High-functioning anxiety isnt an official diagnosis rather its a term that describes people who live with persistent anxiety but function relatively well in different areas of their lives. 
+																	High-functioning anxiety is still a chronic. 
+																	High-functioning anxiety HFA is one of the most invisible anxiety disorders psychotherapist Lesley Shearer explains. 
+																	But it creates problems with anxiety that can be chronic and at least partially debilitating. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	High functioning anxiety HFA is a treatable condition affecting over 43 million Americans. 
+																	With at least 191 of the human population diagnosed with GAD millions might have developed high functioning anxiety. 
+																	High functioning anxiety is a form of anxiety where the person living with the condition can find themselves constantly looking for perfection in everything they do explains Nicky Lidbetter CEO. 
+																	High Functioning Anxiety is the term used to describe a person who suffers from an anxiety disorder but may not appear to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many people who have high functioning anxiety become quite successful while they grapple with their worries and fears. 
+																	For most of us anxiety is a normal healthy response to the rigors challenges and pressures of daily life. 
+																	But high-functioning anxiety is a little bit tougher to recognize mostly because those living with it appear to be fine. 
+																	Interestingly she explains that anxiety is often about feeling unsafe. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These are sometimes very successful people who unknowingly to their friends and family are driven by their anxiety to get things done. 
+																	Characteristics of people with high functioning anxiety that are often thought of as positive include. 
+																	We go indepth about this and how it can be resolved with the information we currently know of the topic. 
+																	High-Functioning Anxiety High-functioning anxiety is not a clinical disorder. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On the surface the person can seem calm and pulled together. 
+																	The hidden form of anxiety is called high functioning anxiety. 
+																	People suffering from high functioning anxiety appear to be thriving from all outside appearances. 
+																	While not an official diagnosis the term high-functioning as it relates to an anxiety disorderespecially generalized anxiety disorder GADis something many people who struggle with anxiety identify with. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Anxiety Anxiety disorders Busy busy culture GAD high-functioning anxiety Mental health Mental Illness Nervous Perfectionism Personalities Type A Writing and Expression 0 Related. 
+																	High functioning anxiety is an unrecognized mental health condition as its lumped into the same category as Generalized Anxiety Disorder GAD. 
+																	Inwardly the person can be driven by fear feels anxious and worries more often than not. 
+																	It can go on for months or years without being diagnosed or treated and to an individuals friends family and colleagues even themselves the symptoms can go unnoticed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But deep inside theyre not. 
+																	Its probably most closely related to Generalized Anxiety Disorder which affects 68 million adults in the US women being twice as likely to experience it as men. 
+																	Outgoing personality happy tells jokes smiles laughs Punctual arrive early for appointments 1 Proactive plan ahead for all possibilities Organized make lists or keep calendars 1. 
+																	They socialise go to work and meet their friends all the while suffering in silence. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However this is usually the exception. 
+																	This is when people suffering from anxiety go about their usual lives as if nothing is wrong. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/53/5a/e2535af6f35e21ce97e37a259fff9730.png" data-lightbox="roadtrip" data-title="Pin On Mental Health Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/53/5a/e2535af6f35e21ce97e37a259fff9730.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX1eVzI8IkA7I-nCEwUwpJUrhbtlPMz8-o5w';" alt="Pin On Mental Health Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mental Health Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/c5/70/f4c570130f4dbd5ad700ccb97f1b6f24.jpg" data-lightbox="roadtrip" data-title="Pin On Anxiety">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/c5/70/f4c570130f4dbd5ad700ccb97f1b6f24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvwpwY9Is_NrDTZEQxwKvqp2401ErYxHmlGg';" alt="Pin On Anxiety">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Anxiety</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/02/20/ae0220820e8ab26d20f20db2bb56a223.jpg" data-lightbox="roadtrip" data-title="Pin On Healing Ground">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/02/20/ae0220820e8ab26d20f20db2bb56a223.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiqHJT0CGDa9N_d7fyn-jsxgUo-ybEvKmPeA';" alt="Pin On Healing Ground">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Healing Ground</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0c/22/fb/0c22fbacb97129bbb484ec24bd5b7086.jpg" data-lightbox="roadtrip" data-title="Pin On Teach Me Life Life Lessons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0c/22/fb/0c22fbacb97129bbb484ec24bd5b7086.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJhHKZKVKdSqyxN6XSm9WYV32UvT5UMbMtEg';" alt="Pin On Teach Me Life Life Lessons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Teach Me Life Life Lessons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/29/5b/39295bc9425b612215ff9143042de78e.png" data-lightbox="roadtrip" data-title="Pin On My Blog Blessing Manifesting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/29/5b/39295bc9425b612215ff9143042de78e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBGj-MSGr4eJ1nAtXGcNxem_Whtv9VIywpKg';" alt="Pin On My Blog Blessing Manifesting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Blog Blessing Manifesting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/50/97/ae/5097ae5ee492bcff440e6dc12b54b495.jpg" data-lightbox="roadtrip" data-title="Acupuncture Can De Stress Stress Relief Ball Stress Relief Stress Relief Activities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/50/97/ae/5097ae5ee492bcff440e6dc12b54b495.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsuHIdIXqo-AzSiZRrNMVkFsl16Vk3Ma4C9Q';" alt="Acupuncture Can De Stress Stress Relief Ball Stress Relief Stress Relief Activities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Acupuncture Can De Stress Stress Relief Ball Stress Relief Stress Relief Activities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/65/bc/f865bc1343aa4f8a17b254ea1e09ef3c.png" data-lightbox="roadtrip" data-title="Pin On Adhd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/65/bc/f865bc1343aa4f8a17b254ea1e09ef3c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAlh1MDcvpIwPA438y_KoYTlccbjEKm3EH9Q';" alt="Pin On Adhd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Adhd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/68/5f/6c685f6b26640278ab8ade43539e71cc.png" data-lightbox="roadtrip" data-title="Pin On Personal Growth Quotes Group Board">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/68/5f/6c685f6b26640278ab8ade43539e71cc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyI4p1YTAkbEshuvYzIJ2PP5IbDqMbVOIT3w';" alt="Pin On Personal Growth Quotes Group Board">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Personal Growth Quotes Group Board</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/4a/26/b14a26fbe2b6db0b7992d7cf0b5508d0.jpg" data-lightbox="roadtrip" data-title="Pin On Projecten Om Te Proberen">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/4a/26/b14a26fbe2b6db0b7992d7cf0b5508d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq90_guCu5YXRxbLIrPzNK8QO4O97wBAST1A';" alt="Pin On Projecten Om Te Proberen">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Projecten Om Te Proberen</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/28/62/6d2862880b73c3ff84cd5e1522248a87.png" data-lightbox="roadtrip" data-title="Pin On Feminism And Social Justice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/28/62/6d2862880b73c3ff84cd5e1522248a87.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1UUUim_98bDX8wcep3glwoWX8uAZEAzf_vw';" alt="Pin On Feminism And Social Justice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Feminism And Social Justice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/07/2d/1a072de912956eea5b4e1b34ff766054.jpg" data-lightbox="roadtrip" data-title="Pin On Sw">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/07/2d/1a072de912956eea5b4e1b34ff766054.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-YzAkc5HcQMNwWSEpCHXM6L1QWZ-Z5C7omQ';" alt="Pin On Sw">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sw</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/ec/06/a4ec067be360f1a7f6c5c6dde8c12e61.jpg" data-lightbox="roadtrip" data-title="Stationery To Write The Perfect Thank You Note Effie S Paper Stress Relief Meditation How To Relieve Stress Ways To Relieve Stress">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/ec/06/a4ec067be360f1a7f6c5c6dde8c12e61.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSr0KnEc0JveYqBudYMfk0ZjRqE3OrFVkJ6Q';" alt="Stationery To Write The Perfect Thank You Note Effie S Paper Stress Relief Meditation How To Relieve Stress Ways To Relieve Stress">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stationery To Write The Perfect Thank You Note Effie S Paper Stress Relief Meditation How To Relieve Stress Ways To Relieve Stress</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/d9/35/43d9358b2e1cea2d58696ead5cd97420.jpg" data-lightbox="roadtrip" data-title="Pin On Quotes I Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/d9/35/43d9358b2e1cea2d58696ead5cd97420.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSggpVND6u1iIz4GNfV6DkFyARrcXAKMtMwMQ';" alt="Pin On Quotes I Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Quotes I Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/benefits-for-army-wives-uk.html">Benefits For Army Wives Uk</a></li>
+													<li class="list-group-item"><a href="/being-an-army-surgeon.html">Being An Army Surgeon</a></li>
+													<li class="list-group-item"><a href="/benefits-for-army-national-guard-veterans.html">Benefits For Army National Guard Veterans</a></li>
+													<li class="list-group-item"><a href="/becoming-a-navy-pilot-through-ocs.html">Becoming A Navy Pilot Through Ocs</a></li>
+													<li class="list-group-item"><a href="/australian-national-archives-war-service-records.html">Australian National Archives War Service Records</a></li>
+													<li class="list-group-item"><a href="/being-a-navy-squadron.html">Being A Navy Squadron</a></li>
+													<li class="list-group-item"><a href="/being-a-military-spouse-is.html">Being A Military Spouse Is</a></li>
+													<li class="list-group-item"><a href="/bachelors-degree-for-military-spouses.html">Bachelors Degree For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/being-a-navy-swo.html">Being A Navy Swo</a></li>
+													<li class="list-group-item"><a href="/benefits-for-dependents-of-retired-military.html">Benefits For Dependents Of Retired Military</a></li>
+													<li class="list-group-item"><a href="/benefits-for-ex-wife-of-military.html">Benefits For Ex Wife Of Military</a></li>
+													<li class="list-group-item"><a href="/being-a-navy-social-worker.html">Being A Navy Social Worker</a></li>
+													<li class="list-group-item"><a href="/being-a-nurse-as-a-military-spouse.html">Being A Nurse As A Military Spouse</a></li>
+													<li class="list-group-item"><a href="/become-army-ranger-sniper.html">Become Army Ranger Sniper</a></li>
+													<li class="list-group-item"><a href="/becoming-a-navy-pilot-reddit.html">Becoming A Navy Pilot Reddit</a></li>
+													<li class="list-group-item"><a href="/benefits-for-spouse-of-military.html">Benefits For Spouse Of Military</a></li>
+													<li class="list-group-item"><a href="/being-a-navy-seal-with-a-family.html">Being A Navy Seal With A Family</a></li>
+													<li class="list-group-item"><a href="/being-a-stay-at-home-military-wife.html">Being A Stay At Home Military Wife</a></li>
+													<li class="list-group-item"><a href="/being-a-military-wife-uk.html">Being A Military Wife Uk</a></li>
+													<li class="list-group-item"><a href="/australian-navy-wife-benefits.html">Australian Navy Wife Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

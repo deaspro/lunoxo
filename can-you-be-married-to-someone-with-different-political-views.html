@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Can You Be Married To Someone With Different Political Views - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Can You Be Married To Someone With Different Political Views",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/564x/27/b8/d2/27b8d2348e31794bddf9df676ca9d95c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=can+you+be+married+to+someone+with+different+political+views",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Can You Be Married To Someone With Different Political Views</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">You can use all the measured voices and positive words you want. You may have found this article by because youre looking for ideas on how to deal with a conservative boyfriend. Despite the medias concerns about race relations interracial marriages have been steadily rising for some time now. <br>				
+			</p>
+										<a class="badge badge-danger" href="/military-officer-hat.html">military officer hat</a>
+											<a class="badge badge-success" href="/military-pay-chart-for-dependents.html">military pay chart for dependents</a>
+											<a class="badge badge-danger" href="/military-pension-records-national-archives.html">military pension records national archives</a>
+											<a class="badge badge-info" href="/military-pay-chart-2019-enlisted-with-dependents.html">military pay chart 2019 enlisted with dependents</a>
+											<a class="badge badge-info" href="/military-pay-chart-with-spouse.html">military pay chart with spouse</a>
+											<a class="badge badge-dark" href="/military-museum-keswick-hours.html">military museum keswick hours</a>
+											<a class="badge badge-info" href="/military-records-destroyed-in-1973-fire.html">military records destroyed in 1973 fire</a>
+											<a class="badge badge-primary" href="/military-pension-spouse-benefits.html">military pension spouse benefits</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to visit the right site.  Our site provides you with suggestions for seeing the maximum quality video and image content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video for you to see.  It is also possible to bring about supporting this site by sharing videos and graphics that you like on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ba/2a/53/ba2a53b87dbb703ecd80ad7aa732a422.jpg" data-lightbox="roadtrip" data-title="How Couples With Different Political Views Can Survive An Election Year Relationship Best Relationship Bad Relationship">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ba/2a/53/ba2a53b87dbb703ecd80ad7aa732a422.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Hx1OSOp4I98-lz2jWv_R53-YjB2hlwV_Dg';" alt="How Couples With Different Political Views Can Survive An Election Year Relationship Best Relationship Bad Relationship">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Couples With Different Political Views Can Survive An Election Year Relationship Best Relationship Bad Relationship</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/27/b8/d2/27b8d2348e31794bddf9df676ca9d95c.jpg" data-lightbox="roadtrip" data-title="Relationsimply How Can Married Couples Fulfill Their Dreams Of Growing Old With You In 2020 Growing Old How Are You Feeling Grieving Process">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/27/b8/d2/27b8d2348e31794bddf9df676ca9d95c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv66cCrGL9I8Q3CM7eZh5bhBuvfowPCqvCmg';" alt="Relationsimply How Can Married Couples Fulfill Their Dreams Of Growing Old With You In 2020 Growing Old How Are You Feeling Grieving Process">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Relationsimply How Can Married Couples Fulfill Their Dreams Of Growing Old With You In 2020 Growing Old How Are You Feeling Grieving Process</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/27/9a/66/279a669ca3a2e1a1c67994aeb05d6fd4.jpg" data-lightbox="roadtrip" data-title="How Couples With Different Political Views Can Survive An Election Year Relationship Goals Relationship Experts Best Ways To Propose">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/27/9a/66/279a669ca3a2e1a1c67994aeb05d6fd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs7q6WZSA3uXfxz_lSoSpoNZSx4cjw-9hvVA';" alt="How Couples With Different Political Views Can Survive An Election Year Relationship Goals Relationship Experts Best Ways To Propose">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Couples With Different Political Views Can Survive An Election Year Relationship Goals Relationship Experts Best Ways To Propose</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/82/4a/c5824a100422590a9a8eda3b60b27162.png" data-lightbox="roadtrip" data-title="Pin On Healthy Relationships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/82/4a/c5824a100422590a9a8eda3b60b27162.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcOH6S0kKWLScA7g-McJwLk1d8idao8WlEgg';" alt="Pin On Healthy Relationships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Healthy Relationships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/68/b7/d368b743776e582705efa04995c49ab6.jpg" data-lightbox="roadtrip" data-title="2 Crucial Words For Handling Different Opinions In Marriage Max Lucado Quotes Opinion Quotes View Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/68/b7/d368b743776e582705efa04995c49ab6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScQ5DDjUMbvV4YmfS5m8DjhlXCyWUiFQyz-g';" alt="2 Crucial Words For Handling Different Opinions In Marriage Max Lucado Quotes Opinion Quotes View Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2 Crucial Words For Handling Different Opinions In Marriage Max Lucado Quotes Opinion Quotes View Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/86/41/c18641ce66c7826d057328690d03ee8f.png" data-lightbox="roadtrip" data-title="I Ve Completely Changed My Political Views Due To Your Multiple Facebook Posts Said No One Ever Funny Quotes Humor Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/86/41/c18641ce66c7826d057328690d03ee8f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoPiebzUeH2ksTX-cji4gLQjtD-MDhF2um6w';" alt="I Ve Completely Changed My Political Views Due To Your Multiple Facebook Posts Said No One Ever Funny Quotes Humor Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Ve Completely Changed My Political Views Due To Your Multiple Facebook Posts Said No One Ever Funny Quotes Humor Words</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/08/60/82/086082b575f62bdbd34e772b940baa60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoPiebzUeH2ksTX-cji4gLQjtD-MDhF2um6w';" alt="I Ve Completely Changed My Political Views Due To Your Multiple Facebook Posts Said No One Ever Funny Quotes Humor Words">
+										<div class="card-body">
+						<h3 class="h5"><b>Mismatched partisan pairs are fairly common.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Can you be married to someone with different political views</strong>. 
+								
+																	One thing my husband always did and does is defend me and my views or at least my right to have a different view without being labeled a racist or bigot or whatever it is. 
+																	So it depends you could have a fantastic marriage to someone with different and even opposite political views to you. 
+																	Can people with different political views make a relationship work. 
+																	Were not married yet but have been together long enough that all of our friends refer to us as married. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I think it depends on the subject how different the views are and of course the personalities of the couple themselves. 
+																	If You Are Married to a Trump Supporter Divorce Them. 
+																	It can be extremely difficult to compare political differences to other kinds of differences if you believe someones political views say a lot about the core of a person. 
+																	There can be differences but extreme ones will not end well. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However I genuinely feel that true love and feeling that superb love for another person can conquer those types of differences and that it shouldnt really matter as long as youre both able to overcome it. 
+																	Well leave out the further complication of my identity as a Nigerian third culture kid. 
+																	Before you read Jes relationship advice for couples with different political views remember that agreeing to disagree is the healthiest way to balance politics and love. 
+																	In fact there are likely quite a few people still married who have different political views. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All that being said I cannot deny the reality of potentially getting married to a non-Catholic or someone whose politics is drastically different from mine however much my fundamental values are labelless but include some views on the left right and center. 
+																	To answer this question I reached out to Julie Spira an online dating expert and author of Love in the Age of Trump. 
+																	You have gotten to know the ins and outs of their personality and by the time you say your I dos you can name their favorite movie. 
+																	According to a Pew Report in 2013 a record-high 12 of newlyweds married someone of a different raceLooking beyond newlyweds 63 of all marriages were between spouses of different races in 2013 up from less than 1 in 1970. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Yes she said sometimes that means shes forced to watch Fox News. 
+																	Dating Someone With Different Political Views Commit to These 5 Things and You Can Survive Dating Across Party Lines. 
+																	If dating someone. 
+																	It seems fair to say that people on different ends of the political. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cant imagine this scenario doesnt play out in many marriages and cant imagine divorcing someone after 20 years and 3 kids just because they vote R. 
+																	ReCan you be married to someone with different political views. 
+																	Sometimes the heart wants another heart with different political views which can be cause for some serious tension. 
+																	15 Perks of Getting Married in Your Early 20s or Even Younger. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And lately opinions across party. 
+																	Many people are very firm when it comes to not dating or being in a relationship with someone that has different political views as them. 
+																	Politics isnt the cause but a symptom of the real one. 
+																	Despite our low voting turnout many young people today are highly politicised and so finding out the person youre dating doesnt share your political views can be a deal breaker. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But it wasnt always this way. 
+																	Response 1 of 30. 
+																	It really doesnt work because political views come from personal beliefs and values that should be aligned with each other to have a good marriage. 
+																	Trust and understanding are needed when you have a spouse of a different political opinion. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When you are getting married you are making a conscious decision to accept your partner for all that they are. 
+																	According to a 2016 survey 17 percent of Republicans and Democrats who are either married or living with their partner said their spouse or partner belonged to a different political party. 
+																	If you find someone who adds happiness to your life makes your world a better place and you a better person whom you respect and love and cannot imagine living without political differences may. 
+																	However if you have certain views that are tied to your moral values or single issues that are make or break probably not. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How to Love Someone With Different Political Views. 
+																	Being married to your political opposite forces you to consider the other sides opinions and hear their latest talking points said Julia Arnold a Minnesota-based blogger whos been married to a conservative for nine years. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/3b/ed/853bed2ab3fd4b8a97aeebd2b112b02f.jpg" data-lightbox="roadtrip" data-title="I M Going To Bed It Means Something Different Mom Quotes Funny Quotes Mom Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/3b/ed/853bed2ab3fd4b8a97aeebd2b112b02f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUobM4GE6_NPZqVv1tZn5z0u6gKAi6YmyaHg';" alt="I M Going To Bed It Means Something Different Mom Quotes Funny Quotes Mom Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I M Going To Bed It Means Something Different Mom Quotes Funny Quotes Mom Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/a1/b4/83a1b4dc49c70f3570143ddcfa1a3783.jpg" data-lightbox="roadtrip" data-title="Pin By Chrissye Martin On Wedding Ideas Pinterest Happy Marriage Marriage Advice Marriage Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/a1/b4/83a1b4dc49c70f3570143ddcfa1a3783.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiGHx8UYSyAadLi8JU0MPDm-QzTE7NkIheKQ';" alt="Pin By Chrissye Martin On Wedding Ideas Pinterest Happy Marriage Marriage Advice Marriage Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Chrissye Martin On Wedding Ideas Pinterest Happy Marriage Marriage Advice Marriage Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/98/46/af/9846af128ac6e264c81e96b6e7c33767.jpg" data-lightbox="roadtrip" data-title="Pin On Relationship Goal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/98/46/af/9846af128ac6e264c81e96b6e7c33767.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd_ZenDU2dQnz5REpFfc0HLm0xPJ28G6ca4A';" alt="Pin On Relationship Goal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Relationship Goal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/70/37/c47037b1c63e46d41a82bf76320b0b56.png" data-lightbox="roadtrip" data-title="Having A Baby Or Getting Pregnant Before Your Wedding Isn T The End Of The World In Fact It S The Start Of An Entir Before Marriage Marriage Getting Pregnant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/70/37/c47037b1c63e46d41a82bf76320b0b56.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIuFUBkU-rmL2_pCIDtVbVvr3Nf9uJBRU6Vw';" alt="Having A Baby Or Getting Pregnant Before Your Wedding Isn T The End Of The World In Fact It S The Start Of An Entir Before Marriage Marriage Getting Pregnant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Having A Baby Or Getting Pregnant Before Your Wedding Isn T The End Of The World In Fact It S The Start Of An Entir Before Marriage Marriage Getting Pregnant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fa/63/ef/fa63ef425aec0d4ac5ddb8d88187e129.jpg" data-lightbox="roadtrip" data-title="How Couples With Different Political Views Can Survive An Election Year Electioneffectsoncouples By Some Estimates Political Views Election Year Very Well">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fa/63/ef/fa63ef425aec0d4ac5ddb8d88187e129.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHmm8IT_p6ek8hQzJZSbIdJiz3mSR4pbY2VQ';" alt="How Couples With Different Political Views Can Survive An Election Year Electioneffectsoncouples By Some Estimates Political Views Election Year Very Well">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Couples With Different Political Views Can Survive An Election Year Electioneffectsoncouples By Some Estimates Political Views Election Year Very Well</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/d2/60/4dd260aab66bd0d7e49927efbc98a27b.png" data-lightbox="roadtrip" data-title="6 Tips For Fighting With Your Spouse That You Can T Afford To Miss Marriage Help Best Marriage Advice Honesty In Relationships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/d2/60/4dd260aab66bd0d7e49927efbc98a27b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmN2l4i_DfMYGb7gpRSmmhdPhhmrxFjkHXg';" alt="6 Tips For Fighting With Your Spouse That You Can T Afford To Miss Marriage Help Best Marriage Advice Honesty In Relationships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Tips For Fighting With Your Spouse That You Can T Afford To Miss Marriage Help Best Marriage Advice Honesty In Relationships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/f8/6e/7af86eec485e0b192773879529c8a57d.png" data-lightbox="roadtrip" data-title="Pin On Love And Relationship">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/f8/6e/7af86eec485e0b192773879529c8a57d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn9jdLP_K6ZSGWAE2jKqoR8HMXcNYFl-qyXg';" alt="Pin On Love And Relationship">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Love And Relationship</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/2c/cd/0b2ccd1faa75ea5fefcc76d0dace2766.png" data-lightbox="roadtrip" data-title="The One Thing Marriage Quiz Healthy Marriage Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/2c/cd/0b2ccd1faa75ea5fefcc76d0dace2766.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx9gc3QZXJ9jECc2kmNo6h-O1x9Xgl-hD4ag';" alt="The One Thing Marriage Quiz Healthy Marriage Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The One Thing Marriage Quiz Healthy Marriage Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/5d/dd/ce/5dddce367a9845aa8cfd53a1dd6f8e45.jpg" data-lightbox="roadtrip" data-title="Pin On Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/5d/dd/ce/5dddce367a9845aa8cfd53a1dd6f8e45.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7NJiPVj5MnuYmi6f2zHQ9e_RR5wwGowaYZA';" alt="Pin On Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/99/77/7d9977ff847e44462107c2265fbbf28b.jpg" data-lightbox="roadtrip" data-title="How To Stay In Love After Kids 4 Practical Actions To Take Today In 2020 Husband And Wife Love Marriage Marriage Relationship">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/99/77/7d9977ff847e44462107c2265fbbf28b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-V3hFVHG6tDiHga5B2-4WvMqpnjyMUFUStQ';" alt="How To Stay In Love After Kids 4 Practical Actions To Take Today In 2020 Husband And Wife Love Marriage Marriage Relationship">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Stay In Love After Kids 4 Practical Actions To Take Today In 2020 Husband And Wife Love Marriage Marriage Relationship</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/08/60/82/086082b575f62bdbd34e772b940baa60.jpg" data-lightbox="roadtrip" data-title="How To Be A Peacemaker In Your Marriage Tara Altay Love You Husband Marriage Is Hard Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/08/60/82/086082b575f62bdbd34e772b940baa60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrLiS6wUWfUF0Am3WUIP6YI7ZFQYuD_M90KA';" alt="How To Be A Peacemaker In Your Marriage Tara Altay Love You Husband Marriage Is Hard Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Be A Peacemaker In Your Marriage Tara Altay Love You Husband Marriage Is Hard Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/87/7e/03877ed14d8160ece31bce39a3f1e03b.png" data-lightbox="roadtrip" data-title="Can Your Relationship Survive The Election Relationship Experts Marriage And Family Therapist Marriage And Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/87/7e/03877ed14d8160ece31bce39a3f1e03b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo_g15lQmQ31LM34XdvYCOqdRA2Bo1FfGEJw';" alt="Can Your Relationship Survive The Election Relationship Experts Marriage And Family Therapist Marriage And Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can Your Relationship Survive The Election Relationship Experts Marriage And Family Therapist Marriage And Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/ea/95/99ea9593b1cb53180631228bc0008004.jpg" data-lightbox="roadtrip" data-title="Pin On Human Rights And Politics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/ea/95/99ea9593b1cb53180631228bc0008004.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyZsnWGoBOw9aP4KRTmThIwAofruVpdsC6jQ';" alt="Pin On Human Rights And Politics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Human Rights And Politics</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-life-insurance-companies.html">Military Life Insurance Companies</a></li>
+													<li class="list-group-item"><a href="/military-life-insurance-sgli.html">Military Life Insurance Sgli</a></li>
+													<li class="list-group-item"><a href="/military-knit-cap.html">Military Knit Cap</a></li>
+													<li class="list-group-item"><a href="/military-knit-hats.html">Military Knit Hats</a></li>
+													<li class="list-group-item"><a href="/military-man-kills-wife-in-san-antonio.html">Military Man Kills Wife In San Antonio</a></li>
+													<li class="list-group-item"><a href="/military-medical-records-request-status.html">Military Medical Records Request Status</a></li>
+													<li class="list-group-item"><a href="/military-minute-time-chart.html">Military Minute Time Chart</a></li>
+													<li class="list-group-item"><a href="/military-jobs-on-base.html">Military Jobs On Base</a></li>
+													<li class="list-group-item"><a href="/military-jobs-for-spouses.html">Military Jobs For Spouses</a></li>
+													<li class="list-group-item"><a href="/military-jobs-for-older-adults.html">Military Jobs For Older Adults</a></li>
+													<li class="list-group-item"><a href="/military-medical-records-tricare.html">Military Medical Records Tricare</a></li>
+													<li class="list-group-item"><a href="/military-married-to-foreign-spouse.html">Military Married To Foreign Spouse</a></li>
+													<li class="list-group-item"><a href="/military-life-insurance-amount.html">Military Life Insurance Amount</a></li>
+													<li class="list-group-item"><a href="/military-marriage-benefits.html">Military Marriage Benefits</a></li>
+													<li class="list-group-item"><a href="/military-marriage-day.html">Military Marriage Day</a></li>
+													<li class="list-group-item"><a href="/military-life-insurance-san-antonio.html">Military Life Insurance San Antonio</a></li>
+													<li class="list-group-item"><a href="/military-medical-benefits-after-divorce.html">Military Medical Benefits After Divorce</a></li>
+													<li class="list-group-item"><a href="/military-marriage-between-officer-and-enlisted.html">Military Marriage Between Officer And Enlisted</a></li>
+													<li class="list-group-item"><a href="/military-marriage-non-us-citizen.html">Military Marriage Non Us Citizen</a></li>
+													<li class="list-group-item"><a href="/military-marriage-visa.html">Military Marriage Visa</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

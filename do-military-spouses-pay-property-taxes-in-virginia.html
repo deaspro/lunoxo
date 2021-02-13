@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Do Military Spouses Pay Property Taxes In Virginia - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Do Military Spouses Pay Property Taxes In Virginia",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/bc/56/68/bc56684d16750e8b7e6b3d742fce102f.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=do+military+spouses+pay+property+taxes+in+virginia",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Do Military Spouses Pay Property Taxes In Virginia</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This property tax exemption is transferable when the veteran buys a new home as a primary residence. For more information useful to members of the military see Military Tax Tips. If you are a member of the armed forces but you are not a Virginia resident you are not subject to Virginia income tax on your active duty military pay even though you are stationed in Virginia. <br>				
+			</p>
+										<a class="badge badge-warning" href="/va-pension-benefits-surviving-spouse.html">va pension benefits surviving spouse</a>
+											<a class="badge badge-info" href="/va-medical-records-lexington-ky.html">va medical records lexington ky</a>
+											<a class="badge badge-dark" href="/va-spouse-benefits-after-death.html">va spouse benefits after death</a>
+											<a class="badge badge-dark" href="/veteran-dependent-grants.html">veteran dependent grants</a>
+											<a class="badge badge-info" href="/va-medical-records-submission.html">va medical records submission</a>
+											<a class="badge badge-secondary" href="/va-medical-records-san-diego.html">va medical records san diego</a>
+											<a class="badge badge-warning" href="/va-survivor-benefits-for-dependents.html">va survivor benefits for dependents</a>
+											<a class="badge badge-warning" href="/va-medical-records-sharing.html">va medical records sharing</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to visit the ideal blog.  Our website gives you hints for seeing the highest quality video and picture content, hunt and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you view.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/a3/36/f4a33604ae77a2e0a87ecd3917771b78.jpg" data-lightbox="roadtrip" data-title="Military Medical Retirement Pay Chart 2020 Va Disability Medical Retirement Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/a3/36/f4a33604ae77a2e0a87ecd3917771b78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTphECfRFvMLwnCtQbvqVb6zI8zQdL1sUnUlw';" alt="Military Medical Retirement Pay Chart 2020 Va Disability Medical Retirement Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Medical Retirement Pay Chart 2020 Va Disability Medical Retirement Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/85/3f/3c853ffa92dd45a2cec075a0fa43bd04.jpg" data-lightbox="roadtrip" data-title="All Veteran Property Tax Exemptions By State And Disability Rating Property Tax Military Benefits Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/85/3f/3c853ffa92dd45a2cec075a0fa43bd04.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuyEA7L2x8sa1g1Djc5m_8ORDjRQevNdJyQw';" alt="All Veteran Property Tax Exemptions By State And Disability Rating Property Tax Military Benefits Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All Veteran Property Tax Exemptions By State And Disability Rating Property Tax Military Benefits Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2f/3c/d7/2f3cd78c8f19f71102a081b1d37b5523.jpg" data-lightbox="roadtrip" data-title="Pin On Housing Home Ownership">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2f/3c/d7/2f3cd78c8f19f71102a081b1d37b5523.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtQt9xSEOBigQzAqaLQQkDQIMPm8fs8serkQ';" alt="Pin On Housing Home Ownership">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Housing Home Ownership</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/89/3a/6b893a1c134bb50640517d9f97f79cf8.png" data-lightbox="roadtrip" data-title="Are Military Uniforms Tax Deductible Navy Wife Life Military Life Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/89/3a/6b893a1c134bb50640517d9f97f79cf8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyNF5juPafM2ZbaIVm4mDNelHcnrC-5W3c_Q';" alt="Are Military Uniforms Tax Deductible Navy Wife Life Military Life Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are Military Uniforms Tax Deductible Navy Wife Life Military Life Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/b7/88/63b788793b4401c27e8cb49c04d583bf.png" data-lightbox="roadtrip" data-title="List Of Benefits Due To Service Connected Disability Veterans Resources Disabled Veterans Benefits Va Disability Benefits Disability Benefit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/b7/88/63b788793b4401c27e8cb49c04d583bf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_AF6tgSFxP6N5ffYnlVCMVp2-tXiAzaC1VA';" alt="List Of Benefits Due To Service Connected Disability Veterans Resources Disabled Veterans Benefits Va Disability Benefits Disability Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">List Of Benefits Due To Service Connected Disability Veterans Resources Disabled Veterans Benefits Va Disability Benefits Disability Benefit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/89/65/b4/8965b4fb14d3309cdd8ac07546d37c99.jpg" data-lightbox="roadtrip" data-title="Pin On Military Va">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/89/65/b4/8965b4fb14d3309cdd8ac07546d37c99.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxuwhYt9yl-NlXHH9xtCmmGpzZN37cAnoQQg';" alt="Pin On Military Va">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Va</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/43/0d/d4/430dd4f4e86b649fa51bd55ba1e82f1c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxuwhYt9yl-NlXHH9xtCmmGpzZN37cAnoQQg';" alt="Pin On Military Va">
+										<div class="card-body">
+						<h3 class="h5"><b>Personal property taxes and real estate taxes are local taxes which means theyre administered by cities counties and towns in Virginia.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Do military spouses pay property taxes in virginia</strong>. 
+								
+																	See all South Carolina Veterans Benefits. 
+																	Yes No About Virginia Tax. 
+																	Up to 15000 of military basic pay received during the taxable year may be exempted from Virginia income tax. 
+																	If you have questions about personal property tax or real estate tax contact your local tax office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are a military spouse you may have been told that you do not have to pay North Carolina income taxes due to The Military Spouses Residency Relief Act of 2009. 
+																	According to the North Carolina Department of Revenue NCDOR tax-exempt status for a military spouse can only be acquired if the spouses domicile is the same state as that of the service member. 
+																	Active Duty Military Spouses. 
+																	Tax rates differ depending on where you live. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginia Tax Exemption for Spouses and Dependents of Military Personnel. 
+																	A full property tax exemption is available to qualifying South Carolina veterans and surviving spouses in cases where the veteran is VA-rated at 100 as a result of military service. 
+																	Virginia Residents Military personnel who are Virginia residents are responsible for personal property taxes and the vehicle license fee. 
+																	The Military Spouses Residency Relief Act amended the Servicemembers Civil Relief Act of 1940 on November 11 2009 by extending the exemption to active duty military members spouses if. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Spouses and dependents that are present in Virginia solely to be with their Service member Spouse parent who is permanently. 
+																	To report this income file Form 763. 
+																	During the taxable year were you a military spouse covered under the provisions of the Military Spouse Tax Relief Act whose legal domiciliary residence is Virginia. 
+																	The Military Spouses Residency Relief Act amended the Servicemembers Civil Relief Act of 1940 on November 11 2009 by extending the exemption to active duty military members spouses if i the service member is present in Virginia in compliance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Property taxes are administered by localities not DMV. 
+																	New Virginia law gives tax break to disabled veterans spouses Disabled veterans spouses no longer have to pay real estate tax to their municipalities. 
+																	If the vehicle is jointly owned with anyone other than the active duty military person andor hisher spouse and the co-owner is not on active military duty the vehicle is taxable. 
+																	Does the Military Spouses Residency Relief Act impact Virginia tax liabilities other than income tax. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However if you have other income from Virginia sources such as a part-time job or a business or trade conducted in Virginia you are subject to tax on this income. 
+																	Full-time active-duty service members and their spouses maintaining a legal domicile outside of Virginia who reside in Prince William County solely on military orders may qualify for an exemption from the local vehicle personal property tax based on certain qualifying conditions provided by the Military Spouses Residency Relief Act MSRRA. 
+																	Owners of 200K homes at Beach could save. 
+																	Members of the armed forces who are not Virginia residents are not subject to Virginia income tax on their military pay or on interest received from accounts held in Virginia banks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For every 100 of income over 15000 the maximum subtraction is. 
+																	However it may qualify for a personal property tax relief credit of 100 on the first 20000 of assessed value pursuant to a contract requiring the service member andor spouse the lessee to pay the personal property tax. 
+																	To apply for this exemption you must complete a Certificate of Legal Residence Form and submit to the office of the Commissioner of Revenue along with a current Leave and Earning Statement showing your state of residence. 
+																	Personal Property owned by active duty military persons whose legal residence is not Virginia is exempt from taxation under the Service members Civil Relief Act SCRA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You are liable to pay Virginia income tax as a nonresident on income you earn from any business trade profession or occupation in Virginia. 
+																	Active duty military personnel with a legal residence other than Virginia are exempt from the LVR fee and personal property taxes as allowed by United States Code Title 50 Servicemembers Civil Relief Act SCRA of 1940. 
+																	Fairfax County Virginia - Military Exemption FAQ. 
+																	Contact your locality for more information. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Active duty military personnel with a legal residence other than Virginia are exempt from the Local Vehicle Registration LVR fee and personal property taxes as allowed by United States Code Title 50 Servicemembers Civil Relief Act of 1940. 
+																	Members of the armed forces on active duty are taxed only in their legal states of residence. 
+																	The federal law contains relief provisions for personal property tax as well as for income tax. 
+																	Residency Status Virginia Department of Taxation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A vehicle leased by an active duty service member andor spouse is taxable. 
+																	This is not entirely true. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/msrra-military-spouse-act-residency-relief.jpg" data-lightbox="roadtrip" data-title="Military Spouse Act Residency Relief Msrra Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/msrra-military-spouse-act-residency-relief.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5CEITRTDeF5hd5buuAqucTh3Urfwy8QsCpQ';" alt="Military Spouse Act Residency Relief Msrra Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Act Residency Relief Msrra Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.dvs.virginia.gov/wp-content/uploads/2014/08/photo-property-tax2-300x300.jpg" data-lightbox="roadtrip" data-title="Real Estate Tax Exemption Virginia Department Of Veterans Services">
+											<img class="card-img v-image ads-img " src="https://www.dvs.virginia.gov/wp-content/uploads/2014/08/photo-property-tax2-300x300.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqNbTTGdO6c22OlCweA4HOJ8c5NVm-uUR4MA';" alt="Real Estate Tax Exemption Virginia Department Of Veterans Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Real Estate Tax Exemption Virginia Department Of Veterans Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/ac/e6/80ace62963c37ec44de7a4db1ade861d.png" data-lightbox="roadtrip" data-title="Why The Gi Bill Does Not Guarantee In State Tuition For Active Duty Family Members Katehorrell Gi Bill Military Spouse Blog Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/ac/e6/80ace62963c37ec44de7a4db1ade861d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAeUST7F4ffBMpPc6wqYWzKcegu1Ra4S92Bg';" alt="Why The Gi Bill Does Not Guarantee In State Tuition For Active Duty Family Members Katehorrell Gi Bill Military Spouse Blog Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why The Gi Bill Does Not Guarantee In State Tuition For Active Duty Family Members Katehorrell Gi Bill Military Spouse Blog Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/be/58/39be589d49938962b903d00f750662f1.jpg" data-lightbox="roadtrip" data-title="Tips To Getting Started With Va Home Loans Va Loan Tips Latest Va Home Loan Information Valoan Vatips Valoantips Thes Home Loans Va Loan Va Mortgages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/be/58/39be589d49938962b903d00f750662f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ14F-TKNu4PAwP8JxkuI3xO-_cQA_2E7XLLA';" alt="Tips To Getting Started With Va Home Loans Va Loan Tips Latest Va Home Loan Information Valoan Vatips Valoantips Thes Home Loans Va Loan Va Mortgages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tips To Getting Started With Va Home Loans Va Loan Tips Latest Va Home Loan Information Valoan Vatips Valoantips Thes Home Loans Va Loan Va Mortgages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/68/98/fc6898df3cfad9f73234c8d8b37e61cc.jpg" data-lightbox="roadtrip" data-title="Claim Denied How To Appeal A Va Denial Of Benefits Paperback Overstock Com Shopping The Best Deals On Military His Denial Book Challenge Book Community">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/68/98/fc6898df3cfad9f73234c8d8b37e61cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbgzm8UFL2gnJq98hBlRynTyaoLQaXC_LYsw';" alt="Claim Denied How To Appeal A Va Denial Of Benefits Paperback Overstock Com Shopping The Best Deals On Military His Denial Book Challenge Book Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Claim Denied How To Appeal A Va Denial Of Benefits Paperback Overstock Com Shopping The Best Deals On Military His Denial Book Challenge Book Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/69/cf/0d69cf3e51762cd6f3bb0a761fc7305f.jpg" data-lightbox="roadtrip" data-title="Va Irrrl Case Study Can You Save With A Va Streamline Refinance Basic Refinance Loans Case Study">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/69/cf/0d69cf3e51762cd6f3bb0a761fc7305f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSJThTsA40mBXwBPE6ISHkuDJKTZxOOIJaJg';" alt="Va Irrrl Case Study Can You Save With A Va Streamline Refinance Basic Refinance Loans Case Study">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Irrrl Case Study Can You Save With A Va Streamline Refinance Basic Refinance Loans Case Study</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0a/44/16/0a441638b79d5c286afb89ff640e444f.jpg" data-lightbox="roadtrip" data-title="Pin On Military Bloggers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0a/44/16/0a441638b79d5c286afb89ff640e444f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLf3c98kEPLmtHa-gp9Y9VhZeTMV_3fSkDWw';" alt="Pin On Military Bloggers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Bloggers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/74/13/4f/74134f04ccbabcd486d3d533d8ab7993.jpg" data-lightbox="roadtrip" data-title="Va Loan Certificate Of Eligibility Coe Va Loan Certificate Of Eligibility Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/74/13/4f/74134f04ccbabcd486d3d533d8ab7993.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEXgzwnSla0DJ-ri2qIoa-bqpns6NY4aGkrw';" alt="Va Loan Certificate Of Eligibility Coe Va Loan Certificate Of Eligibility Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Loan Certificate Of Eligibility Coe Va Loan Certificate Of Eligibility Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2d/4b/05/2d4b05e7016e9e9cc075de7f7bc3dbf3.jpg" data-lightbox="roadtrip" data-title="Buying A House After Leaving The Military Military Wife Life Military Retirement Military Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2d/4b/05/2d4b05e7016e9e9cc075de7f7bc3dbf3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXWE1trWJ_-pSff5igCKXkPCA1cmFXkT3HnA';" alt="Buying A House After Leaving The Military Military Wife Life Military Retirement Military Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buying A House After Leaving The Military Military Wife Life Military Retirement Military Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/56/68/bc56684d16750e8b7e6b3d742fce102f.png" data-lightbox="roadtrip" data-title="Veterans Disability Compensation A Beginner S Guide Military Dollar Veteran Disabled Veterans Benefits Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/56/68/bc56684d16750e8b7e6b3d742fce102f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGFxscmvgWXQEQTjZzKrRz2ugDBgyVlV8bKA';" alt="Veterans Disability Compensation A Beginner S Guide Military Dollar Veteran Disabled Veterans Benefits Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Disability Compensation A Beginner S Guide Military Dollar Veteran Disabled Veterans Benefits Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/0d/d4/430dd4f4e86b649fa51bd55ba1e82f1c.png" data-lightbox="roadtrip" data-title="Pin On Va">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/0d/d4/430dd4f4e86b649fa51bd55ba1e82f1c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBXzpqztP7nN8n5-xpCMDOvH5lyAXY2LpghQ';" alt="Pin On Va">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Va</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2019/01/Property-Tax-Exemptions-Disabled-Veterans-By-State.jpg" data-lightbox="roadtrip" data-title="Disabled Veterans Property Tax Exemptions By State Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/01/Property-Tax-Exemptions-Disabled-Veterans-By-State.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHRCvmuVfgs1glKI9G_oqfjh7MTYgU7d2H4w';" alt="Disabled Veterans Property Tax Exemptions By State Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disabled Veterans Property Tax Exemptions By State Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/85/b2/f4/85b2f46d45d98e799ce1bc3febb80e10.jpg" data-lightbox="roadtrip" data-title="Va Disability Compensation Va Gov Va Disability Disability Va Disability Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/85/b2/f4/85b2f46d45d98e799ce1bc3febb80e10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwmx2AuIEZu4hQKCg7Bu051gDeEgbg3QDKTw';" alt="Va Disability Compensation Va Gov Va Disability Disability Va Disability Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Compensation Va Gov Va Disability Disability Va Disability Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/english-military-heroes.html">English Military Heroes</a></li>
+													<li class="list-group-item"><a href="/email-address-for-ncaa-eligibility-center.html">Email Address For Ncaa Eligibility Center</a></li>
+													<li class="list-group-item"><a href="/edwards-air-force-base-bx-hours.html">Edwards Air Force Base Bx Hours</a></li>
+													<li class="list-group-item"><a href="/eligibility-va-burial-benefits.html">Eligibility Va Burial Benefits</a></li>
+													<li class="list-group-item"><a href="/financial-support-for-military-spouses.html">Financial Support For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/florida-disabled-veteran-dependent-education-benefits.html">Florida Disabled Veteran Dependent Education Benefits</a></li>
+													<li class="list-group-item"><a href="/financial-assistance-for-military-spouses.html">Financial Assistance For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/ex-spouse-military-survivor-benefits.html">Ex Spouse Military Survivor Benefits</a></li>
+													<li class="list-group-item"><a href="/financial-aid-for-retired-military-dependents.html">Financial Aid For Retired Military Dependents</a></li>
+													<li class="list-group-item"><a href="/employment-protection-for-military-spouses.html">Employment Protection For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/find-husband-annoying-after-baby.html">Find Husband Annoying After Baby</a></li>
+													<li class="list-group-item"><a href="/florida-in-state-tuition-for-military-dependents.html">Florida In State Tuition For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/former-military-spouse-benefits.html">Former Military Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/emirates-my-cargo.html">Emirates My Cargo</a></li>
+													<li class="list-group-item"><a href="/ex-military-hero-romance-novels.html">Ex Military Hero Romance Novels</a></li>
+													<li class="list-group-item"><a href="/edwards-air-force-base-pharmacy-hours.html">Edwards Air Force Base Pharmacy Hours</a></li>
+													<li class="list-group-item"><a href="/everything-about-my-spouse-annoys-me.html">Everything About My Spouse Annoys Me</a></li>
+													<li class="list-group-item"><a href="/edwards-air-force-base-south-gate-hours.html">Edwards Air Force Base South Gate Hours</a></li>
+													<li class="list-group-item"><a href="/find-ww1-soldiers-records-free.html">Find Ww1 Soldiers Records Free</a></li>
+													<li class="list-group-item"><a href="/find-my-cargo.html">Find My Cargo</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

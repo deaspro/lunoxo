@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Micah Fitzpatrick - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Micah Fitzpatrick",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/d6/a1/5b/d6a15b5f924c51319acb16c8faeeb52d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=micah+fitzpatrick",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Micah Fitzpatrick</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Steelers Press Conference Jan. In perhaps the most shocking moment of the program Rams defensive. Facebook gives people the. <br>				
+			</p>
+										<a class="badge badge-primary" href="/is-being-an-army-recruiter-worth-it.html">is being an army recruiter worth it</a>
+											<a class="badge badge-danger" href="/instate-tuition-for-veterans-dependents.html">instate tuition for veterans dependents</a>
+											<a class="badge badge-secondary" href="/is-a-military-spouse-entitled-to-bah.html">is a military spouse entitled to bah</a>
+											<a class="badge badge-info" href="/is-a-divorced-spouse-entitled-to-va-disability-benefits.html">is a divorced spouse entitled to va disability benefits</a>
+											<a class="badge badge-warning" href="/is-it-normal-to-be-bored-in-a-relationship.html">is it normal to be bored in a relationship</a>
+											<a class="badge badge-warning" href="/is-being-a-military-nurse-dangerous.html">is being a military nurse dangerous</a>
+											<a class="badge badge-primary" href="/indian-navy-wife-quotes.html">indian navy wife quotes</a>
+											<a class="badge badge-dark" href="/is-army-wives-available-on-hulu.html">is army wives available on hulu</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to pay a visit to the ideal blog.  Our website gives you suggestions for seeing the maximum quality video and image content, hunt and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, so we recommend this video for you to view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/9b/11/c49b1194c0a32ee7b94d484ec2d51781.jpg" data-lightbox="roadtrip" data-title="Minkah Fitzpatrick Pittsburgh Steelers Pittsburgh Steelers Wallpaper Pittsburg Steelers Pittsburgh Penguins Wallpaper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/9b/11/c49b1194c0a32ee7b94d484ec2d51781.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQxXyD_itqyH4rsVlguOrK9-xK9ukGrwfEQ';" alt="Minkah Fitzpatrick Pittsburgh Steelers Pittsburgh Steelers Wallpaper Pittsburg Steelers Pittsburgh Penguins Wallpaper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minkah Fitzpatrick Pittsburgh Steelers Pittsburgh Steelers Wallpaper Pittsburg Steelers Pittsburgh Penguins Wallpaper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5b/40/7a/5b407ae4ac306f057ffcb130de72719a.jpg" data-lightbox="roadtrip" data-title="Minkah Fitzpatrick Steelers Steelers Pittsburgh Steelers Pittsburg Steelers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5b/40/7a/5b407ae4ac306f057ffcb130de72719a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj1U_ABGzM4RQ76ZELeQtyngFNjlP1Fwawqg';" alt="Minkah Fitzpatrick Steelers Steelers Pittsburgh Steelers Pittsburg Steelers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minkah Fitzpatrick Steelers Steelers Pittsburgh Steelers Pittsburg Steelers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/ac/c3/f8acc3c9b1afa37024089d4cb6ee9c0a.jpg" data-lightbox="roadtrip" data-title="Minkah City Steelers Pittsburg Steelers Pittsburgh Steelers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/ac/c3/f8acc3c9b1afa37024089d4cb6ee9c0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS9z4rz9YhvQv6CACS-6uwF4UYlPW75wdz0w';" alt="Minkah City Steelers Pittsburg Steelers Pittsburgh Steelers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minkah City Steelers Pittsburg Steelers Pittsburgh Steelers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/c3/bb/11c3bbe714cadb25e1f75c63d065b95a.jpg" data-lightbox="roadtrip" data-title="Minkah Fitzpatrick Alabama Alabama Crimson Tide Football Alabama Football Alabama Football Roll Tide">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/c3/bb/11c3bbe714cadb25e1f75c63d065b95a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTRmtQbfquiXWrS0Aem6h6yIN2Cqq7HQTB6Q';" alt="Minkah Fitzpatrick Alabama Alabama Crimson Tide Football Alabama Football Alabama Football Roll Tide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minkah Fitzpatrick Alabama Alabama Crimson Tide Football Alabama Football Alabama Football Roll Tide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/69/ec/e769ec667c5c7e43cc9cf94eef81a150.png" data-lightbox="roadtrip" data-title="Safety Minkah Fitzpatrick Pittsburgh Steelers Wallpaper Pittsburgh Steelers Football Pittsburgh Steelers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/69/ec/e769ec667c5c7e43cc9cf94eef81a150.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Vu23kTocAeb4v5BFpu-fUXs5APy4iE6cgg';" alt="Safety Minkah Fitzpatrick Pittsburgh Steelers Wallpaper Pittsburgh Steelers Football Pittsburgh Steelers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Safety Minkah Fitzpatrick Pittsburgh Steelers Wallpaper Pittsburgh Steelers Football Pittsburgh Steelers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d6/a1/5b/d6a15b5f924c51319acb16c8faeeb52d.jpg" data-lightbox="roadtrip" data-title="Minkah Fitzpatrick Pittsburgh Steelers Poster Sports Art Print Football Poster Kids Decor Man C Sports Art Print Football Poster Pittsburgh Steelers Poster">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d6/a1/5b/d6a15b5f924c51319acb16c8faeeb52d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmpghUy8MS2S9ZkzQVwfitTXGDPB06LdsbpQ';" alt="Minkah Fitzpatrick Pittsburgh Steelers Poster Sports Art Print Football Poster Kids Decor Man C Sports Art Print Football Poster Pittsburgh Steelers Poster">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minkah Fitzpatrick Pittsburgh Steelers Poster Sports Art Print Football Poster Kids Decor Man C Sports Art Print Football Poster Pittsburgh Steelers Poster</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/d6/a1/5b/d6a15b5f924c51319acb16c8faeeb52d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmpghUy8MS2S9ZkzQVwfitTXGDPB06LdsbpQ';" alt="Minkah Fitzpatrick Pittsburgh Steelers Poster Sports Art Print Football Poster Kids Decor Man C Sports Art Print Football Poster Pittsburgh Steelers Poster">
+										<div class="card-body">
+						<h3 class="h5"><b>Cheer on Minkah Fitzpatrick in style with Jerseys from Steelers Store.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Micah fitzpatrick</strong>. 
+								
+																	Join Facebook to connect with Micah Fitzpatrick and others you may know. 
+																	The Miami Dolphins safety was traded to the Pittsburgh Steelers along with a 2020 fourth-round pick and a 2021 seventh-round pick in exchange for a. 
+																	Pittsburgh Steelers acquired DB Minkah Fitzpatrick a 2020 fourth-round draft pick and a 2021 seventh-round draft pick from the Miami Dolphins for a 2020 first-round draft pick a conditional 2020 fifth-round draft pick and a conditional 2021 sixth-round draft pick. 
+																	Steelers Safety Minkah Fitzpatrick sits down with Brian Baldinger and Kurt Warner. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Safety who won College Football Playoff National Championships with the Alabama Crimson Tide in 2015 and 2017. 
+																	Pittsburgh Steelers safety Minkah Fitzpatrick sniffs out Ryan Finleys QB keeper for key TFL. 
+																	Every highlight from Minkah Fitzpatricks 2019-2020 NFL seasonSubscribe for more highlights. 
+																	Minkah Fitzpatrick Pittsburgh Steelers Jerseys and T-Shirts are at Steelers Store. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Minkah Fitzpatrick updated their profile picture. 
+																	We have Authentic Steelers Jerseys from all kinds of versions including Elite Limited GameColor Rush Legend and Throwback. 
+																	Hes just 22-years-old a really versatile defensive back and has a great contract. 
+																	Minkah Fitzpatrick - YouTube Minkah Fitzpatrick on playing in his first playoff game preparing for the Browns and moreMinkah Fitzpatrick spoke to the media on. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	April 30 2020. 
+																	Minkah Fitzpatrick s wish has been granted. 
+																	The latest tweets from minkfitz_21. 
+																	Minkah Fitzpatrick of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Minkah Fitzpatrick on the field for the Steelers. 
+																	View the profiles of people named Micah Fitzpatrick. 
+																	Then he explains what the Steelers do on. 
+																	Fitzpatrick talks through his midseason trade from Miami to Pittsburgh. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Browse 926 minkah fitzpatrick stock photos and images available or start a new search to explore more stock photos and images. 
+																	Watt Minkah Fitzpatrick named 1st-team All-Pro for second year in a row The NFLs third-ranked defense had two players repeat as first-team All-Pros in balloting released Friday by. 
+																	He has a cap hit of just 108 million in 2019 195 million in. 
+																	4028k Followers 895 Following 92 Posts - See Instagram photos and videos from Minkah Fitzpatrick Jr. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Latest on Pittsburgh Steelers safety Minkah Fitzpatrick including news stats videos highlights and more on ESPN. 
+																	Peters Prep HS Pos S. 
+																	Pittsburgh NFL Miami NFL Alabama NCAA St. 
+																	Born November 17 1996 is an American football free safety for the Pittsburgh Steelers of the National Football League NFL. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Explore searchViewparamsphrase by color family familyColorButtonTextcolorFamilyname Minkah Fitzpatrick of the Pittsburgh Steelers recovers a fumble for a 43 yard touchdown in the first half against the Los Angeles Rams on November. 
+																	He was chosen by the Miami Dolphins with the 11th overall pick in the first round of the 2018 NFL Draft. 
+																	Theres a lot to like about Minkah Fitzpatrick. 
+																	He played college football at Alabama and was drafted by the Miami Dolphins in the first round of the 2018 NFL Draft before being traded to the Steelers during the 2019 season. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NFL Honors ceremony wasnt without controversy on Saturday night. 
+																	Minkah Fitzpatrick best known for being a Football Player was born in Old Bridge on Sunday November 17 1996. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/5b/70/4f5b700f01995f7ac82f331aad0cb64e.jpg" data-lightbox="roadtrip" data-title="Minkah Fitzpatrick Alabama Crimson Tide Alabama Roll Tide Alabama Football Roll Tide">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/5b/70/4f5b700f01995f7ac82f331aad0cb64e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8LmUJhfQVJjbeF-7jeKSy6xsk_qpmsgiUXA';" alt="Minkah Fitzpatrick Alabama Crimson Tide Alabama Roll Tide Alabama Football Roll Tide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minkah Fitzpatrick Alabama Crimson Tide Alabama Roll Tide Alabama Football Roll Tide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/e5/00/81e500b4aa1f2d1f60b0470169acbae9.jpg" data-lightbox="roadtrip" data-title="Nfl With Minkah Fitzpatrick On The Squad The Steelers Defense Has 8 X20e3 Big4 Bigfour Big4 Big Steelers Steeler Nation Pittsburgh Steelers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/e5/00/81e500b4aa1f2d1f60b0470169acbae9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxHNV4k5V-axE5ewtUM2Iqk5P-P3N2lO1wXA';" alt="Nfl With Minkah Fitzpatrick On The Squad The Steelers Defense Has 8 X20e3 Big4 Bigfour Big4 Big Steelers Steeler Nation Pittsburgh Steelers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nfl With Minkah Fitzpatrick On The Squad The Steelers Defense Has 8 X20e3 Big4 Bigfour Big4 Big Steelers Steeler Nation Pittsburgh Steelers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/a4/ae/32a4ae953b9db5cbbb78cfc9e6e5cca5.png" data-lightbox="roadtrip" data-title="Minkah Fitzpatrick Cameron Heyward And T J Watt Have Been Named To The Sporting News All Pr In 2021 Pittsburgh Steelers Football Pittsburgh Sports Pittsburg Steelers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/a4/ae/32a4ae953b9db5cbbb78cfc9e6e5cca5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5zpT197Q-BUPOn5BFLUNGp-96gcoRukGXgA';" alt="Minkah Fitzpatrick Cameron Heyward And T J Watt Have Been Named To The Sporting News All Pr In 2021 Pittsburgh Steelers Football Pittsburgh Sports Pittsburg Steelers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minkah Fitzpatrick Cameron Heyward And T J Watt Have Been Named To The Sporting News All Pr In 2021 Pittsburgh Steelers Football Pittsburgh Sports Pittsburg Steelers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0c/39/52/0c395279822027b30279e2219ef35f90.jpg" data-lightbox="roadtrip" data-title="Minkah Fitzpatrick Crimson Tide Football Alabama Crimson Tide Football Alabama Football Team">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0c/39/52/0c395279822027b30279e2219ef35f90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAPmyKJf-AmBHsW4MO7xo8VvYrjfZuq73X9w';" alt="Minkah Fitzpatrick Crimson Tide Football Alabama Crimson Tide Football Alabama Football Team">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minkah Fitzpatrick Crimson Tide Football Alabama Crimson Tide Football Alabama Football Team</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/48/6e/32486ef37058cf8872e84e2ac6b514cd.jpg" data-lightbox="roadtrip" data-title="Mike Tomlin Minkah Fitzpatrick Devin Bush Stephon Tuitt Cam Heyward Tj Watt Joe Haden Bu Pittsburgh Steelers Logo Pittsburg Steelers Pittsburgh Steelers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/48/6e/32486ef37058cf8872e84e2ac6b514cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpB8z8WKECf6E644pOOKFs3IReH7PkBaPlQ';" alt="Mike Tomlin Minkah Fitzpatrick Devin Bush Stephon Tuitt Cam Heyward Tj Watt Joe Haden Bu Pittsburgh Steelers Logo Pittsburg Steelers Pittsburgh Steelers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mike Tomlin Minkah Fitzpatrick Devin Bush Stephon Tuitt Cam Heyward Tj Watt Joe Haden Bu Pittsburgh Steelers Logo Pittsburg Steelers Pittsburgh Steelers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/33/49/75/33497531e02f0ad2300057cb8600fda7.jpg" data-lightbox="roadtrip" data-title="Minkah Fitzpatrick Joe Greene Pittsburgh Steelers Jack Lambert">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/33/49/75/33497531e02f0ad2300057cb8600fda7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_S9u0g2yun4aRe0ZSngscYaOEx2ew0NJuCA';" alt="Minkah Fitzpatrick Joe Greene Pittsburgh Steelers Jack Lambert">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minkah Fitzpatrick Joe Greene Pittsburgh Steelers Jack Lambert</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/ee/17/a7ee17b265dd5e64667e3129622769bf.jpg" data-lightbox="roadtrip" data-title="Minkah Fitzpatrick Steelers Pittsburgh Steelers Pittsburgh Steelers Football Nfl Football Steelers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/ee/17/a7ee17b265dd5e64667e3129622769bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAoZBFJeImJcZnYy5B5VN0TjxudoSPNaVlGg';" alt="Minkah Fitzpatrick Steelers Pittsburgh Steelers Pittsburgh Steelers Football Nfl Football Steelers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minkah Fitzpatrick Steelers Pittsburgh Steelers Pittsburgh Steelers Football Nfl Football Steelers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/ba/60/efba60d104d08f7e215d3068bb78df7c.jpg" data-lightbox="roadtrip" data-title="Minkah Fitzpatrick Pittsburgh Steelers Poster Canvas Print Version 1 Pittsburgh Steelers Poster Pittsburgh Steelers Steelers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/ba/60/efba60d104d08f7e215d3068bb78df7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Ptv0auve8CGGXRKIVceynBxdj3k6IPMoRg';" alt="Minkah Fitzpatrick Pittsburgh Steelers Poster Canvas Print Version 1 Pittsburgh Steelers Poster Pittsburgh Steelers Steelers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minkah Fitzpatrick Pittsburgh Steelers Poster Canvas Print Version 1 Pittsburgh Steelers Poster Pittsburgh Steelers Steelers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/6a/77/366a775bef4b901c71ca817a0f0a2704.jpg" data-lightbox="roadtrip" data-title="Minkah Fitzpatrick Then Now Sports Illustrated 2016 College Football Playoff P Alabama Crimson Tide Crimson Tide Football Alabama Crimson Tide Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/6a/77/366a775bef4b901c71ca817a0f0a2704.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJvTaG2XHerOQno0SkVEIzXSyRbnLKLg7t2w';" alt="Minkah Fitzpatrick Then Now Sports Illustrated 2016 College Football Playoff P Alabama Crimson Tide Crimson Tide Football Alabama Crimson Tide Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minkah Fitzpatrick Then Now Sports Illustrated 2016 College Football Playoff P Alabama Crimson Tide Crimson Tide Football Alabama Crimson Tide Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/c3/c9/c1c3c9124a6e813c23daea91ebff6ddf.jpg" data-lightbox="roadtrip" data-title="Minkah Fitzpatrick Nfl Season Football Playoffs Troy Polamalu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/c3/c9/c1c3c9124a6e813c23daea91ebff6ddf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR1FO53LkCq_iBzy4nPVxudPBPCksCjDnhxw';" alt="Minkah Fitzpatrick Nfl Season Football Playoffs Troy Polamalu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minkah Fitzpatrick Nfl Season Football Playoffs Troy Polamalu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/33/48/9033483210a37ac0b5598bcca202b137.jpg" data-lightbox="roadtrip" data-title="Minkah Fitzpatrick Steelers Steelers Pittsburgh Steelers Steeler Nation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/33/48/9033483210a37ac0b5598bcca202b137.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR23CL_48shjqDn0MH46v_3DIVSOmj5UU81Uw';" alt="Minkah Fitzpatrick Steelers Steelers Pittsburgh Steelers Steeler Nation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minkah Fitzpatrick Steelers Steelers Pittsburgh Steelers Steeler Nation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/a1/7a/32a17a983e48e60ac456ba9989f63b5e.jpg" data-lightbox="roadtrip" data-title="Minkah Fitzpatrick Pulls Down School Record 3 Interceptions Vs Arkansas Recapping The 2016 Alabama Crimson Tide Football Crimson Tide Football Bama Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/a1/7a/32a17a983e48e60ac456ba9989f63b5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl9H1CnEnLow9y2oMTbEs-iEJvYIsugAB2vQ';" alt="Minkah Fitzpatrick Pulls Down School Record 3 Interceptions Vs Arkansas Recapping The 2016 Alabama Crimson Tide Football Crimson Tide Football Bama Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minkah Fitzpatrick Pulls Down School Record 3 Interceptions Vs Arkansas Recapping The 2016 Alabama Crimson Tide Football Crimson Tide Football Bama Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/49/9b/77499b675b1ee3f8ed49acbf33402d7c.jpg" data-lightbox="roadtrip" data-title="Alabama Defensive Back Minkah Fitzpatrick 29 Revs The Crowd After A Stop During The First Half Of The Alabama Football Bama Football American Football League">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/49/9b/77499b675b1ee3f8ed49acbf33402d7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5R-W4E90ixIcUL2NM2VsW3PShVxNsVWrKQA';" alt="Alabama Defensive Back Minkah Fitzpatrick 29 Revs The Crowd After A Stop During The First Half Of The Alabama Football Bama Football American Football League">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alabama Defensive Back Minkah Fitzpatrick 29 Revs The Crowd After A Stop During The First Half Of The Alabama Football Bama Football American Football League</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/whats-my-car-insurance-policy-number.html">Whats My Car Insurance Policy Number</a></li>
+													<li class="list-group-item"><a href="/whats-a-military-spouse.html">Whats A Military Spouse</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-spouse-is-fired.html">What To Do When Your Spouse Is Fired</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-spouse-keeps-bringing-up-the-past.html">What To Do When Your Spouse Keeps Bringing Up The Past</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-husband-puts-his-family-before-you.html">What To Do When Your Husband Puts His Family Before You</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-spouse-undermines-your-parenting.html">What To Do When Your Spouse Undermines Your Parenting</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-husband-dies-unexpectedly.html">What To Do When Your Husband Dies Unexpectedly</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-spouses-family-hates-you.html">What To Do When Your Spouses Family Hates You</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-partner-calls-you-their-exs-name.html">What To Do When Your Partner Calls You Their Exs Name</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-partner-suffers-from-anxiety.html">What To Do When Your Partner Suffers From Anxiety</a></li>
+													<li class="list-group-item"><a href="/whats-my-campers-value.html">Whats My Campers Value</a></li>
+													<li class="list-group-item"><a href="/what-to-say-on-the-death-of-a-husband.html">What To Say On The Death Of A Husband</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-wife-is-always-negative.html">What To Do When Your Wife Is Always Negative</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-husband-calls-you-crazy.html">What To Do When Your Husband Calls You Crazy</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-spouse-constantly-lies.html">What To Do When Your Spouse Constantly Lies</a></li>
+													<li class="list-group-item"><a href="/what-to-pray-when-your-husband-wants-a-divorce.html">What To Pray When Your Husband Wants A Divorce</a></li>
+													<li class="list-group-item"><a href="/whats-my-calling-in-life.html">Whats My Calling In Life</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-husband-plays-the-victim.html">What To Do When Your Husband Plays The Victim</a></li>
+													<li class="list-group-item"><a href="/what-would-you-do-husband-verbally-abuses-wife-in-public.html">What Would You Do Husband Verbally Abuses Wife In Public</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-husband-is-always-negative.html">What To Do When Your Husband Is Always Negative</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

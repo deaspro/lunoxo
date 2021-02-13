@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How Long Can You Be An Army Recruiter - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How Long Can You Be An Army Recruiter",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/92/f9/3c/92f93cd0fdafae9d0fb81dda72084797.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+long+can+you+be+an+army+recruiter",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How Long Can You Be An Army Recruiter</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">As well as researching this website and those of the Navy Army and Air Force its a good idea to speak to a serving member of the ADF and preferably one who is doing the job youre applying for. Army recruiters are 21-35 years old have completed 30 hours of college coursework and have at least three years of active service remaining after becoming a recruiter according to the United. According to the US. <br>				
+			</p>
+										<a class="badge badge-danger" href="/will-the-irs-take-my-refund-if-my-spouse-owes.html">will the irs take my refund if my spouse owes</a>
+											<a class="badge badge-warning" href="/why-my-wife-acts-like-a-child.html">why my wife acts like a child</a>
+											<a class="badge badge-secondary" href="/why-wont-my-husband-work.html">why wont my husband work</a>
+											<a class="badge badge-danger" href="/wife-cheated-what-are-my-rights.html">wife cheated what are my rights</a>
+											<a class="badge badge-primary" href="/why-my-wife-doesnt-want-to-make-love.html">why my wife doesnt want to make love</a>
+											<a class="badge badge-warning" href="/wife-of-a-marine-engineer.html">wife of a marine engineer</a>
+											<a class="badge badge-warning" href="/womens-army-corps-wikipedia.html">womens army corps wikipedia</a>
+											<a class="badge badge-light" href="/will-the-military-pay-for-my-spouses-student-loans.html">will the military pay for my spouses student loans</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to pay a visit to the right site.  Our website provides you with hints for viewing the maximum quality video and picture content, hunt and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/12/84/7f128474fe5b96a6e9d4c603c5efef92.jpg" data-lightbox="roadtrip" data-title="Army Recruiter S Pitch Haha Sadly Mine Is The Marine Going In First Lol Funny Army Memes Marines Funny Marine Corps Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/12/84/7f128474fe5b96a6e9d4c603c5efef92.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYdWVAx7KjSfJFTbIpRmO81SBAhQP34L7PYQ';" alt="Army Recruiter S Pitch Haha Sadly Mine Is The Marine Going In First Lol Funny Army Memes Marines Funny Marine Corps Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Recruiter S Pitch Haha Sadly Mine Is The Marine Going In First Lol Funny Army Memes Marines Funny Marine Corps Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/aa/f5/6e/aaf56e6b30f7b1b810d486641b450973.jpg" data-lightbox="roadtrip" data-title="Army Recruiter In 2020 Army Recruitment Sergeant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/aa/f5/6e/aaf56e6b30f7b1b810d486641b450973.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB5iKxTbja5H_zSNYo5mxWH3O-ZwF5i6LOow';" alt="Army Recruiter In 2020 Army Recruitment Sergeant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Recruiter In 2020 Army Recruitment Sergeant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/e2/da/0de2da36c179c7bf383d492927d2d471.jpg" data-lightbox="roadtrip" data-title="As A Recruiter You Ve Heard Everything In The Book Inbox Me For More Information Concerning The Army Te Minimum Wage Job Memes Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/e2/da/0de2da36c179c7bf383d492927d2d471.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6rIiW85q4tP4ClqUaJJwaL2IHjSqGPeMFDg';" alt="As A Recruiter You Ve Heard Everything In The Book Inbox Me For More Information Concerning The Army Te Minimum Wage Job Memes Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">As A Recruiter You Ve Heard Everything In The Book Inbox Me For More Information Concerning The Army Te Minimum Wage Job Memes Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/50/30/675030953f3baed70fd4215e320386fe.jpg" data-lightbox="roadtrip" data-title="These Are The Reasons Why Drill Sergeant Duty Is Better Than Recruiting Sergeant Drill Instructor Recruitment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/50/30/675030953f3baed70fd4215e320386fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfX0w2U3Eb9iOvk7bqrZr_qACWFUVGl3FSuQ';" alt="These Are The Reasons Why Drill Sergeant Duty Is Better Than Recruiting Sergeant Drill Instructor Recruitment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">These Are The Reasons Why Drill Sergeant Duty Is Better Than Recruiting Sergeant Drill Instructor Recruitment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/00/c2/f300c26b84d97b6687c6da8882c1d2cd.jpg" data-lightbox="roadtrip" data-title="How To Become An Army Recruiter Army Leaders Army Recruitment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/00/c2/f300c26b84d97b6687c6da8882c1d2cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0mAuvIY7r4wYDewS0BCe4j_OImXMUUA04Rg';" alt="How To Become An Army Recruiter Army Leaders Army Recruitment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become An Army Recruiter Army Leaders Army Recruitment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/c9/e5/e3c9e5aa52ef6527018062c929f30b97.jpg" data-lightbox="roadtrip" data-title="U S Army Recruiting Advertising In 1976 National Support For The Draft Eroded In The 1960s The Concept O Army Recruitment Military Recruiting List Of Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/c9/e5/e3c9e5aa52ef6527018062c929f30b97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNhNsfDzIW8kAYFW2dbBsfvSSfagPS8fWshg';" alt="U S Army Recruiting Advertising In 1976 National Support For The Draft Eroded In The 1960s The Concept O Army Recruitment Military Recruiting List Of Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Recruiting Advertising In 1976 National Support For The Draft Eroded In The 1960s The Concept O Army Recruitment Military Recruiting List Of Skills</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/aa/80/46/aa80469d98f7beb651b72493bbbc8d0a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNhNsfDzIW8kAYFW2dbBsfvSSfagPS8fWshg';" alt="U S Army Recruiting Advertising In 1976 National Support For The Draft Eroded In The 1960s The Concept O Army Recruitment Military Recruiting List Of Skills">
+										<div class="card-body">
+						<h3 class="h5"><b>No you still have to complete basic training and serve for a minimum of four years and complete recruiter training before you can become an army recruiter.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How long can you be an army recruiter</strong>. 
+								
+																	Whether youre joining as an officer or a soldier youll find all the help you need from your local Army Career Centre. 
+																	For every tale behind a disgruntled. 
+																	In addition the recruiter must have successfully finished at least one tour of service have served at least four years in an Army Career and have three years remaining on a present term after completion of recruiter training. 
+																	Theyll get to know you and when youre ready to move on to the next stage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Since the Army recruiter will also represent the Army he or she must also meet certain physical requirements. 
+																	Recruiters must be between the ages of 21 and 39 when selected unless a waiver is given for those up to age 45. 
+																	They can be instrumental in helping you decide if a career in the military is right for you and in which area you would be most fitted to serve. 
+																	The only way to make sure that you keep getting better is for you to work at getting better. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You will receive appropriate counseling from your chain-of-command should you decide to covert. 
+																	Once you make your decision make an appointment with the recruiter for the service you want to join. 
+																	The sun shines birds fly and military recruiters arent 100 honest with you. 
+																	Army most of its recruiters are on a three-year special duty assignment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At a minimum Air Force recruiters must have achieved the rank of senior airman and have served either three years of a four-year enlistment or five years of a six-year enlistment. 
+																	Your Case Manager can arrange this for you please call 13 19 02. 
+																	When you finish youll get your B or C category driving licence before joining your Regiment. 
+																	Here youll have a recruiter who will help you through your application. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can request to convert to 79R as early as 18 months as a recruiter but in most instances you must have 24 months or more. 
+																	The recruiter will ask you a bunch of questions to see if you qualify for military service. 
+																	Eligible Soldiers in the rank of Sergeant through Sergeant First Class can volunteer for recruiting duty if otherwise qualified. 
+																	These will be questions about age citizenship or immigration status education. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Well calling recruiters dishonest might be a bit of a stretch. 
+																	The Army also sets limits on how long applicants have been in their respective. 
+																	At time of selection have no less than 4 years time in service and no more than 9 years time in service if a SGT no more than 15 years time in service if a SSG or no more than 16 years time in. 
+																	You can request to convert to 79R as early as 18 months as a recruiter but in most instances you must have 24 months or more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you cant consistently push past the status quo you wont move from being good to being great. 
+																	Its the same with recruiting. 
+																	If youve dreamed of becoming an Officer Warrant Officer aviator or Special Forces Soldier now is the time to see if you have what it takes to be counted among the Armys leaders. 
+																	We do not enforce this requirement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youre aged under 17 years and 5 months youll do your basic training at the Army Foundation College Harrogate for 49 weeks. 
+																	As many as 70 of current army recruiters have returned from active tours of duty in Iraq and Afghanistan qualifying them to be well aware of todays army lifestyle and different career paths within it. 
+																	7 Continuous trainingeducation. 
+																	Once their recruiting duties are over they are reassigned back to their primary Military Occupational Specialty MOS job. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Life is full of surprises but some things never change. 
+																	This is a career decision that you must make. 
+																	The first thing the recruiter is going to do is to pre-qualify you. 
+																	You will receive appropriate counseling from your chain-of-command should you decide to covert. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youll then go to ITC C to complete your Infantry training over 10 weeks. 
+																	Yes you can apply but you will eventually have to reenlist or extend to have 3 years service remaining after completion of the Army Recruiting Course ARC. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/90/30/62/903062ef969f0f54c24ba93dbb6e71c9.jpg" data-lightbox="roadtrip" data-title="41 Questions To Ask A Military Recruiter And 5 Lies To Watch Out For Navy Recruiter Air Force Recruiter This Or That Questions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/90/30/62/903062ef969f0f54c24ba93dbb6e71c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbf0pIRkNipLYwfPyA1WDADKP23uNPSfcZkg';" alt="41 Questions To Ask A Military Recruiter And 5 Lies To Watch Out For Navy Recruiter Air Force Recruiter This Or That Questions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">41 Questions To Ask A Military Recruiter And 5 Lies To Watch Out For Navy Recruiter Air Force Recruiter This Or That Questions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/4a/ff/9e4affb8a8de804ac010757cb026f1ad.jpg" data-lightbox="roadtrip" data-title="Marine Army Which One Would You Choose Marines Funny Military Humor Usmc Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/4a/ff/9e4affb8a8de804ac010757cb026f1ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDE55fFnven0G6KqBEE_wyl4I-ylyK7qOxCA';" alt="Marine Army Which One Would You Choose Marines Funny Military Humor Usmc Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Army Which One Would You Choose Marines Funny Military Humor Usmc Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/80/46/aa80469d98f7beb651b72493bbbc8d0a.png" data-lightbox="roadtrip" data-title="How Long Is Navy Boot Camp Navy Boots Navy Training Navy Basic Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/80/46/aa80469d98f7beb651b72493bbbc8d0a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_s6brBA-JP4lL_xtO5oqxNIV9SHglvZ4fHw';" alt="How Long Is Navy Boot Camp Navy Boots Navy Training Navy Basic Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Long Is Navy Boot Camp Navy Boots Navy Training Navy Basic Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/12/5e/8d/125e8d49ef0c5c57d339788a67e819e9.jpg" data-lightbox="roadtrip" data-title="Why The Us Military Needs To Seriously Rethink Recruiter Goals Recruitment Army Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/12/5e/8d/125e8d49ef0c5c57d339788a67e819e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSgNyTMuFuKi8Fyjz-n1MZtXi76ALMucvNVA';" alt="Why The Us Military Needs To Seriously Rethink Recruiter Goals Recruitment Army Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why The Us Military Needs To Seriously Rethink Recruiter Goals Recruitment Army Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/21/5b/58215b5573f4379c6928b5b8582dfefb.jpg" data-lightbox="roadtrip" data-title="Pin On Elizabeth Taylor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/21/5b/58215b5573f4379c6928b5b8582dfefb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPN5iGGroPKqxKyzFv3GovbZKfYqSXastsdA';" alt="Pin On Elizabeth Taylor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Elizabeth Taylor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/0c/11/930c1157b495f70f2016b0052cdfa196.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Motivation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/0c/11/930c1157b495f70f2016b0052cdfa196.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBfwwYhhcCj2JkeXbYAJmLnMg0BBHYCXsWxQ';" alt="Pin On Guard Motivation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Motivation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/f9/3c/92f93cd0fdafae9d0fb81dda72084797.jpg" data-lightbox="roadtrip" data-title="The Evolution Of Uncle Sam Army Strong Army Graphics Army Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/f9/3c/92f93cd0fdafae9d0fb81dda72084797.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafYojGyT-mAjXU49H9yemPs4ZQF1_lwuW3g';" alt="The Evolution Of Uncle Sam Army Strong Army Graphics Army Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Evolution Of Uncle Sam Army Strong Army Graphics Army Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/ee/e7/9beee72b9134ee91043d16df8c007ec6.png" data-lightbox="roadtrip" data-title="Motor Transport Operator 88m Army Reserve Air Force Recruiter Army Usa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/ee/e7/9beee72b9134ee91043d16df8c007ec6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdQkdOrpGxhYiSxGKz0vvL8TzK4Yqgd1uwQ';" alt="Motor Transport Operator 88m Army Reserve Air Force Recruiter Army Usa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Motor Transport Operator 88m Army Reserve Air Force Recruiter Army Usa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/46/f2/1646f2523b6a34a74676bc5d167ebd77.png" data-lightbox="roadtrip" data-title="Pin On Guard Motivation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/46/f2/1646f2523b6a34a74676bc5d167ebd77.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Ui4axswFtg_M0EhwwKBuori98eW0-y57sw';" alt="Pin On Guard Motivation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Motivation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/2c/a6/3a2ca6edb4bf536234bebc24925f6b46.jpg" data-lightbox="roadtrip" data-title="Army Soldier Army Soldier Soldier Army Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/2c/a6/3a2ca6edb4bf536234bebc24925f6b46.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiROva-ttVYnlkgVYTSIUEnotdQiG5uAQgXQ';" alt="Army Soldier Army Soldier Soldier Army Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Soldier Army Soldier Soldier Army Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/02/fa/e1/02fae16d7409bdde1e63058ca16fda67.jpg" data-lightbox="roadtrip" data-title="A Recruiter Can Change Your Life And You Can Change The Lives Of Others Find Your Local Recruiter Now The Lives Of Others Life Finding Yourself">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/02/fa/e1/02fae16d7409bdde1e63058ca16fda67.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHe0N1T6nnvKONeRVNhKdLNMLduzoYd-tmnQ';" alt="A Recruiter Can Change Your Life And You Can Change The Lives Of Others Find Your Local Recruiter Now The Lives Of Others Life Finding Yourself">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Recruiter Can Change Your Life And You Can Change The Lives Of Others Find Your Local Recruiter Now The Lives Of Others Life Finding Yourself</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/ec/96/ffec969bd955d31d265b13beb3ed4015.jpg" data-lightbox="roadtrip" data-title="What The Military Can Teach You About Recruiting And Hiring Army Recruitment Army Strong Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/ec/96/ffec969bd955d31d265b13beb3ed4015.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFPPLnH7jfLZkOKRJEBmW4Dr9bMhV-kOJHTQ';" alt="What The Military Can Teach You About Recruiting And Hiring Army Recruitment Army Strong Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What The Military Can Teach You About Recruiting And Hiring Army Recruitment Army Strong Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/86/de/ea86def6334ce6726b092c5924df5244.jpg" data-lightbox="roadtrip" data-title="When Military Recruiting Goes Bad Air Force Recruiter Recruitment Military Recruiting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/86/de/ea86def6334ce6726b092c5924df5244.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgGop3lSyxQf2BQ98T-hXXMqNrxSumi7LAbA';" alt="When Military Recruiting Goes Bad Air Force Recruiter Recruitment Military Recruiting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When Military Recruiting Goes Bad Air Force Recruiter Recruitment Military Recruiting</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mycanal-impossible-de-decoder-la-video.html">Mycanal Impossible De Decoder La Video</a></li>
+													<li class="list-group-item"><a href="/mycanal-combo-list.html">Mycanal Combo List</a></li>
+													<li class="list-group-item"><a href="/mycanal-key-update-error.html">Mycanal Key Update Error</a></li>
+													<li class="list-group-item"><a href="/mycanal-direct.html">Mycanal Direct</a></li>
+													<li class="list-group-item"><a href="/mycanal-inscription.html">Mycanal Inscription</a></li>
+													<li class="list-group-item"><a href="/mycanal-en-afrique.html">Mycanal En Afrique</a></li>
+													<li class="list-group-item"><a href="/mycanal-et-netflix.html">Mycanal Et Netflix</a></li>
+													<li class="list-group-item"><a href="/mycanal-en-europe.html">Mycanal En Europe</a></li>
+													<li class="list-group-item"><a href="/mycanal-afrique-ios.html">Mycanal Afrique Ios</a></li>
+													<li class="list-group-item"><a href="/mycanal-afrique.html">Mycanal Afrique</a></li>
+													<li class="list-group-item"><a href="/mycanal-afrique-une-nouvelle-facon-de-regarder-la-tele.html">Mycanal Afrique Une Nouvelle Facon De Regarder La Tele</a></li>
+													<li class="list-group-item"><a href="/mycanal-nc.html">Mycanal Nc</a></li>
+													<li class="list-group-item"><a href="/mycanal-afrique-cote-divoire.html">Mycanal Afrique Cote Divoire</a></li>
+													<li class="list-group-item"><a href="/mycanal-disney-plus-gratuit.html">Mycanal Disney Plus Gratuit</a></li>
+													<li class="list-group-item"><a href="/mycanal-myanmar.html">Mycanal Myanmar</a></li>
+													<li class="list-group-item"><a href="/mycanal-apple-tv.html">Mycanal Apple Tv</a></li>
+													<li class="list-group-item"><a href="/mycanal-bouygues.html">Mycanal Bouygues</a></li>
+													<li class="list-group-item"><a href="/mycanal-haiti.html">Mycanal Haiti</a></li>
+													<li class="list-group-item"><a href="/mycanal-installer.html">Mycanal Installer</a></li>
+													<li class="list-group-item"><a href="/mycanal-download.html">Mycanal Download</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

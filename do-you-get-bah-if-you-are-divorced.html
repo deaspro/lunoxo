@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Do You Get Bah If You Are Divorced - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Do You Get Bah If You Are Divorced",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/42/0c/51/420c517e9512522bf79734987e9fae1c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=do+you+get+bah+if+you+are+divorced",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Do You Get Bah If You Are Divorced</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">If you do not want a divorce you can get a legal separation so you can live apart without ending the marriage. If you are divorced and have legal and physical custody of your children you are authorized BAH at the with-dependent BAH rate if not assigned adequate family-type GOVT QTRS. No you cant get the Post 911 GI Bill housing stipend if your ex-spouse is still serving and drawing BAH. <br>				
+			</p>
+										<a class="badge badge-light" href="/army-spouse-t-shirt.html">army spouse t shirt</a>
+											<a class="badge badge-success" href="/army-tuition-assistance-contract.html">army tuition assistance contract</a>
+											<a class="badge badge-info" href="/army-spouses-club-of-greater-washington-area.html">army spouses club of greater washington area</a>
+											<a class="badge badge-dark" href="/army-tuition-assistance-deadline.html">army tuition assistance deadline</a>
+											<a class="badge badge-dark" href="/army-undercut-haircut.html">army undercut haircut</a>
+											<a class="badge badge-info" href="/army-tuition-assistance-credit-limit.html">army tuition assistance credit limit</a>
+											<a class="badge badge-success" href="/army-tuition-assistance-statement-of-understanding.html">army tuition assistance statement of understanding</a>
+											<a class="badge badge-info" href="/army-tuition-assistance-number.html">army tuition assistance number</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to pay a visit to the right blog.  Our website gives you suggestions for seeing the maximum quality video and image content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this movie for you to view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c4/07/47/c40747188d50e38cddf55036e074fef9.jpg" data-lightbox="roadtrip" data-title="Why Divorce Is The Answer If You Re Not Happy Even If You Have Kids Sahm Plus Divorce Advice Woman Divorce And Kids Divorce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c4/07/47/c40747188d50e38cddf55036e074fef9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpxjauvUkptMvCkTonnEj2HXtpHg7j4XYUCg';" alt="Why Divorce Is The Answer If You Re Not Happy Even If You Have Kids Sahm Plus Divorce Advice Woman Divorce And Kids Divorce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Divorce Is The Answer If You Re Not Happy Even If You Have Kids Sahm Plus Divorce Advice Woman Divorce And Kids Divorce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://info.legalzoom.com/sites/lz.com/files/xAdobeStock_109724271.jpg.pagespeed.ic.cT7Q_8prB1.jpg" data-lightbox="roadtrip" data-title="Receiving A Bah After Getting Divorced Legalzoom Com">
+											<img class="card-img v-image ads-img " src="https://info.legalzoom.com/sites/lz.com/files/xAdobeStock_109724271.jpg.pagespeed.ic.cT7Q_8prB1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_fFTgb8fGg0SETunZMIxjFMkzHtopdCSqMg';" alt="Receiving A Bah After Getting Divorced Legalzoom Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Receiving A Bah After Getting Divorced Legalzoom Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/0c/51/420c517e9512522bf79734987e9fae1c.jpg" data-lightbox="roadtrip" data-title="When You Re Divorced In Your Twenties Taylor Duvall Divorce Quotes Funny Divorce Advice Divorce Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/0c/51/420c517e9512522bf79734987e9fae1c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEb8AML444sVu8efFLTqputFzwdj25mATUcQ';" alt="When You Re Divorced In Your Twenties Taylor Duvall Divorce Quotes Funny Divorce Advice Divorce Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When You Re Divorced In Your Twenties Taylor Duvall Divorce Quotes Funny Divorce Advice Divorce Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/5b/8e/be5b8ece3d61444e24d869c25ed63c4f.jpg" data-lightbox="roadtrip" data-title="10 Things To Do Before You Get A Divorce Premarital Counseling Divorce Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/5b/8e/be5b8ece3d61444e24d869c25ed63c4f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ZXXyI4LvHOc5XUSM8ICTOqd80jlN-dsdVg';" alt="10 Things To Do Before You Get A Divorce Premarital Counseling Divorce Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Things To Do Before You Get A Divorce Premarital Counseling Divorce Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/8c/1a/3d8c1a21245e0c96debdc658e9b30932.jpg" data-lightbox="roadtrip" data-title="Funny Divorce Card Happy Divorce Day I We Never Liked Etsy Divorce Cards Happy Divorce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/8c/1a/3d8c1a21245e0c96debdc658e9b30932.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO4RPEvMezA0OTuAj8c73FovYHowBYfed1vg';" alt="Funny Divorce Card Happy Divorce Day I We Never Liked Etsy Divorce Cards Happy Divorce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Funny Divorce Card Happy Divorce Day I We Never Liked Etsy Divorce Cards Happy Divorce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1d/89/18/1d8918f2109940d1677a03848e6ef239.jpg" data-lightbox="roadtrip" data-title="40 Inspirational Divorce Quotes To Make You Feel Less Alone Sas For Women Inspirational Divorce Quotes Divorce Quotes Mom Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1d/89/18/1d8918f2109940d1677a03848e6ef239.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGk-yWD9sUfsuGd4RaPkfgZjnzOCbzv7FFvw';" alt="40 Inspirational Divorce Quotes To Make You Feel Less Alone Sas For Women Inspirational Divorce Quotes Divorce Quotes Mom Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">40 Inspirational Divorce Quotes To Make You Feel Less Alone Sas For Women Inspirational Divorce Quotes Divorce Quotes Mom Quotes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/64/62/28/64622868ec087ea8f4b26c64547ba878.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGk-yWD9sUfsuGd4RaPkfgZjnzOCbzv7FFvw';" alt="40 Inspirational Divorce Quotes To Make You Feel Less Alone Sas For Women Inspirational Divorce Quotes Divorce Quotes Mom Quotes">
+										<div class="card-body">
+						<h3 class="h5"><b>After you are divorced it is up to the agreements decided upon by the lawyers and courts whether you have to pay alimony or not.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Do you get bah if you are divorced</strong>. 
+								
+																	In this case special rules apply and the member receives BAH-DIFF. 
+																	However a divorce may impact the amount of BAH you receive and in some instances may terminate your BAH altogether. 
+																	However if you are not married or divorced and are paying child support you do not receive full-rate BAH while living in the barracks. 
+																	That is the official policy of the VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some complications such as. 
+																	Additionally you may be entitled to some BAH amounts if you are residing separately from your. 
+																	For instance during marriage the service member may receive BAH to provide for housing for hisher spouse and children. 
+																	Not in a government-provided home. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When you are in military housing and separated from your dependents you get BAH-Dif. 
+																	After that the decision on BAH depends on several factors. 
+																	BAH with dependents is the same regardless of the number of dependents so a military service member will receive the same BAH allowance with just a spouse and as with a spouse and multiple children. 
+																	To answer your questions directly the answer is it depends The servicemember continues to rate BAH Type II unless heshe is legally separated. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Does anyone know if that matters since our son is through marriage and his daughter is not and he gets the BAH because he is married and kids. 
+																	For basic training or technical schoolAITA-School you will receive the BAH amount for the location where your dependents are residing. 
+																	Once you are divorced you will only receive BAH wo dep unless you have children. 
+																	BHA offsets the cost of housing when members live off-base. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are getting a divorce you can still receive BAH in most cases. 
+																	If you continue living off-base youll receive the BAH-WITHOUT rate rather than the BAH-WITH rate because you no longer have a dependent -- your spouse. 
+																	Learn the BAH Basics. 
+																	Family law attorneys will advise their military clients that upon divorce the service member may lose the status of having dependents and instead be assigned to single-type government quarters in which case heshe would no longer be eligible for BAH. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can apply for separation or. 
+																	Secondly you must support your spouse as long as heshe is your spouse. 
+																	Now if your spouse chooses not to receive BAH then you would be eligible for the housing allowance. 
+																	The child support order should be at least as much as the BAH-dif or it should be modified. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Divorce affects BAH in a variety of ways and the exact situations can get very complex and vary from case to case. 
+																	If your former spouse has custody and you are paying adequate child support at least in an amount of your BAH-DIFF rate you are authorized BAH at the with-dependent rate if not in Govt quarters or BAH-DIFF if assigned single-type Govt quarters. 
+																	My husband and I are seperated and he is in Iraq he has a son with me and a daughter from a previouse relationship. 
+																	Divorce can affect BAH in a variety of ways. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Absent child support whether or not he continues to gets BAH or not really doesnt matter for after the divorce the Divorce Decree has already established who owes who what. 
+																	I was wondering I was told I am entitled to all of the BAH but he says I am not since he has two kids. 
+																	Under most circumstances you receive BAH for the location where you are assigned not where you live. 
+																	You might also be able to annul the marriage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whether the Service person is living off-base Whether child support is more or less than the difference between single and dependant BAH. 
+																	If you and your spouse have no children together and if you are the service member youll continue to receive BAH post-divorce provided you dont move into single-unit government housing. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ea/8d/f8/ea8df841cc35022379a0740514d47d84.jpg" data-lightbox="roadtrip" data-title="Should You Continue Serving To Earn A Military Retirement The Golden Albatross Might Help You Military Retirement Military Spouse Blog Military Retirement Pay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ea/8d/f8/ea8df841cc35022379a0740514d47d84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXzKGBBkcfwCvM6X7srurCLmJG6uWx6qkrog';" alt="Should You Continue Serving To Earn A Military Retirement The Golden Albatross Might Help You Military Retirement Military Spouse Blog Military Retirement Pay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should You Continue Serving To Earn A Military Retirement The Golden Albatross Might Help You Military Retirement Military Spouse Blog Military Retirement Pay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/2a/fb/57/2afb5751e78e3d23d570f24edc50719a.jpg" data-lightbox="roadtrip" data-title="Pin On Relationships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/2a/fb/57/2afb5751e78e3d23d570f24edc50719a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIMMABRXEDS7I3ZcWNJGHl2lj0SdjUDJ3fGQ';" alt="Pin On Relationships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Relationships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/62/28/64622868ec087ea8f4b26c64547ba878.png" data-lightbox="roadtrip" data-title="A Divorced Man Wrote These 20 Beautiful Marriage Advice That Every Man Should Marriage Advice Marriage Quotes Marriage Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/62/28/64622868ec087ea8f4b26c64547ba878.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtc5esQkYjvfwBJ-_mlRhpHsez5vukuTsOlg';" alt="A Divorced Man Wrote These 20 Beautiful Marriage Advice That Every Man Should Marriage Advice Marriage Quotes Marriage Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Divorced Man Wrote These 20 Beautiful Marriage Advice That Every Man Should Marriage Advice Marriage Quotes Marriage Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/43/dd/3e43dd03c144fc33a8a20c73b683d1f2.jpg" data-lightbox="roadtrip" data-title="When Is It Haraam Do Divorce Talaq Your Wife Learn Islam Islam Marriage Learn Quran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/43/dd/3e43dd03c144fc33a8a20c73b683d1f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKLhR6fl-yfwbT-5uqZtEatLgg2twZhGOnRA';" alt="When Is It Haraam Do Divorce Talaq Your Wife Learn Islam Islam Marriage Learn Quran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When Is It Haraam Do Divorce Talaq Your Wife Learn Islam Islam Marriage Learn Quran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/69/69/bb696928e3f5d524bfdd2b9777f89e27.png" data-lightbox="roadtrip" data-title="2019 Kentucky Bah Basic Allowance Housing Rates Payday Loans Va Mortgage Loans Payday">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/69/69/bb696928e3f5d524bfdd2b9777f89e27.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3GK1Ns5st23au61ZPH5ZOmSowDmWBcPRM7w';" alt="2019 Kentucky Bah Basic Allowance Housing Rates Payday Loans Va Mortgage Loans Payday">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 Kentucky Bah Basic Allowance Housing Rates Payday Loans Va Mortgage Loans Payday</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/0f/e5/8d0fe5050f625a273dba1675bcafa5c3.png" data-lightbox="roadtrip" data-title="5 Top Reasons For Divorce And Why It Might Be Right For You When You Re Considering A Divorce Every Bit Of Info Reasons For Divorce Divorce Divorce Advice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/0f/e5/8d0fe5050f625a273dba1675bcafa5c3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnooygpyi4SlBW_N8tiWGq2EoWZaBW_72RkQ';" alt="5 Top Reasons For Divorce And Why It Might Be Right For You When You Re Considering A Divorce Every Bit Of Info Reasons For Divorce Divorce Divorce Advice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Top Reasons For Divorce And Why It Might Be Right For You When You Re Considering A Divorce Every Bit Of Info Reasons For Divorce Divorce Divorce Advice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/0d/db/c00ddb6a26213d8d288362d607b84957.jpg" data-lightbox="roadtrip" data-title="The Sting Of Divorce Surviving Infidelity Surviving Infidelity Infidelity Divorce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/0d/db/c00ddb6a26213d8d288362d607b84957.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBXfSPlxgUidwBexEaHgqkWrn8sKu8Ux1S4w';" alt="The Sting Of Divorce Surviving Infidelity Surviving Infidelity Infidelity Divorce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Sting Of Divorce Surviving Infidelity Surviving Infidelity Infidelity Divorce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/3e/8b/213e8b71b6bc1752263404944e16500f.jpg" data-lightbox="roadtrip" data-title="7 Ways To Heal A Broken Marriage Marriage Quotes Struggling Marriage Struggles Broken Marriage Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/3e/8b/213e8b71b6bc1752263404944e16500f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6clYxpe0OTt3a9yXVvFV3ig26S4bdQjsevg';" alt="7 Ways To Heal A Broken Marriage Marriage Quotes Struggling Marriage Struggles Broken Marriage Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Ways To Heal A Broken Marriage Marriage Quotes Struggling Marriage Struggles Broken Marriage Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/57/63/4b/57634b1d1522256a37edbd2f69b94af0.jpg" data-lightbox="roadtrip" data-title="If You Are Asking What Do I Do My Husband Wants A Divorce And L Don T You Can Find Advice Here On How To Survi Divorce Divorce Advice Best Marriage Advice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/57/63/4b/57634b1d1522256a37edbd2f69b94af0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT93_7rpyPtxhdZc-Vw6b5XFkjbn8KdC9ZPqw';" alt="If You Are Asking What Do I Do My Husband Wants A Divorce And L Don T You Can Find Advice Here On How To Survi Divorce Divorce Advice Best Marriage Advice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Are Asking What Do I Do My Husband Wants A Divorce And L Don T You Can Find Advice Here On How To Survi Divorce Divorce Advice Best Marriage Advice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/c2/f2/d5c2f2b676ddd0650117de53f9588a90.jpg" data-lightbox="roadtrip" data-title="The World Of The Married Episode 4 Recap Part 1 You Are The Father Married Getting Divorced">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/c2/f2/d5c2f2b676ddd0650117de53f9588a90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmC2RgxuZMC4RJjHphJ8pj9OxcZ3udgQR1xw';" alt="The World Of The Married Episode 4 Recap Part 1 You Are The Father Married Getting Divorced">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The World Of The Married Episode 4 Recap Part 1 You Are The Father Married Getting Divorced</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/de/0b/06de0b640ef84ebb7d3aadabd0401409.jpg" data-lightbox="roadtrip" data-title="If You Re Fighting All The Time Or You Don T Trust Each Other Or One Of You Is Cheating Or If You Re Just Not Happy Sto Love Your Life Life Cheats Cheating">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/de/0b/06de0b640ef84ebb7d3aadabd0401409.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-gh9nlgbHWjGHYadYT3gErSDedfagT0Bbsw';" alt="If You Re Fighting All The Time Or You Don T Trust Each Other Or One Of You Is Cheating Or If You Re Just Not Happy Sto Love Your Life Life Cheats Cheating">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Re Fighting All The Time Or You Don T Trust Each Other Or One Of You Is Cheating Or If You Re Just Not Happy Sto Love Your Life Life Cheats Cheating</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/63/2d/4d632d576e1e88f456d77c4217143c3c.png" data-lightbox="roadtrip" data-title="How You Can Help Your Children Through A Pcs Military Kids Military Spouse Support Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/63/2d/4d632d576e1e88f456d77c4217143c3c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvq5yYy9uV1SRkWRKuF7iQgEpEEmjeHQ7qlw';" alt="How You Can Help Your Children Through A Pcs Military Kids Military Spouse Support Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How You Can Help Your Children Through A Pcs Military Kids Military Spouse Support Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/f3/0c/e1f30c6c9e4e0111919e5ecc06e4da44.png" data-lightbox="roadtrip" data-title="Pin On Divorce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/f3/0c/e1f30c6c9e4e0111919e5ecc06e4da44.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlr5YkXteNHgCtL2PaY-wthclOTiZbvDTQ7A';" alt="Pin On Divorce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Divorce</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-time-conversion-table-excel.html">Military Time Conversion Table Excel</a></li>
+													<li class="list-group-item"><a href="/military-time-calculator-payroll.html">Military Time Calculator Payroll</a></li>
+													<li class="list-group-item"><a href="/military-time-cheat-sheet-print.html">Military Time Cheat Sheet Print</a></li>
+													<li class="list-group-item"><a href="/military-time-chart-in-hours-and-minutes.html">Military Time Chart In Hours And Minutes</a></li>
+													<li class="list-group-item"><a href="/military-time-chart-in-seconds.html">Military Time Chart In Seconds</a></li>
+													<li class="list-group-item"><a href="/military-time-conversion-quiz.html">Military Time Conversion Quiz</a></li>
+													<li class="list-group-item"><a href="/military-time-chart-conversion-pdf.html">Military Time Chart Conversion Pdf</a></li>
+													<li class="list-group-item"><a href="/military-thank-you-songs.html">Military Thank You Songs</a></li>
+													<li class="list-group-item"><a href="/military-time-conversion-chart.html">Military Time Conversion Chart</a></li>
+													<li class="list-group-item"><a href="/military-time-chart-images.html">Military Time Chart Images</a></li>
+													<li class="list-group-item"><a href="/military-thank-you-pictures.html">Military Thank You Pictures</a></li>
+													<li class="list-group-item"><a href="/military-time-conversion-minutes.html">Military Time Conversion Minutes</a></li>
+													<li class="list-group-item"><a href="/military-time-chartjpg.html">Military Time Chartjpg</a></li>
+													<li class="list-group-item"><a href="/military-time-conversion-table-hours-minutes.html">Military Time Conversion Table Hours Minutes</a></li>
+													<li class="list-group-item"><a href="/military-thank-you-poems.html">Military Thank You Poems</a></li>
+													<li class="list-group-item"><a href="/military-time-conversion-java.html">Military Time Conversion Java</a></li>
+													<li class="list-group-item"><a href="/military-time-chart-free.html">Military Time Chart Free</a></li>
+													<li class="list-group-item"><a href="/military-time-conversion-chart-in-minutes.html">Military Time Conversion Chart In Minutes</a></li>
+													<li class="list-group-item"><a href="/military-time-chart-conversion.html">Military Time Chart Conversion</a></li>
+													<li class="list-group-item"><a href="/military-time-conversion-in-c.html">Military Time Conversion In C</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How To Find A Military Wife - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How To Find A Military Wife",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/170x/ce/97/50/ce9750ae997e93e7b15099d6e44628dd--military-wife-quotes-army-quotes.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+to+find+a+military+wife",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How To Find A Military Wife</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The amount is supposed to increase based on rank. There are always things you can do to improve your chances of landing a great job networking creating a great resume or contacting government organization that offers work to military spouses. Danielle Tigue an Army spouse based in Washington DC used the Fort Belvoir Virginia ERP to find her current job. <br>				
+			</p>
+										<a class="badge badge-dark" href="/how-to-get-my-wife-a-military-id-card.html">how to get my wife a military id card</a>
+											<a class="badge badge-danger" href="/how-to-get-my-watch-off-military-time.html">how to get my watch off military time</a>
+											<a class="badge badge-light" href="/how-to-get-british-army-service-records.html">how to get british army service records</a>
+											<a class="badge badge-primary" href="/how-to-get-new-spouse-military-id.html">how to get new spouse military id</a>
+											<a class="badge badge-primary" href="/how-to-get-husband-to-stop-calling-me-names.html">how to get husband to stop calling me names</a>
+											<a class="badge badge-success" href="/how-to-fill-out-fafsa-for-military.html">how to fill out fafsa for military</a>
+											<a class="badge badge-primary" href="/how-to-get-a-divorce-military.html">how to get a divorce military</a>
+											<a class="badge badge-success" href="/how-to-get-job-in-military.html">how to get job in military</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to pay a visit to the ideal blog.  Our website provides you with suggestions for seeing the maximum quality video and picture content, hunt and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/19/bc/5c19bcef6a66c9fb3901f9ef0095bb79.jpg" data-lightbox="roadtrip" data-title="10 Ways To Annoy A Military Wife Army Wife Life Army Wives Wife Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/19/bc/5c19bcef6a66c9fb3901f9ef0095bb79.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSHhofMQaJGPJvzrFcU2Xi6w1Qq8YIfh8GVg';" alt="10 Ways To Annoy A Military Wife Army Wife Life Army Wives Wife Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Ways To Annoy A Military Wife Army Wife Life Army Wives Wife Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/7e/79/f77e79263377a595a89eaba3a068a07d.jpg" data-lightbox="roadtrip" data-title="Happy Fit Navy Wife Surviving Deployment Milspouse Support Pcs Tips Deployment Communicati Military Wife Quotes Military Spouse Blog Military Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/7e/79/f77e79263377a595a89eaba3a068a07d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThzmJuEk9Tds4IsM7YakYD-zJfSICU5CsF-Q';" alt="Happy Fit Navy Wife Surviving Deployment Milspouse Support Pcs Tips Deployment Communicati Military Wife Quotes Military Spouse Blog Military Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Happy Fit Navy Wife Surviving Deployment Milspouse Support Pcs Tips Deployment Communicati Military Wife Quotes Military Spouse Blog Military Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/51/2b/61512bdfaf47776efc2982979616cd3f.jpg" data-lightbox="roadtrip" data-title="Military Wife Military Wife Life Navy Wife Life Military Wife Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/51/2b/61512bdfaf47776efc2982979616cd3f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjwEGu-G53_V8YpSWIEmHgmcwASivylFmtfA';" alt="Military Wife Military Wife Life Navy Wife Life Military Wife Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wife Military Wife Life Navy Wife Life Military Wife Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/a0/61/89a061344cb8cfe90ce8794311eaea49.jpg" data-lightbox="roadtrip" data-title="Here S To You Military Spouse Military Spouse Appreciation Military Spouse Spouse Appreciation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/a0/61/89a061344cb8cfe90ce8794311eaea49.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuc-5lpOXgZ8vKrHr0ISOgVa0BT9_D0Hp5kg';" alt="Here S To You Military Spouse Military Spouse Appreciation Military Spouse Spouse Appreciation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S To You Military Spouse Military Spouse Appreciation Military Spouse Spouse Appreciation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/92/03/3d92037bb6ac3f91b69261240e81dac6.png" data-lightbox="roadtrip" data-title="22 Things Military Spouses Can Do To Find Jobs Military Wife Life Military Spouse Jobs Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/92/03/3d92037bb6ac3f91b69261240e81dac6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUO7qV2LKdE7Kpfb_T5AKH6N612_qbFWVLFA';" alt="22 Things Military Spouses Can Do To Find Jobs Military Wife Life Military Spouse Jobs Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">22 Things Military Spouses Can Do To Find Jobs Military Wife Life Military Spouse Jobs Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/5b/5c/a95b5cb92e64e3e568d8048b2bd014a6.jpg" data-lightbox="roadtrip" data-title="13 Memes About Military Spouse Friendship Military Spouse Military Wife Quotes Military Spouse Appreciation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/5b/5c/a95b5cb92e64e3e568d8048b2bd014a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3_92FZUTyDK6r7ilmx1XOvpwrNhCNUK1MHw';" alt="13 Memes About Military Spouse Friendship Military Spouse Military Wife Quotes Military Spouse Appreciation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">13 Memes About Military Spouse Friendship Military Spouse Military Wife Quotes Military Spouse Appreciation</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b3/75/a4/b375a45c637407d0fb8d6c181a2594ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3_92FZUTyDK6r7ilmx1XOvpwrNhCNUK1MHw';" alt="13 Memes About Military Spouse Friendship Military Spouse Military Wife Quotes Military Spouse Appreciation">
+										<div class="card-body">
+						<h3 class="h5"><b>Perhaps youve seen this list floating around the world-wide-web but its worth reviewing because it makes a very important point.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How to find a military wife</strong>. 
+								
+																	So all know there is a fear when it comes to military wives and jobs. 
+																	1 Find an attractive prisoner of war bring her home shave her head trim her nails and give her new clothes. 
+																	For Noralee Jones the woman behind Mrs. 
+																	Being a military wife was a woman who was an independent person who could cope on her own and not be a clinging vine. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I am also an Army BRAT. 
+																	Personally though I think that fear is kind of silly and really an excuse. 
+																	You were able to make snap judgment calls when things broke or the kids or dog were sick. 
+																	I was a military spouse for 17 yrs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pittsburgh Pennsylvania United States About Blog Military Spouse is here to simplify your crazy wonderful military life. 
+																	By this I do not by any stretch of the imagination mean that there are ranks among spouses even my quaint 1950s wife manual states as much for goodness sake and the perceived dichotomy between officers spouses and enlisted spouses only. 
+																	I have a business degree so its pretty broad and a variety of experience but I. 
+																	Know how to find support and help. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In the article Military Spouse Unemployment Is it Really a Problem we discovered that the unemployment rate among military spouses is an excruciating 26 as compared to the national rate of 7This doesnt just mean that 26 of us are unemployed. 
+																	There are so many positives about being a military spouse. 
+																	Then you hit the Internet to do a little research and find the people and organizations in your area youd like. 
+																	Find articles on deployment relationships military benefits Tricare and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Either way if you are skilled and you believe in yourself opportunities will find you no matter where you are. 
+																	She said many local employers personally notify the ERP director there when. 
+																	Find information and advice on deployment PCSing relationships benefits military families and more. 
+																	Learn to read your spouses leave and earnings statement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But you also need to be prepared to wait. 
+																	You travel rearrange your home 100 times you redecorate on a super small budget you trade furniture with other spouses who are doing the same thing you form a babysitting co-OP you venture out and of the bases to get to know your new home there are baby. 
+																	And yes its as asinine and frustrating as it sounds. 
+																	You grew your own network of women to help you get through the deployments and many of them are still in my life to this day. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Each time we move Im forced to give up my job and then search for a new one at the next location. 
+																	Utilize Facebook groups military websites community pages your family readiness officer and military wife blogs to gain support in your area. 
+																	Navy Mama making connections is crucial to making a new duty station feel like home. 
+																	She recommends joining groups onlineincluding the Family Readiness Group and Facebook groups for military spousesas well as joining clubs and attending activities in person. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Spouse section is designed to supports military spouses everywhere. 
+																	What this means is that 26 of us are actively seeking work and are not currently employed. 
+																	First you start small working by word of mouth from the people you already know. 
+																	Obtain a copy of your marriage certificate get a military identification card from the ID card facility and memorize your spouses social security number. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vicki I was told that Army wives are paid a monthly stipend just for being a wife at a minimum of 800. 
+																	So here it is 16 ways to find a wife according to the Bible. 
+																	Oct 22 2015 - One of the most frustrating things Ive found with being a military spouse is the job hunting. 
+																	Join mom groups if you are a mom or participate in other hobby groups in your community to build a network. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Visit Department of Defense Military Compensation or Defense Finance and Accounting Service to learn more. 
+																	A military spouses life is at least somewhat affected by their significant others job. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/92/4c/ff924c0b9d58c95dff310c2d5e47070d.jpg" data-lightbox="roadtrip" data-title="The Real Life Of A Military Wife The Military Wife Poem Wife Poems Military Wife Quotes Military Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/92/4c/ff924c0b9d58c95dff310c2d5e47070d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_NsXERek34V6b4b8OlXabGS1UemF7jyg_DA';" alt="The Real Life Of A Military Wife The Military Wife Poem Wife Poems Military Wife Quotes Military Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Real Life Of A Military Wife The Military Wife Poem Wife Poems Military Wife Quotes Military Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4a/d2/29/4ad229db251fd63c58ec0f1df069d048.jpg" data-lightbox="roadtrip" data-title="Mistakes You Will Make As A New Military Wife Military Wife Quotes Military Wife Life Military Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4a/d2/29/4ad229db251fd63c58ec0f1df069d048.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgCAqKWqhBM4OgGbUZF-EwRtg3ik1wJhEgA';" alt="Mistakes You Will Make As A New Military Wife Military Wife Quotes Military Wife Life Military Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mistakes You Will Make As A New Military Wife Military Wife Quotes Military Wife Life Military Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f1/d3/1b/f1d31bea397782a50c39d93f915904c3--army-quotes-military-quotes.jpg" data-lightbox="roadtrip" data-title="Being A Military Spouse Means You Re Going To Sacrifice You Re Going To Sacrifice A Lot But Nothing Can Com Military Wife Life Army Wife Life Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f1/d3/1b/f1d31bea397782a50c39d93f915904c3--army-quotes-military-quotes.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzhS1t3knM-_RFnG7GrLpBMCiAkuLVvOpQog';" alt="Being A Military Spouse Means You Re Going To Sacrifice You Re Going To Sacrifice A Lot But Nothing Can Com Military Wife Life Army Wife Life Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Being A Military Spouse Means You Re Going To Sacrifice You Re Going To Sacrifice A Lot But Nothing Can Com Military Wife Life Army Wife Life Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/ef/3c/b2ef3c108d5db329cd5044dbbdc48b96.jpg" data-lightbox="roadtrip" data-title="13 Memes About Military Spouse Friendship Military Spouse Quotes Military Spouse Soldier Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/ef/3c/b2ef3c108d5db329cd5044dbbdc48b96.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_iSOxBXR2Q8hoWGUrnxDVjAz__61vM2J8Rg';" alt="13 Memes About Military Spouse Friendship Military Spouse Quotes Military Spouse Soldier Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">13 Memes About Military Spouse Friendship Military Spouse Quotes Military Spouse Soldier Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/64/d1/2964d10245c28ae712a5679b63ac99e4.png" data-lightbox="roadtrip" data-title="The Strength Of A Military Spouse Military Spouse Appreciation Military Appreciation Quotes Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/64/d1/2964d10245c28ae712a5679b63ac99e4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3tMIAKG3hCQYENhTXmXhDZxiBETzWSCLSpQ';" alt="The Strength Of A Military Spouse Military Spouse Appreciation Military Appreciation Quotes Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Strength Of A Military Spouse Military Spouse Appreciation Military Appreciation Quotes Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/14/5f/ae145fd7d85b84439b612bd8bd2f1083.jpg" data-lightbox="roadtrip" data-title="You Might Get Called A Dependa If Seasoned Spouse Military Wife Life Military Wife Military Spouse Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/14/5f/ae145fd7d85b84439b612bd8bd2f1083.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyeVxRsL8Dtjkpa4LiAIC7QfLO3Swgy32vrg';" alt="You Might Get Called A Dependa If Seasoned Spouse Military Wife Life Military Wife Military Spouse Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Might Get Called A Dependa If Seasoned Spouse Military Wife Life Military Wife Military Spouse Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/75/a4/b375a45c637407d0fb8d6c181a2594ff.jpg" data-lightbox="roadtrip" data-title="Pin By Deshawna Neal On Military Army Wife Life Military Wife Life Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/75/a4/b375a45c637407d0fb8d6c181a2594ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgcUnHl75CNvbV2_a6ORO93KnJ9pCrbMkU4A';" alt="Pin By Deshawna Neal On Military Army Wife Life Military Wife Life Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Deshawna Neal On Military Army Wife Life Military Wife Life Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/f3/49/6af349c7cc67f654ace892aae640c8f1.jpg" data-lightbox="roadtrip" data-title="Caring Insights Home Front What Not To Say Army Wife Life Words Of Encouragement Sayings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/f3/49/6af349c7cc67f654ace892aae640c8f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcFw1Oo0DOXhbv14-3kPaYopLdZh3Wu-mFKw';" alt="Caring Insights Home Front What Not To Say Army Wife Life Words Of Encouragement Sayings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Caring Insights Home Front What Not To Say Army Wife Life Words Of Encouragement Sayings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/df/dc/04dfdcdef906ad14b2609fd472477a73.jpg" data-lightbox="roadtrip" data-title="Pin By Militaryavenue Com On The Military Spouse Military Wife Life Army Wife Life Military Husband">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/df/dc/04dfdcdef906ad14b2609fd472477a73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr6sWSjiRJ0hReRc2DyQQkkTHT8hkXfHYPwA';" alt="Pin By Militaryavenue Com On The Military Spouse Military Wife Life Army Wife Life Military Husband">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Militaryavenue Com On The Military Spouse Military Wife Life Army Wife Life Military Husband</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3a/67/0d/3a670d8c246a761e9cfca2b20faa1092.jpg" data-lightbox="roadtrip" data-title="Pin On Military Bloggers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3a/67/0d/3a670d8c246a761e9cfca2b20faa1092.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6mqHe4zNMTN4boS6iVgjrLUebybx3qg_gbw';" alt="Pin On Military Bloggers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Bloggers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/8a/9d/40/8a9d4033624f87f2cee291afbac2b6ed--military-wife-internet.jpg" data-lightbox="roadtrip" data-title="Military Life From A Wife S Perspective When God Created The Military Wife Military Wife Army Wife Life Military Spouse Appreciation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/8a/9d/40/8a9d4033624f87f2cee291afbac2b6ed--military-wife-internet.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq43PF0BnPCyyB8JHeJH17PabDokipm4Fo-g';" alt="Military Life From A Wife S Perspective When God Created The Military Wife Military Wife Army Wife Life Military Spouse Appreciation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Life From A Wife S Perspective When God Created The Military Wife Military Wife Army Wife Life Military Spouse Appreciation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/ce/97/50/ce9750ae997e93e7b15099d6e44628dd--military-wife-quotes-army-quotes.jpg" data-lightbox="roadtrip" data-title="Army Wife Quotes Army Wife Quotes Army Wife Life Military Wife Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/ce/97/50/ce9750ae997e93e7b15099d6e44628dd--military-wife-quotes-army-quotes.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdVn0qc21G6P6xYIlVmyz-HYX-9geI11nlHA';" alt="Army Wife Quotes Army Wife Quotes Army Wife Life Military Wife Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wife Quotes Army Wife Quotes Army Wife Life Military Wife Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/3d/b1/c23db126d32f88709675c06048780a26.jpg" data-lightbox="roadtrip" data-title="5 10 2013 Military Spouse Appreciation Day Xoxo I M Proud To Be An Army Wife Army Wife Life Military Wife Quotes Army Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/3d/b1/c23db126d32f88709675c06048780a26.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd42LuNRvYz1lpGv8iGlojYwTnOhRxVDXFnA';" alt="5 10 2013 Military Spouse Appreciation Day Xoxo I M Proud To Be An Army Wife Army Wife Life Military Wife Quotes Army Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 10 2013 Military Spouse Appreciation Day Xoxo I M Proud To Be An Army Wife Army Wife Life Military Wife Quotes Army Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/air-force-join-spouse-program.html">Air Force Join Spouse Program</a></li>
+													<li class="list-group-item"><a href="/air-force-joint-spouse-program.html">Air Force Joint Spouse Program</a></li>
+													<li class="list-group-item"><a href="/air-force-marriage-laws.html">Air Force Marriage Laws</a></li>
+													<li class="list-group-item"><a href="/air-force-one-cost-per-flight-hour.html">Air Force One Cost Per Flight Hour</a></li>
+													<li class="list-group-item"><a href="/air-force-officer-programs-for-enlisted.html">Air Force Officer Programs For Enlisted</a></li>
+													<li class="list-group-item"><a href="/air-force-ranger.html">Air Force Ranger</a></li>
+													<li class="list-group-item"><a href="/air-force-living-with-spouse.html">Air Force Living With Spouse</a></li>
+													<li class="list-group-item"><a href="/air-force-joint-spouse-program-afi.html">Air Force Joint Spouse Program Afi</a></li>
+													<li class="list-group-item"><a href="/air-force-jrotc-cadet-creed.html">Air Force Jrotc Cadet Creed</a></li>
+													<li class="list-group-item"><a href="/air-force-pay-with-spouse.html">Air Force Pay With Spouse</a></li>
+													<li class="list-group-item"><a href="/air-force-marriage-benefits.html">Air Force Marriage Benefits</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-that-dont-deploy-often.html">Air Force Jobs That Dont Deploy Often</a></li>
+													<li class="list-group-item"><a href="/air-force-one-my-hero-academia.html">Air Force One My Hero Academia</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-unmanned-aerospace-system-sensor-operator.html">Air Force Jobs Unmanned Aerospace System Sensor Operator</a></li>
+													<li class="list-group-item"><a href="/air-force-joint-spouse-pay.html">Air Force Joint Spouse Pay</a></li>
+													<li class="list-group-item"><a href="/air-force-jrotc-ranks.html">Air Force Jrotc Ranks</a></li>
+													<li class="list-group-item"><a href="/air-force-officer-programs-for-college-students.html">Air Force Officer Programs For College Students</a></li>
+													<li class="list-group-item"><a href="/air-force-one-hrvatska.html">Air Force One Hrvatska</a></li>
+													<li class="list-group-item"><a href="/air-force-officer-spouses-club.html">Air Force Officer Spouses Club</a></li>
+													<li class="list-group-item"><a href="/air-force-mission-partner-capabilities-office.html">Air Force Mission Partner Capabilities Office</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

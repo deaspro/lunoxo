@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mykahmykah Tiktok Mcdonalds - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mykahmykah Tiktok Mcdonalds",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/564x/80/3b/59/803b59a3c0fe9dc92b03446a799c94e9.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mykahmykah+tiktok+mcdonalds",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mykahmykah Tiktok Mcdonalds</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Moikerrr mykahmykah has created a short video on TikTok with music Wii store. A Tiktok video from a McDonalds employee has sparked outrage online after the worker claimed that all of. But the small medium and large cup sizes at McDonalds do not hold the same amount of. <br>				
+			</p>
+										<a class="badge badge-success" href="/navy-wife-gear.html">navy wife gear</a>
+											<a class="badge badge-success" href="/navy-tuition-assistance-reserves.html">navy tuition assistance reserves</a>
+											<a class="badge badge-dark" href="/navy-t-shirts-for-ladies.html">navy t shirts for ladies</a>
+											<a class="badge badge-dark" href="/navy-wife-gifts.html">navy wife gifts</a>
+											<a class="badge badge-light" href="/navy-v-neck-t-shirt-dress.html">navy v neck t shirt dress</a>
+											<a class="badge badge-primary" href="/navy-t-shirt-with-jeans.html">navy t shirt with jeans</a>
+											<a class="badge badge-secondary" href="/navy-veteran-spouse-benefits.html">navy veteran spouse benefits</a>
+											<a class="badge badge-secondary" href="/navy-wife-bumper-sticker.html">navy wife bumper sticker</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to visit the right blog.  Our website provides you with hints for seeing the highest quality video and picture content, search and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you see.  It is also possible to bring about supporting this website by sharing videos and graphics that you like on this blog on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/66/10/2b6610074e3835b5a8d0a70d3d3bc2ad.jpg" data-lightbox="roadtrip" data-title="Nxtlvlvntg Nxtlvlvntg On Tiktok From A T Shirt To A Bralette Happyathome Styletips Artistsoftiktok Lifeathom Diy Bralette Upcycle Clothes Diy Diy Bra">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/66/10/2b6610074e3835b5a8d0a70d3d3bc2ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5c8pTBeL6FWWK03OU2q0-pmnyOyOrju0RKg';" alt="Nxtlvlvntg Nxtlvlvntg On Tiktok From A T Shirt To A Bralette Happyathome Styletips Artistsoftiktok Lifeathom Diy Bralette Upcycle Clothes Diy Diy Bra">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nxtlvlvntg Nxtlvlvntg On Tiktok From A T Shirt To A Bralette Happyathome Styletips Artistsoftiktok Lifeathom Diy Bralette Upcycle Clothes Diy Diy Bra</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.businessinsider.in/photo/79181939/experiment-i-tested-a-viral-tiktok-theory-that-all-mcdonalds-cups-hold-the-same-amount-of-liquid.jpg?imgsize=1221846" data-lightbox="roadtrip" data-title="Experiment I Tested A Viral Tiktok Theory That All Mcdonald S Cups Hold The Same Amount Of Liquid Business Insider India">
+											<img class="card-img v-image ads-img " src="https://www.businessinsider.in/photo/79181939/experiment-i-tested-a-viral-tiktok-theory-that-all-mcdonalds-cups-hold-the-same-amount-of-liquid.jpg?imgsize=1221846" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuz5hFeHWHBwiKtVCL4pLkDsgB1pxj_bkEOA';" alt="Experiment I Tested A Viral Tiktok Theory That All Mcdonald S Cups Hold The Same Amount Of Liquid Business Insider India">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Experiment I Tested A Viral Tiktok Theory That All Mcdonald S Cups Hold The Same Amount Of Liquid Business Insider India</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hitc.com/static/uploads/2020/11/Screenshot-2020-11-10-at-09.23.48.png" data-lightbox="roadtrip" data-title="Tiktok Video Shows Mcdonald S Cup Sizes Are The Same Internet Users Say It S A Hoax">
+											<img class="card-img v-image ads-img " src="https://www.hitc.com/static/uploads/2020/11/Screenshot-2020-11-10-at-09.23.48.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ10FdOt-MSZyzGfw8_UvutTp3xUWp0872TLg';" alt="Tiktok Video Shows Mcdonald S Cup Sizes Are The Same Internet Users Say It S A Hoax">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tiktok Video Shows Mcdonald S Cup Sizes Are The Same Internet Users Say It S A Hoax</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://heavy.com/wp-content/uploads/2020/11/mcdonalds-drink-size-tiktok-video.jpg?quality=65&amp;strip=all" data-lightbox="roadtrip" data-title="Mcdonald S Drink Size Tiktok Video Goes Viral Heavy Com">
+											<img class="card-img v-image ads-img " src="https://heavy.com/wp-content/uploads/2020/11/mcdonalds-drink-size-tiktok-video.jpg?quality=65&amp;strip=all" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgjjD0TurepDYdAKTYfn3q5hdYiZK1OEFS9g';" alt="Mcdonald S Drink Size Tiktok Video Goes Viral Heavy Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mcdonald S Drink Size Tiktok Video Goes Viral Heavy Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/b7/8c/75b78c2e814544ddd91bddb7d8a376df.jpg" data-lightbox="roadtrip" data-title="Tikt0k Video Really Funny Memes Super Funny Videos Funny Dude">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/b7/8c/75b78c2e814544ddd91bddb7d8a376df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4bvTA7wLRF2V9Hf_thjge22cuTjjI6gmE4A';" alt="Tikt0k Video Really Funny Memes Super Funny Videos Funny Dude">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tikt0k Video Really Funny Memes Super Funny Videos Funny Dude</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/fr.ebeneinfo.com/wp-content/uploads/2020/11/Screen-Shot-2020-11-09-at-5.11.21-PM.png?fit=522%2C910&amp;ssl=1" data-lightbox="roadtrip" data-title="Ebeneinfo United States Mcdonalds Drink Sized Tiktok Video Sparks Outrage Online Ebene Info">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/fr.ebeneinfo.com/wp-content/uploads/2020/11/Screen-Shot-2020-11-09-at-5.11.21-PM.png?fit=522%2C910&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUuRQP9it0AxY_H_Jou-rvzUHfrFinxjQedA';" alt="Ebeneinfo United States Mcdonalds Drink Sized Tiktok Video Sparks Outrage Online Ebene Info">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ebeneinfo United States Mcdonalds Drink Sized Tiktok Video Sparks Outrage Online Ebene Info</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/92/3b/e2/923be200f36b085817e4c7c7c9f15314.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUuRQP9it0AxY_H_Jou-rvzUHfrFinxjQedA';" alt="Ebeneinfo United States Mcdonalds Drink Sized Tiktok Video Sparks Outrage Online Ebene Info">
+										<div class="card-body">
+						<h3 class="h5"><b>Over half a year after it was originally posted an incendiary TikTok from creator mykahmykah that appears to show three differently sized McDonalds cups holding the same amount of liquid went viral once again.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mykahmykah tiktok mcdonalds</strong>. 
+								
+																	The clip which has been viewed more than 16 million times shows Mikah Neufield 17 a Canadian employee from the fast food chain pouring a Coke into a small 16oz McDonalds cup before tipping. 
+																	The video has been. 
+																	In March TikTok user Mikah Neufeld who goes by mykahmykah on the app and appears to be a McDonalds employee in Canada based on the cup design uploaded a video captioned they do be lying to. 
+																	Go listen to LUX. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The short video shows TikTok user mykahmykah claim that the three McDonalds cup sizes small medium and large are actually all the same and by paying for a large drink youre actually wasting. 
+																	A McDonalds worker has made a bonkers video that appears to claim every size of drink you can order holds the same volume of liquid. 
+																	Over half a year after it was originally posted an incendiary TikTok from creator mykahmykah that appears to show three differently sized McDonalds cups holding the same amount of liquid went. 
+																	MykahmykahTikTok Since being posted it has received 16 million likes and more than 12000 comments some of which came from people. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Late last week a TikTok video went viral in which a McDonalds worker in the United States claimed he could prove that all the fast food chains cups hold the same amount of drink. 
+																	This is actually a longstanding conspiracy theory that people have had about McDonalds so Neufeld is really playing into peoples biased beliefs here. 
+																	MykahmykahTikTok He begins with a small cup of Coca Cola which he then pours into a regular cup with. 
+																	MykahmykahTikTok He begins with a small cup of Coca Cola which he then pours into a regular cup with the liquid almost reaching the top. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Employee mykahmykah pours Coke from a small McDonalds cup into a medium and then. 
+																	On Spotify Apple Music and SoundCloud. 
+																	He claims McDonalds has been lying to its customers Image. 
+																	A McDonalds employee shared a video claiming that all the drinks are the same size Credit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Filming his stunt at a branch of the fast-food chain in the US TikTok user mykahmykah shows himself emptying the contents of a small cup of soda into a medium cup and then emptying the contents of that one into a large. 
+																	Neufeld posted a video showing Coke getting poured from a small. 
+																	They do be lying to us doe fyp fup foryoupage mcdonalds the caption reads on the video. 
+																	TikTok user mykahmykah made a short video showing how a full small-sized McDonalds drink cup could almost fill medium- and large sized ones with the same amount of liquid. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A McDonalds employee shared a video claiming that all the drinks are the same size Credit. 
+																	Mikah Neufeld a McDonalds employee reignited a conspiracy that all the McDonalds cups hold the same amount of liquid on TikTok. 
+																	Finally he tips the contents into a large serving and again the drink can be seen almost filling the top. 
+																	In the video mykahmykah from the US pours Coke from a small McDonalds cup into a medium and then a large. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mikah Neufeld is a McDonalds employee who must be on pretty thin ice. 
+																	Moikerrr mykahmykah on TikTok 2M Likes. 
+																	The video which showed him pouring seemingly the same amount of Coke into each cup quickly racked up millions of views. 
+																	In a TikTok video thats been viewed more than 11 million times one McDonalds worker claims he has proven that all the fast food chains cups hold the same amount of drink. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thats the TikTik handle of a young man named Mikah Neufeld who posted a video of himself dressed very much like a McDonalds employee with a headset and polo shirt similar to what staffers. 
+																	Guys I have found something out the. 
+																	In what many think is a prank Neufeld shows that all the McDonalds cups hold the same amount of soda. 
+																	They do be lying to us doe fyp fup foryoupage mcdonalds Guys i have found something out. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They do be lying to us doe fyp fup foryoupage mcdonalds Wii store Huge nonce. 
+																	The video was first shared on TikTok by mykahmykah. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/92/3b/e2/923be200f36b085817e4c7c7c9f15314.jpg" data-lightbox="roadtrip" data-title="Ben Azelart Benazelart Official Tiktok Watch Ben Azelart S Newest Tiktok Videos Cute Couples Brent Rivera Social Media S">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/92/3b/e2/923be200f36b085817e4c7c7c9f15314.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXxTwsyDZfmDJ0OtuMP_2lRtLvpPqX5HsfmQ';" alt="Ben Azelart Benazelart Official Tiktok Watch Ben Azelart S Newest Tiktok Videos Cute Couples Brent Rivera Social Media S">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ben Azelart Benazelart Official Tiktok Watch Ben Azelart S Newest Tiktok Videos Cute Couples Brent Rivera Social Media S</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/76/67/14/76671427631bdc92a364765fbb69f0e8.jpg" data-lightbox="roadtrip" data-title="Lexi Rivera Lexibrookerivera Official Tiktok Famous Youtubers Brent Rivera Celebs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/76/67/14/76671427631bdc92a364765fbb69f0e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN1S2UJaQTkYEqDT5KtedNYDn4UxDAHUreBA';" alt="Lexi Rivera Lexibrookerivera Official Tiktok Famous Youtubers Brent Rivera Celebs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lexi Rivera Lexibrookerivera Official Tiktok Famous Youtubers Brent Rivera Celebs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/43/be/42/43be424e074d512c62c5b025189acaea.jpg" data-lightbox="roadtrip" data-title="Pin By Aubrey Glover On Tiktok Brent Rivera Famous Youtubers Brent">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/43/be/42/43be424e074d512c62c5b025189acaea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSf1UsrgihFjrzdRNTFVgsMj6ivaKpEi70bw';" alt="Pin By Aubrey Glover On Tiktok Brent Rivera Famous Youtubers Brent">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Aubrey Glover On Tiktok Brent Rivera Famous Youtubers Brent</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7e/3d/03/7e3d03526f0917b846779f9348d3089d.jpg" data-lightbox="roadtrip" data-title="I M Crying Video In 2020 Funny Laugh Funny Gifs Fails Funny Vid">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7e/3d/03/7e3d03526f0917b846779f9348d3089d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA7lMBJY4e5tKoudYKNpKtQ74Kfxpksoy_ag';" alt="I M Crying Video In 2020 Funny Laugh Funny Gifs Fails Funny Vid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I M Crying Video In 2020 Funny Laugh Funny Gifs Fails Funny Vid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/80/3b/59/803b59a3c0fe9dc92b03446a799c94e9.jpg" data-lightbox="roadtrip" data-title="Pin On Tic Tok">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/80/3b/59/803b59a3c0fe9dc92b03446a799c94e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLhCjO9sibJiQ4pc2hkwaed5YtJNJoChXJCg';" alt="Pin On Tic Tok">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tic Tok</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cd/64/13/cd6413bf41dcc8976618edd1ffb4ab47.jpg" data-lightbox="roadtrip" data-title="Lexi Rivera Lexibrookerivera Official Tiktok Brent Rivera Funny Videos For Kids Famous Youtubers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cd/64/13/cd6413bf41dcc8976618edd1ffb4ab47.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrie650WAAuCDl4adBAKWv2IfiRe5iop61gA';" alt="Lexi Rivera Lexibrookerivera Official Tiktok Brent Rivera Funny Videos For Kids Famous Youtubers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lexi Rivera Lexibrookerivera Official Tiktok Brent Rivera Funny Videos For Kids Famous Youtubers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/1e/cc/45/1ecc45157464c6616021ebfa79147814--friend-challenges-fun-quotes.jpg" data-lightbox="roadtrip" data-title="Which One This Or That Questions Sleepover Things To Do Who Knows Me Best">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/1e/cc/45/1ecc45157464c6616021ebfa79147814--friend-challenges-fun-quotes.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq26O5q_a4EQ5Vw3glxabVFNa8SJey7xfLng';" alt="Which One This Or That Questions Sleepover Things To Do Who Knows Me Best">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Which One This Or That Questions Sleepover Things To Do Who Knows Me Best</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/c9/6d/29c96d7fdc673684e7ea6655687e66aa.png" data-lightbox="roadtrip" data-title="Tik Tok App Snap Case For Iphone 6 Iphone 6s Tik Tok Tok Iphone Cases">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/c9/6d/29c96d7fdc673684e7ea6655687e66aa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQPRkB5BU301jep81mHfXgs2n4mffzwHgiw';" alt="Tik Tok App Snap Case For Iphone 6 Iphone 6s Tik Tok Tok Iphone Cases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tik Tok App Snap Case For Iphone 6 Iphone 6s Tik Tok Tok Iphone Cases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/89/80/77/8980771f6ea8b4ade5c546f671df5c94.jpg" data-lightbox="roadtrip" data-title="Pin On Tic Tok">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/89/80/77/8980771f6ea8b4ade5c546f671df5c94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz5CSramRDIocNGyxLSaRhhs-35VnwvAA8gA';" alt="Pin On Tic Tok">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tic Tok</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ff/2d/b2/ff2db2482d67da9a99ba8a32fa06ead5.jpg" data-lightbox="roadtrip" data-title="Lexi Rivera Lexibrookerivera Official Tiktok Famous Youtubers Brent Rivera Videos Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ff/2d/b2/ff2db2482d67da9a99ba8a32fa06ead5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWVkzVI9V9yuTHAnR8Lt1Jda-eCujTIHiMvQ';" alt="Lexi Rivera Lexibrookerivera Official Tiktok Famous Youtubers Brent Rivera Videos Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lexi Rivera Lexibrookerivera Official Tiktok Famous Youtubers Brent Rivera Videos Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/4e/6d/894e6d970981b1d1ed1bd571fa07ed37.jpg" data-lightbox="roadtrip" data-title="Pin On 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/4e/6d/894e6d970981b1d1ed1bd571fa07ed37.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Ew85yNnUiSK2lYgTIh40y5H9WVOVmwQVbw';" alt="Pin On 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d7/90/11/d79011adde90bc73cf3a18c9c36e0820.jpg" data-lightbox="roadtrip" data-title="Brent Rivera Brentrivera Official Tiktok Watch Brent Rivera S Newest Tiktok Videos Brent Rivera Celebrities Cute Celebrities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d7/90/11/d79011adde90bc73cf3a18c9c36e0820.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlnB802ivmtBiZJFMzzysEoQ19Y0I0y-ID8Q';" alt="Brent Rivera Brentrivera Official Tiktok Watch Brent Rivera S Newest Tiktok Videos Brent Rivera Celebrities Cute Celebrities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brent Rivera Brentrivera Official Tiktok Watch Brent Rivera S Newest Tiktok Videos Brent Rivera Celebrities Cute Celebrities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/e1/48/56e1484da1e2d126658aea8aac2ff41a.jpg" data-lightbox="roadtrip" data-title="Youtube In 2020 Brent Rivera Shirtless Guys">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/e1/48/56e1484da1e2d126658aea8aac2ff41a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmc_tO7QB0NK6ZNosdHp8_-14nKY9TmTbTEg';" alt="Youtube In 2020 Brent Rivera Shirtless Guys">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Youtube In 2020 Brent Rivera Shirtless Guys</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/my-spouse-is-always-angry.html">My Spouse Is Always Angry</a></li>
+													<li class="list-group-item"><a href="/my-spouse-lies-all-the-time.html">My Spouse Lies All The Time</a></li>
+													<li class="list-group-item"><a href="/my-spouse-tested-positive-for-covid-19.html">My Spouse Tested Positive For Covid 19</a></li>
+													<li class="list-group-item"><a href="/my-spouse-is-jealous-of-me.html">My Spouse Is Jealous Of Me</a></li>
+													<li class="list-group-item"><a href="/my-spouse-tested-positive-for-covid-what-do-i-do.html">My Spouse Tested Positive For Covid What Do I Do</a></li>
+													<li class="list-group-item"><a href="/my-spouse-tested-positive-for-covid-should-i-get-tested.html">My Spouse Tested Positive For Covid Should I Get Tested</a></li>
+													<li class="list-group-item"><a href="/my-spouse-is-an-addict.html">My Spouse Is An Addict</a></li>
+													<li class="list-group-item"><a href="/my-spouse-lies-about-everything.html">My Spouse Lies About Everything</a></li>
+													<li class="list-group-item"><a href="/my-spouse-meaning-in-hindi.html">My Spouse Meaning In Hindi</a></li>
+													<li class="list-group-item"><a href="/my-spouse-just-left-me.html">My Spouse Just Left Me</a></li>
+													<li class="list-group-item"><a href="/my-spouse-makes-more-money.html">My Spouse Makes More Money</a></li>
+													<li class="list-group-item"><a href="/my-spouse-passed-away-how-do-i-file-taxes.html">My Spouse Passed Away How Do I File Taxes</a></li>
+													<li class="list-group-item"><a href="/my-spouse-read-my-journal.html">My Spouse Read My Journal</a></li>
+													<li class="list-group-item"><a href="/my-spouse-is-lazy.html">My Spouse Is Lazy</a></li>
+													<li class="list-group-item"><a href="/my-spouse-received-stimulus-check-but-i-didnt.html">My Spouse Received Stimulus Check But I Didnt</a></li>
+													<li class="list-group-item"><a href="/my-spouse-is-depressed.html">My Spouse Is Depressed</a></li>
+													<li class="list-group-item"><a href="/my-spouse-only-talks-about-work.html">My Spouse Only Talks About Work</a></li>
+													<li class="list-group-item"><a href="/my-spouse-no-longer-loves-me.html">My Spouse No Longer Loves Me</a></li>
+													<li class="list-group-item"><a href="/my-spouse-is-very-selfish.html">My Spouse Is Very Selfish</a></li>
+													<li class="list-group-item"><a href="/my-spouse-is-depressed-how-can-i-help.html">My Spouse Is Depressed How Can I Help</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

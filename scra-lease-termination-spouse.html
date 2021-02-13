@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Scra Lease Termination Spouse - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Scra Lease Termination Spouse",
+  "datePublished": "2021-02-13",
+  "image": "WyDe_CLEpmUAfM",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=scra+lease+termination+spouse",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Scra Lease Termination Spouse</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Jane Servicemember receives PCS orders to transfer from Iowa to Texas. The earliest termination date for a. Termination by the servicemember of a joint lease also terminates the lease obligation for spouses and dependents under the lease. <br>				
+			</p>
+										<a class="badge badge-dark" href="/msn-for-usa.html">msn for usa</a>
+											<a class="badge badge-dark" href="/msn-ebay-uk.html">msn ebay uk</a>
+											<a class="badge badge-dark" href="/msn-noticias-usa-en-espanol.html">msn noticias usa en espanol</a>
+											<a class="badge badge-info" href="/msn-news-uk-weather.html">msn news uk weather</a>
+											<a class="badge badge-success" href="/msn-com-usa.html">msn com usa</a>
+											<a class="badge badge-danger" href="/msn-uk-daily-mail.html">msn uk daily mail</a>
+											<a class="badge badge-secondary" href="/msn-to-usa-flights.html">msn to usa flights</a>
+											<a class="badge badge-warning" href="/msn-money-stocks-us.html">msn money stocks us</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to visit the ideal blog.  Our site gives you suggestions for seeing the highest quality video and image content, search and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie that you see.  It is also possible to bring about supporting this site by sharing videos and graphics that you like on this blog on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/42/c2/8d42c2d4eb0811e34d355056ef6c9e63.png" data-lightbox="roadtrip" data-title="Everything Renters And Landlords Should Know About The Scra And The Military Clause Being A Landlord Military Marriage Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/42/c2/8d42c2d4eb0811e34d355056ef6c9e63.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzEyj-nLt28zo3irf3zLR0RCkmW3lFPCJf3w';" alt="Everything Renters And Landlords Should Know About The Scra And The Military Clause Being A Landlord Military Marriage Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Everything Renters And Landlords Should Know About The Scra And The Military Clause Being A Landlord Military Marriage Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wp-media.servicememberscivilreliefact.com/2019/01/26040529/lease-termination-1024x1024.jpg" data-lightbox="roadtrip" data-title="Scra Lease Termination Does The New Law Apply To Landlords">
+											<img class="card-img v-image ads-img " src="https://wp-media.servicememberscivilreliefact.com/2019/01/26040529/lease-termination-1024x1024.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbdbxsAERVRQFZImZcw3bEYxSBucIAjqFUOQ';" alt="Scra Lease Termination Does The New Law Apply To Landlords">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scra Lease Termination Does The New Law Apply To Landlords</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/08/80/af0880ec806bada19cd6c7be2077e45c.jpg" data-lightbox="roadtrip" data-title="Lease Termination Letter Template Elegant Scra Letter Lease Termination 2018 2019 Studychacha Letter Writing Template Letter Templates Lettering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/08/80/af0880ec806bada19cd6c7be2077e45c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsrIEKwp6AUX1uZpruCeGTxvfeIp-pReHy1Q';" alt="Lease Termination Letter Template Elegant Scra Letter Lease Termination 2018 2019 Studychacha Letter Writing Template Letter Templates Lettering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lease Termination Letter Template Elegant Scra Letter Lease Termination 2018 2019 Studychacha Letter Writing Template Letter Templates Lettering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.yumpu.com/19701954/1/500x640/servicemembers-civil-relief-act-scra-department-of-justice.jpg" data-lightbox="roadtrip" data-title="Servicemembers Civil Relief Act Scra Department Of Justice">
+											<img class="card-img v-image ads-img " src="https://img.yumpu.com/19701954/1/500x640/servicemembers-civil-relief-act-scra-department-of-justice.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Exz_3nyIRBc5GjDAEBLxgcJ_-BO5hXQMIg';" alt="Servicemembers Civil Relief Act Scra Department Of Justice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Servicemembers Civil Relief Act Scra Department Of Justice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.everycrsreport.com/reports/R45283.png" data-lightbox="roadtrip" data-title="The Servicemembers Civil Relief Act Scra Section By Section Summary Everycrsreport Com">
+											<img class="card-img v-image ads-img " src="https://www.everycrsreport.com/reports/R45283.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwpEeyd9MeexEUNuY3QSluKS0Abd9sEnrGMw';" alt="The Servicemembers Civil Relief Act Scra Section By Section Summary Everycrsreport Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Servicemembers Civil Relief Act Scra Section By Section Summary Everycrsreport Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="tQ2apzs2hf-QYM" data-lightbox="roadtrip" data-title="Https Www Roa Org Resource Resmgr Lawreviews 2011 11087 Lr Pdf">
+											<img class="card-img v-image ads-img " src="tQ2apzs2hf-QYM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMEIx2MBlGrxLU7Cjb7ouqcsQAjwCHaDcCtg';" alt="Https Www Roa Org Resource Resmgr Lawreviews 2011 11087 Lr Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Roa Org Resource Resmgr Lawreviews 2011 11087 Lr Pdf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/8d/42/c2/8d42c2d4eb0811e34d355056ef6c9e63.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMEIx2MBlGrxLU7Cjb7ouqcsQAjwCHaDcCtg';" alt="Https Www Roa Org Resource Resmgr Lawreviews 2011 11087 Lr Pdf">
+										<div class="card-body">
+						<h3 class="h5"><b>The SCRA lease termination law allows surviving spouses of servicemembers killed in the line of duty to break leases.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Scra lease termination spouse</strong>. 
+								
+																	Active duty service members who receive military. 
+																	SCRA Spouses Covered. 
+																	The Servicemembers Civil Relief SCRA 50 USC. 
+																	VRLTA Spouses not covered. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Therefore this lease shall terminate on Date 30 Days. 
+																	Lenders cannot deny credit or change the terms of a loan because of an SCRA protection request. 
+																	For example if the lease requires a yearly rental and proper notice. 
+																	For all other leases termination becomes effective on the last day of the month following the month the landlord is notified. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The service member must put their request to break the lease in writing and must include a copy of their orders. 
+																	Termination of residential lease agreements You may terminate your residential lease along with other types of leases including agricultural professional and business by delivering a written notice of termination. 
+																	A surviving spouse is allowed to terminate a lease if their partner dies while on active duty. 
+																	A lease termination hypothetical under Section 3955 of the SCRA 50 USC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If the servicemembers name is not on the lease only the spouses signature it is likely the servicemember is covered anyway but each state determines if the SCRA extends to the servicemember if the housing was for their use. 
+																	Notice VRLTA -Serve on the landlord a written notice of termination with a set date. 
+																	Section 535 provides relief to service members in the termination of real property leases. 
+																	The SCRA on the other hand makes it very clear that termination by the SM-tenant terminates the lease obligations of the spouse and any other military dependent who may have signed the lease as well. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The bill provides the surviving spouse of a servicemember who died during military service with a broad right to terminate a vehicle lease during a one-year period that begins to run on the date. 
+																	First for purposes of protection under the SCRA the lease must be signed by the servicemember or on behalf of the servicemember by the use of a power of attorney If a spouse enters into a. 
+																	Effect on joint leases. 
+																	There are certain SCRA protections for family members of servicemembers as well. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thus in these instances landlords and property managers can no longer hold dependents of servicemembers liable for the remainder of the lease they signed or any penalties associated with breaking the lease. 
+																	The SCRA protects service-members and their families when the service-member is actively on duty and needs to terminate a lease. 
+																	A surviving military spouse can terminate a lease if their spouse dies on active duty. 
+																	On June 27 the Senate passed the Gold Star Spouses and Spouses of Injured Servicemembers Leasing Relief Expansion Act as part of the Fiscal Year 2020 National Defense Authorization Act see Sec. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If it becomes law the bill would amend the SCRA to allow spouses of servicemembers killed or injured during service to terminate certain types of leases. 
+																	How Does Lease Termination Work Under The SCRA. 
+																	To have a clear way out of the lease via the SCRA the service member must have their name on the lease. 
+																	A military spouse can also choose to claim their home of record the servicemembers state of legal residence or the state in which they are living on their taxes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Under the SCRA all unpaid rental amounts for the period preceding the date of termination shall be prorated. 
+																	Orders to be provided prior to the date for termination. 
+																	Dependent in accordance with section 3911 4 of the SCRA includes the SMs spouse the SMs children and any other person for whom the SM provided more than one-half of the individuals support for 180 days immediately preceding an application for relief including lease termination under the SCRA. 
+																	My next rental payment is due on Date. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sairsingh on July 12 2019. 
+																	Posted in Military Issues Regulatory and Enforcement. 
+																	3 - SCRA eligibility and requirements To be eligible for SCRA benefits you must currently serve on active duty. 
+																	In 535 of the SCRA the protection is extended to the service-members spouse children and any dependent for whom the service-member has provided more than one-half of the individuals support for 180 days before the notice of terminating the lease. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The SCRA states a servicemember may terminate a residential lease 30 days after the first date of the next rental payment. 
+																	If a servicemember lessee dies while in military service the spouse of a lessee may terminate the lease within one year of the death. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wp-media.servicememberscivilreliefact.com/2015/04/26040640/deployment-or-moving-to-another-base-can-upend-many-things-in-a-servicem_1708_40050883_0_14109600_500.jpg" data-lightbox="roadtrip" data-title="4 Contracts Servicemembers Can Cancel Under The Scra Scracvs">
+											<img class="card-img v-image ads-img " src="https://wp-media.servicememberscivilreliefact.com/2015/04/26040640/deployment-or-moving-to-another-base-can-upend-many-things-in-a-servicem_1708_40050883_0_14109600_500.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3qC3AP4KE6A7WFX9VMUzl7bFvN15acotfdA';" alt="4 Contracts Servicemembers Can Cancel Under The Scra Scracvs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Contracts Servicemembers Can Cancel Under The Scra Scracvs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/aa/45/1faa450e6255ba61d03e370a6e6b5168.jpg" data-lightbox="roadtrip" data-title="Lease Termination Letter Free Word Pdf Documents Download Sample Commercial Landlord Tenant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/aa/45/1faa450e6255ba61d03e370a6e6b5168.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy6aaLGxwOe9eFP8m_Hz9LeB1LDBTO8T-yfw';" alt="Lease Termination Letter Free Word Pdf Documents Download Sample Commercial Landlord Tenant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lease Termination Letter Free Word Pdf Documents Download Sample Commercial Landlord Tenant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/93/54/ea9354034a0f7160892b951b201aa655.jpg" data-lightbox="roadtrip" data-title="Termination Of Lease Agreement Form Free Printable Documents Letter Template Word Lease Agreement Being A Landlord">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/93/54/ea9354034a0f7160892b951b201aa655.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ZRDy9B53dWPyIrOgv0-sT7YeRWyNxFpcAQ';" alt="Termination Of Lease Agreement Form Free Printable Documents Letter Template Word Lease Agreement Being A Landlord">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Termination Of Lease Agreement Form Free Printable Documents Letter Template Word Lease Agreement Being A Landlord</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/59/4f/0c594f83a77b9690113d42418c401272.jpg" data-lightbox="roadtrip" data-title="Military Discounts And Deals Buy Buy Baby Military Discounts Purchase">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/59/4f/0c594f83a77b9690113d42418c401272.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDyDnz-T_7FJhOE4GhVvMdJl0w_0nz-bbV_Q';" alt="Military Discounts And Deals Buy Buy Baby Military Discounts Purchase">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Discounts And Deals Buy Buy Baby Military Discounts Purchase</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="xV4SC2xV_ipEKM" data-lightbox="roadtrip" data-title="Https Www Eglin Af Mil Portals 56 Documents Legal Servicemembers 20civil 20relief 20act Pdf Ver 2018 06 04 110434 247 Timestamp 1528125127880">
+											<img class="card-img v-image ads-img " src="xV4SC2xV_ipEKM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0D0td0oiIKwDJ17ZzkmGeLtyViRXJLHkL0Q';" alt="Https Www Eglin Af Mil Portals 56 Documents Legal Servicemembers 20civil 20relief 20act Pdf Ver 2018 06 04 110434 247 Timestamp 1528125127880">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Eglin Af Mil Portals 56 Documents Legal Servicemembers 20civil 20relief 20act Pdf Ver 2018 06 04 110434 247 Timestamp 1528125127880</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="gUE9kxJqS2Xk3M" data-lightbox="roadtrip" data-title="Https Www Mcieast Marines Mil Portals 33 Documents Lsss East Legal 20assistance Servicemembers 20civil 20relief 20act Your 20rights 20under 20the 20scra 20 20an 20overview 20 8 20aug 2019 Pdf Ver 2019 08 08 065553 753">
+											<img class="card-img v-image ads-img " src="gUE9kxJqS2Xk3M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWB9cDnli7ypfSUSXvpte3n9q13TZh7q3eJA';" alt="Https Www Mcieast Marines Mil Portals 33 Documents Lsss East Legal 20assistance Servicemembers 20civil 20relief 20act Your 20rights 20under 20the 20scra 20 20an 20overview 20 8 20aug 2019 Pdf Ver 2019 08 08 065553 753">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Mcieast Marines Mil Portals 33 Documents Lsss East Legal 20assistance Servicemembers 20civil 20relief 20act Your 20rights 20under 20the 20scra 20 20an 20overview 20 8 20aug 2019 Pdf Ver 2019 08 08 065553 753</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2015/Oct/07/2001334825/780/780/0/151007-F-MUF43-550.JPG" data-lightbox="roadtrip" data-title="Terminating Lease Due To Deployment Or Pcs Goodfellow Air Force Base Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2015/Oct/07/2001334825/780/780/0/151007-F-MUF43-550.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScsIRdekeDWtzOzl7Afm1pRlwMRAbY7tUmrA';" alt="Terminating Lease Due To Deployment Or Pcs Goodfellow Air Force Base Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Terminating Lease Due To Deployment Or Pcs Goodfellow Air Force Base Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://laceylangford.com/wp-content/uploads/2020/05/SCRA-Cert-1-1-793x1024.png" data-lightbox="roadtrip" data-title="What To Know About The Servicemembers Civil Relief Act Scra">
+											<img class="card-img v-image ads-img " src="https://laceylangford.com/wp-content/uploads/2020/05/SCRA-Cert-1-1-793x1024.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBu5DY3jIBlVryDr8b_ZV0SvGdFN59tH8oPQ';" alt="What To Know About The Servicemembers Civil Relief Act Scra">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Know About The Servicemembers Civil Relief Act Scra</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="-ubPM-ENBI_RVM" data-lightbox="roadtrip" data-title="Https Www Jag Navy Mil Legal Services Documents Scra 20vehicle 20lease 20termination Pdf">
+											<img class="card-img v-image ads-img " src="-ubPM-ENBI_RVM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQObgWVpnU2XDWxHPFaXZgAvThygNlN4fFELg';" alt="Https Www Jag Navy Mil Legal Services Documents Scra 20vehicle 20lease 20termination Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Jag Navy Mil Legal Services Documents Scra 20vehicle 20lease 20termination Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images01.military.com/sites/default/files/styles/full/public/paycheck-thumbnails/2015/08/lease-signing-777.jpg?itok=FzHktojk" data-lightbox="roadtrip" data-title="Breaking A Lease Using The Scra Military Com">
+											<img class="card-img v-image ads-img " src="https://images01.military.com/sites/default/files/styles/full/public/paycheck-thumbnails/2015/08/lease-signing-777.jpg?itok=FzHktojk" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJFKyuF5jarkwnT2_RXYgrCZ6yiJBluWHUNQ';" alt="Breaking A Lease Using The Scra Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Breaking A Lease Using The Scra Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="dhCyeDpICB_3PM" data-lightbox="roadtrip" data-title="Http Www Offutt Af Mil Portals 97 55 20wg 20legal Service 20members 20civil 20relief 20act Pdf Ver 2016 03 21 155740 910">
+											<img class="card-img v-image ads-img " src="dhCyeDpICB_3PM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdonqXjLwAFcV4k-nv4tFuvyeY07YOPEuEuQ';" alt="Http Www Offutt Af Mil Portals 97 55 20wg 20legal Service 20members 20civil 20relief 20act Pdf Ver 2016 03 21 155740 910">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Offutt Af Mil Portals 97 55 20wg 20legal Service 20members 20civil 20relief 20act Pdf Ver 2016 03 21 155740 910</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="ZUi1OTrntKtfPM" data-lightbox="roadtrip" data-title="Https Www Jble Af Mil Portals 46 Documents Units Air Force Units Legal Servicemembers 20civil 20relief 20act 20 20consumer 20protection 202017 Pdf Ver 2017 04 25 154915 847">
+											<img class="card-img v-image ads-img " src="ZUi1OTrntKtfPM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8NcPdhcECOOC788YALmEnPx426s_DYzjo5g';" alt="Https Www Jble Af Mil Portals 46 Documents Units Air Force Units Legal Servicemembers 20civil 20relief 20act 20 20consumer 20protection 202017 Pdf Ver 2017 04 25 154915 847">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Jble Af Mil Portals 46 Documents Units Air Force Units Legal Servicemembers 20civil 20relief 20act 20 20consumer 20protection 202017 Pdf Ver 2017 04 25 154915 847</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="WyDe_CLEpmUAfM" data-lightbox="roadtrip" data-title="Http Www Luke Af Mil Linkclick Aspx Fileticket Jl3ousmoxlm Portalid">
+											<img class="card-img v-image ads-img " src="WyDe_CLEpmUAfM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfcHuHyDWnuTRzxBLFX7cf75X5eMOrG94ukg';" alt="Http Www Luke Af Mil Linkclick Aspx Fileticket Jl3ousmoxlm Portalid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Luke Af Mil Linkclick Aspx Fileticket Jl3ousmoxlm Portalid</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-pension-spouse-after-death-uk.html">Military Pension Spouse After Death Uk</a></li>
+													<li class="list-group-item"><a href="/military-nurse-hours.html">Military Nurse Hours</a></li>
+													<li class="list-group-item"><a href="/military-parent-dependent-medical.html">Military Parent Dependent Medical</a></li>
+													<li class="list-group-item"><a href="/military-pension-present-value-calculator.html">Military Pension Present Value Calculator</a></li>
+													<li class="list-group-item"><a href="/military-pension-records-national-archives.html">Military Pension Records National Archives</a></li>
+													<li class="list-group-item"><a href="/military-pension-widow-benefits-uk.html">Military Pension Widow Benefits Uk</a></li>
+													<li class="list-group-item"><a href="/military-pension-spouse-benefit.html">Military Pension Spouse Benefit</a></li>
+													<li class="list-group-item"><a href="/military-rap-instrumental.html">Military Rap Instrumental</a></li>
+													<li class="list-group-item"><a href="/military-rap-duty.html">Military Rap Duty</a></li>
+													<li class="list-group-item"><a href="/military-rap-songs.html">Military Rap Songs</a></li>
+													<li class="list-group-item"><a href="/military-pay-pre-tax-retirement-pay-calculator.html">Military Pay Pre Tax Retirement Pay Calculator</a></li>
+													<li class="list-group-item"><a href="/military-per-diem-rates-with-dependents.html">Military Per Diem Rates With Dependents</a></li>
+													<li class="list-group-item"><a href="/military-personnel-records-sf-180-national-archives.html">Military Personnel Records Sf 180 National Archives</a></li>
+													<li class="list-group-item"><a href="/military-pension-divorce-remarriage.html">Military Pension Divorce Remarriage</a></li>
+													<li class="list-group-item"><a href="/military-pension-spouse-uk.html">Military Pension Spouse Uk</a></li>
+													<li class="list-group-item"><a href="/military-officer-hat-rdr2.html">Military Officer Hat Rdr2</a></li>
+													<li class="list-group-item"><a href="/military-pilots-hours.html">Military Pilots Hours</a></li>
+													<li class="list-group-item"><a href="/military-pension-for-divorced-spouse.html">Military Pension For Divorced Spouse</a></li>
+													<li class="list-group-item"><a href="/military-pay-chart-with-spouse.html">Military Pay Chart With Spouse</a></li>
+													<li class="list-group-item"><a href="/military-ptsd-support-groups-uk.html">Military Ptsd Support Groups Uk</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mycampus Kidsandus - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mycampus Kidsandus",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/a7/9c/48/a79c48a4374c23b30e5d5a4c7bb63328.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mycampus+kidsandus",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mycampus Kidsandus</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Kami terlibat dalam pembuatan sistem aplikasi yang dapat membantu lembaga perbankan dan pendidikan. CampusConnect provides residential networks for student housing. Contact our teams using the interface messenger service so we can help you create your account. <br>				
+			</p>
+										<a class="badge badge-dark" href="/myco-z-bisa-buat-sariawan.html">myco z bisa buat sariawan</a>
+											<a class="badge badge-info" href="/national-archives-of-military-service-records.html">national archives of military service records</a>
+											<a class="badge badge-dark" href="/myocard-infarct.html">myocard infarct</a>
+											<a class="badge badge-info" href="/mychart-tower-health.html">mychart tower health</a>
+											<a class="badge badge-primary" href="/mychart-ucsd.html">mychart ucsd</a>
+											<a class="badge badge-secondary" href="/national-archives-of-australia-defence-service-records.html">national archives of australia defence service records</a>
+											<a class="badge badge-success" href="/names-of-military-hat-types.html">names of military hat types</a>
+											<a class="badge badge-warning" href="/national-archives-and-records-service-act-1996.html">national archives and records service act 1996</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to pay a visit to the ideal site.  Our site provides you with suggestions for seeing the maximum quality video and image content, search and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this video for you to see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/5b/b2/de5bb23664194e2a204b3c11a0d9496d.png" data-lightbox="roadtrip" data-title="Your Tribe Speaks English Body Percussion Youtube Percusion Corporal Percusion Coreografia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/5b/b2/de5bb23664194e2a204b3c11a0d9496d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvqmp1vyE7IHxCEF9zWUnxck8CabZECR-MSw';" alt="Your Tribe Speaks English Body Percussion Youtube Percusion Corporal Percusion Coreografia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Your Tribe Speaks English Body Percussion Youtube Percusion Corporal Percusion Coreografia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/c5/12/89c512cb018de8bd64824969222d322b.png" data-lightbox="roadtrip" data-title="University Beyond Home Student Ambassador Experiential University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/c5/12/89c512cb018de8bd64824969222d322b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn8dyzHpZ676c6cPwgNKreHrJQ6QectsHJ_A';" alt="University Beyond Home Student Ambassador Experiential University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Beyond Home Student Ambassador Experiential University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/b7/29/e3b7295e347c6f78e978a94bb43618e2.jpg" data-lightbox="roadtrip" data-title="Pin By Holly Mccarty On Classical Conversations Kindergarten Songs Kindergarten Learning Songs Kindergarten English">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/b7/29/e3b7295e347c6f78e978a94bb43618e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCalssd2VdpacFHVaRzVRpoqZIVlQv7gypA';" alt="Pin By Holly Mccarty On Classical Conversations Kindergarten Songs Kindergarten Learning Songs Kindergarten English">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Holly Mccarty On Classical Conversations Kindergarten Songs Kindergarten Learning Songs Kindergarten English</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/22/fb/e622fb4403e71a5b2a349c8515e0764e.png" data-lightbox="roadtrip" data-title="Your Kindergarten And First Grade Students Will Love Using These Writing Rings During The Month Kindergarten Writing Writing Activities Kindergarten Activities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/22/fb/e622fb4403e71a5b2a349c8515e0764e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG29FEeBdnTe02v_Pe-ISyQOs3AmJSfd9vcQ';" alt="Your Kindergarten And First Grade Students Will Love Using These Writing Rings During The Month Kindergarten Writing Writing Activities Kindergarten Activities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Your Kindergarten And First Grade Students Will Love Using These Writing Rings During The Month Kindergarten Writing Writing Activities Kindergarten Activities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/ce/4f/96ce4fbcc236a2b8c19fa2462ddbcb23.jpg" data-lightbox="roadtrip" data-title="Pin On Lo Que Destaca En Los Campus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/ce/4f/96ce4fbcc236a2b8c19fa2462ddbcb23.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVukUDg9ZtN-pKl86kluQK4NdtxFRrSFOw3g';" alt="Pin On Lo Que Destaca En Los Campus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Lo Que Destaca En Los Campus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/1e/80/b61e80ddad43dc3fa071524ac227edb2.jpg" data-lightbox="roadtrip" data-title="Taboos Around The World Intercultural Communication Taboo Cultural Differences">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/1e/80/b61e80ddad43dc3fa071524ac227edb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT65d4mlazd4zb2vnQIqLcGYe93EtP12VWlvw';" alt="Taboos Around The World Intercultural Communication Taboo Cultural Differences">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Taboos Around The World Intercultural Communication Taboo Cultural Differences</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/90/57/fe/9057feb78ccc179102b9b4829f428aec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT65d4mlazd4zb2vnQIqLcGYe93EtP12VWlvw';" alt="Taboos Around The World Intercultural Communication Taboo Cultural Differences">
+										<div class="card-body">
+						<h3 class="h5"><b>Chaussee de Philippeville 30 Loverval T0479 38 67 09 gerpinneskidsandusbe.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mycampus kidsandus</strong>. 
+								
+																	Sejak 2002 kami telah memulai mengembangkan sistem administrasi untuk lembaga pendidikan demi mengurangi penggunaan kertas. 
+																	In our case a team that is committed to the KidsUs project is even more essential because we are investing in childrens futures. 
+																	Rue Albert 1er 5 Hannut T0471 92 24 55. 
+																	The mobile-friendly user portal with a dedicated mobile app for easy access for the parents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	KidsUs is based on the natural process of mother tongue language acquisition. 
+																	A cloud-based school management ERP web application. 
+																	School requires edu email address. 
+																	Add to Wishlist myCampus is a simplified School and college automation system which helps administrators and teachers with their daily activities and keeps parents up to date with their childrens. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Last year 13700 disabled children from birth to 25 years benefitted from our work. 
+																	Engaging blended courses. 
+																	Its designed in such a way so that it works great for schools colleges and coaching institutes. 
+																	NEXT Copyright 2002 - 2021 All Right Reserved. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Connect us for free demo and experience best campus management software. 
+																	MyCampus will be your central hub for information regarding academic administrative and extracurricular college events including. 
+																	There is a wide range of engaging e-learning and blended learning courses allowing you to experience content developed by online learning professionals and dedicated subject matter experts. 
+																	This school requires an email address ending in edu. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Drop-in creches and nurseries for the under 5s to youth clubs short breaks and residential stays for young adults. 
+																	ONCAMPUS teach pre-university programmes with opportunity for guaranteed progression to a wide range of undergraduate and Masters degrees at leading universities across the UK USA and mainland Europe. 
+																	Please enter your valid User Name to get your password. 
+																	By logging into MyCampus you are consenting to have this post-secondary institution use the submitted information for the purposes consistent with academic and support services of a post-secondary educational institution. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Meet the fastest growing software for formal fraternity and sorority recruitment. 
+																	Create an account manage devices and get connected and online in no time. 
+																	You dont have to enter it now but if you do not enter one your internet speeds could be throttled in the future. 
+																	Information you Need to Know. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	KidsUs English for children aged 1 to 18. 
+																	Its easy to get started. 
+																	ECampus is a simple and easy e-learning or online learning for everyone. 
+																	MyCampus for Partners is available on Mobile Tablet or Desktop ensuring ease of access. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Place de la Bouxhe 1C Beaufays LiegeLuik Belgique T0473 36 19 71 beaufayskidsandusbe. 
+																	KIDS is a national charity founded in 1970 that provides a wide range of services to disabled children young people and their families in England. 
+																	An excellent team is essential for educational projects in general. 
+																	Learn more about us. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can quickly access documents and services such as changing your. 
+																	Ease of access learn when it suits you. 
+																	MyClassCampus is the best School ERP which works as an operating system for education. 
+																	The MyCampusfr website makes it easy to create an on-line account and fill in your rental file. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Student awards and financial aid. 
+																	Place Communale dAuderghem 16 1160 Auderghem 0465 02 83 85 auderghemkidsandusbe. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/14/74/8714747c7d7a50754c1f3c78740deb47.jpg" data-lightbox="roadtrip" data-title="Coloring Book Flash Teaches Fire Safety Cb1101 In Our Fire Safety Coloring Book Flash The Fire Dog Teaches Fire Prevention Fire Safety Teaching Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/14/74/8714747c7d7a50754c1f3c78740deb47.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcXV3lbpTgM6cguCrCAm1K3QNU6xr78JETiQ';" alt="Coloring Book Flash Teaches Fire Safety Cb1101 In Our Fire Safety Coloring Book Flash The Fire Dog Teaches Fire Prevention Fire Safety Teaching Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coloring Book Flash Teaches Fire Safety Cb1101 In Our Fire Safety Coloring Book Flash The Fire Dog Teaches Fire Prevention Fire Safety Teaching Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/b5/96/17b59614cc94306dce02a962ef987735.jpg" data-lightbox="roadtrip" data-title="5 Gallon Bucket Aeroponics The Easiest Aeroponics System To Build Full Class Hd Youtube Aeroponics Aquaponics System Aquaponics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/b5/96/17b59614cc94306dce02a962ef987735.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtrX7-u9Vf_TIDc31RLfz07cw48MvSBmGsRQ';" alt="5 Gallon Bucket Aeroponics The Easiest Aeroponics System To Build Full Class Hd Youtube Aeroponics Aquaponics System Aquaponics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Gallon Bucket Aeroponics The Easiest Aeroponics System To Build Full Class Hd Youtube Aeroponics Aquaponics System Aquaponics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/90/57/fe/9057feb78ccc179102b9b4829f428aec.jpg" data-lightbox="roadtrip" data-title="Do You Search For Hundred Languages Of Children The Reggio Emilia Approach To Early Childhood Education Reggi Reggio Emilia Approach Childhood Education Reggio">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/90/57/fe/9057feb78ccc179102b9b4829f428aec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY1M1AbB4UBeFE4-ARj4nEnQ-FyI-wnE2ydg';" alt="Do You Search For Hundred Languages Of Children The Reggio Emilia Approach To Early Childhood Education Reggi Reggio Emilia Approach Childhood Education Reggio">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do You Search For Hundred Languages Of Children The Reggio Emilia Approach To Early Childhood Education Reggi Reggio Emilia Approach Childhood Education Reggio</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/81/c3/1681c3b1c89dce17b1bd6df5db4f6cbf.png" data-lightbox="roadtrip" data-title="How To Find Your Village Sarah K Butterfield Three Practical Tips To Help You Find A Mom Tribe M Best Friend Pictures Friend Pictures Beach Photos Friends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/81/c3/1681c3b1c89dce17b1bd6df5db4f6cbf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQowvtNrMwjLHrQuEjr7YgNfd5paX8uQzNL9Q';" alt="How To Find Your Village Sarah K Butterfield Three Practical Tips To Help You Find A Mom Tribe M Best Friend Pictures Friend Pictures Beach Photos Friends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Find Your Village Sarah K Butterfield Three Practical Tips To Help You Find A Mom Tribe M Best Friend Pictures Friend Pictures Beach Photos Friends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5e/ff/cf/5effcf7c50e6a814484b4e67ce7b3ef7.jpg" data-lightbox="roadtrip" data-title="45 Awesome Industrial Library Everyone Should Keep Home Library Design Library Architecture Architecture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5e/ff/cf/5effcf7c50e6a814484b4e67ce7b3ef7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi-oWMCW0TlVzn4M5eHbrUHnTQvLkdXyHQew';" alt="45 Awesome Industrial Library Everyone Should Keep Home Library Design Library Architecture Architecture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">45 Awesome Industrial Library Everyone Should Keep Home Library Design Library Architecture Architecture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/87/64/8e8764a9640d5f50e7b830dbc7c8bc92.jpg" data-lightbox="roadtrip" data-title="Estate 2019 Facciamo Che Uniamo L Inglese Ad Attivita Legate Alla Disciplina Circense Al Teat Attivita Estive Per Bambini Attivita Estive Giochi Di Squadra">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/87/64/8e8764a9640d5f50e7b830dbc7c8bc92.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmjix_8JB3YzGTGnnTnVaq6I590qWlXykNtA';" alt="Estate 2019 Facciamo Che Uniamo L Inglese Ad Attivita Legate Alla Disciplina Circense Al Teat Attivita Estive Per Bambini Attivita Estive Giochi Di Squadra">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Estate 2019 Facciamo Che Uniamo L Inglese Ad Attivita Legate Alla Disciplina Circense Al Teat Attivita Estive Per Bambini Attivita Estive Giochi Di Squadra</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/02/e4/2402e4f28f077a297aa7514d4409a926.jpg" data-lightbox="roadtrip" data-title="Pin On Geography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/02/e4/2402e4f28f077a297aa7514d4409a926.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU1w2Cyg6tbuRj7OSrJMcHBnMwK2Kyq1XS_A';" alt="Pin On Geography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Geography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/9c/48/a79c48a4374c23b30e5d5a4c7bb63328.jpg" data-lightbox="roadtrip" data-title="Pin On Religion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/9c/48/a79c48a4374c23b30e5d5a4c7bb63328.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH0OQJFd9hqYIIKt-WZ9V5EoD7H40XB-TvWw';" alt="Pin On Religion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Religion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/69/88/3f6988c93ecda89a9a207b57e7a2a6de.png" data-lightbox="roadtrip" data-title="Picture Choral Sheet Music Singing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/69/88/3f6988c93ecda89a9a207b57e7a2a6de.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNuxDG1sEocUmSdXlMscGP52eowX4qaVHt7Q';" alt="Picture Choral Sheet Music Singing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Picture Choral Sheet Music Singing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/af/d5/97afd57838e7dfd06953a168b311a9ac.jpg" data-lightbox="roadtrip" data-title="Los Ninos De Merecen Cero Errores Asi Es Kids Us Mexico Ninos Te Mereces Cerillo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/af/d5/97afd57838e7dfd06953a168b311a9ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXsJfdpuv2OTK_W7OyLNIKQ5sPXe_JsWXTOA';" alt="Los Ninos De Merecen Cero Errores Asi Es Kids Us Mexico Ninos Te Mereces Cerillo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Los Ninos De Merecen Cero Errores Asi Es Kids Us Mexico Ninos Te Mereces Cerillo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/83/36/bd83361631595c49785836fe09d792dd.png" data-lightbox="roadtrip" data-title="Poetry Like Bread Roque Dalton 39 S Quot Like You Quot Like You Poetry Samuel Taylor Coleridge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/83/36/bd83361631595c49785836fe09d792dd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-J3NZ4kkiatTdoagMkqh4LE9I-3CwB3HffA';" alt="Poetry Like Bread Roque Dalton 39 S Quot Like You Quot Like You Poetry Samuel Taylor Coleridge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Poetry Like Bread Roque Dalton 39 S Quot Like You Quot Like You Poetry Samuel Taylor Coleridge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/df/ba/09dfbaa5c4feacdc8d36b629dde52668.jpg" data-lightbox="roadtrip" data-title="Free Homeschool Resources Free Homeschool Resources Free Homeschool Homeschool Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/df/ba/09dfbaa5c4feacdc8d36b629dde52668.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS1E21zXW0JIiDWc8RYXHQtKrFNNEoMCymtA';" alt="Free Homeschool Resources Free Homeschool Resources Free Homeschool Homeschool Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Homeschool Resources Free Homeschool Resources Free Homeschool Homeschool Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/48/49/f5/4849f525b27577dadc0824652f956309.jpg" data-lightbox="roadtrip" data-title="Many People Believe That Summer Means White And Rose But There Is No Rule Against Reds We Are Honored To Be Included In The Pa Wines Red Wine Cabernet Franc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/48/49/f5/4849f525b27577dadc0824652f956309.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRqgWxtGED-xepeYH9BOklbbhuqlVDhej_cw';" alt="Many People Believe That Summer Means White And Rose But There Is No Rule Against Reds We Are Honored To Be Included In The Pa Wines Red Wine Cabernet Franc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Many People Believe That Summer Means White And Rose But There Is No Rule Against Reds We Are Honored To Be Included In The Pa Wines Red Wine Cabernet Franc</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/my-partner-eevee.html">My Partner Eevee</a></li>
+													<li class="list-group-item"><a href="/my-muslim-husband-doesnt-love-me.html">My Muslim Husband Doesnt Love Me</a></li>
+													<li class="list-group-item"><a href="/my-partner-forever-quotes.html">My Partner Forever Quotes</a></li>
+													<li class="list-group-item"><a href="/my-partner-has-separation-anxiety.html">My Partner Has Separation Anxiety</a></li>
+													<li class="list-group-item"><a href="/my-partner-blames-me-for-every-argument.html">My Partner Blames Me For Every Argument</a></li>
+													<li class="list-group-item"><a href="/my-partner-finds-me-boring.html">My Partner Finds Me Boring</a></li>
+													<li class="list-group-item"><a href="/my-partner-always-plays-the-victim.html">My Partner Always Plays The Victim</a></li>
+													<li class="list-group-item"><a href="/my-marriage-year-prediction-free.html">My Marriage Year Prediction Free</a></li>
+													<li class="list-group-item"><a href="/my-partner-doesnt-listen-to-me.html">My Partner Doesnt Listen To Me</a></li>
+													<li class="list-group-item"><a href="/my-partner-forged-my-signature.html">My Partner Forged My Signature</a></li>
+													<li class="list-group-item"><a href="/my-partner-cheated-on-me-quora.html">My Partner Cheated On Me Quora</a></li>
+													<li class="list-group-item"><a href="/my-partner-has-anxiety-and-depression.html">My Partner Has Anxiety And Depression</a></li>
+													<li class="list-group-item"><a href="/my-partner-constantly-lies-to-me.html">My Partner Constantly Lies To Me</a></li>
+													<li class="list-group-item"><a href="/my-partner-blames-me-for-everything-that-goes-wrong.html">My Partner Blames Me For Everything That Goes Wrong</a></li>
+													<li class="list-group-item"><a href="/my-online-relationship-is-getting-boring.html">My Online Relationship Is Getting Boring</a></li>
+													<li class="list-group-item"><a href="/my-partner-has-anxiety-reddit.html">My Partner Has Anxiety Reddit</a></li>
+													<li class="list-group-item"><a href="/my-partner-has-anxiety-and-ignores-me.html">My Partner Has Anxiety And Ignores Me</a></li>
+													<li class="list-group-item"><a href="/my-partner-essay.html">My Partner Essay</a></li>
+													<li class="list-group-item"><a href="/my-partner-blames-me-for-his-breakdown.html">My Partner Blames Me For His Breakdown</a></li>
+													<li class="list-group-item"><a href="/my-partner-blames-everything-on-me.html">My Partner Blames Everything On Me</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

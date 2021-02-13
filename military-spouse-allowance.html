@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Spouse Allowance - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Spouse Allowance",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/26/2a/db/262adb881d8dd82be9dd8fa2071e6dd8.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+spouse+allowance",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Spouse Allowance</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">However there are specific rules for claiming this allowance as a dual military couple. Only one person in the dual military couple. Post-911 GI Bill Benefits The Post-911 GI Bill is an extraordinarily valuable benefit which provides a member or family member with up to 160K of benefits towards a college degree comprised of a monthly housing allowance tuition reimbursement and a booksupply stipend. <br>				
+			</p>
+										<a class="badge badge-light" href="/military-time-conversion-practice.html">military time conversion practice</a>
+											<a class="badge badge-success" href="/military-time-12-hour-clock.html">military time 12 hour clock</a>
+											<a class="badge badge-light" href="/military-time-cheat-sheet.html">military time cheat sheet</a>
+											<a class="badge badge-dark" href="/military-time-calculator-add.html">military time calculator add</a>
+											<a class="badge badge-danger" href="/military-time-conversion-chart-with-minutes.html">military time conversion chart with minutes</a>
+											<a class="badge badge-dark" href="/military-therapy-resources.html">military therapy resources</a>
+											<a class="badge badge-success" href="/military-time-calculator-with-lunch.html">military time calculator with lunch</a>
+											<a class="badge badge-secondary" href="/military-time-conversion-half-hour.html">military time conversion half hour</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to visit the ideal site.  Our site gives you suggestions for viewing the highest quality video and image content, hunt and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie that you view.  It is also possible to bring about supporting this site by sharing videos and images that you enjoy on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/a3/b0/f8a3b000d277cd59ab7189569eca71ff.jpg" data-lightbox="roadtrip" data-title="Military Spouse Professional Gear Allowance Katehorrell Military Spouse Military Spouse Jobs Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/a3/b0/f8a3b000d277cd59ab7189569eca71ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBYGwQ52M28HJUYG8MPcahplrYyXY6cBFNVg';" alt="Military Spouse Professional Gear Allowance Katehorrell Military Spouse Military Spouse Jobs Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Professional Gear Allowance Katehorrell Military Spouse Military Spouse Jobs Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/74/a5/6e/74a56e7cc405bc7e06369d17e9b7461d.jpg" data-lightbox="roadtrip" data-title="The Guide To Acronyms And Abbreviations For Military Spouses Military Spouse Military Girlfriend Quotes Military Moms Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/74/a5/6e/74a56e7cc405bc7e06369d17e9b7461d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzvpLqrbh9It0IGI01SmPS9lnyRtGRTh8i7w';" alt="The Guide To Acronyms And Abbreviations For Military Spouses Military Spouse Military Girlfriend Quotes Military Moms Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Guide To Acronyms And Abbreviations For Military Spouses Military Spouse Military Girlfriend Quotes Military Moms Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/cf/22/e1cf226f8f976b787cb28c54a039e875.jpg" data-lightbox="roadtrip" data-title="Military Spouse Professional Gear Allowance Katehorrell Military Spouse Professional Gear Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/cf/22/e1cf226f8f976b787cb28c54a039e875.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7i_c7KsLuggyhReDkcm97qZnJhkJCADe7qQ';" alt="Military Spouse Professional Gear Allowance Katehorrell Military Spouse Professional Gear Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Professional Gear Allowance Katehorrell Military Spouse Professional Gear Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/dd/0d/37dd0dd24f0fff6a7a51157c80526cd9.png" data-lightbox="roadtrip" data-title="50 Things Only A Military Spouse Would Understand Military Girlfriend Military Wife Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/dd/0d/37dd0dd24f0fff6a7a51157c80526cd9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAkQlibO8U1EgJJxrpJml6mXGQnyMFHtPikQ';" alt="50 Things Only A Military Spouse Would Understand Military Girlfriend Military Wife Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">50 Things Only A Military Spouse Would Understand Military Girlfriend Military Wife Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/f3/88/0df388ad6d20c442855d01dff724df97.png" data-lightbox="roadtrip" data-title="Military Spouse Professional Gear Allowance Katehorrell Military Spouse Professional Gear Military Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/f3/88/0df388ad6d20c442855d01dff724df97.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuLAirr_9ehBH8EfIGXQxZV9zcVyNubijWzw';" alt="Military Spouse Professional Gear Allowance Katehorrell Military Spouse Professional Gear Military Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Professional Gear Allowance Katehorrell Military Spouse Professional Gear Military Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/7e/40/f07e4026526f38807020103804bb63a0.jpg" data-lightbox="roadtrip" data-title="Everything About Dislocation Allowance Dla 2020 Rates Katehorrell Military Wife Life Military Spouse Blog Military Spouse Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/7e/40/f07e4026526f38807020103804bb63a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dEAgdmoavNlkV7Qz-HwE4AvKOq0tobb-EA';" alt="Everything About Dislocation Allowance Dla 2020 Rates Katehorrell Military Wife Life Military Spouse Blog Military Spouse Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Everything About Dislocation Allowance Dla 2020 Rates Katehorrell Military Wife Life Military Spouse Blog Military Spouse Resources</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/0d/f3/88/0df388ad6d20c442855d01dff724df97.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dEAgdmoavNlkV7Qz-HwE4AvKOq0tobb-EA';" alt="Everything About Dislocation Allowance Dla 2020 Rates Katehorrell Military Wife Life Military Spouse Blog Military Spouse Resources">
+										<div class="card-body">
+						<h3 class="h5"><b>The estimated weight of PBPEPro-Gear must be provided during counseling and annotated on DD Form 1299.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military spouse allowance</strong>. 
+								
+																	Your military spouse performed at least 20 years of. 
+																	Housing and Allowances for Married Military Couples Military couples stationed together can live off-base and receive a housing allowance or can give up the housing allowance and live free in on-base family housing just as members married to a civilian can. 
+																	The professional gear weight allowance for military spouses is 500 pounds. 
+																	You may be able to get National Insurance credits if youre married to or the civil partner of a member of the armed forces and you go with them on an overseas posting. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How Much Is The Allowance. 
+																	Military members can elect to enroll their family members in this program for coverage of 10000 to 100000. 
+																	For tax years beginning January 1 2018 the Veterans Benefits and Transition Act of 2018 amended the Servicemembers Civil Relief Act to allow the spouse of a servicemember to elect to use the same residence as the servicemember for state tax purposes. 
+																	How Do I Take This Allowance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You were married for 20 years. 
+																	For more information see the Military Health Benefits for Divorced Spouses article in the Military Divorce Guide. 
+																	The couple must be living together as a couple before the duty begins. 
+																	It is a fixed rater paid monthly. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These allowances can be a major portion of a service members pay based on location status and pay-grade. 
+																	Military pay includes a number of components including allowances. 
+																	The most common allowances are Basic Allowance for Subsistence BAS and Basic Allowance for Housing BAH. 
+																	As a military spouse some benefits might be extremely attractive and some might be useful for negotiating a little more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What can military spouses do if they have no control over the household budget. 
+																	Employee benefits can really add up when you look beyond the paycheck. 
+																	Active-duty military families -- regardless of which branch of service their spouse serves in -- receive benefits through the militarys healthcare which is called Tricare. 
+																	People serving in the Armed Forces husbands wives and dependant children can buy the HM Forces Railcard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But these newly married military spouses arent the only ones earning an allowance The Monetary Worth of a Stay-At-Home Spouse While a get-hitched-get-deployed kind of marriage might suffer from a few trust issues its hardly the kind of thing one would expect from a couple who married under less time-constrained circumstances. 
+																	War widows or widowers and their dependants who are getting an Armed Forces pension are also eligible for a Railcard. 
+																	Credits can help to fill. 
+																	Up to 20000 armed forces spouses may be eligible for a new National Insurance credit if they have previously joined their partners on an overseas posting ensuring that they dont miss out on. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Visit your Military and Family Support Center and ask about the new-spouse orientation program. 
+																	You must be sent away from your family for more than 30 days due to receiving military orders. 
+																	This is determined by the length of time between the date of the marriage to the date of. 
+																	If an unemployed spouse is forced into an allowance system where they cant provide for basic needs then the situation can quickly cross the line into control and even domestic abuse. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The MOD Ex-Gratia Payment in lieu of Maternity Allowance policy applies to eligible spousecivil partners who accompany their Service spouses overseas to countries outside the EEA and where there is no reciprocal benefit agreement. 
+																	Military spouses are eligible to receive up to 100000 in life insurance coverage. 
+																	Items must be separated and properly labelled during packout to ensure that they are weighed separately. 
+																	Neither spouse should get the leftovers when their partner is done spending. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Employee benefits from a military spouse perspective. 
+																	FSA Family Separation Allowance allowance meant to offset travel and transportation costs incurred by a family when the servicemember is assigned to another geographical area usually through deployment or geographical bachelor status. 
+																	A majority of the force receives both of these allowances and in many cases these. 
+																	In order to qualify for military medical benefits and commissary and exchange privileges the following criteria must be met. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This gives you 13 off most rail fares throughout the UK for a year. 
+																	Spouse and dependent coverage may not exceed the coverage held by the service member and children are restricted to 10000. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/fa/4b/b8fa4b6fcccea68d447175c9caf4adef.jpg" data-lightbox="roadtrip" data-title="Pin On Milspouse Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/fa/4b/b8fa4b6fcccea68d447175c9caf4adef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2mVyDuEeAzXu6SyZVDhF4YKqMcPqmjsbfrg';" alt="Pin On Milspouse Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Milspouse Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/8f/b1/80/8fb18075c3b44089437d98944636a38a.jpg" data-lightbox="roadtrip" data-title="What Is Basic Allowance For Housing Bah Military Wife Life Military Spouse Support Basic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/8f/b1/80/8fb18075c3b44089437d98944636a38a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6otxTY5Ys2zIZkkwfG3Jav1mii8P1Qnydbg';" alt="What Is Basic Allowance For Housing Bah Military Wife Life Military Spouse Support Basic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Basic Allowance For Housing Bah Military Wife Life Military Spouse Support Basic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/79/7d/5d/797d5d1fd2df5440c0857ab5ce9f5352.jpg" data-lightbox="roadtrip" data-title="Everything About Temporary Lodging Allowance Tla Katehorrell Moving Overseas Military Move Air Force Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/79/7d/5d/797d5d1fd2df5440c0857ab5ce9f5352.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi7kUNzXrBMZjPONquY6g8PUw2g8wBiG7cPA';" alt="Everything About Temporary Lodging Allowance Tla Katehorrell Moving Overseas Military Move Air Force Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Everything About Temporary Lodging Allowance Tla Katehorrell Moving Overseas Military Move Air Force Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/b1/ea/11b1eaaf46076b4ada2f674fb89c79fe.jpg" data-lightbox="roadtrip" data-title="New Military Spouses Learn A Whole New Vocabulary Military Wife Life Army Wife Life Navy Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/b1/ea/11b1eaaf46076b4ada2f674fb89c79fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3kiQBSGe-4jYZ-SKG5f9BssZu7-uE5nWR5Q';" alt="New Military Spouses Learn A Whole New Vocabulary Military Wife Life Army Wife Life Navy Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Military Spouses Learn A Whole New Vocabulary Military Wife Life Army Wife Life Navy Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/ff/47/c5ff470282d721ebef6f9d6a81444a20.jpg" data-lightbox="roadtrip" data-title="New Military Spouses Learn A Whole New Vocabulary Army Wife Life Military Wife Life Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/ff/47/c5ff470282d721ebef6f9d6a81444a20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfMwc6DJ-Skmc8cq2XNOqn33TVauhzoCHntA';" alt="New Military Spouses Learn A Whole New Vocabulary Army Wife Life Military Wife Life Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Military Spouses Learn A Whole New Vocabulary Army Wife Life Military Wife Life Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/c0/3e/59c03ed1975788a8f3c4a81594aea897.jpg" data-lightbox="roadtrip" data-title="Everything About Temporary Lodging Allowance Tla Katehorrell Military Move Moving To Germany Military Relocation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/c0/3e/59c03ed1975788a8f3c4a81594aea897.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcResjPTme7h0O7kLB0Wsno5LRBnk8f0jvHYkA';" alt="Everything About Temporary Lodging Allowance Tla Katehorrell Military Move Moving To Germany Military Relocation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Everything About Temporary Lodging Allowance Tla Katehorrell Military Move Moving To Germany Military Relocation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/00/b0/aa00b071fbd25c86181baa8a4204ae84.jpg" data-lightbox="roadtrip" data-title="How To Stretch Your Bah When You Live Off Base Military Wife Life Military Life Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/00/b0/aa00b071fbd25c86181baa8a4204ae84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmGFzAtj9RtSOgn5AGunUGSI7srksjHM2lSg';" alt="How To Stretch Your Bah When You Live Off Base Military Wife Life Military Life Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Stretch Your Bah When You Live Off Base Military Wife Life Military Life Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/2a/db/262adb881d8dd82be9dd8fa2071e6dd8.png" data-lightbox="roadtrip" data-title="The Guide To Bah Basic Allowance For Housing Motherhood Apple Pie The Flag Military Spouse Military Life Military Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/2a/db/262adb881d8dd82be9dd8fa2071e6dd8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQICALSzPaktF-aKnSIlS3fQwXyb5PofyQhQ';" alt="The Guide To Bah Basic Allowance For Housing Motherhood Apple Pie The Flag Military Spouse Military Life Military Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Guide To Bah Basic Allowance For Housing Motherhood Apple Pie The Flag Military Spouse Military Life Military Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/e9/a7/73e9a77ba4a87a7a488d8902e9be1119.png" data-lightbox="roadtrip" data-title="Everything About Dislocation Allowance Dla 2019 Rates Katehorrell Dislocation Military Spouse Blog Allowance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/e9/a7/73e9a77ba4a87a7a488d8902e9be1119.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKCXNcLSHVx0GALGelcnwJzOFsqFSmA-cL5Q';" alt="Everything About Dislocation Allowance Dla 2019 Rates Katehorrell Dislocation Military Spouse Blog Allowance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Everything About Dislocation Allowance Dla 2019 Rates Katehorrell Dislocation Military Spouse Blog Allowance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/65/75/cd65752ec49f58593fcce1aa07ffee2f.png" data-lightbox="roadtrip" data-title="The Personal Statement Of Military Compensation Military Dollar Military Spouse Resources Personal Statement Person">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/65/75/cd65752ec49f58593fcce1aa07ffee2f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwOYhTGjON2JBNka9f-WCv4nPSBFSUwO0N5A';" alt="The Personal Statement Of Military Compensation Military Dollar Military Spouse Resources Personal Statement Person">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Personal Statement Of Military Compensation Military Dollar Military Spouse Resources Personal Statement Person</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/9e/c6/0a9ec6fcdb9a6936243240dce7f07285.png" data-lightbox="roadtrip" data-title="The Guide To Bas Basic Allowance For Subsistence Motherhood Apple Pie The Flag Military Wife Life Military Spouse Military Spouse Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/9e/c6/0a9ec6fcdb9a6936243240dce7f07285.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6o0QrUvgtVczc9oKN0hsojKqiPP6UDPWasw';" alt="The Guide To Bas Basic Allowance For Subsistence Motherhood Apple Pie The Flag Military Wife Life Military Spouse Military Spouse Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Guide To Bas Basic Allowance For Subsistence Motherhood Apple Pie The Flag Military Wife Life Military Spouse Military Spouse Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/e8/c2/89e8c2fc1929a72e5a1afbbd0dd41259.png" data-lightbox="roadtrip" data-title="From The Mailbag Dislocation Allowance Frequently Asked Questions Katehorrell In 2020 Dislocation This Or That Questions Allowance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/e8/c2/89e8c2fc1929a72e5a1afbbd0dd41259.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2_r9LoKx2vgw_Uzu8WEn6H6uJ6lXNK-sR2Q';" alt="From The Mailbag Dislocation Allowance Frequently Asked Questions Katehorrell In 2020 Dislocation This Or That Questions Allowance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">From The Mailbag Dislocation Allowance Frequently Asked Questions Katehorrell In 2020 Dislocation This Or That Questions Allowance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/00/7c/25007cf30dbd258797e6cdaf3d04ecd9.jpg" data-lightbox="roadtrip" data-title="How To Stretch Your Bas Military Wife Life Army Wife Life Airforce Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/00/7c/25007cf30dbd258797e6cdaf3d04ecd9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ_C0UWQ4OUd9uFfFbv4N-Epq6hmizKxisfA';" alt="How To Stretch Your Bas Military Wife Life Army Wife Life Airforce Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Stretch Your Bas Military Wife Life Army Wife Life Airforce Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/msn-us-version.html">Msn Us Version</a></li>
+													<li class="list-group-item"><a href="/msn-us-news-politics.html">Msn Us News Politics</a></li>
+													<li class="list-group-item"><a href="/msn-uk-logo.html">Msn Uk Logo</a></li>
+													<li class="list-group-item"><a href="/msn-uk-inbox.html">Msn Uk Inbox</a></li>
+													<li class="list-group-item"><a href="/msn-uk-outlook-hotmail.html">Msn Uk Outlook Hotmail</a></li>
+													<li class="list-group-item"><a href="/msn-us-weight-loss.html">Msn Us Weight Loss</a></li>
+													<li class="list-group-item"><a href="/msn-usa-world-news.html">Msn Usa World News</a></li>
+													<li class="list-group-item"><a href="/msn-us-immigration.html">Msn Us Immigration</a></li>
+													<li class="list-group-item"><a href="/msn-uk-soaps.html">Msn Uk Soaps</a></li>
+													<li class="list-group-item"><a href="/msn-uk-weather-10-day-forecast.html">Msn Uk Weather 10 Day Forecast</a></li>
+													<li class="list-group-item"><a href="/msn-uk-vaccine.html">Msn Uk Vaccine</a></li>
+													<li class="list-group-item"><a href="/msn-us-news-headlines.html">Msn Us News Headlines</a></li>
+													<li class="list-group-item"><a href="/msn-us-election-results.html">Msn Us Election Results</a></li>
+													<li class="list-group-item"><a href="/msn-us-and-world-news.html">Msn Us And World News</a></li>
+													<li class="list-group-item"><a href="/msn-uk-news-homepage.html">Msn Uk News Homepage</a></li>
+													<li class="list-group-item"><a href="/msn-us-election-results-2020.html">Msn Us Election Results 2020</a></li>
+													<li class="list-group-item"><a href="/msn-usa-free-online-games.html">Msn Usa Free Online Games</a></li>
+													<li class="list-group-item"><a href="/msn-us-news-english.html">Msn Us News English</a></li>
+													<li class="list-group-item"><a href="/msn-uk-phone-number.html">Msn Uk Phone Number</a></li>
+													<li class="list-group-item"><a href="/msn-uk-new-account.html">Msn Uk New Account</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

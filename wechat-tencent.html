@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Wechat Tencent - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Wechat Tencent",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/ff/55/65/ff5565662f98e6f913e007be2fd7fbf7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=wechat+tencent",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Wechat Tencent</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Set remarks for group chats. Our high performance advertising platform helps brands and marketers reach out to hundreds of millions of consumers in China. Through its embrace of the industrial internet Tencent has become a digital assistant across all walks of life. <br>				
+			</p>
+										<a class="badge badge-info" href="/my-husband-wants-a-divorce-but-i-love-him.html">my husband wants a divorce but i love him</a>
+											<a class="badge badge-warning" href="/my-husband-wants-a-divorce-what-should-i-do.html">my husband wants a divorce what should i do</a>
+											<a class="badge badge-light" href="/my-husband-wants-a-divorce-after-i-cheated.html">my husband wants a divorce after i cheated</a>
+											<a class="badge badge-warning" href="/my-husband-undermines-me-all-the-time.html">my husband undermines me all the time</a>
+											<a class="badge badge-light" href="/my-husband-rocks-quotes.html">my husband rocks quotes</a>
+											<a class="badge badge-danger" href="/my-husband-wants-to-divorce.html">my husband wants to divorce</a>
+											<a class="badge badge-light" href="/my-husband-wants-a-divorce-what-am-i-entitled-to.html">my husband wants a divorce what am i entitled to</a>
+											<a class="badge badge-info" href="/my-husband-shouts-at-me-islam.html">my husband shouts at me islam</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to visit the ideal blog.  Our website provides you with hints for seeing the maximum quality video and picture content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie for you to see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/d9/91/f7d991fba37f8c07458be47f5a35ed9e.png" data-lightbox="roadtrip" data-title="Wechat Is A Mobile Text And Voice Messaging Communication Service Developed By Tencent In China In The Absence Of Whatsapp New Tricks Apple Apps Messaging App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/d9/91/f7d991fba37f8c07458be47f5a35ed9e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw-A-5anprIDNAi0tiukuetMgTWsgJzZnDkQ';" alt="Wechat Is A Mobile Text And Voice Messaging Communication Service Developed By Tencent In China In The Absence Of Whatsapp New Tricks Apple Apps Messaging App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wechat Is A Mobile Text And Voice Messaging Communication Service Developed By Tencent In China In The Absence Of Whatsapp New Tricks Apple Apps Messaging App</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/94/91/8c/94918ca2834cb009d7f0e2cb3124be4a.jpg" data-lightbox="roadtrip" data-title="One App For Everythig All About Wechat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/94/91/8c/94918ca2834cb009d7f0e2cb3124be4a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS85OxSTdNLoIIBAm-izPO9b5N79laFtSEadg';" alt="One App For Everythig All About Wechat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">One App For Everythig All About Wechat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/4d/4a/cc4d4acee16ae48f97a436dcea05c605.jpg" data-lightbox="roadtrip" data-title="Messaging Service Wechat Owned By Tencent And Known As Weixin In China Will Total 494 3 Million Users In China T Iphones For Sale Chinese Iphone Android Apps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/4d/4a/cc4d4acee16ae48f97a436dcea05c605.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVCVSOvfIIqcK86whucu0lVWSkl8K41sVhDA';" alt="Messaging Service Wechat Owned By Tencent And Known As Weixin In China Will Total 494 3 Million Users In China T Iphones For Sale Chinese Iphone Android Apps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Messaging Service Wechat Owned By Tencent And Known As Weixin In China Will Total 494 3 Million Users In China T Iphones For Sale Chinese Iphone Android Apps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/bb/e9/50/bbe950c69639ba916d609fd45b334c87.jpg" data-lightbox="roadtrip" data-title="Technology Wechat China S Billion User Messaging App Owned By Tencent It Offers So Much More Than Messaging Messaging App Messages Science And Technology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/bb/e9/50/bbe950c69639ba916d609fd45b334c87.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdgMHxckWOsbcCc5CJehvAGM8QqDYKMq7UQg';" alt="Technology Wechat China S Billion User Messaging App Owned By Tencent It Offers So Much More Than Messaging Messaging App Messages Science And Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Technology Wechat China S Billion User Messaging App Owned By Tencent It Offers So Much More Than Messaging Messaging App Messages Science And Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/a3/80/29a3801c56f08a472df7ed77fd5f4a74.jpg" data-lightbox="roadtrip" data-title="Blockchain And Cryptocurrency Media Accounts In China Have Been Banned On Wechat The Messenger App Owne Messaging App Most Popular Social Media Cryptocurrency">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/a3/80/29a3801c56f08a472df7ed77fd5f4a74.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJSmYk6dWFD8BgAigHhg0mtneqTH6Ft-4ZqQ';" alt="Blockchain And Cryptocurrency Media Accounts In China Have Been Banned On Wechat The Messenger App Owne Messaging App Most Popular Social Media Cryptocurrency">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Blockchain And Cryptocurrency Media Accounts In China Have Been Banned On Wechat The Messenger App Owne Messaging App Most Popular Social Media Cryptocurrency</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/21/85/fd2185a549cf617699fb3e9eb709bb83.jpg" data-lightbox="roadtrip" data-title="The Wechat Messaging App Is Continuing Its Efforts To Block Official Accounts That Involve Cryptocurrencies Now Targeting Tho Bitcoin Accounting Messaging App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/21/85/fd2185a549cf617699fb3e9eb709bb83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3EQ2FLlNU4Mww5km9Xpyp6-aS07DkDewUew';" alt="The Wechat Messaging App Is Continuing Its Efforts To Block Official Accounts That Involve Cryptocurrencies Now Targeting Tho Bitcoin Accounting Messaging App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Wechat Messaging App Is Continuing Its Efforts To Block Official Accounts That Involve Cryptocurrencies Now Targeting Tho Bitcoin Accounting Messaging App</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/88/81/1c/88811c2d2e3dc7854861700d30645425.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3EQ2FLlNU4Mww5km9Xpyp6-aS07DkDewUew';" alt="The Wechat Messaging App Is Continuing Its Efforts To Block Official Accounts That Involve Cryptocurrencies Now Targeting Tho Bitcoin Accounting Messaging App">
+										<div class="card-body">
+						<h3 class="h5"><b>That would be the biggest dollar.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Wechat tencent</strong>. 
+								
+																	About Us Tencent uses technology to enrich the lives of Internet users. 
+																	The portal called Tencent Huiju now looks like a centralized e-commerce marketplace with promotions on the first page and a section called All shops which. 
+																	The company asked the court to order that Tencent cease the actions and pay 90 million yuan 14 million in compensation. 
+																	In April 2018 Douyin sued Tencent and accused it of spreading false and damaging information on its WeChat platform demanding RMB 1 million in compensation and an apology. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Corporate Governance Tencent is committed to maintaining the highest level of corporate governance and providing our investors with a thorough understanding of the Groups management and development. 
+																	The social platform and digital content. 
+																	WeChat has been described as Chinas app for everything and a super app because of its wide range of. 
+																	But its WeChat super app has more than 1 billion users worldwide. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Available for all kinds of platforms. 
+																	Chinese tech giant Tencent the owner of WeChat is scrambling to make its ubiquitous all-in-one app more compliant with the fickle and complicated regulatory environment in the United States even though a court ruling last month mandating a reprieve from President Donald Trumps ban means some breathing room for Tencent and the many Chinese and American businesses that rely on the super-app. 
+																	Bug fixes and improvements. 
+																	Over alleged monopolies in its WeChat and QQ platforms escalating a feud between the leading Chinese social media giants. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Voice or video calls with up to 15 people. 
+																	Sellers can add video clips to showcase products. 
+																	WeChat is more than a messaging and social media app it is a lifestyle for over one billion users across the world. 
+																	Tencent has always dedicated itself to two core business ideas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our communications and social platforms Weixin and QQ connect users with each other with digital content and daily life services in just a few clicks. 
+																	A General Motors China venture SAIC Motor Corp along with Shanghai PATEO have filed a complaint against Tencent saying that the company was abusing its messaging app WeChats dominant position. 
+																	Through connection Tencent will always strive to improve everyones quality of life. 
+																	WeChat mini shop an app function Tencent has been testing since last summer allows entrepreneurs and companies to easily set up an online store. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Support voicephotovideo and text messages. 
+																	Tencent is the largest video games publisher in the world. 
+																	Tencent Holdings Ltd the creator of the messaging platform WeChat is in talks with banks for a 6 billion loan according to people familiar with the matter. 
+																	We care about your growth. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chinese social and gaming giant Tencent has launched an early version of a separate portal within WeChat to centralize various mini programs already built by retailers and brand owners Chinese media Jiemian reported on Monday. 
+																	Hide a chat in the chat list. 
+																	Fortnite and PlayerUnknowns Battlegrounds PubG. 
+																	Micro-message is a Chinese multi-purpose messaging social media and mobile payment app developed by TencentFirst released in 2011 it became the worlds largest standalone mobile app in 2018 with over 1 billion monthly active users. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Before he brushes his teeth in the. 
+																	ByteDance filed suit Tuesday in Beijing alleging that Tencent violated Chinese antitrust laws by blocking access on WeChat and QQ to content from Douyin the Chinese twin of its globally popular short video app TikTok. 
+																	Sued Tencent Holdings Ltd. 
+																	Chen Channing a 30-year-old legal professional in Shenzhen cannot go a day without WeChat the all purpose app developed by Chinese tech giant Tencent Holdings. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tencents WeChat platform has been accused of blocking TikTok videos and the censorship of politically sensitive content. 
+																	Tencent Holdings Ltd one of Asias biggest companies is little known beyond the tech world. 
+																	WeChat for Windows 310. 
+																	We believe strong corporate governance is critical to creating sustainable value for our shareholders. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chat and make calls with friends read news and use local services in Official Accounts and Mini Programs play fun games with friends enjoy mobile payment features with WeChat Pay and much more. 
+																	It has a stake in the two most popular Battle Royale-style games. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/a2/c6/c6a2c671a520effac7f55b6d9eb9e275.jpg" data-lightbox="roadtrip" data-title="Wechat Whatsapp Instant Messenger Better One Free Download">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/a2/c6/c6a2c671a520effac7f55b6d9eb9e275.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAp815N0zKwc6eoGa5nuv3GfGaLUwuWmu4YQ';" alt="Wechat Whatsapp Instant Messenger Better One Free Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wechat Whatsapp Instant Messenger Better One Free Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/35/ca/e435cac95eaa3f1a36530e5cd30a58eb.jpg" data-lightbox="roadtrip" data-title="Tencent Establishes Insurance Platform Wesure Through Wechat And Qq Insurance Establish Platform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/35/ca/e435cac95eaa3f1a36530e5cd30a58eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG-nVkpl9Ktd4FuzA8kF8Rypc5bL7dKrSVFQ';" alt="Tencent Establishes Insurance Platform Wesure Through Wechat And Qq Insurance Establish Platform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tencent Establishes Insurance Platform Wesure Through Wechat And Qq Insurance Establish Platform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/81/1c/88811c2d2e3dc7854861700d30645425.png" data-lightbox="roadtrip" data-title="9 Ways The Wechat Super App Is Becoming The Front Door To Chinese Healthcare Cb Insights Health Care Medical Knowledge Chronic Disease Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/81/1c/88811c2d2e3dc7854861700d30645425.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCdaxQHHodq1s8SBgS5IL8GWO7gHldMyOOtA';" alt="9 Ways The Wechat Super App Is Becoming The Front Door To Chinese Healthcare Cb Insights Health Care Medical Knowledge Chronic Disease Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">9 Ways The Wechat Super App Is Becoming The Front Door To Chinese Healthcare Cb Insights Health Care Medical Knowledge Chronic Disease Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/55/65/ff5565662f98e6f913e007be2fd7fbf7.jpg" data-lightbox="roadtrip" data-title="Wechat Is Going International In A Different Way To Whatsapp Interview Messaging App Social Media Social App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/55/65/ff5565662f98e6f913e007be2fd7fbf7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqn52C255A1aGSrd21n_rdDqYmIjiGPyWRJQ';" alt="Wechat Is Going International In A Different Way To Whatsapp Interview Messaging App Social Media Social App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wechat Is Going International In A Different Way To Whatsapp Interview Messaging App Social Media Social App</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/57/e9/cd57e9ac856034b64893f949469bd666.jpg" data-lightbox="roadtrip" data-title="Douyin Features Fight Launches Wechat Digital Marketing In China Used To Be All About Wechat Therefore In 2020 Mobile Payments Instant Messenger Video Marketing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/57/e9/cd57e9ac856034b64893f949469bd666.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm-8pXiSQeC3Tmt_kl1CdtpMCJtLEJMGpwOw';" alt="Douyin Features Fight Launches Wechat Digital Marketing In China Used To Be All About Wechat Therefore In 2020 Mobile Payments Instant Messenger Video Marketing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Douyin Features Fight Launches Wechat Digital Marketing In China Used To Be All About Wechat Therefore In 2020 Mobile Payments Instant Messenger Video Marketing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/9f/4c/f99f4cfa2eb04952ffe48c20b5029bb8.png" data-lightbox="roadtrip" data-title="Pin On Social Media">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/9f/4c/f99f4cfa2eb04952ffe48c20b5029bb8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIrNunjo9EnQZquF8qzkJ12UfPTtmvu-MB4Q';" alt="Pin On Social Media">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Social Media</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2b/50/61/2b506142f6edf3a7ab1d4a3a7279cbc1.jpg" data-lightbox="roadtrip" data-title="Pin On Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2b/50/61/2b506142f6edf3a7ab1d4a3a7279cbc1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFG32MPpTe2XNrnuiluPnzhrP8i3Aq7XO6jQ';" alt="Pin On Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/62/33/af6233804d0066341826f4de3ad0dd12.jpg" data-lightbox="roadtrip" data-title="Trump S Wechat Ban Threatens Apple S 44b Market In China Tencent Downplays Risks Popular Apps Apple Giant Apple">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/62/33/af6233804d0066341826f4de3ad0dd12.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ArRtNPJW46oDf1qpCweY5A-p9YCO2XMUEA';" alt="Trump S Wechat Ban Threatens Apple S 44b Market In China Tencent Downplays Risks Popular Apps Apple Giant Apple">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump S Wechat Ban Threatens Apple S 44b Market In China Tencent Downplays Risks Popular Apps Apple Giant Apple</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/76/c8/a3/76c8a39617835f07590ac92e82d7a8df--tv-ads-platform.jpg" data-lightbox="roadtrip" data-title="Pin On Social Media Pinterest">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/76/c8/a3/76c8a39617835f07590ac92e82d7a8df--tv-ads-platform.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYSQWKjDgP4-yr-Yfh-wYGY-Tjojou36ZTsw';" alt="Pin On Social Media Pinterest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Social Media Pinterest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/0d/40/6d0d4062e29661e728d9b14550a164fc.png" data-lightbox="roadtrip" data-title="Wechat For Pc Chat App Send Text Message Me On A Map">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/0d/40/6d0d4062e29661e728d9b14550a164fc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzK2K5jCnsNk1_UOrhGYz63p8BxnAraq_w2Q';" alt="Wechat For Pc Chat App Send Text Message Me On A Map">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wechat For Pc Chat App Send Text Message Me On A Map</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/1e/4a/e31e4a48c5ab27902d9407007ed609ee.jpg" data-lightbox="roadtrip" data-title="Chevron Asks Global Employees To Delete Wechat From Work Phones Following Trump Ban In 2020 Smartphone Apps Smartphone News Messaging App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/1e/4a/e31e4a48c5ab27902d9407007ed609ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSguiOWWXRB_yome_ultBrqondwLE6Q82Cpwg';" alt="Chevron Asks Global Employees To Delete Wechat From Work Phones Following Trump Ban In 2020 Smartphone Apps Smartphone News Messaging App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chevron Asks Global Employees To Delete Wechat From Work Phones Following Trump Ban In 2020 Smartphone Apps Smartphone News Messaging App</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/79/bd/8179bda5f2fbdb4728bb165004c97576.png" data-lightbox="roadtrip" data-title="A Quick Guide To Setting Up Wechat Wallet And Using Wechat Pay In China As A Foreigner The Shutterwhale China Bank Business Class Flight International Credit Card">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/79/bd/8179bda5f2fbdb4728bb165004c97576.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL5XGgnV12-irW0AdE7ihUpE4qGYW2nIbZrw';" alt="A Quick Guide To Setting Up Wechat Wallet And Using Wechat Pay In China As A Foreigner The Shutterwhale China Bank Business Class Flight International Credit Card">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Quick Guide To Setting Up Wechat Wallet And Using Wechat Pay In China As A Foreigner The Shutterwhale China Bank Business Class Flight International Credit Card</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/fb/ee/c5fbee4d78b3d6ec35afd9773103f017.jpg" data-lightbox="roadtrip" data-title="Gawat Puluhan Ribu Akun Wechat Dihapus Tiongkok Covesia Com Penghapus Jejaring Sosial Teknologi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/fb/ee/c5fbee4d78b3d6ec35afd9773103f017.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrwu4zj8GIR_cKuhd8as3nik6IUWTog1zGgw';" alt="Gawat Puluhan Ribu Akun Wechat Dihapus Tiongkok Covesia Com Penghapus Jejaring Sosial Teknologi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gawat Puluhan Ribu Akun Wechat Dihapus Tiongkok Covesia Com Penghapus Jejaring Sosial Teknologi</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/divorce-assistance-for-military-spouses.html">Divorce Assistance For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/dfas-application-for-former-spouse-payments.html">Dfas Application For Former Spouse Payments</a></li>
+													<li class="list-group-item"><a href="/dividing-military-retirement-pay-in-divorce.html">Dividing Military Retirement Pay In Divorce</a></li>
+													<li class="list-group-item"><a href="/divorce-in-the-military-reddit.html">Divorce In The Military Reddit</a></li>
+													<li class="list-group-item"><a href="/disabled-veteran-dependents-scholarships.html">Disabled Veteran Dependents Scholarships</a></li>
+													<li class="list-group-item"><a href="/deployment-spouse-support.html">Deployment Spouse Support</a></li>
+													<li class="list-group-item"><a href="/distance-learning-scholarship-for-mba.html">Distance Learning Scholarship For Mba</a></li>
+													<li class="list-group-item"><a href="/dfas-former-spouse-benefits.html">Dfas Former Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/deployment-quotes-for-friends.html">Deployment Quotes For Friends</a></li>
+													<li class="list-group-item"><a href="/divorce-and-military-disability-benefits.html">Divorce And Military Disability Benefits</a></li>
+													<li class="list-group-item"><a href="/dfas-sbp-and-divorce.html">Dfas Sbp And Divorce</a></li>
+													<li class="list-group-item"><a href="/deployment-spouse-quotes.html">Deployment Spouse Quotes</a></li>
+													<li class="list-group-item"><a href="/dfas-divorce-forms.html">Dfas Divorce Forms</a></li>
+													<li class="list-group-item"><a href="/deployment-spouse-blog.html">Deployment Spouse Blog</a></li>
+													<li class="list-group-item"><a href="/dfas-former-spouse.html">Dfas Former Spouse</a></li>
+													<li class="list-group-item"><a href="/disabled-veteran-scholarships-for-dependents.html">Disabled Veteran Scholarships For Dependents</a></li>
+													<li class="list-group-item"><a href="/deployment-quotes-for-girlfriend.html">Deployment Quotes For Girlfriend</a></li>
+													<li class="list-group-item"><a href="/deployment-letter-to-break-lease.html">Deployment Letter To Break Lease</a></li>
+													<li class="list-group-item"><a href="/disabled-veteran-dependent-college-benefits.html">Disabled Veteran Dependent College Benefits</a></li>
+													<li class="list-group-item"><a href="/descargar-my-cam-para-windows-7-en-espanol.html">Descargar My Cam Para Windows 7 En Espanol</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

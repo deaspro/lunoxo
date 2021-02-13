@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Dependents Parents - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Dependents Parents",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/a5/b1/3d/a5b13d3214f8f81c15dc192c529a7097.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+dependents+parents",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Dependents Parents</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Its possible for parents of Tricare sponsors to qualify as secondary dependents for Tricare eligibility purposes but only under specific and narrow guidelines. Secondary Dependents of US. Parents parents-in-law stepparents and In loco parentis To be considered sufficiently dependent upon the member the claimed dependents income not including your contribution must be less than one-half of the actual living expenses. <br>				
+			</p>
+										<a class="badge badge-danger" href="/my-career-fifa-19.html">my career fifa 19</a>
+											<a class="badge badge-danger" href="/my-career-gov.html">my career gov</a>
+											<a class="badge badge-danger" href="/my-career-aspirations-essay.html">my career aspirations essay</a>
+											<a class="badge badge-info" href="/my-career-madden-20.html">my career madden 20</a>
+											<a class="badge badge-success" href="/my-career-goals-essay.html">my career goals essay</a>
+											<a class="badge badge-warning" href="/my-career-in-2k20.html">my career in 2k20</a>
+											<a class="badge badge-danger" href="/my-career-nba-2k20.html">my career nba 2k20</a>
+											<a class="badge badge-info" href="/my-career-action-plan.html">my career action plan</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to pay a visit to the right site.  Our site provides you with hints for seeing the maximum quality video and picture content, search and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie that you see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/62/b9/0e62b90f1fd6c242da6ee023b71e3080.jpg" data-lightbox="roadtrip" data-title="Pin By Jennifer Reams On Photography Military Family Photos Military Family Photography Military Family Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/62/b9/0e62b90f1fd6c242da6ee023b71e3080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJB2lo8W7LlhNjf1jHv3bWEKN-5gs5zJu_XA';" alt="Pin By Jennifer Reams On Photography Military Family Photos Military Family Photography Military Family Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jennifer Reams On Photography Military Family Photos Military Family Photography Military Family Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/aa/11/13aa1173be5e5d894d793cb5f6f1e26a.jpg" data-lightbox="roadtrip" data-title="You Know You Re A Marine Spouse When Marine Spouse Military Spouse Military Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/aa/11/13aa1173be5e5d894d793cb5f6f1e26a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgQxtRs48-ou_sxKKLy3FsRABTv0UIzyE2-g';" alt="You Know You Re A Marine Spouse When Marine Spouse Military Spouse Military Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Know You Re A Marine Spouse When Marine Spouse Military Spouse Military Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/5d/31/ab5d3149ba5ee95cb12c349d6b5c1c7b.jpg" data-lightbox="roadtrip" data-title="50 Amazing Military Spouse Photos Military Family Photos Military Family Photography Military Family Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/5d/31/ab5d3149ba5ee95cb12c349d6b5c1c7b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBE4M8edsrkB5WTPl9abfjsbHvgs6LYH1uGQ';" alt="50 Amazing Military Spouse Photos Military Family Photos Military Family Photography Military Family Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">50 Amazing Military Spouse Photos Military Family Photos Military Family Photography Military Family Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/41/c0/f841c0e8ecb3a2d84a696646070e6fc9.png" data-lightbox="roadtrip" data-title="Macaroni Kid Find Your Family Fun Military Family Scholarships Military Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/41/c0/f841c0e8ecb3a2d84a696646070e6fc9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_SlLT36Sf3S0pmvAgDI1T6eX2AlITJGTHw';" alt="Macaroni Kid Find Your Family Fun Military Family Scholarships Military Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Macaroni Kid Find Your Family Fun Military Family Scholarships Military Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/1c/25/1a1c25f26281b553f1ef608d4b0829f6.jpg" data-lightbox="roadtrip" data-title="Great Rebuilding Of Us Armed Forces Reflects Distrust In Nato Live World News Babylon The Great Armed Forces Troops">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/1c/25/1a1c25f26281b553f1ef608d4b0829f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaFhe_S1HKK7_rXq_vhKBalWcr1gbKUKOAWA';" alt="Great Rebuilding Of Us Armed Forces Reflects Distrust In Nato Live World News Babylon The Great Armed Forces Troops">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Great Rebuilding Of Us Armed Forces Reflects Distrust In Nato Live World News Babylon The Great Armed Forces Troops</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/73/66/5873665577f006d7c2d54a8fce188ad2.png" data-lightbox="roadtrip" data-title="The Independent Dependents In The Military World Military Wife Life Military Spouse Support Soldier Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/73/66/5873665577f006d7c2d54a8fce188ad2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmM-MSAZ-czv6a8XrI_IluC96aGQuso2JwHA';" alt="The Independent Dependents In The Military World Military Wife Life Military Spouse Support Soldier Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Independent Dependents In The Military World Military Wife Life Military Spouse Support Soldier Wife</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/15/f1/de/15f1deaa7a2bb5b50e2379c3f8ebf881.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmM-MSAZ-czv6a8XrI_IluC96aGQuso2JwHA';" alt="The Independent Dependents In The Military World Military Wife Life Military Spouse Support Soldier Wife">
+										<div class="card-body">
+						<h3 class="h5"><b>2015 dependent spouses of active duty military personnel being assigned to the United Kingdom as well as their dependent children under the age of 21 are no longer required to obtain a UK.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military dependents parents</strong>. 
+								
+																	Parent parent-in-law step-parent parent by adoption or any person who stood in the place of a parent to you for at least five years prior to your emancipation. 
+																	The term is not an insult but carries connotations of respect and affection. 
+																	Military dependents are the spouse children and possibly other familial relationship categories of a sponsoring military member for purposes of pay as well as special benefits privileges and rights. 
+																	A person who served as a parent to a Veteran for at least one year prior to his or her entry into active service The term dependent parent means either. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Certain family members such as a spouse or child under 21 are automatically entitled to dependency status. 
+																	In truth military dependents still qualify for a variety of benefits even after their military mothers or fathers enter retirement. 
+																	The term military brat is also commonly used in military culture to mean a military dependent who is either a child or a teenager. 
+																	This generic category is enumerated in great detail for US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Secondary dependents may include. 
+																	Dependants of HM armed forces and those exempt must first and foremost be able to show that they are the spouse civil partner unmarried partner same-sex partner or child of a member of the. 
+																	Parents DIC is a tax-free income-based monthly benefit for the parents of a military service member or veteran who has died from. 
+																	1172 and provide the necessary proof. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dependents of retired military personnel are offered financial assistance for school and discounts on life insurance and health care benefits. 
+																	However there are situations in which it is necessary. 
+																	Secondary non-primary dependents can include. 
+																	A Servicemember need only complete. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This could save some military families over 400 per month. 
+																	Military servicemen and women are often afraid of retiring for fear of losing active duty benefits for their children. 
+																	On January 25th Congresswoman Elaine Luria D-VA reintroduced the Health Care for Military Families Act HR. 
+																	Who can be secondary dependents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Secondary dependents can include. 
+																	In the military parents parents-in-law or someone who has acted as your parent the term for this is in loco parentis can be made your secondary dependent as can disabled adult children and. 
+																	Military ID cards are not typically issued for dependents under the age of 10. 
+																	The income of the parents not. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get care in a military hospitals and clinics Enroll in TRICARE Plus Check with DEERSto see what documentation is needed to register your parent or parent-in-law as a dependent. 
+																	This qualification requires an initial dependency determination made by the Defense Finance and Accounting. 
+																	If youre on active duty for more than 30 days your dependent parents and parents-in-law can. 
+																	Unmarried children ages 21 and 22 who are enrolled in an accredited institution of higher education on a full-time basis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When Does the Military Not Consider a Spouse as a Dependent. 
+																	A disease or injury incurred or aggravated while on active duty. 
+																	475 which would allow young adults to stay on their parents TRICARE plan until the age of 26 and without an increase in premiums. 
+																	The childs parents are dual-military parents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The childs sponsor is a single parent who does not have an eligible spouse. 
+																	In general and for enlistment purposes an applicant is considered to be without a spouse ie unmarried if. 
+																	Parent parent-in-law step-parent parent by adoption or any person who stood in-loco parentis in the place of a parent to you for at least five years prior to your emancipation. 
+																	Children aged 21 or over at first arrival or secondary dependents such as parents or parents-in-law MUST have a visa BEFORE arriving in the United Kingdom. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The parents income and net worth meet certain limits as defined by law A parent with substantial income or assets has correspondingly high expenses. 
+																	Any parent or other persons who isare in fact dependent on the applicant for more than one-half of their support. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/76/46/02/76460281aefaab12580212e68b4e6c5b.jpg" data-lightbox="roadtrip" data-title="Military Brat And Proud Of It Tee T Shirt For Dependents Of Parents Moms Or Dads In The Armed Forces Bond With Other Kids Who Wer T Shirt Shirts Nope Shirts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/76/46/02/76460281aefaab12580212e68b4e6c5b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5OZeSZQq0U4E-b-7QEvB2ezyvLpOHE58ffA';" alt="Military Brat And Proud Of It Tee T Shirt For Dependents Of Parents Moms Or Dads In The Armed Forces Bond With Other Kids Who Wer T Shirt Shirts Nope Shirts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Brat And Proud Of It Tee T Shirt For Dependents Of Parents Moms Or Dads In The Armed Forces Bond With Other Kids Who Wer T Shirt Shirts Nope Shirts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/34/09/db3409bd9dac01ee48c731689e14385f.png" data-lightbox="roadtrip" data-title="Financial Aid For Military Service Military Financial Aid For College Grants For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/34/09/db3409bd9dac01ee48c731689e14385f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE8ipekWAG6wSoD0I_WIklID1E0NeGx_gIpg';" alt="Financial Aid For Military Service Military Financial Aid For College Grants For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Financial Aid For Military Service Military Financial Aid For College Grants For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/5e/c4/635ec4a6e973e48213762fad5fc75ff9.jpg" data-lightbox="roadtrip" data-title="Caring For Aging Parents Youtube Channel Aging Parents Youtube Aging">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/5e/c4/635ec4a6e973e48213762fad5fc75ff9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoBGhTT7BVyIUw0C2a-TF4D99OQThQ2bufBQ';" alt="Caring For Aging Parents Youtube Channel Aging Parents Youtube Aging">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Caring For Aging Parents Youtube Channel Aging Parents Youtube Aging</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/00/5b/02/005b02a52b1df5520f85addbc7a9e057.jpg" data-lightbox="roadtrip" data-title="Military Scholarships Weird Scholarships Tuition Assistance Financial Aid For College Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/00/5b/02/005b02a52b1df5520f85addbc7a9e057.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgBFDiPIDzeYlK9HckGp1ZaDj2bgxnxEay_w';" alt="Military Scholarships Weird Scholarships Tuition Assistance Financial Aid For College Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Scholarships Weird Scholarships Tuition Assistance Financial Aid For College Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/be/db/f8/bedbf89005e8f39b715c4a3e89609b2c.jpg" data-lightbox="roadtrip" data-title="Pin On Behavioral And Social Sciences">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/be/db/f8/bedbf89005e8f39b715c4a3e89609b2c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIh4U71PLMMNLmve0_G_3FGq7S2FhviSJ-FA';" alt="Pin On Behavioral And Social Sciences">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Behavioral And Social Sciences</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a5/b1/3d/a5b13d3214f8f81c15dc192c529a7097.jpg" data-lightbox="roadtrip" data-title="Advice To My Younger Self Military Spouse Blog Young Family Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a5/b1/3d/a5b13d3214f8f81c15dc192c529a7097.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROpCaqkQp8DVzE5tqajsJbdNGPulKzeD7V3w';" alt="Advice To My Younger Self Military Spouse Blog Young Family Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Advice To My Younger Self Military Spouse Blog Young Family Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/73/c6/9173c6cf779f6105d60da6e855b75ed2.jpg" data-lightbox="roadtrip" data-title="Hh6 Camo Chix Information And Resources For New Military Spouses And Parents Military Family Military Spouse Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/73/c6/9173c6cf779f6105d60da6e855b75ed2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtVa29KX1u5FseQI4AFI9C6khtTAjkhQA2TQ';" alt="Hh6 Camo Chix Information And Resources For New Military Spouses And Parents Military Family Military Spouse Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hh6 Camo Chix Information And Resources For New Military Spouses And Parents Military Family Military Spouse Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/3a/d4/df3ad41f50df6a886abdb96d69369ec8.jpg" data-lightbox="roadtrip" data-title="Educational Scholarship For Military Members Veterans And Dependents Offered By The Academy For Dental Scholarships Dental Assistant Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/3a/d4/df3ad41f50df6a886abdb96d69369ec8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5cU3j6E_OuFFIcl1bHcq6bAUNzHN_h936yg';" alt="Educational Scholarship For Military Members Veterans And Dependents Offered By The Academy For Dental Scholarships Dental Assistant Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Educational Scholarship For Military Members Veterans And Dependents Offered By The Academy For Dental Scholarships Dental Assistant Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/17/6f/18176f73f245d2fe4b7ade87676c0bc9.jpg" data-lightbox="roadtrip" data-title="Salute The Military Kids Military Kids Kids Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/17/6f/18176f73f245d2fe4b7ade87676c0bc9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfTLvsh_wSTHfjvyZsYEQZKcZSoK5syyeCzw';" alt="Salute The Military Kids Military Kids Kids Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salute The Military Kids Military Kids Kids Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8b/c2/50/8bc250298a6887e5882bd87466a40a68--army-life-department-store.jpg" data-lightbox="roadtrip" data-title="Army Acronyms Conus Oconus Continental United States Outside The Continental United States Used To Describe Duty Station Location Army Life Army Wife Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8b/c2/50/8bc250298a6887e5882bd87466a40a68--army-life-department-store.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQw6N5FRLGJKn6ge5sI2ISGcJRC10AoESu-w';" alt="Army Acronyms Conus Oconus Continental United States Outside The Continental United States Used To Describe Duty Station Location Army Life Army Wife Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Acronyms Conus Oconus Continental United States Outside The Continental United States Used To Describe Duty Station Location Army Life Army Wife Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/1b/0d/ab1b0d56716fd1d0fbf2fa284c9746e1.jpg" data-lightbox="roadtrip" data-title="Military Spouse News Stories And Advice Military Spouse Central Military Spouse Scholarships Military Scholarships Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/1b/0d/ab1b0d56716fd1d0fbf2fa284c9746e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWUjgtbRLnHfG_7298aj_il8xt0_a8qo1zfw';" alt="Military Spouse News Stories And Advice Military Spouse Central Military Spouse Scholarships Military Scholarships Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse News Stories And Advice Military Spouse Central Military Spouse Scholarships Military Scholarships Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/15/f1/de/15f1deaa7a2bb5b50e2379c3f8ebf881.jpg" data-lightbox="roadtrip" data-title="Do Parents Know They Matter Pdf Download In 2020 Childrens Education Education Management Teacher Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/15/f1/de/15f1deaa7a2bb5b50e2379c3f8ebf881.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzC3zgPoSc_J0WPD2qaFaM7n7DZRgFH7KqDQ';" alt="Do Parents Know They Matter Pdf Download In 2020 Childrens Education Education Management Teacher Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do Parents Know They Matter Pdf Download In 2020 Childrens Education Education Management Teacher Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/de/f0/cadef07ed30fdde6476feba283c1235e.png" data-lightbox="roadtrip" data-title="Transitional Compensation For Abused Dependents The Military Wallet Military Wallet Veterans Benefits Compensation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/de/f0/cadef07ed30fdde6476feba283c1235e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT6P0JtbIBq2JR0cVDTPetWOsSQItzQIGlkA';" alt="Transitional Compensation For Abused Dependents The Military Wallet Military Wallet Veterans Benefits Compensation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Transitional Compensation For Abused Dependents The Military Wallet Military Wallet Veterans Benefits Compensation</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mycanal-plus-afrique-inscription.html">Mycanal Plus Afrique Inscription</a></li>
+													<li class="list-group-item"><a href="/mycanal-orange-box.html">Mycanal Orange Box</a></li>
+													<li class="list-group-item"><a href="/mycanal-option-netflix.html">Mycanal Option Netflix</a></li>
+													<li class="list-group-item"><a href="/mycanal-windows-8.html">Mycanal Windows 8</a></li>
+													<li class="list-group-item"><a href="/mycanal-usa.html">Mycanal Usa</a></li>
+													<li class="list-group-item"><a href="/mycanal-xiaomi.html">Mycanal Xiaomi</a></li>
+													<li class="list-group-item"><a href="/mycanal-xbox-series-x.html">Mycanal Xbox Series X</a></li>
+													<li class="list-group-item"><a href="/mycanal-plus-de-chaine.html">Mycanal Plus De Chaine</a></li>
+													<li class="list-group-item"><a href="/mycanal-ubuntu.html">Mycanal Ubuntu</a></li>
+													<li class="list-group-item"><a href="/mycanal-plus-madagascar.html">Mycanal Plus Madagascar</a></li>
+													<li class="list-group-item"><a href="/mycanal-un-bon-moment.html">Mycanal Un Bon Moment</a></li>
+													<li class="list-group-item"><a href="/mycanal-vpn.html">Mycanal Vpn</a></li>
+													<li class="list-group-item"><a href="/mycanal-offre-netflix.html">Mycanal Offre Netflix</a></li>
+													<li class="list-group-item"><a href="/mycanal-xbox-one-probleme.html">Mycanal Xbox One Probleme</a></li>
+													<li class="list-group-item"><a href="/mycanal-youtube.html">Mycanal Youtube</a></li>
+													<li class="list-group-item"><a href="/mycanal-tv-lg.html">Mycanal Tv Lg</a></li>
+													<li class="list-group-item"><a href="/mycanal-tv-afrique.html">Mycanal Tv Afrique</a></li>
+													<li class="list-group-item"><a href="/mycanal-series.html">Mycanal Series</a></li>
+													<li class="list-group-item"><a href="/mycanal-royaume-uni.html">Mycanal Royaume Uni</a></li>
+													<li class="list-group-item"><a href="/mycanal-reunion-netflix.html">Mycanal Reunion Netflix</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is Dic Veterans Benefits - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is Dic Veterans Benefits",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/ab/de/71/abde7173b39704895c7369d292947ec3.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+dic+veterans+benefits",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is Dic Veterans Benefits</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The surviving spouse will receive an application to apply for benefits. Civilian Health and Medical Program of the Department of Veterans Affairs CHAMPVA Dependents Educational Assistance DEA Burial Benefits note. However I would like to explain to you the benefit of looking into this option if you are rated 100. <br>				
+			</p>
+										<a class="badge badge-light" href="/my-husband-died-do-i-have-to-pay-his-medical-bills.html">my husband died do i have to pay his medical bills</a>
+											<a class="badge badge-dark" href="/my-husband-died-two-years-ago.html">my husband died two years ago</a>
+											<a class="badge badge-danger" href="/my-husband-died-meme.html">my husband died meme</a>
+											<a class="badge badge-info" href="/my-husband-died-7-months-ago.html">my husband died 7 months ago</a>
+											<a class="badge badge-light" href="/my-husband-died-of-alcoholism.html">my husband died of alcoholism</a>
+											<a class="badge badge-danger" href="/my-husband-died-suddenly-young.html">my husband died suddenly young</a>
+											<a class="badge badge-warning" href="/my-husband-died-in-911.html">my husband died in 911</a>
+											<a class="badge badge-secondary" href="/my-husband-died-2-years-ago.html">my husband died 2 years ago</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to visit the ideal site.  Our website provides you with suggestions for seeing the highest quality video and picture content, hunt and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video for you to see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/e8/17/d2e817ed6fd82e4fe3e1f08b3fa7eb70.png" data-lightbox="roadtrip" data-title="Va S Changes To Pension And Dic Rules May Make Getting Benefits Easier Pensions Pension Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/e8/17/d2e817ed6fd82e4fe3e1f08b3fa7eb70.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN-PStvtx42oysGeQkZOt1DcNGZVywOvmXxQ';" alt="Va S Changes To Pension And Dic Rules May Make Getting Benefits Easier Pensions Pension Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va S Changes To Pension And Dic Rules May Make Getting Benefits Easier Pensions Pension Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/b4/ae/62b4aeb8c31d8e099b9d9990ae9afb6b.png" data-lightbox="roadtrip" data-title="Pin On Specialty Items">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/b4/ae/62b4aeb8c31d8e099b9d9990ae9afb6b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB4Iv49088-f0yA8uZ86Aa_dz6VGFVApdupA';" alt="Pin On Specialty Items">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Specialty Items</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/da/3c/cc/da3ccc5984c3ffdaedb59c954b548311.jpg" data-lightbox="roadtrip" data-title="Benefits For Widows Of Disabled Veterans Explained How To Start Youtube How To Start Youtube Widow Disabled Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/da/3c/cc/da3ccc5984c3ffdaedb59c954b548311.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvfnNb32b3mjTCrNt2Oj-B8huLkfFuoC8zDw';" alt="Benefits For Widows Of Disabled Veterans Explained How To Start Youtube How To Start Youtube Widow Disabled Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benefits For Widows Of Disabled Veterans Explained How To Start Youtube How To Start Youtube Widow Disabled Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/69/75/f269753b6133afd534aba9642fdbcbdb.jpg" data-lightbox="roadtrip" data-title="Survivor Benefits Infographic Survivor Infographic Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/69/75/f269753b6133afd534aba9642fdbcbdb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWo7g6z1dSSpL71PDn5RydsDH5Fo1DaiWUnw';" alt="Survivor Benefits Infographic Survivor Infographic Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Survivor Benefits Infographic Survivor Infographic Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b9/03/d5/b903d5cc712d6baa77303cc554e0c547.jpg" data-lightbox="roadtrip" data-title="Most Common Secondary Va Disabilities Youtube Va Disability Va Disability Benefits Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b9/03/d5/b903d5cc712d6baa77303cc554e0c547.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm86tLpmKV4ZMZgM7S62S2KbUJHjU_1I7-5w';" alt="Most Common Secondary Va Disabilities Youtube Va Disability Va Disability Benefits Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Most Common Secondary Va Disabilities Youtube Va Disability Va Disability Benefits Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/ea/8b/8dea8b1fdbdb8200d97bf8151208e21d.png" data-lightbox="roadtrip" data-title="Www Benefits Va Gov Benefits Factsheets Serviceconnected 5tracks Pdf Benefit School Hacks Math">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/ea/8b/8dea8b1fdbdb8200d97bf8151208e21d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4lMl6AQDS17bBDjDWbvdxwRQ_XIPNCpvhOg';" alt="Www Benefits Va Gov Benefits Factsheets Serviceconnected 5tracks Pdf Benefit School Hacks Math">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Www Benefits Va Gov Benefits Factsheets Serviceconnected 5tracks Pdf Benefit School Hacks Math</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d2/e8/17/d2e817ed6fd82e4fe3e1f08b3fa7eb70.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4lMl6AQDS17bBDjDWbvdxwRQ_XIPNCpvhOg';" alt="Www Benefits Va Gov Benefits Factsheets Serviceconnected 5tracks Pdf Benefit School Hacks Math">
+										<div class="card-body">
+						<h3 class="h5"><b>DIC rates if the Veteran died on or after January 1 1993 If youre the surviving spouse of a Veteran.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is dic veterans benefits</strong>. 
+								
+																	100 Permanent and Total Disability or 100 pt this is one of the most unknown and overlooked exclusive VA benefits. 
+																	The Dependency and Indemnity Compensation DIC is a benefit available to spouses of veterans who died in active duty or due to injuries obtained while on active duty. 
+																	If you are eligible for DIC you may also be eligible for the following benefits. 
+																	If thats your situation you could be eligible for an extra 1233 per month to help you cover your costs and the monthly rate will go up if you have additional dependents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dependency and Indemnity Compensation DIC is a tax free monthly benefit paid to eligible survivors of military Servicemembers who died in the line of duty or eligible survivors of Veterans whose death resulted from a service-related injury or disease. 
+																	Dependency and Indemnity Compensation DIC is a tax free monetary benefit paid to eligible survivors of military Service members who died in the line of duty or eligible survivors of Veterans. 
+																	You may also be eligible for added amounts based on certain factors. 
+																	Benefits may be a reduced amount if cause of death was not. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many Veterans spend years fighting the VA to receive the benefits they earned during their time in the Armed Services. 
+																	Dependency and Indemnity Compensation DIC DIC is a tax-free monetary benefit generally payable to a surviving spouse child or parent of Servicemembers who died while on active duty active duty for training or inactive duty training or to survivors of Veterans who died from their service-connected disabilities. 
+																	135756 Effective December 1 2020. 
+																	Most of the 100 PT Veterans only take advantage of the disability based on the current stage of life theyre in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SHOW ALL VA EVENTS External Link Disclaimer. 
+																	An election between chapter 35 benefits and pension compensation or DIC Dependency and Indemnity Compensation applies only to sons and daughters of veterans. 
+																	The amount of DIC compensation is not based on income and is paid as a tax-free monthly benefit. 
+																	Dependents Indemnity Compensation DIC is an entitlement benefit paid to eligible survivors Spouse unmarried child of certain deceased service members and veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your monthly payment rate is. 
+																	Veterans benefits help Veterans and their families buy homes earn degrees start careers stay healthy and more. 
+																	The DIC benefit is managed by the Department of Veterans Affairs and is dispersed to surviving family members that meet specific criteria. 
+																	Dependency and Indemnity Compensation How does one apply for Dependency and Indemnity Compensation DIC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The current DIC benefit arbitrarily requires the veteran to have had a totally disabling service connected condition for 10 years before their death if their death isnt deemed service-connected by the VA. 
+																	The Department of Veterans Affairs VA operates programs to benefit veterans and members of their families. 
+																	Join an event for conversation and information. 
+																	Find any descriptions in the table below that are true for you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans who allow us to guide them receive on average increases of an additional 800 per month within 4 months. 
+																	This site contains links that may take you outside of the Department of Veterans Affairs website. 
+																	DIC is a tax-free monetary benefit generally payable to a surviving spouse child or parent of Servicemembers who died while on active duty active duty for training or inactive duty training or to survivors of Veterans who died from their service-connected disabilities. 
+																	If youre the surviving spouse child or parent of a service member who died in the line of duty or the survivor of a Veteran who died from a service-related injury or illness you may be able to get a tax-free monetary benefit called VA Dependency and Indemnity Compensation VA DIC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DIC is a VA compensation benefit available to certain Survivors of Veterans Its full name is Dependency and Indemnity Compensation and is often referred to as Service Connection of the Veterans Cause of Death. 
+																	Benefits include compensation payments for disabilities or death related to military service pensions education and rehabilitation. 
+																	Find out if you can get VA benefits or compensation. 
+																	See 38 CFR 213023. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dependency and Indemnity Compensation DIC Dependency and Indemnity Compensation or DIC is available to eligible survivors and dependents of veterans who had service-connected disabilities or diseases. 
+																	For some veterans deaths DIC is automatic and the Regional Office will recognize from its records and from a death certificate that a benefit is forthcoming. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e0/8c/64/e08c64ec78de82d91e13d414133e052f.jpg" data-lightbox="roadtrip" data-title="Both Veterans And Their Families Are Eligible For A Number Of Va Benefits If You Are Eligible For Veterans Benefits Do Va Benefits Veterans Benefits Benefit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e0/8c/64/e08c64ec78de82d91e13d414133e052f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrog_BziYrC1tChOPxl6POeiEC6Ox6j6wAwA';" alt="Both Veterans And Their Families Are Eligible For A Number Of Va Benefits If You Are Eligible For Veterans Benefits Do Va Benefits Veterans Benefits Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Both Veterans And Their Families Are Eligible For A Number Of Va Benefits If You Are Eligible For Veterans Benefits Do Va Benefits Veterans Benefits Benefit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/17/7b/22/177b2258eea2182bba9b9c7efff7c117.jpg" data-lightbox="roadtrip" data-title="Statement Of The Case What Is Va Form 9 And How Long Do You Have To Get It To The Va Read More Statement Case Read More">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/17/7b/22/177b2258eea2182bba9b9c7efff7c117.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTD_fHB_n-5pqLSnZFXsrO_t9zPkOCDoLjww';" alt="Statement Of The Case What Is Va Form 9 And How Long Do You Have To Get It To The Va Read More Statement Case Read More">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Statement Of The Case What Is Va Form 9 And How Long Do You Have To Get It To The Va Read More Statement Case Read More</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b6/c8/31/b6c8318262ab50884dba9ea0073c3630.jpg" data-lightbox="roadtrip" data-title="Understanding The Sbp Dic Offset Katehorrell Military Spouse Military Spouse Blog Military Retirement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b6/c8/31/b6c8318262ab50884dba9ea0073c3630.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQsZocrKnSV1PRDJmuJjmuxMX-INuYkMH2qA';" alt="Understanding The Sbp Dic Offset Katehorrell Military Spouse Military Spouse Blog Military Retirement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding The Sbp Dic Offset Katehorrell Military Spouse Military Spouse Blog Military Retirement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/f1/e8/c6f1e8c269f20d72c661ad0d51b20fd2.png" data-lightbox="roadtrip" data-title="Veteran Benefits For Idaho Veterans Veteran Veterans Benefits Idaho">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/f1/e8/c6f1e8c269f20d72c661ad0d51b20fd2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRCE1z9ZKqweQwjkbqtv3YcjUQy5y1ZNZWyQ';" alt="Veteran Benefits For Idaho Veterans Veteran Veterans Benefits Idaho">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Benefits For Idaho Veterans Veteran Veterans Benefits Idaho</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/27/06/492706a079fbe88e405cf8216739d6fa.png" data-lightbox="roadtrip" data-title="Social Security For Veterans 101 Senioradvisor Com Blog Osteoporosis Senior Center Activities Bone Diseases">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/27/06/492706a079fbe88e405cf8216739d6fa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIGORVkV_bDMCPxxw5kWdjskwz0ath0KSjTQ';" alt="Social Security For Veterans 101 Senioradvisor Com Blog Osteoporosis Senior Center Activities Bone Diseases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Security For Veterans 101 Senioradvisor Com Blog Osteoporosis Senior Center Activities Bone Diseases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/e5/f0/13e5f020dcc0ed7a9f4f8097ba5ff5b4.jpg" data-lightbox="roadtrip" data-title="The Best Hotel Discounts And Deals For Veterans Veteranaid Org Hotel Discount Best Hotels Hotel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/e5/f0/13e5f020dcc0ed7a9f4f8097ba5ff5b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgUWkBXmDeYfgtA6O7SsKJSTedAMWEzu532Q';" alt="The Best Hotel Discounts And Deals For Veterans Veteranaid Org Hotel Discount Best Hotels Hotel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Hotel Discounts And Deals For Veterans Veteranaid Org Hotel Discount Best Hotels Hotel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/a1/89/ba/a189bab57803c63edbb7db92553e899a.jpg" data-lightbox="roadtrip" data-title="Resources For Veterans And Their Caregivers Caregiver Veteran Caregiver Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/a1/89/ba/a189bab57803c63edbb7db92553e899a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSF2An4CH7Rl9HAJkAvUkNtNeawsrSEDbUrg';" alt="Resources For Veterans And Their Caregivers Caregiver Veteran Caregiver Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Resources For Veterans And Their Caregivers Caregiver Veteran Caregiver Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b7/89/17/b789171efca3dafd7aeee15d0ada27fd.jpg" data-lightbox="roadtrip" data-title="Tdiu Extraschedular Claim In 2020 Disability Payments Veterans Administration Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b7/89/17/b789171efca3dafd7aeee15d0ada27fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQueROCrTdloS7yNlV_Ll2ORxg6O3OVSpGLKA';" alt="Tdiu Extraschedular Claim In 2020 Disability Payments Veterans Administration Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tdiu Extraschedular Claim In 2020 Disability Payments Veterans Administration Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/e2/9d/8de29d529b23ea60be387a19611f9c3d.png" data-lightbox="roadtrip" data-title="Finality Of Va Disability Claims In 2020 Va Disability Disability Rings For Men">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/e2/9d/8de29d529b23ea60be387a19611f9c3d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7sRgnJIKaqMJjOnfDfH-ovIsZhSpkmSL3xw';" alt="Finality Of Va Disability Claims In 2020 Va Disability Disability Rings For Men">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Finality Of Va Disability Claims In 2020 Va Disability Disability Rings For Men</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8c/76/fd/8c76fd34c4bcc160465dbd88bf18f7a6.jpg" data-lightbox="roadtrip" data-title="Board For Correction Of Military Records Military Records Military Records">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8c/76/fd/8c76fd34c4bcc160465dbd88bf18f7a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVsybR4cNxdPQUuMqlXcwSged6DLJ54H1Hkg';" alt="Board For Correction Of Military Records Military Records Military Records">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Board For Correction Of Military Records Military Records Military Records</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/de/71/abde7173b39704895c7369d292947ec3.png" data-lightbox="roadtrip" data-title="Va Benefits For Non Veterans Spouses Part 2 Va Benefits Homeless Veterans Bile Duct Cancer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/de/71/abde7173b39704895c7369d292947ec3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVxxr65vN7cJ1w8jgoaaf2M8mtM8fpInKd4w';" alt="Va Benefits For Non Veterans Spouses Part 2 Va Benefits Homeless Veterans Bile Duct Cancer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Benefits For Non Veterans Spouses Part 2 Va Benefits Homeless Veterans Bile Duct Cancer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/f6/83/d8f683941fa5035884387678abcb33d2.png" data-lightbox="roadtrip" data-title="Tax Credits For Hiring Veterans What You Need To Know Hiring Veterans Tax Credits Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/f6/83/d8f683941fa5035884387678abcb33d2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIpedmB77N575Oj00bKB3DBQ7VV8TrcLwlvQ';" alt="Tax Credits For Hiring Veterans What You Need To Know Hiring Veterans Tax Credits Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tax Credits For Hiring Veterans What You Need To Know Hiring Veterans Tax Credits Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/49/10/15491028b5cf7aa0063b3e4d1dd56ac1.jpg" data-lightbox="roadtrip" data-title="Women In The Military Who Were The First Veteranaid Org Military Women Military First">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/49/10/15491028b5cf7aa0063b3e4d1dd56ac1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWvi9VG2wecIDQhCxAEjsMwdvcqlcwDKe07g';" alt="Women In The Military Who Were The First Veteranaid Org Military Women Military First">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women In The Military Who Were The First Veteranaid Org Military Women Military First</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mycanal-english.html">Mycanal English</a></li>
+													<li class="list-group-item"><a href="/mycanal-en-afrique.html">Mycanal En Afrique</a></li>
+													<li class="list-group-item"><a href="/mycanal-gratuit.html">Mycanal Gratuit</a></li>
+													<li class="list-group-item"><a href="/mycanal-gym-direct.html">Mycanal Gym Direct</a></li>
+													<li class="list-group-item"><a href="/mycanal-afrique-hd.html">Mycanal Afrique Hd</a></li>
+													<li class="list-group-item"><a href="/mycanal-depuis-letranger.html">Mycanal Depuis Letranger</a></li>
+													<li class="list-group-item"><a href="/mycanal-bug.html">Mycanal Bug</a></li>
+													<li class="list-group-item"><a href="/mycanal-afrique-compte.html">Mycanal Afrique Compte</a></li>
+													<li class="list-group-item"><a href="/mycanal-jeune.html">Mycanal Jeune</a></li>
+													<li class="list-group-item"><a href="/mycanal-afrique-replay.html">Mycanal Afrique Replay</a></li>
+													<li class="list-group-item"><a href="/mycanal-france.html">Mycanal France</a></li>
+													<li class="list-group-item"><a href="/mycanal-afrique-ios.html">Mycanal Afrique Ios</a></li>
+													<li class="list-group-item"><a href="/mycanal-groland-zapoi.html">Mycanal Groland Zapoi</a></li>
+													<li class="list-group-item"><a href="/mycanal-free-account.html">Mycanal Free Account</a></li>
+													<li class="list-group-item"><a href="/mycanal-afrique-live-tv.html">Mycanal Afrique Live Tv</a></li>
+													<li class="list-group-item"><a href="/mycanal-keyword.html">Mycanal Keyword</a></li>
+													<li class="list-group-item"><a href="/mycanal-combo-list.html">Mycanal Combo List</a></li>
+													<li class="list-group-item"><a href="/mycanal-essai-gratuit.html">Mycanal Essai Gratuit</a></li>
+													<li class="list-group-item"><a href="/mycanal-installer.html">Mycanal Installer</a></li>
+													<li class="list-group-item"><a href="/mycanal-ios.html">Mycanal Ios</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Spouse Tax Exemption - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Spouse Tax Exemption",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/3a/09/bc/3a09bc88e00f406b4b8e8404b3b3deb0.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+spouse+tax+exemption",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Spouse Tax Exemption</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Military Spouses Residency Relief Act MSRRA You may qualify for a California tax exemption under the MSRAA if all of the following apply. Nonmilitary spouses can use their military spouses resident state when filing their taxes. The employee claims an exemption from withholding under the Military Spous - es Residency Relief Act. <br>				
+			</p>
+										<a class="badge badge-warning" href="/my-marriage-date-prediction-free.html">my marriage date prediction free</a>
+											<a class="badge badge-light" href="/my-ideal-spouse-essay.html">my ideal spouse essay</a>
+											<a class="badge badge-secondary" href="/my-husband-yells-at-me-in-front-of-baby.html">my husband yells at me in front of baby</a>
+											<a class="badge badge-danger" href="/my-husband-yells-at-me-for-everything.html">my husband yells at me for everything</a>
+											<a class="badge badge-danger" href="/my-husbands-anger-gives-me-anxiety.html">my husbands anger gives me anxiety</a>
+											<a class="badge badge-info" href="/my-marriage-prediction-astrology.html">my marriage prediction astrology</a>
+											<a class="badge badge-secondary" href="/my-husband-yells-at-me-when-im-sick.html">my husband yells at me when im sick</a>
+											<a class="badge badge-light" href="/my-marriage-prediction-by-date-of-birth-free-online.html">my marriage prediction by date of birth free online</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to visit the ideal blog.  Our site gives you suggestions for viewing the highest quality video and image content, hunt and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, so we recommend this video that you view.  You can also contribute to supporting this site by sharing videos and images that you like on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2d/4b/05/2d4b05e7016e9e9cc075de7f7bc3dbf3.jpg" data-lightbox="roadtrip" data-title="Buying A House After Leaving The Military Military Wife Life Military Retirement Military Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2d/4b/05/2d4b05e7016e9e9cc075de7f7bc3dbf3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXWE1trWJ_-pSff5igCKXkPCA1cmFXkT3HnA';" alt="Buying A House After Leaving The Military Military Wife Life Military Retirement Military Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buying A House After Leaving The Military Military Wife Life Military Retirement Military Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/65/75/cd65752ec49f58593fcce1aa07ffee2f.png" data-lightbox="roadtrip" data-title="The Personal Statement Of Military Compensation Military Dollar Military Spouse Resources Personal Statement Person">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/65/75/cd65752ec49f58593fcce1aa07ffee2f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwOYhTGjON2JBNka9f-WCv4nPSBFSUwO0N5A';" alt="The Personal Statement Of Military Compensation Military Dollar Military Spouse Resources Personal Statement Person">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Personal Statement Of Military Compensation Military Dollar Military Spouse Resources Personal Statement Person</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/e1/a1/20e1a16af64f46a8e18682ef809d52d4.png" data-lightbox="roadtrip" data-title="Pin On Military Veteran Connection Group Board">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/e1/a1/20e1a16af64f46a8e18682ef809d52d4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyY2KoLz0o38u_QbnNoWNDpj2WjGvnO1U3sQ';" alt="Pin On Military Veteran Connection Group Board">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Veteran Connection Group Board</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/1c/d0/1a1cd0f9eaec138362ff7db63691a1e5.png" data-lightbox="roadtrip" data-title="The Effect Of Capital Gain Tax Exclusions On Military Home Sellers Capital Gains Tax Capital Gain Military Relocation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/1c/d0/1a1cd0f9eaec138362ff7db63691a1e5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSPEu5GzGw1mYQ8Hugs2QbKN05rhv2e9YZkQ';" alt="The Effect Of Capital Gain Tax Exclusions On Military Home Sellers Capital Gains Tax Capital Gain Military Relocation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Effect Of Capital Gain Tax Exclusions On Military Home Sellers Capital Gains Tax Capital Gain Military Relocation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f3/08/d1/f308d10c982bf63ad7cea2966c669348.jpg" data-lightbox="roadtrip" data-title="The Giant List Of Deployment Resources For Military Families Seasoned Spouse Military Family Military Resources Military Spouse Deployment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f3/08/d1/f308d10c982bf63ad7cea2966c669348.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvHF54QsDsmLtdEQBqOUYp8rMYeWZ3FYXuSg';" alt="The Giant List Of Deployment Resources For Military Families Seasoned Spouse Military Family Military Resources Military Spouse Deployment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Giant List Of Deployment Resources For Military Families Seasoned Spouse Military Family Military Resources Military Spouse Deployment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d4/51/ed/d451ed20e4cc70ae8d9256bd69c803db.jpg" data-lightbox="roadtrip" data-title="Retiring On An Enlisted Military Pension Military Dollar Retirement Planning Finance Military Spouse Resources Pensions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d4/51/ed/d451ed20e4cc70ae8d9256bd69c803db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv9SxzqarkDBZ32BdOVFxgPzNz8TIKl4-X8g';" alt="Retiring On An Enlisted Military Pension Military Dollar Retirement Planning Finance Military Spouse Resources Pensions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Retiring On An Enlisted Military Pension Military Dollar Retirement Planning Finance Military Spouse Resources Pensions</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/3a/09/bc/3a09bc88e00f406b4b8e8404b3b3deb0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv9SxzqarkDBZ32BdOVFxgPzNz8TIKl4-X8g';" alt="Retiring On An Enlisted Military Pension Military Dollar Retirement Planning Finance Military Spouse Resources Pensions">
+										<div class="card-body">
+						<h3 class="h5"><b>The Military Spouses Residency Relief Act MSRRA provides that spouses of military personnel who move to Mississippi due to the servicemember spouse being posted for military duty can keep their former residency for tax purposes throughout the marriage.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military spouse tax exemption</strong>. 
+								
+																	Youre not in the military Youre legally married to the military servicemember. 
+																	Military pay is not subject to income tax in the state where you are stationed unless it is also your state of legal residence. 
+																	An employee whose wages are exempt from Maryland income tax because of the Act must use Forms MW507 and MW507M to apply for exemption from Maryland income tax withholding. 
+																	Upon receipt of any exemption certificate Form MW507 the Compliance Division will make a determination and notify you if a change is required. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A tax exemption on up to two private passenger vehicles owned or leased by a veteran or jointly with a spouse. 
+																	Yes provided you are present in Virginia solely to be with your service member spouse who is permanently stationed here in compliance with military orders and the income you received in Virginia is from wages or salaries earned as an employee or is derived from certain limited self-employment as discussed below. 
+																	Tax Lessons Learned as a Military Spouse January 16 2021 Over the past 10 years having been a military spouse I have learned a few lessons when it comes to taxes and fees when you move to a new location. 
+																	B If a spouse of a service member is entitled to the protection of Military the Spouses Residency Relief Act in another state and they are a tax resident of Georgia and files a withholding exemption form in such other state the spouse is required to submit a Georgia Form G-4 so that withholding occur as is will required by Georgia Law when a Georgia domiciliary works in another state and withholding is not required by such other state. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	During the tax year. 
+																	But if your spouse earns non-military income from a second job they could owe income tax in the state where you are stationed. 
+																	574706 and Ohio Adm. 
+																	The civilian spouse of a servicemember who is exempt from Ohio income tax under federal law should request an exemption from Ohio withholding from hisher employer by submitting Ohio form IT 4 to said employer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Under the Military Spouses Residency Relief Act signed into law on November 11 2009 military spouses who earn income in the state where their spouse is stationed may be able to claim either the. 
+																	The income earned for services performed in North Carolina by a spouse of a servicemember who is legally domiciled in a state other than North Carolina is not subject to North Carolina income tax if. 
+																	Met one of the benefits exempts from income tax a civilian spouses compensation received for working in the state where the servicemember spouse is stationed. 
+																	Personal Property Tax Exemption Personal property taxes such as vehicle registration fee imposed by states and local jurisdictions are exempt if the military spouses legal residence is not in the state where he or she is based due to military orders. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Medal of Honor recipients qualify for. 
+																	The Military Spouse Residency Relief Act MSRRA allows a nonmilitary spouse of a service member to keep the same resident state of the military spouse regardless of which state they live in. 
+																	The Veterans Benefits and Transition Act allows that choice to be made regardless of when they were married. 
+																	Typically an exemption with that state must be filed to qualify. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tax-free if stationed OCONUS and you spend at least 305 days outside the US. 
+																	Your spouses military pay is taxable by their state of legal residence. 
+																	There is a basic 100 000 exemption or a low income less than 52 470 150 000 exemption available to a disabled veteran who because of an injury incurred in military service. 
+																	Meaning your legal residence must be in the same state your military spouse claims. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to the North Carolina Department of Revenue NCDOR tax-exempt status for a military spouse can only be acquired if the spouses domicile is the same state as that of the service member. 
+																	Under these conditions the spouse generally will not have to pay income taxes to the current State where income is earned. 
+																	This exemption does not apply if the spouse is already a resident of Mississippi. 
+																	A tax exemption on a home and land on the same parcel up to five acres that is classified as owner occupied and either titled solely to the veteran or jointly with a spouse. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Accompanying spouse is also eligible as long as they spend at least 305 days. 
+																	The servicemember is present in North Carolina solely in compliance with military orders. 
+																	The MSRRA changes the basic rules of taxation with respect to military spouses who earn income from services performed in a State in which the spouse is present with the Service member SM in compliance with military orders when that State is not the spouses domicile legal residence. 
+																	Am I exempt from filing Virginia income tax returns under the Military Spouses Residency Relief Act. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some employees whether they work in HR at your new job or at the local DMV may not know the exemptions and rights that you have as a military spouse or dependent. 
+																	The military spouse residency relief act msrra allows a nonmilitary spouse of a service member to keep the same resident state of the military spouse regardless of which state they live in. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/b0/20/f8b0205e4fc694cbf3d2cb591e2f50ae.png" data-lightbox="roadtrip" data-title="Vision Insurance For Military Families Currently Serving And Retired Katehorrell Vision Insurance Military Family Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/b0/20/f8b0205e4fc694cbf3d2cb591e2f50ae.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6bK3jIUoboCGrCH1l_vulAnAk9eCBvLaTPQ';" alt="Vision Insurance For Military Families Currently Serving And Retired Katehorrell Vision Insurance Military Family Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vision Insurance For Military Families Currently Serving And Retired Katehorrell Vision Insurance Military Family Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/ea/11/87ea11f4af41e6d1026f9fc7e2395039.jpg" data-lightbox="roadtrip" data-title="Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/ea/11/87ea11f4af41e6d1026f9fc7e2395039.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPy3Pye4XsnK-P4nE8aMp8DQLKfA9eQ84Tiw';" alt="Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Supporting Our Vets Jpg 3300 5100 Military Transition Veteran Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/7c/e5/4c/7ce54c553e1bb3bd049f361e3ccd4225.jpg" data-lightbox="roadtrip" data-title="Pin On Our Voices E">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/7c/e5/4c/7ce54c553e1bb3bd049f361e3ccd4225.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo5v-DApbEBfVfxmB15VSc-qo2IgWLqjjrKw';" alt="Pin On Our Voices E">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Our Voices E</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3a/09/bc/3a09bc88e00f406b4b8e8404b3b3deb0.jpg" data-lightbox="roadtrip" data-title="Help A Veteran Entrepreneur Win A National Grant Veteran Military Spouse Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3a/09/bc/3a09bc88e00f406b4b8e8404b3b3deb0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBU8nd_c5DBXnjzsSu_8WD8sE89G2L44JV7A';" alt="Help A Veteran Entrepreneur Win A National Grant Veteran Military Spouse Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Help A Veteran Entrepreneur Win A National Grant Veteran Military Spouse Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/2d/aa/ea2daa9a143394a058eca99b845153a2.png" data-lightbox="roadtrip" data-title="My Humbling Transition To Civilian Life Future Military Homeowners Military Jobs Military Transition Military Spouse Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/2d/aa/ea2daa9a143394a058eca99b845153a2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYYP3-qc1jJzfUhgkVP4gWbA6dVOBUMIVOQ';" alt="My Humbling Transition To Civilian Life Future Military Homeowners Military Jobs Military Transition Military Spouse Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Humbling Transition To Civilian Life Future Military Homeowners Military Jobs Military Transition Military Spouse Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/6c/ab/e66cabaf70fa95bdfc34a6cedc37cfb9.png" data-lightbox="roadtrip" data-title="All Veteran Property Tax Exemptions By State And Disability Rating Property Tax Veteran Va Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/6c/ab/e66cabaf70fa95bdfc34a6cedc37cfb9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa5f0oVSeTGjWpP-Bb2BAF7IyxZgH8-2XYKg';" alt="All Veteran Property Tax Exemptions By State And Disability Rating Property Tax Veteran Va Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All Veteran Property Tax Exemptions By State And Disability Rating Property Tax Veteran Va Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/83/85/b883851bb903a8cbeabd8d7a1e38b525.jpg" data-lightbox="roadtrip" data-title="Time Out How To Make Time For Yourself As A Military Spouse Military Spouse Military Wife Life Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/83/85/b883851bb903a8cbeabd8d7a1e38b525.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjUAEUCfkD-SJNLga3TqbkEeIpXc7k1nTl1Q';" alt="Time Out How To Make Time For Yourself As A Military Spouse Military Spouse Military Wife Life Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Time Out How To Make Time For Yourself As A Military Spouse Military Spouse Military Wife Life Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/16/b3/6f16b30ec8d5744fe3d7b2f1840d19cb.png" data-lightbox="roadtrip" data-title="All Veteran Property Tax Exemptions By State And Disability Rating Property Tax Tax Exemption Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/16/b3/6f16b30ec8d5744fe3d7b2f1840d19cb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQBP1Jjw3JQaLeaX9UlNNU14ZErKWQd0pfVw';" alt="All Veteran Property Tax Exemptions By State And Disability Rating Property Tax Tax Exemption Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All Veteran Property Tax Exemptions By State And Disability Rating Property Tax Tax Exemption Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/00/aa/34/00aa347d8b67a2ea16d76b1c743a21b8.jpg" data-lightbox="roadtrip" data-title="Inheritance Tax Seven Ways To Shield Your Family S Wealth Inheritance Tax Inheritance Setting Up A Trust">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/00/aa/34/00aa347d8b67a2ea16d76b1c743a21b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI13uJb0rFCZ6kQ1OLubjpDLC6Mj2JKUZJQQ';" alt="Inheritance Tax Seven Ways To Shield Your Family S Wealth Inheritance Tax Inheritance Setting Up A Trust">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Inheritance Tax Seven Ways To Shield Your Family S Wealth Inheritance Tax Inheritance Setting Up A Trust</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/f4/ca/40f4cae13339f9b73ef9778f309ad614.jpg" data-lightbox="roadtrip" data-title="Pin On Military Having A Baby">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/f4/ca/40f4cae13339f9b73ef9778f309ad614.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMFYN447gQf1gths-U_5kH5a_XZB8JEZ_jtw';" alt="Pin On Military Having A Baby">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Having A Baby</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/93/fb/0693fb798f6e11385216aaddbbaee606.jpg" data-lightbox="roadtrip" data-title="Your Kid Has Some Big Dreams But Your College Budget Just Doesn T Quite Match Uh Oh But There S Still A Way To Military Life Military Spouse Military Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/93/fb/0693fb798f6e11385216aaddbbaee606.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEA3yvhF8WYJOLW81wuzai1qjVoLDUix3xjg';" alt="Your Kid Has Some Big Dreams But Your College Budget Just Doesn T Quite Match Uh Oh But There S Still A Way To Military Life Military Spouse Military Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Your Kid Has Some Big Dreams But Your College Budget Just Doesn T Quite Match Uh Oh But There S Still A Way To Military Life Military Spouse Military Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/86/71/65/867165b10d4c9fff8497d497c435b212.jpg" data-lightbox="roadtrip" data-title="Eulogy Vs Obituary What S The Difference Military Retirement Military Life Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/86/71/65/867165b10d4c9fff8497d497c435b212.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRrI1Lb-aGTOVndWrpjqqGriuO3l_bliu-YA';" alt="Eulogy Vs Obituary What S The Difference Military Retirement Military Life Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eulogy Vs Obituary What S The Difference Military Retirement Military Life Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/7d/48/087d48328db34cf375799e042b60b5f5.png" data-lightbox="roadtrip" data-title="Which States Don T Tax Military Retirement Pay Military Pension State Taxes Military Retirement Pay Military Retirement Pensions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/7d/48/087d48328db34cf375799e042b60b5f5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVKGYkEDn1_M-WF8L1q-XddwWBFclOjVLE8Q';" alt="Which States Don T Tax Military Retirement Pay Military Pension State Taxes Military Retirement Pay Military Retirement Pensions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Which States Don T Tax Military Retirement Pay Military Pension State Taxes Military Retirement Pay Military Retirement Pensions</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/my-spouse-passed-away-what-do-i-do.html">My Spouse Passed Away What Do I Do</a></li>
+													<li class="list-group-item"><a href="/my-spouse-passed-away-social-security.html">My Spouse Passed Away Social Security</a></li>
+													<li class="list-group-item"><a href="/my-spouse-is-covid-positive-how-long-do-i-quarantine.html">My Spouse Is Covid Positive How Long Do I Quarantine</a></li>
+													<li class="list-group-item"><a href="/my-spouse-received-stimulus-but-i-didnt.html">My Spouse Received Stimulus But I Didnt</a></li>
+													<li class="list-group-item"><a href="/my-spouse-tested-positive-for-covid-19-should-i-get-tested.html">My Spouse Tested Positive For Covid 19 Should I Get Tested</a></li>
+													<li class="list-group-item"><a href="/my-spouse-makes-me-anxious.html">My Spouse Makes Me Anxious</a></li>
+													<li class="list-group-item"><a href="/my-spouse-lies-all-the-time.html">My Spouse Lies All The Time</a></li>
+													<li class="list-group-item"><a href="/my-spouse-left-me-for-someone-else.html">My Spouse Left Me For Someone Else</a></li>
+													<li class="list-group-item"><a href="/my-spouse-owes-back-child-support-will-i-get-a-stimulus-check.html">My Spouse Owes Back Child Support Will I Get A Stimulus Check</a></li>
+													<li class="list-group-item"><a href="/my-spouse-told-me-he-hates-me.html">My Spouse Told Me He Hates Me</a></li>
+													<li class="list-group-item"><a href="/my-spouse-just-died.html">My Spouse Just Died</a></li>
+													<li class="list-group-item"><a href="/my-spouse-stole-my-car.html">My Spouse Stole My Car</a></li>
+													<li class="list-group-item"><a href="/my-spouse-is-a-slob.html">My Spouse Is A Slob</a></li>
+													<li class="list-group-item"><a href="/my-spouse-is-selfish.html">My Spouse Is Selfish</a></li>
+													<li class="list-group-item"><a href="/my-spouse-is-bipolar.html">My Spouse Is Bipolar</a></li>
+													<li class="list-group-item"><a href="/my-spouse-lies-to-me.html">My Spouse Lies To Me</a></li>
+													<li class="list-group-item"><a href="/my-spouse-is-adhd.html">My Spouse Is Adhd</a></li>
+													<li class="list-group-item"><a href="/my-spouse-meaning.html">My Spouse Meaning</a></li>
+													<li class="list-group-item"><a href="/my-spouse-smothers-me.html">My Spouse Smothers Me</a></li>
+													<li class="list-group-item"><a href="/my-spouse-only-talks-about-work.html">My Spouse Only Talks About Work</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

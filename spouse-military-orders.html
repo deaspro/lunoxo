@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Spouse Military Orders - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Spouse Military Orders",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/ea/67/06/ea6706ef4b764ab20162855713cd4b8f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=spouse+military+orders",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Spouse Military Orders</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">800-877-8339 or militaryinfouscisdhsgov to let the team know they are moving according to military orders and therefore are requesting expedited processing. A share of the pension holders pension is allocated to the spouse and when the pension is drawn down the spouse will receive a percentage of the lump sum and the monthly income. Your spouse also known as your sponsor is required to fill out all paperwork that will allow you to receive military benefits. <br>				
+			</p>
+										<a class="badge badge-success" href="/msc-careers-usa.html">msc careers usa</a>
+											<a class="badge badge-light" href="/msc-cass.html">msc cass</a>
+											<a class="badge badge-danger" href="/msc-business-management-careers.html">msc business management careers</a>
+											<a class="badge badge-primary" href="/milspouse-academy.html">milspouse academy</a>
+											<a class="badge badge-danger" href="/milspouse-support.html">milspouse support</a>
+											<a class="badge badge-info" href="/msc-montreal-careers.html">msc montreal careers</a>
+											<a class="badge badge-success" href="/msc-cruises-jobs-careers.html">msc cruises jobs careers</a>
+											<a class="badge badge-warning" href="/msc-careers-cape-town.html">msc careers cape town</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to pay a visit to the ideal blog.  Our site provides you with suggestions for viewing the maximum quality video and picture content, hunt and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie for you to view.  It is also possible to bring about supporting this website by sharing videos and images that you enjoy on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/2d/1b/342d1b5adbb0caf9d601643a5df2ec2d.jpg" data-lightbox="roadtrip" data-title="A Chance To Bloom A Military Wife S Prayer Inspirational Military Quotes Love Quotes For Wife Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/2d/1b/342d1b5adbb0caf9d601643a5df2ec2d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrW_y7PY8gqBtTR3V8YQV1t4CELLwzv47NNw';" alt="A Chance To Bloom A Military Wife S Prayer Inspirational Military Quotes Love Quotes For Wife Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Chance To Bloom A Military Wife S Prayer Inspirational Military Quotes Love Quotes For Wife Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/a6/59/58a659f304f70bb9cb4e2597693a8e7a.jpg" data-lightbox="roadtrip" data-title="Pin By Ashley Kloda On Quotes Army Girlfriend Quotes Girlfriend Quotes Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/a6/59/58a659f304f70bb9cb4e2597693a8e7a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3VHUH3sFvbuIg6HWj5hvbuYEpkJy_cMsVtA';" alt="Pin By Ashley Kloda On Quotes Army Girlfriend Quotes Girlfriend Quotes Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ashley Kloda On Quotes Army Girlfriend Quotes Girlfriend Quotes Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/bd/74/40bd74d726297d99835a1e53db6b1584.jpg" data-lightbox="roadtrip" data-title="The Silent Rank Poem Army Wife Quotes Army Wife Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/bd/74/40bd74d726297d99835a1e53db6b1584.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzJGGt_JELEBKZL8kCTt3Ezq5Ka8KwnNQ5zA';" alt="The Silent Rank Poem Army Wife Quotes Army Wife Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Silent Rank Poem Army Wife Quotes Army Wife Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/dd/77/bedd77eecf68f10cf867f49e86bc9cd0.jpg" data-lightbox="roadtrip" data-title="Baby Military Orders Military Baby New Baby Products Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/dd/77/bedd77eecf68f10cf867f49e86bc9cd0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hqdwUQlAXF7CuybwNcXMkpbQJ78VCg75JA';" alt="Baby Military Orders Military Baby New Baby Products Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Baby Military Orders Military Baby New Baby Products Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/97/50/ce9750ae997e93e7b15099d6e44628dd.jpg" data-lightbox="roadtrip" data-title="Army Wife Quotes Army Wife Quotes Army Wife Life Military Wife Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/97/50/ce9750ae997e93e7b15099d6e44628dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQZmBu60CgU_ZdlP6mxqRd4HJsORoNl78Yw';" alt="Army Wife Quotes Army Wife Quotes Army Wife Life Military Wife Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wife Quotes Army Wife Quotes Army Wife Life Military Wife Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/6d/ec/8d6dec9f5671dc001979c9bfa30b7b58.jpg" data-lightbox="roadtrip" data-title="I Can T Wait For My Husband To Get His Orders So We Can Leave Our Current Duty Station Army Wife Life Military Wife Military Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/6d/ec/8d6dec9f5671dc001979c9bfa30b7b58.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFKQMlRW4Ei0jet-UFAAYAyBbNGaXeoHFOoA';" alt="I Can T Wait For My Husband To Get His Orders So We Can Leave Our Current Duty Station Army Wife Life Military Wife Military Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Can T Wait For My Husband To Get His Orders So We Can Leave Our Current Duty Station Army Wife Life Military Wife Military Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/40/bd/74/40bd74d726297d99835a1e53db6b1584.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFKQMlRW4Ei0jet-UFAAYAyBbNGaXeoHFOoA';" alt="I Can T Wait For My Husband To Get His Orders So We Can Leave Our Current Duty Station Army Wife Life Military Wife Military Wife Life">
+										<div class="card-body">
+						<h3 class="h5"><b>This is a case-by-case review and we do not automatically grant it to spouses.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Spouse military orders</strong>. 
+								
+																	Ensure permanent change of station is listed on all documentation as the reason for leaving a position. 
+																	Do the wages of the spouse remain exempt from withholding. 
+																	Submit a copy of spouses orders with request. 
+																	The tax-free allowance begins after separation of 30 days. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	President Obama signed Executive Order 13473 in September 2008. 
+																	This is usually on overseas orders and indicates that your dependents are permitted to travel at the same time as the active spouse. 
+																	The purpose of this authority is to assist military spouses in obtaining Federal Civil Service positions. 
+																	To apply for unemployment due to a permanent change of station a military spouse should. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Federal law dictates division of military pension certain emergency child support orders and some base privileges to former spouses. 
+																	Pension attachment orders are rarely used but they are something which should be considered in cases dealing with armed forces pensions which predate 2015. 
+																	Youll go to a US. 
+																	You may also see something that talks about concurrent travel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For some it will be the orders they knew for others it will be orders to a location they Many families across the service will be receiving their next set of PCS orders in the coming weeks. 
+																	Military Spouse is your premiere online milspouse community with resources on all things military life marriage military spouse jobs and. 
+																	The ID Card paperwork is mailed to the spouse who can then take it to any military installation and obtain a military dependent ID Card. 
+																	Military spouses who are on their active-duty spouses Permanent Change of Station PCS orders must contact the Military Help Line at 877-CIS-4MIL 877-247-4645 TTY. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A copy of your spouses active military orders DD-214 Certificate of Release or Discharge from Active Duty Military spouses of 100 disabled separated or retired veterans and widows or widowers who are not remarried of military service members who were killed on active duty. 
+																	The spouse of a servicemember has met the conditions to qualify for the exemption. 
+																	If applying from abroad. 
+																	Significant issues for how to get a divorce in the military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The British Army defines a spouse as A legally married including separated but not divorced husband or wife. 
+																	I often see questions from people wanting to know whether or not. 
+																	Both spouses attend unless the sponsoring military spouse is deployed in which case their spouse attending alone should bring evidence of the overseas military assignment a photocopy of the official orders or letter from the commanding officer to the interview. 
+																	However if maintenance or child support is ordered VA disability payments are included as income to the veteranretiree. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dependants of HM armed forces and those exempt must first and foremost be able to show that they are the spouse civil partner unmarried partner same-sex partner or child of a member of the. 
+																	Federal law prohibits states from dividing this or even from ordering indemnity to a former spouse whose share of the military retirement is reduced by a VA Waiver. 
+																	California governs all other issues such as other property distribution under community property laws child custody and child and spousal support. 
+																	For anyone dating or married to a military service member unaccompanied orders can be a complicated and frustrating situation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Military Spouse Preference MSP and non-competitive hiring process enable government agencies to hire military spouses in certain General Schedule GS temporary and permanent positions. 
+																	However the servicemember is transferred to another state in compliance with military orders and the spouse does not move to the other state. 
+																	However in order for the Department of Defense to make direct payments of a military members retired pay to the former spouse the former spouse must have been married to the military member for. 
+																	A spouse is entitled to widowswidowers benefits until they are legally divorced even if they are separated from the member. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In most cases only the spouse seeking a green card will attend. 
+																	Family Separation Allowance Married members are entitled to a Family Separation Allowance when they are separated from their dependents due to military orders. 
+																	Sometimes the orders come with a no and can be changed to a yes when command sponsorship is secured. 
+																	It gives military spouses preference when applying for federal job positions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Obtain an original copy of your marriage certificate from the city. 
+																	EXECUTIVE ORDER 13473 Executive Order EO 13473-Noncompetive Appointing Authority for Certain Military Spouses establishes a hiring authority that permits a noncompetitive appointment to permanent term or temporary positions for certain military spouses into the competitive service. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/ae/f6/96aef603b25723e364dcf43236d00335.jpg" data-lightbox="roadtrip" data-title="Pin On Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/ae/f6/96aef603b25723e364dcf43236d00335.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2a3WkqDdGmvIkRrTvJ9VUKiy1dE_z5NidCg';" alt="Pin On Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/0f/a9/ed0fa920b9d968fdefa199dca5b035a6.jpg" data-lightbox="roadtrip" data-title="Happy Fit Navy Wife Surviving Deployment Milspouse Support Pcs Tips Deployment Communication Military Wife Quotes Military Spouse Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/0f/a9/ed0fa920b9d968fdefa199dca5b035a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPl1d5VbkRFkF2Uv_bXS4zVGr8w0ix0k8WBA';" alt="Happy Fit Navy Wife Surviving Deployment Milspouse Support Pcs Tips Deployment Communication Military Wife Quotes Military Spouse Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Happy Fit Navy Wife Surviving Deployment Milspouse Support Pcs Tips Deployment Communication Military Wife Quotes Military Spouse Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/59/05/c15905b37529ad433d5c8cc2a82f9239.jpg" data-lightbox="roadtrip" data-title="Five Stages Of Pre Deployment Military Spouses Go Through Military Spouse Military Wife Life Military Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/59/05/c15905b37529ad433d5c8cc2a82f9239.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSI7R7YPpCXpG4uj2QP_dZccrOOGIGwjfeZg';" alt="Five Stages Of Pre Deployment Military Spouses Go Through Military Spouse Military Wife Life Military Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Five Stages Of Pre Deployment Military Spouses Go Through Military Spouse Military Wife Life Military Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/20/2f/23202f0e71bff68e7f0345b1fbaa3b5a.jpg" data-lightbox="roadtrip" data-title="Life Of An Mc Spouse Army Wife Life Army Wife Military Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/20/2f/23202f0e71bff68e7f0345b1fbaa3b5a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD2kH2Xqsuq78CU-6i0fTkGZPmT6iJkuQWsw';" alt="Life Of An Mc Spouse Army Wife Life Army Wife Military Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Life Of An Mc Spouse Army Wife Life Army Wife Military Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/67/06/ea6706ef4b764ab20162855713cd4b8f.jpg" data-lightbox="roadtrip" data-title="Hopin And Prayin Waiting For Orders Military Wife Life Military Spouse Blog Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/67/06/ea6706ef4b764ab20162855713cd4b8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEtD93yyat6PKKLL-YJ99vdalzhl0T6zeKhw';" alt="Hopin And Prayin Waiting For Orders Military Wife Life Military Spouse Blog Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hopin And Prayin Waiting For Orders Military Wife Life Military Spouse Blog Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/a8/b0/79a8b03d815f2bd88bc2f5e8822114f9.jpg" data-lightbox="roadtrip" data-title="Waiting For Pcs Orders That Never Come Seasoned Spouse Military Living Milspouse Pcs Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/a8/b0/79a8b03d815f2bd88bc2f5e8822114f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSED2M6xTxm1Ro5L61oMuZowVqSDZkXdS_DWw';" alt="Waiting For Pcs Orders That Never Come Seasoned Spouse Military Living Milspouse Pcs Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Waiting For Pcs Orders That Never Come Seasoned Spouse Military Living Milspouse Pcs Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/35/cc/5d35ccf22b9bfaefba185fd07ddc85e1.jpg" data-lightbox="roadtrip" data-title="Women Who Cheat On Their Deployed Spouses Should Be Well You Know Army Wife Quotes Wife Quotes Army Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/35/cc/5d35ccf22b9bfaefba185fd07ddc85e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPLwGyYynZFJh8gEZ84toEHdMq_zniYZ6p-w';" alt="Women Who Cheat On Their Deployed Spouses Should Be Well You Know Army Wife Quotes Wife Quotes Army Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women Who Cheat On Their Deployed Spouses Should Be Well You Know Army Wife Quotes Wife Quotes Army Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/3d/b1/c23db126d32f88709675c06048780a26.jpg" data-lightbox="roadtrip" data-title="5 10 2013 Military Spouse Appreciation Day Xoxo I M Proud To Be An Army Wife Army Wife Life Military Wife Quotes Army Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/3d/b1/c23db126d32f88709675c06048780a26.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd42LuNRvYz1lpGv8iGlojYwTnOhRxVDXFnA';" alt="5 10 2013 Military Spouse Appreciation Day Xoxo I M Proud To Be An Army Wife Army Wife Life Military Wife Quotes Army Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 10 2013 Military Spouse Appreciation Day Xoxo I M Proud To Be An Army Wife Army Wife Life Military Wife Quotes Army Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/02/c8/6b02c8ea7eb604950d1acbc3fd94af60.png" data-lightbox="roadtrip" data-title="Thoughts As An Army Wife Army Wife Quotes Army Wife Quotes Army Wife Wife Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/02/c8/6b02c8ea7eb604950d1acbc3fd94af60.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2TGgx-NoVCYQAMUfujjSTSPX-0sD6N-pszQ';" alt="Thoughts As An Army Wife Army Wife Quotes Army Wife Quotes Army Wife Wife Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thoughts As An Army Wife Army Wife Quotes Army Wife Quotes Army Wife Wife Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/7b/e3/637be303a8d7f080805073324a737b02.jpg" data-lightbox="roadtrip" data-title="Military Spouse Appreciation Day To All Of You We Thank You For Your Sacrifice Your Strength And Yo Army Wife Quotes Navy Wife Military Spouse Appreciation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/7b/e3/637be303a8d7f080805073324a737b02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6NvcbcG_XyBcPyFNMwUIb_uO3bwdEQA5UiQ';" alt="Military Spouse Appreciation Day To All Of You We Thank You For Your Sacrifice Your Strength And Yo Army Wife Quotes Navy Wife Military Spouse Appreciation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Appreciation Day To All Of You We Thank You For Your Sacrifice Your Strength And Yo Army Wife Quotes Navy Wife Military Spouse Appreciation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/98/61/11986145faeeec879b78745e36fe5808.jpg" data-lightbox="roadtrip" data-title="What To Do When Your Spouse Gets Last Minute Deployment Orders Soldier Wife Military Wife Life Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/98/61/11986145faeeec879b78745e36fe5808.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzHEHH5hRNu8u4LcM3PPTukx9F5bFJv3CqSQ';" alt="What To Do When Your Spouse Gets Last Minute Deployment Orders Soldier Wife Military Wife Life Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Do When Your Spouse Gets Last Minute Deployment Orders Soldier Wife Military Wife Life Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/be/c0/eabec0104d269a908e96cf8fc6729317.jpg" data-lightbox="roadtrip" data-title="Hurry Up And Wait Waiting On Military Orders I Love A Good Mystery Don T You Here We Are A Little Over Two M Military Orders Military Life Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/be/c0/eabec0104d269a908e96cf8fc6729317.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu9bcknLLwDx7hdoZBaq3yhbv2IQ-BfFgXcg';" alt="Hurry Up And Wait Waiting On Military Orders I Love A Good Mystery Don T You Here We Are A Little Over Two M Military Orders Military Life Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hurry Up And Wait Waiting On Military Orders I Love A Good Mystery Don T You Here We Are A Little Over Two M Military Orders Military Life Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/5b/71/d55b71f4e2f75d738f21c4183eb57f16.png" data-lightbox="roadtrip" data-title="Overseas Pcs Part 1 Express Shipment Seasoned Spouse Moving To Germany Moving Overseas Military Move">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/5b/71/d55b71f4e2f75d738f21c4183eb57f16.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFVpb_Z90GZlBTZt_FicLfGI2IgzO7KyHYFQ';" alt="Overseas Pcs Part 1 Express Shipment Seasoned Spouse Moving To Germany Moving Overseas Military Move">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Overseas Pcs Part 1 Express Shipment Seasoned Spouse Moving To Germany Moving Overseas Military Move</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-spouse-retirement-certificate.html">Army Spouse Retirement Certificate</a></li>
+													<li class="list-group-item"><a href="/army-spousal-support.html">Army Spousal Support</a></li>
+													<li class="list-group-item"><a href="/army-spouse-life-insurance.html">Army Spouse Life Insurance</a></li>
+													<li class="list-group-item"><a href="/army-spouse-certification-reimbursement.html">Army Spouse Certification Reimbursement</a></li>
+													<li class="list-group-item"><a href="/army-spouse-deployment.html">Army Spouse Deployment</a></li>
+													<li class="list-group-item"><a href="/army-spouse-book.html">Army Spouse Book</a></li>
+													<li class="list-group-item"><a href="/army-spouse-creed.html">Army Spouse Creed</a></li>
+													<li class="list-group-item"><a href="/army-spouse-job-placement.html">Army Spouse Job Placement</a></li>
+													<li class="list-group-item"><a href="/army-reserve-spouse-id-card.html">Army Reserve Spouse Id Card</a></li>
+													<li class="list-group-item"><a href="/army-spouse-college-scholarships.html">Army Spouse College Scholarships</a></li>
+													<li class="list-group-item"><a href="/army-spouse-abuse.html">Army Spouse Abuse</a></li>
+													<li class="list-group-item"><a href="/army-spouse-loans.html">Army Spouse Loans</a></li>
+													<li class="list-group-item"><a href="/army-spouse-braces.html">Army Spouse Braces</a></li>
+													<li class="list-group-item"><a href="/army-spouse-licensure-reimbursement.html">Army Spouse Licensure Reimbursement</a></li>
+													<li class="list-group-item"><a href="/army-reserve-military-tuition-assistance.html">Army Reserve Military Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/army-spouse-employment-program.html">Army Spouse Employment Program</a></li>
+													<li class="list-group-item"><a href="/army-reserves-42a.html">Army Reserves 42a</a></li>
+													<li class="list-group-item"><a href="/army-shop-hrvatska-zagreb.html">Army Shop Hrvatska Zagreb</a></li>
+													<li class="list-group-item"><a href="/army-spouse-dental-benefits.html">Army Spouse Dental Benefits</a></li>
+													<li class="list-group-item"><a href="/army-spouse-divorce-entitlements.html">Army Spouse Divorce Entitlements</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

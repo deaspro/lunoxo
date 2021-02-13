@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Husband And Wife Indian Army - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Husband And Wife Indian Army",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/7e/f2/60/7ef2607125a334466cffd98d7c4e3079.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=husband+and+wife+indian+army",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Husband And Wife Indian Army</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Both are posted at Ambala cantonment. I realised how little I knew about the organisation before I became an army wife. The Indian Army is ten times bigger than Britains three armed services. <br>				
+			</p>
+										<a class="badge badge-info" href="/login-to-my-manulife.html">login to my manulife</a>
+											<a class="badge badge-warning" href="/life-of-army-reserve.html">life of army reserve</a>
+											<a class="badge badge-dark" href="/life-of-an-army-wife-blog.html">life of an army wife blog</a>
+											<a class="badge badge-success" href="/login-sscn-bkn-hasil-seleksi-administrasi.html">login sscn bkn hasil seleksi administrasi</a>
+											<a class="badge badge-warning" href="/life-as-a-military-officers-wife.html">life as a military officers wife</a>
+											<a class="badge badge-info" href="/login-to-my-ezviz-camera.html">login to my ezviz camera</a>
+											<a class="badge badge-danger" href="/life-of-army-wife-quora.html">life of army wife quora</a>
+											<a class="badge badge-dark" href="/list-of-mycaa-approved-schools.html">list of mycaa approved schools</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to pay a visit to the ideal site.  Our website gives you suggestions for viewing the maximum quality video and image content, search and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie that you see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/75/b5/c3/75b5c3c8a9aceb35dd59a3b77abb980c.jpg" data-lightbox="roadtrip" data-title="17 Best Quotes For Indian Army Girlfriend Pictures Army Girlfriend Pictures Army Love Quotes Army Girlfriend Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/75/b5/c3/75b5c3c8a9aceb35dd59a3b77abb980c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDQre-irnf2upbTUSDs63h4nIDwhwNIQxRBA';" alt="17 Best Quotes For Indian Army Girlfriend Pictures Army Girlfriend Pictures Army Love Quotes Army Girlfriend Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">17 Best Quotes For Indian Army Girlfriend Pictures Army Girlfriend Pictures Army Love Quotes Army Girlfriend Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/47/84/47478415c3763fd8d5f873ee9f12e52c.jpg" data-lightbox="roadtrip" data-title="Pin On Husnain">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/47/84/47478415c3763fd8d5f873ee9f12e52c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXemgNDcYQ5mX9CwvAuAXr0wJ2hkD4LT2t5g';" alt="Pin On Husnain">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Husnain</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/b7/71/2ab77119ef56faf1129d9f14f5ff482e.jpg" data-lightbox="roadtrip" data-title="Army Officer Indian Army Army Girlfriend Army Wife Soldier S Girl Army Love Story Love S Army Girlfriend Pictures Army Love Quotes Military Girlfriend Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/b7/71/2ab77119ef56faf1129d9f14f5ff482e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-XU4gkWLoJ0tnElCdIlZ2rDKZ1GyKK4KrJQ';" alt="Army Officer Indian Army Army Girlfriend Army Wife Soldier S Girl Army Love Story Love S Army Girlfriend Pictures Army Love Quotes Military Girlfriend Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Officer Indian Army Army Girlfriend Army Wife Soldier S Girl Army Love Story Love S Army Girlfriend Pictures Army Love Quotes Military Girlfriend Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/f4/cc/a4f4cc6dda8771f0a21adb2b69912817.jpg" data-lightbox="roadtrip" data-title="My Dad Is Your Freedom Army Couple Pictures Army Pics Army Couple">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/f4/cc/a4f4cc6dda8771f0a21adb2b69912817.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7MpTombwpx-Q3eBlcW18SLmha6GExE12WRQ';" alt="My Dad Is Your Freedom Army Couple Pictures Army Pics Army Couple">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Dad Is Your Freedom Army Couple Pictures Army Pics Army Couple</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/56/3a/fe/563afe453ac48ea99ad6ca8f57d0c100.jpg" data-lightbox="roadtrip" data-title="Army Wife Army Couple Military Couple Photography Army Couple Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/56/3a/fe/563afe453ac48ea99ad6ca8f57d0c100.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6rkW4gRKy1hdETDt8CMcbid06Zx90gtYDiA';" alt="Army Wife Army Couple Military Couple Photography Army Couple Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wife Army Couple Military Couple Photography Army Couple Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/67/bf/19/67bf1935b7090b399b7be7f120bf8081.jpg" data-lightbox="roadtrip" data-title="Army Couple Army Couple Army Couple Photography Army Couple Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/67/bf/19/67bf1935b7090b399b7be7f120bf8081.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ROOV0drW70x_YRIxvfRwyDoBLZaz4xezDg';" alt="Army Couple Army Couple Army Couple Photography Army Couple Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Couple Army Couple Army Couple Photography Army Couple Pictures</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/80/28/3b/80283b9256a95d3c0ff51d5992a003bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ROOV0drW70x_YRIxvfRwyDoBLZaz4xezDg';" alt="Army Couple Army Couple Army Couple Photography Army Couple Pictures">
+										<div class="card-body">
+						<h3 class="h5"><b>Priya Semwals husband had fallen in a counter-insurgency operation in Arunachal Pradesh in 2012.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Husband and wife indian army</strong>. 
+								
+																	3 Years After Deepak Nainwal Was Martyred In Uttarakhand His Wife Joined The Indian Army And Worked Hard To Fulfill Her Husbands Last Wish. 
+																	Pragati Shukla a Nuclear Scientist by posted at Bhabha Atomic Research Center Mumbai. 
+																	32-year-old Jyoti Nainwal wife of Kulgam martyr Naik Deepak Nainwal is all set to join as an officer in the Indian Army thus fulfilling the dying wish of her husband. 
+																	An anecdote narrated by an army wife Doe Nair in her book I Married the Army is typical of the culture as Priya Ramani describes in a column. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	From Mrs Shalini Singh an Army wife and MBA student she became Captain Shalini Singh a soldier. 
+																	To a girl my age only the glamour of crew cuts aviators and powerful bikes was visible. 
+																	He was martyred during an encounter with terrorists in Kashmir. 
+																	An army major has been booked for thrashing his wife who is also a major with the Indian Army. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She went onto join as an officer in the Indian Army Corps of EME the first wife of a jawan whose husband had fallen in a counter-insurgency operation to do so. 
+																	The journey to being an Indian Army officer wasnt an easy one for Jyoti Nainwal. 
+																	Indian Army officers say at present they have a case on hand in which an Army infantry units commanding officer posted in Jammu and Kashmir has been accused of having an affair with the wife of his second-in-commandThere was also another case in Tawang Arunachal Pradesh where an officer got involved with another serving officers wife and has now ditched his own wife who is an army doctor. 
+																	Veena Naravane who is president of the Army Wives Welfare Association received the gift parcels from four Gorkha soldiers working with her husband -- Army Chief General MM Naravane -- in the Army Headquarters in South Block. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gauri Prasad Mahadik wife of martyred Indian Army Major Prasad Mahadik is now an Army officer after the passing out ceremony today March 7 from Officers Training Academy OTA in. 
+																	Life for Sangeeta has never been so lonely as it has been in last two and half yearsSangeeta Malls husband Shishir Mall was a rifleman with 39 Gorkha Rifl. 
+																	The Officers of the Armed Forces are not trained to write ordersjudgments as of the Court and which are required to deal with each and every contentionThe Delhi High Court has held that the. 
+																	Administrator at Indian Army 1999-present Answered December 17 2017 Author has 251 answers and 1893K answer views. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Kanika Rane is perhaps one of the most inspiring women in recent times. 
+																	Undercover manoeuvres are known as stealing the affection of brother officers wife under Indian military law. 
+																	Indian Army Chief General Manoj Mukund Naravanes wife delivered gifts from Gorkha soldiers to their wives living in Kathmandu. 
+																	In her complaint the woman said that the two had. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Doe Nairs first ladies club parade was a. 
+																	After she lost her husband she decided to join the Army as a tribute to her husband. 
+																	Ram Parmar In an effort to pay tribute to her late husband Army Major Prasad Mahadik who was killed in a fire near the Indo-China border in Tawang district Arunachal Pradesh Virar resident. 
+																	If such is the case then husband and wife apply for spouse posting from their respective MS branch and in most of the cases MS branch tries to post the couple in same station. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She was married into a family where the men of the past 3 generations served in the Indian Army. 
+																	As a tribute to her husband Major Kaustubh Rane she also joined the Indian Army. 
+																	It was only after I started living with my husband in his Unit that I came face-to-face with things that only an army wife will come across. 
+																	Ya its normal trend. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Major Kaustubh lost his life in August 2018 with three other Indian soldiers. 
+																	Shalini was 18 when she got married to Indian Army officer Major Avinash Singh Bhadauria. 
+																	These soldiers were Hameer Singh Mandeep Singh and Vikramjeet Singh. 
+																	ARMY Trending GIRL_Attitude CoupleGoals NancyMomoland SmilyGirl Viral Trending MODI Attitude Army Nancy Momoland Viral Hot Dance Video Smily Cute. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Not just that she is also associated with an NGO in Mumbai and teaches basic maths to kidsA trained yoga teacher she also gives free yoga sessions. 
+																	One such fellow army wife is Mrs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/a6/b8/a6a6b8dc48f74a94119b4db736067d17.jpg" data-lightbox="roadtrip" data-title="Yeda Queen Army Girlfriend Pictures Army Girlfriend Quotes Indian Army Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/a6/b8/a6a6b8dc48f74a94119b4db736067d17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR67-43CqmX3LiTKZ7fXNy0FWyIflF3oPdy6Q';" alt="Yeda Queen Army Girlfriend Pictures Army Girlfriend Quotes Indian Army Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yeda Queen Army Girlfriend Pictures Army Girlfriend Quotes Indian Army Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/22/f4/32/22f43201d2d4c2fb800773de64de8f40.jpg" data-lightbox="roadtrip" data-title="Pin By Jannatul Ferdous On Army Love Army Couple Pictures Army Couple Army Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/22/f4/32/22f43201d2d4c2fb800773de64de8f40.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF692tV7E18xVIZxgTTtUqYtI5VN7Ol-fFgA';" alt="Pin By Jannatul Ferdous On Army Love Army Couple Pictures Army Couple Army Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jannatul Ferdous On Army Love Army Couple Pictures Army Couple Army Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/80/28/3b/80283b9256a95d3c0ff51d5992a003bf.jpg" data-lightbox="roadtrip" data-title="Indian Army Army Girlfriend Pictures Army Couple Indian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/80/28/3b/80283b9256a95d3c0ff51d5992a003bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_cLSTDQAiIf2SBSyGqYthwmYRBvlZxoJ-3g';" alt="Indian Army Army Girlfriend Pictures Army Couple Indian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Army Girlfriend Pictures Army Couple Indian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/ee/cc/f7eecc54ffc36e49cc79c0b8e65f5751.jpg" data-lightbox="roadtrip" data-title="17 Best Quotes For Indian Army Girlfriend Pictures Army Love Quotes Army Girlfriend Quotes Army Girlfriend Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/ee/cc/f7eecc54ffc36e49cc79c0b8e65f5751.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU2VFgfuATl5gur8FP7XLZQNglmXu2yc6Ymw';" alt="17 Best Quotes For Indian Army Girlfriend Pictures Army Love Quotes Army Girlfriend Quotes Army Girlfriend Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">17 Best Quotes For Indian Army Girlfriend Pictures Army Love Quotes Army Girlfriend Quotes Army Girlfriend Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/f3/70/3af370f6b86617898a1f0286f24cca28.jpg" data-lightbox="roadtrip" data-title="17 Best Quotes For Indian Army Girlfriend Pictures Army Love Quotes Army Girlfriend Pictures Army Girlfriend Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/f3/70/3af370f6b86617898a1f0286f24cca28.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGvC3QEOBzmaKRfgkeex9zwpKObX9-YcUJrw';" alt="17 Best Quotes For Indian Army Girlfriend Pictures Army Love Quotes Army Girlfriend Pictures Army Girlfriend Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">17 Best Quotes For Indian Army Girlfriend Pictures Army Love Quotes Army Girlfriend Pictures Army Girlfriend Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/fc/69/9f/fc699f1f33c9d90f696362bfc3c68cf5.jpg" data-lightbox="roadtrip" data-title="17 Best Quotes For Indian Army Girlfriend Pictures Army Girlfriend Pictures Army Love Quotes Army Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/fc/69/9f/fc699f1f33c9d90f696362bfc3c68cf5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9XgHFjcsZxujz651cn_VB6d15h6htp32OdQ';" alt="17 Best Quotes For Indian Army Girlfriend Pictures Army Girlfriend Pictures Army Love Quotes Army Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">17 Best Quotes For Indian Army Girlfriend Pictures Army Girlfriend Pictures Army Love Quotes Army Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/08/e2/6408e25da2e181f46b5301080e0a1c8e.jpg" data-lightbox="roadtrip" data-title="To The Syrian Soldiers We Salute You Army Couple Pictures Army Pics Army Girlfriend Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/08/e2/6408e25da2e181f46b5301080e0a1c8e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKq3hP5ev1KbHEA3jDGIwrl8yxayvBD3HuAA';" alt="To The Syrian Soldiers We Salute You Army Couple Pictures Army Pics Army Girlfriend Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">To The Syrian Soldiers We Salute You Army Couple Pictures Army Pics Army Girlfriend Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/78/ee/fb78ee6386a3aedc3a6c8e6c37829d1f.jpg" data-lightbox="roadtrip" data-title="17 Best Quotes For Indian Army Girlfriend Pictures Army Girlfriend Pictures Army Wife Quotes Army Girlfriend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/78/ee/fb78ee6386a3aedc3a6c8e6c37829d1f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDvw2PiajMYL-i14y-OTtnzlIBiTNVT3JfRw';" alt="17 Best Quotes For Indian Army Girlfriend Pictures Army Girlfriend Pictures Army Wife Quotes Army Girlfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">17 Best Quotes For Indian Army Girlfriend Pictures Army Girlfriend Pictures Army Wife Quotes Army Girlfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/f2/60/7ef2607125a334466cffd98d7c4e3079.jpg" data-lightbox="roadtrip" data-title="My Six Word Love Story I Fell For An Army Men Army Wife Quotes Army Love Quotes Army Girlfriend Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/f2/60/7ef2607125a334466cffd98d7c4e3079.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwxY0QFbqdR3zngk42odyal45XhpajUar3iQ';" alt="My Six Word Love Story I Fell For An Army Men Army Wife Quotes Army Love Quotes Army Girlfriend Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Six Word Love Story I Fell For An Army Men Army Wife Quotes Army Love Quotes Army Girlfriend Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/c5/01/c6c501f2c2238f2d31ade7e50bb5bb7e.jpg" data-lightbox="roadtrip" data-title="17 Best Quotes For Indian Army Girlfriend Pictures Army Girlfriend Pictures Army Girlfriend Quotes Indian Army Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/c5/01/c6c501f2c2238f2d31ade7e50bb5bb7e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEEg8JneVq3XrNjyxIrFO5ij_KuPE7PHZBvQ';" alt="17 Best Quotes For Indian Army Girlfriend Pictures Army Girlfriend Pictures Army Girlfriend Quotes Indian Army Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">17 Best Quotes For Indian Army Girlfriend Pictures Army Girlfriend Pictures Army Girlfriend Quotes Indian Army Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/9a/d0/35/9ad0354465e33eb16cf5952cdb97259a.jpg" data-lightbox="roadtrip" data-title="Pin On Ashvath K">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/9a/d0/35/9ad0354465e33eb16cf5952cdb97259a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgSBVpIGkJlGPCou4qVNZ5IG4aPkhXn32dAA';" alt="Pin On Ashvath K">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ashvath K</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/f5/e3/15f5e33d1e2ebc78cf120ec0b941c59a.jpg" data-lightbox="roadtrip" data-title="Wordpress Com Army Images Indian Army Wallpapers Army Pics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/f5/e3/15f5e33d1e2ebc78cf120ec0b941c59a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJX7w36wXQeB82C2_v5q3raMPyj2l31qnQcQ';" alt="Wordpress Com Army Images Indian Army Wallpapers Army Pics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wordpress Com Army Images Indian Army Wallpapers Army Pics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/90/21/d6902154c16ca41c442891f81b77f70a.jpg" data-lightbox="roadtrip" data-title="17 Best Quotes For Indian Army Girlfriend Pictures Army Girlfriend Pictures Army Girlfriend Indian Army Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/90/21/d6902154c16ca41c442891f81b77f70a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3B2L4td__ptAj0kZIYbg9dRzi4wXP1cxk0w';" alt="17 Best Quotes For Indian Army Girlfriend Pictures Army Girlfriend Pictures Army Girlfriend Indian Army Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">17 Best Quotes For Indian Army Girlfriend Pictures Army Girlfriend Pictures Army Girlfriend Indian Army Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-are-military-wives-entitled-to-in-a-divorce.html">What Are Military Wives Entitled To In A Divorce</a></li>
+													<li class="list-group-item"><a href="/what-benefits-are-available-for-widows.html">What Benefits Are Available For Widows</a></li>
+													<li class="list-group-item"><a href="/what-are-the-basic-hr-functions.html">What Are The Basic Hr Functions</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-of-being-army-reserve.html">What Are The Benefits Of Being Army Reserve</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-of-a-military-wife.html">What Are The Benefits Of A Military Wife</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-of-being-a-us-marine.html">What Are The Benefits Of Being A Us Marine</a></li>
+													<li class="list-group-item"><a href="/what-benefits-does-army-reserve-get.html">What Benefits Does Army Reserve Get</a></li>
+													<li class="list-group-item"><a href="/what-are-my-rights-if-my-wife-wants-me-to-leave.html">What Are My Rights If My Wife Wants Me To Leave</a></li>
+													<li class="list-group-item"><a href="/what-are-the-signs-of-a-selfish-husband.html">What Are The Signs Of A Selfish Husband</a></li>
+													<li class="list-group-item"><a href="/what-are-the-duties-of-a-human-resources-assistant.html">What Are The Duties Of A Human Resources Assistant</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-of-being-married-to-a-marine.html">What Are The Benefits Of Being Married To A Marine</a></li>
+													<li class="list-group-item"><a href="/what-can-i-do-if-my-husband-kicked-me-out-of-the-house.html">What Can I Do If My Husband Kicked Me Out Of The House</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-of-being-a-marine-reservist.html">What Are The Benefits Of Being A Marine Reservist</a></li>
+													<li class="list-group-item"><a href="/what-are-military-wife-benefits.html">What Are Military Wife Benefits</a></li>
+													<li class="list-group-item"><a href="/what-are-military-disability-benefits.html">What Are Military Disability Benefits</a></li>
+													<li class="list-group-item"><a href="/what-benefits-does-the-coast-guard-offer.html">What Benefits Does The Coast Guard Offer</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-navy-spouses-get.html">What Benefits Do Navy Spouses Get</a></li>
+													<li class="list-group-item"><a href="/what-are-some-military-sayings.html">What Are Some Military Sayings</a></li>
+													<li class="list-group-item"><a href="/what-are-my-rights-if-my-husband-cheated-on-me.html">What Are My Rights If My Husband Cheated On Me</a></li>
+													<li class="list-group-item"><a href="/what-are-military-benefits-called.html">What Are Military Benefits Called</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

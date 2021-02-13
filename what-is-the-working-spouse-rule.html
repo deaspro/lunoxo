@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The Working Spouse Rule - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The Working Spouse Rule",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/32/d8/d8/32d8d81ab747ad59f366637eae92f87e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+working+spouse+rule",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The Working Spouse Rule</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Working Spouse Rule limits spousal coverage under your plan if that spouse has adequate coverage with their employer. The relationship isnt physical though can get flirty at times. Spousal carve-outs and spousal surcharges also known as the Working Spouse Rule have become more common after the Affordable Care Act ACA as the ACA provided a mechanism to make coverage available for spouses through the Marketplace. <br>				
+			</p>
+										<a class="badge badge-dark" href="/army-navy-contact-number-olongapo.html">army navy contact number olongapo</a>
+											<a class="badge badge-dark" href="/army-pay-contact.html">army pay contact</a>
+											<a class="badge badge-dark" href="/army-reserve-benefits-for-dependents.html">army reserve benefits for dependents</a>
+											<a class="badge badge-warning" href="/army-pension-scheme-contact.html">army pension scheme contact</a>
+											<a class="badge badge-danger" href="/army-navy-delivery-phone-number.html">army navy delivery phone number</a>
+											<a class="badge badge-secondary" href="/army-navy-delivery-number-ph.html">army navy delivery number ph</a>
+											<a class="badge badge-light" href="/army-new-spouse-checklist.html">army new spouse checklist</a>
+											<a class="badge badge-warning" href="/army-pha-online-link.html">army pha online link</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to visit the ideal site.  Our website gives you suggestions for seeing the maximum quality video and picture content, hunt and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, so we recommend this video that you see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/d8/d8/32d8d81ab747ad59f366637eae92f87e.jpg" data-lightbox="roadtrip" data-title="10 Rules For A Happy Marriage Marriage Tips Husbandandwife Happy Marriage Marriage Life Marriage Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/d8/d8/32d8d81ab747ad59f366637eae92f87e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmBuE6J--f_lfOoy1kRw6brRCnjZ_OL6klSA';" alt="10 Rules For A Happy Marriage Marriage Tips Husbandandwife Happy Marriage Marriage Life Marriage Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Rules For A Happy Marriage Marriage Tips Husbandandwife Happy Marriage Marriage Life Marriage Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/21/d0/cf21d0ba071b59f1d469fc3d3561842e.png" data-lightbox="roadtrip" data-title="While Divorce Is Essentially A Civil Issue There Are Certain Aspects Of A Divorce That Are Unique To T Military Divorce Military Benefits Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/21/d0/cf21d0ba071b59f1d469fc3d3561842e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoEdZKKyIFut2n5okNWk_ijQvjlbfBP8sVHQ';" alt="While Divorce Is Essentially A Civil Issue There Are Certain Aspects Of A Divorce That Are Unique To T Military Divorce Military Benefits Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">While Divorce Is Essentially A Civil Issue There Are Certain Aspects Of A Divorce That Are Unique To T Military Divorce Military Benefits Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/f9/5d/67f95df0610d3b6a8516a5465d26a69a.jpg" data-lightbox="roadtrip" data-title="How To Run A Business With Your Spouse Bloguettes Business Partner Quotes Partner Quotes Working Together Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/f9/5d/67f95df0610d3b6a8516a5465d26a69a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvN3-jXv408pgp2IwhyIimTrJbmMSwxnoK5g';" alt="How To Run A Business With Your Spouse Bloguettes Business Partner Quotes Partner Quotes Working Together Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Run A Business With Your Spouse Bloguettes Business Partner Quotes Partner Quotes Working Together Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/63/99/a76399054cdaf4babbf92a2884c18c20.png" data-lightbox="roadtrip" data-title="Want To Learn More About This Rule Click To Receive Family Fire S 10 Rules For Fair Fighting Fighting Fair Fair Fighting Rules Communication In Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/63/99/a76399054cdaf4babbf92a2884c18c20.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-lLi7lHfwCoBMjvPVoy8tOruxoLzgzyg8g';" alt="Want To Learn More About This Rule Click To Receive Family Fire S 10 Rules For Fair Fighting Fighting Fair Fair Fighting Rules Communication In Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Want To Learn More About This Rule Click To Receive Family Fire S 10 Rules For Fair Fighting Fighting Fair Fair Fighting Rules Communication In Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/75/e9/1675e9bc63bc030346d8b88d4d7643cb.jpg" data-lightbox="roadtrip" data-title="This Is A Nice Rule For Yourself Too Even If You Don T Have A Significant Other Future Wedding Plans How To Plan Love And Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/75/e9/1675e9bc63bc030346d8b88d4d7643cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRicCg2bFwhn4EsLgtwPPMdTpM1re6-EksfZw';" alt="This Is A Nice Rule For Yourself Too Even If You Don T Have A Significant Other Future Wedding Plans How To Plan Love And Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is A Nice Rule For Yourself Too Even If You Don T Have A Significant Other Future Wedding Plans How To Plan Love And Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7b/a2/ed/7ba2ed77fa77625949381b2330423fe0.jpg" data-lightbox="roadtrip" data-title="Don T Forget The 5000 Rule Always Refer To The No Kids When It Doesn T Apply It Is 11 14 Not 11 15 Total Payout Per Spouse Quotes Quote Creator How To Apply">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7b/a2/ed/7ba2ed77fa77625949381b2330423fe0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDp1vBV_DIDwW7U4Oqhi_RpktueJSM7eHrdQ';" alt="Don T Forget The 5000 Rule Always Refer To The No Kids When It Doesn T Apply It Is 11 14 Not 11 15 Total Payout Per Spouse Quotes Quote Creator How To Apply">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don T Forget The 5000 Rule Always Refer To The No Kids When It Doesn T Apply It Is 11 14 Not 11 15 Total Payout Per Spouse Quotes Quote Creator How To Apply</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/dd/d0/1f/ddd01fa2dd0d5751d8c93eba538f0d0f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDp1vBV_DIDwW7U4Oqhi_RpktueJSM7eHrdQ';" alt="Don T Forget The 5000 Rule Always Refer To The No Kids When It Doesn T Apply It Is 11 14 Not 11 15 Total Payout Per Spouse Quotes Quote Creator How To Apply">
+										<div class="card-body">
+						<h3 class="h5"><b>A working spouse is eligible for coverage under their employers plan but elects to be a dependent under their spouses plan at your company.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the working spouse rule</strong>. 
+								
+																	The innocent spouse rule is a provision of US. 
+																	Under the ACA employer pay or play mandate applicable large employers are only required to cover their full-time employees and dependent children to avoid a penalty. 
+																	The way a working-spouse policy is communicated will determine how well it is received Farren advises. 
+																	Help us improve GOVUK. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are no age restrictions on a Roth IRA for a non-working spouse. 
+																	The term Working Spouse Rule refers to some employer provided medical insurance plans. 
+																	A work spouse is someone who works with you and with whom you have a close relationship. 
+																	While you share every major milestone sentimental moment and vulnerability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If one spouse is already receiving their own benefits and later becomes eligible for a spousal benefit there is a formula that is used to determine what amount of spousal benefit if any they may receive. 
+																	An employer cant require that a spouse be covered as far as I understand the rules. 
+																	4 Rules for Keeping the Peace at Work and Home. 
+																	To help us improve GOVUK wed like to know more about your visit today. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Well send you a link to a feedback form. 
+																	Ivy Techs HR professionals deliberately refer to its rule as a working-spouse policy in. 
+																	Harley Jr PhD author of His Needs Her Needs. 
+																	This person makes the investment decisions and is the only one allowed to withdraw money. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They act more like your favorite person in the office who you rely on and spend most of your time with. 
+																	A spousal benefit is reduced 2536 of one percent for each month before normal retirement age up to 36 months. 
+																	A spouse can choose to retire as early as age 62 but doing so may result in a benefit as little as 325 percent of the workers primary insurance amount. 
+																	Once you determine that you meet the eligibility requirements its possible for you to open an IRA in your name and have your working spouse contribute to it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In other words the company sets a policy that if a working spouse has the option of health insurance through his or her employer he or she must take advantage of that plan rather than choose his. 
+																	Rules for Medicare eligibility based on spouses work history To qualify for Medicare Part A benefits at age 65 based on your spouses work history you must meet one of the following requirements. 
+																	It will take only 2 minutes to fill in. 
+																	If the requirements are met the working spouse can make an IRA contribution on behalf of a non-working spouseor a spouse who has little incomeusing the income of the employed spouse to meet the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These types of plans require that if the employees spouse works for a company which also offers medical. 
+																	The only but important role of the spouse earning a higher income is to contribute money. 
+																	Typically this rule falls under three categories. 
+																	We often joke about having a work spousethat someone who knows us just about as well as the guy at home who cant keep his dirty tennis shoes off of the coffee table. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If the number of months exceeds 36 then the benefit is further reduced 512 of. 
+																	They have to offer coverage to the employee can offer to spouse must to child dependents but the employee cant opt-out of any coverage for either their dependents and spouse or themselves. 
+																	An office spouse meets emotional needs going beyond the requirements of the job says Willard F. 
+																	Tax law revised most recently in 1998 which allows a spouse to seek relief from penalties resulting from underpayment of tax by a spouse. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The non-working spouse must be under 70 12 in the year of the contribution for a traditional IRA. 
+																	2 You must be age 62 to file for or receive a spousal benefit but waiting until you are at full retirement age up to 67 depending on when you were born will maximize your benefit. 
+																	Current spouses and ex-spouses if you were married for over 10 years and have not remarried both have eligibility for the spousal benefit. 
+																	Normally a spousal benefit is 50 of the spouses FRA benefit amount reduced if the spouse claiming the spousal benefit is filing for benefits early. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Building an Affair-Proof Marriage. 
+																	The spousal RRSP is registered under the name of the spouse making the lower income and the plan is theirs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/5b/62/305b629daa2908c1347a023c87edc38c.jpg" data-lightbox="roadtrip" data-title="When Your Spouse Doesn T Seem To Care Anymore Spouse Quotes Marriage Quotes Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/5b/62/305b629daa2908c1347a023c87edc38c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6DRqvYev30R0ZsoXg0ohK9BKjC1UeCYLRhg';" alt="When Your Spouse Doesn T Seem To Care Anymore Spouse Quotes Marriage Quotes Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When Your Spouse Doesn T Seem To Care Anymore Spouse Quotes Marriage Quotes Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/7b/a3/897ba31a4ff1ba412753fc24f9d1c337.jpg" data-lightbox="roadtrip" data-title="Powerful Prayers For Your Husband 50 Pack Prayer For You Prayer For Husband Power Of Prayer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/7b/a3/897ba31a4ff1ba412753fc24f9d1c337.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcyoskZGucf3-imKcWrhyGlxL0P0QovPQ91w';" alt="Powerful Prayers For Your Husband 50 Pack Prayer For You Prayer For Husband Power Of Prayer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Powerful Prayers For Your Husband 50 Pack Prayer For You Prayer For Husband Power Of Prayer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/82/08/dd82083ea2c5d5cb17e3fe570abbad1c.jpg" data-lightbox="roadtrip" data-title="30 Ways To Serve Your Spouse Today Grassfed Mama Husband Love Making A Relationship Work Love And Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/82/08/dd82083ea2c5d5cb17e3fe570abbad1c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT94RoByETOcSKYrXd1v20SYMNbbSDh0k5HVA';" alt="30 Ways To Serve Your Spouse Today Grassfed Mama Husband Love Making A Relationship Work Love And Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 Ways To Serve Your Spouse Today Grassfed Mama Husband Love Making A Relationship Work Love And Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/08/1f/9a081fe3a957502257f514d4ab428b82.jpg" data-lightbox="roadtrip" data-title="Should Debt Be A Marriage Deal Breaker How To Have The Debt Talk Debt Payoff Plan Debt Payoff Debt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/08/1f/9a081fe3a957502257f514d4ab428b82.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9DoEnX5Br167v-CjTBCkx8AIYSjmOL0IjPQ';" alt="Should Debt Be A Marriage Deal Breaker How To Have The Debt Talk Debt Payoff Plan Debt Payoff Debt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should Debt Be A Marriage Deal Breaker How To Have The Debt Talk Debt Payoff Plan Debt Payoff Debt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/dc/32/5cdc32b402a399fe351ac358216849d1.jpg" data-lightbox="roadtrip" data-title="Rules For A Happy Marriage Lara Casey 2 Page 2 Words Happy Marriage Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/dc/32/5cdc32b402a399fe351ac358216849d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBNk9IS1uXdK5TImjjElCbYUPiYS7svgkb7Q';" alt="Rules For A Happy Marriage Lara Casey 2 Page 2 Words Happy Marriage Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rules For A Happy Marriage Lara Casey 2 Page 2 Words Happy Marriage Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/b8/e5/d8b8e5b68c0191a02f16c125a3ca4cde.png" data-lightbox="roadtrip" data-title="Morning Routine Morning Routine Thoughts And Feelings Sweet Morning Messages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/b8/e5/d8b8e5b68c0191a02f16c125a3ca4cde.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSivjXEBPsDkBVZhhHa45uVg1bu2PHvWTaQQQ';" alt="Morning Routine Morning Routine Thoughts And Feelings Sweet Morning Messages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Morning Routine Morning Routine Thoughts And Feelings Sweet Morning Messages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/15/b4/ef15b4524bffdd37c1c64236a3f8a5d7.png" data-lightbox="roadtrip" data-title="How To Work With Your Spouse In A Home Business Relationship Blogs Marriage Life College Relationships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/15/b4/ef15b4524bffdd37c1c64236a3f8a5d7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDMPAJlf-HG7p48cAvm1t-axmBbQTIhsa-wQ';" alt="How To Work With Your Spouse In A Home Business Relationship Blogs Marriage Life College Relationships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Work With Your Spouse In A Home Business Relationship Blogs Marriage Life College Relationships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/70/ca/3470ca1b660693ad1efd23879840b450.jpg" data-lightbox="roadtrip" data-title="2020 Military Paydays With Printables Military Pay Military Spouse Blog Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/70/ca/3470ca1b660693ad1efd23879840b450.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBN_BNPntrSgzmKTxxxsuO-PbAyh4GoQl4tw';" alt="2020 Military Paydays With Printables Military Pay Military Spouse Blog Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 Military Paydays With Printables Military Pay Military Spouse Blog Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/37/29/cd/3729cda26ace0818dc5c4832b58bd773.jpg" data-lightbox="roadtrip" data-title="The Guide To Acronyms And Abbreviations For Military Spouses Military Spouse Military Girlfriend Quotes Military Moms Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/37/29/cd/3729cda26ace0818dc5c4832b58bd773.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcZuvB_nBgNCNLRI39tEcoDay5LK6o6igvQg';" alt="The Guide To Acronyms And Abbreviations For Military Spouses Military Spouse Military Girlfriend Quotes Military Moms Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Guide To Acronyms And Abbreviations For Military Spouses Military Spouse Military Girlfriend Quotes Military Moms Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/21/a7/8321a747d68c788a9d13bcae63d69692.png" data-lightbox="roadtrip" data-title="5 Surprizing Ways Your Relationship With Your Spouse Effects Your Children Seemab Zakir Com Relationship Emotional Child Parenting Advice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/21/a7/8321a747d68c788a9d13bcae63d69692.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPRVCgiD7KA7kt5dFEv3Q6wxg4AtBvlFFzkg';" alt="5 Surprizing Ways Your Relationship With Your Spouse Effects Your Children Seemab Zakir Com Relationship Emotional Child Parenting Advice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Surprizing Ways Your Relationship With Your Spouse Effects Your Children Seemab Zakir Com Relationship Emotional Child Parenting Advice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/ed/5c/e5ed5c64373d6196dadc3ebeb6ad4a55.png" data-lightbox="roadtrip" data-title="Navigating Tricare Prime Vs Standard Independent Military Wife Life Army Life Marine Corps Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/ed/5c/e5ed5c64373d6196dadc3ebeb6ad4a55.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnqX8NcEMTHieu9lPIqOtr_9PaTwvcnobINA';" alt="Navigating Tricare Prime Vs Standard Independent Military Wife Life Army Life Marine Corps Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navigating Tricare Prime Vs Standard Independent Military Wife Life Army Life Marine Corps Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/d0/1f/ddd01fa2dd0d5751d8c93eba538f0d0f.jpg" data-lightbox="roadtrip" data-title="Balancing Family And Work Working Life Priorities Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/d0/1f/ddd01fa2dd0d5751d8c93eba538f0d0f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi6fhYPB3R7GXHxsZHR_U-C68JN4_MezstIw';" alt="Balancing Family And Work Working Life Priorities Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Balancing Family And Work Working Life Priorities Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/6d/55/eb/6d55eb922b7a8267c0d0e4fd3b95411f.jpg" data-lightbox="roadtrip" data-title="Pin By Mhel Dizon On Inspirational Quotes Payment Schedule Contribution Sss">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/6d/55/eb/6d55eb922b7a8267c0d0e4fd3b95411f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQErBX5FT1YUbASnTocsMoqirfCOOTk4VuyRQ';" alt="Pin By Mhel Dizon On Inspirational Quotes Payment Schedule Contribution Sss">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Mhel Dizon On Inspirational Quotes Payment Schedule Contribution Sss</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/does-military-pay-for-college-for-spouse.html">Does Military Pay For College For Spouse</a></li>
+													<li class="list-group-item"><a href="/does-scra-cover-spouses.html">Does Scra Cover Spouses</a></li>
+													<li class="list-group-item"><a href="/does-my-spouse-have-depression.html">Does My Spouse Have Depression</a></li>
+													<li class="list-group-item"><a href="/does-my-spouse-lack-empathy.html">Does My Spouse Lack Empathy</a></li>
+													<li class="list-group-item"><a href="/does-jeremy-die-on-army-wives.html">Does Jeremy Die On Army Wives</a></li>
+													<li class="list-group-item"><a href="/does-hm-give-military-discount.html">Does Hm Give Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-mental-illness-disqualify-you-from-the-military.html">Does Mental Illness Disqualify You From The Military</a></li>
+													<li class="list-group-item"><a href="/does-fitbit-inspire-hr-have-24-hour-clock.html">Does Fitbit Inspire Hr Have 24 Hour Clock</a></li>
+													<li class="list-group-item"><a href="/does-navy-federal-offer-scholarships.html">Does Navy Federal Offer Scholarships</a></li>
+													<li class="list-group-item"><a href="/does-military-have-life-insurance.html">Does Military Have Life Insurance</a></li>
+													<li class="list-group-item"><a href="/does-military-pay-for-spouses-college.html">Does Military Pay For Spouses College</a></li>
+													<li class="list-group-item"><a href="/does-hearing-loss-disqualify-you-from-the-military.html">Does Hearing Loss Disqualify You From The Military</a></li>
+													<li class="list-group-item"><a href="/does-scra-apply-to-disabled-veterans.html">Does Scra Apply To Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/does-military-spouse-pay-state-taxes.html">Does Military Spouse Pay State Taxes</a></li>
+													<li class="list-group-item"><a href="/does-dual-military-get-family-separation-pay.html">Does Dual Military Get Family Separation Pay</a></li>
+													<li class="list-group-item"><a href="/does-being-a-navy-seal-change-you.html">Does Being A Navy Seal Change You</a></li>
+													<li class="list-group-item"><a href="/does-fitbit-have-military-time.html">Does Fitbit Have Military Time</a></li>
+													<li class="list-group-item"><a href="/does-military-tuition-assistance-cover-certifications.html">Does Military Tuition Assistance Cover Certifications</a></li>
+													<li class="list-group-item"><a href="/does-my-carrier.html">Does My Carrier</a></li>
+													<li class="list-group-item"><a href="/does-army-tuition-assistance-pay-for-doctorate.html">Does Army Tuition Assistance Pay For Doctorate</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

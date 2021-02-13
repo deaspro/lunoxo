@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Ring Tattoo Regulations - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Ring Tattoo Regulations",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/564x/99/44/9f/99449f2511ae2da872e7feed49a8000b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+ring+tattoo+regulations",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Ring Tattoo Regulations</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Tattooing semi-permanent skin colouring cosmetic. Hand tattoos are limited to a single-band ring tattoo on one finger of one hand. Tattoos or brands regardless of subject matter are prohibited on the head face except for permanent makeup as provided in paragraph 32b2 neck anything above the t-shirt neckline to include oninside the eyelids mouth and ears wrists and hands except Soldiers may have one ring tattoo on each hand below the joint of the bottom segment portion closest to the palm of the finger. <br>				
+			</p>
+										<a class="badge badge-dark" href="/my-husband-left-me-to-take-care-of-his-mother.html">my husband left me to take care of his mother</a>
+											<a class="badge badge-primary" href="/my-husband-lacks-empathy-for-me.html">my husband lacks empathy for me</a>
+											<a class="badge badge-success" href="/my-husband-left-me-for-a-prettier-woman.html">my husband left me for a prettier woman</a>
+											<a class="badge badge-danger" href="/my-husband-left-me-quotes.html">my husband left me quotes</a>
+											<a class="badge badge-secondary" href="/my-husband-just-died-what-do-i-do-now.html">my husband just died what do i do now</a>
+											<a class="badge badge-danger" href="/my-husband-left-me-because-i-cheated.html">my husband left me because i cheated</a>
+											<a class="badge badge-success" href="/my-husband-kicked-me-when-im-down.html">my husband kicked me when im down</a>
+											<a class="badge badge-dark" href="/my-husband-left-me-for-someone-else-will-he-come-back.html">my husband left me for someone else will he come back</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to pay a visit to the ideal site.  Our site gives you suggestions for seeing the highest quality video and picture content, hunt and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, so we recommend this video that you see.  It is also possible to bring about supporting this site by sharing videos and images that you like on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/a5/9d/97a59dedd981d45fe14ff114703b7ac6.png" data-lightbox="roadtrip" data-title="Army Tattoo Policy What S Allowed And What S Not Army Tattoos Us Army Tattoos Army Tattoo Policy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/a5/9d/97a59dedd981d45fe14ff114703b7ac6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT02jwdWldL8J5VLpESmzT4lfpNY-4RIX1w4A';" alt="Army Tattoo Policy What S Allowed And What S Not Army Tattoos Us Army Tattoos Army Tattoo Policy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Tattoo Policy What S Allowed And What S Not Army Tattoos Us Army Tattoos Army Tattoo Policy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/41/c6/3e41c6b9e035cafbad9dceeac2024a22.jpg" data-lightbox="roadtrip" data-title="22 Wedding Ring Tattoos That Are Absolutely Adorable Wedding Band Tattoo Tattoo Wedding Rings Couple Ring Finger Tattoos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/41/c6/3e41c6b9e035cafbad9dceeac2024a22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUwHnn80neAJcbHrV5k_NB8NnyfsMhrZc6SA';" alt="22 Wedding Ring Tattoos That Are Absolutely Adorable Wedding Band Tattoo Tattoo Wedding Rings Couple Ring Finger Tattoos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">22 Wedding Ring Tattoos That Are Absolutely Adorable Wedding Band Tattoo Tattoo Wedding Rings Couple Ring Finger Tattoos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/21/95/df2195f6f64126e3468fd8f7576a0123.png" data-lightbox="roadtrip" data-title="Tattoo Policy For Each Branch Of The Military Updated For 2019 Relax Tattoo Tattoos Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/21/95/df2195f6f64126e3468fd8f7576a0123.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPS9VUBsrZ1Tti2GuOczIx6GSj5rr9vetyjg';" alt="Tattoo Policy For Each Branch Of The Military Updated For 2019 Relax Tattoo Tattoos Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tattoo Policy For Each Branch Of The Military Updated For 2019 Relax Tattoo Tattoos Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/88/15/d888150a85511c72f52fe1ab43aaff85.jpg" data-lightbox="roadtrip" data-title="Tattoo Policy Army 2019 Tattoos Sleeve Tattoos Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/88/15/d888150a85511c72f52fe1ab43aaff85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_A7v0jUkwEvcOKFwXkvJhkATauWTQtVIfWA';" alt="Tattoo Policy Army 2019 Tattoos Sleeve Tattoos Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tattoo Policy Army 2019 Tattoos Sleeve Tattoos Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/4a/84/f54a8440c9bbbce582d534ea406b5087.jpg" data-lightbox="roadtrip" data-title="Air Force Relaxes Tattoo Policy Relax Tattoo Air Force Tattoos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/4a/84/f54a8440c9bbbce582d534ea406b5087.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjz2jPGSJrU_2YxrIBEG1_r1D0JGexYe_5oA';" alt="Air Force Relaxes Tattoo Policy Relax Tattoo Air Force Tattoos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Relaxes Tattoo Policy Relax Tattoo Air Force Tattoos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/fd/63/e1fd632480d885f62346dcd9ebfe1371.jpg" data-lightbox="roadtrip" data-title="30 Elegant Finger Tattoos For Women Hot Tattoo Finger Tattoo For Women Trendy Tattoos Tattoos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/fd/63/e1fd632480d885f62346dcd9ebfe1371.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXqs7KHZZTVICr0hT12woRufVR8dQebNBLVA';" alt="30 Elegant Finger Tattoos For Women Hot Tattoo Finger Tattoo For Women Trendy Tattoos Tattoos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 Elegant Finger Tattoos For Women Hot Tattoo Finger Tattoo For Women Trendy Tattoos Tattoos</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/8e/5f/75/8e5f7524c3a97b9eb997c4e76f153151--ring-tattoos-tatoos.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXqs7KHZZTVICr0hT12woRufVR8dQebNBLVA';" alt="30 Elegant Finger Tattoos For Women Hot Tattoo Finger Tattoo For Women Trendy Tattoos Tattoos">
+										<div class="card-body">
+						<h3 class="h5"><b>The rules now allow small finger tattoos as long as they could be covered by a ring.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army ring tattoo regulations</strong>. 
+								
+																	Army Tattoo Policy The Army prohibits any tattoos on the neck head face hands wrists or above the collar of a t-shirt. 
+																	The Army tattoo policy was loosened at the height of the combat actions in Iraq and Afghanistan to assist the Army Recruiting Command in enlisting qualified members. 
+																	The Coast Guard also allows Ultraviolet or black light tattoos. 
+																	Permanent makeup tattoo such as tattooed eyeliner and eyebrows are allowed provided it does not go against the armys. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Soldiers will no longer be limited to a particular size or number of tattoos permitted on the arms or legs Odierno said provided those tattoos are not extremist indecent sexist or racist. 
+																	The 25 rule refers to 25 of the body area being covered by tattoos AND could not be visible while wearing the uniform. 
+																	The Army published an update to Army Regulation 670-1 on Friday meaning the new tattoo rules are. 
+																	It also limited additional tattoos in those places. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However now there are no limits on the size or number of tattoos soldiers can get on their body. 
+																	The exception is a ring tattoo on each hand Dailey said. 
+																	Also banned are tattoos that are sexist racist. 
+																	Tattoo content regulations are identical across all military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The number size and placement of tattoos have been dialed back under revised Army Regulation 670-1 which governs the Armys grooming standards and proper wear of the uniform. 
+																	Regarding the change of rules a spokesperson for the Ministry of Defence MoD said The new policy allows. 
+																	The army allows soldiers to have a ring tattoo on each hand. 
+																	Soldiers are still not allowed to have tattoos on their neck head face wrists or hands. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The tattoo must however not exceeds the lowest knuckle. 
+																	Soldiers are allowed to have one ring tattoo per hand. 
+																	When it was implemented the current Army tattoo policy did not force out Soldiers who had tattoos below the elbow or knee or above the neck line. 
+																	Army tattoo policy also states that leg tattoos must be two inches below or above the knee. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However the ring tattoo must not extend past the first knuckle from the base where a ring would typically rest and cannot be on the thumb. 
+																	The current tattoo policy allows for females to wear permanent tattooed make-up as long as it is of an acceptable skin tone and also allows for tattoos to be on the back of the neck. 
+																	There is no limit to the number of tattoos you can have You can NOT have tattoos on your wrists hands neck or face The only exception to this is a ring tattoo one per hand Sexist racist extremist and indecent tattoos are NOT allowed. 
+																	Cosmetic tattoos are allowed but only on women and must be considered natural and conservative. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However the policy did require Soldiers to have those tattoos documented. 
+																	Although hand tattoos are prohibited you can have one single band ring tattoo on each hand. 
+																	TATTOO RULE 1 The general rule is if your tattoo is visible on a passport photo it will be deemed unacceptable TATTOO RULE 2 Tattoos that are offensive or obscene ie those that depict sex acts violence or illegal drugs for example are a no-no. 
+																	One exception was made for the hand tattoos. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You need to contact the local council where your premises are based to get a tattoo piercing and electrolysis licence. 
+																	Soldiers can now get their arms legs and most of their bodies covered in tattoos. 
+																	However tattoos brands or body markings on the head neck face tongue lips andor scalp still remain prohibited. 
+																	The main takeaways regarding the Army Tattoo Policy are. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Accessing applicants must adhere to this same policy. 
+																	Generally the Armys tattoo policy allows most tattoos with the exception of those that fall into the offensive categories above but forbids most of those that would be visible in uniform. 
+																	Army tattoo policy prohibits any tattoos on the head face neck above the t-shirt collar wrists or hands other than one ring tattoo per hand that must rest where a normal ring would. 
+																	The Army regulations do however allow one ring tattoo on each hand although it must not extend beyond where a ring naturally would rest on your finger between the lowest knuckle and your hand. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Even small Army tattoos must abide by this Army tattoo policy. 
+																	Face neck and hand tattoos still remain against regulation as well asderogatory and sexist tattoos. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/34/23/fa34232ee170fad9d008bc3cbec54425.jpg" data-lightbox="roadtrip" data-title="Wedding Ring Tattoo Ring Tattoo Designs Tattoo Wedding Rings Wedding Band Tattoo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/34/23/fa34232ee170fad9d008bc3cbec54425.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYKt5Zbnot7gi0wPqTxwoQmyGmxVbH2h-gYQ';" alt="Wedding Ring Tattoo Ring Tattoo Designs Tattoo Wedding Rings Wedding Band Tattoo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wedding Ring Tattoo Ring Tattoo Designs Tattoo Wedding Rings Wedding Band Tattoo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/1c/76/651c76978fafa7e73b193544a88ed374.jpg" data-lightbox="roadtrip" data-title="Wedding Bands Wedding Band Tattoo Ring Tattoo Designs Tattoo Wedding Rings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/1c/76/651c76978fafa7e73b193544a88ed374.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt_ivvSzKI0I0PAYOrKCxVORaSZ3Cr5-Pfhg';" alt="Wedding Bands Wedding Band Tattoo Ring Tattoo Designs Tattoo Wedding Rings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wedding Bands Wedding Band Tattoo Ring Tattoo Designs Tattoo Wedding Rings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/35/70/2f3570379a81c42d28468d28d0ce1fe3.jpg" data-lightbox="roadtrip" data-title="Pin By Jacob Ladley On Wedding Ring Tattoos Ring Tattoo Designs Wedding Band Tattoo Wedding Finger Tattoos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/35/70/2f3570379a81c42d28468d28d0ce1fe3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5n8KzV4PojtlitePKmZDV06FtW_DVHDiXrw';" alt="Pin By Jacob Ladley On Wedding Ring Tattoos Ring Tattoo Designs Wedding Band Tattoo Wedding Finger Tattoos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jacob Ladley On Wedding Ring Tattoos Ring Tattoo Designs Wedding Band Tattoo Wedding Finger Tattoos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8e/5f/75/8e5f7524c3a97b9eb997c4e76f153151--ring-tattoos-tatoos.jpg" data-lightbox="roadtrip" data-title="Pin By Amy Sanders On Finger Tattoos Ring Tattoo Designs Ring Tattoos Finger Tattoos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8e/5f/75/8e5f7524c3a97b9eb997c4e76f153151--ring-tattoos-tatoos.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXWJRntnOlOxOxKAIUj-gjYXftBj-LIJ-3lw';" alt="Pin By Amy Sanders On Finger Tattoos Ring Tattoo Designs Ring Tattoos Finger Tattoos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Amy Sanders On Finger Tattoos Ring Tattoo Designs Ring Tattoos Finger Tattoos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/2c/35/482c357f7c3e53eebe83f72d1d786c42.jpg" data-lightbox="roadtrip" data-title="Pin By Tonya Morrow On Tattoos Wedding Band Tattoo Band Tattoo Matching Tattoos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/2c/35/482c357f7c3e53eebe83f72d1d786c42.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6CVSDhjIzq_S220T8aThPoeFaKckCaQmtbA';" alt="Pin By Tonya Morrow On Tattoos Wedding Band Tattoo Band Tattoo Matching Tattoos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Tonya Morrow On Tattoos Wedding Band Tattoo Band Tattoo Matching Tattoos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/8e/c2/548ec2358ff275c4c6d4c8694bf719d4.jpg" data-lightbox="roadtrip" data-title="Marine Leaders To Review Controversial Tattoo Policy Military Tattoos Marine Corps Tattoos Army Tattoos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/8e/c2/548ec2358ff275c4c6d4c8694bf719d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDPKZTqQjIOpPdKKL0rNRBYl2rsGJxlnlr6g';" alt="Marine Leaders To Review Controversial Tattoo Policy Military Tattoos Marine Corps Tattoos Army Tattoos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Leaders To Review Controversial Tattoo Policy Military Tattoos Marine Corps Tattoos Army Tattoos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/69/37/65/693765fba23aa2ed54dbddc2336387ce.jpg" data-lightbox="roadtrip" data-title="Pin By Ruthie Mcdaniel On My Happy Home Wedding Ring Tattoo For Men Wedding Band Tattoo Tattoo Wedding Rings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/69/37/65/693765fba23aa2ed54dbddc2336387ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGtk3sRO381xsBXIzEh9ZcLlXboLk91lWGxQ';" alt="Pin By Ruthie Mcdaniel On My Happy Home Wedding Ring Tattoo For Men Wedding Band Tattoo Tattoo Wedding Rings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ruthie Mcdaniel On My Happy Home Wedding Ring Tattoo For Men Wedding Band Tattoo Tattoo Wedding Rings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/6f/3f/06/6f3f06fdf1d59633800264896a150d2b--ring-finger-tattoos-wedding-ring-tattoos.jpg" data-lightbox="roadtrip" data-title="Finger Tattoo Ring Tattoo Designs Ring Finger Tattoos Tattoo Wedding Rings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/6f/3f/06/6f3f06fdf1d59633800264896a150d2b--ring-finger-tattoos-wedding-ring-tattoos.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXK2HGxD2KS1i11Xi-Oxg1IPAHP50hOFhCDw';" alt="Finger Tattoo Ring Tattoo Designs Ring Finger Tattoos Tattoo Wedding Rings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Finger Tattoo Ring Tattoo Designs Ring Finger Tattoos Tattoo Wedding Rings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/c5/66/d6c566ddba9d46134a0c951763b1fd30.png" data-lightbox="roadtrip" data-title="Pin By Stacy Reutzel On Tat Wedding Band Tattoo Matching Tattoos Band Tattoo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/c5/66/d6c566ddba9d46134a0c951763b1fd30.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrJlIwmf2ewanhw-jOrgRIRWLdpj-a1a08kg';" alt="Pin By Stacy Reutzel On Tat Wedding Band Tattoo Matching Tattoos Band Tattoo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Stacy Reutzel On Tat Wedding Band Tattoo Matching Tattoos Band Tattoo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/63/3e/2c633ec73649790e8ab521928b791224.jpg" data-lightbox="roadtrip" data-title="20 Awesome Wedding Ring Tattoos Weddingrings Weddingringshoot Wedding Crazyforus Bridetob Ring Tattoo Designs Tattoo Wedding Rings Wedding Band Tattoo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/63/3e/2c633ec73649790e8ab521928b791224.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_U4aayynz1KEOQfcNU1arM7hSr1dq4KZa-Q';" alt="20 Awesome Wedding Ring Tattoos Weddingrings Weddingringshoot Wedding Crazyforus Bridetob Ring Tattoo Designs Tattoo Wedding Rings Wedding Band Tattoo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">20 Awesome Wedding Ring Tattoos Weddingrings Weddingringshoot Wedding Crazyforus Bridetob Ring Tattoo Designs Tattoo Wedding Rings Wedding Band Tattoo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/83/25/5d832586a2bf8d9cf1ab5d94b07aaeee.jpg" data-lightbox="roadtrip" data-title="Pin On Paris">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/83/25/5d832586a2bf8d9cf1ab5d94b07aaeee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5UX6CIgcBoRwOyegsahC52XdLOS41E01KXQ';" alt="Pin On Paris">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Paris</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/05/b4/06/05b4065139871a71d2bad71060359c96.jpg" data-lightbox="roadtrip" data-title="21 Ringfinger Tattoos Fur Paare 21 Ring Finger Tattoos Fur Paare 20 Einzigartige Einzigartige Finger Tattoos For Couples Ring Finger Tattoos Couple Tattoos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/05/b4/06/05b4065139871a71d2bad71060359c96.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMYo8anPO3JBy8uc5Qj_md-C9eebNszbbFsw';" alt="21 Ringfinger Tattoos Fur Paare 21 Ring Finger Tattoos Fur Paare 20 Einzigartige Einzigartige Finger Tattoos For Couples Ring Finger Tattoos Couple Tattoos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">21 Ringfinger Tattoos Fur Paare 21 Ring Finger Tattoos Fur Paare 20 Einzigartige Einzigartige Finger Tattoos For Couples Ring Finger Tattoos Couple Tattoos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/99/44/9f/99449f2511ae2da872e7feed49a8000b.jpg" data-lightbox="roadtrip" data-title="28 Unterarm Tattoo Mann Vorlagen In 2020 Eye Tattoo Meaning Lucky Tattoo Tattoo Designs Men">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/99/44/9f/99449f2511ae2da872e7feed49a8000b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF-OtJCGmuWQntTesGlFW_OBEiTPffqnZ8Pw';" alt="28 Unterarm Tattoo Mann Vorlagen In 2020 Eye Tattoo Meaning Lucky Tattoo Tattoo Designs Men">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">28 Unterarm Tattoo Mann Vorlagen In 2020 Eye Tattoo Meaning Lucky Tattoo Tattoo Designs Men</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/list-of-military-spouse-benefits.html">List Of Military Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/login-to-my-carmax.html">Login To My Carmax</a></li>
+													<li class="list-group-item"><a href="/list-of-military-benefits-after-discharge.html">List Of Military Benefits After Discharge</a></li>
+													<li class="list-group-item"><a href="/little-rock-air-force-base-gym-hours.html">Little Rock Air Force Base Gym Hours</a></li>
+													<li class="list-group-item"><a href="/life-of-army-wives.html">Life Of Army Wives</a></li>
+													<li class="list-group-item"><a href="/login-to-my-cash-plus-account.html">Login To My Cash Plus Account</a></li>
+													<li class="list-group-item"><a href="/login-to-my-campus.html">Login To My Campus</a></li>
+													<li class="list-group-item"><a href="/life-insurance-for-military-spouses.html">Life Insurance For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/login-to-my-time-warner-cable-account.html">Login To My Time Warner Cable Account</a></li>
+													<li class="list-group-item"><a href="/login-to-my-cash-passport.html">Login To My Cash Passport</a></li>
+													<li class="list-group-item"><a href="/life-after-being-a-navy-seal.html">Life After Being A Navy Seal</a></li>
+													<li class="list-group-item"><a href="/login-to-my-hikvision-cameras.html">Login To My Hikvision Cameras</a></li>
+													<li class="list-group-item"><a href="/louisiana-veteran-dependent-education-benefits.html">Louisiana Veteran Dependent Education Benefits</a></li>
+													<li class="list-group-item"><a href="/life-of-army-engineer.html">Life Of Army Engineer</a></li>
+													<li class="list-group-item"><a href="/login-to-my-arlo-camera.html">Login To My Arlo Camera</a></li>
+													<li class="list-group-item"><a href="/linkedin-for-military-spouses.html">Linkedin For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/login-sscnbkngoid-oktober-2019.html">Login Sscnbkngoid Oktober 2019</a></li>
+													<li class="list-group-item"><a href="/lifetime-show-army-wives.html">Lifetime Show Army Wives</a></li>
+													<li class="list-group-item"><a href="/login-to-my-cash-app.html">Login To My Cash App</a></li>
+													<li class="list-group-item"><a href="/legit-work-from-home-jobs-for-military-spouses.html">Legit Work From Home Jobs For Military Spouses</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

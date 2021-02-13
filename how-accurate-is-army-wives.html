@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How Accurate Is Army Wives - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How Accurate Is Army Wives",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/4b/d4/f8/4bd4f897f2f21f47f40a099d818368e4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+accurate+is+army+wives",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How Accurate Is Army Wives</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Discover and save your own Pins on Pinterest. Injecting doses of reality into the storytelling affords Army Wives a chance to command respect as a reputable soap with heart. Four women and one man share the common bond of loving someone in the US. <br>				
+			</p>
+										<a class="badge badge-success" href="/mycanal-you-dont-have-permission-to-access.html">mycanal you dont have permission to access</a>
+											<a class="badge badge-info" href="/mycanal-this-is-us.html">mycanal this is us</a>
+											<a class="badge badge-secondary" href="/mycanal-telecharger.html">mycanal telecharger</a>
+											<a class="badge badge-dark" href="/mycanal-ne-souvre-plus.html">mycanal ne souvre plus</a>
+											<a class="badge badge-secondary" href="/mycanal-plus-africa.html">mycanal plus africa</a>
+											<a class="badge badge-success" href="/mycanal-xbox-one-probleme.html">mycanal xbox one probleme</a>
+											<a class="badge badge-secondary" href="/mycanal-royaume-uni.html">mycanal royaume uni</a>
+											<a class="badge badge-success" href="/mycanal-uk.html">mycanal uk</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to pay a visit to the right site.  Our site gives you suggestions for seeing the highest quality video and picture content, hunt and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video for you to see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/53/74/c45374d492420f457860bed4aa23c87f.jpg" data-lightbox="roadtrip" data-title="Army Wives Perpetuating Old Tired Spouse Stereotypes Word Love This Show Best Ever Army Wives Army Favorite Tv Shows">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/53/74/c45374d492420f457860bed4aa23c87f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPFycAYTQGILQiUeaj19ME2upbpNb71TuBA';" alt="Army Wives Perpetuating Old Tired Spouse Stereotypes Word Love This Show Best Ever Army Wives Army Favorite Tv Shows">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wives Perpetuating Old Tired Spouse Stereotypes Word Love This Show Best Ever Army Wives Army Favorite Tv Shows</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/5b/c5/f25bc507e6d527fc490ce79ae81a7790.jpg" data-lightbox="roadtrip" data-title="Army Wives One Of My Favorite Shows Army Wives Abc Studios Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/5b/c5/f25bc507e6d527fc490ce79ae81a7790.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJLk7Q2UX5MAvW2Vrw55JWmqwEz01IvLqGLg';" alt="Army Wives One Of My Favorite Shows Army Wives Abc Studios Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wives One Of My Favorite Shows Army Wives Abc Studios Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f9/54/00/f954003bb56e1b9cd42a912efa1e3037.jpg" data-lightbox="roadtrip" data-title="These Amazing Quotes About Military Wives Are So Accurate It S Scary In 2020 Military Wife Quotes Military Wife Life Military Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f9/54/00/f954003bb56e1b9cd42a912efa1e3037.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZfNpQ45bpA9u6fhmO6-8eef07bXJ17ojqow';" alt="These Amazing Quotes About Military Wives Are So Accurate It S Scary In 2020 Military Wife Quotes Military Wife Life Military Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">These Amazing Quotes About Military Wives Are So Accurate It S Scary In 2020 Military Wife Quotes Military Wife Life Military Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nydailynews.com/resizer/YeFhuksT9omuwhbKEtMtpOvJYl0=/415x308/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/UEN2CCJ57NH7V4MLEWZ4FXVAVQ.jpg" data-lightbox="roadtrip" data-title="On The Toughest Possible Loss Lifetime S Army Wives Has Winning Episode New York Daily News">
+											<img class="card-img v-image ads-img " src="https://www.nydailynews.com/resizer/YeFhuksT9omuwhbKEtMtpOvJYl0=/415x308/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/UEN2CCJ57NH7V4MLEWZ4FXVAVQ.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGkEHHNQm5p5ykJ1OH_L0bGy-5pikcbGJ-3g';" alt="On The Toughest Possible Loss Lifetime S Army Wives Has Winning Episode New York Daily News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">On The Toughest Possible Loss Lifetime S Army Wives Has Winning Episode New York Daily News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/5a/84/53/5a8453e4b1067e4be32ff488802ec69f--army-wife-quotes-military-quotes.jpg" data-lightbox="roadtrip" data-title="The Anti Army Wife Army Wife Quotes Army Wives Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/5a/84/53/5a8453e4b1067e4be32ff488802ec69f--army-wife-quotes-military-quotes.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC_s4CV-1Mgvjx8LCX16NzPKOSjzb3NT_C8Q';" alt="The Anti Army Wife Army Wife Quotes Army Wives Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Anti Army Wife Army Wife Quotes Army Wives Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/75/7e/0b757eae89408cff9d2cf889ea16515e.jpg" data-lightbox="roadtrip" data-title="Army Wives Army Wives Army Wife Tv Shows">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/75/7e/0b757eae89408cff9d2cf889ea16515e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSBsQXuuJBm5CIgHPlBCRtQRWgJaBXUXEfWA';" alt="Army Wives Army Wives Army Wife Tv Shows">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wives Army Wives Army Wife Tv Shows</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/0e/02/3e/0e023eeddb14f5da1784d10bd0debe85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSBsQXuuJBm5CIgHPlBCRtQRWgJaBXUXEfWA';" alt="Army Wives Army Wives Army Wife Tv Shows">
+										<div class="card-body">
+						<h3 class="h5"><b>The plan was for DJ.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How accurate is army wives</strong>. 
+								
+																	Holly Truman Season 7. 
+																	He would be joining the Army soon after graduation and though Pam had no idea at the time there was the purpose of this get together. 
+																	Created by Katherine Fugate. 
+																	2007 Lifetime 13 episodes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Wives holds a score of 65 out of 100 on Metacritic based on fifteen reviews for the first season. 
+																	How accurate is the Lifetime Networks Army Wives new series. 
+																	My husband is in the National Guard and I married him after he was discharged from active duty so Ive never had to experience living on post. 
+																	Army Wives is a patriotic and thought-provoking drama about five military spouses who share friendship secrets home and heartache. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She and Denise as the older and more experienced Army wives often help out the other wives especially the younger and newly married ones. 
+																	Holly Truman portrayed by Elle McLemore is the wife of Private Tim Truman. 
+																	The movie was inspired by the real Military Wives Choirs a network of 75 choirs in British military bases around the United Kingdom and abroad. 
+																	Her feature writing include Marshalls star-laden pics New Years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And Pam to marry and this was the first of a few meetups for them to get acquainted with one another before they said their vows. 
+																	Dec 14 2020 - Claudia joy rip and Micheal Emmalin Holden Amanda Holden rip roxy and Trevor Finn rj wyatt and drew Leblanc Pamela and chase Moran Denise and Frank and Jeremy rip and Molly sherwood Gloria holly Truman Jackie and Kevin and Patrick and Sophie Clark etc. 
+																	Jun 21 2014 - This Pin was discovered by C z. 
+																	Was a respectful young man who was handsome and smart. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army Wives creator and writer behind two of Garry Marshalls holiday movies has signed with Paradigm for representation. 
+																	Jun 20 2016 - Explore Anne Scotts board Army on Pinterest. 
+																	The show Army Wives has always received mixed reviews among those in the military community. 
+																	More extensive research into this collection of court records may reveal otherwise but all of the to date evidence from this source supports the conclusion that regimental women were army wives. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See more ideas about army wife life army girlfriend military wife. 
+																	As the daughter of a career soldier and as a woman who also married a soldier after becoming a soldier herselfI must say that in my opinion both the book Under the Sabres. 
+																	With Brian McNamara Wendy Davis Catherine Bell Sterling K. 
+																	While there are a lot of relatable topics on the show there are a few differences that clearly set the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Unwritten Code of Army Wives by Tanya Biank and the TV series Army Wives although some poetic license has been taken give a very intimate and accurate portrayal of the living learning and loving that goes on in the military for American soldiers and their families. 
+																	She is one of younger ones of the Army wives having married Tim at age eighteen. 
+																	The show set in London in 1813 has prompted viewers to question how much of it can truly be described as historically accurate from its over-the-top costumes to colour-conscious casting. 
+																	Along with creating the 2007-13 Lifetime drama Army Wives from ABC Studios and the Mark Gordon Company Fugate also penned several episodes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In all such cases examined to date women who belonged to a regiment are clearly stated as being wives of soldiers of the regiment. 
+																	The problems posed are fairly accurate especially the problems between the lieutenant colonel wife and her civilian doctor husband and the problems posed by young enlisted soldiers marrying young women they barely know right before deploying. 
+																	28 Writing for Cinema Blend Kelly West found the series positively portrays real army wives through its main characters who are all strong women with a good sense of the importance of friendship love and appreciating the time they have with their husbands who are often being deployed overseas for months or longer. 
+																	Army Wives holds a score of 65 out of 100 on Metacritic based on fifteen reviews for the first season. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Is Military Wives based on a true story. 
+																	See more ideas about army wives amanda holden army. 
+																	The shows talented ensemble cast includes Emmy winner Kim Delaney NYPD Blue Catherine Bell JAG Sally Pressman Shark Brigid Brannagh Over There Brian McNamara The OC Sterling K. 
+																	Brown Starved Wendy Davis Commander in Chief and Drew Fuller. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I have begun watching this show and I love it yet Im wondering how accurate it is. 
+																	Writing for Cinema Blend Kelly West found the series positively portrays real army wives through its main characters who are all strong women with a good sense of the importance of friendship love and appreciating the time they have with their husbands who are often being deployed overseas for months or longer. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/d4/f8/4bd4f897f2f21f47f40a099d818368e4.jpg" data-lightbox="roadtrip" data-title="Pin On Casting1">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/d4/f8/4bd4f897f2f21f47f40a099d818368e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN9BS5GSlVIlYP4N4BS60SmRHDvinWam1oJA';" alt="Pin On Casting1">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Casting1</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/b7/54/86b754962c2dcd82c7b42d9f92961efe.jpg" data-lightbox="roadtrip" data-title="Pin By Severo Arcangelo On Uniform Ii American Wives Army Wives Chris Halliwell">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/b7/54/86b754962c2dcd82c7b42d9f92961efe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmDz8r9kstSxJ0F6Zbx2VLV-WsXdGkJB0Ksw';" alt="Pin By Severo Arcangelo On Uniform Ii American Wives Army Wives Chris Halliwell">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Severo Arcangelo On Uniform Ii American Wives Army Wives Chris Halliwell</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/a5/af/3ba5af29370be8fbfc52ad25d8984812.jpg" data-lightbox="roadtrip" data-title="Marine Corps Military Spouse Military Navy Seals History Semper Fi Navy Girlfriend Usmc Cold In 2020 Military Girlfriend Army Cold War Military Military Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/a5/af/3ba5af29370be8fbfc52ad25d8984812.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMHWmW3RjZcEaj_NWWLy02e-Q6bktv-SJNxA';" alt="Marine Corps Military Spouse Military Navy Seals History Semper Fi Navy Girlfriend Usmc Cold In 2020 Military Girlfriend Army Cold War Military Military Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Corps Military Spouse Military Navy Seals History Semper Fi Navy Girlfriend Usmc Cold In 2020 Military Girlfriend Army Cold War Military Military Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/45/9d/80/459d8005f28084db2a8c22e2c8101518.jpg" data-lightbox="roadtrip" data-title="Https Www Tvequals Com Wp Content Uploads 2011 05 Army Wives Counter Measures 4 Jpg In 2020 Army Wives American Wives Army Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/45/9d/80/459d8005f28084db2a8c22e2c8101518.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkQlMAPOTKU5Ix1dgUI6Xhxdd-FDx_XEM8LQ';" alt="Https Www Tvequals Com Wp Content Uploads 2011 05 Army Wives Counter Measures 4 Jpg In 2020 Army Wives American Wives Army Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Tvequals Com Wp Content Uploads 2011 05 Army Wives Counter Measures 4 Jpg In 2020 Army Wives American Wives Army Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/e7/3f/61e73f18421ff1a21f1af3416353122b.jpg" data-lightbox="roadtrip" data-title="Pin On My Show Is On">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/e7/3f/61e73f18421ff1a21f1af3416353122b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRbr1LPCzmDGE0bE3Lh0oG9wpmYF_CDnlB5g';" alt="Pin On My Show Is On">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Show Is On</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/1c/03/e01c0331a6e7454448c79ab4c1271b9f.jpg" data-lightbox="roadtrip" data-title="Pin On Tv Shows I Miss">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/1c/03/e01c0331a6e7454448c79ab4c1271b9f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDY9cUm2OVgXsobHh2W-OXJZ_QCDlYq11FJQ';" alt="Pin On Tv Shows I Miss">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tv Shows I Miss</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/36/e6/b636e67341d6fbecb59e1dbce8503112.jpg" data-lightbox="roadtrip" data-title="Army Wives Funeral Of Jeremy Saddest Moment Ever Army Wives American Wives Catherine Bell">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/36/e6/b636e67341d6fbecb59e1dbce8503112.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpHY58f6UXoM5PPriybrXw_djok9D00K6aRA';" alt="Army Wives Funeral Of Jeremy Saddest Moment Ever Army Wives American Wives Catherine Bell">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wives Funeral Of Jeremy Saddest Moment Ever Army Wives American Wives Catherine Bell</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/79/71/83/79718340a23366bd91b5baa2401f6f60.jpg" data-lightbox="roadtrip" data-title="Pin By Poshmark Seller On Army Wives Army Wives Wife Movies Military Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/79/71/83/79718340a23366bd91b5baa2401f6f60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTynhWvbcRZLOGrD53c5pck-mbB-olD95dKdg';" alt="Pin By Poshmark Seller On Army Wives Army Wives Wife Movies Military Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Poshmark Seller On Army Wives Army Wives Wife Movies Military Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/60/fc/0e60fcf89f5f6e6da33bc594a354e7d4.jpg" data-lightbox="roadtrip" data-title="Army Wives The Complete Fifth Season Dvd Kim Delaney Http Www Amazon Com Dp B004qob8vg Ref Cm Sw R Pi Dp 1nrrrb1wzs Army Wives Army Wife Life Wife Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/60/fc/0e60fcf89f5f6e6da33bc594a354e7d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvzzd8xiaVi964uSgHu4YM0rEerc4NOCKMBw';" alt="Army Wives The Complete Fifth Season Dvd Kim Delaney Http Www Amazon Com Dp B004qob8vg Ref Cm Sw R Pi Dp 1nrrrb1wzs Army Wives Army Wife Life Wife Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wives The Complete Fifth Season Dvd Kim Delaney Http Www Amazon Com Dp B004qob8vg Ref Cm Sw R Pi Dp 1nrrrb1wzs Army Wives Army Wife Life Wife Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/5c/43/065c436d3fc08bf3a3f599d9a92b8431.jpg" data-lightbox="roadtrip" data-title="Army Wives Creator Katherine Fugate Stars Wendy Davis Catherine Bell Brian Mcnamara Army Wives Wife Movies Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/5c/43/065c436d3fc08bf3a3f599d9a92b8431.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6B-Te35XkFkvo9UOg8tRbbZnLuDkg8wwYnQ';" alt="Army Wives Creator Katherine Fugate Stars Wendy Davis Catherine Bell Brian Mcnamara Army Wives Wife Movies Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wives Creator Katherine Fugate Stars Wendy Davis Catherine Bell Brian Mcnamara Army Wives Wife Movies Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/02/3e/0e023eeddb14f5da1784d10bd0debe85.jpg" data-lightbox="roadtrip" data-title="Army Wives American Wives Army Wives Army Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/02/3e/0e023eeddb14f5da1784d10bd0debe85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYlboeinjUnWQFVYwTlInVO6WE5cVnReQXNw';" alt="Army Wives American Wives Army Wives Army Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wives American Wives Army Wives Army Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/share_link_image_large/public/product-images/csm-tv/army-wives-tv.jpg?itok=DNSUPGNm" data-lightbox="roadtrip" data-title="Army Wives Tv Review">
+											<img class="card-img v-image ads-img " src="https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/share_link_image_large/public/product-images/csm-tv/army-wives-tv.jpg?itok=DNSUPGNm" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrmHYqEHDiA0ZdkF3vf7EyxzasR8bEIYjtEA';" alt="Army Wives Tv Review">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wives Tv Review</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/53/60/005360cf131d4d91ed0bf13c58ffc19e.png" data-lightbox="roadtrip" data-title="Time For A Pcs In 2020 Military Life Military Spouse Deployed Husband">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/53/60/005360cf131d4d91ed0bf13c58ffc19e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEbbvX8mVM1lV0bzT_X7XHFUMWy5Bt18hFNg';" alt="Time For A Pcs In 2020 Military Life Military Spouse Deployed Husband">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Time For A Pcs In 2020 Military Life Military Spouse Deployed Husband</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-cap-crossword-clue-4-letters.html">Military Cap Crossword Clue 4 Letters</a></li>
+													<li class="list-group-item"><a href="/military-clothing-hours-kirtland.html">Military Clothing Hours Kirtland</a></li>
+													<li class="list-group-item"><a href="/military-cap-crossword-clue-5-letters.html">Military Cap Crossword Clue 5 Letters</a></li>
+													<li class="list-group-item"><a href="/military-benefits-for-spouse-after-death.html">Military Benefits For Spouse After Death</a></li>
+													<li class="list-group-item"><a href="/military-benefits-for-ex-wives.html">Military Benefits For Ex Wives</a></li>
+													<li class="list-group-item"><a href="/military-benefits-with-spouse.html">Military Benefits With Spouse</a></li>
+													<li class="list-group-item"><a href="/military-baseball-hats.html">Military Baseball Hats</a></li>
+													<li class="list-group-item"><a href="/military-cap-enrique-iglesias.html">Military Cap Enrique Iglesias</a></li>
+													<li class="list-group-item"><a href="/military-benefits-for-special-needs-child.html">Military Benefits For Special Needs Child</a></li>
+													<li class="list-group-item"><a href="/military-base-resources.html">Military Base Resources</a></li>
+													<li class="list-group-item"><a href="/military-cap-is-called.html">Military Cap Is Called</a></li>
+													<li class="list-group-item"><a href="/military-clothing-sales-jber-hours.html">Military Clothing Sales Jber Hours</a></li>
+													<li class="list-group-item"><a href="/military-cap-name-crossword.html">Military Cap Name Crossword</a></li>
+													<li class="list-group-item"><a href="/military-benefits-for-second-wife.html">Military Benefits For Second Wife</a></li>
+													<li class="list-group-item"><a href="/military-chaplain-resources.html">Military Chaplain Resources</a></li>
+													<li class="list-group-item"><a href="/military-base-quiet-hours.html">Military Base Quiet Hours</a></li>
+													<li class="list-group-item"><a href="/military-benefits-for-child-college.html">Military Benefits For Child College</a></li>
+													<li class="list-group-item"><a href="/military-captain-hat-black.html">Military Captain Hat Black</a></li>
+													<li class="list-group-item"><a href="/military-cap-nike.html">Military Cap Nike</a></li>
+													<li class="list-group-item"><a href="/military-cap-loan.html">Military Cap Loan</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

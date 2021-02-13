@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>My Wife Definition Francais - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "My Wife Definition Francais",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/f2/ed/ca/f2edca9caa1500d3eb6c5c3408523acc.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=my+wife+definition+francais",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>My Wife Definition Francais</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">On le remarquait pas tellement en travaillant mais demandez a ma femme - elle est morte maintenant - mais elle disait que le vent faisait vibrer la maison et seulement un petit vent. My wife to be translation in English - French Reverso dictionary see also common-law wifewifeywifiwide examples definition conjugation. Look it up now. <br>				
+			</p>
+										<a class="badge badge-primary" href="/what-to-do-if-my-spouse-dies.html">what to do if my spouse dies</a>
+											<a class="badge badge-success" href="/what-to-do-if-spouse-has-covid.html">what to do if spouse has covid</a>
+											<a class="badge badge-dark" href="/what-to-do-if-boyfriend-ignores-you-after-a-fight.html">what to do if boyfriend ignores you after a fight</a>
+											<a class="badge badge-dark" href="/what-to-do-if-wife-is-lazy.html">what to do if wife is lazy</a>
+											<a class="badge badge-danger" href="/what-to-do-after-the-death-of-a-spouse.html">what to do after the death of a spouse</a>
+											<a class="badge badge-danger" href="/what-to-do-if-wife-doesnt-respect-you.html">what to do if wife doesnt respect you</a>
+											<a class="badge badge-info" href="/what-to-do-if-your-husband-is-gaslighting-you.html">what to do if your husband is gaslighting you</a>
+											<a class="badge badge-secondary" href="/what-to-do-if-you-get-fired-because-you-are-pregnant.html">what to do if you get fired because you are pregnant</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to visit the ideal blog.  Our site provides you with suggestions for seeing the highest quality video and picture content, search and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video that you see.  You can also contribute to supporting this site by sharing videos and images that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6e/f6/44/6ef644d85873d10e30c3e89268c4524d.jpg" data-lightbox="roadtrip" data-title="Gatsby Hometo My Wife Wife Quotes Soulmate Love Quotes Me As A Girlfriend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6e/f6/44/6ef644d85873d10e30c3e89268c4524d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYmI8AOiz9338q1yto7DGTUTWS0p8KNceRiA';" alt="Gatsby Hometo My Wife Wife Quotes Soulmate Love Quotes Me As A Girlfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gatsby Hometo My Wife Wife Quotes Soulmate Love Quotes Me As A Girlfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/c8/76/bbc876b3b897d7f283a451834978d877.jpg" data-lightbox="roadtrip" data-title="Trouvaille Definition French Art French Print French Etsy In 2021 One Word Quotes French Words Beautiful French Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/c8/76/bbc876b3b897d7f283a451834978d877.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiktP25HJgnxoUfCFAaobLPUeBK4RXlWCOag';" alt="Trouvaille Definition French Art French Print French Etsy In 2021 One Word Quotes French Words Beautiful French Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trouvaille Definition French Art French Print French Etsy In 2021 One Word Quotes French Words Beautiful French Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/fb/ab/24fbab71d943011e448debc8bde4affd.jpg" data-lightbox="roadtrip" data-title="Unconditional Love Definition Others Unconditional Love Marriage Relationship Definition Of Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/fb/ab/24fbab71d943011e448debc8bde4affd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJKV4WioeEJKT_dD_UNTSdXtRNguqdyQdyCw';" alt="Unconditional Love Definition Others Unconditional Love Marriage Relationship Definition Of Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unconditional Love Definition Others Unconditional Love Marriage Relationship Definition Of Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/2f/9d/43/2f9d43a5c6d01220f8cb30067cc12756.jpg" data-lightbox="roadtrip" data-title="My Heart Is Yours In French French Love Quotes French Words Quotes French Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/2f/9d/43/2f9d43a5c6d01220f8cb30067cc12756.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3dohGcYmrHIgBKeeoYRvjumpoTvOkHuisYQ';" alt="My Heart Is Yours In French French Love Quotes French Words Quotes French Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Heart Is Yours In French French Love Quotes French Words Quotes French Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/dd/90/efdd900a3b6851cf1ec598b2a82c007a.jpg" data-lightbox="roadtrip" data-title="Edith Paif Song He S The One My Heart Chose French Love Quotes French Love Phrases French Words Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/dd/90/efdd900a3b6851cf1ec598b2a82c007a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmhahEmZ4yc0ha7fbMohH7d3aH1kjvdNItBg';" alt="Edith Paif Song He S The One My Heart Chose French Love Quotes French Love Phrases French Words Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Edith Paif Song He S The One My Heart Chose French Love Quotes French Love Phrases French Words Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/ed/ca/f2edca9caa1500d3eb6c5c3408523acc.jpg" data-lightbox="roadtrip" data-title="Pin On Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/ed/ca/f2edca9caa1500d3eb6c5c3408523acc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr-PrhqC6nqO27iSRfimeICatRfH753tStPw';" alt="Pin On Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Words</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/8b/1c/eb/8b1cebac4393ebfa123a9f63c91ae142.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr-PrhqC6nqO27iSRfimeICatRfH753tStPw';" alt="Pin On Words">
+										<div class="card-body">
+						<h3 class="h5"><b>Wikipedia Lexilogos Larousse dictionary Le Robert Oxford Grevisse.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>My wife definition francais</strong>. 
+								
+																	My wife example FR. 
+																	Wikipedia Lexilogos Oxford Cambridge Chambers Harrap Wordreference Collins Lexibase dictionaries Merriam Webster. 
+																	Find a translation for the my wife definition in other languages. 
+																	Meaning of my wife. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Information and translations of my wife in the most comprehensive dictionary definitions resource on the web. 
+																	Search my wife and thousands of other words in English definition and synonym dictionary from Reverso. 
+																	EN my wife example volume_up. 
+																	The little woman. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can complete the translation of my wife given by the English-Italian Collins dictionary with other dictionaries such as. 
+																	You can complete the definition of my wife given by the English Definition dictionary with other English dictionaries. 
+																	Il est question de la relation entre un mari et une femme. 
+																	French a a c e e e e i i o. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It means relations between a husband and wife. 
+																	L epouse a subsequemment ete declaree coupable du meurtre de son epoux. 
+																	Translation for My wife and I in the free English-French dictionary and many other French translations. 
+																	All our dictionaries are bidirectional meaning that you can look up words in both languages at the same time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Definition my wife dans le dictionnaire anglais de definitions de Reverso synonymes voir aussi wife swappingDutch wifeall the world and his wifetake to wife expressions conjugaison exemples. 
+																	With Reverso you can find the English translation definition or synonym for my wife and thousands of other words. 
+																	Translate English words into French with online. 
+																	Une femme souffrant de longue date ecrit une histoire quelle connait par coeur. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Meaning of my wife. 
+																	With Reverso you can find the English translation definition or synonym for my wife and thousands of other words. 
+																	What does my wife mean. 
+																	- Select - 简体中文 Chinese - Simplified 繁體中文 Chinese - Traditional Espanol Spanish Esperanto Esperanto 日本語 Japanese Portugues Portuguese Deutsch German العربية Arabic Francais French Russkiy Russian ಕನನಡ Kannada 한국어 Korean. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What does WIFE mean. 
+																	Information and translations of my wife in the most comprehensive dictionary definitions resource on the web. 
+																	Translations in context of My wife in English-French from Reverso Context. 
+																	The wife was subsequently convicted of murdering her husband. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can complete the translation of my wife given by the English-French Collins dictionary with other dictionaries such as. 
+																	Information and translations of WIFE in the most comprehensive dictionary definitions resource on the web. 
+																	EN my wife in French. 
+																	Ask my wife but shes dead now she said the wind used to make the house vibrate and it was just a small wind but there always steady and always hot. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	My wife my wife translation into French. 
+																	Long-suffering wife reads a story she knows by heart. 
+																	English French English French. 
+																	My ex-wife about my wife tell my wife killed my wife see my wife. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wikipedia Lexilogos Larousse dictionary Le Robert Oxford Grevisse. 
+																	What does my wife mean. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/1c/eb/8b1cebac4393ebfa123a9f63c91ae142.png" data-lightbox="roadtrip" data-title="Pin By Officiallysteph Xo On Frases Beautiful French Words Beautiful Words In French Beautiful Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/1c/eb/8b1cebac4393ebfa123a9f63c91ae142.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7TuBd_fWZul5xJnGC2hZLyUiStxYGPvvBUw';" alt="Pin By Officiallysteph Xo On Frases Beautiful French Words Beautiful Words In French Beautiful Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Officiallysteph Xo On Frases Beautiful French Words Beautiful Words In French Beautiful Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/15/bc/7c15bcfb98a45310a7924c12d77ac3d9.jpg" data-lightbox="roadtrip" data-title="Silence Is Sometimes The Best Answer French Quotes French Words Quotes French Love Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/15/bc/7c15bcfb98a45310a7924c12d77ac3d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXNP1EUicyzpmGrbYWb8avIbcaeqtLtXAPWQ';" alt="Silence Is Sometimes The Best Answer French Quotes French Words Quotes French Love Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Silence Is Sometimes The Best Answer French Quotes French Words Quotes French Love Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/76/c4/7176c4c8c789a99fd600a73d42493672.jpg" data-lightbox="roadtrip" data-title="Do You Know The Meaning Of Wife Husband Humor Wife Jokes New Funny Jokes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/76/c4/7176c4c8c789a99fd600a73d42493672.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNcSviLW7fJaFTE1E9vm4wgLzBW54xdS79gA';" alt="Do You Know The Meaning Of Wife Husband Humor Wife Jokes New Funny Jokes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do You Know The Meaning Of Wife Husband Humor Wife Jokes New Funny Jokes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/98/d5/9c98d5d9616d2fb0632d0c23c33500c4.png" data-lightbox="roadtrip" data-title="Pin On Conjunctions In English">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/98/d5/9c98d5d9616d2fb0632d0c23c33500c4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn6mhkDZclCFoG3WFTJ88PdJyjknKNWYn8fg';" alt="Pin On Conjunctions In English">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Conjunctions In English</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/69/29/e96929ce8ba8df2bbb453cd1a4b6fc24.png" data-lightbox="roadtrip" data-title="My Raison D Etre Words Quotes French Quotes Unusual Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/69/29/e96929ce8ba8df2bbb453cd1a4b6fc24.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZgKxRj07IrllBC4brjSKVWV3_7xmEzggj_Q';" alt="My Raison D Etre Words Quotes French Quotes Unusual Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Raison D Etre Words Quotes French Quotes Unusual Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/0f/65/8a0f65e33ce42fe85037a41f5a90692f.png" data-lightbox="roadtrip" data-title="Popular Collocations With Make And Do What S The Difference Eslbuzz Learning English Learn English English Lessons English Idioms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/0f/65/8a0f65e33ce42fe85037a41f5a90692f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4XYad49aOnmk4I7yXy3DspEEdmLc8B_TDvQ';" alt="Popular Collocations With Make And Do What S The Difference Eslbuzz Learning English Learn English English Lessons English Idioms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Popular Collocations With Make And Do What S The Difference Eslbuzz Learning English Learn English English Lessons English Idioms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/1b/55/9c1b55bc6e333940d2caddcbbd732b8c.png" data-lightbox="roadtrip" data-title="C Est Ma Meuf Apprendre Le Francais Learn French French Lessons French Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/1b/55/9c1b55bc6e333940d2caddcbbd732b8c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdhyZwijXw9RyagD1C31deS-n5xp0QbO9ejg';" alt="C Est Ma Meuf Apprendre Le Francais Learn French French Lessons French Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">C Est Ma Meuf Apprendre Le Francais Learn French French Lessons French Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/57/6c/da576c7387ccab69b2fe9a91155bb2b8.png" data-lightbox="roadtrip" data-title="French Expression 7 To Say I Will Do My Best In French French Words Quotes French Expressions Learn French">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/57/6c/da576c7387ccab69b2fe9a91155bb2b8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGOiPQC_UkqsfwPx_eTwpvkdzohPkrDpNs7Q';" alt="French Expression 7 To Say I Will Do My Best In French French Words Quotes French Expressions Learn French">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">French Expression 7 To Say I Will Do My Best In French French Words Quotes French Expressions Learn French</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/a4/22/a7a422c55de982efc7eecaee37f491ed.jpg" data-lightbox="roadtrip" data-title="Beautiful French Word Mot Francais For Dreamer Dreaming Dreams Dream Reveuse Reve Re Beautiful French Words Pretty French Words Beautiful French Phrases">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/a4/22/a7a422c55de982efc7eecaee37f491ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7iIn0Tbl94fg5CtFK9e4bAdUj5DQin2i__A';" alt="Beautiful French Word Mot Francais For Dreamer Dreaming Dreams Dream Reveuse Reve Re Beautiful French Words Pretty French Words Beautiful French Phrases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Beautiful French Word Mot Francais For Dreamer Dreaming Dreams Dream Reveuse Reve Re Beautiful French Words Pretty French Words Beautiful French Phrases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/45/dc/3b45dcb02429b17236cb9973aa990aba.jpg" data-lightbox="roadtrip" data-title="Tu Me Rends Heureux Heureuse If You Re A Woman Francaise Heureuse Heureux Rends Tu Franzosische Spruche Franzosische Zitate Franzosische Worter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/45/dc/3b45dcb02429b17236cb9973aa990aba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxT4VNNAIsKyTTpxIZb-SnOuzzIINVmlBpNA';" alt="Tu Me Rends Heureux Heureuse If You Re A Woman Francaise Heureuse Heureux Rends Tu Franzosische Spruche Franzosische Zitate Franzosische Worter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tu Me Rends Heureux Heureuse If You Re A Woman Francaise Heureuse Heureux Rends Tu Franzosische Spruche Franzosische Zitate Franzosische Worter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/68/00/dd68002c6c74ceef818a30f93ce55e8d.jpg" data-lightbox="roadtrip" data-title="Monachopsis Obscure Dictionary Fremdsprachenunterricht Unique Words Definitions Rare Words Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/68/00/dd68002c6c74ceef818a30f93ce55e8d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJymVhNQJCxC1loqB26n23I8AIPQe8-MFyaw';" alt="Monachopsis Obscure Dictionary Fremdsprachenunterricht Unique Words Definitions Rare Words Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Monachopsis Obscure Dictionary Fremdsprachenunterricht Unique Words Definitions Rare Words Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/04/55/c30455992b842d2e735e35274d663df8.png" data-lightbox="roadtrip" data-title="Musicien Definition Synonymes Citations Traduction Dans Le Dictionnaire De La Langue Francaise Definition Personne Qui Compose">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/04/55/c30455992b842d2e735e35274d663df8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf0J5nhw79SzmfWTZIgd-7O6uek9LipChFtg';" alt="Musicien Definition Synonymes Citations Traduction Dans Le Dictionnaire De La Langue Francaise Definition Personne Qui Compose">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Musicien Definition Synonymes Citations Traduction Dans Le Dictionnaire De La Langue Francaise Definition Personne Qui Compose</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/b8/02/88b8020f48663739d5e894ac1bfd5b0f.jpg" data-lightbox="roadtrip" data-title="I Can Relate To This When I First Like Someone I Like How They Look But Then That Fades And I Them For Who Th Getting To Know Someone Words Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/b8/02/88b8020f48663739d5e894ac1bfd5b0f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk6FcGiB0FtsvTOkT77KrSdPIEgHa6sPXvWg';" alt="I Can Relate To This When I First Like Someone I Like How They Look But Then That Fades And I Them For Who Th Getting To Know Someone Words Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Can Relate To This When I First Like Someone I Like How They Look But Then That Fades And I Them For Who Th Getting To Know Someone Words Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/air-force-jobs-in-pakistan-2020.html">Air Force Jobs In Pakistan 2020</a></li>
+													<li class="list-group-item"><a href="/air-force-hymn-sheet-music.html">Air Force Hymn Sheet Music</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-october-2019.html">Air Force Jobs October 2019</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-the-colorblind.html">Air Force Jobs For The Colorblind</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-btech-ece.html">Air Force Jobs For Btech Ece</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-civilians.html">Air Force Jobs For Civilians</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-ki-taiyari-kaise-kare.html">Air Force Jobs Ki Taiyari Kaise Kare</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-geospatial-intelligence.html">Air Force Jobs Geospatial Intelligence</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-last-date.html">Air Force Jobs Last Date</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-knowledge-operations-management.html">Air Force Jobs Knowledge Operations Management</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-sociology-majors.html">Air Force Jobs For Sociology Majors</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-english-majors.html">Air Force Jobs For English Majors</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-inter-qualification.html">Air Force Jobs For Inter Qualification</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-biology-majors.html">Air Force Jobs For Biology Majors</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-officers.html">Air Force Jobs For Officers</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-general-category.html">Air Force Jobs General Category</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-latest.html">Air Force Jobs Latest</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-for-prior-service.html">Air Force Jobs For Prior Service</a></li>
+													<li class="list-group-item"><a href="/air-force-human-resources-salary.html">Air Force Human Resources Salary</a></li>
+													<li class="list-group-item"><a href="/air-force-jobs-kpk.html">Air Force Jobs Kpk</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

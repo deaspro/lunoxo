@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Wechat In India - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Wechat In India",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/8b/62/b3/8b62b3aa39d11805461f6ba1f0cb6d99.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=wechat+in+india",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Wechat In India</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">However WeChat which now boasts close to 12 billion active monthly users is also known for being strictly monitored by the Chinese authorities. Steps to Download WeChat. For these reasons users inside and outside China often want to use a VPN to either access the app or get a degree of anonymity via encryption. <br>				
+			</p>
+										<a class="badge badge-dark" href="/va-medical-records-form.html">va medical records form</a>
+											<a class="badge badge-warning" href="/va-hospital-medical-records-request.html">va hospital medical records request</a>
+											<a class="badge badge-dark" href="/va-medical-records-detroit.html">va medical records detroit</a>
+											<a class="badge badge-primary" href="/va-health-records-on-iphone.html">va health records on iphone</a>
+											<a class="badge badge-light" href="/va-form-to-add-dependents.html">va form to add dependents</a>
+											<a class="badge badge-success" href="/va-disability-health-benefits-for-dependents.html">va disability health benefits for dependents</a>
+											<a class="badge badge-danger" href="/va-medical-records-denver-colorado.html">va medical records denver colorado</a>
+											<a class="badge badge-primary" href="/va-form-21-686c-declaration-of-dependents.html">va form 21 686c declaration of dependents</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to pay a visit to the ideal site.  Our website provides you with suggestions for viewing the maximum quality video and picture content, search and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video that you view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/8e/1a/1b8e1ad183923d62e54a5fe78880d2dd.png" data-lightbox="roadtrip" data-title="How People Are Finding Ways To Use Wechat In India After The Ban In 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/8e/1a/1b8e1ad183923d62e54a5fe78880d2dd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0tTL-pjnod60YKcXMqw2AIqNUWGH5mVoISw';" alt="How People Are Finding Ways To Use Wechat In India After The Ban In 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How People Are Finding Ways To Use Wechat In India After The Ban In 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/7f/07/797f077aaa96c47d82531594231b094c.png" data-lightbox="roadtrip" data-title="India S Alipay Or Wechat Pay Could Be A Young Private Bank Or Progressive Nbfc Progress Mobile Payments Private">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/7f/07/797f077aaa96c47d82531594231b094c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsYMCkfT935ksA_PdwElQJevxM0y6w5FmS7g';" alt="India S Alipay Or Wechat Pay Could Be A Young Private Bank Or Progressive Nbfc Progress Mobile Payments Private">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">India S Alipay Or Wechat Pay Could Be A Young Private Bank Or Progressive Nbfc Progress Mobile Payments Private</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/62/b3/8b62b3aa39d11805461f6ba1f0cb6d99.jpg" data-lightbox="roadtrip" data-title="How To Download Wechat After Ban In India From Playstore 119 Chinese Time Capsule Playstore Change Image">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/62/b3/8b62b3aa39d11805461f6ba1f0cb6d99.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAoGktKMkm-BJ6vhCj0SEFUHckxFnOKasqEQ';" alt="How To Download Wechat After Ban In India From Playstore 119 Chinese Time Capsule Playstore Change Image">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Download Wechat After Ban In India From Playstore 119 Chinese Time Capsule Playstore Change Image</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0d/d5/f9/0dd5f95ebcbc789ad62925f0e511358f.jpg" data-lightbox="roadtrip" data-title="India Banned 59 Chinese Mobile Apps Including Wildly Popular Tiktok And Wechat Www Myvoicetv Com Mobile App App Cleaning Master">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0d/d5/f9/0dd5f95ebcbc789ad62925f0e511358f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLyjnUWx5VvIlWki0Xk8Cu4-oSx8RlfKzlSg';" alt="India Banned 59 Chinese Mobile Apps Including Wildly Popular Tiktok And Wechat Www Myvoicetv Com Mobile App App Cleaning Master">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">India Banned 59 Chinese Mobile Apps Including Wildly Popular Tiktok And Wechat Www Myvoicetv Com Mobile App App Cleaning Master</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/1a/55/d01a553a2ceac962ed8ce95ead20fe33.jpg" data-lightbox="roadtrip" data-title="India S Ban On Chinese Apps Surprise Content Makers App Software Update Latest Technology News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/1a/55/d01a553a2ceac962ed8ce95ead20fe33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLHlUpI8pZLAUAFN3TTzETNoVR2G8OZ-59vg';" alt="India S Ban On Chinese Apps Surprise Content Makers App Software Update Latest Technology News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">India S Ban On Chinese Apps Surprise Content Makers App Software Update Latest Technology News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/04/63/6104635236850b84351f131a317d84f1.jpg" data-lightbox="roadtrip" data-title="India Bans 59 Chinese Apps Including Tiktok Helo Wechat India China In 2020 Top Social Media Social Media Social Media Platforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/04/63/6104635236850b84351f131a317d84f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBiHxY7t47hyXnib421Ri0gJn6w_Vni7uwuw';" alt="India Bans 59 Chinese Apps Including Tiktok Helo Wechat India China In 2020 Top Social Media Social Media Social Media Platforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">India Bans 59 Chinese Apps Including Tiktok Helo Wechat India China In 2020 Top Social Media Social Media Social Media Platforms</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/04/ce/9a/04ce9aabd813c6714af12a2c4a640392.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBiHxY7t47hyXnib421Ri0gJn6w_Vni7uwuw';" alt="India Bans 59 Chinese Apps Including Tiktok Helo Wechat India China In 2020 Top Social Media Social Media Social Media Platforms">
+										<div class="card-body">
+						<h3 class="h5"><b>India had 6876 million internet users at the end of January according.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Wechat in india</strong>. 
+								
+																	India finally bans 60 Chinese apps including WeChat and TikTok The Indian government has now officially and permanently banned up to 60 Chinese-owned apps it initially listed in June last year. 
+																	Around 23 per cent of internet users in India have used WeChat a survey by research firm GlobalWebIndex last year showed. 
+																	When Wechat launched in India India already had a strong Facebook presence where we added our. 
+																	Heres a quick guide on how to reuse WeChat in India. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In response to a border dispute between India and China WeChat was banned in India in June 2020 along with several Chinese apps. 
+																	Based on Entrackr WeChat officially blocks Indian users from sending or receiving messages to comply with Indian bans on Chinese 59 apps last month. 
+																	TikTok and WeChat are widely popular in India. 
+																	Based on Entrackr WeChat officially blocks Indian users from sending or receiving messages to comply with Indian bans on Chinese 59 apps last month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When security is concerned it is an end to end data encrypted. 
+																	WeChat is the most popular platform for Chinese to communicate with others in China. 
+																	WeChat is also said to have winded up its business in India. 
+																	It is a relatively new discovery but is used by many Indians. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Latest and Breaking News on WeChat ban in India. 
+																	Download and Install the Express VPN app. 
+																	WeChat users whether in China or outside the country can benefit from using a. 
+																	President Donald Trump sought to ban US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Because WeChat offers you free video and voice calls videos images games stickers and text messages to help you stay connected with people who matter most. 
+																	WeChat ban in India News. 
+																	In fact WeChat is known to provide authorities with its collection of user logs when its asked to do so. 
+																	WeChat together with TikTok had been included in Indias Ministry of Electronics Information Technologys ban on 58 mobile apps from Chinese companies that it said were engaged in activities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Signal Private Messenger is one of the best WeChat alternatives in India. 
+																	Download the WeChat app from AppStorePlaystore. 
+																	TikTok WeChat and a total of 59 apps from Chinese companies have been permanently banned in India by the Ministry of Electronics and Information Technology MeitY according to reports. 
+																	WeChat was launched in India in 2013 amid growing demand for IM apps. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Recently based on WeChat users in India WeChat fails to be working on Indian accounts. 
+																	How to use WeChat in India after 2020 Ban using VPN for Login Free. 
+																	Wechat on the other hand was already a social network chat system in China before coming to India. 
+																	WeChat officially blocks Indian users from sending or receiving messages. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Following govts orders to ban 59 Chinese apps WeChat has officially shut its services. 
+																	Explore WeChat ban in India profile at Times of India for photos videos and latest news of WeChat ban in India. 
+																	The ban on 59 apps by the Indian government was a big jolt for Chinas tech behemoths such as Tencent and ByteDance as their popular apps were affected. 
+																	However there are still some people who need WeChat for instant communication payment and information scanning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can use the below technique to lo g in to Wechat despite the ban and fetch all the existing. 
+																	You can chat with your friends and talk to them via voice or video call. 
+																	WeChat TVC focus on voice notes The TV. 
+																	However there are still some people who need WeChat for instant communication payment and information scanning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wechat when they launched in India focused on Voice notes a feature used in China to a great extent to differentiate the social aspect of the app. 
+																	Transactions with WeChat through an executive order but was blocked by a preliminary injunction issued in the United States District Court for the Northern District of California in September 2020. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/91/3d/4d/913d4d0b66c69b5fd04e7a6a1656424a.jpg" data-lightbox="roadtrip" data-title="India Bans Tiktok Wechat And Some More Apps In 2020 Video App App Government">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/91/3d/4d/913d4d0b66c69b5fd04e7a6a1656424a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC35HDLFCOImsIc7ZWHvwU5gyg0B7owg3mzg';" alt="India Bans Tiktok Wechat And Some More Apps In 2020 Video App App Government">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">India Bans Tiktok Wechat And Some More Apps In 2020 Video App App Government</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/c6/c3/95c6c393fcd3538f67db6a0271e66416.jpg" data-lightbox="roadtrip" data-title="Indian Independence Day Wechat Images And Messages Indian Independence Day Independence Day Independence Day India">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/c6/c3/95c6c393fcd3538f67db6a0271e66416.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0wVEWtk9jiDi_db5LVMwKBkI4SQOupyu-wQ';" alt="Indian Independence Day Wechat Images And Messages Indian Independence Day Independence Day Independence Day India">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Independence Day Wechat Images And Messages Indian Independence Day Independence Day Independence Day India</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/e0/c8/63e0c888cbae09a7dbcc2b03fe69e463.jpg" data-lightbox="roadtrip" data-title="Best Wechat Alternatives In 2020 Alternative App Best">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/e0/c8/63e0c888cbae09a7dbcc2b03fe69e463.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Gqwehu4wJPL7YJWlo-ivQLF4TSBy9cBBAQ';" alt="Best Wechat Alternatives In 2020 Alternative App Best">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Wechat Alternatives In 2020 Alternative App Best</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/bc/06/80/bc0680927d62c72d9add9194570557b6.jpg" data-lightbox="roadtrip" data-title="Tiktok Wechat And Over 50 Other Chinese Apps Have Been Banned In India Tiktok Wechat And Over 50 Other Chinese Messaging App Networking Companies Social App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/bc/06/80/bc0680927d62c72d9add9194570557b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRceiN7IV1LBP0JDl58MGwlEN9z6hXtN82S_A';" alt="Tiktok Wechat And Over 50 Other Chinese Apps Have Been Banned In India Tiktok Wechat And Over 50 Other Chinese Messaging App Networking Companies Social App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tiktok Wechat And Over 50 Other Chinese Apps Have Been Banned In India Tiktok Wechat And Over 50 Other Chinese Messaging App Networking Companies Social App</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/d4/41/2ed44119c30a713a77c5b4b302bdfb3f.jpg" data-lightbox="roadtrip" data-title="59 Chinese Apps Banned In India Alternatives To Them Including Tiktok In 2020 Top Social Media Apps Social Media Apps App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/d4/41/2ed44119c30a713a77c5b4b302bdfb3f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8tZyqZJTj_JfO1DBxFTqXPXemuh7Waol_Jw';" alt="59 Chinese Apps Banned In India Alternatives To Them Including Tiktok In 2020 Top Social Media Apps Social Media Apps App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">59 Chinese Apps Banned In India Alternatives To Them Including Tiktok In 2020 Top Social Media Apps Social Media Apps App</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/cc/ea/43cceaf7ca5eb801cd737854d4323c3c.png" data-lightbox="roadtrip" data-title="59 Chinese Apps Banned In India Tiktok Shareit Wechat Blocked In 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/cc/ea/43cceaf7ca5eb801cd737854d4323c3c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShAnU17Ga__LJ51uetU-xTmOALSRYQzbQ2eg';" alt="59 Chinese Apps Banned In India Tiktok Shareit Wechat Blocked In 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">59 Chinese Apps Banned In India Tiktok Shareit Wechat Blocked In 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/b9/86/52b986320870e2bbcac1da51e8d4c580.jpg" data-lightbox="roadtrip" data-title="Ban On Tiktok And Wechat In Us After India In 2020 Data Security India Popsockets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/b9/86/52b986320870e2bbcac1da51e8d4c580.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTohT2QuftWSZOaEIPMzpez-qKvzGmQe7fJ7w';" alt="Ban On Tiktok And Wechat In Us After India In 2020 Data Security India Popsockets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ban On Tiktok And Wechat In Us After India In 2020 Data Security India Popsockets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/ce/9a/04ce9aabd813c6714af12a2c4a640392.png" data-lightbox="roadtrip" data-title="India Has Banned Tiktok Wechat And Other China Based Apps In 2020 Ios App Development Android Application Development Mobile App Development Companies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/ce/9a/04ce9aabd813c6714af12a2c4a640392.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSjOE-Q_CqBxffJQCOvutmjcgVBWCzihXsvg';" alt="India Has Banned Tiktok Wechat And Other China Based Apps In 2020 Ios App Development Android Application Development Mobile App Development Companies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">India Has Banned Tiktok Wechat And Other China Based Apps In 2020 Ios App Development Android Application Development Mobile App Development Companies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/51/6a/ce516a001f50689a63750cd84b7e024f.png" data-lightbox="roadtrip" data-title="Wechat Pay To Reportedly Take On Google Pay And Paytm In India Later This Year Next Web Consumer Behaviour Problem Solving">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/51/6a/ce516a001f50689a63750cd84b7e024f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6EqyQaL_NlVwQtAbI9Bz7zTQWDPRuLVWFqg';" alt="Wechat Pay To Reportedly Take On Google Pay And Paytm In India Later This Year Next Web Consumer Behaviour Problem Solving">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wechat Pay To Reportedly Take On Google Pay And Paytm In India Later This Year Next Web Consumer Behaviour Problem Solving</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/62/89/ec6289c6fd0a95056cb7f2c1f2c2554c.png" data-lightbox="roadtrip" data-title="8 Best Chinese Apps Alternatives In 2020 For Better Privacy App Alternative Chat App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/62/89/ec6289c6fd0a95056cb7f2c1f2c2554c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxglPYLAhQlgMeLvyYCHPEXhKD7T76os_YPQ';" alt="8 Best Chinese Apps Alternatives In 2020 For Better Privacy App Alternative Chat App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Best Chinese Apps Alternatives In 2020 For Better Privacy App Alternative Chat App</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/fc/73/46fc7395244cad517c0961720dd836f6.jpg" data-lightbox="roadtrip" data-title="India Bans 59 Chinese Apps Including Tiktok Helo Wechat Chinese Apps Banned Tiktok App Ban Free Photoshop Online Graphic Design Free Photoshop Actions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/fc/73/46fc7395244cad517c0961720dd836f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1pntT0UQ_jUG7pP4w3Il2Jy6CFq6w3kKoPg';" alt="India Bans 59 Chinese Apps Including Tiktok Helo Wechat Chinese Apps Banned Tiktok App Ban Free Photoshop Online Graphic Design Free Photoshop Actions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">India Bans 59 Chinese Apps Including Tiktok Helo Wechat Chinese Apps Banned Tiktok App Ban Free Photoshop Online Graphic Design Free Photoshop Actions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/43/f5/1143f5595969d24a96ea515b7889b4af.jpg" data-lightbox="roadtrip" data-title="Top 7 Tiktok Alternatives In India In 2020 Secret Websites App Top Social Media">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/43/f5/1143f5595969d24a96ea515b7889b4af.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY629Hgt5OQDhTKwtkLmMqWS7wBUd-WyaceA';" alt="Top 7 Tiktok Alternatives In India In 2020 Secret Websites App Top Social Media">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 7 Tiktok Alternatives In India In 2020 Secret Websites App Top Social Media</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/bb/b0/42/bbb042a51511eafc89f0370ff2203409.jpg" data-lightbox="roadtrip" data-title="Pin On Tech Knowledge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/bb/b0/42/bbb042a51511eafc89f0370ff2203409.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIg8fbTeNPKSCXb99L2wzOSYnbnsnXSkG0NA';" alt="Pin On Tech Knowledge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tech Knowledge</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-dependent-medical-records-archives.html">Military Dependent Medical Records Archives</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-age.html">Military Dependent Id Card Age</a></li>
+													<li class="list-group-item"><a href="/military-dependent-limit.html">Military Dependent Limit</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-college-student.html">Military Dependent Id College Student</a></li>
+													<li class="list-group-item"><a href="/military-dependent-life-insurance.html">Military Dependent Life Insurance</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-issue-locations.html">Military Dependent Id Card Issue Locations</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-application.html">Military Dependent Id Card Application</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-over-21.html">Military Dependent Id Card Over 21</a></li>
+													<li class="list-group-item"><a href="/military-dependent-pay.html">Military Dependent Pay</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-divorce.html">Military Dependent Id Card Divorce</a></li>
+													<li class="list-group-item"><a href="/military-dependent-qualifications.html">Military Dependent Qualifications</a></li>
+													<li class="list-group-item"><a href="/military-dependent-nicknames.html">Military Dependent Nicknames</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-renewal-form.html">Military Dependent Id Card Renewal Form</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-renewal-requirements.html">Military Dependent Id Card Renewal Requirements</a></li>
+													<li class="list-group-item"><a href="/military-dependent-pay-chart.html">Military Dependent Pay Chart</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-regulations.html">Military Dependent Id Card Regulations</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-until-what-age.html">Military Dependent Id Until What Age</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-extension.html">Military Dependent Id Extension</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-locations.html">Military Dependent Id Card Locations</a></li>
+													<li class="list-group-item"><a href="/military-dependent-precheck.html">Military Dependent Precheck</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

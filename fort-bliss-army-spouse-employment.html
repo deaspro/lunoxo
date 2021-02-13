@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Fort Bliss Army Spouse Employment - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Fort Bliss Army Spouse Employment",
+  "datePublished": "2021-02-13",
+  "image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1850568201679534",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=fort+bliss+army+spouse+employment",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Fort Bliss Army Spouse Employment</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Employment preparation and selection can take a considerable amount of time and work. Dont forget the 3Rs of explosives safetyRecognize Retreat and Report. One of the most difficult parts of being a military spouse is trying to have a successful career alongside your Soldier so to make the process a little easier Fort Bliss Army Community Service. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/do-you-have-to-be-married-to-get-military-housing.html">do you have to be married to get military housing</a>
+											<a class="badge badge-secondary" href="/do-military-spouses-get-military-id.html">do military spouses get military id</a>
+											<a class="badge badge-dark" href="/do-military-spouses-get-free-bags-on-delta.html">do military spouses get free bags on delta</a>
+											<a class="badge badge-info" href="/do-you-have-to-be-married-to-receive-military-benefits.html">do you have to be married to receive military benefits</a>
+											<a class="badge badge-warning" href="/do-military-spouses-get-free-checked-bags.html">do military spouses get free checked bags</a>
+											<a class="badge badge-danger" href="/do-military-vote-by-mail.html">do military vote by mail</a>
+											<a class="badge badge-info" href="/do-military-wives-get-discounts.html">do military wives get discounts</a>
+											<a class="badge badge-danger" href="/do-military-spouses-have-a-known-traveler-number.html">do military spouses have a known traveler number</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to pay a visit to the right site.  Our website provides you with hints for seeing the maximum quality video and picture content, search and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, so we recommend this movie that you view.  You can also contribute to supporting this website by sharing videos and images that you like on this blog on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://home.army.mil/bliss/application/files/3215/8281/7204/army.mil-bit_of_bliss.jpg" data-lightbox="roadtrip" data-title="A Little Bit Of Bliss A Crafty Solution To Spouse Employment Fort Bliss Texas">
+											<img class="card-img v-image ads-img " src="https://home.army.mil/bliss/application/files/3215/8281/7204/army.mil-bit_of_bliss.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlwUX3pQ1UaUfHcYS0RsRKO6Sx207Av7OZqg';" alt="A Little Bit Of Bliss A Crafty Solution To Spouse Employment Fort Bliss Texas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Little Bit Of Bliss A Crafty Solution To Spouse Employment Fort Bliss Texas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://home.army.mil/bliss/application/files/6415/8265/2561/200213-A-QV384-002-web.jpg" data-lightbox="roadtrip" data-title="Fort Bliss Acs Hosts Hiring Fair For Military Spouses Transitioning Service Members Fort Bliss Texas">
+											<img class="card-img v-image ads-img " src="https://home.army.mil/bliss/application/files/6415/8265/2561/200213-A-QV384-002-web.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSau1helNN3TRkWXzy3nKMN0fld6U-2b9focA';" alt="Fort Bliss Acs Hosts Hiring Fair For Military Spouses Transitioning Service Members Fort Bliss Texas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fort Bliss Acs Hosts Hiring Fair For Military Spouses Transitioning Service Members Fort Bliss Texas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2020/04/02/5c35ead3/size0-full.jpg" data-lightbox="roadtrip" data-title="A Little Bit Of Bliss A Crafty Solution To Spouse Employment Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2020/04/02/5c35ead3/size0-full.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY-sC3M_FWLjuHe4cseFCy2ayVplFSgj1AtQ';" alt="A Little Bit Of Bliss A Crafty Solution To Spouse Employment Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Little Bit Of Bliss A Crafty Solution To Spouse Employment Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://images.military.com/media/production/base-guides/overview-bliss-employment.jpg" data-lightbox="roadtrip" data-title="Ft Bliss Spouse Employment">
+											<img class="card-img v-image ads-img " src="http://images.military.com/media/production/base-guides/overview-bliss-employment.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpRLJ3PNZqu5H_9JN375M-JLkx8wfkiyO4iA';" alt="Ft Bliss Spouse Employment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ft Bliss Spouse Employment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.dvidshub.net/media/thumbs/photos/2001/6115497/1000x714_q95.jpg" data-lightbox="roadtrip" data-title="Dvids News Fort Bliss Acs Hosts Hiring Fair For Military Spouses Transitioning Service Members">
+											<img class="card-img v-image ads-img " src="https://cdn.dvidshub.net/media/thumbs/photos/2001/6115497/1000x714_q95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrdXXVrCIWR-9I5OHvhnzlJ4BZ6SxkUn_tDg';" alt="Dvids News Fort Bliss Acs Hosts Hiring Fair For Military Spouses Transitioning Service Members">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dvids News Fort Bliss Acs Hosts Hiring Fair For Military Spouses Transitioning Service Members</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=173711589317309" data-lightbox="roadtrip" data-title="Army Spouse Employment Partnership Asep Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=173711589317309" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVedvUwtWhNJkOEbCQPu1sspJx-q-q8Tz_xA';" alt="Army Spouse Employment Partnership Asep Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Spouse Employment Partnership Asep Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2391878707513454" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVedvUwtWhNJkOEbCQPu1sspJx-q-q8Tz_xA';" alt="Army Spouse Employment Partnership Asep Home Facebook">
+										<div class="card-body">
+						<h3 class="h5"><b>CYSS Parent and Outreach Services PC is located at building 1743 on Victory Road 1 915568-4374.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Fort bliss army spouse employment</strong>. 
+								
+																	The Employment Readiness Program ERP was originally created to specifically address the employment needs of todays military spouses by providing them with the tools they need to successfully search for and obtain employment. 
+																	We dedicate ourselves to helping the Military Spouse retirees and their families with all. 
+																	These resources will help you find employment with Family and MWR and the federal government both overseas and in the US. 
+																	Priority is given to single and dual militaryDA civilians then to the military memberDA civilian with a working spouse then to all other eligible categories. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The low-stress way to find your next military spouse job opportunity is on SimplyHired. 
+																	There are over 49 military spouse careers in Fort Bliss TX waiting for you to apply. 
+																	286 likes 45 talking about this. 
+																	Full-time temporary and part-time jobs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Free fast and easy way find a job of 704000 postings in Fort Bliss TX and other big cities in USA. 
+																	There are over 37 military spouse careers in Fort Bliss TX waiting for you to apply. 
+																	If the spouse of the Service Member comes in alone heshe will need their DoD ID Card a copy of the Service Members Orders and a Power of Attorney. 
+																	Army said late Thursday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Two of the. 
+																	To military spouses to. 
+																	See salaries compare reviews easily apply and get hired. 
+																	Whether youre a military spouse or Family member who just moved to a new installation Retiree or DoD civilian looking for new opportunities or active duty Military active Reserve. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply to Customer Service Representative Child and Youth Program Assistant Senior Customer Service Representative and more. 
+																	When you are ready to start your employment journey consider us for your first stop. 
+																	The intent was to assist military spouses gain employment with the Federal government as part of an effort to recruit and retain skilled and experienced members of the armed forces and to recognize and honor the service of members injured disabled or killed while on active duty. 
+																	Army Community Service Employment Readiness Fort Bliss El Paso Texas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The low-stress way to find your next military spouse job opportunity is on SimplyHired. 
+																	ID cards and a copy of your PCS orders are required. 
+																	Fort Bliss reminds area residents and visitors that military munitions are dangerous and may be encountered in areas currently or formerly used for military training or testing. 
+																	Fort Bliss TX 725 - 850 an hour Military Spouse Preference MSP and Involuntarily Separated Military Preference ISMP eligible candidates are included in the area of consideration. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	3 days ago Employment Readiness Program ERP The Employment Readiness Program ERP offers resources to help with your career plan and job search. 
+																	For more information or the availability of high demand items call Army Community Service at 915-569-4227. 
+																	Please attend our Spouse Orientation every Wednesday 1000 am - 1130 am. 
+																	Search and apply for the latest Military contractor jobs in Fort Bliss TX. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Located inside Army Community Service Building 2494 Ricker Road our Resource Center contains a well-stocked library with books and DVDs on career options rsums cover letters job interviewing federal employment customer service training office etiquette and. 
+																	Aside from independent opportunities like A Little Bit of Bliss the Army is improving career and employment opportunities for military spouses through new programs and existing partnerships. 
+																	The Fort Bliss Army Community Service Employment Readiness Program offers assistance with resume writing interview skills job referrals and personal career planning. 
+																	FORT BLISS Texas Eleven soldiers were injured after ingesting an unknown substance during a field training exercise at Fort Bliss in Texas the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Recognize a munition Retreat from the area without moving it Report the munition by. 
+																	For those who are interested in joining the A Little Bit of Bliss team for a more local personal start to employment at Fort Bliss Edwards encourages spouses to try their hand at crafting. 
+																	Apply Now View All Jobs. 
+																	Employment Readiness Program ERP - Ft. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	USA Jobs United States governments one-stop clearinghouse for civil service job opportunities with federal agencies. 
+																	Whether youre interested in furthering your professional career or just supplementing the familys income or both the Fort Bliss area has a number of opportunities for spouses. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2021/02/08/170e800e/size0-full.jpg" data-lightbox="roadtrip" data-title="Urgkaj84yx6j M">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2021/02/08/170e800e/size0-full.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP8ObFgqP3Zax-eMn1wIX3CwQRzXavuc-XJg';" alt="Urgkaj84yx6j M">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Urgkaj84yx6j M</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bliss.armymwr.com/download_file/view/3b857e28-282e-42f4-8771-d82c064934b9/10118" data-lightbox="roadtrip" data-title="Employment Readiness Program Erp">
+											<img class="card-img v-image ads-img " src="https://bliss.armymwr.com/download_file/view/3b857e28-282e-42f4-8771-d82c064934b9/10118" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQPrlXwLuW88gli6VGJx3KgKrBy-asesIgyw';" alt="Employment Readiness Program Erp">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Employment Readiness Program Erp</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://home.army.mil/bliss/application/files/7815/8273/8096/license-army.mil-story.jpg" data-lightbox="roadtrip" data-title="Army Doubles Amount For Spouse Licensure Reimbursement Fort Bliss Texas">
+											<img class="card-img v-image ads-img " src="https://home.army.mil/bliss/application/files/7815/8273/8096/license-army.mil-story.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdETvMekHQxvgdShFtMLwPJGGTffY3ORvHDw';" alt="Army Doubles Amount For Spouse Licensure Reimbursement Fort Bliss Texas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Doubles Amount For Spouse Licensure Reimbursement Fort Bliss Texas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kvia.b-cdn.net/2019/10/fort-bliss.jpg" data-lightbox="roadtrip" data-title="Jobs Available For Military Veterans At Job Fair On Fort Bliss Kvia">
+											<img class="card-img v-image ads-img " src="https://kvia.b-cdn.net/2019/10/fort-bliss.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFfEbqgXjkS4WMot7jCyByjm5odsy4Xofq_Q';" alt="Jobs Available For Military Veterans At Job Fair On Fort Bliss Kvia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jobs Available For Military Veterans At Job Fair On Fort Bliss Kvia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.dvidshub.net/media/thumbs/photos/2002/6109670/1000w_q95.jpg" data-lightbox="roadtrip" data-title="Dvids Images A Little Bit Of Bliss A Crafty Solution To Spouse Employment Image 7 Of 7">
+											<img class="card-img v-image ads-img " src="https://cdn.dvidshub.net/media/thumbs/photos/2002/6109670/1000w_q95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqcVPWrQp0vPEZ9VjAFmifmD5jn3QAiG5u-Q';" alt="Dvids Images A Little Bit Of Bliss A Crafty Solution To Spouse Employment Image 7 Of 7">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dvids Images A Little Bit Of Bliss A Crafty Solution To Spouse Employment Image 7 Of 7</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://uso-location-elpaso.s3.amazonaws.com/events/103/1dc6c12d-f9bd-4c63-92f2-aa7ec22d1aeb-large.jpg?1539892696" data-lightbox="roadtrip" data-title="Military Spouse Coffee Connection Uso El Paso">
+											<img class="card-img v-image ads-img " src="https://uso-location-elpaso.s3.amazonaws.com/events/103/1dc6c12d-f9bd-4c63-92f2-aa7ec22d1aeb-large.jpg?1539892696" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKxrXkZIeP8FVVjy7PrqlgDMqpgPu9iPxsgg';" alt="Military Spouse Coffee Connection Uso El Paso">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Coffee Connection Uso El Paso</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1635822976603083" data-lightbox="roadtrip" data-title="Army Community Service Employment Readiness Fort Bliss Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1635822976603083" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTymzouEyOEnFKS9yOpaucQYme3_7m6sc4i7Q';" alt="Army Community Service Employment Readiness Fort Bliss Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Community Service Employment Readiness Fort Bliss Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bliss.armymwr.com/application/files/6915/9716/2306/CV19_ACS_3.jpg" data-lightbox="roadtrip" data-title="Army Community Service Acs">
+											<img class="card-img v-image ads-img " src="https://bliss.armymwr.com/application/files/6915/9716/2306/CV19_ACS_3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeufT_JXD69Z8EOsYkf1-EgX5Z7CHMx5_Ymg';" alt="Army Community Service Acs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Community Service Acs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gannett-cdn.com/-mm-/cf858b324087e6cb4ea32bf92eb14278935a0d69/c=0-122-3261-1964/local/-/media/2017/01/24/TXNMGroup/ElPaso/636208828010890428-Bliss-Employment-Readiness-.jpg" data-lightbox="roadtrip" data-title="Fort Bliss Hiring Fair Is Feb 9 At Centennial">
+											<img class="card-img v-image ads-img " src="https://www.gannett-cdn.com/-mm-/cf858b324087e6cb4ea32bf92eb14278935a0d69/c=0-122-3261-1964/local/-/media/2017/01/24/TXNMGroup/ElPaso/636208828010890428-Bliss-Employment-Readiness-.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiuLCSHfdPT7X60YwwtDg4kbc9aoXfXnugCw';" alt="Fort Bliss Hiring Fair Is Feb 9 At Centennial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fort Bliss Hiring Fair Is Feb 9 At Centennial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1850568201679534" data-lightbox="roadtrip" data-title="Military Spouses For Hire Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1850568201679534" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGMnLTPBypPijzB3MFI8SQrZbj0s6TG0Il2w';" alt="Military Spouses For Hire Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouses For Hire Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2391878707513454" data-lightbox="roadtrip" data-title="Fort Bliss Transition Assistance Program Posts Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2391878707513454" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxvn8HSwPwH12QdQAVVUpr2Z9hO7I1qpt0QQ';" alt="Fort Bliss Transition Assistance Program Posts Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fort Bliss Transition Assistance Program Posts Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=3898520993502406" data-lightbox="roadtrip" data-title="Fort Bliss Army Community Service Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=3898520993502406" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPqm1-zdq8ID3sPhePu3SRsremFYCyL6uSg';" alt="Fort Bliss Army Community Service Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fort Bliss Army Community Service Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://home.army.mil/bliss/application/files/thumbnails/small/2115/7849/6160/191219-QV384-004-web.jpg" data-lightbox="roadtrip" data-title="Exchange National Charity Team Up To Pay Away The Layaway For Fort Bliss Families Fort Bliss Texas">
+											<img class="card-img v-image ads-img " src="https://home.army.mil/bliss/application/files/thumbnails/small/2115/7849/6160/191219-QV384-004-web.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzXOyhDTV0uvoFIAERUr2zfYYxTzdo0p5OYA';" alt="Exchange National Charity Team Up To Pay Away The Layaway For Fort Bliss Families Fort Bliss Texas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Exchange National Charity Team Up To Pay Away The Layaway For Fort Bliss Families Fort Bliss Texas</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/ncaa-eligibility-waiver-process.html">Ncaa Eligibility Waiver Process</a></li>
+													<li class="list-group-item"><a href="/ncaa-football-eligibility-age-limit.html">Ncaa Football Eligibility Age Limit</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-rules-walk-on.html">Ncaa Eligibility Rules Walk On</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-rules-club-sports.html">Ncaa Eligibility Rules Club Sports</a></li>
+													<li class="list-group-item"><a href="/ncaa-football-free-year-of-eligibility.html">Ncaa Football Free Year Of Eligibility</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-rules-injury.html">Ncaa Eligibility Rules Injury</a></li>
+													<li class="list-group-item"><a href="/ncaa-ice-hockey-eligibility-rules.html">Ncaa Ice Hockey Eligibility Rules</a></li>
+													<li class="list-group-item"><a href="/ncaa-football-eligibility-rules-age.html">Ncaa Football Eligibility Rules Age</a></li>
+													<li class="list-group-item"><a href="/ncaa-hockey-player-eligibility.html">Ncaa Hockey Player Eligibility</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-rules-for-walk-ons.html">Ncaa Eligibility Rules For Walk Ons</a></li>
+													<li class="list-group-item"><a href="/ncaa-extra-year-of-eligibility-fall-sports.html">Ncaa Extra Year Of Eligibility Fall Sports</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-rules-for-football.html">Ncaa Eligibility Rules For Football</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-time-clock.html">Ncaa Eligibility Time Clock</a></li>
+													<li class="list-group-item"><a href="/ncaa-football-eligibility-2020-covid.html">Ncaa Football Eligibility 2020 Covid</a></li>
+													<li class="list-group-item"><a href="/ncaa-football-years-of-eligibility.html">Ncaa Football Years Of Eligibility</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-rules-years.html">Ncaa Eligibility Rules Years</a></li>
+													<li class="list-group-item"><a href="/ncaa-extra-year-of-eligibility-baseball.html">Ncaa Extra Year Of Eligibility Baseball</a></li>
+													<li class="list-group-item"><a href="/ncaa-football-eligibility-center.html">Ncaa Football Eligibility Center</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-rules-d1.html">Ncaa Eligibility Rules D1</a></li>
+													<li class="list-group-item"><a href="/ncaa-how-many-years-of-eligibility.html">Ncaa How Many Years Of Eligibility</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

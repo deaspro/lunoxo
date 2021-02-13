@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Man Kills Wife In San Antonio - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Man Kills Wife In San Antonio",
+  "datePublished": "2021-02-13",
+  "image": "https://knewz.com/wp-content/uploads/2020/08/image-1.jpg?w=640",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+man+kills+wife+in+san+antonio",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Man Kills Wife In San Antonio</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The bodies of a husband wife four children and two cats were found in the garage of the home in the 100 block of Red Willow San Antonio Police Chief William McManus said. CYPRESS Texas A man suspected of shooting two women in a suburban Houston church parking lot killing one of them and then fleeing to a hotel has been found dead inside a room there. Storrie IV 49 apparently shot Jennifer Jo Storrie 43 outside their home on FM 3240 and then turned the22 caliber rifle on himself Bandera County Sheriff Dan Butts said. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/military-time-right-now-michigan.html">military time right now michigan</a>
+											<a class="badge badge-secondary" href="/military-time-conversion-test.html">military time conversion test</a>
+											<a class="badge badge-primary" href="/military-time-right-now-est.html">military time right now est</a>
+											<a class="badge badge-secondary" href="/military-time-duration-calculator.html">military time duration calculator</a>
+											<a class="badge badge-info" href="/military-time-right-now-california.html">military time right now california</a>
+											<a class="badge badge-dark" href="/military-time-minutes-converter-chart.html">military time minutes converter chart</a>
+											<a class="badge badge-danger" href="/military-time-format-conversion.html">military time format conversion</a>
+											<a class="badge badge-warning" href="/military-time-converter-for-minutes.html">military time converter for minutes</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to pay a visit to the right blog.  Our website gives you hints for viewing the maximum quality video and image content, search and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, so we recommend this video for you to see.  It is also possible to contribute to supporting this site by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/9b/6b/319b6bd0ba31415b2c3ee3683a49859c.jpg" data-lightbox="roadtrip" data-title="Pin On Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/9b/6b/319b6bd0ba31415b2c3ee3683a49859c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnyhOlUxWdHilHjJjCVECvlTvCpOlIZI0hew';" alt="Pin On Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://data.ibtimes.sg/en/full/40847/army-staff-sgt-jared-esquibel-harless-and-his-wife-sheryll-murdered-their-four-young-children.jpg?w=719" data-lightbox="roadtrip" data-title="San Antonio Murder Suicide Army Officer S Wife Helped Husband Kill Children With Special Needs">
+											<img class="card-img v-image ads-img " src="https://data.ibtimes.sg/en/full/40847/army-staff-sgt-jared-esquibel-harless-and-his-wife-sheryll-murdered-their-four-young-children.jpg?w=719" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNmH-VymTLofGdYFvRdySSHuwj24dlHH2orA';" alt="San Antonio Murder Suicide Army Officer S Wife Helped Husband Kill Children With Special Needs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Antonio Murder Suicide Army Officer S Wife Helped Husband Kill Children With Special Needs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/3b/ce/433bce33f45a7015a1c647a2a0a3eb55.jpg" data-lightbox="roadtrip" data-title="Army Ssg Michael H Simpson 30 Of San Antonio Texas Died May 1 2013 Serving During Operation Enduring Freedom Military Heroes American Soldiers Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/3b/ce/433bce33f45a7015a1c647a2a0a3eb55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZlpQDP2gWD5cbgRmSg1ImQC56lo1AJmHczg';" alt="Army Ssg Michael H Simpson 30 Of San Antonio Texas Died May 1 2013 Serving During Operation Enduring Freedom Military Heroes American Soldiers Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Ssg Michael H Simpson 30 Of San Antonio Texas Died May 1 2013 Serving During Operation Enduring Freedom Military Heroes American Soldiers Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/53/52/2353529b41b135b6a29cca3e464ad7c6.jpg" data-lightbox="roadtrip" data-title="Pin On Gungho">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/53/52/2353529b41b135b6a29cca3e464ad7c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsvgcmkE0SnIyvBHYQ4dWeQNnxjXMVMBt5AA';" alt="Pin On Gungho">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Gungho</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/34/7c/a6/347ca6ba4b9d46ae74f6d3e14a093e13.jpg" data-lightbox="roadtrip" data-title="5 Things You Didn T Know About U S Army Special Forces Special Forces Army Special Forces Military Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/34/7c/a6/347ca6ba4b9d46ae74f6d3e14a093e13.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEqVY-d8gUcFtGqHDexJsp5jWZYb_FrjOtpQ';" alt="5 Things You Didn T Know About U S Army Special Forces Special Forces Army Special Forces Military Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Things You Didn T Know About U S Army Special Forces Special Forces Army Special Forces Military Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://knewz.com/wp-content/uploads/2020/08/image-1.jpg?w=640" data-lightbox="roadtrip" data-title="Wife Helped Army Husband Kill Their Kids Before Their Joint Murder Suicide">
+											<img class="card-img v-image ads-img " src="https://knewz.com/wp-content/uploads/2020/08/image-1.jpg?w=640" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKBxERNAv8t8GdkiSIfRdAd7q5Aay3r-EtYQ';" alt="Wife Helped Army Husband Kill Their Kids Before Their Joint Murder Suicide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wife Helped Army Husband Kill Their Kids Before Their Joint Murder Suicide</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://knewz.com/wp-content/uploads/2020/08/image-1.jpg?w=640" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKBxERNAv8t8GdkiSIfRdAd7q5Aay3r-EtYQ';" alt="Wife Helped Army Husband Kill Their Kids Before Their Joint Murder Suicide">
+										<div class="card-body">
+						<h3 class="h5"><b>Andre McDonald 41 who.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military man kills wife in san antonio</strong>. 
+								
+																	The soldier 38-year-old Staff Sgt. 
+																	En route to the custody exchange call multiple additional calls came in about gunshots near the same location San Antonio police spokesman Carlos Ortiz tells PEOPLE. 
+																	WilsonSan Antonio Express-News Show More Show Less 7 of 8 A West Side man turned himself to San Antonio authorities after confessing to strangling his wife in their apartment. 
+																	FBI says San Antonio soldier killed wife and left baby in her arms Gofundme screen shots Show More Show Less 12 of 31 Kayden Culp 10 suffered second degree burns he received while he. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Woman wounded is his daughter. 
+																	June 6 UPI -- The Army has confirmed that a man found dead this week with his wife and four children in their San Antonio home was a soldier assigned to Joint Base San Antonio-Fort Sam Houston. 
+																	The Associated Press SAN ANTONIO An Air Force major based in San Antonio who is charged with evidence tampering related to his wifes disappearance in February has been released from jail. 
+																	A day following the arrest of a suspect in connection to a gruesome slaying of a San Antonio woman an arrest affidavit has revealed disturbing details surrounding her death. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	29-year-old Jamaican Andreen Nicole McDonald has been missing since Thursday February 28 in San Antonio Texas. 
+																	Authorities said they believe Andre McDonald 40 purchased the items and destroyed the receipt with the intent of disposing of the body of his 29-year-old wife Andreen Nicole McDonald who. 
+																	TeachDem AndreenMcDonald StarlightHomesAssistedLiving Category. 
+																	SAN ANTONIO An Air Force major based in San Antonio has been charged with murder after authorities found the remains of his wife whom he reported missing in March. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An Air Force major assigned to a cyberwarfare unit at Joint Base San Antonio-Lackland is a suspect in the disappearance of his wife who is believed dead said officials who charged him Sunday in. 
+																	Army intelligence soldier 38 and his wife murdered their four children by poisoning them with carbon monoxide before killing themselves Authorities believe Sgt. 
+																	SAN ANTONIO An Air Force major based in San Antonio has been charged with murder after authorities found the remains of his wife whom he reported missing in March. 
+																	Dead woman believed to be suspects 66-year-old estranged wife. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A jury found Lars Itzo who shot his wife to death a year ago and told police he mistook her for an intruder at their home not guilty of murder after hours of deliberation Thursday but found him. 
+																	Jared Esquibel Harless 38 his 36-year-old wife four children and two cats were found dead at the home Thursday morning. 
+																	Suspected of firing several rounds into a vehicle outside a church. 
+																	The incident follows the husband recently having been assigned to the Joint Base San Antonio-Fort Sam Houston. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	McManus told reporters that. 
+																	Andre McDonald 40 already behind bars in connection with his wifes disappearance was charged Saturday with murder by the Bexar County Sheriffs Office Homicide Unit. 
+																	News headlines and videos from KSAT 12 the San Antonio Texas leader in breaking news weather and sports. 
+																	A Texas-based soldier his wife four kids and two cats were killed Wednesday night in what police suspect was an intentional carbon-monoxide poisoning. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/a1/39/f6a13987246d4bf4cd8b1f10db13ed04.jpg" data-lightbox="roadtrip" data-title="Us Military Police Officer Playing Thumb War With An Iraqi Boy In Baghdad Mp Soldiers Build Rapport W Military Heroes Military Police Army American Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/a1/39/f6a13987246d4bf4cd8b1f10db13ed04.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqUorKT0CfFPyYqqWoZu_diXIjBxLze-Bciw';" alt="Us Military Police Officer Playing Thumb War With An Iraqi Boy In Baghdad Mp Soldiers Build Rapport W Military Heroes Military Police Army American Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Military Police Officer Playing Thumb War With An Iraqi Boy In Baghdad Mp Soldiers Build Rapport W Military Heroes Military Police Army American Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/5a/ad/f65aad922d36474f15a31918cefd474c.jpg" data-lightbox="roadtrip" data-title="Photos With American Military Heroes Military Heroes American Heroes Military Museum">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/5a/ad/f65aad922d36474f15a31918cefd474c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmzvrtqx6A-puWdRwI0eC0cg8ISFMJmsZsLA';" alt="Photos With American Military Heroes Military Heroes American Heroes Military Museum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photos With American Military Heroes Military Heroes American Heroes Military Museum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/0a/f3/530af31b4ebeb864598cd5dee8f73b9e.jpg" data-lightbox="roadtrip" data-title="Son Of Fallen Indiana Patrolman Greeted By 70 Officers In First Day Back At School Indiana Police San Antonio Police Academy Fallen Police Officer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/0a/f3/530af31b4ebeb864598cd5dee8f73b9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9yii_5oQqVqM0UqlOHiROGmDI4mejpP7gSg';" alt="Son Of Fallen Indiana Patrolman Greeted By 70 Officers In First Day Back At School Indiana Police San Antonio Police Academy Fallen Police Officer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Son Of Fallen Indiana Patrolman Greeted By 70 Officers In First Day Back At School Indiana Police San Antonio Police Academy Fallen Police Officer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/c0/af/fbc0afdadbad8bc29c61098c13d9a860.jpg" data-lightbox="roadtrip" data-title="Pin On Ar Exclusive Youtube Videos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/c0/af/fbc0afdadbad8bc29c61098c13d9a860.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGbX9ydZ0mxod71UOa29-nYfLq8m_-CJoRsA';" alt="Pin On Ar Exclusive Youtube Videos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ar Exclusive Youtube Videos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/c0/98/3fc0981f0a875470be04af608927478f.png" data-lightbox="roadtrip" data-title="Pin On Military Tech">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/c0/98/3fc0981f0a875470be04af608927478f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVY6lmar6s03rHA9HfEaaLL4yOh4PRe8Sv8g';" alt="Pin On Military Tech">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Tech</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.590599.1563316079!/image/image.JPG_gen/derivatives/landscape_900/image.JPG" data-lightbox="roadtrip" data-title="Air Force Reserve Major Charged With Wife S Murder Tried To Hide Body Beneath Dead Cow Records Say U S Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.590599.1563316079!/image/image.JPG_gen/derivatives/landscape_900/image.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoFiVNfMYxI1Rw8_6i8UAvAAYT2quAoEN0tg';" alt="Air Force Reserve Major Charged With Wife S Murder Tried To Hide Body Beneath Dead Cow Records Say U S Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Reserve Major Charged With Wife S Murder Tried To Hide Body Beneath Dead Cow Records Say U S Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2017/Oct/24/2001832343/825/780/0/170927-A-BH785-019A.JPG" data-lightbox="roadtrip" data-title="Workplace Violence Survivors Unite To Turn Tragedy Into Hope U S Department Of Defense Defense Department News">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2017/Oct/24/2001832343/825/780/0/170927-A-BH785-019A.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqzg2iQOW3KW168KSmxTtzkZKHexPkNRrRxw';" alt="Workplace Violence Survivors Unite To Turn Tragedy Into Hope U S Department Of Defense Defense Department News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Workplace Violence Survivors Unite To Turn Tragedy Into Hope U S Department Of Defense Defense Department News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media2.fdncms.com/sacurrent/imager/u/original/23001630/screen_shot_2020-02-12_at_11.41.24_am.png" data-lightbox="roadtrip" data-title="San Antonio Man Confesses To Killing Man Over Weed Money Fatally Shooting Wife After She Got Upset About Murder The Daily">
+											<img class="card-img v-image ads-img " src="https://media2.fdncms.com/sacurrent/imager/u/original/23001630/screen_shot_2020-02-12_at_11.41.24_am.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFRdwBJzYC4urJztDye6XboMEC2itYuVyvYA';" alt="San Antonio Man Confesses To Killing Man Over Weed Money Fatally Shooting Wife After She Got Upset About Murder The Daily">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Antonio Man Confesses To Killing Man Over Weed Money Fatally Shooting Wife After She Got Upset About Murder The Daily</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.armytimes.com/resizer/5Z1xqpBzZ6V9O-dL0PhHHvbgcq8=/1200x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/CZW5QPUYVJFTJNIVC66G3LKSMQ.jpg" data-lightbox="roadtrip" data-title="Two Dead In Shooting At Lackland Air Force Base In San Antonio">
+											<img class="card-img v-image ads-img " src="https://www.armytimes.com/resizer/5Z1xqpBzZ6V9O-dL0PhHHvbgcq8=/1200x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/CZW5QPUYVJFTJNIVC66G3LKSMQ.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaXBpR6IxzJxYHaCzvRItFSbj_1jKb5SlI7w';" alt="Two Dead In Shooting At Lackland Air Force Base In San Antonio">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Two Dead In Shooting At Lackland Air Force Base In San Antonio</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/84/b6/ab84b6050c765e093d39937abf022268.jpg" data-lightbox="roadtrip" data-title="Second Gulf War General Norman Schwarzkopf Addressing The Troops Army Leaders America S Army Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/84/b6/ab84b6050c765e093d39937abf022268.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf635tcPws6lzZ9maaXJXtGqd-rMrP98krvw';" alt="Second Gulf War General Norman Schwarzkopf Addressing The Troops Army Leaders America S Army Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Second Gulf War General Norman Schwarzkopf Addressing The Troops Army Leaders America S Army Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/16/71/23167133dba861062db009e33544009f.jpg" data-lightbox="roadtrip" data-title="Pin By Gail Frascinella On 1 David Lou Chris Kyle Military Heroes Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/16/71/23167133dba861062db009e33544009f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhDID7cEvuQlrS7ig7aHnVlXv2HJ3mMtUW9w';" alt="Pin By Gail Frascinella On 1 David Lou Chris Kyle Military Heroes Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Gail Frascinella On 1 David Lou Chris Kyle Military Heroes Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/60/b6/51/60b651496aaeba5b0a37f19f37949a26.jpg" data-lightbox="roadtrip" data-title="Rest In Peace To American Hero Major Tom Greer Tom Served As A Ranger And Delta Force Commander In The U S Arm American Soldiers American Heroes Delta Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/60/b6/51/60b651496aaeba5b0a37f19f37949a26.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKpIl4F2SR7jt71PREWsuRqLoY280nwNCX6A';" alt="Rest In Peace To American Hero Major Tom Greer Tom Served As A Ranger And Delta Force Commander In The U S Arm American Soldiers American Heroes Delta Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rest In Peace To American Hero Major Tom Greer Tom Served As A Ranger And Delta Force Commander In The U S Arm American Soldiers American Heroes Delta Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/52/1b/40521b5e43a37fc8e6042d2522316a74.jpg" data-lightbox="roadtrip" data-title="Four Military Training Instructors Keep A Close Eye On A Formation Of New Recruits At Air Force Basic Training Basic Military Training Lackland Air Force Base">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/52/1b/40521b5e43a37fc8e6042d2522316a74.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoUDAQBpWS0jRrkTEWIhUvCtWLFYK6jQ0djQ';" alt="Four Military Training Instructors Keep A Close Eye On A Formation Of New Recruits At Air Force Basic Training Basic Military Training Lackland Air Force Base">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Four Military Training Instructors Keep A Close Eye On A Formation Of New Recruits At Air Force Basic Training Basic Military Training Lackland Air Force Base</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/does-the-military-pay-for-your-spouse-to-go-to-college.html">Does The Military Pay For Your Spouse To Go To College</a></li>
+													<li class="list-group-item"><a href="/dubai-military-human-resources-committee.html">Dubai Military Human Resources Committee</a></li>
+													<li class="list-group-item"><a href="/does-tricare-cover-spouses.html">Does Tricare Cover Spouses</a></li>
+													<li class="list-group-item"><a href="/does-the-navy-keep-married-couples-together.html">Does The Navy Keep Married Couples Together</a></li>
+													<li class="list-group-item"><a href="/does-servicemembers-civil-relief-act-apply-to-spouses.html">Does Servicemembers Civil Relief Act Apply To Spouses</a></li>
+													<li class="list-group-item"><a href="/dreaming-my-partner-doesnt-love-me.html">Dreaming My Partner Doesnt Love Me</a></li>
+													<li class="list-group-item"><a href="/easy-military-haircut.html">Easy Military Haircut</a></li>
+													<li class="list-group-item"><a href="/does-the-military-help-spouses-pay-for-college.html">Does The Military Help Spouses Pay For College</a></li>
+													<li class="list-group-item"><a href="/education-assistance-for-military-spouses.html">Education Assistance For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/does-social-security-end-when-spouse-dies.html">Does Social Security End When Spouse Dies</a></li>
+													<li class="list-group-item"><a href="/does-spouse-get-army-pension-after-death.html">Does Spouse Get Army Pension After Death</a></li>
+													<li class="list-group-item"><a href="/does-the-military-pay-for-your-spouses-college.html">Does The Military Pay For Your Spouses College</a></li>
+													<li class="list-group-item"><a href="/education-for-military-spouses-uk.html">Education For Military Spouses Uk</a></li>
+													<li class="list-group-item"><a href="/does-spouse-get-military-retirement-after-divorce.html">Does Spouse Get Military Retirement After Divorce</a></li>
+													<li class="list-group-item"><a href="/does-tricare-cover-couples-counseling.html">Does Tricare Cover Couples Counseling</a></li>
+													<li class="list-group-item"><a href="/does-the-military-have-a-ged-program.html">Does The Military Have A Ged Program</a></li>
+													<li class="list-group-item"><a href="/education-benefits-for-military-spouse.html">Education Benefits For Military Spouse</a></li>
+													<li class="list-group-item"><a href="/does-verizon-offer-military-discount.html">Does Verizon Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/dreaming-my-husband-doesnt-love-me.html">Dreaming My Husband Doesnt Love Me</a></li>
+													<li class="list-group-item"><a href="/does-tricare-cover-braces-for-spouses.html">Does Tricare Cover Braces For Spouses</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

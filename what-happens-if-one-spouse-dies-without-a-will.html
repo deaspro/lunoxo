@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Happens If One Spouse Dies Without A Will - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Happens If One Spouse Dies Without A Will",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/a6/a6/42/a6a6421c31e75ea25aba1928d0355c95.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+happens+if+one+spouse+dies+without+a+will",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Happens If One Spouse Dies Without A Will</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In the remaining states the surviving spouse may inherit between one-third and one-half of the assets with the remainder divided among surviving children if applicable. If your spouse dies without leaving a valid will you can choose to get an equalization payment or your share according to the intestacy rules. Typically a probate court distributes assets according to a persons last will and testament. <br>				
+			</p>
+										<a class="badge badge-danger" href="/veterans-death-benefits-for-surviving-spouse.html">veterans death benefits for surviving spouse</a>
+											<a class="badge badge-danger" href="/virtual-jobs-for-military-spouses.html">virtual jobs for military spouses</a>
+											<a class="badge badge-warning" href="/veterans-dependents-scholarships.html">veterans dependents scholarships</a>
+											<a class="badge badge-primary" href="/veterans-dependents-college-scholarships.html">veterans dependents college scholarships</a>
+											<a class="badge badge-danger" href="/veterans-spouse-id-card.html">veterans spouse id card</a>
+											<a class="badge badge-success" href="/vetrecsarchivesgov-veteran-request.html">vetrecsarchivesgov veteran request</a>
+											<a class="badge badge-light" href="/war-heroes-and-generals.html">war heroes and generals</a>
+											<a class="badge badge-warning" href="/veterans-service-records-page-of-the-national-archives.html">veterans service records page of the national archives</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to visit the ideal blog.  Our website gives you hints for viewing the maximum quality video and image content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this movie for you to view.  It is also possible to contribute to supporting this website by sharing videos and graphics that you like on this blog on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/31/09/e93109c6b97475c33c5560b23fcf544d.jpg" data-lightbox="roadtrip" data-title="What Happens If I Die Without A Will In Pa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/31/09/e93109c6b97475c33c5560b23fcf544d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLpYAdM1Fb6N2lUupT2_3YFobwfDgVR3t9CQ';" alt="What Happens If I Die Without A Will In Pa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Happens If I Die Without A Will In Pa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/a6/42/a6a6421c31e75ea25aba1928d0355c95.jpg" data-lightbox="roadtrip" data-title="Life Is Not The Same With Out You Grief Quotes Heaven Quotes Grieving Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/a6/42/a6a6421c31e75ea25aba1928d0355c95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ezcd-IdYKU0APyK1hUT0YMgocpYUtTlSNg';" alt="Life Is Not The Same With Out You Grief Quotes Heaven Quotes Grieving Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Life Is Not The Same With Out You Grief Quotes Heaven Quotes Grieving Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/ad/9c/7cad9c72fc839393216cbef6e3ac9ca9.png" data-lightbox="roadtrip" data-title="Heirs And Inheritance Part 1 If Your Spouse Dies Without A Last Will Who Will Inherit Inheritance Constitution Of The Philippines The Heirs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/ad/9c/7cad9c72fc839393216cbef6e3ac9ca9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXA0L1cb8KKJ2jdyOWzSESmZerIMfmkGCGQQ';" alt="Heirs And Inheritance Part 1 If Your Spouse Dies Without A Last Will Who Will Inherit Inheritance Constitution Of The Philippines The Heirs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Heirs And Inheritance Part 1 If Your Spouse Dies Without A Last Will Who Will Inherit Inheritance Constitution Of The Philippines The Heirs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/85/a0/2485a0d9f0da786812191cf7db8ef8f8.png" data-lightbox="roadtrip" data-title="Do Inherited Properties Belong Exclusively To The Spouse Who Inherited Them Or To Both S Boundaries In Marriage Constitution Of The Philippines Word Of The Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/85/a0/2485a0d9f0da786812191cf7db8ef8f8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiUhgvq5hobhw___CBfBQtsjpFdS6bIsZYew';" alt="Do Inherited Properties Belong Exclusively To The Spouse Who Inherited Them Or To Both S Boundaries In Marriage Constitution Of The Philippines Word Of The Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do Inherited Properties Belong Exclusively To The Spouse Who Inherited Them Or To Both S Boundaries In Marriage Constitution Of The Philippines Word Of The Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/0d/b8/510db836b991f3794a65b6da8888c86c.png" data-lightbox="roadtrip" data-title="Can Nephews And Nieces Inherit From Their Grandparents Or From Their Unmarried Uncles Or Aunts Nephew Nature Kids Niece">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/0d/b8/510db836b991f3794a65b6da8888c86c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrfpbzkNQ3DaiXC0OI8Zq0yTon_9TMH5vCkg';" alt="Can Nephews And Nieces Inherit From Their Grandparents Or From Their Unmarried Uncles Or Aunts Nephew Nature Kids Niece">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can Nephews And Nieces Inherit From Their Grandparents Or From Their Unmarried Uncles Or Aunts Nephew Nature Kids Niece</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/a1/63/8ca16376b6d0288f2d9dcceb9b92f10d.png" data-lightbox="roadtrip" data-title="Who Inherits From An Illegitimate Child You Are The Father Illegitimate Children">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/a1/63/8ca16376b6d0288f2d9dcceb9b92f10d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ70_FuAw4HTrntaELdyQ6876RNGZoCYT5Tuw';" alt="Who Inherits From An Illegitimate Child You Are The Father Illegitimate Children">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Who Inherits From An Illegitimate Child You Are The Father Illegitimate Children</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/8c/a1/63/8ca16376b6d0288f2d9dcceb9b92f10d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ70_FuAw4HTrntaELdyQ6876RNGZoCYT5Tuw';" alt="Who Inherits From An Illegitimate Child You Are The Father Illegitimate Children">
+										<div class="card-body">
+						<h3 class="h5"><b>What happens if you die without a will is a question frequently asked of Estate Planning professionals and weve done our best to answer it in our guide.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What happens if one spouse dies without a will</strong>. 
+								
+																	A person who dies without leaving a will is called an intestate person. 
+																	Its a hard pill to swallow when we explain that they technically only own their ½ of the community property in full ownership but the kicker is the deceased spouses ½. 
+																	If there is no will or if a will left the home to someone else the surviving spouse can petition probate court for ownership. 
+																	Intestacy - who inherits if someone dies without a will. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However if there is more than one child the spouse gets a third of the remaining estate and the remaining two thirds is shared between the children. 
+																	By Head of Wills Solicitor James Antoniou. 
+																	Many people find it hard to consider life without their significant other and choose not to think about whether theyve made a Will as it can understandably cause upset and distress. 
+																	Because intestacy laws only recognize relatives unmarried couples dont inherit the property of the other partner when one partner dies without a will. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In certain instances the spouse and surviving children each may get equal shares. 
+																	If you die without a will someone is still responsible for paying the mortgage on your property. 
+																	In the majority of succession cases we deal with where one party dies without a will the surviving spouse comes to see us to explain their rights to the property. 
+																	Youll get any State Pension based on your husband wife or civil partners National Insurance contribution when you claim your own pension. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Survived by a spouse and non-biological children. 
+																	If someone makes a will but it is not legally valid the rules of intestacy decide how the estate will be shared out not the wishes expressed in the will. 
+																	Every state has laws that direct what happens to property when someone dies without a valid will and the property was not left in some other way such as in a living trust. 
+																	Unmarried partners friends and charities get nothing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Only married or civil partners and some other close relatives can inherit under the rules of intestacy. 
+																	It might be the responsibility of the estate the surviving spouse the mortgage company or even the insurance company depending on the circumstances. 
+																	Generally only spouses registered domestic partners and blood relatives inherit under intestate succession laws. 
+																	Unless theres a will which clearly states a persons intentions when they die the decedents property will be divided among relatives depending on their relation to the decedent. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However even if a person dies intestate without a will their estate goes through probate and is distributed according to the states intestate succession laws. 
+																	Spouses can leave their 50 ownership to anyone they like when they die if they opt for survivorship rights in these states but the property will go to the surviving spouse if they fail to do so. 
+																	Suffering a bereavement of any loved one is always going to be difficult to cope with but it will be especially so if it involves the death of a spouse. 
+																	For more info visit NI Direct. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If a husband or wife dies without a will and they have a surviving spouse and children together the surviving spouse inherits the decedents half of the couples community property and one-third of the decedents separate property. 
+																	In this case the surviving spouse will inherit one-half 12 of the deceased spouses entire probate estate and the deceased spouses children will inherit the other one-half 12 per stirpes. 
+																	These rules give married spouses and children the right to inherit property when there is no valid will. 
+																	If there is only one child then the spouse also gets half of the remaining estate and the child gets the other half. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Surviving children may include those from a prior marriage. 
+																	But there might not be Inheritance Tax to pay on this asset if the value falls within their tax-free allowance. 
+																	Find out who is entitled to a share of someones money property and possessions if they die without making a will. 
+																	If a husband dies and his surviving spouses name is not on the title the spouse may still retain ownership if the husband conferred title to the spouse in his will. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The asset automatically goes to the other joint owner if one of them dies the deceased cant pass on their ownership of the asset in their will you have to value the asset and include it when working out the Inheritance Tax. 
+																	You will not get it if you remarry or form a new civil. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/74/27/a474276e09d4796c26d95eeb000389d5.jpg" data-lightbox="roadtrip" data-title="Three Reasons Why You Need A Last Will And Testament Last Will And Testament Will And Testament Estate Planning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/74/27/a474276e09d4796c26d95eeb000389d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIiC5_hbU-MkmapqJJVuwjgZdaPI1pmOeXhQ';" alt="Three Reasons Why You Need A Last Will And Testament Last Will And Testament Will And Testament Estate Planning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Three Reasons Why You Need A Last Will And Testament Last Will And Testament Will And Testament Estate Planning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/05/c4/f005c48bb688ed9e94a5f2c55620027e.jpg" data-lightbox="roadtrip" data-title="5 Things You Should Do When Your Spouse Dies Lovetoknow Estate Planning Checklist Family Death Funeral Planning Checklist">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/05/c4/f005c48bb688ed9e94a5f2c55620027e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVjFBhkopzznhbtj46dXa0ii2r7oKL37ukZw';" alt="5 Things You Should Do When Your Spouse Dies Lovetoknow Estate Planning Checklist Family Death Funeral Planning Checklist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Things You Should Do When Your Spouse Dies Lovetoknow Estate Planning Checklist Family Death Funeral Planning Checklist</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/bd/da/0fbdda90fae1fb885e50d3250096ff0d.jpg" data-lightbox="roadtrip" data-title="Do Things Really Happen For A Reason Grief Quotes Miss You Mom Husband Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/bd/da/0fbdda90fae1fb885e50d3250096ff0d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPhl84wsM-Bh99pkZ7MUuobYS9FoDz0JEjKQ';" alt="Do Things Really Happen For A Reason Grief Quotes Miss You Mom Husband Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do Things Really Happen For A Reason Grief Quotes Miss You Mom Husband Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/c2/60/f9c260d3c92f8a74d274e4789c1cf2e3.png" data-lightbox="roadtrip" data-title="7 Ways To Speed Up Or Avoid Probate Probate How To Find Out This Or That Questions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/c2/60/f9c260d3c92f8a74d274e4789c1cf2e3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLOuDPvG5TBMh6Amm9QACSWUB0NGq2tIqtVg';" alt="7 Ways To Speed Up Or Avoid Probate Probate How To Find Out This Or That Questions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Ways To Speed Up Or Avoid Probate Probate How To Find Out This Or That Questions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/e1/37/c3e137510cb036a848be5637e57315b6.jpg" data-lightbox="roadtrip" data-title="And That Is What You Lose When Your Spouse Life Partner Dies Life Partner Quote Partner Quotes Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/e1/37/c3e137510cb036a848be5637e57315b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScNQd54s16y4W7iZ-4ELqzfrmz4_ck618nLQ';" alt="And That Is What You Lose When Your Spouse Life Partner Dies Life Partner Quote Partner Quotes Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">And That Is What You Lose When Your Spouse Life Partner Dies Life Partner Quote Partner Quotes Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/5c/85/3f5c85c28b6f8da9448ed4830c39504a.png" data-lightbox="roadtrip" data-title="Pin On Singapore Asia Health Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/5c/85/3f5c85c28b6f8da9448ed4830c39504a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR47haoOEQMwHEVENiW8oimpu5rxFRUaHRuEA';" alt="Pin On Singapore Asia Health Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Singapore Asia Health Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/8c/e6/3d8ce62af2f8ded162234eb0b467adc7.png" data-lightbox="roadtrip" data-title="Visitation Rights Over Illegitimate Children Visitation Rights Illegitimate Child Support Payments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/8c/e6/3d8ce62af2f8ded162234eb0b467adc7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1JbRwPmvinHm2LUsRX6_HOYevmRS-5DFFww';" alt="Visitation Rights Over Illegitimate Children Visitation Rights Illegitimate Child Support Payments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Visitation Rights Over Illegitimate Children Visitation Rights Illegitimate Child Support Payments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/0a/9d/1c/0a9d1cc433aa24f87a040f3f56d44236.jpg" data-lightbox="roadtrip" data-title="Even Brushing Your Teeth Feels Different When Your Spouse Dies Grieving Quotes Quotes About Strength Quotes About Strength In Hard Times">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/0a/9d/1c/0a9d1cc433aa24f87a040f3f56d44236.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSG1gWIAEtxjVN38XscG0qHSm-KXDOuX-wOA';" alt="Even Brushing Your Teeth Feels Different When Your Spouse Dies Grieving Quotes Quotes About Strength Quotes About Strength In Hard Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Even Brushing Your Teeth Feels Different When Your Spouse Dies Grieving Quotes Quotes About Strength Quotes About Strength In Hard Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/cf/93/33cf93c4d1b74f9786ef767c540f56a0.png" data-lightbox="roadtrip" data-title="Family Code Of The Philippines Primer On Illegitimate Children Coding Illegitimate Philippines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/cf/93/33cf93c4d1b74f9786ef767c540f56a0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjRe6FlxdTppStLEILbYmWNWa_LiMJjH_3VA';" alt="Family Code Of The Philippines Primer On Illegitimate Children Coding Illegitimate Philippines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Family Code Of The Philippines Primer On Illegitimate Children Coding Illegitimate Philippines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/61/4c/85614cf9b78cfd84b9831cf2053dbb97.jpg" data-lightbox="roadtrip" data-title="When Someone You Love Dies You Never Quite Get Over It You Just Slowly Learn How To Go On Without Them But A Sympathy Quotes When Someone Dies Miss You Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/61/4c/85614cf9b78cfd84b9831cf2053dbb97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsdBYOVNLGAdqeMKnuT6TTgw7CK4kYChGBHA';" alt="When Someone You Love Dies You Never Quite Get Over It You Just Slowly Learn How To Go On Without Them But A Sympathy Quotes When Someone Dies Miss You Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When Someone You Love Dies You Never Quite Get Over It You Just Slowly Learn How To Go On Without Them But A Sympathy Quotes When Someone Dies Miss You Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/99/e6/c299e65b6bf9dd49e57e3dedb26c8252.jpg" data-lightbox="roadtrip" data-title="Quotes About Missing Deceased Husband Miss Mom Quotes Grief Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/99/e6/c299e65b6bf9dd49e57e3dedb26c8252.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv9Ca_wIoDxXpWb7QqFaUvEvZHH3FISjWYXQ';" alt="Quotes About Missing Deceased Husband Miss Mom Quotes Grief Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Quotes About Missing Deceased Husband Miss Mom Quotes Grief Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/c6/12/28c612f4c13eeedd93d66f711978a2dd.jpg" data-lightbox="roadtrip" data-title="Any Woman Who Dies While Her Husband Is Pleased With Her She Will Enter Jannah Hadith Nabi Saw Marriage Quotes Islam Marriage Love In Islam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/c6/12/28c612f4c13eeedd93d66f711978a2dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd-rxtCYn1UFOFP4rVDElrrZsLG6piRtZbLw';" alt="Any Woman Who Dies While Her Husband Is Pleased With Her She Will Enter Jannah Hadith Nabi Saw Marriage Quotes Islam Marriage Love In Islam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Any Woman Who Dies While Her Husband Is Pleased With Her She Will Enter Jannah Hadith Nabi Saw Marriage Quotes Islam Marriage Love In Islam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8a/88/f5/8a88f5980cb906e0ea7984f178defdff.jpg" data-lightbox="roadtrip" data-title="I Will Die Without You Beautiful Love Quotes Love Quotes With Images Boyfriend Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8a/88/f5/8a88f5980cb906e0ea7984f178defdff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR6xp8bxwg3unDc2iU7OLn2oKnT4prLF4Ocw';" alt="I Will Die Without You Beautiful Love Quotes Love Quotes With Images Boyfriend Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Will Die Without You Beautiful Love Quotes Love Quotes With Images Boyfriend Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/youre-my-wife-now-meme.html">Youre My Wife Now Meme</a></li>
+													<li class="list-group-item"><a href="/zero-zero-zero-mycanal.html">Zero Zero Zero Mycanal</a></li>
+													<li class="list-group-item"><a href="/you-are-my-wife-now-dave.html">You Are My Wife Now Dave</a></li>
+													<li class="list-group-item"><a href="/your-spouse-name-in-hindi-meaning.html">Your Spouse Name In Hindi Meaning</a></li>
+													<li class="list-group-item"><a href="/zales-card.html">Zales Card</a></li>
+													<li class="list-group-item"><a href="/youtube-army-wives-season-1.html">Youtube Army Wives Season 1</a></li>
+													<li class="list-group-item"><a href="/yugoslavian-military-hats.html">Yugoslavian Military Hats</a></li>
+													<li class="list-group-item"><a href="/youre-my-wife-now-dave-youtube.html">Youre My Wife Now Dave Youtube</a></li>
+													<li class="list-group-item"><a href="/youre-my-wife-now-league-of-gentlemen.html">Youre My Wife Now League Of Gentlemen</a></li>
+													<li class="list-group-item"><a href="/zong-my-care.html">Zong My Care</a></li>
+													<li class="list-group-item"><a href="/zambia-air-force-headquarters-postal-address.html">Zambia Air Force Headquarters Postal Address</a></li>
+													<li class="list-group-item"><a href="/youth-military-hat.html">Youth Military Hat</a></li>
+													<li class="list-group-item"><a href="/zepeto-my-card.html">Zepeto My Card</a></li>
+													<li class="list-group-item"><a href="/you-are-my-wife-now.html">You Are My Wife Now</a></li>
+													<li class="list-group-item"><a href="/youre-my-wife-now-dave-t-shirt.html">Youre My Wife Now Dave T Shirt</a></li>
+													<li class="list-group-item"><a href="/youtube-army-wives-season-2-episode-1.html">Youtube Army Wives Season 2 Episode 1</a></li>
+													<li class="list-group-item"><a href="/your-spouse-wants-a-divorce-but-you-dont.html">Your Spouse Wants A Divorce But You Dont</a></li>
+													<li class="list-group-item"><a href="/youre-my-wife-now-dave-meaning.html">Youre My Wife Now Dave Meaning</a></li>
+													<li class="list-group-item"><a href="/yokosuka-naval-base-spouse-jobs.html">Yokosuka Naval Base Spouse Jobs</a></li>
+													<li class="list-group-item"><a href="/zach-on-army-wives.html">Zach On Army Wives</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

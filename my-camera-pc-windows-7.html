@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>My Camera Pc Windows 7 - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "My Camera Pc Windows 7",
+  "datePublished": "2021-02-13",
+  "image": "https://i.ytimg.com/vi/YSeBNY51p-s/maxresdefault.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=my+camera+pc+windows+7",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>My Camera Pc Windows 7</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Download arcsoft webcam companion windows 7 32 bit for free. Test Webcam on Windows. Join or Sign In. <br>				
+			</p>
+										<a class="badge badge-dark" href="/can-i-still-have-covid-if-i-tested-negative.html">can i still have covid if i tested negative</a>
+											<a class="badge badge-dark" href="/can-i-join-the-military-with-a-disability.html">can i join the military with a disability</a>
+											<a class="badge badge-warning" href="/can-i-view-death-records-online.html">can i view death records online</a>
+											<a class="badge badge-info" href="/can-a-woman-get-fired-for-being-pregnant.html">can a woman get fired for being pregnant</a>
+											<a class="badge badge-info" href="/can-i-become-a-navy-seal-at-age-34.html">can i become a navy seal at age 34</a>
+											<a class="badge badge-light" href="/can-a-spouse-waive-child-support.html">can a spouse waive child support</a>
+											<a class="badge badge-secondary" href="/can-i-request-my-military-medical-records-online.html">can i request my military medical records online</a>
+											<a class="badge badge-primary" href="/can-an-ex-military-spouse-get-a-va-loan.html">can an ex military spouse get a va loan</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to visit the ideal site.  Our site provides you with hints for seeing the highest quality video and image content, search and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this video that you view.  It is also possible to contribute to supporting this site by sharing videos and images that you like on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://tipsmake.com/data/images/how-to-open-the-camera-on-laptop-windows-7810-picture-1-TqClTKjbR.jpg" data-lightbox="roadtrip" data-title="How To Open The Camera On Laptop Windows 7 8 10">
+											<img class="card-img v-image ads-img " src="https://tipsmake.com/data/images/how-to-open-the-camera-on-laptop-windows-7810-picture-1-TqClTKjbR.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkM_kUVIPBtBPwEd8FcO1GeCVSTN42buof2A';" alt="How To Open The Camera On Laptop Windows 7 8 10">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Open The Camera On Laptop Windows 7 8 10</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.drivereasy.com/wp-content/uploads/2019/07/cropped-web-cam-796227_1920.jpg" data-lightbox="roadtrip" data-title="Download Webcam Driver For Windows 7 Driver Easy">
+											<img class="card-img v-image ads-img " src="https://images.drivereasy.com/wp-content/uploads/2019/07/cropped-web-cam-796227_1920.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8qD4z7LVYIDnKMnzS0Fr94k-rbewJg3l95g';" alt="Download Webcam Driver For Windows 7 Driver Easy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Webcam Driver For Windows 7 Driver Easy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/YSeBNY51p-s/maxresdefault.jpg" data-lightbox="roadtrip" data-title="How To Fix Camera And Webcam Problems In Windows 7 8 10 2 Simple Methods Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/YSeBNY51p-s/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8j13r0uUCGYuVFfHy4AfgUrP8giEBl-OAsg';" alt="How To Fix Camera And Webcam Problems In Windows 7 8 10 2 Simple Methods Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Fix Camera And Webcam Problems In Windows 7 8 10 2 Simple Methods Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://content.spiceworksstatic.com/service.community/p/how_to_step_attachments/0000013394/50108675/attached_file/fb4015027e9f2fd42633c9e6de82de4fa23a986ff708ea65a1bd2a18e7e60786_mik1.jpg" data-lightbox="roadtrip" data-title="How To Enable A Microphone In Windows 7">
+											<img class="card-img v-image ads-img " src="https://content.spiceworksstatic.com/service.community/p/how_to_step_attachments/0000013394/50108675/attached_file/fb4015027e9f2fd42633c9e6de82de4fa23a986ff708ea65a1bd2a18e7e60786_mik1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqDk6Cn0zR-NzxOijqNc6qA7gd1xRjV-XqAw';" alt="How To Enable A Microphone In Windows 7">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Enable A Microphone In Windows 7</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.onlinemictest.com/wp-content/uploads/2019/10/hardware-and-sound-windows-7.png" data-lightbox="roadtrip" data-title="Microphone Not Working In Windows 7 Onlinemictest">
+											<img class="card-img v-image ads-img " src="https://www.onlinemictest.com/wp-content/uploads/2019/10/hardware-and-sound-windows-7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRurjUjaR0eWE5hVqwVrwTWgfDUki3TGtT5Ew';" alt="Microphone Not Working In Windows 7 Onlinemictest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Microphone Not Working In Windows 7 Onlinemictest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://appuals.com/wp-content/uploads/2017/11/2017-11-14_190256.png" data-lightbox="roadtrip" data-title="Fix Laptop Camera Not Working On Windows 7 8 And 10 Appuals Com">
+											<img class="card-img v-image ads-img " src="https://appuals.com/wp-content/uploads/2017/11/2017-11-14_190256.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPww5UJ7ox6NBzifVWmIsRfvJG6RaikyahgA';" alt="Fix Laptop Camera Not Working On Windows 7 8 And 10 Appuals Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fix Laptop Camera Not Working On Windows 7 8 And 10 Appuals Com</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.onlinemictest.com/wp-content/uploads/2019/10/hardware-and-sound-windows-7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPww5UJ7ox6NBzifVWmIsRfvJG6RaikyahgA';" alt="Fix Laptop Camera Not Working On Windows 7 8 And 10 Appuals Com">
+										<div class="card-body">
+						<h3 class="h5"><b>With the help of Mydlink for PC you can record video when motion is detected turn on or off devices and set up schedules and automation to make your life easier.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>My camera pc windows 7</strong>. 
+								
+																	Windows 7 Windows 7 64 bit Windows 8 Windows 8 64 bit Windows 81 Windows 81 64 bit Windows 10 Windows 10 64 bit file size. 
+																	Sunday 1 December 2013. 
+																	How to install Ezviz For PC Windows 7 8 10 and Mac. 
+																	Camera or webcam not working or cannot turn on in Windows 81 10 - ideapad ThinkPad - Lenovo Support US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What is ICSee App ICSee monitors security software that can be used to video security camera videos and control intelligent devices such as the DVR NVR WiFi Cameras doorbell door locks and compatible with controlling highly smart gadgets. 
+																	How to view web camera without installing software Windows 7 or Windows 8 Sunday 1 December 2013 by Adrian Gordon. 
+																	The Camera app may ask for your permission to access the webcam before it displays the cameras feed. 
+																	Mydlink for PC is a security application that allows you to easily manage your entire surveillance camera at any time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Camera For Windows 7 free download - PDF Reader for Windows 7 Windows 7 Ultimate Windows 10 and many more programs. 
+																	Installed web cameras would have an icon and it was as simple as double clicking to view the image. 
+																	Search for Device Manager and. 
+																	Power Plan Assistant for Windows 7 is a multiple award-winning software created to redefine the Windows 7 laptop experiencePower Plan Assistant has been designed to work with any Windows 7-compatible hardware 32-bit and 64-bitIn addition it can install the truly unique features specific for Boot Camp-enabled Apple Macbook Pro Air notebooks running Windows 7. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To know more about the steps visit the page. 
+																	Windows XP users will remember being able to view a web camera from My Computer. 
+																	Compaq 320 Notebook PC Compaq 321 Notebook PC Compaq 325 Notebook PC and Compaq 326 Notebook PC. 
+																	Update to the latest ZC0301PLH drivers for the Vimicro ZC0301 PC Camera. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If your webcam or camera is not working in Windows on your Lenovo Laptop there are steps to fix the camera issues. 
+																	Windows Apps for Camera Drivers. 
+																	Download Realtek PC Camera Driver 1001058611211 Digital Camera Webcam Camcorder. 
+																	Now look for an entry named Imaging devices in the right window pane. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This article guides you to download Ezviz for PC Windows and Mac to manage the security cameras from your computer. 
+																	To check whether Windows 10 is detecting the peripheral connect the camera to the computer if this isnt a built-in webcam and use these steps. 
+																	The Camera app is faster and simpler than ever. 
+																	This package installs the USB 20 PC Camera Driver for Windows 7 32-bit and 64-bit and Windows XP for ThinkCentre M90z. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is lightweight and easy to install and setup. 
+																	Click on the arrow associated with it to expand it. 
+																	VIMICRO USB PC Camera ZC0301PLH Logitech QuickCam Express. 
+																	But if you can download the Ezviz security camera on Windows or Mac computer it will be a great solution to get the best service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Just point and shoot to take great pictures automatically on any PC or tablet running Windows 10. 
+																	In this tutorial guides to download ICSee for pc windows 10 8 7 and Mac computers. 
+																	LarmTek USB Webcam 1080p with CoverWebcam for PcDesktopLaptopStreaming Webcam Built in MicPlug and Play Video Calling Computer CameraComputer Camera for Gaming and Conferencing 43 out of 5 stars 2211. 
+																	Overall HP Webcam Software is an efficient program that can help users enhance the core functionality of their HP webcam. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youre a Windows 10 user select the Cortana search box on the Windows 10 taskbar then type Camera into the search box. 
+																	System Utilities downloads - ArcSoft WebCam Companion by ArcSoft and many more programs are available for instant and free download. 
+																	You can view your monitoring cameras in real-time be alerted. 
+																	Power Plan Assistant. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Note if you can not find imaging device in the list then click on View and then Show Hidden Devices from top bar. 
+																	Click on Device Manager from the left window pane. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/0b/40/f10b4099b8a5c82656bf1d727ded2b10.png" data-lightbox="roadtrip" data-title="V380 Camera Software For Pc Windows Xp 7 8 10 Mac Windows Windows Xp Windows 10">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/0b/40/f10b4099b8a5c82656bf1d727ded2b10.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUOs-gbjzOh5J46cr0xQsSbGd2mTmSkU5dHw';" alt="V380 Camera Software For Pc Windows Xp 7 8 10 Mac Windows Windows Xp Windows 10">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">V380 Camera Software For Pc Windows Xp 7 8 10 Mac Windows Windows Xp Windows 10</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/oj7bTQhOD_4/maxresdefault.jpg" data-lightbox="roadtrip" data-title="How To Allow Sites To Access Your Camera And Microphone In Google Chrome Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/oj7bTQhOD_4/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR51-yL7Wh4DPzEev681LO9c6FeTwpbm5XGdg';" alt="How To Allow Sites To Access Your Camera And Microphone In Google Chrome Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Allow Sites To Access Your Camera And Microphone In Google Chrome Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wikihow.com/images/thumb/7/73/Take-a-Photo-by-Camera-on-a-Laptop-Step-1-Version-2.jpg/v4-460px-Take-a-Photo-by-Camera-on-a-Laptop-Step-1-Version-2.jpg.webp" data-lightbox="roadtrip" data-title="How To Take A Photo By Camera On A Laptop 13 Steps">
+											<img class="card-img v-image ads-img " src="https://www.wikihow.com/images/thumb/7/73/Take-a-Photo-by-Camera-on-a-Laptop-Step-1-Version-2.jpg/v4-460px-Take-a-Photo-by-Camera-on-a-Laptop-Step-1-Version-2.jpg.webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnrYL3at5Evrhypf17pF9WFgmqu6Cbd-KeNg';" alt="How To Take A Photo By Camera On A Laptop 13 Steps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Take A Photo By Camera On A Laptop 13 Steps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.windowsreport.com/wp-content/uploads/2019/03/fix-webcam-drivers-iobit-driver-booster-7.png" data-lightbox="roadtrip" data-title="Can T Find Webcam In Device Manager Use This Quick Fix">
+											<img class="card-img v-image ads-img " src="https://cdn.windowsreport.com/wp-content/uploads/2019/03/fix-webcam-drivers-iobit-driver-booster-7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5fop6ycXiEcSs3ui6UDAf1S51gri5rSV4jQ';" alt="Can T Find Webcam In Device Manager Use This Quick Fix">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can T Find Webcam In Device Manager Use This Quick Fix</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/www.techforpc.com/wp-content/uploads/2020/01/xsh-cam-pc-windows-7-8-10-mac-free-download.png?fit=512%2C512&amp;ssl=1" data-lightbox="roadtrip" data-title="Xsh Cam For Pc Windows 7 8 10 Mac Free Download Techforpc Com">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/www.techforpc.com/wp-content/uploads/2020/01/xsh-cam-pc-windows-7-8-10-mac-free-download.png?fit=512%2C512&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsL2xfHfoc6JjGiffWNy2ujDxnTnHkfeauTg';" alt="Xsh Cam For Pc Windows 7 8 10 Mac Free Download Techforpc Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xsh Cam For Pc Windows 7 8 10 Mac Free Download Techforpc Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/www.techforpc.com/wp-content/uploads/2020/01/google-lens-app-in-pc-windows-7-8-10-mac-free-download.png?fit=512%2C512&amp;ssl=1" data-lightbox="roadtrip" data-title="Google Lens App In Pc Windows 7 8 10 Mac Free Download Techforpc Com">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/www.techforpc.com/wp-content/uploads/2020/01/google-lens-app-in-pc-windows-7-8-10-mac-free-download.png?fit=512%2C512&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJsC3d8tVzHs_uFLFb2XGKxtlBqXk6MNIrMQ';" alt="Google Lens App In Pc Windows 7 8 10 Mac Free Download Techforpc Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Google Lens App In Pc Windows 7 8 10 Mac Free Download Techforpc Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wikihow.com/images/thumb/3/3f/Fix-a-Webcam-That-Is-Displaying-a-Black-Screen-on-Windows-Step-4-Version-7.jpg/v4-460px-Fix-a-Webcam-That-Is-Displaying-a-Black-Screen-on-Windows-Step-4-Version-7.jpg" data-lightbox="roadtrip" data-title="How To Fix A Webcam That Is Displaying A Black Screen On Windows">
+											<img class="card-img v-image ads-img " src="https://www.wikihow.com/images/thumb/3/3f/Fix-a-Webcam-That-Is-Displaying-a-Black-Screen-on-Windows-Step-4-Version-7.jpg/v4-460px-Fix-a-Webcam-That-Is-Displaying-a-Black-Screen-on-Windows-Step-4-Version-7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbl0dsbL6IiHYqVidiM3Flvfg-LDPd9kBnag';" alt="How To Fix A Webcam That Is Displaying A Black Screen On Windows">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Fix A Webcam That Is Displaying A Black Screen On Windows</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.online-tech-tips.com/wp-content/uploads/2019/07/windows-7-control-panel.png" data-lightbox="roadtrip" data-title="How To Block Camera And Mic Access In Every Major Browser">
+											<img class="card-img v-image ads-img " src="https://www.online-tech-tips.com/wp-content/uploads/2019/07/windows-7-control-panel.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSGuheksbFAvNeA5ci44MmC5CIv5XTzJJAw';" alt="How To Block Camera And Mic Access In Every Major Browser">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Block Camera And Mic Access In Every Major Browser</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.wired.com/photos/5eab69503c53cd00c2678764/master/pass/Gear-Web-Phone-Cam-959082912.jpg" data-lightbox="roadtrip" data-title="How To Turn Your Phone Into A Webcam For Mac Or Windows 10 Wired">
+											<img class="card-img v-image ads-img " src="https://media.wired.com/photos/5eab69503c53cd00c2678764/master/pass/Gear-Web-Phone-Cam-959082912.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEnI0nLiVkr3srOBz9rHywpchvpda6eW1OjA';" alt="How To Turn Your Phone Into A Webcam For Mac Or Windows 10 Wired">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Turn Your Phone Into A Webcam For Mac Or Windows 10 Wired</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.technorms.com/assets/1194.png?ezimgfmt=rs:306x299/rscb3/ng:webp/ngcb3" data-lightbox="roadtrip" data-title="9 Ways To Take A Picture Using Your Webcam On Windows 7 And 8">
+											<img class="card-img v-image ads-img " src="https://www.technorms.com/assets/1194.png?ezimgfmt=rs:306x299/rscb3/ng:webp/ngcb3" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp9HYb36Oz34vXr5qRgSVyw2Uqj30jz31AYA';" alt="9 Ways To Take A Picture Using Your Webcam On Windows 7 And 8">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">9 Ways To Take A Picture Using Your Webcam On Windows 7 And 8</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/36/60/3f/36603fa91a07591f6211fe33571ebaed.jpg" data-lightbox="roadtrip" data-title="Free Download Icsee For Pc Windows 7810 And Mac Free Download Download App Download">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/36/60/3f/36603fa91a07591f6211fe33571ebaed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMSePxZXK3SbgRvli0uQrErrc8jbjMqcfP1Q';" alt="Free Download Icsee For Pc Windows 7810 And Mac Free Download Download App Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Download Icsee For Pc Windows 7810 And Mac Free Download Download App Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/a3/ce/f4a3cef71dc18223c28f24e93dc45738.png" data-lightbox="roadtrip" data-title="Nvms7000 For Pc Windows 7 10 Mac Free Download Ip Camera Desktop Pc Surveillance Cameras">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/a3/ce/f4a3cef71dc18223c28f24e93dc45738.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7VX5nA4KMA_FSMvI9RsjV9mo3VMKccYxkiA';" alt="Nvms7000 For Pc Windows 7 10 Mac Free Download Ip Camera Desktop Pc Surveillance Cameras">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nvms7000 For Pc Windows 7 10 Mac Free Download Ip Camera Desktop Pc Surveillance Cameras</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.top-password.com/blog/wp-content/uploads/2018/09/windows-10-cant-find-camera.png" data-lightbox="roadtrip" data-title="3 Ways To Fix Camera App Not Working In Windows 10 Password Recovery">
+											<img class="card-img v-image ads-img " src="https://www.top-password.com/blog/wp-content/uploads/2018/09/windows-10-cant-find-camera.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVavxgINTHjKI4PLjKrem9zmgJqdUd8RT6bw';" alt="3 Ways To Fix Camera App Not Working In Windows 10 Password Recovery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 Ways To Fix Camera App Not Working In Windows 10 Password Recovery</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-records-in-canada.html">Military Records In Canada</a></li>
+													<li class="list-group-item"><a href="/military-records-scotland-ww2.html">Military Records Scotland Ww2</a></li>
+													<li class="list-group-item"><a href="/military-retiree-divorce-tricare.html">Military Retiree Divorce Tricare</a></li>
+													<li class="list-group-item"><a href="/military-resources-for-depression.html">Military Resources For Depression</a></li>
+													<li class="list-group-item"><a href="/military-records-request-national-archives.html">Military Records Request National Archives</a></li>
+													<li class="list-group-item"><a href="/military-records-of-individual-civil-war-soldiers.html">Military Records Of Individual Civil War Soldiers</a></li>
+													<li class="list-group-item"><a href="/military-records-wwii-army.html">Military Records Wwii Army</a></li>
+													<li class="list-group-item"><a href="/military-resources-per-country.html">Military Resources Per Country</a></li>
+													<li class="list-group-item"><a href="/military-records-held-by-library-and-archives-canada.html">Military Records Held By Library And Archives Canada</a></li>
+													<li class="list-group-item"><a href="/military-retiree-spouse-benefits-divorce.html">Military Retiree Spouse Benefits Divorce</a></li>
+													<li class="list-group-item"><a href="/military-records-for-ancestor.html">Military Records For Ancestor</a></li>
+													<li class="list-group-item"><a href="/military-resources-for-child-custody.html">Military Resources For Child Custody</a></li>
+													<li class="list-group-item"><a href="/military-records-raf-ww2.html">Military Records Raf Ww2</a></li>
+													<li class="list-group-item"><a href="/military-retiree-benefits-divorced-spouse.html">Military Retiree Benefits Divorced Spouse</a></li>
+													<li class="list-group-item"><a href="/military-records-request-st-louis.html">Military Records Request St Louis</a></li>
+													<li class="list-group-item"><a href="/military-records-request-army.html">Military Records Request Army</a></li>
+													<li class="list-group-item"><a href="/military-records-for-vietnam-veterans.html">Military Records For Vietnam Veterans</a></li>
+													<li class="list-group-item"><a href="/military-records-lost-in-1973-fire.html">Military Records Lost In 1973 Fire</a></li>
+													<li class="list-group-item"><a href="/military-reservist-retirement-pay-calculator.html">Military Reservist Retirement Pay Calculator</a></li>
+													<li class="list-group-item"><a href="/military-records-ww1-uk.html">Military Records Ww1 Uk</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

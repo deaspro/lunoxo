@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>My Card Link - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "My Card Link",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/d8/d0/24/d8d024db9b568694923198053b6be723.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=my+card+link",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>My Card Link</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Mycardlink virtual busienss card hosting service. If you already have a card linked remove this card from your account then link the new one. If there is no issue follow these steps to make sure you can add a card to Wallet. <br>				
+			</p>
+										<a class="badge badge-warning" href="/military-spouse-divorce-tricare.html">military spouse divorce tricare</a>
+											<a class="badge badge-danger" href="/military-spouse-employment-partnership.html">military spouse employment partnership</a>
+											<a class="badge badge-info" href="/military-spouse-entitlements-during-divorce.html">military spouse entitlements during divorce</a>
+											<a class="badge badge-info" href="/military-spouse-discounts-on-flights.html">military spouse discounts on flights</a>
+											<a class="badge badge-light" href="/military-spouse-employment-partnership-website.html">military spouse employment partnership website</a>
+											<a class="badge badge-primary" href="/military-spouse-employment-overseas.html">military spouse employment overseas</a>
+											<a class="badge badge-secondary" href="/military-spouse-dental-insurance.html">military spouse dental insurance</a>
+											<a class="badge badge-dark" href="/military-spouse-employment-partnership-job-search.html">military spouse employment partnership job search</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to visit the ideal blog.  Our website gives you hints for seeing the maximum quality video and picture content, hunt and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video that you see.  You can also bring about supporting this website by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/1e/c6/2d1ec603160406813ef57ba3a95d280b.png" data-lightbox="roadtrip" data-title="Brand New Cards Shop Link Is In My Bio Mirandasofroniou Illustration Stationery Stationerydesign Stati In 2020 Greeting Card Brands Artist Card Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/1e/c6/2d1ec603160406813ef57ba3a95d280b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZoONmgRSjs9F2vVaAF8wPFS35rs8n9AWBFQ';" alt="Brand New Cards Shop Link Is In My Bio Mirandasofroniou Illustration Stationery Stationerydesign Stati In 2020 Greeting Card Brands Artist Card Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brand New Cards Shop Link Is In My Bio Mirandasofroniou Illustration Stationery Stationerydesign Stati In 2020 Greeting Card Brands Artist Card Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/d0/24/d8d024db9b568694923198053b6be723.jpg" data-lightbox="roadtrip" data-title="Pin On Cards Of Inspiration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/d0/24/d8d024db9b568694923198053b6be723.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdcCiu9Tq57NfPJaSiYBGtF_x7TGr48Jky4Q';" alt="Pin On Cards Of Inspiration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cards Of Inspiration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/32/df/be32df818ca0217d78b85ecad900449b.jpg" data-lightbox="roadtrip" data-title="Friendship Day Card Tutorial On My Youtube Channel Link On My Bio Frindship Fraindshipday Diy Craft Crafts Card Handmade In 2020 Card Tutorial Crafts Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/32/df/be32df818ca0217d78b85ecad900449b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs_7mrhaL1dRDBU6jVwXr8XIgufMCLWBF4yA';" alt="Friendship Day Card Tutorial On My Youtube Channel Link On My Bio Frindship Fraindshipday Diy Craft Crafts Card Handmade In 2020 Card Tutorial Crafts Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Friendship Day Card Tutorial On My Youtube Channel Link On My Bio Frindship Fraindshipday Diy Craft Crafts Card Handmade In 2020 Card Tutorial Crafts Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/ac/7c/4bac7cac4749db0b2c44401ed1539e75.jpg" data-lightbox="roadtrip" data-title="Social Media Business Cards By Socialmediabizcards Social Media Business Cards Business Card Inspiration How To Memorize Things">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/ac/7c/4bac7cac4749db0b2c44401ed1539e75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhb0VRn08-52G58lNZwxXZvkV3uf7ZNKLIrg';" alt="Social Media Business Cards By Socialmediabizcards Social Media Business Cards Business Card Inspiration How To Memorize Things">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Media Business Cards By Socialmediabizcards Social Media Business Cards Business Card Inspiration How To Memorize Things</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/c7/f7/e8c7f7a2c039d1c9751981e7bb12ee9c.jpg" data-lightbox="roadtrip" data-title="Professional Businesscard Design In 2020 Corporate Business Card Design Corporate Business Card Business Card Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/c7/f7/e8c7f7a2c039d1c9751981e7bb12ee9c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU8qHOH43v2Nw31g9awMuVJc0mA0YdxPgnPA';" alt="Professional Businesscard Design In 2020 Corporate Business Card Design Corporate Business Card Business Card Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Professional Businesscard Design In 2020 Corporate Business Card Design Corporate Business Card Business Card Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/14/fa/7a14faa1149df53a43164063b2c018a3.gif" data-lightbox="roadtrip" data-title="Pin On Dialog Box Header Style">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/14/fa/7a14faa1149df53a43164063b2c018a3.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtrkzH-lVmDh_YEZD6Z9yZLthhIbQhbeROgQ';" alt="Pin On Dialog Box Header Style">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Dialog Box Header Style</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/9b/9a/2d/9b9a2d2f2ab29bb5bcba13f7c94c71ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtrkzH-lVmDh_YEZD6Z9yZLthhIbQhbeROgQ';" alt="Pin On Dialog Box Header Style">
+										<div class="card-body">
+						<h3 class="h5"><b>We do not allow prepaid Discover or department store cards at the moment.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>My card link</strong>. 
+								
+																	By linking your bank account or card to your PayPal account you will never need to pull out your wallet and enter card numbers or any personal information when you make an online payment using PayPal. 
+																	If you have a Reward Card or Account from one of our stores and do not have a digital GAME Account you can link these by following these steps. 
+																	Youll have an account of youve booked online or have a Multilink or Season Ticket youll find the number on the front of your ticket. 
+																	Upload photos from your device or Facebook to create one of our personalised cards in a matter of minutes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cardlinks goal was to create a common POS network that would assist in the development of electronic transactions in Greece. 
+																	Indicates a required field. 
+																	Indicates a required field. 
+																	No matter which you choose rest assured that all our personalised cards are made to the highest possible standard and are exclusive to us. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cardlink was founded in 2004 by Alpha Bank and Eurobank. 
+																	We will keep you informed about the process of your travel card. 
+																	To report a lost or stolen card send us an email complete the form below and click Submit. 
+																	Download our new app or check out our website. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When you link the card it appears to me that my card is linked to another account. 
+																	Click here to go to the registration page and create a new GAME account You will receive a ver. 
+																	Register your card now to create a unique user ID and password that will provide secure access to your account balance recent transactions and more. 
+																	Wed love to drop you an email every now and then to let you know about all the latest travel card developments and any exciting offers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Register your card now to provide secure access to your account balance recent transactions and more. 
+																	If you already have a Wightlink account log in. 
+																	Welcome to a new way to get your Nectar on. 
+																	Touch device users explore by touch or with swipe gestures. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Please be advised that your credit card can be linked to the current account which is linked to your mobile banking app. 
+																	Shop the latest trends in Getting Started Getting a Card and Registering at MS. 
+																	If you cant add a card to Wallet to use with Apple Pay check Apple Pay on the System Status pageIf theres an issue try to add a card again after the issue is resolved. 
+																	The linking of the cards will need to be done at your nearest branch or via the customer care center. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Order online for home delivery or free collection from your nearest store. 
+																	Always ensure that you have the latest Dosh update and that your phone is updated as well. 
+																	I deleted it but the same problem is still what to do. 
+																	Please delete it from the other account and link it to this new account. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You are 16 -23 years old and want to save 13 off bus and rail travel. 
+																	When i link my card it show me this message This card is linked to another PayPal account. 
+																	Please remove the card from the other account or try a different card and im sure that it cant be linked on any other account. 
+																	You can link your Visa MasterCard or American Express card. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Share and manage your contact details the easy way Our hosted virtual cards get your business card into your customers address book and not the waste bin. 
+																	Use up and down arrows to review and enter to select. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/c7/f0/c6c7f0e78c98fa04bef6f5b2ede3cbfc.jpg" data-lightbox="roadtrip" data-title="Business Card 15 Contact Link In Bio My Etsyshop Or Dm This Is Business Card Design For Your Business Photography Logo Design Logo Set Jewelry Logo Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/c7/f0/c6c7f0e78c98fa04bef6f5b2ede3cbfc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8N89d49e48n06qdtzwhBmsd7A7t78QoY0Ww';" alt="Business Card 15 Contact Link In Bio My Etsyshop Or Dm This Is Business Card Design For Your Business Photography Logo Design Logo Set Jewelry Logo Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Business Card 15 Contact Link In Bio My Etsyshop Or Dm This Is Business Card Design For Your Business Photography Logo Design Logo Set Jewelry Logo Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/4f/aa/2c4faabad7c756a276bc4a31e5aa465b.jpg" data-lightbox="roadtrip" data-title="Kindly Click On The Link Get More Information About My Designs Skills Thanks Regards Cards Business Cards Design Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/4f/aa/2c4faabad7c756a276bc4a31e5aa465b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZWz_BIV-U4xwDOkCB4w5VsTxd7HwaNsLqGg';" alt="Kindly Click On The Link Get More Information About My Designs Skills Thanks Regards Cards Business Cards Design Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kindly Click On The Link Get More Information About My Designs Skills Thanks Regards Cards Business Cards Design Skills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/56/10/7a5610e04a4cd9a4defdcc2cb522da42.jpg" data-lightbox="roadtrip" data-title="Pink Lion Handmade Cards On Instagram Warm And Heartfelt Thank You This Handmade Card Has Bible Verse Inside Picture 3 T Cards Handmade Handmade Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/56/10/7a5610e04a4cd9a4defdcc2cb522da42.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTelj19XLNYqS_EgMhyvKjQ5fHth9kGsryPmA';" alt="Pink Lion Handmade Cards On Instagram Warm And Heartfelt Thank You This Handmade Card Has Bible Verse Inside Picture 3 T Cards Handmade Handmade Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pink Lion Handmade Cards On Instagram Warm And Heartfelt Thank You This Handmade Card Has Bible Verse Inside Picture 3 T Cards Handmade Handmade Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/62/dd/e062ddf1d0855704e885eabe00700631.jpg" data-lightbox="roadtrip" data-title="This Is Card 2 From My Magical Kit Of The Month Workshop All Made From Scraps Or Make A Lot Of Cards Click On The My Link For More Cards Ctmh Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/62/dd/e062ddf1d0855704e885eabe00700631.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJr4SP8jMvrU1ERltuu_BS0_VTnmzQU6x1Bw';" alt="This Is Card 2 From My Magical Kit Of The Month Workshop All Made From Scraps Or Make A Lot Of Cards Click On The My Link For More Cards Ctmh Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is Card 2 From My Magical Kit Of The Month Workshop All Made From Scraps Or Make A Lot Of Cards Click On The My Link For More Cards Ctmh Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/f9/32/50f932d075dca177f364d168495074f2.jpg" data-lightbox="roadtrip" data-title="Handmade Greeting Card I See You In My Future Link To Buy In Bio Available On E Greeting Card Shops Greeting Cards Handmade Greeting Card Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/f9/32/50f932d075dca177f364d168495074f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUD_gezaf0QzzM5UHKlHewe6yGAA67PoCU8Q';" alt="Handmade Greeting Card I See You In My Future Link To Buy In Bio Available On E Greeting Card Shops Greeting Cards Handmade Greeting Card Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Handmade Greeting Card I See You In My Future Link To Buy In Bio Available On E Greeting Card Shops Greeting Cards Handmade Greeting Card Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/64/bd/b464bdb7931c7daa7bca45bb1b73b172.jpg" data-lightbox="roadtrip" data-title="Simple Birthday Card Colour Variation Details On My Blog Link In Bio Simple Birthday Cards Birthday Cards Happy Birthday">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/64/bd/b464bdb7931c7daa7bca45bb1b73b172.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK33qVCdylZ2OGp17fxfwuCzC6n5TVBhoO-w';" alt="Simple Birthday Card Colour Variation Details On My Blog Link In Bio Simple Birthday Cards Birthday Cards Happy Birthday">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Simple Birthday Card Colour Variation Details On My Blog Link In Bio Simple Birthday Cards Birthday Cards Happy Birthday</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/ae/93/fcae93fdae98bb0317595a49cb65d380.jpg" data-lightbox="roadtrip" data-title="Link Up Party Tim Holtz Cards Card Making Birthday Altenew Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/ae/93/fcae93fdae98bb0317595a49cb65d380.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIVoBeG0k4YRk0LAa9-nxz0-SsOwcPSOYe3Q';" alt="Link Up Party Tim Holtz Cards Card Making Birthday Altenew Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Link Up Party Tim Holtz Cards Card Making Birthday Altenew Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/c5/62/9ac562072805f50836206a17f4053f4d.jpg" data-lightbox="roadtrip" data-title="Pin On Mft Ideas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/c5/62/9ac562072805f50836206a17f4053f4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRZXQbJ6pUokeqNrOVMEO94sHerlAnzpIm-g';" alt="Pin On Mft Ideas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mft Ideas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/9a/2d/9b9a2d2f2ab29bb5bcba13f7c94c71ec.jpg" data-lightbox="roadtrip" data-title="How To Link My Capital One Credit Card Accounts Capital One Credit Card Reduce Credit Card Debt Credit Card">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/9a/2d/9b9a2d2f2ab29bb5bcba13f7c94c71ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4k-fxmjgTzElrRUedpzL1PSHNG3vKkKm9zA';" alt="How To Link My Capital One Credit Card Accounts Capital One Credit Card Reduce Credit Card Debt Credit Card">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Link My Capital One Credit Card Accounts Capital One Credit Card Reduce Credit Card Debt Credit Card</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/f9/3e/7ff93e462661eeb62a656d8c36d08fb2.jpg" data-lightbox="roadtrip" data-title="Happy Birthday Card Scarletcards Birthday Stickers Goldfoil Cupcake Available On Etsy The Link Is In M Happy Birthday Cards Cards Handmade Birthday Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/f9/3e/7ff93e462661eeb62a656d8c36d08fb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfstupB-ULmtYq9bgmJCgZNV8AVVrudpoQtQ';" alt="Happy Birthday Card Scarletcards Birthday Stickers Goldfoil Cupcake Available On Etsy The Link Is In M Happy Birthday Cards Cards Handmade Birthday Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Happy Birthday Card Scarletcards Birthday Stickers Goldfoil Cupcake Available On Etsy The Link Is In M Happy Birthday Cards Cards Handmade Birthday Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/f9/2a/3df92a9359906e8fb7b94c25090a06c1.jpg" data-lightbox="roadtrip" data-title="Pin On Scratch Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/f9/2a/3df92a9359906e8fb7b94c25090a06c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQls4YThmKw3LCyGmUFB-mEHXo0D1-o3Pm_qw';" alt="Pin On Scratch Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Scratch Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/0e/e5/f10ee51fcefb2a2220c15ce9e966ce85.jpg" data-lightbox="roadtrip" data-title="Triple Tier Slider Card Butterfly Basics Slider Cards Card Making Birthday Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/0e/e5/f10ee51fcefb2a2220c15ce9e966ce85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXNZsrBlRB4z19cyyTa9l1hQdcgQFyI56wUA';" alt="Triple Tier Slider Card Butterfly Basics Slider Cards Card Making Birthday Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Triple Tier Slider Card Butterfly Basics Slider Cards Card Making Birthday Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/45/76/4245765bebcfa5a2b4535e5c36ac1034.jpg" data-lightbox="roadtrip" data-title="Barbara Smith Anders On Instagram Here S My Card For This Month S Mft Birthday Project Challenge Details On My Blog Link In My Profile Mftstamps Ideer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/45/76/4245765bebcfa5a2b4535e5c36ac1034.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqOZqWan9kSKeABF719pjue6BVfuPFwpQ_9A';" alt="Barbara Smith Anders On Instagram Here S My Card For This Month S Mft Birthday Project Challenge Details On My Blog Link In My Profile Mftstamps Ideer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Barbara Smith Anders On Instagram Here S My Card For This Month S Mft Birthday Project Challenge Details On My Blog Link In My Profile Mftstamps Ideer</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/benefits-of-being-a-marine-corps-officer.html">Benefits Of Being A Marine Corps Officer</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-nurse.html">Benefits Of Army Nurse</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-dozen-exercise.html">Benefits Of Army Dozen Exercise</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-a-army-ranger.html">Benefits Of Being A Army Ranger</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-canteen.html">Benefits Of Army Canteen</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-reserve-vs-national-guard.html">Benefits Of Army Reserve Vs National Guard</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-a-marine-recruiter.html">Benefits Of Being A Marine Recruiter</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-training.html">Benefits Of Army Training</a></li>
+													<li class="list-group-item"><a href="/benefits-of-air-force-retirement.html">Benefits Of Air Force Retirement</a></li>
+													<li class="list-group-item"><a href="/benefits-of-a-military-dependent-id.html">Benefits Of A Military Dependent Id</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-a-army-nurse.html">Benefits Of Being A Army Nurse</a></li>
+													<li class="list-group-item"><a href="/benefits-of-army-vs-air-force.html">Benefits Of Army Vs Air Force</a></li>
+													<li class="list-group-item"><a href="/benefits-for-veterans-spouses-assisted-living.html">Benefits For Veterans Spouses Assisted Living</a></li>
+													<li class="list-group-item"><a href="/benefits-of-becoming-an-army-officer.html">Benefits Of Becoming An Army Officer</a></li>
+													<li class="list-group-item"><a href="/benefits-of-becoming-a-marine-biologist.html">Benefits Of Becoming A Marine Biologist</a></li>
+													<li class="list-group-item"><a href="/benefits-of-becoming-a-military-doctor.html">Benefits Of Becoming A Military Doctor</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-a-military-husband.html">Benefits Of Being A Military Husband</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-a-marine-scout-sniper.html">Benefits Of Being A Marine Scout Sniper</a></li>
+													<li class="list-group-item"><a href="/benefits-of-a-military-contract-marriage.html">Benefits Of A Military Contract Marriage</a></li>
+													<li class="list-group-item"><a href="/benefits-of-air-force-reserve-reddit.html">Benefits Of Air Force Reserve Reddit</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

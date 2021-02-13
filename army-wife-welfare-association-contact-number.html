@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Wife Welfare Association Contact Number - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Wife Welfare Association Contact Number",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/73/34/22/7334227898781ab9c15f54787dd4a41c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+wife+welfare+association+contact+number",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Wife Welfare Association Contact Number</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Contact Forcesline - its free confidential. It is the nodal agency for matters relating to armed forces veterans including pensioners. Defence Medical Welfare Service DMWS The DMWS is a registered charity that works for the MoD and with other charities to provide practical and emotional support to military personnel their families and other entitled civilians when theyre in hospital rehabilitation. <br>				
+			</p>
+										<a class="badge badge-info" href="/army-family-readiness-support-assistant.html">army family readiness support assistant</a>
+											<a class="badge badge-danger" href="/army-hrc-infantry-branch.html">army hrc infantry branch</a>
+											<a class="badge badge-success" href="/army-headquarters-contact-number-new-delhi.html">army headquarters contact number new delhi</a>
+											<a class="badge badge-dark" href="/army-hrc-records-portal.html">army hrc records portal</a>
+											<a class="badge badge-primary" href="/army-hr-specialist-job-description.html">army hr specialist job description</a>
+											<a class="badge badge-secondary" href="/army-hat-knit.html">army hat knit</a>
+											<a class="badge badge-warning" href="/army-haircut-design.html">army haircut design</a>
+											<a class="badge badge-primary" href="/army-hat-images.html">army hat images</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to visit the ideal blog.  Our website provides you with hints for seeing the maximum quality video and image content, hunt and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, so we recommend this movie for you to see.  It is also possible to contribute to supporting this site by sharing videos and graphics that you like on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fe/c0/78/fec0785d677fa9cb28168fe28a659ae3.jpg" data-lightbox="roadtrip" data-title="Army Wife Achieves Individual Guinness World Records Guinness World Records World Records Guinness World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fe/c0/78/fec0785d677fa9cb28168fe28a659ae3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuBheY0rL9fYCddqX8q0KBByBLlwnU5wTBGg';" alt="Army Wife Achieves Individual Guinness World Records Guinness World Records World Records Guinness World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wife Achieves Individual Guinness World Records Guinness World Records World Records Guinness World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/44/88/704488a11581db8ca49c184d2adfc948.png" data-lightbox="roadtrip" data-title="Jagan Raj Empowers Awwa Army Wives Welfare Association Woman When The Army Saves The Country J In 2020 Public Private Partnership Army Wives Business Opportunities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/44/88/704488a11581db8ca49c184d2adfc948.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb8DpMHsndJtYXJEdZ7vDeliR5ZXi3NJq9nA';" alt="Jagan Raj Empowers Awwa Army Wives Welfare Association Woman When The Army Saves The Country J In 2020 Public Private Partnership Army Wives Business Opportunities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jagan Raj Empowers Awwa Army Wives Welfare Association Woman When The Army Saves The Country J In 2020 Public Private Partnership Army Wives Business Opportunities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/fa/ca/89faca1cc04697b3abe6056757cf36d0.png" data-lightbox="roadtrip" data-title="Posterwritingclass12examples Learncramcom Writing Classes Learn C Catchy Phrases">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/fa/ca/89faca1cc04697b3abe6056757cf36d0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwvuTXWRgN602kS3e0QwkCd_u449H4cVtYhw';" alt="Posterwritingclass12examples Learncramcom Writing Classes Learn C Catchy Phrases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Posterwritingclass12examples Learncramcom Writing Classes Learn C Catchy Phrases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/a3/9c/74a39c23b1d93026bfea5d5a1dfe4d19.jpg" data-lightbox="roadtrip" data-title="Pin On Chhipa Welfare Association">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/a3/9c/74a39c23b1d93026bfea5d5a1dfe4d19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8WTbZfTk-Lcka6evlqjg2ct0keknINbReg';" alt="Pin On Chhipa Welfare Association">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Chhipa Welfare Association</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/fd/50/31fd5084721d6a5c81f2db5329c20ea3.jpg" data-lightbox="roadtrip" data-title="Pin On Chhipa Welfare Association">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/fd/50/31fd5084721d6a5c81f2db5329c20ea3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9_WBClSG5qNJrKUlouA3TQdhb05cBl-DmCg';" alt="Pin On Chhipa Welfare Association">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Chhipa Welfare Association</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/f2/a5/48f2a5dcd3a00302c924de1a67591c20.jpg" data-lightbox="roadtrip" data-title="Zorins Tv News Bulletin 06 Feb 2020 In 2020 Tv News News Bulletin Entertainment Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/f2/a5/48f2a5dcd3a00302c924de1a67591c20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB00wRwVtAG8kFT1OuTthjDL2qJNeDemQ3xQ';" alt="Zorins Tv News Bulletin 06 Feb 2020 In 2020 Tv News News Bulletin Entertainment Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Zorins Tv News Bulletin 06 Feb 2020 In 2020 Tv News News Bulletin Entertainment Music</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a2/5b/19/a25b1976626c18941f2ccb68f8e2859e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB00wRwVtAG8kFT1OuTthjDL2qJNeDemQ3xQ';" alt="Zorins Tv News Bulletin 06 Feb 2020 In 2020 Tv News News Bulletin Entertainment Music">
+										<div class="card-body">
+						<h3 class="h5"><b>01206 816238 Military Tel.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army wife welfare association contact number</strong>. 
+								
+																	Army Wives Welfare Association or AWWA for short is an association that works for the welfare of the spouses children and dependents of Army personnel. 
+																	The Association is totally independent and run by our members although it does work closely with the MOD and the Army Welfare Policy Branch. 
+																	Email Address of Army Wives Welfare Association The email address of Army Wives Welfare Association is soawwaawwain. 
+																	For all Personal Support enquiries and referrals please contact the Intake and Assessment Team the AWS welfare single point of contact on. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We have received support from the Army Benevolent Fund and are in contact with many other service-related charities. 
+																	Translation Find a translation for Army Wives Welfare Association in other languages. 
+																	Welfare complex Room No 118 A Wing Sena Bhavan IHQ of MoDArmy DHQ PO New Delhi- 110011 Telephone. 
+																	Employees Welfare Association General Secretary Amar Singh Personal. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find the contact directory of Ministry of Defence. 
+																	AWWA was founded in 1966. 
+																	Army Wives Welfare Association AWWA is an Indian not for profit organisation that works for the spouse children or any dependants of Army Personnel. 
+																	RC-AWS-IAT-0Mailboxmodgovuk or 01904 882053. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ex - Army Wife Welfare Association. 
+																	Other than that the association organises vocational trainings and empower the beneficiaries. 
+																	We are open 0900 - 1700 Monday to Friday. 
+																	Find out more on the Personnel and Welfare page. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Office Super Bazar Shopping Complex Reids Line Opposite Miranda House College University of Delhi Delhi. 
+																	RC-AWS-IAT-0Mailboxmodgovuk or 01904 882053 civ 94777 3053 mil. 
+																	Add to My List Edit this Entry Rate it. 
+																	The association aims to rehabilitate war widows and battle casualties. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ex-Army Wife Welfare Association looks for the women welfare and empowerment where empowerment refers the spiritual social of individual communities. 
+																	For all Personal Support enquiries and referrals please contact the Intake and Assessment Team on. 
+																	Presenting the AWWA song with the beautiful ladies. 
+																	It looks after the welfare resettlement and rehabilitation of ex-servicemen war widows and their dependents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Founded in 1966 and headed by the serving chiefs wife AWWA is tasked with furthering the welfare of army. 
+																	The contact number of Army Wives Welfare Association is 011- 23018183. 
+																	Army Wifes Welfare Association Roko Cancer Charitable Trust in alliance with AWWA Army Wifes Welfare Association organized an India wide Breast Cancer awareness and detection drive for the families of the Armed forces stationed in the length and breadth of country in the month of July. 
+																	Army Wives Welfare Association Army Wives Welfare Association. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Contact Us Welfare complex Room No 118 A Wing Sena Bhavan IHQ of MoDArmy DHQ PO New Delhi- 110011 Telephone. 
+																	66th Republic Day of India. 
+																	Each of the 3 services has its own Welfare Support and Information Service Teams and Defence Medical Welfare Service DMWS. 
+																	Army spouses also run the high-profile Army Wives Welfare Association or AWWA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welfare complex Room No 118 A Wing Sena Bhavan IHQ of MoDArmy DHQ PO New Delhi- 110011 Telephone. 
+																	Department of Ex-Servicemen Welfare is a department under the Ministry of Defence India established in 2004. 
+																	01206 816524 Military Tel. 
+																	233 18 votes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your UWO will be able to guide you in the event of these organisations being required in helping you resolve your welfare issue. 
+																	Information about the wingsdivision of the Ministry name of the contact person office telephone number office address email id etc. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/5d/fd/80/5dfd80d497d7522a72ea1711ae75e1e4.jpg" data-lightbox="roadtrip" data-title="Pin On Chhipa Welfare Association">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/5d/fd/80/5dfd80d497d7522a72ea1711ae75e1e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-LKS7IGs1EreRNf-Nq9W-_lr_lM3bHCw1A';" alt="Pin On Chhipa Welfare Association">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Chhipa Welfare Association</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/5d/fd/80/5dfd80d497d7522a72ea1711ae75e1e4.jpg" data-lightbox="roadtrip" data-title="Pin On Chhipa Welfare Association">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/5d/fd/80/5dfd80d497d7522a72ea1711ae75e1e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTu76nVUin0JpT9TJa4aEYGWmx7faZnh9Maw';" alt="Pin On Chhipa Welfare Association">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Chhipa Welfare Association</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/5b/19/a25b1976626c18941f2ccb68f8e2859e.jpg" data-lightbox="roadtrip" data-title="Pin On News Info">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/5b/19/a25b1976626c18941f2ccb68f8e2859e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8gWaEohxZnMROLmyVhyqIu0p4rPF1FA_rjw';" alt="Pin On News Info">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On News Info</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/29/6b/46296bb092b704bf42a75fc84b6f5494.jpg" data-lightbox="roadtrip" data-title="Metta Welfare Association Located At 32 Simei Street 1 Singapore 529950 Tel 65804688 Buddhist Mahayana Metta">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/29/6b/46296bb092b704bf42a75fc84b6f5494.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT83H8Ztc3umMI5uEZ1eozPvKlzY_vZHtcPaw';" alt="Metta Welfare Association Located At 32 Simei Street 1 Singapore 529950 Tel 65804688 Buddhist Mahayana Metta">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Metta Welfare Association Located At 32 Simei Street 1 Singapore 529950 Tel 65804688 Buddhist Mahayana Metta</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/0b/28/2c0b28e3807f3999c5ad5e562bdae889.jpg" data-lightbox="roadtrip" data-title="Pin On News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/0b/28/2c0b28e3807f3999c5ad5e562bdae889.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0zwODh2zxDNG3ULZJU3ao2QREz4FxhkZe1w';" alt="Pin On News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/4f/01/d64f0118ac6d92fe57a6834948019a39.jpg" data-lightbox="roadtrip" data-title="Pin On Chhipa Welfare Association">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/4f/01/d64f0118ac6d92fe57a6834948019a39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8QuZP7uBXWAFoILLa9u5SJON0qJfotRqoFg';" alt="Pin On Chhipa Welfare Association">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Chhipa Welfare Association</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/70/f3/69/70f369076579650b92e6b4aaed51fddd.jpg" data-lightbox="roadtrip" data-title="The Silent Ranks Poem Perfect For The Army Wife Navy Wife Air Force Wife Or Marine Wife It S Patriotic Military Wife Quotes Army Wife Quotes Military Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/70/f3/69/70f369076579650b92e6b4aaed51fddd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWexgdbmXWRywXr8-7keBDgwCXulaRCCOH5g';" alt="The Silent Ranks Poem Perfect For The Army Wife Navy Wife Air Force Wife Or Marine Wife It S Patriotic Military Wife Quotes Army Wife Quotes Military Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Silent Ranks Poem Perfect For The Army Wife Navy Wife Air Force Wife Or Marine Wife It S Patriotic Military Wife Quotes Army Wife Quotes Military Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/79/73/367973b2b42b540670892e5f9f8d32a1.jpg" data-lightbox="roadtrip" data-title="Pin On News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/79/73/367973b2b42b540670892e5f9f8d32a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5JRCgcTQiYJ9qSgI5ZXf3TLXWAzYTo0IH5A';" alt="Pin On News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/26/3b/9f263b8a7e06d79aca7a7f22aa6a6222.jpg" data-lightbox="roadtrip" data-title="Hundreds Of Poor Pakistani Girls Are Trafficked To China In New Bride Market Pakistani Girl Christian Girls Chinese Man">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/26/3b/9f263b8a7e06d79aca7a7f22aa6a6222.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsRK21Igr5Nu6KLq_L8FMVenNNeyRVi0rPIg';" alt="Hundreds Of Poor Pakistani Girls Are Trafficked To China In New Bride Market Pakistani Girl Christian Girls Chinese Man">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hundreds Of Poor Pakistani Girls Are Trafficked To China In New Bride Market Pakistani Girl Christian Girls Chinese Man</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/41/e3/3441e3e41f55ce0980a4d191a3101a12.jpg" data-lightbox="roadtrip" data-title="A Clean Tawi River Hero4tawi Awareness Campaign Launched By J K Police Wives Welfare Association Awareness Campaign Police Wife Awareness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/41/e3/3441e3e41f55ce0980a4d191a3101a12.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV-JvhiLa-nNa1t2JLiCaaTGq3qYz7VjtVbA';" alt="A Clean Tawi River Hero4tawi Awareness Campaign Launched By J K Police Wives Welfare Association Awareness Campaign Police Wife Awareness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Clean Tawi River Hero4tawi Awareness Campaign Launched By J K Police Wives Welfare Association Awareness Campaign Police Wife Awareness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/34/22/7334227898781ab9c15f54787dd4a41c.jpg" data-lightbox="roadtrip" data-title="Adg Pi Indian Army On Twitter Army Wives Army Indian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/34/22/7334227898781ab9c15f54787dd4a41c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRReMo2yRwbn6MAgsclNjq9NrK8IBp2MS42LA';" alt="Adg Pi Indian Army On Twitter Army Wives Army Indian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adg Pi Indian Army On Twitter Army Wives Army Indian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/32/f1/bd32f1fab27d2fe5aae7b716f30d17f8.jpg" data-lightbox="roadtrip" data-title="Pin On Chhipa Welfare Association">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/32/f1/bd32f1fab27d2fe5aae7b716f30d17f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5tjeDeUyQXGqnbW1RIX4XskWSZ2NUTPdvIg';" alt="Pin On Chhipa Welfare Association">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Chhipa Welfare Association</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c3/48/12/c34812f620caf2dfc75928ae29fe8fa4--insurgent-afghanistan.jpg" data-lightbox="roadtrip" data-title="Australian Army Sergeant Brett Wood 32 Of Ferntree Gully Victoria Assigned To The 2nd Commando Reg Special Forces Australian Special Forces Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c3/48/12/c34812f620caf2dfc75928ae29fe8fa4--insurgent-afghanistan.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeZQ09U5XAxox2idJDFzf2w7pSUj7GzUAF3w';" alt="Australian Army Sergeant Brett Wood 32 Of Ferntree Gully Victoria Assigned To The 2nd Commando Reg Special Forces Australian Special Forces Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Australian Army Sergeant Brett Wood 32 Of Ferntree Gully Victoria Assigned To The 2nd Commando Reg Special Forces Australian Special Forces Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-hats-in-history.html">Military Hats In History</a></li>
+													<li class="list-group-item"><a href="/military-hats-from-around-the-world.html">Military Hats From Around The World</a></li>
+													<li class="list-group-item"><a href="/military-hat-plume.html">Military Hat Plume</a></li>
+													<li class="list-group-item"><a href="/military-hats-and-caps-for-sale.html">Military Hats And Caps For Sale</a></li>
+													<li class="list-group-item"><a href="/military-hat-template.html">Military Hat Template</a></li>
+													<li class="list-group-item"><a href="/military-hat-near-me.html">Military Hat Near Me</a></li>
+													<li class="list-group-item"><a href="/military-hats-types-names.html">Military Hats Types Names</a></li>
+													<li class="list-group-item"><a href="/military-hats-nfl.html">Military Hats Nfl</a></li>
+													<li class="list-group-item"><a href="/military-hat-with-plume-crossword.html">Military Hat With Plume Crossword</a></li>
+													<li class="list-group-item"><a href="/military-hats-of-the-world.html">Military Hats Of The World</a></li>
+													<li class="list-group-item"><a href="/military-hats-brand.html">Military Hats Brand</a></li>
+													<li class="list-group-item"><a href="/military-hat-rain-cover.html">Military Hat Rain Cover</a></li>
+													<li class="list-group-item"><a href="/military-hats-list.html">Military Hats List</a></li>
+													<li class="list-group-item"><a href="/military-hats-for-sun-protection.html">Military Hats For Sun Protection</a></li>
+													<li class="list-group-item"><a href="/military-hat-roblox-id.html">Military Hat Roblox Id</a></li>
+													<li class="list-group-item"><a href="/military-hats-embroidered.html">Military Hats Embroidered</a></li>
+													<li class="list-group-item"><a href="/military-hat-transparent.html">Military Hat Transparent</a></li>
+													<li class="list-group-item"><a href="/military-hats-called.html">Military Hats Called</a></li>
+													<li class="list-group-item"><a href="/military-hats-ebay.html">Military Hats Ebay</a></li>
+													<li class="list-group-item"><a href="/military-hat-insignia.html">Military Hat Insignia</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

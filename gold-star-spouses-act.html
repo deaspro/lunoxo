@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Gold Star Spouses Act - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Gold Star Spouses Act",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/27/7e/5d/277e5d3f0b165b2eaa246ff938a575ff.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gold+star+spouses+act",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Gold Star Spouses Act</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">1911 or the Sgt. Recognizing April 5 as Gold Star Spouses Day. Gold Star Spouses Day was created to honor these loved ones. <br>				
+			</p>
+										<a class="badge badge-info" href="/do-military-wives-get-flight-discounts.html">do military wives get flight discounts</a>
+											<a class="badge badge-info" href="/do-you-get-your-stimulus-check-if-you-owe-back-child-support.html">do you get your stimulus check if you owe back child support</a>
+											<a class="badge badge-light" href="/do-military-wives-get-insurance.html">do military wives get insurance</a>
+											<a class="badge badge-success" href="/does-a-military-spouse-need-a-passport.html">does a military spouse need a passport</a>
+											<a class="badge badge-warning" href="/do-you-get-paid-as-a-reserve-in-the-army.html">do you get paid as a reserve in the army</a>
+											<a class="badge badge-secondary" href="/do-you-have-to-quarantine-if-you-test-positive-for-covid.html">do you have to quarantine if you test positive for covid</a>
+											<a class="badge badge-info" href="/do-you-have-to-be-married-to-get-military-housing.html">do you have to be married to get military housing</a>
+											<a class="badge badge-dark" href="/do-military-spouses-get-tricare-for-life.html">do military spouses get tricare for life</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to visit the ideal blog.  Our site provides you with hints for seeing the highest quality video and picture content, search and find more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, so we recommend this movie that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/f2/f9/d1f2f96956f88e2ae3855fde4c81a545.jpg" data-lightbox="roadtrip" data-title="Gold Star Wives Day April 5 Honor Remember That They Are Heroes Too Gold Stars Gold Star Mother Gold">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/f2/f9/d1f2f96956f88e2ae3855fde4c81a545.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDepJqxWK7G_owS2_rAUqTA7Wj8HitKNueQ';" alt="Gold Star Wives Day April 5 Honor Remember That They Are Heroes Too Gold Stars Gold Star Mother Gold">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gold Star Wives Day April 5 Honor Remember That They Are Heroes Too Gold Stars Gold Star Mother Gold</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.massmilitaryheroes.org/wp-content/uploads/2014/05/Department-of-Defense-Gold-Star-Lapel-and-Next-of-Kin-Pins.jpg" data-lightbox="roadtrip" data-title="Gold Star Pin Regulations Massachusetts Military Heroes Fund">
+											<img class="card-img v-image ads-img " src="http://www.massmilitaryheroes.org/wp-content/uploads/2014/05/Department-of-Defense-Gold-Star-Lapel-and-Next-of-Kin-Pins.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbMFs9WliVA98t3CGFKaZyvAXJBfSc95FOqA';" alt="Gold Star Pin Regulations Massachusetts Military Heroes Fund">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gold Star Pin Regulations Massachusetts Military Heroes Fund</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.taps.org/globalassets/our-stories/2009/2009jun-goldstarpins.jpg" data-lightbox="roadtrip" data-title="Lapel Buttons For Surviving Family Members Taps News">
+											<img class="card-img v-image ads-img " src="http://www.taps.org/globalassets/our-stories/2009/2009jun-goldstarpins.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHn7LTp9cjmhSboXG8Tt0onUc9tuMFPTipmQ';" alt="Lapel Buttons For Surviving Family Members Taps News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lapel Buttons For Surviving Family Members Taps News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://coffeeordie.com/wp-content/uploads/2020/09/1238587-300x219.jpg" data-lightbox="roadtrip" data-title="Honorable Disservice An Inside Look At The Classifications That Divide Gold Star Families">
+											<img class="card-img v-image ads-img " src="https://coffeeordie.com/wp-content/uploads/2020/09/1238587-300x219.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcBfwiPDabVjEDS17z4uouopNlCAHm6h6FHw';" alt="Honorable Disservice An Inside Look At The Classifications That Divide Gold Star Families">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Honorable Disservice An Inside Look At The Classifications That Divide Gold Star Families</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.navygoldstar.com/_templates/NavyGoldStar/images/logo.png" data-lightbox="roadtrip" data-title="Navy Gold Star Program">
+											<img class="card-img v-image ads-img " src="https://www.navygoldstar.com/_templates/NavyGoldStar/images/logo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuPb9n0PwVU0UYYp5Be2NFDlRL1ieQoAz1rw';" alt="Navy Gold Star Program">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Gold Star Program</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hopeforthewarriors.org/wp-content/uploads/2017/09/Gold_Star_Service_Flag-300x300.png" data-lightbox="roadtrip" data-title="An Honor No One Wants What Is A Gold Star Family And How Is It Different From A Blue Star Family Hope For The Warriors">
+											<img class="card-img v-image ads-img " src="https://www.hopeforthewarriors.org/wp-content/uploads/2017/09/Gold_Star_Service_Flag-300x300.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgSng4p_F6r7GL3ZHp-daV1uPGeqH30oz_rg';" alt="An Honor No One Wants What Is A Gold Star Family And How Is It Different From A Blue Star Family Hope For The Warriors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">An Honor No One Wants What Is A Gold Star Family And How Is It Different From A Blue Star Family Hope For The Warriors</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.goldstarmoms.com/uploads/1/3/8/3/13837342/published/agsm-vector-logo-new-gold-r-pdf-g2995-791_19.png?1500201535" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgSng4p_F6r7GL3ZHp-daV1uPGeqH30oz_rg';" alt="An Honor No One Wants What Is A Gold Star Family And How Is It Different From A Blue Star Family Hope For The Warriors">
+										<div class="card-body">
+						<h3 class="h5"><b>In GovTrackus a database of bills in the US.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Gold star spouses act</strong>. 
+								
+																	Under current federal law Gold Star spouses are prevented from receiving survivors benefits concurrently from the DOD and the VA even though they would normally qualify for both. 
+																	Doug Jones D-Ala said. 
+																	First Class Brian Woods Gold Star and Military Survivors Act would also extend child care assistance to surviving spouses and give continued access to base facilities such commissaries exchanges and fitness centers to those with dependent children who remarry. 
+																	As with many things in American culture it can take time for our institutions to catch up with society which is why over time the word wives in the name of the remembrance has been replaced. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By Big Island Now. 
+																	Designating the last Sunday of September as Gold Star Mothers and Familys Day. 
+																	First Class Brian Woods Gold Star and Military Survivors Act would also extend child care assistance to surviving spouses and give continued access to base facilities such commissaries exchanges and fitness centers to those with dependent children who remarry. 
+																	The bipartisan Gold Star Spouses and Spouses of Injured Servicemembers Leasing Relief Expansion Act which was simultaneously introduced in the House of Representatives by Representatives Brad Wenstrup R-OH and Cheri Bustos D-IL amends the Servicemembers Civil Relief Act SCRA to expand existing financial protections for military families residential and car leases in the following ways. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The bipartisan Gold Star Spouses and Spouses of Injured Servicemembers Leasing Relief Expansion Act which was simultaneously introduced in the House of Representatives by Representatives Cheri Bustos D-Ill and Brad Wenstrup R-Ohio amends the Servicemembers Civil Relief Act SCRA to expand existing financial protections for military families residential and car leases in the following ways. 
+																	The gold star let the community know that their service member died or was killed while serving their country. 
+																	Today the nation recognizes gold star survivors in several ways to show its deep gratitude including. 
+																	The legislation was inspired by Kylie Riney whose husband Sergeant Douglas J. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This bill revises the authority of certain family members of a servicemember who dies or becomes catastrophically ill or injured while in military service to terminate a property lease or motor vehicle lease executed by the servicemember. 
+																	Gold Star Spouses day will be observed on Monday April 5 2021. 
+																	There are as many as 65000 Gold Star spouses nationwide Sen. 
+																	Introduce Bill to Ensure Gold Star Spouse Benefits During Shutdowns. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Protecting Gold Star Spouses Act of 2019 Official Title To provide interim appropriations for the Coast Guard Retired Servicemans Family Protection and Survivor Benefits Plans for each fiscal year after fiscal year 2018 and for other purposes. 
+																	For now surviving wives and husbands of fallen soldiers must choose between one of these benefits or pass one on to their children. 
+																	Riney tragically died defending our country in Afghanistan. 
+																	January 30 2019 756 AM HST Updated January 30 2019 757 AM. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Termination of leases of premises and motor vehicles of servicemembers who incur catastrophic injury or illness or die while in military service. 
+																	More than 65000 surviving spouses of people who died in military service could soon be set to receive full survivors benefits after a bipartisan effort to do away with the so-called widows tax. 
+																	Gold Star and Surviving Family Member Representatives The National Defense Authorization Act 2014 Section 633 requires each secretary of a military department to designate a specific member to assist spouses and other dependents of service members including Reserve Components who die on active duty. 
+																	Text for S1370 - 116th Congress 2019-2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1911 or the Sgt. 
+																	Congresswoman Bustos Gold Star Spouses Leasing Relief Act was signed into law by President Trump last December allowing surviving spouses of servicemembers killed in the line of duty to terminate residential leases at the time of the servicemembers death without penalty. 
+																	It is absolutely unacceptable that our federal government refuses to pay the widows and widowers of our. 
+																	Gold Star Spouses and Spouses of Injured Servicemembers Leasing Relief Expansion Act of 2019. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	First Class Brian Woods Gold Star and Military Survivors Act would also extend child care assistance to surviving spouses and give continued access to base. 
+																	The terms Gold Star family Gold Star Spouses and Gold Star Wives traditionally refer to the surviving loved ones of military members killed in the line of duty in combat. 
+																	A bill to amend the Servicemembers Civil Relief Act to provide for the termination by a spouse of a lessee of certain leases when the lessee dies while in military service. 
+																	This Act may be cited as the Gold Star Spouses and Spouses of Injured Servicemembers Leasing Relief Expansion Act of 2019. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Authorizing the Gold Star Lapel Button. 
+																	Gold Star Family Tax Relief Act. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/c4/6d/73c46d221d6f52138849d66efbc14d7e.png" data-lightbox="roadtrip" data-title="Gold Star Pins Home Gold Stars Gold Star Mother Gold Star Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/c4/6d/73c46d221d6f52138849d66efbc14d7e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGArul32LzJhrYNDEaHoBq5h_ZyTGZpkbhtg';" alt="Gold Star Pins Home Gold Stars Gold Star Mother Gold Star Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gold Star Pins Home Gold Stars Gold Star Mother Gold Star Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cnic.navy.mil/content/cnic/cnic_hq/ffr/family_readiness/fleet_and_family_support_program/NavyGoldStar/_jcr_content/par1/image_1708847744.img.jpg/1604329823397.jpg" data-lightbox="roadtrip" data-title="Navy Gold Star Program">
+											<img class="card-img v-image ads-img " src="https://www.cnic.navy.mil/content/cnic/cnic_hq/ffr/family_readiness/fleet_and_family_support_program/NavyGoldStar/_jcr_content/par1/image_1708847744.img.jpg/1604329823397.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW7IhZYSjLIkeSaJjVUIhXroQ6OnxAde8cVQ';" alt="Navy Gold Star Program">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Gold Star Program</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/e1/8b/58e18bff55f62b632998c80907507bf7.jpg" data-lightbox="roadtrip" data-title="Sometimes Adults Need Gold Stars Too Uplifting Memes Gold Stars Funny Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/e1/8b/58e18bff55f62b632998c80907507bf7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwJJ6sfqa7Ui1s2KYvDUI7X28w7bJdBNAcA';" alt="Sometimes Adults Need Gold Stars Too Uplifting Memes Gold Stars Funny Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sometimes Adults Need Gold Stars Too Uplifting Memes Gold Stars Funny Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/7e/5d/277e5d3f0b165b2eaa246ff938a575ff.jpg" data-lightbox="roadtrip" data-title="Alameda County Blue Star Moms Who We Are Military Mom Blue Star Mom Military Moms Prayer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/7e/5d/277e5d3f0b165b2eaa246ff938a575ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOroo0ZWYALEy2S-k6KazcXvOoYj_-LEcOIg';" alt="Alameda County Blue Star Moms Who We Are Military Mom Blue Star Mom Military Moms Prayer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alameda County Blue Star Moms Who We Are Military Mom Blue Star Mom Military Moms Prayer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/34/5a/5f345ad1e9cd12688070cf053219f7ec.jpg" data-lightbox="roadtrip" data-title="A Symbol Of Reverence And Gratitude Trump Taxes Star Family Gold Stars">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/34/5a/5f345ad1e9cd12688070cf053219f7ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbEokR-o9ZuLuWFh4K_BR009oiwuDanYE6yA';" alt="A Symbol Of Reverence And Gratitude Trump Taxes Star Family Gold Stars">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Symbol Of Reverence And Gratitude Trump Taxes Star Family Gold Stars</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bustos.house.gov/wp-content/uploads/2018/12/DSC_0063.jpg" data-lightbox="roadtrip" data-title="Bustos Legislation To Support Gold Star Spouses Passes U S Senate Heads To President S Desk Congresswoman Cheri Bustos">
+											<img class="card-img v-image ads-img " src="https://bustos.house.gov/wp-content/uploads/2018/12/DSC_0063.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoVYn-FeTFbsBGcBzHU_bFf7kdbGHn4kqX_A';" alt="Bustos Legislation To Support Gold Star Spouses Passes U S Senate Heads To President S Desk Congresswoman Cheri Bustos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bustos Legislation To Support Gold Star Spouses Passes U S Senate Heads To President S Desk Congresswoman Cheri Bustos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://taskandpurpose.com/app/uploads/2020/11/19327419-1.jpg" data-lightbox="roadtrip" data-title="Veterans In Congress Propose Bill To Help Gold Star Spouses">
+											<img class="card-img v-image ads-img " src="https://taskandpurpose.com/app/uploads/2020/11/19327419-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo5ee5QyR_iHw74F1jMiNEvUnT273BNBwxYw';" alt="Veterans In Congress Propose Bill To Help Gold Star Spouses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans In Congress Propose Bill To Help Gold Star Spouses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/7d/3b/d57d3b76e38a31f3c596d7906856f35d.png" data-lightbox="roadtrip" data-title="Styling Project Mood Depiction By Fashiondesign Students Of Inifdsaltlake Mood Stop Forceful Marriage A Fashion Photoshoot Fashion Design Fashion Project">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/7d/3b/d57d3b76e38a31f3c596d7906856f35d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_YCnTgB1cId6KUmwnYThbNo0rxOI58jcj7g';" alt="Styling Project Mood Depiction By Fashiondesign Students Of Inifdsaltlake Mood Stop Forceful Marriage A Fashion Photoshoot Fashion Design Fashion Project">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Styling Project Mood Depiction By Fashiondesign Students Of Inifdsaltlake Mood Stop Forceful Marriage A Fashion Photoshoot Fashion Design Fashion Project</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/82/1f/ba821ff6ce9fe20845e1fc905e2ef32f.jpg" data-lightbox="roadtrip" data-title="Mr And Mrs Santa Claus Wave Goodbye To Gold Star Family Members During A Snowball Express Farewell Ceremony At Star Children Christmas Blessings Star Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/82/1f/ba821ff6ce9fe20845e1fc905e2ef32f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTii5azGiFwRElw2IzoDztx5CPi-W51LZQ2Q';" alt="Mr And Mrs Santa Claus Wave Goodbye To Gold Star Family Members During A Snowball Express Farewell Ceremony At Star Children Christmas Blessings Star Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mr And Mrs Santa Claus Wave Goodbye To Gold Star Family Members During A Snowball Express Farewell Ceremony At Star Children Christmas Blessings Star Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/9f/e9/eb9fe9c74e419b59ba0dbf63cda8a0a7.jpg" data-lightbox="roadtrip" data-title="The Day Men In Uniform Came To Notify Me Memorial Day Military Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/9f/e9/eb9fe9c74e419b59ba0dbf63cda8a0a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9dzGEybAqNmRiAYHrkdR4Oy0Ke7hvKHx1WQ';" alt="The Day Men In Uniform Came To Notify Me Memorial Day Military Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Day Men In Uniform Came To Notify Me Memorial Day Military Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/bf/71/85bf71aca80131f3215741fe4a9242fb.jpg" data-lightbox="roadtrip" data-title="Army Brach Charm Necklaces Are Now Available In Our Online Store You Can Shop By Branch To Quickly Find All The Hope Hope Design Army Branches Charm Necklace">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/bf/71/85bf71aca80131f3215741fe4a9242fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIqSSgyXv7WkJmp1nZ05zj0OYe3PIBbhsYsA';" alt="Army Brach Charm Necklaces Are Now Available In Our Online Store You Can Shop By Branch To Quickly Find All The Hope Hope Design Army Branches Charm Necklace">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Brach Charm Necklaces Are Now Available In Our Online Store You Can Shop By Branch To Quickly Find All The Hope Hope Design Army Branches Charm Necklace</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.goldstarmoms.com/uploads/1/3/8/3/13837342/published/agsm-vector-logo-new-gold-r-pdf-g2995-791_19.png?1500201535" data-lightbox="roadtrip" data-title="Links">
+											<img class="card-img v-image ads-img " src="https://www.goldstarmoms.com/uploads/1/3/8/3/13837342/published/agsm-vector-logo-new-gold-r-pdf-g2995-791_19.png?1500201535" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6DigXPSca2FUyPTvlrOGCWUJUVVJAIx4UlQ';" alt="Links">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Links</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2017/Apr/05/2001726747/825/780/0/170405-M-LM779-001.JPG" data-lightbox="roadtrip" data-title="Gold Star Spouses Day Honoring Spouses Of Fallen Service Members April 5 U S Central Command News Article View">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2017/Apr/05/2001726747/825/780/0/170405-M-LM779-001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVJin_RonftYdgQGsng5i1MtIQBo9009K5fw';" alt="Gold Star Spouses Day Honoring Spouses Of Fallen Service Members April 5 U S Central Command News Article View">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gold Star Spouses Day Honoring Spouses Of Fallen Service Members April 5 U S Central Command News Article View</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-resume-for-human-resource-specialist.html">Military Resume For Human Resource Specialist</a></li>
+													<li class="list-group-item"><a href="/military-records-ww2-canada.html">Military Records Ww2 Canada</a></li>
+													<li class="list-group-item"><a href="/military-records-ww1-uk.html">Military Records Ww1 Uk</a></li>
+													<li class="list-group-item"><a href="/military-retired-pay-divorce.html">Military Retired Pay Divorce</a></li>
+													<li class="list-group-item"><a href="/military-records-ww2.html">Military Records Ww2</a></li>
+													<li class="list-group-item"><a href="/military-records-request-uk.html">Military Records Request Uk</a></li>
+													<li class="list-group-item"><a href="/military-records-ww1-free.html">Military Records Ww1 Free</a></li>
+													<li class="list-group-item"><a href="/military-resources-for-widows.html">Military Resources For Widows</a></li>
+													<li class="list-group-item"><a href="/military-records-search-by-name-free.html">Military Records Search By Name Free</a></li>
+													<li class="list-group-item"><a href="/military-resources-in-virginia.html">Military Resources In Virginia</a></li>
+													<li class="list-group-item"><a href="/military-records-of-ww2.html">Military Records Of Ww2</a></li>
+													<li class="list-group-item"><a href="/military-records-for-wwii-veterans.html">Military Records For Wwii Veterans</a></li>
+													<li class="list-group-item"><a href="/military-records-of-canada.html">Military Records Of Canada</a></li>
+													<li class="list-group-item"><a href="/military-resources-examples.html">Military Resources Examples</a></li>
+													<li class="list-group-item"><a href="/military-records-in-canada.html">Military Records In Canada</a></li>
+													<li class="list-group-item"><a href="/military-records-of-schoharie-county-veterans-of-four-wars.html">Military Records Of Schoharie County Veterans Of Four Wars</a></li>
+													<li class="list-group-item"><a href="/military-resources-for-students.html">Military Resources For Students</a></li>
+													<li class="list-group-item"><a href="/military-reserves-retirement-pay-calculator.html">Military Reserves Retirement Pay Calculator</a></li>
+													<li class="list-group-item"><a href="/military-records-search-ancestry.html">Military Records Search Ancestry</a></li>
+													<li class="list-group-item"><a href="/military-records-for-canada.html">Military Records For Canada</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

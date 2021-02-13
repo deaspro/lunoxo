@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>My Wife Left Me For Jesus Lyrics - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "My Wife Left Me For Jesus Lyrics",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/1e/ab/4f/1eab4fa205daad265dbe8d181b9198b3.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=my+wife+left+me+for+jesus+lyrics",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>My Wife Left Me For Jesus Lyrics</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Read or print original My Wife Left Me lyrics 2020 updated. Watch the video for She Left Me For Jesus from Hayes Carlls Trouble In Mind for free and see the artwork lyrics and similar artists. If I ever find jesus Im kickin his ass. <br>				
+			</p>
+										<a class="badge badge-primary" href="/military-spouse-dependent-benefits.html">military spouse dependent benefits</a>
+											<a class="badge badge-info" href="/military-spouse-drivers-license-rules.html">military spouse drivers license rules</a>
+											<a class="badge badge-light" href="/military-spouse-employment-partnership.html">military spouse employment partnership</a>
+											<a class="badge badge-light" href="/military-spouse-dental-assistant-program.html">military spouse dental assistant program</a>
+											<a class="badge badge-secondary" href="/military-spouse-employment-issues.html">military spouse employment issues</a>
+											<a class="badge badge-info" href="/military-spouse-deployment-box.html">military spouse deployment box</a>
+											<a class="badge badge-primary" href="/military-spouse-employment-san-diego.html">military spouse employment san diego</a>
+											<a class="badge badge-primary" href="/military-spouse-employment-network.html">military spouse employment network</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to pay a visit to the right blog.  Our website gives you suggestions for seeing the highest quality video and image content, hunt and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie that you view.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/72/ec/cc72ec452b141ff1c84818b85658c04b.jpg" data-lightbox="roadtrip" data-title="Jesus Take My All Take My Everything These Lyrics Make My Heart And Soul Sing Counting Up The Cost By Rend Biblical Quotes Words Matter Christian Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/72/ec/cc72ec452b141ff1c84818b85658c04b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQR--lurMdrTkSr2O8CcN_aePqUKIHJcVGPQ';" alt="Jesus Take My All Take My Everything These Lyrics Make My Heart And Soul Sing Counting Up The Cost By Rend Biblical Quotes Words Matter Christian Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jesus Take My All Take My Everything These Lyrics Make My Heart And Soul Sing Counting Up The Cost By Rend Biblical Quotes Words Matter Christian Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/d6/d5/8cd6d5b3e532f559ec45795c0ace7ecd.png" data-lightbox="roadtrip" data-title="I Don T Want To Leave A Legacy I Don T Care If They Remember Me Only Jesus I Ve Only Got One Life To Live I Worship Songs Lyrics Leaving A Legacy Worship">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/d6/d5/8cd6d5b3e532f559ec45795c0ace7ecd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKa7IO4HzHT6j-emftLhAVNt_36xZ6dWtsJA';" alt="I Don T Want To Leave A Legacy I Don T Care If They Remember Me Only Jesus I Ve Only Got One Life To Live I Worship Songs Lyrics Leaving A Legacy Worship">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Don T Want To Leave A Legacy I Don T Care If They Remember Me Only Jesus I Ve Only Got One Life To Live I Worship Songs Lyrics Leaving A Legacy Worship</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/b3/2b/2db32b4af4edd0ca27b4d43a7570324c.jpg" data-lightbox="roadtrip" data-title="Pin By Cheyenne Mendoza On Music Christian Music Lyrics Christian Songs Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/b3/2b/2db32b4af4edd0ca27b4d43a7570324c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa0qKrX0GTc3kfdjlG3386HRYY6aNCK4qauQ';" alt="Pin By Cheyenne Mendoza On Music Christian Music Lyrics Christian Songs Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Cheyenne Mendoza On Music Christian Music Lyrics Christian Songs Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/b1/ef/87b1ef7087e0832611ebaaee0922e355.jpg" data-lightbox="roadtrip" data-title="Lead Me Sanctus Real Christian Song Lyrics Christian Lyrics Inspirational Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/b1/ef/87b1ef7087e0832611ebaaee0922e355.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvemv7PKI-9SrKJ2RoQm8nLHK5BuWnB6_Y1w';" alt="Lead Me Sanctus Real Christian Song Lyrics Christian Lyrics Inspirational Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lead Me Sanctus Real Christian Song Lyrics Christian Lyrics Inspirational Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/a7/52/8ba7528931491096ccae20b33cc07928.jpg" data-lightbox="roadtrip" data-title="User Amercgirl4j1c Christian Song Lyrics Christian Songs Jesus Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/a7/52/8ba7528931491096ccae20b33cc07928.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDGiI7du80GOQdgiNjl07hrNyvgXGMrNxptQ';" alt="User Amercgirl4j1c Christian Song Lyrics Christian Songs Jesus Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">User Amercgirl4j1c Christian Song Lyrics Christian Songs Jesus Music</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/fa/8b/3ffa8b1af71bc9f66ae5b689e780edb4.jpg" data-lightbox="roadtrip" data-title="Pin On Following Jesus Christ Forever">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/fa/8b/3ffa8b1af71bc9f66ae5b689e780edb4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHrQXVEsUIxK3qYVnQe-ECdT2_hcGkh4_1kg';" alt="Pin On Following Jesus Christ Forever">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Following Jesus Christ Forever</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/5a/95/be/5a95be510c738d5ff465d2c773c646c4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHrQXVEsUIxK3qYVnQe-ECdT2_hcGkh4_1kg';" alt="Pin On Following Jesus Christ Forever">
+										<div class="card-body">
+						<h3 class="h5"><b>She Left Me for Jesus Album Hayes Carll Joshua Hayes Carll born January 9 1976 known as Hayes Carll is a Texas Country singer-songwriter from The Woodlands Texas a Houston suburb.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>My wife left me for jesus lyrics</strong>. 
+								
+																	She says that hes perfect how could I compare. 
+																	Become A Better Singer In Only 30 Days With Easy Video Lessons. 
+																	Weve been datin since high school We never once left this town We use to go out on the weekends And wed drink til we drowned But now shes acting funny and I dont understand I think that shes found her some other man Chorus She left me for Jesus and that just aint fair She says that hes perfect how could I compare She says I should find him and Ill know peace at last If I ever. 
+																	I aint got nowhere to live. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We never once left this town We used to go out on the weekends And wed drink till we drowned But now shes actin funny And I dont understand I think that shes found her Some other man. 
+																	She left me for jesus and that just aint fair. 
+																	Playing via Spotify Playing via YouTube. 
+																	She says I should find him and Ill know peace at last. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When my first wife left me she left my heart in misery Ever since that day boy I dont think Ill ever love again If I can get her back again Ill never roam no more If I get her back again. 
+																	The blues singer had two marriages to his name but the. 
+																	Weve been datin since high school We never once left this town We use to go out on the weekends And wed drink til we drowned But now shes acting funny and I dont understand I think that shes found her some other man Chorus She left me for Jesus and that just aint fair She says that hes perfect how could I compare She says I should find him and Ill know peace at last If I ever find Jesus Im kickin his ass She showed me a picture all I could do was stare At that freak in his. 
+																	She says that Hes perfect how could I compare. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	C 2008 UMG Recordings Inc. 
+																	She left me for Jesus and that just aint fair. 
+																	She says that hes perfect how could I compare. 
+																	I think that shes found her some other man. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Americana rocker Hayes Carll joins BOBTOM in the studio to perform his hit award winning single She Left Me For Jesus. 
+																	Take me back take me back youre the only one Ive ever loved. 
+																	If I ever find Jesus Im kicking His ass. 
+																	As aired on The BOBTOM TV Show on W. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She left me for Jesus and that just aint fair She says that Hes perfect how could I compare. 
+																	My wife left me but Im the one whos got to leave. 
+																	If I ever find Jesus Im kickin his ass. 
+																	Chorus She left me for Jesus and that just aint fair. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She showed me a picture all I could do was stare. 
+																	She says I should find Him and Ill know peace at last. 
+																	She says I should find him and Ill know peace at last. 
+																	She says I should find Him and Ill know peace at last If I ever find Jesus Im kicking His ass Shes given up whiskey and ah taking up wine While she prays for His troubles shes forgot about mine Im a gonna get even I cant handle the shame. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Music video by Hayes Carll performing She Left Me For Jesus. 
+																	She left me for Jesus And that just aint fair She says That hes perfect How could I compare She says I should find him And Ill know peace at last. 
+																	G D She left me for jesus and that just aint fair A D She says that hes perfect how could i compare G Bm She says i should find him and ill know peace at last A D If i ever find jesus im kickin his ass. 
+																	My soul is. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Enjoy the videos and music you love upload original content and share it all with friends family and the world on YouTube. 
+																	Weve been datin since high school We never once left this town We use to go out on the weekends And wed drink til we drowned But now shes acting funny and I dont understand I think that shes found her some other man Chorus She left me for Jesus and that just aint fair She says that hes perfect how could I compare She. 
+																	When My First Wife Left Me is a interpretation by RLBurnside of the John Lee Hooker song with the same name recorded in 1961. 
+																	My wife left me threw my out of our home My soul is sick and dying Lord. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I think that shes found her some other man. 
+																	My soul is sick and dying Lord. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/44/3f/7f/443f7f48ab0d9cde41b516d58a3f7501.jpg" data-lightbox="roadtrip" data-title="Celtic Woman You Raise Me Up Celtic Raise Woma Christian Song Lyrics Great Song Lyrics Hymns Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/44/3f/7f/443f7f48ab0d9cde41b516d58a3f7501.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvGjsV6F0MtyHCGD4_VFmGkSraYTpePvXnmg';" alt="Celtic Woman You Raise Me Up Celtic Raise Woma Christian Song Lyrics Great Song Lyrics Hymns Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Celtic Woman You Raise Me Up Celtic Raise Woma Christian Song Lyrics Great Song Lyrics Hymns Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/3a/3b/523a3b3d0c85a75235382bdcbac37ada.jpg" data-lightbox="roadtrip" data-title="How Deep The Father S Love For Us This Song Just Does Me In Christian Lyrics Hymns Lyrics Children Songs Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/3a/3b/523a3b3d0c85a75235382bdcbac37ada.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQul58Y-dXZcSrQNYU6OqSXa0b2Oq5jntNUOg';" alt="How Deep The Father S Love For Us This Song Just Does Me In Christian Lyrics Hymns Lyrics Children Songs Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Deep The Father S Love For Us This Song Just Does Me In Christian Lyrics Hymns Lyrics Children Songs Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/7b/d1/5d7bd1978c9116f09e843dcd62e63fe6.jpg" data-lightbox="roadtrip" data-title="Love Awesomely Interesting Facts Images Videos Christian Quotes Inspirational Quotes Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/7b/d1/5d7bd1978c9116f09e843dcd62e63fe6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdZVkXooQse0hlkJ3RXrJL3sVi1aBPSrg8tg';" alt="Love Awesomely Interesting Facts Images Videos Christian Quotes Inspirational Quotes Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Love Awesomely Interesting Facts Images Videos Christian Quotes Inspirational Quotes Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/05/39/2f05394ea39aaa1a52d81b2da5b4c34b.jpg" data-lightbox="roadtrip" data-title="Rescue I Need You Jesus Jesus Come To My Rescue Rescue Me Jesus Youtube Lyrics Knowing God Love Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/05/39/2f05394ea39aaa1a52d81b2da5b4c34b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj2wm05tSAjUaSfRyDBBcFBYcUsChNVnMubg';" alt="Rescue I Need You Jesus Jesus Come To My Rescue Rescue Me Jesus Youtube Lyrics Knowing God Love Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rescue I Need You Jesus Jesus Come To My Rescue Rescue Me Jesus Youtube Lyrics Knowing God Love Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/ab/4f/1eab4fa205daad265dbe8d181b9198b3.png" data-lightbox="roadtrip" data-title="Air1 Radio Timeline Photos Christian Song Lyrics Christian Song Quotes Christian Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/ab/4f/1eab4fa205daad265dbe8d181b9198b3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHXAoGt3Nyze-Sx4yiH-GUHQTZqSplAiWlKw';" alt="Air1 Radio Timeline Photos Christian Song Lyrics Christian Song Quotes Christian Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air1 Radio Timeline Photos Christian Song Lyrics Christian Song Quotes Christian Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b4/a9/87/b4a987976f958a3d958dbbe1aa561d42.jpg" data-lightbox="roadtrip" data-title="You Left In Peace You Left Me In Pieces Song Lyric Quotes Favorite Lyrics Same Old Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b4/a9/87/b4a987976f958a3d958dbbe1aa561d42.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxlht3UPIsYyEoEB8KhtcLJJ784YE_GOqVxw';" alt="You Left In Peace You Left Me In Pieces Song Lyric Quotes Favorite Lyrics Same Old Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Left In Peace You Left Me In Pieces Song Lyric Quotes Favorite Lyrics Same Old Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/e3/1b/aee31bc53d4ef5d6e0710fedb7830d18.png" data-lightbox="roadtrip" data-title="He Left The 99 To Rescue Me Reckless Love Christian Faith 95752 Svgs Design Bundles Christian Song Quotes Christian Lyrics Christian Song Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/e3/1b/aee31bc53d4ef5d6e0710fedb7830d18.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUTLXmDS99OAJTu0xKpiiAhHEnjdWkasggLA';" alt="He Left The 99 To Rescue Me Reckless Love Christian Faith 95752 Svgs Design Bundles Christian Song Quotes Christian Lyrics Christian Song Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">He Left The 99 To Rescue Me Reckless Love Christian Faith 95752 Svgs Design Bundles Christian Song Quotes Christian Lyrics Christian Song Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/3b/61/473b61a9f67872b027bd42db092756a3.png" data-lightbox="roadtrip" data-title="Twas The Night Before Jesus Came Free Printable Christmas Poems Christian Christmas Poems Christmas Prayer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/3b/61/473b61a9f67872b027bd42db092756a3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH_yhTQOMmUxlE1vPGNH4cwWc_59nPjX10jg';" alt="Twas The Night Before Jesus Came Free Printable Christmas Poems Christian Christmas Poems Christmas Prayer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Twas The Night Before Jesus Came Free Printable Christmas Poems Christian Christmas Poems Christmas Prayer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/95/be/5a95be510c738d5ff465d2c773c646c4.png" data-lightbox="roadtrip" data-title="Lyrics Lord Of The Dance Happy Easter Hymns Lyrics Great Song Lyrics Lord Of The Dance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/95/be/5a95be510c738d5ff465d2c773c646c4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDL6x9eJdP0NZ10b_WKHv2phq1OVTnd5rXGg';" alt="Lyrics Lord Of The Dance Happy Easter Hymns Lyrics Great Song Lyrics Lord Of The Dance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lyrics Lord Of The Dance Happy Easter Hymns Lyrics Great Song Lyrics Lord Of The Dance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/83/f5/e683f52f6495f47d4e0d6337afad5622.jpg" data-lightbox="roadtrip" data-title="Pinterest Faithrice6 Worship Lyrics Christian Lyrics Christian Song Lyrics Hillsong">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/83/f5/e683f52f6495f47d4e0d6337afad5622.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xZWf02vQyUqFwpNbO-6h__FAWiRjPBuR1g';" alt="Pinterest Faithrice6 Worship Lyrics Christian Lyrics Christian Song Lyrics Hillsong">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pinterest Faithrice6 Worship Lyrics Christian Lyrics Christian Song Lyrics Hillsong</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/21/36/9f213656c887160a92708eb0a92afa57.png" data-lightbox="roadtrip" data-title="Country Southern And Bluegrass Gospel Song Sorry I Never Knew You Lyrics Yours Lyrics Song Lyrics And Chords Gospel Song">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/21/36/9f213656c887160a92708eb0a92afa57.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8muD6rGUK-Ll7lQmlnbgEdb4g9Zy4zT6egg';" alt="Country Southern And Bluegrass Gospel Song Sorry I Never Knew You Lyrics Yours Lyrics Song Lyrics And Chords Gospel Song">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Country Southern And Bluegrass Gospel Song Sorry I Never Knew You Lyrics Yours Lyrics Song Lyrics And Chords Gospel Song</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/7d/d3/27/7dd32773fe227d0de5a25dbd457fa0ae.jpg" data-lightbox="roadtrip" data-title="Jesus Always Stood By My Side Stand By Me Jesus My Side">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/7d/d3/27/7dd32773fe227d0de5a25dbd457fa0ae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkUuKDTG9bCrxH32UVM7e9LQxowdt12Xi9OQ';" alt="Jesus Always Stood By My Side Stand By Me Jesus My Side">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jesus Always Stood By My Side Stand By Me Jesus My Side</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/b9/5b/aab95b2565160579427ad6f2256d8310.jpg" data-lightbox="roadtrip" data-title="Canticle Of The Turning Hymnary Org Canticle Of The Turning Canticles Hymnal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/b9/5b/aab95b2565160579427ad6f2256d8310.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIKDI_OAFmyA562s1jadRo8pRjC-72BprHYQ';" alt="Canticle Of The Turning Hymnary Org Canticle Of The Turning Canticles Hymnal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canticle Of The Turning Hymnary Org Canticle Of The Turning Canticles Hymnal</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/my-husband-doesnt-like-to-kiss-me.html">My Husband Doesnt Like To Kiss Me</a></li>
+													<li class="list-group-item"><a href="/my-husband-doesnt-talk-to-me-for-weeks.html">My Husband Doesnt Talk To Me For Weeks</a></li>
+													<li class="list-group-item"><a href="/my-husband-doesnt-love-me-anymore-quotes.html">My Husband Doesnt Love Me Anymore Quotes</a></li>
+													<li class="list-group-item"><a href="/my-husband-doesnt-talk-to-me-like-he-used-to.html">My Husband Doesnt Talk To Me Like He Used To</a></li>
+													<li class="list-group-item"><a href="/my-husband-died-what-to-do.html">My Husband Died What To Do</a></li>
+													<li class="list-group-item"><a href="/my-husband-doesnt-love-me-reddit.html">My Husband Doesnt Love Me Reddit</a></li>
+													<li class="list-group-item"><a href="/my-husband-doesnt-respect-me-because-i-dont-work.html">My Husband Doesnt Respect Me Because I Dont Work</a></li>
+													<li class="list-group-item"><a href="/my-husband-doesnt-love-me-anymore-what-can-i-do.html">My Husband Doesnt Love Me Anymore What Can I Do</a></li>
+													<li class="list-group-item"><a href="/my-husband-doesnt-love-me-but-wont-leave.html">My Husband Doesnt Love Me But Wont Leave</a></li>
+													<li class="list-group-item"><a href="/my-husband-doesnt-want-to-talk-with-me.html">My Husband Doesnt Want To Talk With Me</a></li>
+													<li class="list-group-item"><a href="/my-husband-died-what-benefits-can-i-get.html">My Husband Died What Benefits Can I Get</a></li>
+													<li class="list-group-item"><a href="/my-husband-died-without-leaving-a-will.html">My Husband Died Without Leaving A Will</a></li>
+													<li class="list-group-item"><a href="/my-husband-died-without-a-will-in-florida.html">My Husband Died Without A Will In Florida</a></li>
+													<li class="list-group-item"><a href="/my-husband-died-yesterday.html">My Husband Died Yesterday</a></li>
+													<li class="list-group-item"><a href="/my-husband-died-without-a-will.html">My Husband Died Without A Will</a></li>
+													<li class="list-group-item"><a href="/my-husband-doesnt-love-me-unconditionally.html">My Husband Doesnt Love Me Unconditionally</a></li>
+													<li class="list-group-item"><a href="/my-husband-essay.html">My Husband Essay</a></li>
+													<li class="list-group-item"><a href="/my-husband-doesnt-love-me-anymore-what-should-i-do.html">My Husband Doesnt Love Me Anymore What Should I Do</a></li>
+													<li class="list-group-item"><a href="/my-husband-filed-head-of-household.html">My Husband Filed Head Of Household</a></li>
+													<li class="list-group-item"><a href="/my-husband-doesnt-love-me-what-to-do.html">My Husband Doesnt Love Me What To Do</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

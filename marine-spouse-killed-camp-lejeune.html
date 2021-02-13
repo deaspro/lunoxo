@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Marine Spouse Killed Camp Lejeune - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Marine Spouse Killed Camp Lejeune",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/3f/aa/db/3faadb9920d2406c4ab88a01ea387ab2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=marine+spouse+killed+camp+lejeune",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Marine Spouse Killed Camp Lejeune</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">At a home on the base and found the man dead from an apparent gunshot wound according to a base statement. Navy corpsmen nurses and doctors with 2nd Medical Battalion worked alongside the 24th Marine Expeditionary Unit. Camp Lejeune is a training base that promotes the combat readiness of the operating forces and missions of other tenant commands by providing training venues facilities services and support in order to be responsive to the needs of Marines sailors and. <br>				
+			</p>
+										<a class="badge badge-danger" href="/army-tuition-assistance-form-fillable.html">army tuition assistance form fillable</a>
+											<a class="badge badge-primary" href="/army-tuition-assistance-contract.html">army tuition assistance contract</a>
+											<a class="badge badge-danger" href="/army-tuition-assistance-website.html">army tuition assistance website</a>
+											<a class="badge badge-dark" href="/army-wife-and-child.html">army wife and child</a>
+											<a class="badge badge-info" href="/army-spouse-visa.html">army spouse visa</a>
+											<a class="badge badge-dark" href="/army-tuition-assistance-for-flight-training.html">army tuition assistance for flight training</a>
+											<a class="badge badge-secondary" href="/army-tuition-assistance-gpa-requirements.html">army tuition assistance gpa requirements</a>
+											<a class="badge badge-primary" href="/army-wife-friendship-quotes.html">army wife friendship quotes</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to visit the ideal site.  Our site gives you suggestions for seeing the maximum quality video and image content, hunt and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie that you view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/65/f6/ed65f67265a6525c47713ef1255156c2.jpg" data-lightbox="roadtrip" data-title="Former Marine Commandant On Nationwide Protests The Time For Being Silent Has Passed In 2020 Military Girlfriend American Poets Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/65/f6/ed65f67265a6525c47713ef1255156c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7s2LNhFzcGmaJUZMJ4sml_GzX41htDSfrnQ';" alt="Former Marine Commandant On Nationwide Protests The Time For Being Silent Has Passed In 2020 Military Girlfriend American Poets Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Former Marine Commandant On Nationwide Protests The Time For Being Silent Has Passed In 2020 Military Girlfriend American Poets Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/aa/db/3faadb9920d2406c4ab88a01ea387ab2.jpg" data-lightbox="roadtrip" data-title="Pin By Hearts In The Service On Sera Bella Photography Military Homecoming Deployment Homecoming Military Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/aa/db/3faadb9920d2406c4ab88a01ea387ab2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnF9lWKjZly6V4w3ClacKZfnNX4lDszLq9Sg';" alt="Pin By Hearts In The Service On Sera Bella Photography Military Homecoming Deployment Homecoming Military Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Hearts In The Service On Sera Bella Photography Military Homecoming Deployment Homecoming Military Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://taskandpurpose.com/app/uploads/2020/11/luce-william-3.jpg" data-lightbox="roadtrip" data-title="Marine Dies After Being Seriously Injured In Camp Lejeune Stabbing Shooting Incident">
+											<img class="card-img v-image ads-img " src="https://taskandpurpose.com/app/uploads/2020/11/luce-william-3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS4JmphePROyaLiPAtEpAk2qe5Yx9ML1t6wQ';" alt="Marine Dies After Being Seriously Injured In Camp Lejeune Stabbing Shooting Incident">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Dies After Being Seriously Injured In Camp Lejeune Stabbing Shooting Incident</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images05.military.com/sites/default/files/media/news/service/2016/06/camp-lejeune-sign-1200x800.jpg" data-lightbox="roadtrip" data-title="Marine Found Dead Had Killed Wife S Boyfriend Set Home On Fire Military Com">
+											<img class="card-img v-image ads-img " src="https://images05.military.com/sites/default/files/media/news/service/2016/06/camp-lejeune-sign-1200x800.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLj6N5bMd9JIB2bK9PkASBpk2RN7PuOAJ4LA';" alt="Marine Found Dead Had Killed Wife S Boyfriend Set Home On Fire Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Found Dead Had Killed Wife S Boyfriend Set Home On Fire Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.633252.1591824349!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" data-lightbox="roadtrip" data-title="18 Year Old Marine Collapses Dies During Physical Training At Camp Lejeune Marine Corps Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.633252.1591824349!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Imcb_ejbX8c0YkYEULloqxzfao3Er_yqoQ';" alt="18 Year Old Marine Collapses Dies During Physical Training At Camp Lejeune Marine Corps Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">18 Year Old Marine Collapses Dies During Physical Training At Camp Lejeune Marine Corps Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/88/7e/71887e8123376ee83275e7ba9393f1fb.jpg" data-lightbox="roadtrip" data-title="Pin On Our Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/88/7e/71887e8123376ee83275e7ba9393f1fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl_Mkt8g3HWx6wQ9cYDD24K18xcJINRp6vYQ';" alt="Pin On Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://c8.alamy.com/comp/DGWEMK/marine-corps-base-camp-lejeune-nc-marines-and-sailors-with-fox-company-DGWEMK.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl_Mkt8g3HWx6wQ9cYDD24K18xcJINRp6vYQ';" alt="Pin On Our Heroes">
+										<div class="card-body">
+						<h3 class="h5"><b>The Marine spouse was dead when the.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Marine spouse killed camp lejeune</strong>. 
+								
+																	Home Male Marine spouse shot killed at Camp Lejeune camp. 
+																	Luce had been transported to the Naval Medical Center Camp. 
+																	GomezMarine Corps Nine members of the. 
+																	New information shows a Marine staff sergeant found dead in a burning home near Richlands North Carolina was killed in an act of self-defense by his estranged wife after he killed her boyfriend. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Maria Frances Lauterbach BornNovember 17 1987 Dayton Ohio DiedDecember 14 2007 Jacksonville North Carolina AllegianceUnited States ServicebranchUnited States Marine Corps RankLance Corporal Unit2nd Marine Logistics Group Lance Corporal Maria Frances Lauterbach of Vandalia Ohio was a United States Marine who disappeared from Marine Corps Base Camp Lejeune North Carolina on December 14 2007. 
+																	-- A retired officers wife was killed Wednesday by shrapnel from an artillery shell that exploded near her car as she and her daughter drove through a remote part of the. 
+																	Marine Corps Air Station New River Non-appropriated Funds NAF Human Resources. 
+																	Marines conduct a safety brief before conducting a live-fire exercise at the K-505 rocket range on Camp Geiger NC April 30 2018. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In an altercation Saturday the Marine was shot in a residence on the base. 
+																	WASHINGTON The man shot and killed Saturday morning at a home on Marine Corps Base Camp Lejeune NC was the spouse of a Marine base officials said Monday. 
+																	Today as in the past Camp Lejeunes mission remains the same to maintain combat-ready units for expeditionary deployment. 
+																	Luce 22 an infantry. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Marine involved in a shooting-stabbing incident early Saturday morning at Camp Lejeune NC has died the 2nd Marine Division said Thursday. 
+																	WASHINGTON The man shot and killed Saturday morning at a home on Marine Corps Base Camp Lejeune NC was the spouse of a Marine base officials said Monday. 
+																	This site is owned and operated by Bright Mountain Media Inc a publicly owned company trading with the symbol. 
+																	Luce 22 an infantry rifleman with the 2nd Battalion 8th Marine Regiment died Monday evening at Camp Lejeune according to the division Stars and Stripes reported. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At the time of her disappearance Lauterbach was eight months pregnant. 
+																	Military police at Camp Lejeune responded to a 911 call at about 4 am. 
+																	WASHINGTON The man shot and killed Saturday morning at a home on Marine Corps Base Camp Lejeune NC was the spouse of a Marine base officials said Monday. 
+																	Marine Corps Base Camp Lejeune Civilian Human Resources Office 910 451-5627. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Authorities found the rema. 
+																	The Marine Corps later confirmed that the man killed was an active-duty Marines spouse and the man stabbed was an active-duty Marine. 
+																	Deceased in Lejeune Shooting-Stabbing Incident Was Marine Spouse Officials Say FILE -- Marines hike nine miles on Camp Lejeune NC Dec. 
+																	WASHINGTON The man shot and killed Saturday morning at a home on Marine Corps Base Camp Lejeune NC was the spouse of a Marine base officials said Monday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WASHINGTON The man shot and killed Saturday morning at a home on Marine Corps Base Camp Lejeune NC was the spouse of a Marine base officials said Monday. 
+																	The male spouse of an active-duty Marine died of an apparent gunshot wound after an on-base housing shootingstabbing incident early Saturday morning at the Marine Corps Camp Lejeune North. 
+																	In compliance with the Department of Defenses coronavirus disease 2019 vaccination plan in support of Operation Warp Speed US. 
+																	Neither the United States Marine Corps nor any other component of the Department of Defense has officially approved endorsed or authorized this website. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military police at Camp Lejeune responded to a 911 call at about 4 am. 
+																	Patrol officers at Camp Lejeune responded to a 911 call at an on-base residence at about 4 am. 
+																	At a home on the base and found the man dead from an apparent gunshot wound according to a base statement. 
+																	Military police at Camp Lejeune. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On Saturday where they found the shooting and stabbing victims. 
+																	WNCN Marines and Sailors at Camp Lejeune received the COVID-19 vaccine in preparation for deployment overseas. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.armytimes.com/resizer/TaeN6XMV45tU-ZpxtPy2NjsBpq8=/1200x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/NPDHCPL3VRFCFJ7L3BFQOIFFQM.jpg" data-lightbox="roadtrip" data-title="Marine Sentenced To 2 Years For Shooting Fellow Gate Guard">
+											<img class="card-img v-image ads-img " src="https://www.armytimes.com/resizer/TaeN6XMV45tU-ZpxtPy2NjsBpq8=/1200x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/NPDHCPL3VRFCFJ7L3BFQOIFFQM.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ50K7RFzMZpNqpwXID81Gn8UnfhLPykpInew';" alt="Marine Sentenced To 2 Years For Shooting Fellow Gate Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Sentenced To 2 Years For Shooting Fellow Gate Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images01.military.com/sites/default/files/styles/full/public/2021-02/mil-8th-marine-division-deactivates-1800.jpg?itok=tzoPxiV-" data-lightbox="roadtrip" data-title="Ydf2 Ijgu4umpm">
+											<img class="card-img v-image ads-img " src="https://images01.military.com/sites/default/files/styles/full/public/2021-02/mil-8th-marine-division-deactivates-1800.jpg?itok=tzoPxiV-" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRawu2rSBeCpmMPEiEFZy0ms7A5XFeQ42CJGQ';" alt="Ydf2 Ijgu4umpm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ydf2 Ijgu4umpm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/70/6b/a2706b44562e0db13c68e1991b93cee0.jpg" data-lightbox="roadtrip" data-title="34th Platoon Montford Point Ca 1943 Platoon Marines Military Honor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/70/6b/a2706b44562e0db13c68e1991b93cee0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqyIhNkwEVg_AF9JKOxEddBT-7MCAuCpZkBQ';" alt="34th Platoon Montford Point Ca 1943 Platoon Marines Military Honor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">34th Platoon Montford Point Ca 1943 Platoon Marines Military Honor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/31/ce/b431ced7a66a17158b5ee36ca261d9e4.jpg" data-lightbox="roadtrip" data-title="Pin On Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/31/ce/b431ced7a66a17158b5ee36ca261d9e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcrOOCmb0HWB4aYMN8qFpYTmO1d5VDpnfdpA';" alt="Pin On Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/14/45/71/1445713d8658b9a0a481e0d39184c1b9.jpg" data-lightbox="roadtrip" data-title="Pin On Usmc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/14/45/71/1445713d8658b9a0a481e0d39184c1b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcgyND9yyiEXlD1FYSXL85Zb-BEn3-zejQag';" alt="Pin On Usmc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Usmc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://c8.alamy.com/comp/DGWEMK/marine-corps-base-camp-lejeune-nc-marines-and-sailors-with-fox-company-DGWEMK.jpg" data-lightbox="roadtrip" data-title="Camp Lejeune High Resolution Stock Photography And Images Alamy">
+											<img class="card-img v-image ads-img " src="https://c8.alamy.com/comp/DGWEMK/marine-corps-base-camp-lejeune-nc-marines-and-sailors-with-fox-company-DGWEMK.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAYWesSZbZOFHAWMjpMVPJgyyCzAAI5VG4oQ';" alt="Camp Lejeune High Resolution Stock Photography And Images Alamy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Camp Lejeune High Resolution Stock Photography And Images Alamy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/1a/57/fe1a571c37963e9bd817fff3576456b5.jpg" data-lightbox="roadtrip" data-title="Pin By Ihab Soubra On Liban Lebanon لبنان In 2020 Marine Barracks Beirut Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/1a/57/fe1a571c37963e9bd817fff3576456b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSExqZO7iTzPBY0v16EzOw69MIe5gr2NunJ4A';" alt="Pin By Ihab Soubra On Liban Lebanon لبنان In 2020 Marine Barracks Beirut Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ihab Soubra On Liban Lebanon لبنان In 2020 Marine Barracks Beirut Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.moaa.org/uploadedfiles/camp-lejeune-sign-marines-h.jpg" data-lightbox="roadtrip" data-title="Moaa A Personal Story Survivor Benefits For Camp Lejeune Water Contamination Victims">
+											<img class="card-img v-image ads-img " src="https://www.moaa.org/uploadedfiles/camp-lejeune-sign-marines-h.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5VVPZVZb_e-eoI6zeRFHT6scK8JTHDZUXQg';" alt="Moaa A Personal Story Survivor Benefits For Camp Lejeune Water Contamination Victims">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Moaa A Personal Story Survivor Benefits For Camp Lejeune Water Contamination Victims</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.armytimes.com/resizer/8RTidGOhIpDktSsCLZ47lA-2CHU=/1200x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/57QJQKESB5FNTI2GAV6SXBZ27M.jpg" data-lightbox="roadtrip" data-title="Marine Drill Instructor Killed In Hit And Run Near Camp Lejeune">
+											<img class="card-img v-image ads-img " src="https://www.armytimes.com/resizer/8RTidGOhIpDktSsCLZ47lA-2CHU=/1200x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/57QJQKESB5FNTI2GAV6SXBZ27M.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-APjd1mKXO5CRNtqWpneamoRwQWFgyiaqTQ';" alt="Marine Drill Instructor Killed In Hit And Run Near Camp Lejeune">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Drill Instructor Killed In Hit And Run Near Camp Lejeune</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/5f/8f/af/5f8fafd009baa88884adad48994d0658.jpg" data-lightbox="roadtrip" data-title="Peacekeepers At War Beirut 1983 The Marine Commander Tells His Story By Timothy J Geraghty Goodreads In 2020 United States Marine Corps Marine Beirut">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/5f/8f/af/5f8fafd009baa88884adad48994d0658.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQINMl5vMpIsYYtAjSXuwHrnrfZf8cYfeOEiw';" alt="Peacekeepers At War Beirut 1983 The Marine Commander Tells His Story By Timothy J Geraghty Goodreads In 2020 United States Marine Corps Marine Beirut">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Peacekeepers At War Beirut 1983 The Marine Commander Tells His Story By Timothy J Geraghty Goodreads In 2020 United States Marine Corps Marine Beirut</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/20/39/a920391dc8aa034140707840b3d4eb31.jpg" data-lightbox="roadtrip" data-title="We Shall Not Forget The October 23rd 1983 Marine Barracks Bombing Beirut Occurred During The Marine Barracks United States Marine Corps Lebanese Civil War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/20/39/a920391dc8aa034140707840b3d4eb31.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS3IhtWAfo6plWBpuc42k_x_JCeQPGABzpvA';" alt="We Shall Not Forget The October 23rd 1983 Marine Barracks Bombing Beirut Occurred During The Marine Barracks United States Marine Corps Lebanese Civil War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Shall Not Forget The October 23rd 1983 Marine Barracks Bombing Beirut Occurred During The Marine Barracks United States Marine Corps Lebanese Civil War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/7e/3c/887e3ca055e037ee9c9a2d0dcb35294e.jpg" data-lightbox="roadtrip" data-title="This Is Our Hero Gysgt Michael J Clark Usmc Eod He Was Killed In Fallujah Iraq On July 20 2004 Sara Pride Of America Military Heroes Fallen Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/7e/3c/887e3ca055e037ee9c9a2d0dcb35294e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKCDDMOJiiA2V68f0wCYuwlgx4VVzXI9cnOQ';" alt="This Is Our Hero Gysgt Michael J Clark Usmc Eod He Was Killed In Fallujah Iraq On July 20 2004 Sara Pride Of America Military Heroes Fallen Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is Our Hero Gysgt Michael J Clark Usmc Eod He Was Killed In Fallujah Iraq On July 20 2004 Sara Pride Of America Military Heroes Fallen Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/3a/8b/5a/3a8b5a7e133c788c01060c53167ed5b5.jpg" data-lightbox="roadtrip" data-title="Pin By Stan Weidner On Artillery King Of Battle Marines Artillery Combat Arms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/3a/8b/5a/3a8b5a7e133c788c01060c53167ed5b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq5Dp4leDG0mW4j4PiCTtDVQyg2WxhyXUDYQ';" alt="Pin By Stan Weidner On Artillery King Of Battle Marines Artillery Combat Arms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Stan Weidner On Artillery King Of Battle Marines Artillery Combat Arms</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-id-card-tampa.html">Military Id Card Tampa</a></li>
+													<li class="list-group-item"><a href="/military-job-for-civilian.html">Military Job For Civilian</a></li>
+													<li class="list-group-item"><a href="/military-id-card-name.html">Military Id Card Name</a></li>
+													<li class="list-group-item"><a href="/military-jobs-for-hearing-impaired.html">Military Jobs For Hearing Impaired</a></li>
+													<li class="list-group-item"><a href="/military-jobs-for-colorblind.html">Military Jobs For Colorblind</a></li>
+													<li class="list-group-item"><a href="/military-id-for-dependents.html">Military Id For Dependents</a></li>
+													<li class="list-group-item"><a href="/military-jobs-for-civilians.html">Military Jobs For Civilians</a></li>
+													<li class="list-group-item"><a href="/military-jobs-for-civilian.html">Military Jobs For Civilian</a></li>
+													<li class="list-group-item"><a href="/military-id-card-milwaukee.html">Military Id Card Milwaukee</a></li>
+													<li class="list-group-item"><a href="/military-id-cards-for-dependents-over-18.html">Military Id Cards For Dependents Over 18</a></li>
+													<li class="list-group-item"><a href="/military-jobs-for-biology-majors.html">Military Jobs For Biology Majors</a></li>
+													<li class="list-group-item"><a href="/military-id-card-philippines.html">Military Id Card Philippines</a></li>
+													<li class="list-group-item"><a href="/military-id-card-number.html">Military Id Card Number</a></li>
+													<li class="list-group-item"><a href="/military-id-card-kansas-city-mo.html">Military Id Card Kansas City Mo</a></li>
+													<li class="list-group-item"><a href="/military-id-card-renewal.html">Military Id Card Renewal</a></li>
+													<li class="list-group-item"><a href="/military-id-card-uses.html">Military Id Card Uses</a></li>
+													<li class="list-group-item"><a href="/military-id-card-renewal-near-me.html">Military Id Card Renewal Near Me</a></li>
+													<li class="list-group-item"><a href="/military-id-card-tracy-ca.html">Military Id Card Tracy Ca</a></li>
+													<li class="list-group-item"><a href="/military-id-card-orlando.html">Military Id Card Orlando</a></li>
+													<li class="list-group-item"><a href="/military-id-for-dependents-over-18.html">Military Id For Dependents Over 18</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

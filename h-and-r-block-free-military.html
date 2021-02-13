@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>H And R Block Free Military - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "H And R Block Free Military",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/89/1e/04/891e0453c3e5174cbd08c28f91c54c95.gif",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=h+and+r+block+free+military",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>H And R Block Free Military</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">HR Block tax preparation and filing software online is easy to use and technical assistance is available if you need it. MilTax free tax services include tax prep and e-filing software and personalized support that address the realities of military life deployments combat and training pay housing and rentals multistate filings living OCONUS and more. Those who are eligible under the Military OneSource tax program can complete save and file their federal and up to three state returns online for free with the HR Block At Home tool. <br>				
+			</p>
+										<a class="badge badge-info" href="/my-husbands-name-quiz.html">my husbands name quiz</a>
+											<a class="badge badge-primary" href="/my-husband-yells-at-me-and-makes-me-cry.html">my husband yells at me and makes me cry</a>
+											<a class="badge badge-light" href="/my-husband-was-exposed-to-covid-now-what.html">my husband was exposed to covid now what</a>
+											<a class="badge badge-info" href="/my-husband-will-not-listen-to-me.html">my husband will not listen to me</a>
+											<a class="badge badge-primary" href="/my-husband-wont-wear-a-mask.html">my husband wont wear a mask</a>
+											<a class="badge badge-warning" href="/my-husbands-lies-ending.html">my husbands lies ending</a>
+											<a class="badge badge-info" href="/my-husband-was-exposed-to-covid-what-do-i-do.html">my husband was exposed to covid what do i do</a>
+											<a class="badge badge-info" href="/my-husbands-sister-in-law-is-jealous-of-me.html">my husbands sister in law is jealous of me</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to pay a visit to the right blog.  Our website provides you with suggestions for seeing the highest quality video and picture content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video that you see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/62/e5/2a62e548cadee78ce13ddb027230b4aa.jpg" data-lightbox="roadtrip" data-title="H R Block Is Offering A Military Scholarship For Military Spouses And Wounded Warriors Please Share With Military Scholarships Scholarships Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/62/e5/2a62e548cadee78ce13ddb027230b4aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNImAKPF5GXA2WzLPr8jr8UGfAPF_IAYis2w';" alt="H R Block Is Offering A Military Scholarship For Military Spouses And Wounded Warriors Please Share With Military Scholarships Scholarships Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">H R Block Is Offering A Military Scholarship For Military Spouses And Wounded Warriors Please Share With Military Scholarships Scholarships Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8d/a2/bc/8da2bcff7342d9dfa01332de37f11cd7--military-families-filing.jpg" data-lightbox="roadtrip" data-title="Free Military Tax Filing For Military Active Duty Reserve Turbotax Filing Taxes Free">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8d/a2/bc/8da2bcff7342d9dfa01332de37f11cd7--military-families-filing.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF8A4vmh6JfD0ISMadd1kSK24ZXnZOYyfAfw';" alt="Free Military Tax Filing For Military Active Duty Reserve Turbotax Filing Taxes Free">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Military Tax Filing For Military Active Duty Reserve Turbotax Filing Taxes Free</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/bf/07/79bf0770e33526bf32c996d5f3ee8080.jpg" data-lightbox="roadtrip" data-title="Full Scholarships Are Now Available To Military Spouses For The H R Block Income Tax Course At No Charge Learn Scholarships Earn Extra Income Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/bf/07/79bf0770e33526bf32c996d5f3ee8080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC0nVDhs7N-JiNQ3Ss4t8UpNieTD4qUMvwMA';" alt="Full Scholarships Are Now Available To Military Spouses For The H R Block Income Tax Course At No Charge Learn Scholarships Earn Extra Income Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Full Scholarships Are Now Available To Military Spouses For The H R Block Income Tax Course At No Charge Learn Scholarships Earn Extra Income Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/d1/39/6bd1392a891ab281ac77d4ddbec5ac5e.jpg" data-lightbox="roadtrip" data-title="Special Rules On Military Taxes H R Block Blog Life Management Skills Military Personnel Financial Literacy Lessons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/d1/39/6bd1392a891ab281ac77d4ddbec5ac5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT14XLrAXN8DmWkjQ48wKQ5YxnhdKgh-InnKA';" alt="Special Rules On Military Taxes H R Block Blog Life Management Skills Military Personnel Financial Literacy Lessons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Special Rules On Military Taxes H R Block Blog Life Management Skills Military Personnel Financial Literacy Lessons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/05/40/bf0540eb4eb17355804f2dfce3a38050.jpg" data-lightbox="roadtrip" data-title="Pin By Carthage Missouri Chamber Of C On Meet The Members Financial Hr Block Tax Time Blocks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/05/40/bf0540eb4eb17355804f2dfce3a38050.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc2huF2Y39lsPxLaJawwo1P_oJnQwdTP_KmA';" alt="Pin By Carthage Missouri Chamber Of C On Meet The Members Financial Hr Block Tax Time Blocks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Carthage Missouri Chamber Of C On Meet The Members Financial Hr Block Tax Time Blocks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/37/5f/87375f2f8c0cf9722295bbf7bacb45f1.png" data-lightbox="roadtrip" data-title="Wounded Military Scholarships Scholarships Army Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/37/5f/87375f2f8c0cf9722295bbf7bacb45f1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGEs6gs45W94LRU0QOQAOZ0x68sMOAXBctzQ';" alt="Wounded Military Scholarships Scholarships Army Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wounded Military Scholarships Scholarships Army Life</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/2a/62/e5/2a62e548cadee78ce13ddb027230b4aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGEs6gs45W94LRU0QOQAOZ0x68sMOAXBctzQ';" alt="Wounded Military Scholarships Scholarships Army Life">
+										<div class="card-body">
+						<h3 class="h5"><b>HR Block provides access convenience and tax expertise to help members of the military navigate through their unique tax situation including combat zone issues Military Leave Earning Statements LES reporting moving expenses establishing and keeping a home state and more.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>H and r block free military</strong>. 
+								
+																	HR Block also offers veterans and members of the Armed Forces. 
+																	In fact more than 79 percent of graduates. 
+																	HR Block Military Discount. 
+																	Military OneSource from HR Block offers a free electronic tax filing service for eligible Military members to help them prepare save and file their federal tax return and up to three state returns for FREE online with the HR Block tool. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Service Members Receive 10 Off with HR Block at the Exchange The Army Air Force Exchange Service is teaming with HR Block to offer tax preparation services at a 10 discount. 
+																	Servicemembers eligible under the Military. 
+																	Being an HR Block tax professional is a career military spouses can take anywhere across the country and to hundreds of military bases around the world. 
+																	Income Tax Course covers the fundamentals. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This Free Military OneSource version of HR Block is available for online tax preparation. 
+																	Being an HR Block tax professional is a career military spouses can take anywhere across the country and to hundreds of military bases around the world. 
+																	HR Blocks Commitment HR Blocks Military Spouse Scholarship Program creates an opportunity for spouses of service members to become part of the HR Block family even if you and your spouse are transferred About the Program HR Block offers military spouses a full scholarship to the Income Tax Course. 
+																	In fact more than 79 percent of graduates who participated in the scholarship program became tax professionals for HR Block in 2018 said Collins. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While there is no specific separate edition of HR Block software for military members their regular software is designed to meet the needs of active-duty military members and Veterans. 
+																	Catch the chance to save your purchase. 
+																	HR Block is here to help with tax filing information that can help military men and women as well as their families find the right tax filing options for them. 
+																	HR Block Military OneSource for Armed Forces. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military OneSource HR Block at Home Military OneSource a service of the Department of Defense designed to provide a wealth of information to military members and their spouses has partnered with HR Block to offer HR Block at Home to service members and their families. 
+																	Military OneSource offers a free tax filing version of the HR Block at Home online tax preparation service for servicemembers and their families. 
+																	No you must complete your return yourself online. 
+																	If you have simple taxes consider using their free version HR Block specializes in tax prep for military members. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are currently serving in the military you may be eligible to file your tax return for free. 
+																	Service Members Receive 10 off Its no longer a difficult thing to bring what you want home with less money. 
+																	This will allow you to not only file your federal return for free but will also allow you to file up to three 3 state returns for free as well. 
+																	This tax season start with MilTax from Military OneSource and the Department of Defense. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Internal Revenue Service IRS will start accepting electronic tax returns e-file on January 23 2017. 
+																	16 2017 CG SUPRT launched HR Block tax services. 
+																	Coast Guard members and families can now file Federal and State taxes online for free. 
+																	For technical assistance HR Block login issues using the software printing returns etc please call 800-472-5625 and follow the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military OneSource has partnered up with HR Block this year and is offering a free version of HR Block At Home to those who qualify for Military OneSource. 
+																	Some taxpayers may also be eligible to file their tax returns for free if they meet certain income limits and do not have a complicated tax return. 
+																	When it comes to taxes military personnel have many things to consider. 
+																	You can view the HR Block Free Online version to see if you qualify to file your taxes for free. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Can someone at Military OneSource or HR Block complete my taxes for me for free. 
+																	The Military OneSource Free Tax Filing Services Features HR Block At Home Online Tax Return Preparation. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/67/c6/6867c62146ffe7533e76c824221b03cb.jpg" data-lightbox="roadtrip" data-title="H R Block Budget Challenge Grants 6 Application Periods Encourages Students To Learn Personal Finance In A Fu Hr Block Budget Challenge Student Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/67/c6/6867c62146ffe7533e76c824221b03cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSC4RetGxGqMVuyLuzs6G9NS8Z8ivklePntg';" alt="H R Block Budget Challenge Grants 6 Application Periods Encourages Students To Learn Personal Finance In A Fu Hr Block Budget Challenge Student Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">H R Block Budget Challenge Grants 6 Application Periods Encourages Students To Learn Personal Finance In A Fu Hr Block Budget Challenge Student Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/b6/d5/edb6d5fb7ff0d32b3c28148d5ef9abd5.jpg" data-lightbox="roadtrip" data-title="Tax Information Center Tax Brackets And Rates H R Block Infographic Business Finance Tax Time">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/b6/d5/edb6d5fb7ff0d32b3c28148d5ef9abd5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYzR0ApAYS3MiqdCfHS69ZXa__pT67iXjzXA';" alt="Tax Information Center Tax Brackets And Rates H R Block Infographic Business Finance Tax Time">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tax Information Center Tax Brackets And Rates H R Block Infographic Business Finance Tax Time</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/c6/93/5fc69330a16117c89ca9a9bd50cbf63c.jpg" data-lightbox="roadtrip" data-title="H R Block Tax Savings Ad On Pandora Banner Ads Imagery Hr Block">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/c6/93/5fc69330a16117c89ca9a9bd50cbf63c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdQR7jAWf36WoI6jbNtEQTTLWHFsl5p3qZjQ';" alt="H R Block Tax Savings Ad On Pandora Banner Ads Imagery Hr Block">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">H R Block Tax Savings Ad On Pandora Banner Ads Imagery Hr Block</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/1e/04/891e0453c3e5174cbd08c28f91c54c95.gif" data-lightbox="roadtrip" data-title="Photo In Logos Vectors Google Photos Stencil Font Lettering Fonts Stencil Text">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/1e/04/891e0453c3e5174cbd08c28f91c54c95.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpAEICL_83fNR-Jt9EEo_WbyIak7kPHFtJxw';" alt="Photo In Logos Vectors Google Photos Stencil Font Lettering Fonts Stencil Text">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photo In Logos Vectors Google Photos Stencil Font Lettering Fonts Stencil Text</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/8b/3d/3e8b3d09cd11cded8838384524b94462.jpg" data-lightbox="roadtrip" data-title="Tax Filing Tips For Bloggers And Self Employed Hrblock Com Filing Taxes Blog Taxes Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/8b/3d/3e8b3d09cd11cded8838384524b94462.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRgz0VK4m_Tz3VT4FM9eYavyHDwm_4uVi8HQ';" alt="Tax Filing Tips For Bloggers And Self Employed Hrblock Com Filing Taxes Blog Taxes Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tax Filing Tips For Bloggers And Self Employed Hrblock Com Filing Taxes Blog Taxes Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/fd/70/4ffd70ca943f3603a75b271ccaaa21c6.jpg" data-lightbox="roadtrip" data-title="Form W 2 Is One Of The Most Important Documents You Need During Tax Season Employers Must Start Sending Out W 2 Tax Preparation Tax Season Certified Used Cars">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/fd/70/4ffd70ca943f3603a75b271ccaaa21c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSicTVq_yCjmOIs1MiI9uKXSVYoUHtFTA3CjQ';" alt="Form W 2 Is One Of The Most Important Documents You Need During Tax Season Employers Must Start Sending Out W 2 Tax Preparation Tax Season Certified Used Cars">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Form W 2 Is One Of The Most Important Documents You Need During Tax Season Employers Must Start Sending Out W 2 Tax Preparation Tax Season Certified Used Cars</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/ec/a8/6ceca8232d5833e97f85e19d901d00c1.jpg" data-lightbox="roadtrip" data-title="Tax Tips For Freelancers H R Block Irs Taxes Business Tax Corporate Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/ec/a8/6ceca8232d5833e97f85e19d901d00c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnYr8Z4h8oX80G_vPgzQ-xy1fhs0Kt2zrjLw';" alt="Tax Tips For Freelancers H R Block Irs Taxes Business Tax Corporate Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tax Tips For Freelancers H R Block Irs Taxes Business Tax Corporate Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/23/fb/f8/23fbf81d6f739e6e053bc61da5858e50.jpg" data-lightbox="roadtrip" data-title="2019 Classic Military Lego Soldiers Building Block Brick Swat Special Force Army Ebay Lego Soldiers Lego Army Lego Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/23/fb/f8/23fbf81d6f739e6e053bc61da5858e50.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUL7lruVU58vZn3boh8WnK9dD0fHPGK2YAaw';" alt="2019 Classic Military Lego Soldiers Building Block Brick Swat Special Force Army Ebay Lego Soldiers Lego Army Lego Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 Classic Military Lego Soldiers Building Block Brick Swat Special Force Army Ebay Lego Soldiers Lego Army Lego Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/a5/cc/a8a5cc76f0c1eb70749b12886e1f7589.jpg" data-lightbox="roadtrip" data-title="Why Do Colleges Send 1098 T Forms H R Block High School Counseling Scholarships For College School Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/a5/cc/a8a5cc76f0c1eb70749b12886e1f7589.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrkmExxPxO39P210sfksG-Bri7B9MR1k25vw';" alt="Why Do Colleges Send 1098 T Forms H R Block High School Counseling Scholarships For College School Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Do Colleges Send 1098 T Forms H R Block High School Counseling Scholarships For College School Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/2f/9f/142f9f2b42674cbfa37eec7b2b76e3e2.jpg" data-lightbox="roadtrip" data-title="Textura Camouflage Khaki Army Birthday Parties Army S Birthday Birthday Party Invitations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/2f/9f/142f9f2b42674cbfa37eec7b2b76e3e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcsjv4rbu1YCICc9N1g5hnwbbKAhvC70RaiA';" alt="Textura Camouflage Khaki Army Birthday Parties Army S Birthday Birthday Party Invitations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Textura Camouflage Khaki Army Birthday Parties Army S Birthday Birthday Party Invitations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/b2/4c/63b24cc4cfa96945e097b7d4f30264da.jpg" data-lightbox="roadtrip" data-title="Pin On French Tanks Of Wwii Armee De Terre">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/b2/4c/63b24cc4cfa96945e097b7d4f30264da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfFQHR0neUxu7Y-zxKBbsNNOeJr0x6g7CZmQ';" alt="Pin On French Tanks Of Wwii Armee De Terre">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On French Tanks Of Wwii Armee De Terre</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/f0/e9/6df0e9497dc6f9f76dbf62a09c3b8f17.jpg" data-lightbox="roadtrip" data-title="Pin On Oficina Taxes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/f0/e9/6df0e9497dc6f9f76dbf62a09c3b8f17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe8F_S1QQ9Xvb5OWbrfIuqMqWRnc8YS5AL5g';" alt="Pin On Oficina Taxes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Oficina Taxes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/71/9e/6f719e4f3b95271bbc6cccb313849bc4.jpg" data-lightbox="roadtrip" data-title="Pin On Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/71/9e/6f719e4f3b95271bbc6cccb313849bc4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU8vJgSLakUNvgam8hk--0ejWXa9z5Oo1hHw';" alt="Pin On Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/navy-tuition-assistance-application.html">Navy Tuition Assistance Application</a></li>
+													<li class="list-group-item"><a href="/navy-tuition-assistance-minimum-grade.html">Navy Tuition Assistance Minimum Grade</a></li>
+													<li class="list-group-item"><a href="/navy-tuition-assistance-changes.html">Navy Tuition Assistance Changes</a></li>
+													<li class="list-group-item"><a href="/navy-t-shirts-for-mens.html">Navy T Shirts For Mens</a></li>
+													<li class="list-group-item"><a href="/navy-t-shirt-river-island.html">Navy T Shirt River Island</a></li>
+													<li class="list-group-item"><a href="/navy-tuition-assistance-certificate.html">Navy Tuition Assistance Certificate</a></li>
+													<li class="list-group-item"><a href="/navy-t-shirt-street.html">Navy T Shirt Street</a></li>
+													<li class="list-group-item"><a href="/navy-tuition-assistance-repayment.html">Navy Tuition Assistance Repayment</a></li>
+													<li class="list-group-item"><a href="/navy-wife-jobs.html">Navy Wife Jobs</a></li>
+													<li class="list-group-item"><a href="/navy-wife-jewelry.html">Navy Wife Jewelry</a></li>
+													<li class="list-group-item"><a href="/navy-tuition-assistance-deadline.html">Navy Tuition Assistance Deadline</a></li>
+													<li class="list-group-item"><a href="/navy-t-shirt-zara.html">Navy T Shirt Zara</a></li>
+													<li class="list-group-item"><a href="/navy-t-shirt-with-pocket.html">Navy T Shirt With Pocket</a></li>
+													<li class="list-group-item"><a href="/navy-tuition-assistance-degree-plan.html">Navy Tuition Assistance Degree Plan</a></li>
+													<li class="list-group-item"><a href="/navy-wife-for-life-sweatshirt.html">Navy Wife For Life Sweatshirt</a></li>
+													<li class="list-group-item"><a href="/navy-wife-humor.html">Navy Wife Humor</a></li>
+													<li class="list-group-item"><a href="/navy-tee-shirt-outfit.html">Navy Tee Shirt Outfit</a></li>
+													<li class="list-group-item"><a href="/navy-tuition-assistance-rates.html">Navy Tuition Assistance Rates</a></li>
+													<li class="list-group-item"><a href="/navy-veteran-spouse-benefits.html">Navy Veteran Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/navy-t-shirt-with-black-jeans.html">Navy T Shirt With Black Jeans</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

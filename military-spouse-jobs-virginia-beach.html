@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Spouse Jobs Virginia Beach - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Spouse Jobs Virginia Beach",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/34/fc/e8/34fce8c25f6d8217d51f851aff99d6e1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+spouse+jobs+virginia+beach",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Spouse Jobs Virginia Beach</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Performance Food Group-Virginia Beach Virginia. Virginia Beach VA Wonderful opportunity with a growing housing related organization as a professional front deskadministrative assistant with good Word and Excel skills. McDonalds General Manager in Virginia Beach Virginia. <br>				
+			</p>
+										<a class="badge badge-success" href="/air-force-enlisted-rotc-program.html">air force enlisted rotc program</a>
+											<a class="badge badge-warning" href="/air-force-commissioning-programs-for-enlisted.html">air force commissioning programs for enlisted</a>
+											<a class="badge badge-danger" href="/air-force-1-whiteblue-herobright-crimson.html">air force 1 whiteblue herobright crimson</a>
+											<a class="badge badge-warning" href="/air-force-blue-hero.html">air force blue hero</a>
+											<a class="badge badge-dark" href="/air-force-enlisted-rpa-program.html">air force enlisted rpa program</a>
+											<a class="badge badge-primary" href="/air-force-benefits-phone-number.html">air force benefits phone number</a>
+											<a class="badge badge-success" href="/air-force-benefits-and-entitlements-service-team.html">air force benefits and entitlements service team</a>
+											<a class="badge badge-dark" href="/air-force-family-separation-pay-regulation.html">air force family separation pay regulation</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to pay a visit to the right site.  Our site provides you with suggestions for seeing the highest quality video and image content, search and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/fc/bf/c0fcbf22dacd77ceb2d358a14c947c87.jpg" data-lightbox="roadtrip" data-title="Editorial Photographer Magazine Photographer Hayne Photographers Virginia Beach Photography H Military Spouse Magazine Military Spouse Military Spouse Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/fc/bf/c0fcbf22dacd77ceb2d358a14c947c87.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUOtduUT9tmO7MtEAMm71YWNxSpYFsb5AnVQ';" alt="Editorial Photographer Magazine Photographer Hayne Photographers Virginia Beach Photography H Military Spouse Magazine Military Spouse Military Spouse Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Editorial Photographer Magazine Photographer Hayne Photographers Virginia Beach Photography H Military Spouse Magazine Military Spouse Military Spouse Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/fc/e8/34fce8c25f6d8217d51f851aff99d6e1.jpg" data-lightbox="roadtrip" data-title="Adapting To The Military Lifestyle Gives Military Spouses A Unique Set Of Skills That Employers May Military Spouse Career Military Spouse Jobs Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/fc/e8/34fce8c25f6d8217d51f851aff99d6e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiQnHDqZLCCLwE0gG-O5T-dmSG_qDXpevfZQ';" alt="Adapting To The Military Lifestyle Gives Military Spouses A Unique Set Of Skills That Employers May Military Spouse Career Military Spouse Jobs Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adapting To The Military Lifestyle Gives Military Spouses A Unique Set Of Skills That Employers May Military Spouse Career Military Spouse Jobs Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/36/db/1d36db21d958083e241cad9cba9193e7.jpg" data-lightbox="roadtrip" data-title="Military Transition Job Fair Virgina Beach Va March 26 2013 Http Military Civilian Blogspot Com 2013 03 Mili Military Transition Job Fair Veteran Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/36/db/1d36db21d958083e241cad9cba9193e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkohb3WIqagP2sxuJ24sfrofEW90Ny_lcXVQ';" alt="Military Transition Job Fair Virgina Beach Va March 26 2013 Http Military Civilian Blogspot Com 2013 03 Mili Military Transition Job Fair Veteran Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Transition Job Fair Virgina Beach Va March 26 2013 Http Military Civilian Blogspot Com 2013 03 Mili Military Transition Job Fair Veteran Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/ca/d9/bccad99632f989b0fba873e2ae6b514d.jpg" data-lightbox="roadtrip" data-title="May 2016 Military Spouse Magazine Military Spouse Jobs Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/ca/d9/bccad99632f989b0fba873e2ae6b514d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHwqflA5ClEr85tSICSMByYqg-DmlUq3ortA';" alt="May 2016 Military Spouse Magazine Military Spouse Jobs Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">May 2016 Military Spouse Magazine Military Spouse Jobs Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a3/42/74/a34274361754a24a78e4f24756adb08c.jpg" data-lightbox="roadtrip" data-title="11 Amazing Military Graduation Gifts They Re Guaranteed To Adore Military Graduation Gift Military Graduation Military Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a3/42/74/a34274361754a24a78e4f24756adb08c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3_WGx4GNe4BAMqWH9EW3jnq1vjFi4UxpOsA';" alt="11 Amazing Military Graduation Gifts They Re Guaranteed To Adore Military Graduation Gift Military Graduation Military Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 Amazing Military Graduation Gifts They Re Guaranteed To Adore Military Graduation Gift Military Graduation Military Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/68/a7/b1/68a7b162e46261b0e7482fb521c0a391.jpg" data-lightbox="roadtrip" data-title="Here S How To Plan For Military Retirement In 2020 Military Retirement Military Life Christian Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/68/a7/b1/68a7b162e46261b0e7482fb521c0a391.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShfc_Asut-NSBqvQIjF7yMpkfyUjIbGjdKkw';" alt="Here S How To Plan For Military Retirement In 2020 Military Retirement Military Life Christian Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S How To Plan For Military Retirement In 2020 Military Retirement Military Life Christian Military</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/fa/17/1a/fa171a1e6f91003af3a9ce16c13baa5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShfc_Asut-NSBqvQIjF7yMpkfyUjIbGjdKkw';" alt="Here S How To Plan For Military Retirement In 2020 Military Retirement Military Life Christian Military">
+										<div class="card-body">
+						<h3 class="h5"><b>Results order filter 2417 Jobs in Virginia Beach VA Featured Jobs.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military spouse jobs virginia beach</strong>. 
+								
+																	Secure our Nation Ignite your Future. 
+																	Apply to Human Resources Specialist Direct Response Manager Recreation Assistant and more. 
+																	If you like to be the go-to person for all your team members onsite and have professional presentation and communication skills this may become your employment home for the long term. 
+																	BluePearl Veterinary Partners in Virginia Beach Virginia is seeking a full time board certified or residency-trained Veterinarian Cardiology to join our emergency and specialty hospital. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Katherine Kate Nixon whose husband Jason is an Air Force veteran and member of the Air National Guard was one of Fridays 12 victims in a mass shooting at the Virginia Beach Municipal Center. 
+																	Location field must contain city state or a zip code to perform a radius search eg Denver CO or 46122. 
+																	About 100 military spouses gathered at the Virginia Beach Convention Center May 13 for the 4th Annual Military Officers Association of America MOAA Military Spouse Symposium and 130 more spouses attended online. 
+																	New Military Spouse jobs added daily. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply to Human Resources Specialist Program Analyst Protection Specialist and more. 
+																	Leverage your professional network and get hired. 
+																	Apply to Distribution Associate Administrative Assistant Administrative Specialist and more. 
+																	We are searching for a strong leader with excellent interpersonal skills and a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Area Supervisor is a member of the Store Leadership who is responsible for a specific assigned area of the Store as well as the general operations and supervision of the Store when functioning as the Manager on Duty. 
+																	26 open jobs for Military advisor in Virginia Beach. 
+																	This job posting is for a position in a restaurant owned and operated by an independent franchisee and not McDonalds USA. 
+																	Location field must contain city state or a zip code to perform a radius search eg Denver CO or 46122. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This franchisee owns a license to use McDonalds logos and food products for example when. 
+																	Location field must contain city state or a zip code to perform a radius search eg Denver CO or 46122. 
+																	Apply to Administrative Assistant Operations Manager Intern and more. 
+																	Home View All Jobs 2422628 Results order filter Delivery Driver Jobs in Virginia Beach VA Featured Jobs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	ManTech Network Engineer in Virginia Beach Virginia. 
+																	Todays top 136 Military Spouse jobs in Virginia Beach Virginia United States. 
+																	Search Military advisor jobs in Virginia Beach VA with company ratings salaries. 
+																	CDL Class A Delivery Driver. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Inspire Brands-Virginia Beach Virginia. 
+																	Sponsored by Corporate Gray which has a reputation for getting the best companies and the best candidates together for an efficient and effective experience this event is especially for transitioning and formerretired military members and. 
+																	Location field must contain city state or a zip code to perform a radius search eg Denver CO or 46122. 
+																	The symposium was open to spouses of all ranks and service branches. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military-Friendly Job Fair - October Meet dozens of military-friendly employers face-to-face at one of the most professional career events in Virginia. 
+																	Area Supervisor in Virginia Beach Virginia GENERAL PURPOSE. 
+																	Apply to Administrative Specialist Retail Sales Associate 00155 and more. 
+																	2436 Jobs in Virginia Beach VA Featured Jobs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	City and state must be separated by a comma followed by a space eg Houston TX. 
+																	Military Spouse Connection Jobs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/ec/35/0cec357181476b90da07795fd9c1c896.jpg" data-lightbox="roadtrip" data-title="Corporate Gray Job Fair For The Military Community Http Military Civilian Blogspot Com 2014 09 Corporate Gray Job Job Fair Veteran Jobs Military Community">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/ec/35/0cec357181476b90da07795fd9c1c896.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO8pEdcIwCe6BaJ3l13SYp2_An-SYQudkOkA';" alt="Corporate Gray Job Fair For The Military Community Http Military Civilian Blogspot Com 2014 09 Corporate Gray Job Job Fair Veteran Jobs Military Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Corporate Gray Job Fair For The Military Community Http Military Civilian Blogspot Com 2014 09 Corporate Gray Job Job Fair Veteran Jobs Military Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1b/23/c4/1b23c4d85b4aa516afe16bc99acd208e.jpg" data-lightbox="roadtrip" data-title="Pin On Military Spouse Significant Other Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1b/23/c4/1b23c4d85b4aa516afe16bc99acd208e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHgaoLbwXJ8kaQhcUoPX9HQNEGOa3Ry3q77g';" alt="Pin On Military Spouse Significant Other Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Spouse Significant Other Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/19/7b/72197bc56dac7303d0d73f904ddb5724.jpg" data-lightbox="roadtrip" data-title="September 2013 Https Subscribe Milspouse Com Military Spouse Army Wife Milspouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/19/7b/72197bc56dac7303d0d73f904ddb5724.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM8-aAIVK6UOOqTIh07zyW07jtjjWP7jJZGg';" alt="September 2013 Https Subscribe Milspouse Com Military Spouse Army Wife Milspouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">September 2013 Https Subscribe Milspouse Com Military Spouse Army Wife Milspouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c4/d4/8c/c4d48c588d08995b0719c7a5b2f3dd10.jpg" data-lightbox="roadtrip" data-title="Catch Up Tsp Contributions Are Changing And It S Good Katehorrell Military Spouse Blog Military Life Contribution">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c4/d4/8c/c4d48c588d08995b0719c7a5b2f3dd10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ50i1fvAnYI37JNGC45GemIEORtk3LtWfFFg';" alt="Catch Up Tsp Contributions Are Changing And It S Good Katehorrell Military Spouse Blog Military Life Contribution">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Catch Up Tsp Contributions Are Changing And It S Good Katehorrell Military Spouse Blog Military Life Contribution</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/07/41/e00741a1fa4b62c59826a17f0458815a.jpg" data-lightbox="roadtrip" data-title="December 2015 Military Spouse Magazine Military Spouse Jobs Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/07/41/e00741a1fa4b62c59826a17f0458815a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpWFBluEFG9C9tD-UmdwUu_0o0tOKcSdtwZA';" alt="December 2015 Military Spouse Magazine Military Spouse Jobs Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">December 2015 Military Spouse Magazine Military Spouse Jobs Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/9f/a7/fc9fa707823747914169982c7fe99ba4.jpg" data-lightbox="roadtrip" data-title="Career Planning For Military Spouses Ramblings Of A Marine Wife Military Spouse Military Spouse Career Marine Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/9f/a7/fc9fa707823747914169982c7fe99ba4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0PVEHw3zyLAmlCUOXOHVOi38R0XW4ms7dDg';" alt="Career Planning For Military Spouses Ramblings Of A Marine Wife Military Spouse Military Spouse Career Marine Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Career Planning For Military Spouses Ramblings Of A Marine Wife Military Spouse Military Spouse Career Marine Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/17/1a/fa171a1e6f91003af3a9ce16c13baa5d.jpg" data-lightbox="roadtrip" data-title="Today Milicruit And Moaa Will Host A Nationwide Virtual Career Fair For Military Spouses This Event Will Brin Military Spouse What You Can Do Military Officer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/17/1a/fa171a1e6f91003af3a9ce16c13baa5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU5CF3ssGHMKxKcE-5LIFeDLFggi8RRnreww';" alt="Today Milicruit And Moaa Will Host A Nationwide Virtual Career Fair For Military Spouses This Event Will Brin Military Spouse What You Can Do Military Officer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Today Milicruit And Moaa Will Host A Nationwide Virtual Career Fair For Military Spouses This Event Will Brin Military Spouse What You Can Do Military Officer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/58/ac/af58ac6c678a0a2e9f893953ea7c31ed.png" data-lightbox="roadtrip" data-title="Surviving Separation When Your Loved One Goes To Basic Combat Training Part Iii How To Cope Military Spouse Combat Training Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/58/ac/af58ac6c678a0a2e9f893953ea7c31ed.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLXzUKfuYxwGXvC3UXo2oJ3TH2aNJ0Y3lsLg';" alt="Surviving Separation When Your Loved One Goes To Basic Combat Training Part Iii How To Cope Military Spouse Combat Training Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Surviving Separation When Your Loved One Goes To Basic Combat Training Part Iii How To Cope Military Spouse Combat Training Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/48/eb/a1/48eba140056ec0487367b3e0b01266a9.jpg" data-lightbox="roadtrip" data-title="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Fort Wadsworth Job Fa Medical Jobs Job Fair Healthcare Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/48/eb/a1/48eba140056ec0487367b3e0b01266a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiCSkmxrOGWH9J1MsfQSSwaMzPL56hn5WtHg';" alt="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Fort Wadsworth Job Fa Medical Jobs Job Fair Healthcare Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Fort Wadsworth Job Fa Medical Jobs Job Fair Healthcare Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/97/76/2f97762f9256e6aed83e154f6e38688e.jpg" data-lightbox="roadtrip" data-title="If You Are Considering A Major Career Shift And Looking For The Veteran Friendly Jobs Then Visit Militaryconn Veteran Jobs Veterans Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/97/76/2f97762f9256e6aed83e154f6e38688e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBwflNlTsYp9GtaWWL-f53mGVBEFmF9xLelg';" alt="If You Are Considering A Major Career Shift And Looking For The Veteran Friendly Jobs Then Visit Militaryconn Veteran Jobs Veterans Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Are Considering A Major Career Shift And Looking For The Veteran Friendly Jobs Then Visit Militaryconn Veteran Jobs Veterans Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/49/9f/88499ff32af238519a84f04fee8ba9f9.jpg" data-lightbox="roadtrip" data-title="Military Life Stress Seasoned Spouse Military Life Life Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/49/9f/88499ff32af238519a84f04fee8ba9f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgkzrPAUIDZ1d-IABuksBrRlfkXXY_-R4e_A';" alt="Military Life Stress Seasoned Spouse Military Life Life Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Life Stress Seasoned Spouse Military Life Life Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/40/19/2e40192e483214feadcf1ef862b3a9ba.png" data-lightbox="roadtrip" data-title="Pin On Job Fairs Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/40/19/2e40192e483214feadcf1ef862b3a9ba.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKfQF6gmD3J5p4g3OQQ5zJAH13SgElkgwE_Q';" alt="Pin On Job Fairs Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Job Fairs Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/d8/57/51d8577821788a92bd3e2f0c016a38ee.png" data-lightbox="roadtrip" data-title="Veterans Day Deals And Discounts For 2020 Katehorrell Veterans Day Discounts Veteran Veterans Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/d8/57/51d8577821788a92bd3e2f0c016a38ee.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM4zT2vYdnrONHxCyd1nuJBdNGagwwaUwG0g';" alt="Veterans Day Deals And Discounts For 2020 Katehorrell Veterans Day Discounts Veteran Veterans Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Day Deals And Discounts For 2020 Katehorrell Veterans Day Discounts Veteran Veterans Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mycaa-meaning.html">Mycaa Meaning</a></li>
+													<li class="list-group-item"><a href="/mycaa-massage-therapy.html">Mycaa Massage Therapy</a></li>
+													<li class="list-group-item"><a href="/mycaa-approved-program-list.html">Mycaa Approved Program List</a></li>
+													<li class="list-group-item"><a href="/mycaa-career-coach.html">Mycaa Career Coach</a></li>
+													<li class="list-group-item"><a href="/mycaa-liberty-university.html">Mycaa Liberty University</a></li>
+													<li class="list-group-item"><a href="/mycaa-medcerts.html">Mycaa Medcerts</a></li>
+													<li class="list-group-item"><a href="/mycaa-for-active-duty.html">Mycaa For Active Duty</a></li>
+													<li class="list-group-item"><a href="/mycaa-grant-login.html">Mycaa Grant Login</a></li>
+													<li class="list-group-item"><a href="/mycaa-career-step-reviews.html">Mycaa Career Step Reviews</a></li>
+													<li class="list-group-item"><a href="/mycaa-free-laptop.html">Mycaa Free Laptop</a></li>
+													<li class="list-group-item"><a href="/mycaa-https-aiportalaccafmil.html">Mycaa Https Aiportalaccafmil</a></li>
+													<li class="list-group-item"><a href="/mycaa-college-credits.html">Mycaa College Credits</a></li>
+													<li class="list-group-item"><a href="/mycaa-fiscal-year-waiver.html">Mycaa Fiscal Year Waiver</a></li>
+													<li class="list-group-item"><a href="/mycaa-medical-coding.html">Mycaa Medical Coding</a></li>
+													<li class="list-group-item"><a href="/mycaa-live-chat.html">Mycaa Live Chat</a></li>
+													<li class="list-group-item"><a href="/mycaa-contact-info.html">Mycaa Contact Info</a></li>
+													<li class="list-group-item"><a href="/mycaa-for-e6.html">Mycaa For E6</a></li>
+													<li class="list-group-item"><a href="/mycaa-military-spouse-benefit.html">Mycaa Military Spouse Benefit</a></li>
+													<li class="list-group-item"><a href="/mycaa-courses.html">Mycaa Courses</a></li>
+													<li class="list-group-item"><a href="/mycaa-doula.html">Mycaa Doula</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

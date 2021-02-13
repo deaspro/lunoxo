@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Spouse Not Paying Child Support - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Spouse Not Paying Child Support",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/98/21/3f/98213f41e80aa98cc840df9886c07385.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+spouse+not+paying+child+support",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Spouse Not Paying Child Support</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The determination for spousal support is based on the basic allowance for housing at the dependent rate. The military has guidelines regarding the amount of spousal support that is paid to the civilian spouse. Military service is not a reason to not pay spousal support. <br>				
+			</p>
+										<a class="badge badge-info" href="/military-spouse-inspirational-quotes.html">military spouse inspirational quotes</a>
+											<a class="badge badge-light" href="/military-spouse-life-insurance-after-retirement.html">military spouse life insurance after retirement</a>
+											<a class="badge badge-danger" href="/military-spouse-jobs-camp-lejeune.html">military spouse jobs camp lejeune</a>
+											<a class="badge badge-info" href="/military-spouse-in-south-korea.html">military spouse in south korea</a>
+											<a class="badge badge-light" href="/military-spouse-leave.html">military spouse leave</a>
+											<a class="badge badge-light" href="/military-spouse-jobs-fort-carson.html">military spouse jobs fort carson</a>
+											<a class="badge badge-success" href="/military-spouse-jobs-fort-bragg.html">military spouse jobs fort bragg</a>
+											<a class="badge badge-warning" href="/military-spouse-jobs-jblm.html">military spouse jobs jblm</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to visit the right blog.  Our site gives you suggestions for viewing the maximum quality video and picture content, hunt and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, therefore we recommend this video for you to see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.mckinleyirvin.com/images/blog/MilitaryDad.jpg" data-lightbox="roadtrip" data-title="Military Rules Child Support Washington Family Law Attorney">
+											<img class="card-img v-image ads-img " src="http://www.mckinleyirvin.com/images/blog/MilitaryDad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLFlRZLkhJEGd8b5_CDuhYRRiDKzLpYv6-kg';" alt="Military Rules Child Support Washington Family Law Attorney">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Rules Child Support Washington Family Law Attorney</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_MilitarySpouse1.jpg?itok=_Z72pqcw" data-lightbox="roadtrip" data-title="Explanation Of Divorced Military Spouse Benefits Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_MilitarySpouse1.jpg?itok=_Z72pqcw" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0D0IhbDAZyVxNIs2xA1O0SSEgzVTL0c5vQ';" alt="Explanation Of Divorced Military Spouse Benefits Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Explanation Of Divorced Military Spouse Benefits Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/1c/11/6d1c117f186590bf4e6c7cc489adfdfd.png" data-lightbox="roadtrip" data-title="Are Soldiers Faithful During Deployment Military Divorce Cheating Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/1c/11/6d1c117f186590bf4e6c7cc489adfdfd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdXd_cMxD0m7x5ZBZ8z_wienZqAxk8AZ4TMQ';" alt="Are Soldiers Faithful During Deployment Military Divorce Cheating Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are Soldiers Faithful During Deployment Military Divorce Cheating Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/education-benefits-military-spouses.jpg" data-lightbox="roadtrip" data-title="Military Spouse Education Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/education-benefits-military-spouses.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_72tPrpqxaEs4K7BYfkApdd_P1WqFb3CrQ';" alt="Military Spouse Education Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Education Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/msrra-military-spouse-act-residency-relief.jpg" data-lightbox="roadtrip" data-title="Military Spouse Act Residency Relief Msrra Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/msrra-military-spouse-act-residency-relief.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5CEITRTDeF5hd5buuAqucTh3Urfwy8QsCpQ';" alt="Military Spouse Act Residency Relief Msrra Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Act Residency Relief Msrra Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/top-military-spouse-benefits.jpg" data-lightbox="roadtrip" data-title="5 Top Military Spouse Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/top-military-spouse-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF0oveY9ro574qkxemJ221vg2HzcoRtgskAA';" alt="5 Top Military Spouse Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Top Military Spouse Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/education-benefits-military-spouses.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF0oveY9ro574qkxemJ221vg2HzcoRtgskAA';" alt="5 Top Military Spouse Benefits Military Benefits">
+										<div class="card-body">
+						<h3 class="h5"><b>However things do not always go smoothly and a spouse may be late on their payments or not paying them at all.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military spouse not paying child support</strong>. 
+								
+																	The IRS doesnt tax military housing and food allowances but most states child support guidelines include all income whether its taxable or not. 
+																	For parents who are in the military the Child Support Enforcement Unit or the Department of Revenue usually handles the case as if the parent lives in another state in the country. 
+																	Military spouses are just as responsible for spousal support as civilian spouses. 
+																	To collect the supportalimony you were ordered to receive we need an order from a court or child support enforcement agency CSEA that directs the government to pay monies for support or alimony. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The confusion stems from the fact that the federal government enacted a statute that prevents such allowances from being garnished but does not prohibit the allowances from being classified as income. 
+																	Military members are required to pay to support their children even if they do not have a formal child support order. 
+																	Difference between BAH-II at the with-dependents rate and the without-dependents rate. 
+																	1 Once the monthly child support amount has been determined it is important to set up a means of receiving the support payments when a service member is not able to assist in physically caring for the child or able to send money easily due to deployment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military spouse spouse has children. 
+																	Yes the soldier spouse will provide support at the BAH-DIFF rate to the military member having custody of the child or children if they do not reside in government housing. 
+																	These regulations require members to provide adequate support to family members but without a court order the military cant compel a member to pay support. 
+																	If a commanding officer determines that someone under his or her command has failed to pay child support that commander can impose non-judicial punishments such as extra duty rounds reduction in rank or reduction in pay. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Typically the spouse receives an amount that is equal to his full housing allowance. 
+																	Note that there is no rollover - paying more support one month does not give the soldier credit against the support obligation for future months. 
+																	Military officials will determine how much is required based on analysis of the persons gross pay and their Basic Allowance for Housing BAH. 
+																	In recent years with many more service members on active duty state courts have begun to weigh in on this issue. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Are in-kind payments acceptable for support under AR 608-99. 
+																	The military does not regulate the method of child support payment leaving the decision up to the custodial parent and the non-custodial parent NCP service member. 
+																	Your expectation is simple and that is for your ex-spouse to pay the child support they were ordered to by the court. 
+																	Any forms of pay the military member receives except housing and follow allowances is subject to garnishment this includes any special skills pay. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military members are afforded benefits such as housing and food allowances as well as pay and sometimes support can be a little tricky to navigate based on other allowances civilian spouses do not have. 
+																	A divorce court can consider additional expenses a spouse incurs by providing her own medical insurance. 
+																	One of the most common questions concerning military pay and child support is whether allowances can be considered income for the purposes of calculating child support. 
+																	Federal law allows military spouses to keep their military medical benefits only if the couple was married for at least 20 years during which the service member performed at least 20 years of military service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Although the military cannot force a service member to pay without a court order service members who are delinquent on their child support payments can still face severe penalties. 
+																	If resolution is not happening at that level then contact the local JAG office then. 
+																	If a military member is in arrears with child support there may be circumstances the non-military spouse must take into consideration such as a specific request and order for arrearages. 
+																	In the event of non-support the spouse requesting support should start with the service members commander. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You do not need to send the underlying order eg a divorceseparation decree. 
+																	Military members are no less responsible for child support than any other parent in a divorce. 
+																	Military service has regulations when it comes to military divorce and separation especially when it comes to spousal and child support. 
+																	Instead in any child support case one spouse must perform a name search through the Department of Defenses Manpower Data Center showing whether or not the other spouse is not on active military duty. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The military cannot force a military member to pay spousal support unless there is a court order. 
+																	Child support is a fundamental part for any single parent trying to raise their child and it provides the funds one needs to ensure that their child Most of the time people find themselves stuck in the sticky situation of not getting child support payments from their ex-spouse and this is always a frustrat. 
+																	Specifically under the Act typical service of divorce papers or a child support order on a military spouse isnt sufficient. 
+																	Because of the protection offered by the military you wonder if you can sue him for not paying. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However the amount may be adjusted by going to court. 
+																	This process involves asking the military to enforce the judgment against the other individual. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/0d/3e/380d3eca56e97847c74b2a9a7b861306.jpg" data-lightbox="roadtrip" data-title="Divorce Doesn T Just End In The Courtroom It Is A Lifelong Process That Will Affect Nearly Every Aspect Of A Person Divorce Attorney Divorce Military Divorce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/0d/3e/380d3eca56e97847c74b2a9a7b861306.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb7bHMPq0H8_Ba7DTSMGB_uaHFFLpQ5BcPvQ';" alt="Divorce Doesn T Just End In The Courtroom It Is A Lifelong Process That Will Affect Nearly Every Aspect Of A Person Divorce Attorney Divorce Military Divorce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Divorce Doesn T Just End In The Courtroom It Is A Lifelong Process That Will Affect Nearly Every Aspect Of A Person Divorce Attorney Divorce Military Divorce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/26/dd/27/26dd2740e1c4bb87d702e8adfcfc032b.jpg" data-lightbox="roadtrip" data-title="Divorcing A Military Member Understand How He Or She Is Required To Support Your Family During The Proce In 2020 Military Divorce Family Support Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/26/dd/27/26dd2740e1c4bb87d702e8adfcfc032b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRXev-ShyagTpmgMRecT0xxLIF2EBgp-bZ8A';" alt="Divorcing A Military Member Understand How He Or She Is Required To Support Your Family During The Proce In 2020 Military Divorce Family Support Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Divorcing A Military Member Understand How He Or She Is Required To Support Your Family During The Proce In 2020 Military Divorce Family Support Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://themilitarywifeandmom.com/wp-content/uploads/2015/05/Etiquette-for-military-spouses-pin.jpg" data-lightbox="roadtrip" data-title="12 Must Know Etiquette Rules For Military Wives">
+											<img class="card-img v-image ads-img " src="https://themilitarywifeandmom.com/wp-content/uploads/2015/05/Etiquette-for-military-spouses-pin.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIriUtN26c3Gxcd8GOVZGmJARtbUBcPOQ9vw';" alt="12 Must Know Etiquette Rules For Military Wives">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 Must Know Etiquette Rules For Military Wives</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/Baby.jpg?itok=EWbfTw03" data-lightbox="roadtrip" data-title="Paternity The Military Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/Baby.jpg?itok=EWbfTw03" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs0pjMClKY7WKNA55jbMz6AfAgGPSVaXr_Yw';" alt="Paternity The Military Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paternity The Military Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/dc/83/7a/dc837a4f453d43fba045d81d4f69b1f2.jpg" data-lightbox="roadtrip" data-title="What S It Like When Your Husband Leaves For Ranger School And You Re Eight Weeks Pregnant Military Spouse Nora Shares Her St Ranger School Army Rangers Ranger">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/dc/83/7a/dc837a4f453d43fba045d81d4f69b1f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy_RHnrMDgb0SumENmGW62R8J5lciJAsAEhw';" alt="What S It Like When Your Husband Leaves For Ranger School And You Re Eight Weeks Pregnant Military Spouse Nora Shares Her St Ranger School Army Rangers Ranger">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What S It Like When Your Husband Leaves For Ranger School And You Re Eight Weeks Pregnant Military Spouse Nora Shares Her St Ranger School Army Rangers Ranger</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_HousingMilitary.jpg?itok=Nk-IgXkH" data-lightbox="roadtrip" data-title="Military Base Housing In A Divorce Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_HousingMilitary.jpg?itok=Nk-IgXkH" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrG4GzdlNy98wQhCyyH8TReh2mtMZ2MctBYg';" alt="Military Base Housing In A Divorce Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Base Housing In A Divorce Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/21/3f/98213f41e80aa98cc840df9886c07385.png" data-lightbox="roadtrip" data-title="Will The Military Pay For Fertility Treatments Military Baby Military Spouse Blog Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/21/3f/98213f41e80aa98cc840df9886c07385.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGZZ-7sQLGtDcdbeqBXapfS2HtdcKvRf9Hiw';" alt="Will The Military Pay For Fertility Treatments Military Baby Military Spouse Blog Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Will The Military Pay For Fertility Treatments Military Baby Military Spouse Blog Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/99/51/d999513474fef77f40f6f66ae7872b2d.png" data-lightbox="roadtrip" data-title="Army Ranks And Pay In 2019 Army Ranks Army Military Spouse Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/99/51/d999513474fef77f40f6f66ae7872b2d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC-nVTlibh7oxeN44SrH1jBQ91QzB1-x9A5A';" alt="Army Ranks And Pay In 2019 Army Ranks Army Military Spouse Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Ranks And Pay In 2019 Army Ranks Army Military Spouse Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/d3/63/aed363d120a8bd54a2eefbf38b9e211f.jpg" data-lightbox="roadtrip" data-title="As A Military Spouse Mother Of Two And A Former Dodds Teacher I Know Firsthand The Sacrifices And Challenges Military Kids Military Child Month Kids Writing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/d3/63/aed363d120a8bd54a2eefbf38b9e211f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJiMIhoJhf5xnfvgBOCnV-Uq5v8tkytVl9nQ';" alt="As A Military Spouse Mother Of Two And A Former Dodds Teacher I Know Firsthand The Sacrifices And Challenges Military Kids Military Child Month Kids Writing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">As A Military Spouse Mother Of Two And A Former Dodds Teacher I Know Firsthand The Sacrifices And Challenges Military Kids Military Child Month Kids Writing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/39/00/5b/39005b4839325ac0a2b50b23306c9542.jpg" data-lightbox="roadtrip" data-title="How To Grow Your Military Family S Capacity For Empathy Military Family Military Spouse Military Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/39/00/5b/39005b4839325ac0a2b50b23306c9542.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEmgXGBKDSaXNBWx22i4w8Cy5dqHi-q7WsXQ';" alt="How To Grow Your Military Family S Capacity For Empathy Military Family Military Spouse Military Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Grow Your Military Family S Capacity For Empathy Military Family Military Spouse Military Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/c7/dc/bcc7dc03979bf329a53f2f4a1c4a930a.png" data-lightbox="roadtrip" data-title="Military Spouse Career Support And Educational Resources In 2020 Military Spouse Career Military Spouse Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/c7/dc/bcc7dc03979bf329a53f2f4a1c4a930a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAXaFKwbwIOCYhAXkIGlr_GmSDTuYfa7Vbyg';" alt="Military Spouse Career Support And Educational Resources In 2020 Military Spouse Career Military Spouse Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Career Support And Educational Resources In 2020 Military Spouse Career Military Spouse Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militaryfamily.org/wp-content/uploads/child-custody.jpg" data-lightbox="roadtrip" data-title="Marriage Divorce National Military Family Association">
+											<img class="card-img v-image ads-img " src="https://militaryfamily.org/wp-content/uploads/child-custody.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvpkeSHhtveL_nhePKvlIBsEKsNO0PJ94vvw';" alt="Marriage Divorce National Military Family Association">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marriage Divorce National Military Family Association</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_Cash3.jpg?itok=o5ToZF1o" data-lightbox="roadtrip" data-title="Understanding Military Pay The Les In A Divorce Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_Cash3.jpg?itok=o5ToZF1o" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNeueq-8clGE3X0rzBRozgjywVGrk1tW7TQg';" alt="Understanding Military Pay The Les In A Divorce Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding Military Pay The Les In A Divorce Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-medical-records-fayetteville-nc.html">Va Medical Records Fayetteville Nc</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-dept.html">Va Medical Records Dept</a></li>
+													<li class="list-group-item"><a href="/va-disability-dependents-education.html">Va Disability Dependents Education</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-in-st-louis.html">Va Medical Records In St Louis</a></li>
+													<li class="list-group-item"><a href="/va-form-for-dependent-verification.html">Va Form For Dependent Verification</a></li>
+													<li class="list-group-item"><a href="/va-disability-dependent-requirements.html">Va Disability Dependent Requirements</a></li>
+													<li class="list-group-item"><a href="/va-disability-dependents-allowance.html">Va Disability Dependents Allowance</a></li>
+													<li class="list-group-item"><a href="/va-form-21-686c-declaration-of-dependents.html">Va Form 21 686c Declaration Of Dependents</a></li>
+													<li class="list-group-item"><a href="/va-home-loan-benefits-for-surviving-spouse.html">Va Home Loan Benefits For Surviving Spouse</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-des-moines.html">Va Medical Records Des Moines</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-cd-password.html">Va Medical Records Cd Password</a></li>
+													<li class="list-group-item"><a href="/va-form-mandatory-status-of-dependents.html">Va Form Mandatory Status Of Dependents</a></li>
+													<li class="list-group-item"><a href="/va-disability-dependent-education-benefits.html">Va Disability Dependent Education Benefits</a></li>
+													<li class="list-group-item"><a href="/va-disability-spousal-support.html">Va Disability Spousal Support</a></li>
+													<li class="list-group-item"><a href="/va-medical-records-form.html">Va Medical Records Form</a></li>
+													<li class="list-group-item"><a href="/va-health-records-request-form.html">Va Health Records Request Form</a></li>
+													<li class="list-group-item"><a href="/va-insurance-benefits-for-dependents.html">Va Insurance Benefits For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-form-dependent-education.html">Va Form Dependent Education</a></li>
+													<li class="list-group-item"><a href="/va-health-care-records.html">Va Health Care Records</a></li>
+													<li class="list-group-item"><a href="/va-form-to-add-dependents.html">Va Form To Add Dependents</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

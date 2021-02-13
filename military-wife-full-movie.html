@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Wife Full Movie - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Wife Full Movie",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/474x/b3/00/b4/b300b428428b7ebdfc455d26ebb468eb.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+wife+full+movie",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Wife Full Movie</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Director Peter Cattaneo directed The Full Monty many years ago so he knows the contours of this story inspired by the creation of real military-wives choirs and whipped into a screenplay by Rosanne Flynn and Rachel Tunnard. MILITARY WIVES centers on a group of women from different backgrounds whose partners are away serving in Afghanistan. Military Wives movie review. <br>				
+			</p>
+										<a class="badge badge-primary" href="/military-spouse-income-tax-exemption-california.html">military spouse income tax exemption california</a>
+											<a class="badge badge-warning" href="/military-spouse-jobs-germany.html">military spouse jobs germany</a>
+											<a class="badge badge-info" href="/military-spouse-job-discrimination.html">military spouse job discrimination</a>
+											<a class="badge badge-info" href="/military-spouse-jobs-at-home.html">military spouse jobs at home</a>
+											<a class="badge badge-success" href="/military-spouse-jobs-that-move-with-you.html">military spouse jobs that move with you</a>
+											<a class="badge badge-success" href="/military-spouse-jobs-in-korea.html">military spouse jobs in korea</a>
+											<a class="badge badge-danger" href="/military-spouse-licensure-reimbursement-army.html">military spouse licensure reimbursement army</a>
+											<a class="badge badge-secondary" href="/military-spouse-job-website.html">military spouse job website</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to pay a visit to the right blog.  Our site gives you hints for viewing the highest quality video and image content, search and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie for you to see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/54/9d/ae549d5d214cc1bc87679412c3e730c0.png" data-lightbox="roadtrip" data-title="Military Wives In 2020 Military Wife Military Wife Quotes New Movies To Watch">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/54/9d/ae549d5d214cc1bc87679412c3e730c0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTPdknDz8n89XPRdl9FCIYFAU1k_SOlRvbVw';" alt="Military Wives In 2020 Military Wife Military Wife Quotes New Movies To Watch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives In 2020 Military Wife Military Wife Quotes New Movies To Watch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/57/29/16/572916481e2aef1008272af86a4d93c1.jpg" data-lightbox="roadtrip" data-title="Pin On Regarder I Can Quit Whenever I Want Streaming Vf 2019 Film Gratuit En Ligne">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/57/29/16/572916481e2aef1008272af86a4d93c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzvdsv01R2Fhes9jZzboKnPTNxZvOpv_Btjw';" alt="Pin On Regarder I Can Quit Whenever I Want Streaming Vf 2019 Film Gratuit En Ligne">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Regarder I Can Quit Whenever I Want Streaming Vf 2019 Film Gratuit En Ligne</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/08/a1/1008a107e831d5c4389c707cf03c4444.jpg" data-lightbox="roadtrip" data-title="Pick Up Your Free Movie Screening Passes To See Military Wives In Scottsdale Arizona From Tmc Io Https T In 2020 Kristin Scott Thomas Kristin Scott Military Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/08/a1/1008a107e831d5c4389c707cf03c4444.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTOEp_jJB3TljQIqu6UL2vtu3IvrAts7cq_A';" alt="Pick Up Your Free Movie Screening Passes To See Military Wives In Scottsdale Arizona From Tmc Io Https T In 2020 Kristin Scott Thomas Kristin Scott Military Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pick Up Your Free Movie Screening Passes To See Military Wives In Scottsdale Arizona From Tmc Io Https T In 2020 Kristin Scott Thomas Kristin Scott Military Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/14/41/74/14417463195d837ae88f394327a646c4.jpg" data-lightbox="roadtrip" data-title="Film Preview Military Wives Honorarymancblog Military Wife Film Review The Incredible True Story">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/14/41/74/14417463195d837ae88f394327a646c4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOLNjcbUA6vqBdcVpc3d3GnMaP4X83vA8d4A';" alt="Film Preview Military Wives Honorarymancblog Military Wife Film Review The Incredible True Story">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Film Preview Military Wives Honorarymancblog Military Wife Film Review The Incredible True Story</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/68/29/23/682923892c559ea5ea58970f7731e2e1.jpg" data-lightbox="roadtrip" data-title="Military Wives 2019 Wife Movies Military Wife Singing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/68/29/23/682923892c559ea5ea58970f7731e2e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM8mbySPLBNphr2PQU46ixsuU6M7E90QykAw';" alt="Military Wives 2019 Wife Movies Military Wife Singing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives 2019 Wife Movies Military Wife Singing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/b2/12/ddb21233cca944f2fa051ff9138e69e5.jpg" data-lightbox="roadtrip" data-title="Military Wives Kristin Scott Thomas Kristin Scott Military Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/b2/12/ddb21233cca944f2fa051ff9138e69e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQrd-_a4Blbz8gDlWdR-PPbH4dkjUb6dZO0g';" alt="Military Wives Kristin Scott Thomas Kristin Scott Military Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Kristin Scott Thomas Kristin Scott Military Wife</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/10/08/a1/1008a107e831d5c4389c707cf03c4444.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQrd-_a4Blbz8gDlWdR-PPbH4dkjUb6dZO0g';" alt="Military Wives Kristin Scott Thomas Kristin Scott Military Wife">
+										<div class="card-body">
+						<h3 class="h5"><b>Military Wives is a 2019 British comedy-drama film directed by Peter Cattaneo from a screenplay by Rosanne Flynn and Rachel Tunnard.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military wife full movie</strong>. 
+								
+																	14 people found this helpful. 
+																	5 Best Cheating Wife _ Unfaithful Husbands movies on Netflix Right Now. 
+																	The story of these stoic women has now also inspired a movie directed by The Full Montys Peter Cattaneo starring Catastrophes Sharon Horgan and film and theatre star Dame Kristen Scott Thomas. 
+																	Stream movies online with a no commitment 30-day trial to watch movies on Hulu. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It stars Kristin Scott Thomas Sharon Horgan and Jason Flemyng. 
+																	But things get complicated when Sally reunites with a former high school classmate Luke Martin Voight. 
+																	The 1958 romantic military-themed music version of South Pacific is a film adaption of the Rogers and Hammerstein musical of the same name. 
+																	Kristin Scott Thomas and Sharon Horgan Find Harmony in a Musical Charmer The director of The Full Monty returns with another light British charmer this one about women. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	30 out of 5 stars Gently feel- good movie. 
+																	The Full Monty director comes up with another British working-class feel-good drama Peter Cattaneos drama tells the heart-warming story of how a group of women form a. 
+																	The moments of pathos and sadness are decently intentioned. 
+																	Military Wives soundtrack from 2020 composed by Various Artists. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There will be laughs of course as the mismatched women battle for the choirs leadership and respect. 
+																	5 Cheating unfaithful Wife Movies and TV Shows 2018 Episode 4. 
+																	Sally Hyde Fonda loyal wife of Bob Hyde Bruce Dern a captain in the United States Marine Corps must learn how to navigate through life while her husband is fighting in Vietnam. 
+																	We get a nice gag about Rocky 3 and also a very nice closing credits sequence to the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Faced with their loved ones absences they come together to form the very first military wives choir helping each other through some of lifes most difficult moments and quickly find themselves on an international stage. 
+																	To make Military Wives extra alluring on this front it is directed by Peter Cattaneo whose smash-hit surprise Oscar contender The Full Monty admittedly a more raucous movie than many that. 
+																	Alec Baldwin is the FBI agent who recruits a young Wilson to fight the Nazis in 1939 DeNiro plays a character based on OSS head William Donovan William Hurt plays a thinly veiled Allen Dulles. 
+																	WORLDS TOP 10 with CHRIS. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Wives 2019 cast and crew credits including actors actresses directors writers and more. 
+																	The film centers on an American nurse stationed on a South Pacific island during World War II who falls in love with a French ex-patriot. 
+																	Faced with their loved ones serving in Afghanistan women from different backgrounds come together to form the very first military wives choir helping each other through some of lifes most. 
+																	Well worth watching more than once and keeping in your library. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WORLDS TOP 10 with CHRIS. 
+																	WORLDS TOP 10 with CHRIS. 
+																	Reviewed in the. 
+																	HUSBAND CATCH HIS WIFE CHEATING DRONE UNFAITHFUL WIFE CAUGHT ON CAMERA 2017. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Top Gun 1986 IMDB Rating. 
+																	Military Wives is a film that means well. 
+																	Released by Decca Classics in 2020 containing music from Military Wives 2020. 
+																	5 Cheating Wife Movies _ unfaithful Wife tv shows 2016 Episode 7. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Start a Free Trial to watch popular Movies on Hulu including thousands of new releases comedies dramas horrors cult classics and Originals. 
+																	Those with military experience will unfortunately wince a couple of times at the dreadful protocol goofs which could easily have been avoided by simply having a serving person on the set. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/b3/00/b4/b300b428428b7ebdfc455d26ebb468eb.jpg" data-lightbox="roadtrip" data-title="Military Wives 2019 Military Wife Movie Titles Kristin Scott Thomas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/b3/00/b4/b300b428428b7ebdfc455d26ebb468eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB94YNSkzEJ1TReDDpnlaPF0zo-CSas7guOg';" alt="Military Wives 2019 Military Wife Movie Titles Kristin Scott Thomas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives 2019 Military Wife Movie Titles Kristin Scott Thomas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ef/e4/c7/efe4c73c8a03ff35c7ae2bedfe5ee3ca.jpg" data-lightbox="roadtrip" data-title="Military Wives New Song By Robbie Williams Guy Chambers Home Thoughts From Abroad Militarywives Is The Inspirational Stor Military Wife Wife Movies Choir">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ef/e4/c7/efe4c73c8a03ff35c7ae2bedfe5ee3ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVvjbFy98Rdz4WLXUtFGaKE9e9LYQbp8O63Q';" alt="Military Wives New Song By Robbie Williams Guy Chambers Home Thoughts From Abroad Militarywives Is The Inspirational Stor Military Wife Wife Movies Choir">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives New Song By Robbie Williams Guy Chambers Home Thoughts From Abroad Militarywives Is The Inspirational Stor Military Wife Wife Movies Choir</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/18/d1/9c18d17d109b233f989b09c4beb54abe.jpg" data-lightbox="roadtrip" data-title="Army Wives Season 6 Kindle Fire Giveaway Army Wives Wife Movies Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/18/d1/9c18d17d109b233f989b09c4beb54abe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXGj7mk6rbpB06yJYcZsPa4BYUu2LsPTWTaQ';" alt="Army Wives Season 6 Kindle Fire Giveaway Army Wives Wife Movies Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wives Season 6 Kindle Fire Giveaway Army Wives Wife Movies Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/53/74/c45374d492420f457860bed4aa23c87f.jpg" data-lightbox="roadtrip" data-title="Army Wives Perpetuating Old Tired Spouse Stereotypes Word Love This Show Best Ever Army Wives Army Favorite Tv Shows">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/53/74/c45374d492420f457860bed4aa23c87f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPFycAYTQGILQiUeaj19ME2upbpNb71TuBA';" alt="Army Wives Perpetuating Old Tired Spouse Stereotypes Word Love This Show Best Ever Army Wives Army Favorite Tv Shows">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wives Perpetuating Old Tired Spouse Stereotypes Word Love This Show Best Ever Army Wives Army Favorite Tv Shows</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/d7/8d/a0d78d5634fa30572045883adb0147ed.jpg" data-lightbox="roadtrip" data-title="Watch The Official Trailer For The British Indie Dramedy Military Wives Directed By Peter Cattaneo The Full Mo Kristin Scott Thomas Kristin Scott Wife Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/d7/8d/a0d78d5634fa30572045883adb0147ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6h6s5NcUmK09BHALx1HZf4d42FnHnKUnh7w';" alt="Watch The Official Trailer For The British Indie Dramedy Military Wives Directed By Peter Cattaneo The Full Mo Kristin Scott Thomas Kristin Scott Wife Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watch The Official Trailer For The British Indie Dramedy Military Wives Directed By Peter Cattaneo The Full Mo Kristin Scott Thomas Kristin Scott Wife Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/21/be/9e21be7fb2629f02a148df9574436322.png" data-lightbox="roadtrip" data-title="The Indivisible Movie A Military Spouse S Perspective Military Spouse Army Wife Life Military Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/21/be/9e21be7fb2629f02a148df9574436322.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxxSlVluPkFZHJBcBFzB_jYxqfkpCZTZI7lQ';" alt="The Indivisible Movie A Military Spouse S Perspective Military Spouse Army Wife Life Military Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Indivisible Movie A Military Spouse S Perspective Military Spouse Army Wife Life Military Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/48/27/464827bc3beacf62342788a812350f2f.jpg" data-lightbox="roadtrip" data-title="Army Wives Army Wives Wife Movies Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/48/27/464827bc3beacf62342788a812350f2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHCjeIy-d7hUJDBO5ucNuIQiOkUSCWvnx3TA';" alt="Army Wives Army Wives Wife Movies Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wives Army Wives Wife Movies Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ef/1e/72/ef1e727fae83a646f8d03533bbb7cb77.jpg" data-lightbox="roadtrip" data-title="Military Wives 2019 In 2020 Kristin Scott Thomas Military Wife Kristin Scott">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ef/1e/72/ef1e727fae83a646f8d03533bbb7cb77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSez7m8Z7yZYKKnKMiVDmNWKwndthfdTKZuvQ';" alt="Military Wives 2019 In 2020 Kristin Scott Thomas Military Wife Kristin Scott">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives 2019 In 2020 Kristin Scott Thomas Military Wife Kristin Scott</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/ae/57/c9ae5708adf61b84ac030668680d4501.jpg" data-lightbox="roadtrip" data-title="Pin On My Movies And Tv Shows">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/ae/57/c9ae5708adf61b84ac030668680d4501.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIuMtW2YWMIK1Qm221CN89upnMvEuPMgM6rA';" alt="Pin On My Movies And Tv Shows">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Movies And Tv Shows</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/3e/a3/0b3ea398c69fa898775fdd7642a8959f.jpg" data-lightbox="roadtrip" data-title="Military Wives Trailer 1 2020 Movieclips Indie Youtube Military Wife Indie Movies Indie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/3e/a3/0b3ea398c69fa898775fdd7642a8959f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj0qXErHWNGxobdAuQZ3Y1oiZ_HP3tU0g8vA';" alt="Military Wives Trailer 1 2020 Movieclips Indie Youtube Military Wife Indie Movies Indie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wives Trailer 1 2020 Movieclips Indie Youtube Military Wife Indie Movies Indie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/1e/8c/161e8c56aa0b9711add0b3bb26c3a0bd.jpg" data-lightbox="roadtrip" data-title="Armywives Hy Armywivesfrance Twitter Army Wives American Wives Best Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/1e/8c/161e8c56aa0b9711add0b3bb26c3a0bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSs_LYx_kEvqMS67xXABhpZZGNBFYmzTuFuw';" alt="Armywives Hy Armywivesfrance Twitter Army Wives American Wives Best Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armywives Hy Armywivesfrance Twitter Army Wives American Wives Best Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/36/e6/b636e67341d6fbecb59e1dbce8503112.jpg" data-lightbox="roadtrip" data-title="Army Wives Funeral Of Jeremy Saddest Moment Ever Army Wives American Wives Catherine Bell">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/36/e6/b636e67341d6fbecb59e1dbce8503112.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpHY58f6UXoM5PPriybrXw_djok9D00K6aRA';" alt="Army Wives Funeral Of Jeremy Saddest Moment Ever Army Wives American Wives Catherine Bell">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wives Funeral Of Jeremy Saddest Moment Ever Army Wives American Wives Catherine Bell</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/d4/9c/9d/d49c9d3dd788dd90524973e70992d537.jpg" data-lightbox="roadtrip" data-title="The Giant Guide Of Books Written By Military Spouses 50 Books Included Military Spouse Military Marriage Best Books To Read">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/d4/9c/9d/d49c9d3dd788dd90524973e70992d537.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGIsAiP1sc56ramL3zSHMFspMUx9Z-ueyU9Q';" alt="The Giant Guide Of Books Written By Military Spouses 50 Books Included Military Spouse Military Marriage Best Books To Read">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Giant Guide Of Books Written By Military Spouses 50 Books Included Military Spouse Military Marriage Best Books To Read</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/jobs-in-okinawa-japan-for-military-spouses.html">Jobs In Okinawa Japan For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/jobs-in-okinawa-for-military-spouses.html">Jobs In Okinawa For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/job-opportunities-for-military-spouses.html">Job Opportunities For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/known-traveler-number-for-military-spouse.html">Known Traveler Number For Military Spouse</a></li>
+													<li class="list-group-item"><a href="/joining-the-navy-with-a-wife.html">Joining The Navy With A Wife</a></li>
+													<li class="list-group-item"><a href="/jobs-hiring-military-spouses.html">Jobs Hiring Military Spouses</a></li>
+													<li class="list-group-item"><a href="/jobs-for-military-spouses-in-norfolk-va.html">Jobs For Military Spouses In Norfolk Va</a></li>
+													<li class="list-group-item"><a href="/jobs-for-spouses-in-the-military.html">Jobs For Spouses In The Military</a></li>
+													<li class="list-group-item"><a href="/jury-duty-for-military-spouse.html">Jury Duty For Military Spouse</a></li>
+													<li class="list-group-item"><a href="/jobs-for-military-spouses-in-hawaii.html">Jobs For Military Spouses In Hawaii</a></li>
+													<li class="list-group-item"><a href="/kitchen-life-of-a-navy-wife-chicken-and-dumplings.html">Kitchen Life Of A Navy Wife Chicken And Dumplings</a></li>
+													<li class="list-group-item"><a href="/jobs-for-military-spouses-in-kaiserslautern-germany.html">Jobs For Military Spouses In Kaiserslautern Germany</a></li>
+													<li class="list-group-item"><a href="/jobs-for-military-spouses-in-san-antonio-tx.html">Jobs For Military Spouses In San Antonio Tx</a></li>
+													<li class="list-group-item"><a href="/jobs-for-military-spouses-in-san-diego.html">Jobs For Military Spouses In San Diego</a></li>
+													<li class="list-group-item"><a href="/jobs-for-military-spouses-fort-hood.html">Jobs For Military Spouses Fort Hood</a></li>
+													<li class="list-group-item"><a href="/joining-military-with-dependents.html">Joining Military With Dependents</a></li>
+													<li class="list-group-item"><a href="/jcb-my-card.html">Jcb My Card</a></li>
+													<li class="list-group-item"><a href="/jobs-for-military-spouses-reddit.html">Jobs For Military Spouses Reddit</a></li>
+													<li class="list-group-item"><a href="/jobs-in-guam-for-military-spouses.html">Jobs In Guam For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/kapan-hari-army-bts.html">Kapan Hari Army Bts</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

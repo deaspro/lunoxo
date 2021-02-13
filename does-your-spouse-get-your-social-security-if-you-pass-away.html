@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Does Your Spouse Get Your Social Security If You Pass Away - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Does Your Spouse Get Your Social Security If You Pass Away",
+  "datePublished": "2021-02-13",
+  "image": "https://money.cnn.com/2000/02/02/social_security/q_retire_survivors/monthly_benefits.gif",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=does+your+spouse+get+your+social+security+if+you+pass+away",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Does Your Spouse Get Your Social Security If You Pass Away</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">If your spouse has passed away you may be eligible for the disability benefits they were receiving before their death. But understanding whether or not youll receive benefits as a surviving spouse can be complex. When a person receiving regular Social Security Disability or regular Social Security benefits passes away the surviving spouse if over the age of 60 is eligible to receive their spouses benefits. <br>				
+			</p>
+										<a class="badge badge-success" href="/spouse-benefits-for-military.html">spouse benefits for military</a>
+											<a class="badge badge-warning" href="/silent-ranks-military-wife-poem.html">silent ranks military wife poem</a>
+											<a class="badge badge-warning" href="/socar-voucher.html">socar voucher</a>
+											<a class="badge badge-light" href="/spousal-support-veterans-disability.html">spousal support veterans disability</a>
+											<a class="badge badge-light" href="/spouse-benefits-army-reserve.html">spouse benefits army reserve</a>
+											<a class="badge badge-warning" href="/south-carolina-civil-war-service-records-of-confederate-soldiers.html">south carolina civil war service records of confederate soldiers</a>
+											<a class="badge badge-danger" href="/south-dakota-army-national-guard-human-resources.html">south dakota army national guard human resources</a>
+											<a class="badge badge-light" href="/sign-up-for-mycaa.html">sign up for mycaa</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to pay a visit to the right blog.  Our website gives you hints for viewing the maximum quality video and image content, hunt and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie for you to see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4b/8e/50/4b8e501209692524689793511fee69e8.jpg" data-lightbox="roadtrip" data-title="Social Security Retirement For You Your Spouse And Your Kids In 2020 Social Security Benefits Social Security Personal Budget Plan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4b/8e/50/4b8e501209692524689793511fee69e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6d6exwweXWoAQcSfqa--7GatN4Zoxose6-Q';" alt="Social Security Retirement For You Your Spouse And Your Kids In 2020 Social Security Benefits Social Security Personal Budget Plan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Security Retirement For You Your Spouse And Your Kids In 2020 Social Security Benefits Social Security Personal Budget Plan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/29/cc/c7/29ccc7f3c7d16dbc59f8182ee2796607.jpg" data-lightbox="roadtrip" data-title="Social Security Suvivor Benefits Social Security Social Security Administration Social">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/29/cc/c7/29ccc7f3c7d16dbc59f8182ee2796607.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY8BqXIJI48Yrqga0Fm-RT7e57BmzhkeFmjw';" alt="Social Security Suvivor Benefits Social Security Social Security Administration Social">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Security Suvivor Benefits Social Security Social Security Administration Social</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/2c/7b/bc2c7bbdeffda471969d1cd6cae0c8fa.png" data-lightbox="roadtrip" data-title="Married Here S How Social Security Survivor Benefits For A Spouse Work Social Security Benefits Social Security Widows Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/2c/7b/bc2c7bbdeffda471969d1cd6cae0c8fa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMR_0sS2Fcgv7UjNRRfW4idsE90f4ygMQAKA';" alt="Married Here S How Social Security Survivor Benefits For A Spouse Work Social Security Benefits Social Security Widows Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Married Here S How Social Security Survivor Benefits For A Spouse Work Social Security Benefits Social Security Widows Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c7/d9/25/c7d9256036b090024d6de928cd8dc737.jpg" data-lightbox="roadtrip" data-title="Social Security Retirement For You Your Spouse And Your Kids Social Security Benefits Social Security Benefits Retirement Social Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c7/d9/25/c7d9256036b090024d6de928cd8dc737.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbO5fPIarOCEKqiYgQGE8-6Xc_xrKYUlgpVQ';" alt="Social Security Retirement For You Your Spouse And Your Kids Social Security Benefits Social Security Benefits Retirement Social Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Security Retirement For You Your Spouse And Your Kids Social Security Benefits Social Security Benefits Retirement Social Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/db/64/dcdb64a163154ccf133827fe52ae3fd3.png" data-lightbox="roadtrip" data-title="Pin On Lntresting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/db/64/dcdb64a163154ccf133827fe52ae3fd3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdcBJ2B8XhKRQI5BgCVbWdRDFE_sWZ-hTWgg';" alt="Pin On Lntresting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Lntresting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/99/b1/0699b19fce92baa9994f2de1dcd26388.png" data-lightbox="roadtrip" data-title="Social Security Q A What If I Die Before I Collect This Or That Questions Social Security Retirement Age">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/99/b1/0699b19fce92baa9994f2de1dcd26388.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIM22njhDsSrt8_gPsLsPWIDqeZH6iVwQEMg';" alt="Social Security Q A What If I Die Before I Collect This Or That Questions Social Security Retirement Age">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Security Q A What If I Die Before I Collect This Or That Questions Social Security Retirement Age</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/b8/89/db/b889db08a2bd45f225c1b1bd805f9633.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIM22njhDsSrt8_gPsLsPWIDqeZH6iVwQEMg';" alt="Social Security Q A What If I Die Before I Collect This Or That Questions Social Security Retirement Age">
+										<div class="card-body">
+						<h3 class="h5"><b>If your spouse dies youll be eligible for this benefit in addition to your own retirement benefit under Social Security.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Does your spouse get your social security if you pass away</strong>. 
+								
+																	It depends on whether your spouse chose a monthly payout based solely on hisher life expectancy or a monthly payout that continues through your life - that is the joint and survivor. 
+																	If you have a dependent child or spouse they may be entitled to survivor benefits as well. 
+																	Heres a brief overview. 
+																	When a spouse passes away the surviving spouse generally has two Social Security benefit options. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If your spouse has died and you are receiving survivors benefits or if you are divorced you can get benefits on your ex-spouses Social Security account if your marriage lasted at least ten years and in some cases if you have been divorced for at least two years it makes no difference whether a former spouse has remarried or you are living with someone. 
+																	As is the case with. 
+																	If youre at least 60 but not yet at Social Securitys definition of full retirement age your payout will be somewhere in the range of 71 to 99 of your deceased spouses full benefit. 
+																	When you die your Social Security benefits stop. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dont let Social Security be an additional worry The unfortunate reality of Social Security is that a decision must be made even after a worst-case scenario. 
+																	Generally your marriage must have lasted at least 10 years but there are exceptions. 
+																	The average monthly payout for all retired workers was 151413 in June. 
+																	When you apply for Social Security you automatically apply for the greater of your benefit or half your spouses benefit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your family members then can receive a one-time death benefit. 
+																	And can we get all of our social security money at once as well or do we only get that once a month. 
+																	If you apply before your survivor full retirement age you will receive between 715 and 99 of your spouses benefit PIA. 
+																	Also if you are both receiving benefits when one spouse passes away you cannot continue to collect both benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If the surviving spouse is disabled the eligibility age to receive WidowWidower Benefits is lowered to age 50. 
+																	As long as your former spouse qualifies for benefits you can use their record to claim -- even if theyre not getting Social Security yet. 
+																	The surviving spouse can choose to receive his or her retirement benefits or the survivor benefits. 
+																	A disabled widow or widower aged 50 to 59 would receive 715 of their spouses benefit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Social security helps you create the income you need to maintain financial security. 
+																	Specifically youre entitled to up to 50 of your spouses benefit at full retirement age -- but youll only get that much if you wait until your full retirement age to file. 
+																	We both have a retirement plan from our employers. 
+																	A VA disability lawyer can work with you and your spouse to help prepare for what happens in the event that you pass away. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Generally the widows benefit is equal to the deceased spouses Social Security benefit. 
+																	You can collect 75 of your Social Security survivor benefits at any age if youre caring for the child of your spouse and the child is under 16. 
+																	This FREE flowchart covers important qualifications for Social Security benefits for a surviving spouse. 
+																	We wanted to know can we get our retirement money all at once when we retire or on a monthly basis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Primary Insurance Amount PIA is the number Social Security uses to determine survivor benefits. 
+																	So if your own worker benefit. 
+																	Your benefit is based on what theyll qualify for at FRA. 
+																	The lower benefit of the two will disappear. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your spouse child or other relatives must report your death to the Social Security Administration and provide a certified copy of your death certificate. 
+																	My spouse and I were talking about this and we did know. 
+																	However if your spouse has passed away and he or she had a lower Social Security benefit than you your benefit will not be reduced by virtue of your spouses death. 
+																	The survivor benefit equals 100 of your deceased spouses benefit at your full retirement age. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you passed away in the line of duty or from an injury or illness sustained during your service your spouse can continue to receive many of these benefits after you die. 
+																	And if one of the spouses passes away does the other living spouse still get the. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.simplywise.com/blog/wp-content/uploads/2020/03/lynn2.png" data-lightbox="roadtrip" data-title="Guide To Social Security Death Benefits Simplywise">
+											<img class="card-img v-image ads-img " src="https://www.simplywise.com/blog/wp-content/uploads/2020/03/lynn2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqzGUCeQkB0vuPOn16sWqUv7c3pE1uA5-_Yw';" alt="Guide To Social Security Death Benefits Simplywise">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guide To Social Security Death Benefits Simplywise</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/9f/9e/709f9e54a09d7a10f1d51726a8ec1b84.png" data-lightbox="roadtrip" data-title="When My Spouse Dies What Will I Get From Social Security Social Security Social Security Disability Social Security Benefits Retirement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/9f/9e/709f9e54a09d7a10f1d51726a8ec1b84.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNWvEsTK_dzBYrUENElgIV1jXKQon8MoAfEA';" alt="When My Spouse Dies What Will I Get From Social Security Social Security Social Security Disability Social Security Benefits Retirement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When My Spouse Dies What Will I Get From Social Security Social Security Social Security Disability Social Security Benefits Retirement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/c5/cd/bec5cd0776979f1143766b5da3df0cd2.png" data-lightbox="roadtrip" data-title="What You Should Know About Disability Survivor Benefits Social Security Disability Social Security Benefits How To Apply">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/c5/cd/bec5cd0776979f1143766b5da3df0cd2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwoVPlfTp2ibtU3dsjaUK3YbEZAb8anKnJZA';" alt="What You Should Know About Disability Survivor Benefits Social Security Disability Social Security Benefits How To Apply">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What You Should Know About Disability Survivor Benefits Social Security Disability Social Security Benefits How To Apply</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b8/89/db/b889db08a2bd45f225c1b1bd805f9633.jpg" data-lightbox="roadtrip" data-title="If You Re A Caregiver For Your Spouse You May Want To Find Out More About Thei Social Security Social Security Benefits Retirement Social Security Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b8/89/db/b889db08a2bd45f225c1b1bd805f9633.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjh9ElYmdheIe4ADdSLePGag50dFplNUDJGg';" alt="If You Re A Caregiver For Your Spouse You May Want To Find Out More About Thei Social Security Social Security Benefits Retirement Social Security Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Re A Caregiver For Your Spouse You May Want To Find Out More About Thei Social Security Social Security Benefits Retirement Social Security Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/ca/84/7eca844d743debe195e64c8b622141cc.png" data-lightbox="roadtrip" data-title="Can I Collect My Ex Spouse S Or Deceased Spouse S Social Security Youtube In 2020 Social Security Benefits Deceased Informative">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/ca/84/7eca844d743debe195e64c8b622141cc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGuAOgiKalYf2X23p7lyTOBRbT3nNa-jCL-Q';" alt="Can I Collect My Ex Spouse S Or Deceased Spouse S Social Security Youtube In 2020 Social Security Benefits Deceased Informative">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can I Collect My Ex Spouse S Or Deceased Spouse S Social Security Youtube In 2020 Social Security Benefits Deceased Informative</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.simplywise.com/blog/wp-content/uploads/2019/12/FRA-upd.png" data-lightbox="roadtrip" data-title="The 2020 Guide To Social Security Spousal Benefits Simplywise">
+											<img class="card-img v-image ads-img " src="https://www.simplywise.com/blog/wp-content/uploads/2019/12/FRA-upd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjw2KJvVSyy7T4A_TQSv9CwrV9-f9rxdFOkw';" alt="The 2020 Guide To Social Security Spousal Benefits Simplywise">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 2020 Guide To Social Security Spousal Benefits Simplywise</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/96/35/8e96355336b47ddd6ee7a091fb2a4e39.png" data-lightbox="roadtrip" data-title="5 Things A Widow Or Widower Would Tell You About Fers Survivor Benefits A Common Question Fedsmith Com This Or That Questions Told You So Survivor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/96/35/8e96355336b47ddd6ee7a091fb2a4e39.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI5fd-tnAs66jrGxunxnjmcpz1qPJuKrBHpg';" alt="5 Things A Widow Or Widower Would Tell You About Fers Survivor Benefits A Common Question Fedsmith Com This Or That Questions Told You So Survivor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Things A Widow Or Widower Would Tell You About Fers Survivor Benefits A Common Question Fedsmith Com This Or That Questions Told You So Survivor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/ab/11/6cab11a3f3e0b6d25b66a9d246d75d27.png" data-lightbox="roadtrip" data-title="Pin On Articles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/ab/11/6cab11a3f3e0b6d25b66a9d246d75d27.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWCMojZ6ySESncahliUuQvLlgD-Ynewvt2eA';" alt="Pin On Articles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Articles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://money.cnn.com/2000/02/02/social_security/q_retire_survivors/monthly_benefits.gif" data-lightbox="roadtrip" data-title="Social Security Survivor Benefits Can Give Your Loved Ones A Big Check Feb 2 2000">
+											<img class="card-img v-image ads-img " src="https://money.cnn.com/2000/02/02/social_security/q_retire_survivors/monthly_benefits.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThNe-dnVZ8X_svUuZq_fMjDIok_Dl9KTSA-w';" alt="Social Security Survivor Benefits Can Give Your Loved Ones A Big Check Feb 2 2000">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Security Survivor Benefits Can Give Your Loved Ones A Big Check Feb 2 2000</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/38/62/3f/38623fa7dd27ddeeb0b817f7ed3bb055.jpg" data-lightbox="roadtrip" data-title="Social Security Benefits For A Divorced Spouse Social Security Benefits Social Security Benefits Retirement Social Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/38/62/3f/38623fa7dd27ddeeb0b817f7ed3bb055.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBNwCW2bHo5Ad3WO06BXpQ5Fk67DkDfaT6Hw';" alt="Social Security Benefits For A Divorced Spouse Social Security Benefits Social Security Benefits Retirement Social Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Security Benefits For A Divorced Spouse Social Security Benefits Social Security Benefits Retirement Social Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/25/27/8b2527540fc2240390b34203db6d8a46.png" data-lightbox="roadtrip" data-title="What Happens To Your Social Security Payments When One Spouse Dies Social Security Benefits Retirement Social Security Benefits Social Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/25/27/8b2527540fc2240390b34203db6d8a46.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbqSuNGCh9-ic-eIMQ0Bl0i_8a6KLwAXNocw';" alt="What Happens To Your Social Security Payments When One Spouse Dies Social Security Benefits Retirement Social Security Benefits Social Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Happens To Your Social Security Payments When One Spouse Dies Social Security Benefits Retirement Social Security Benefits Social Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/a6/9a/b0a69a294be763fbe3e0a6d1bd3a3863.png" data-lightbox="roadtrip" data-title="Pin On Retirement Info">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/a6/9a/b0a69a294be763fbe3e0a6d1bd3a3863.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS95Ma1yK1LPpY1fj4C7umGz3WTQy3VVKrC7Q';" alt="Pin On Retirement Info">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Retirement Info</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/6e/01/b86e01f5a312a8ddf488cd1a0d8ebfa5.jpg" data-lightbox="roadtrip" data-title="A Quick And Easy Guide For How To Apply For Social Security Retirement Spousal And Dis Social Security Benefits Social Security Death Benefits Social Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/6e/01/b86e01f5a312a8ddf488cd1a0d8ebfa5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7U_-Dlkukh8DqAecpjG0wHGq6B1MLKUAShw';" alt="A Quick And Easy Guide For How To Apply For Social Security Retirement Spousal And Dis Social Security Benefits Social Security Death Benefits Social Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Quick And Easy Guide For How To Apply For Social Security Retirement Spousal And Dis Social Security Benefits Social Security Death Benefits Social Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-number.html">Ncaa Eligibility Center Number</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-covid-basketball.html">Ncaa Eligibility Covid Basketball</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-resources.html">Ncaa Eligibility Center Resources</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-quick-reference-guide.html">Ncaa Eligibility Center Quick Reference Guide</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-graduate-transfer.html">Ncaa Eligibility Graduate Transfer</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-sign-up.html">Ncaa Eligibility Center Sign Up</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-registration-deadline.html">Ncaa Eligibility Registration Deadline</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-international-students.html">Ncaa Eligibility Center International Students</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-telephone-number.html">Ncaa Eligibility Center Telephone Number</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-requirements-for-transfer-students.html">Ncaa Eligibility Requirements For Transfer Students</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-clock-rules.html">Ncaa Eligibility Clock Rules</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-test-optional.html">Ncaa Eligibility Center Test Optional</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-ncsa.html">Ncaa Eligibility Center Ncsa</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-division-1-worksheet.html">Ncaa Eligibility Division 1 Worksheet</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-member-institution-portal.html">Ncaa Eligibility Center Member Institution Portal</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-registration-checklist.html">Ncaa Eligibility Center Registration Checklist</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-requirements-for-international-students.html">Ncaa Eligibility Requirements For International Students</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-requirements.html">Ncaa Eligibility Center Requirements</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-id-lookup.html">Ncaa Eligibility Center Id Lookup</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-requirements-division-2.html">Ncaa Eligibility Requirements Division 2</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

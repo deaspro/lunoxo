@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Percentage Of The Army Are Warrant Officers - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Percentage Of The Army Are Warrant Officers",
+  "datePublished": "2021-02-13",
+  "image": "https://media.defense.gov/2013/Sep/27/2000908552/780/780/0/130919-F-XD389-002.JPG",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+percentage+of+the+army+are+warrant+officers",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Percentage Of The Army Are Warrant Officers</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">By By USAREC Public Affairs July 8 2019. The percentage of staff from ethnic minorities in non-officer ranks decreased as the ranks increased in seniority with the highest ranks having the lowest percentages 52 in rank OR-8 Warrant Officer II and 15 in rank OR-9 Warrant Officer I. Chief Warrant Officer 5 is the 18th rank in the United States Army ranking above Chief Warrant Officer 4 and directly below Second Lieutenant. <br>				
+			</p>
+										<a class="badge badge-info" href="/navy-t-shirt-maxi-dress.html">navy t shirt maxi dress</a>
+											<a class="badge badge-warning" href="/navy-t-shirt-mens.html">navy t shirt mens</a>
+											<a class="badge badge-success" href="/navy-spouse-benefits.html">navy spouse benefits</a>
+											<a class="badge badge-success" href="/navy-spouse-elibrary.html">navy spouse elibrary</a>
+											<a class="badge badge-info" href="/navy-spouse-college-benefits.html">navy spouse college benefits</a>
+											<a class="badge badge-secondary" href="/navy-spouse-breast-implants.html">navy spouse breast implants</a>
+											<a class="badge badge-primary" href="/navy-spouse-student-loans.html">navy spouse student loans</a>
+											<a class="badge badge-light" href="/navy-spouse-support-group.html">navy spouse support group</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to pay a visit to the ideal site.  Our website provides you with hints for viewing the maximum quality video and picture content, hunt and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video that you view.  You can also bring about supporting this site by sharing videos and images that you like on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/May/15/2002131912/600/400/0/190524-F-PO640-0013.JPG" data-lightbox="roadtrip" data-title="Five Things Army Officers And Units Should Know About The Assignment Interactive Module Joint Base San Antonio News">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/May/15/2002131912/600/400/0/190524-F-PO640-0013.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk_9Nki5Rd8U9oxc2A4eocSBuL9Gm3gbNCtA';" alt="Five Things Army Officers And Units Should Know About The Assignment Interactive Module Joint Base San Antonio News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Five Things Army Officers And Units Should Know About The Assignment Interactive Module Joint Base San Antonio News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2020/07/07/44ba271c/max1200.jpg" data-lightbox="roadtrip" data-title="Warrant Officers Play Vital Role In Missile Defense Mission Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2020/07/07/44ba271c/max1200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY4M7Lqzi5QQ4WxfmE3PcMDTnOzPwXdDcP3g';" alt="Warrant Officers Play Vital Role In Missile Defense Mission Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Warrant Officers Play Vital Role In Missile Defense Mission Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2013/Sep/27/2000908552/780/780/0/130919-F-XD389-002.JPG" data-lightbox="roadtrip" data-title="Technical Tactical Trainers Why The Army Has Warrant Officers Joint Base Langley Eustis Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2013/Sep/27/2000908552/780/780/0/130919-F-XD389-002.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmTN-8iHgNKJvOnJOU6M3beCrlp1eFmUc7dg';" alt="Technical Tactical Trainers Why The Army Has Warrant Officers Joint Base Langley Eustis Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Technical Tactical Trainers Why The Army Has Warrant Officers Joint Base Langley Eustis Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/b9/c2/57b9c2aa4abbfb1f9c18498023d18d6d.jpg" data-lightbox="roadtrip" data-title="Venetian Military Hierarchy Hierarchy Master Sergeant Warrant Officer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/b9/c2/57b9c2aa4abbfb1f9c18498023d18d6d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw9Q5vmtclQccj7v4QuvBeMo3ZXwQ3SWwxfw';" alt="Venetian Military Hierarchy Hierarchy Master Sergeant Warrant Officer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Venetian Military Hierarchy Hierarchy Master Sergeant Warrant Officer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://alu.army.mil/alog/issues/JanFeb11/Story_Images/Band-Officer-Graphics-revised2.gif" data-lightbox="roadtrip" data-title="Army Sustainment The Army Band Officer Lifecycle">
+											<img class="card-img v-image ads-img " src="https://alu.army.mil/alog/issues/JanFeb11/Story_Images/Band-Officer-Graphics-revised2.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT8r3qSzSNwS3eCyvlssuSkI4ocmrp6mkNVw';" alt="Army Sustainment The Army Band Officer Lifecycle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Sustainment The Army Band Officer Lifecycle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/58/c2/2658c28748cd8cf3bd608af84f8e35a8.jpg" data-lightbox="roadtrip" data-title="Pin On Keepers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/58/c2/2658c28748cd8cf3bd608af84f8e35a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpLxoK4ABYRGOHTzLYr8hwYgPgbQf_6DxWBA';" alt="Pin On Keepers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Keepers</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://d26horl2n8pviu.cloudfront.net/pictures/images/000/149/128/large_v2/9e622ac1.jpg?1494012519" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpLxoK4ABYRGOHTzLYr8hwYgPgbQf_6DxWBA';" alt="Pin On Keepers">
+										<div class="card-body">
+						<h3 class="h5"><b>Warrant officers are technical experts that manage and maintain increasingly complex battlefield systems.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What percentage of the army are warrant officers</strong>. 
+								
+																	The civilian equivalent of this military rank is roughly GS-8 under the federal governments General Schedule payscale. 
+																	Today in my office as an ex-serviceman I find that the two Warrant Officers. 
+																	They make up roughly 25 percent of the Army Guards 350000 Soldiers and they are highly regarded for their abilities as technical managers trainers and leaders. 
+																	The most senior soldier rank in the British Army typically reached after 18 years of outstanding service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WO1 are the senior advisors of their units Commanding Officer with leadership discipline and welfare responsibilities of up to 650 officers and soldiers and equipment. 
+																	The Army wants Special Forces Warrant Officers to stay in so badly theyre willing to pay 100k. 
+																	Warrant officer 1st class or 2nd class is incorrect. 
+																	The Army Warrant Officer Corps comprises less than three percent of the total Army. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Nisker serves as the primary advisor to the director of the Army Guard on issues that relate to the Guards warrant officer corps of 9000. 
+																	The rate of Warrant Officers commissioned over a 5 year period. 
+																	The table below lists the equivalent ranks of an Army Chief Warrant Officer 4 and their insignia in the other four branches of the United. 
+																	Many years ago shortly after I reached WO2 I was presented with my framed Royal Warrant in the Mess by some visiting dignitary. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Warrant officer WO is a rank or category of ranks in the armed forces of many countries. 
+																	Currently more than 26000 warrant officers -- roughly 25 percent of the Army -- are distributed throughout the total force. 
+																	A 38-year veteran of the US. 
+																	Warrant Officers are technical and tactical leaders who specialize throughout an entire career in a specific technical area. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A Chief Warrant Officer 4 is a Warrant Officer with a military paygrade of W-4. 
+																	Thats what the Army is offering to Special Forces Warrant Officers in case they reenlist. 
+																	Warrant officer ranks are especially prominent in the. 
+																	In the British Army there are two warrant ranks warrant officer class 2 WO2 and warrant officer class 1 WO1 the latter being the senior of the twoIt used to be more common to refer to these ranks as WOII and WOI using Roman instead of Arabic numerals. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Top company command teams to be recognized at the Pentagon. 
+																	Warrant officers are highly specialized technicians spanning 17. 
+																	They enhance the Armys ability to defend our national interests and to fight and win our nations wars. 
+																	Regarding warrant officers There was less variation among the Services in the warrant officer corps than in the enlisted population ranging from 49 percent in the Navy to 85 percent in the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Officer 71 53 67 Warrant 87 59 85 Enlisted 55 46 54 TOTAL MARRIED 235388 33059 268447 MARRIED 59 48 57 FAMILY MEMBERS TOTAL. 
+																	The Army warrant officer traces lineage to 1896 with the War Departments creation of civilian Headquarters Clerks and Pay Clerks. 
+																	The information you have requested on the percentage of Warrant Officers being commissioned to the rank of Captain can be found below. 
+																	DoD Army officers from 2000 to 2010 Share of French people having a positive image of the army 2019 by age Share of labor force in armed forces in Bahrain 2002-2017. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Legislation in 1916 authorized those positions as military rather than civilian and created the ranks of Army Field Clerk the former rank of Headquarters. 
+																	In 1916 an Army Judge Advocate General review determined that field clerks should be members of the military. 
+																	Although small in size the level of responsibility is immense and only the very best will be selected to become Warrant Officers. 
+																	A chief warrant officer 5 is a Warrant Officer at DoD paygrade W-5 with a starting monthly pay of 8055. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Warrant Officer Class 1. 
+																	Gender distribution of US. 
+																	The Army warrant officer corps is comprised of over 25000 men and women of the active Army and reserve components. 
+																	The Army held its 5th Annual Warrant Officer Accessions Summit here July 16-18 to focus on the future of the warrant officer recruiting and accessions process. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Depending on the country service or historical context warrant officers are sometimes classified as the most junior of the commissioned ranks the most senior of the non-commissioned officer NCO ranks or in a separate category of their own. 
+																	Cue the normal afternoon off work and celebratory iss-up for this type of event. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d26horl2n8pviu.cloudfront.net/pictures/images/000/149/128/large_v2/9e622ac1.jpg?1494012519" data-lightbox="roadtrip" data-title="Why Are Army Helo Pilots Warrant Officers Rather Than Commissioned Rallypoint">
+											<img class="card-img v-image ads-img " src="https://d26horl2n8pviu.cloudfront.net/pictures/images/000/149/128/large_v2/9e622ac1.jpg?1494012519" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2LZVx0nFjNxNdNVoGZh-kZhuJzZVvp7vSUw';" alt="Why Are Army Helo Pilots Warrant Officers Rather Than Commissioned Rallypoint">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Are Army Helo Pilots Warrant Officers Rather Than Commissioned Rallypoint</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.theprint.in/wp-content/uploads/2019/07/20190604240L-e1570082516630.jpg" data-lightbox="roadtrip" data-title="Bipin Rawat S Plan To Train Jawans For Officer Role Is Army Admitting Staff Shortage Quality">
+											<img class="card-img v-image ads-img " src="https://static.theprint.in/wp-content/uploads/2019/07/20190604240L-e1570082516630.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-uLSwIgrAkDSKwa_dIq9c7luwf5ct4TeGtw';" alt="Bipin Rawat S Plan To Train Jawans For Officer Role Is Army Admitting Staff Shortage Quality">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bipin Rawat S Plan To Train Jawans For Officer Role Is Army Admitting Staff Shortage Quality</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/bf/11/b9bf11859bbfb9b020642ff1006eef52.jpg" data-lightbox="roadtrip" data-title="How To Make An Interesting Art Piece Using Tree Branches Ehow Army Sergeant Us Army Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/bf/11/b9bf11859bbfb9b020642ff1006eef52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbUnr-Qtl7U3tkrfa3gg6OjV4aYGDPffD99Q';" alt="How To Make An Interesting Art Piece Using Tree Branches Ehow Army Sergeant Us Army Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Make An Interesting Art Piece Using Tree Branches Ehow Army Sergeant Us Army Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/08/c5/f008c5fd8043e30547ecbedc801612ce.jpg" data-lightbox="roadtrip" data-title="Pin On Military Technology In Action">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/08/c5/f008c5fd8043e30547ecbedc801612ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaty1D-NmoVCMNcjL7VKX65FVefd6IMqwpig';" alt="Pin On Military Technology In Action">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Technology In Action</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.theprint.in/wp-content/uploads/2020/02/bipin-696x392.jpg" data-lightbox="roadtrip" data-title="Retirement Age Of Military Personnel Should Be Raised To 58 Says Cds Bipin Rawat">
+											<img class="card-img v-image ads-img " src="https://static.theprint.in/wp-content/uploads/2020/02/bipin-696x392.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwAcwRxr1TAj4s90AUAb3Ou2PMC5ywG7dXAw';" alt="Retirement Age Of Military Personnel Should Be Raised To 58 Says Cds Bipin Rawat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Retirement Age Of Military Personnel Should Be Raised To 58 Says Cds Bipin Rawat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/5f/ad/b55fad146624d78727cc22ba383d7671.jpg" data-lightbox="roadtrip" data-title="Scots Guards British Uniforms British Army Uniform British Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/5f/ad/b55fad146624d78727cc22ba383d7671.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSelaRpmCwydgtl1hXLvAT6ggnCyaUPw3QWNQ';" alt="Scots Guards British Uniforms British Army Uniform British Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scots Guards British Uniforms British Army Uniform British Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/02/b0/42/02b0423bf7ac2c49c779c151f5e83057.jpg" data-lightbox="roadtrip" data-title="Structure Canadian Military Chart Navy Rank For Thenavy Rank Structure Chart For The Canadian Military Navy Ranks Military Ranks Canadian Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/02/b0/42/02b0423bf7ac2c49c779c151f5e83057.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPMbXcUW8sBBykdzxl1bpGitXZV7fjypvt_w';" alt="Structure Canadian Military Chart Navy Rank For Thenavy Rank Structure Chart For The Canadian Military Navy Ranks Military Ranks Canadian Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Structure Canadian Military Chart Navy Rank For Thenavy Rank Structure Chart For The Canadian Military Navy Ranks Military Ranks Canadian Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://newbusinessethiopia.com/wp-content/uploads/2020/11/wanted.jpg" data-lightbox="roadtrip" data-title="Ethiopia Issues Arrest Warrant For 76 Army Officers New Business Ethiopia">
+											<img class="card-img v-image ads-img " src="https://newbusinessethiopia.com/wp-content/uploads/2020/11/wanted.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-EBGyMYs513PxASZGKW__AIow1CcHEAjdBg';" alt="Ethiopia Issues Arrest Warrant For 76 Army Officers New Business Ethiopia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ethiopia Issues Arrest Warrant For 76 Army Officers New Business Ethiopia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/fa/27/bdfa270457c9d217ba9d1187297e42d9.jpg" data-lightbox="roadtrip" data-title="United States Army Officers Service Cuff Marks Non Commissioned Officers Chevrons Specialty Marks Non Commissioned Officer Army Ranks Wwi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/fa/27/bdfa270457c9d217ba9d1187297e42d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ56zz7SCr6P9wCQxdAfSmuV8DKi2A8P3cGFQ';" alt="United States Army Officers Service Cuff Marks Non Commissioned Officers Chevrons Specialty Marks Non Commissioned Officer Army Ranks Wwi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Army Officers Service Cuff Marks Non Commissioned Officers Chevrons Specialty Marks Non Commissioned Officer Army Ranks Wwi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://qph.fs.quoracdn.net/main-qimg-c50b3b228f3cff5bf9a2ca2172e1b98c" data-lightbox="roadtrip" data-title="What Rank Do Most Army Officers Retire As Quora">
+											<img class="card-img v-image ads-img " src="https://qph.fs.quoracdn.net/main-qimg-c50b3b228f3cff5bf9a2ca2172e1b98c" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM_0BEbN5vWRbXPe5IyPpX6DvMPROEuWm0SA';" alt="What Rank Do Most Army Officers Retire As Quora">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Rank Do Most Army Officers Retire As Quora</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f5/49/58/f549580389b821d3e3b09d30c124ce40.jpg" data-lightbox="roadtrip" data-title="The 13 Funniest Memes For The Week Of August 24th We Are The Mighty Military Memes Funny Pictures With Captions Funny Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f5/49/58/f549580389b821d3e3b09d30c124ce40.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxHlhvjNxbxqlHDlZmT9foNr7oERmde3Au2A';" alt="The 13 Funniest Memes For The Week Of August 24th We Are The Mighty Military Memes Funny Pictures With Captions Funny Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 13 Funniest Memes For The Week Of August 24th We Are The Mighty Military Memes Funny Pictures With Captions Funny Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.hindustantimes.com/rf/image_size_640x362/HT/p1/2015/01/15/Incoming/Pictures/1307280_Wallpaper2.jpg" data-lightbox="roadtrip" data-title="Women In Indian Armed Forces Challenges Triumphs And Male Response Hindustan Times">
+											<img class="card-img v-image ads-img " src="https://images.hindustantimes.com/rf/image_size_640x362/HT/p1/2015/01/15/Incoming/Pictures/1307280_Wallpaper2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTuWLUDsHCL80_Y13HCsSgeUwqXwqYXb6o6A';" alt="Women In Indian Armed Forces Challenges Triumphs And Male Response Hindustan Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women In Indian Armed Forces Challenges Triumphs And Male Response Hindustan Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/17/92/7e17924d7962ce6dbb74fbcbd23a0f52.jpg" data-lightbox="roadtrip" data-title="Irish Army Officers Service Dress Uniform World S Best Military Uniforms Pinterest Army Military And Army Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/17/92/7e17924d7962ce6dbb74fbcbd23a0f52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoSLeUiDXgjz8xsjkpmlmWyPFbhvnEr2ofPA';" alt="Irish Army Officers Service Dress Uniform World S Best Military Uniforms Pinterest Army Military And Army Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Irish Army Officers Service Dress Uniform World S Best Military Uniforms Pinterest Army Military And Army Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/whats-my-car-quiz.html">Whats My Car Quiz</a></li>
+													<li class="list-group-item"><a href="/whats-on-my-card-zurreal.html">Whats On My Card Zurreal</a></li>
+													<li class="list-group-item"><a href="/when-your-husband-causes-you-anxiety.html">When Your Husband Causes You Anxiety</a></li>
+													<li class="list-group-item"><a href="/whats-the-meaning-of-military-wife.html">Whats The Meaning Of Military Wife</a></li>
+													<li class="list-group-item"><a href="/when-my-partner-blames-me-for-everything.html">When My Partner Blames Me For Everything</a></li>
+													<li class="list-group-item"><a href="/when-your-husband-lies-about-everything.html">When Your Husband Lies About Everything</a></li>
+													<li class="list-group-item"><a href="/when-your-boyfriend-is-addicted-to-weed.html">When Your Boyfriend Is Addicted To Weed</a></li>
+													<li class="list-group-item"><a href="/whats-my-postal-code.html">Whats My Postal Code</a></li>
+													<li class="list-group-item"><a href="/whats-my-car-interest-rate.html">Whats My Car Interest Rate</a></li>
+													<li class="list-group-item"><a href="/whats-my-car-worth.html">Whats My Car Worth</a></li>
+													<li class="list-group-item"><a href="/whats-the-meaning-of-military-rule.html">Whats The Meaning Of Military Rule</a></li>
+													<li class="list-group-item"><a href="/when-do-military-dependents-lose-benefits.html">When Do Military Dependents Lose Benefits</a></li>
+													<li class="list-group-item"><a href="/when-ex-leaves-you-for-someone-else.html">When Ex Leaves You For Someone Else</a></li>
+													<li class="list-group-item"><a href="/when-boyfriend-gives-you-the-silent-treatment.html">When Boyfriend Gives You The Silent Treatment</a></li>
+													<li class="list-group-item"><a href="/when-someone-dies-in-scotland-without-a-will.html">When Someone Dies In Scotland Without A Will</a></li>
+													<li class="list-group-item"><a href="/when-husband-treats-wife-like-a-child.html">When Husband Treats Wife Like A Child</a></li>
+													<li class="list-group-item"><a href="/when-your-ex-spouse-dies-do-you-get-their-social-security.html">When Your Ex Spouse Dies Do You Get Their Social Security</a></li>
+													<li class="list-group-item"><a href="/whats-the-meaning-of-military-drill.html">Whats The Meaning Of Military Drill</a></li>
+													<li class="list-group-item"><a href="/whats-my-cartoon.html">Whats My Cartoon</a></li>
+													<li class="list-group-item"><a href="/whats-my-card-number-on-my-debit-card.html">Whats My Card Number On My Debit Card</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

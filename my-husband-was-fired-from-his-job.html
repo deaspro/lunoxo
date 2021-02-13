@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>My Husband Was Fired From His Job - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "My Husband Was Fired From His Job",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/c9/04/60/c90460d622fd38daac014c07679d9e05.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=my+husband+was+fired+from+his+job",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>My Husband Was Fired From His Job</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">And she was fired from the job on her husbands birthday. In the later cohort wives paid or unpaid labor had little effect on her chance of divorce but the husbands breadwinning mattered a lot. If he was employed full-time there was a 25 percent chance of splitting up in the next year and if he wasnt there was a 33 percent chance. <br>				
+			</p>
+										<a class="badge badge-success" href="/how-to-get-a-job-at-anniston-army-depot.html">how to get a job at anniston army depot</a>
+											<a class="badge badge-success" href="/how-to-find-a-job-as-a-military-spouse.html">how to find a job as a military spouse</a>
+											<a class="badge badge-secondary" href="/how-to-find-spouse-in-army.html">how to find spouse in army</a>
+											<a class="badge badge-warning" href="/how-to-forgive-a-spouse-for-lying.html">how to forgive a spouse for lying</a>
+											<a class="badge badge-danger" href="/how-to-get-a-certified-death-certificate-in-virginia.html">how to get a certified death certificate in virginia</a>
+											<a class="badge badge-light" href="/how-to-get-a-military-veteran-spouse-id.html">how to get a military veteran spouse id</a>
+											<a class="badge badge-dark" href="/how-to-get-military-spouse-tuition-assistance.html">how to get military spouse tuition assistance</a>
+											<a class="badge badge-primary" href="/how-to-find-military-records-from-ww1.html">how to find military records from ww1</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to pay a visit to the ideal blog.  Our website provides you with suggestions for viewing the maximum quality video and picture content, search and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/bc/b8/bbbcb8e8da16ea0e7144f84341d94cdd.png" data-lightbox="roadtrip" data-title="Husband Asks Why His Wife Was Fired From A Company She Worked For 11 Years And Things Escalated Hilariously Wtf Funny Awkward Funny Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/bc/b8/bbbcb8e8da16ea0e7144f84341d94cdd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHXYq1TtqyZTrg-oiydUyD2bXQhZBVypK7nw';" alt="Husband Asks Why His Wife Was Fired From A Company She Worked For 11 Years And Things Escalated Hilariously Wtf Funny Awkward Funny Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Husband Asks Why His Wife Was Fired From A Company She Worked For 11 Years And Things Escalated Hilariously Wtf Funny Awkward Funny Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/7e/63/f27e63d2809c08d48ab9a2727e29b3e3.png" data-lightbox="roadtrip" data-title="My Husband Was Fired By His Doctor In 2020 Doctor Neck Surgery Health Plan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/7e/63/f27e63d2809c08d48ab9a2727e29b3e3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfzYRUc-rXaFpx-19lNv039lTEr8_lqUPjlg';" alt="My Husband Was Fired By His Doctor In 2020 Doctor Neck Surgery Health Plan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Husband Was Fired By His Doctor In 2020 Doctor Neck Surgery Health Plan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/43/b0/15/43b01548712dc8e8cabb805d0e02986a.jpg" data-lightbox="roadtrip" data-title="This Is What Happened When My Husband Lost His Job Sticky Note Mom Personal Finance Job Finance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/43/b0/15/43b01548712dc8e8cabb805d0e02986a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlP80X5cO8B0qf_RQiqbuKdtfiUw1P5qv4ZA';" alt="This Is What Happened When My Husband Lost His Job Sticky Note Mom Personal Finance Job Finance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is What Happened When My Husband Lost His Job Sticky Note Mom Personal Finance Job Finance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/da/72/b9da72e77a4509327f72e74fe205fd13.png" data-lightbox="roadtrip" data-title="13 Tips To Surviving Your Husband S Job Loss Blessed Beyond A Doubt Couple Finances Job Lost Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/da/72/b9da72e77a4509327f72e74fe205fd13.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb1oFWDWUzgNiz8UqDu2iFVp7All2uLtO_EQ';" alt="13 Tips To Surviving Your Husband S Job Loss Blessed Beyond A Doubt Couple Finances Job Lost Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">13 Tips To Surviving Your Husband S Job Loss Blessed Beyond A Doubt Couple Finances Job Lost Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/93/41/1f93415e476aff1c12a20828377b2bd3.png" data-lightbox="roadtrip" data-title="I Was Fired From My Job So I Learned How To Make My Own Dreams Come True Job Quotes My Job Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/93/41/1f93415e476aff1c12a20828377b2bd3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqaobDzeV7cgCdw9b3aEnxMw_Xt3HOYjiFqA';" alt="I Was Fired From My Job So I Learned How To Make My Own Dreams Come True Job Quotes My Job Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Was Fired From My Job So I Learned How To Make My Own Dreams Come True Job Quotes My Job Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/a3/f8/6aa3f885bc985f5ff8554be861d76c71.png" data-lightbox="roadtrip" data-title="Husband Asks Why His Wife Was Fired From A Company She Worked For 11 Years And Things Escalated Hilariously In 2020 Photoshop Fail Weird World Funny Posts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/a3/f8/6aa3f885bc985f5ff8554be861d76c71.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT02o9ReK3bRZ1IJ41Q7aO-pg08qujzxsVv4w';" alt="Husband Asks Why His Wife Was Fired From A Company She Worked For 11 Years And Things Escalated Hilariously In 2020 Photoshop Fail Weird World Funny Posts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Husband Asks Why His Wife Was Fired From A Company She Worked For 11 Years And Things Escalated Hilariously In 2020 Photoshop Fail Weird World Funny Posts</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e0/f3/80/e0f380e299294ccebf7175ed19616d8e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT02o9ReK3bRZ1IJ41Q7aO-pg08qujzxsVv4w';" alt="Husband Asks Why His Wife Was Fired From A Company She Worked For 11 Years And Things Escalated Hilariously In 2020 Photoshop Fail Weird World Funny Posts">
+										<div class="card-body">
+						<h3 class="h5"><b>The computers rejecting your job application.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>My husband was fired from his job</strong>. 
+								
+																	The police asked if my husband was a sorcerer. 
+																	Confessing Is Only Part of the Solution. 
+																	Mostafa BassimAnadolu Agency A suburban tech company executive who was among dozens of people arrested Wednesday in Washington DC after a mob stormed the US. 
+																	Bryan Rolli A pro-Trump councilwoman from Washington went viral after filming herself sobbing and blaming antifa after her husband was fired from his job for harassing a reporter at the Million. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To prevent being consumed with and dragged down by the initial negativity that is commonly experienced after being fired here are seven things you should try to avoid. 
+																	If youve been dismissed from your job because of misconduct or you left it without a good reason there might be a delay before you can start getting Jobseekers Allowance or Universal Credit. 
+																	My VP tried to intervene but I ended up being terminated by my Director who had it in for me because I did my job better than he did his. 
+																	But because he lost his job He took a mechanic job at walmart. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sue Dewey 57 lives in Nottingham with her husband Trevor 57 an electrical engineer. 
+																	A paper from the American Chemical. 
+																	Nelson Alaya and his husband Jamel Brown filmed a restaurant worker shouting man and women at them. 
+																	This is because your Jobcentre Plus work coach is allowed to apply a sanction to your benefit in other words stop it being paid for a certain number of weeks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dancing on Ice judge John Barrowman has claimed he was fired from a high-profile television gig for refusing to hide his sexuality back in the mid-1990s. 
+																	Image caption President Trump said in a tweet that Chris Krebs had been fired for his highly inaccurate. 
+																	Now a petition has been. 
+																	Remember that getting fired is never as horrible as it seems at first especially if you use the time to pursue a new chapter in your career. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The money started rolling in big time My husband went to college and something totally different than being a mechanic. 
+																	Just recently Cracker Barrel fired a woman that had worked for them for 11 years for an unknown reason. 
+																	Her spouse Brad went to their Facebook page to ask why she was getting fired but unfortunately didnt get an answer. 
+																	Twice I was fired in my 50s. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However finding work as a gay man in the early days of his career came with its challenges as Barrowman described in a recent interview revealing that he was once fired from a TV job for. 
+																	The woman who trashed her ex-boyfriends professional reputation needs to contact the HR department of the company that withdrew the job offer and. 
+																	BINMAN Callum Woodhouse was sacked by Herefordshire Council after he was caught on CCTV kung-fu kicking the head off a snowman that had been built by a three-year-old. 
+																	You go away and lick your wounds and try hard not to take it personally but. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Capitol has been charged in. 
+																	One participant Tamara tried to reassure her husband who lost a 150000 job it wasnt his fault and that at least he was still being invited for interviews. 
+																	Everyone said with his talent he could do better than that But his thing was taking care of his family. 
+																	When Frasier is in denial over losing his job he convinces himself its actually a blessing because now he finally has time to write an operetta of all things. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Anything from the new boss wanted to bring in his own team to the entire department was downsized is better than admitting you lost your job due to your own performance Enlist some help. 
+																	She considered this ongoing encouragement as an essential responsibility not necessarily of being a spouse but of being a woman. 
+																	Getting fired was a very bad experience for me. 
+																	She was later fired with the restaurant also issuing an apology Pictures. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A US software developer was revealed to have outsourced his job to China instead spending his workdays surfing the internet. 
+																	The police asked if my husband was a. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/5c/97/4c5c97847c4db54c0572ea1285abef19.jpg" data-lightbox="roadtrip" data-title="21 People Reveal The Crazy Reasons They Got Fired From Their Job Best Money Saving Tips Start Online Business Money Saving Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/5c/97/4c5c97847c4db54c0572ea1285abef19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIdwfbOQ1OwN2m49Sl2bRnUg8v6HpOuIkYnQ';" alt="21 People Reveal The Crazy Reasons They Got Fired From Their Job Best Money Saving Tips Start Online Business Money Saving Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">21 People Reveal The Crazy Reasons They Got Fired From Their Job Best Money Saving Tips Start Online Business Money Saving Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/24/96/5e2496f2ff43fcd6f529c1595d599526.jpg" data-lightbox="roadtrip" data-title="Unemployment How The Lord Provided When My Husband Lost His Job The Better Mom Uplifting Bible Quotes Prayer For A Job Words Of Encouragement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/24/96/5e2496f2ff43fcd6f529c1595d599526.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjOAHA-pbaEqCRVvM_wEbzrTWXnEhEdZOhSw';" alt="Unemployment How The Lord Provided When My Husband Lost His Job The Better Mom Uplifting Bible Quotes Prayer For A Job Words Of Encouragement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment How The Lord Provided When My Husband Lost His Job The Better Mom Uplifting Bible Quotes Prayer For A Job Words Of Encouragement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a7/3c/3f/a73c3f473798ed483d12e67ac022af94.jpg" data-lightbox="roadtrip" data-title="Abbey Ashley Free Va Training Thevirtualsavvy Instagram Photos And Videos Virtual Assistant Business Virtual Assistant Jobs Virtual Assistant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a7/3c/3f/a73c3f473798ed483d12e67ac022af94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCe99ryj5Ur0wWYKOPFlDBXnqA8N1tVsS95g';" alt="Abbey Ashley Free Va Training Thevirtualsavvy Instagram Photos And Videos Virtual Assistant Business Virtual Assistant Jobs Virtual Assistant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Abbey Ashley Free Va Training Thevirtualsavvy Instagram Photos And Videos Virtual Assistant Business Virtual Assistant Jobs Virtual Assistant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/b3/ff/afb3ff7c8afc3cad2b96369035c672de.jpg" data-lightbox="roadtrip" data-title="New Wal Mart Greeter Got Fired On His First Day Walmart Funny Funny Statements Funny Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/b3/ff/afb3ff7c8afc3cad2b96369035c672de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRunWNRGk43NQgt5eJMev-Sz56axW5PJrWXMQ';" alt="New Wal Mart Greeter Got Fired On His First Day Walmart Funny Funny Statements Funny Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Wal Mart Greeter Got Fired On His First Day Walmart Funny Funny Statements Funny Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/7d/51/b57d51ab575d84ebefc0bbb5fa7a25e7.png" data-lightbox="roadtrip" data-title="People Are Really Invested In Brad And His Wife Weird Dumb Internet Crackerbarrel Husband Humor Husband Meme Cracker Barrel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/7d/51/b57d51ab575d84ebefc0bbb5fa7a25e7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQabY6c8s0d7GtyOsK5baBFWycJOIwVZZXEPA';" alt="People Are Really Invested In Brad And His Wife Weird Dumb Internet Crackerbarrel Husband Humor Husband Meme Cracker Barrel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">People Are Really Invested In Brad And His Wife Weird Dumb Internet Crackerbarrel Husband Humor Husband Meme Cracker Barrel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/bb/8f/84bb8fe820b196d64d380b7c1bf84120.png" data-lightbox="roadtrip" data-title="16 Hilarious Confessions About Being Fired Job Quotes Funny Job Humor Funny Confessions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/bb/8f/84bb8fe820b196d64d380b7c1bf84120.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoF2MeGM8KjvrNhRc3yO9Acaa4eT75kxGv9Q';" alt="16 Hilarious Confessions About Being Fired Job Quotes Funny Job Humor Funny Confessions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">16 Hilarious Confessions About Being Fired Job Quotes Funny Job Humor Funny Confessions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/87/01/83/870183330ce6c536c7a0746fb92ba967.jpg" data-lightbox="roadtrip" data-title="When This Husband Was Going In And Out Of Coma For Few Months In 2020 Husband Coma Get Shot">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/87/01/83/870183330ce6c536c7a0746fb92ba967.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlu73qzBxs8I_hOGeRrxBmIC5UKIslFi5Ipg';" alt="When This Husband Was Going In And Out Of Coma For Few Months In 2020 Husband Coma Get Shot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When This Husband Was Going In And Out Of Coma For Few Months In 2020 Husband Coma Get Shot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/fd/c9/aefdc969afa8511e974eb89b72410233.jpg" data-lightbox="roadtrip" data-title="New Wal Mart Greeter Got Fired On His First Day Rambopanda Funny Quotes Funny Statements Walmart Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/fd/c9/aefdc969afa8511e974eb89b72410233.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpHLZOqrllP_hWmaabo9Yi8Qk29AyU1I64pg';" alt="New Wal Mart Greeter Got Fired On His First Day Rambopanda Funny Quotes Funny Statements Walmart Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Wal Mart Greeter Got Fired On His First Day Rambopanda Funny Quotes Funny Statements Walmart Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/da/28/4ada28bca984a63c38e5e184e083fa1a.jpg" data-lightbox="roadtrip" data-title="This Totally Sums Up My Husbands Situation And It S Never Enough She Always Wants More Money Baby Mama Drama Quotes Child Support Quotes Baby Momma Drama">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/da/28/4ada28bca984a63c38e5e184e083fa1a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUBvy1deFYYT7AVoF8l-OKCaHuXcdkv5JtRQ';" alt="This Totally Sums Up My Husbands Situation And It S Never Enough She Always Wants More Money Baby Mama Drama Quotes Child Support Quotes Baby Momma Drama">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Totally Sums Up My Husbands Situation And It S Never Enough She Always Wants More Money Baby Mama Drama Quotes Child Support Quotes Baby Momma Drama</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c9/04/60/c90460d622fd38daac014c07679d9e05.jpg" data-lightbox="roadtrip" data-title="The 19 Craziest Reasons Why People Were Let Go From Their Jobs Chaostrophic Let It Be Letting Go Spoken Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c9/04/60/c90460d622fd38daac014c07679d9e05.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo7fgHI8wQDHOieM6bD9P2iKNGIQ7kv1ex5w';" alt="The 19 Craziest Reasons Why People Were Let Go From Their Jobs Chaostrophic Let It Be Letting Go Spoken Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 19 Craziest Reasons Why People Were Let Go From Their Jobs Chaostrophic Let It Be Letting Go Spoken Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/ce/f3/65cef3995ee2d890818d8efa0f8c50b1.jpg" data-lightbox="roadtrip" data-title="Husband Asks Why His Wife Was Fired From A Company She Worked For 11 Years And Things Escalated Hilariously Losing Me Fire Food To Make">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/ce/f3/65cef3995ee2d890818d8efa0f8c50b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEAPHOVcqNcR0aDOwQYOqbLBXH2YFLPOdcpg';" alt="Husband Asks Why His Wife Was Fired From A Company She Worked For 11 Years And Things Escalated Hilariously Losing Me Fire Food To Make">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Husband Asks Why His Wife Was Fired From A Company She Worked For 11 Years And Things Escalated Hilariously Losing Me Fire Food To Make</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/f3/80/e0f380e299294ccebf7175ed19616d8e.jpg" data-lightbox="roadtrip" data-title="Man Loses Job And Catches Wife Cheating On The Same Day Then This Happens Funny Jokes Story Lol Funny Quote Funny Q Joke Stories Funny Quotes Marriage Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/f3/80/e0f380e299294ccebf7175ed19616d8e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXiCeYC-W61V8pWBDl3fqzGOdKCLof2nGvzg';" alt="Man Loses Job And Catches Wife Cheating On The Same Day Then This Happens Funny Jokes Story Lol Funny Quote Funny Q Joke Stories Funny Quotes Marriage Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Man Loses Job And Catches Wife Cheating On The Same Day Then This Happens Funny Jokes Story Lol Funny Quote Funny Q Joke Stories Funny Quotes Marriage Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f2/cf/36/f2cf3632f12e05f1c4dc21723217eec9.jpg" data-lightbox="roadtrip" data-title="My Husband Once Fired Me So Hard I Couldnt Walk For 3 Days New Bride Queen Farcadi Brags Bride Wedding Ceremony Traditions Queen">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f2/cf/36/f2cf3632f12e05f1c4dc21723217eec9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjc4rZQ1D4T7IkWjGNrNewdIXJqyPoBQFJ1Q';" alt="My Husband Once Fired Me So Hard I Couldnt Walk For 3 Days New Bride Queen Farcadi Brags Bride Wedding Ceremony Traditions Queen">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Husband Once Fired Me So Hard I Couldnt Walk For 3 Days New Bride Queen Farcadi Brags Bride Wedding Ceremony Traditions Queen</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/air-force-how-much.html">Air Force How Much</a></li>
+													<li class="list-group-item"><a href="/air-force-group-y.html">Air Force Group Y</a></li>
+													<li class="list-group-item"><a href="/air-force-germany-driving-test.html">Air Force Germany Driving Test</a></li>
+													<li class="list-group-item"><a href="/air-force-hardship-pcs.html">Air Force Hardship Pcs</a></li>
+													<li class="list-group-item"><a href="/air-force-hardwood-classics.html">Air Force Hardwood Classics</a></li>
+													<li class="list-group-item"><a href="/air-force-headquarters-delhi-address.html">Air Force Headquarters Delhi Address</a></li>
+													<li class="list-group-item"><a href="/air-force-healthcare-administration.html">Air Force Healthcare Administration</a></li>
+													<li class="list-group-item"><a href="/air-force-heroes-crossword.html">Air Force Heroes Crossword</a></li>
+													<li class="list-group-item"><a href="/air-force-headquarters-mailing-address.html">Air Force Headquarters Mailing Address</a></li>
+													<li class="list-group-item"><a href="/air-force-headquarters.html">Air Force Headquarters</a></li>
+													<li class="list-group-item"><a href="/air-force-health-professions-recruiter-near-me.html">Air Force Health Professions Recruiter Near Me</a></li>
+													<li class="list-group-item"><a href="/air-force-headquarter-of-pakistan.html">Air Force Headquarter Of Pakistan</a></li>
+													<li class="list-group-item"><a href="/air-force-hat-pins.html">Air Force Hat Pins</a></li>
+													<li class="list-group-item"><a href="/air-force-headquarters-email.html">Air Force Headquarters Email</a></li>
+													<li class="list-group-item"><a href="/air-force-hero-wods.html">Air Force Hero Wods</a></li>
+													<li class="list-group-item"><a href="/air-force-hoch.html">Air Force Hoch</a></li>
+													<li class="list-group-item"><a href="/air-force-headquarters-in-zambia.html">Air Force Headquarters In Zambia</a></li>
+													<li class="list-group-item"><a href="/air-force-headquarters-a4.html">Air Force Headquarters A4</a></li>
+													<li class="list-group-item"><a href="/air-force-hot-pink.html">Air Force Hot Pink</a></li>
+													<li class="list-group-item"><a href="/air-force-hq-acc.html">Air Force Hq Acc</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

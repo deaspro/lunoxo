@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Can Covid Be Positive Without Symptoms - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Can Covid Be Positive Without Symptoms",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/564x/36/65/f6/3665f66f3cf15b0272c8992d20c3afa3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=can+covid+be+positive+without+symptoms",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Can Covid Be Positive Without Symptoms</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Yes You Can Get COVID-19 from Someone Without Symptoms People can transmit the virus that causes COVID-19 even if they dont have symptoms. Sneezing is not a symptom of coronavirus and unless you also have a fever cough or loss of smell and taste you do not need a test. So can you count three months backward too for someone whose symptoms never. <br>				
+			</p>
+										<a class="badge badge-info" href="/mycanal-brexit.html">mycanal brexit</a>
+											<a class="badge badge-warning" href="/mycanal-afrique-probleme.html">mycanal afrique probleme</a>
+											<a class="badge badge-warning" href="/mycanal-afrique-mon-abonnement.html">mycanal afrique mon abonnement</a>
+											<a class="badge badge-info" href="/mycanal-afrique-cote-divoire.html">mycanal afrique cote divoire</a>
+											<a class="badge badge-warning" href="/mycanal-box-sfr.html">mycanal box sfr</a>
+											<a class="badge badge-success" href="/mycanal-app.html">mycanal app</a>
+											<a class="badge badge-warning" href="/mycanal-afrique-live-tv.html">mycanal afrique live tv</a>
+											<a class="badge badge-secondary" href="/mycanal-canal-plus-sport.html">mycanal canal plus sport</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to pay a visit to the right blog.  Our website gives you suggestions for seeing the highest quality video and picture content, search and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video that you view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/ad/ed/2caded7846fc18387c4ae9fc8abf5013.jpg" data-lightbox="roadtrip" data-title="If You Tested Positive For Covid 19 And Have No Symptoms Stay Home And Away From Other People Check Out This Link To Learn More About Cdc S Recommendations Ab">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/ad/ed/2caded7846fc18387c4ae9fc8abf5013.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjKMMGqrpeCOqm1vlrNEo3d6wvNDyF2b9COA';" alt="If You Tested Positive For Covid 19 And Have No Symptoms Stay Home And Away From Other People Check Out This Link To Learn More About Cdc S Recommendations Ab">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Tested Positive For Covid 19 And Have No Symptoms Stay Home And Away From Other People Check Out This Link To Learn More About Cdc S Recommendations Ab</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/4f/1c/a34f1cf44d63b199cec8c3c26da28084.png" data-lightbox="roadtrip" data-title="Pin On Diabetes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/4f/1c/a34f1cf44d63b199cec8c3c26da28084.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvscg4X54nTD4heLndgQlFbpQC9ImB28A3Fw';" alt="Pin On Diabetes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Diabetes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/82/70/c08270d1e5b328b16854a4ad543c14c8.jpg" data-lightbox="roadtrip" data-title="Pin On Good To Know">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/82/70/c08270d1e5b328b16854a4ad543c14c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzqH6C3gCxioFU2eQtLcvPG9qPpDtzHOFebA';" alt="Pin On Good To Know">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Good To Know</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/3d/f8/2a/3df82a5acfc6f34ac97f77a3cf862c46.jpg" data-lightbox="roadtrip" data-title="Create The Perfect Design By Customizing Easy To Use Templates In Minutes Easil Health Quotes Motivation Health And Safety Poster Take Care Of Yourself Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/3d/f8/2a/3df82a5acfc6f34ac97f77a3cf862c46.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBVHeplvdbgvMBwmBDzcNjX_qrzXbulT7kFA';" alt="Create The Perfect Design By Customizing Easy To Use Templates In Minutes Easil Health Quotes Motivation Health And Safety Poster Take Care Of Yourself Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Create The Perfect Design By Customizing Easy To Use Templates In Minutes Easil Health Quotes Motivation Health And Safety Poster Take Care Of Yourself Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/01/f0/bb01f08ca75a72425c3ca9358c3e1fab.jpg" data-lightbox="roadtrip" data-title="Pin On How To Protect Yourself">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/01/f0/bb01f08ca75a72425c3ca9358c3e1fab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl0uL7AvT8WTkHOtT-UHvwllywTRMEFX0C0Q';" alt="Pin On How To Protect Yourself">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On How To Protect Yourself</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/36/65/f6/3665f66f3cf15b0272c8992d20c3afa3.jpg" data-lightbox="roadtrip" data-title="Create The Perfect Design By Customizing Easy To Use Templates In Minutes Easily Convert Your Image Designs Into Videos Or Medical Brochure Design Prevention">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/36/65/f6/3665f66f3cf15b0272c8992d20c3afa3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS75-Pk6bwVmq2r5fz_yiEgd8Ee-mlZPZN3JQ';" alt="Create The Perfect Design By Customizing Easy To Use Templates In Minutes Easily Convert Your Image Designs Into Videos Or Medical Brochure Design Prevention">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Create The Perfect Design By Customizing Easy To Use Templates In Minutes Easily Convert Your Image Designs Into Videos Or Medical Brochure Design Prevention</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/3d/f8/2a/3df82a5acfc6f34ac97f77a3cf862c46.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS75-Pk6bwVmq2r5fz_yiEgd8Ee-mlZPZN3JQ';" alt="Create The Perfect Design By Customizing Easy To Use Templates In Minutes Easily Convert Your Image Designs Into Videos Or Medical Brochure Design Prevention">
+										<div class="card-body">
+						<h3 class="h5"><b>If you tested positive for COVID-19 or if you did not take a test but believe you had it you can be around others when all three of the following criteria are met.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Can covid be positive without symptoms</strong>. 
+								
+																	Sneeze droplets can spread infections though so catch them in. 
+																	This must be without the use of fever-reducing medications like ibuprofen. 
+																	You have gone 24 hours with no fever. 
+																	These could have been people with no symptoms asymptomatic or people who had mild enough symptoms that they caused little concern. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When doctors initially tested the young woman for the coronavirus the results came back negative. 
+																	As far as the CDC knows tests for COVID-19 can still be positive up to three months after the symptoms resolve. 
+																	The flu has similar symptoms to. 
+																	As far as isolation goes which has been recommended to be 14 days from the onset of symptoms or a positive test now the CDC says that at least a 10 day isolation period is sufficient writing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This means that if the person who has recovered from COVID-19 is retested within 3 months of initial infection they may continue to have a positive test result even though they are not spreading. 
+																	Having an infection without any symptoms is quite common say experts Published. 
+																	A number of people are reported. 
+																	By February 11 the woman still had no fever cough sore throat or gastrointestinal issues. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Most people who develop COVID-19 have mild symptoms and get better without treatment. 
+																	June 04 2020 1615 Jay Hilotin Assistant Editor. 
+																	COVID-19 has more respiratory symptoms than a cold which usually causes a runny nose congestion and sneezing. 
+																	However if your healthcare provider recommends testing they will let you know when you can resume being around others based on your test results. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Most SARS-CoV-2 infections are spread by people without symptoms the agency said in a section of its website devoted to explaining the science of how to use masks to control the spread of the. 
+																	Mild symptoms of COVID-19 infection include loss of sense of smell and low fever. 
+																	The vast majority of those testing positive did not have any key symptoms when tested with. 
+																	I tested positive but have no symptoms how did it happen. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This study was co-authored by Jeffrey Shaman a professor at Columbia University who forecasts infectious disease outbreaks. 
+																	Her CT scan was normal too. 
+																	Always follow the instructions that come with your medicine. 
+																	Majority testing positive have no symptoms. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Also a fever isnt too common with a cold. 
+																	Ten days have passed since you first experienced symptoms. 
+																	Most people do not require testing to decide when they can be around others. 
+																	He tested positive for Covid-19 on Sunday January 17 after undergoing a routine test at work and showed no symptoms of the illness however his condition rapidly declined and he was admitted to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However if symptoms are severe or seem to be worsening rapidly dial 911 or otherwise request emergency. 
+																	Only 22 of people testing positive for coronavirus reported having symptoms on the day of their test according to the Office for National. 
+																	But a day later she tested positive for the virus even though she wasnt showing any symptoms. 
+																	I tested positive for COVID-19 but had no symptoms If you continue to have no symptoms you can be with others after 10 days have passed since you had a positive viral test for COVID-19. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can take paracetamol or ibuprofen to treat symptoms of coronavirus. 
+																	Most people who have coronavirus show no symptoms on the day of their test new research has suggested. 
+																	However doctors have now revealed that some people with Covid-19 may not show any of these. 
+																	Asymptomatic COVID-19 positive means a person has been tested positive but has no symptoms and does not go on to develop symptoms says Dr Kerkhove in the video. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Try paracetamol first if you can as it has fewer side effects than ibuprofen and is the safer choice for most people. 
+																	The warning signs of coronavirus include a new or dry cough a high temperature or shortness of breath. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/ca/d3/24cad326282ac8f668f3c2a6ea376147.jpg" data-lightbox="roadtrip" data-title="Pin On Health Fitness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/ca/d3/24cad326282ac8f668f3c2a6ea376147.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrHPbPUz8Srrx3RleB2ffcTnWgw0PYLFJ6QA';" alt="Pin On Health Fitness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health Fitness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/df/44/8d/df448d4f34ae46b4378bdc952ab3fe6a.jpg" data-lightbox="roadtrip" data-title="Pin On English Language Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/df/44/8d/df448d4f34ae46b4378bdc952ab3fe6a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTklj1P8zqpugkArz-avq3IGAD6P7-wt-ZcaA';" alt="Pin On English Language Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On English Language Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c9/e8/29/c9e829ce13be6261c6e2e726e59374d1.jpg" data-lightbox="roadtrip" data-title="Lets Co Operate The Government If You Have Any Of The Symptoms Immediately Contact Your Local Medical Body Stay Home Stay Safe I 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c9/e8/29/c9e829ce13be6261c6e2e726e59374d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfPiy_KtUngaR89ICcc3CA5VCx5eSL0ayqEg';" alt="Lets Co Operate The Government If You Have Any Of The Symptoms Immediately Contact Your Local Medical Body Stay Home Stay Safe I 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lets Co Operate The Government If You Have Any Of The Symptoms Immediately Contact Your Local Medical Body Stay Home Stay Safe I 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/9a/4f/bb/9a4fbb6cb6a398bb277a09fad9151891.jpg" data-lightbox="roadtrip" data-title="Pin On Pins For Peace To Heal The World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/9a/4f/bb/9a4fbb6cb6a398bb277a09fad9151891.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRymr0oGeZcrxR-hWylSineVB6wWLD0iNdiQ';" alt="Pin On Pins For Peace To Heal The World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pins For Peace To Heal The World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e1/bc/57/e1bc57dd9fe453b9b21ff70012ebcbc7.jpg" data-lightbox="roadtrip" data-title="Top 14 Funny Quotes From Bizwaremagic Funny Quotes Uplifting Quotes Sarcastic Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e1/bc/57/e1bc57dd9fe453b9b21ff70012ebcbc7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgTsI7P5_Fg90mT9RSxVATVGuiPnYOPw6Ebg';" alt="Top 14 Funny Quotes From Bizwaremagic Funny Quotes Uplifting Quotes Sarcastic Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 14 Funny Quotes From Bizwaremagic Funny Quotes Uplifting Quotes Sarcastic Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/b9/a6/c6b9a6f73f23df9a824cb62484f1138b.png" data-lightbox="roadtrip" data-title="Pin On Arbonne">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/b9/a6/c6b9a6f73f23df9a824cb62484f1138b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZMs718SkhU9UMyvplEIZdvHvpg8bRxq4u2Q';" alt="Pin On Arbonne">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Arbonne</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/f3/6d/3af36dfb36f9def9dd8f207c82d6b7bf.jpg" data-lightbox="roadtrip" data-title="Pin On Prevention And Preparedness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/f3/6d/3af36dfb36f9def9dd8f207c82d6b7bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfhKpiQ6gJ3CqPpYc9fm40C_J--77k4tHCjQ';" alt="Pin On Prevention And Preparedness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Prevention And Preparedness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/29/d5/9c/29d59c98def55549b05ad0fe699fee9e.jpg" data-lightbox="roadtrip" data-title="Pin On Myposter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/29/d5/9c/29d59c98def55549b05ad0fe699fee9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjqOMFImN5qsMJhQBEcP2WrIG9qHk6ABqImQ';" alt="Pin On Myposter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Myposter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/41/79/62/417962983784951942c2fd60943f2c1a.jpg" data-lightbox="roadtrip" data-title="Pin On Corona Virus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/41/79/62/417962983784951942c2fd60943f2c1a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQug_NBdMys9bvpyEih4YvXMx10Nzx8HPuxnw';" alt="Pin On Corona Virus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Corona Virus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/57/ed/d7/57edd7ba5ab25df65a582ad7331abecf.jpg" data-lightbox="roadtrip" data-title="Create The Perfect Design By Customizing Easy To Use Templates In Minutes Easily Convert Your Image Designs Into Video Hand Hygiene Health How To Stay Healthy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/57/ed/d7/57edd7ba5ab25df65a582ad7331abecf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7BvhaoY-d0F2wNOqyasjRMMYsjUDAiZdKEQ';" alt="Create The Perfect Design By Customizing Easy To Use Templates In Minutes Easily Convert Your Image Designs Into Video Hand Hygiene Health How To Stay Healthy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Create The Perfect Design By Customizing Easy To Use Templates In Minutes Easily Convert Your Image Designs Into Video Hand Hygiene Health How To Stay Healthy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/be/ac/16beacffe6a1d7f0924c6147ee8151fa.png" data-lightbox="roadtrip" data-title="Pin On Sticken Und Nahen">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/be/ac/16beacffe6a1d7f0924c6147ee8151fa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy5EDvuViCKyPRdmj0KFAth7Dkt7LQLE2eJA';" alt="Pin On Sticken Und Nahen">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sticken Und Nahen</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/53/54/0b5354be3a90324459321051bd15f682.png" data-lightbox="roadtrip" data-title="Pin By Kushal Rayamajhii On Awareness Poster Awareness Poster Campaign Posters Poster Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/53/54/0b5354be3a90324459321051bd15f682.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrX9USU6-raRZvy02aaHtSxUX__nGcbUrmNA';" alt="Pin By Kushal Rayamajhii On Awareness Poster Awareness Poster Campaign Posters Poster Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Kushal Rayamajhii On Awareness Poster Awareness Poster Campaign Posters Poster Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/2c/73/e62c731f7e8423bf88763c7965f6e872.jpg" data-lightbox="roadtrip" data-title="Pin On Corona Virus Covid 19">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/2c/73/e62c731f7e8423bf88763c7965f6e872.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNL4Lozlz_x8RKQHRgpMf6-rMk5SAzijqIYA';" alt="Pin On Corona Virus Covid 19">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Corona Virus Covid 19</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/navy-seal-officer-detailer.html">Navy Seal Officer Detailer</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-career-path.html">Navy Seal Officer Career Path</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-youtube.html">Navy Seal Edward Gallagher Youtube</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-linkedin.html">Navy Seal Officer Linkedin</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-soas.html">Navy Seal Officer Soas</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-story.html">Navy Seal Edward Gallagher Story</a></li>
+													<li class="list-group-item"><a href="/navy-seal-eddie-gallagher-video.html">Navy Seal Eddie Gallagher Video</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-quora.html">Navy Seal Officer Quora</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-life.html">Navy Seal Officer Life</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-training.html">Navy Seal Officer Training</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-fitness-requirements.html">Navy Seal Officer Fitness Requirements</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-what-did-he-do.html">Navy Seal Edward Gallagher What Did He Do</a></li>
+													<li class="list-group-item"><a href="/navy-seal-eddie-gallagher-trial.html">Navy Seal Eddie Gallagher Trial</a></li>
+													<li class="list-group-item"><a href="/navy-seal-eddie-gallagher-lawyer.html">Navy Seal Eddie Gallagher Lawyer</a></li>
+													<li class="list-group-item"><a href="/navy-seal-gallagher-news.html">Navy Seal Gallagher News</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-facebook.html">Navy Seal Edward Gallagher Facebook</a></li>
+													<li class="list-group-item"><a href="/navy-seal-eddie-gallagher-verdict.html">Navy Seal Eddie Gallagher Verdict</a></li>
+													<li class="list-group-item"><a href="/navy-seal-gallagher-new-york-times.html">Navy Seal Gallagher New York Times</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-contract-length.html">Navy Seal Officer Contract Length</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-medals.html">Navy Seal Edward Gallagher Medals</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

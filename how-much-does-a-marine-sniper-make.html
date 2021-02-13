@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How Much Does A Marine Sniper Make - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How Much Does A Marine Sniper Make",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/0e/7a/14/0e7a144ad8383f505c665d1fceaa296d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+much+does+a+marine+sniper+make",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How Much Does A Marine Sniper Make</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Eremite Date of post. Please allow me to introduce myself. And honestly if you are interested in becomeing a sniper go to the shooting range and star practicing and i would join the airforce not the marines. <br>				
+			</p>
+										<a class="badge badge-dark" href="/va-medical-records-biloxi.html">va medical records biloxi</a>
+											<a class="badge badge-warning" href="/va-form-to-add-college-dependents.html">va form to add college dependents</a>
+											<a class="badge badge-dark" href="/va-medical-records-app.html">va medical records app</a>
+											<a class="badge badge-dark" href="/va-disability-medical-benefits-for-dependents.html">va disability medical benefits for dependents</a>
+											<a class="badge badge-light" href="/va-disability-without-dependents.html">va disability without dependents</a>
+											<a class="badge badge-secondary" href="/va-health-records-online.html">va health records online</a>
+											<a class="badge badge-warning" href="/va-health-records-iphone.html">va health records iphone</a>
+											<a class="badge badge-info" href="/va-form-21-686c-declaration-of-dependents.html">va form 21 686c declaration of dependents</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to visit the ideal blog.  Our site gives you suggestions for seeing the maximum quality video and picture content, search and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie for you to view.  It is also possible to contribute to supporting this website by sharing videos and images that you like on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/27/2f/22272fd85da216b1aebec75104061cb0.jpg" data-lightbox="roadtrip" data-title="Pin On Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/27/2f/22272fd85da216b1aebec75104061cb0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqZ0ULNSWwdJnoHVko4A1OqByPJssS2KEQsQ&amp;ec=45774421';" alt="Pin On Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/2a/b6/822ab62e19094e1c9fe3e8e19027fdb5.jpg" data-lightbox="roadtrip" data-title="Webmail Http Webmail Ovh Net Memes Militares Memes Divertidos Heroe">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/2a/b6/822ab62e19094e1c9fe3e8e19027fdb5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWN059b0Aqf-g3vGw_LqlULpqRTWE002mu1g&amp;ec=45774421';" alt="Webmail Http Webmail Ovh Net Memes Militares Memes Divertidos Heroe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Webmail Http Webmail Ovh Net Memes Militares Memes Divertidos Heroe</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/ce/fe/90cefef3915f72f55bb07c159ed2c1b1.jpg" data-lightbox="roadtrip" data-title="Nuff Said Sniper Military Quotes Marine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/ce/fe/90cefef3915f72f55bb07c159ed2c1b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbxu9dr-TtDcAaynta70ne96SJe5fVzFf4Q&amp;ec=45774421';" alt="Nuff Said Sniper Military Quotes Marine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nuff Said Sniper Military Quotes Marine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/5f/16/915f16992b46767671dcf751bd10c0b6.jpg" data-lightbox="roadtrip" data-title="Military Snipers Military Quotes Sniper Military Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/5f/16/915f16992b46767671dcf751bd10c0b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBd9RRXVoriJZw1wBiRyeCqrxYMzQ3sXtvbg&amp;ec=45774421';" alt="Military Snipers Military Quotes Sniper Military Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Snipers Military Quotes Sniper Military Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/6f/35/c46f35920a570411934209539bc7d73a.jpg" data-lightbox="roadtrip" data-title="Blogil Grim Sniper Printed In Flesh Grim Reaper Tattoo War Tattoo Military Tattoos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/6f/35/c46f35920a570411934209539bc7d73a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAclr4X6C5ulmEYdi1JUQMph-tUL1YuJ8XQ&amp;ec=45774421';" alt="Blogil Grim Sniper Printed In Flesh Grim Reaper Tattoo War Tattoo Military Tattoos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Blogil Grim Sniper Printed In Flesh Grim Reaper Tattoo War Tattoo Military Tattoos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/90/7e/5b/907e5b195b66705e1f737a42484c06d7.jpg" data-lightbox="roadtrip" data-title="11 Sniper Memes That Will Make You Laugh For Hours Military Memes Military Humor Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/90/7e/5b/907e5b195b66705e1f737a42484c06d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdNJcAqw1fulLRnlp_BlA_xZSOexkIKmknrw&amp;ec=45774421';" alt="11 Sniper Memes That Will Make You Laugh For Hours Military Memes Military Humor Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 Sniper Memes That Will Make You Laugh For Hours Military Memes Military Humor Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/cd/d9/0f/cdd90fb700bb009c4a0198d79f5918cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdNJcAqw1fulLRnlp_BlA_xZSOexkIKmknrw&amp;ec=45774421';" alt="11 Sniper Memes That Will Make You Laugh For Hours Military Memes Military Humor Military Quotes">
+										<div class="card-body">
+						<h3 class="h5"><b>X Research source Since Marine snipers are often involved in highly specialized missions you must have reached Secret clearance before you can begin sniper training.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How much does a marine sniper make</strong>. 
+								
+																	Marines are paid according to rank and time in service. 
+																	The Marine Corps is facing a critical gap of scout snipers due to the high washout rates at sniper school so the Corps is looking at changes to how the elite sharpshooters are trained officials said. 
+																	Earn Cash For In Demand Jobs. 
+																	If you are interested in the military dont go bumbling into the marine corps recruting office to get signed up. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is also the starting point for many advanced schools such as Special Forces Airborne School Ranger School Sniper School and Pathfinder School. 
+																	When factoring in bonuses and additional compensation a Sniper at US Army can expect to make an average total pay of 50805. 
+																	The Department of Defense issues personal security clearances at the Top Secret Secret and Confidential levels. 
+																	See all Scout Sniper salaries to learn how this stacks up in the market. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The men who become snipers and part of Special Forces dont do it for money they do it because they think its cool or they want to serve their country usually both. 
+																	How much are Marine Corps Scout Snipers paid. 
+																	These actions are typically accomplished in any how much money does a marine sniper make a year and long range with little support from other Marine or military assets. 
+																	In the Marine Corps we have scoutsnipers and do not promote anywhere near as fast as the other services. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A United States Marine Corps Scout Sniper annual salary is about 49000 based on salary and pay scale data from 4 real United States Marine Corps employees. 
+																	In the other services people promote faster so they will be a higher rank doing the same job and therefore get paid a little bit more. 
+																	These Marines must first serve for a time in the battalion scout-sniper platoon and a Marine may be sent to the formal scout sniper course to earn the official scout sniper MOS. 
+																	In support of combat operations scout snipers are highly regarded in times of war as they are skilled in enemy surveillance stealth and concealment and marksmanship. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The US marine sniper course is one of the hardest training courses in the military with a failure rate of more than 60 and a long list of prerequisites for recruits including a high degree of. 
+																	50000 - 67000 a year. 
+																	30000 - 70000 a year. 
+																	How much money does a marine sniper make. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This website has a chart on military paygrade. 
+																	How many scout snipers are in the Marine Corps. 
+																	I know what I am. 
+																	As an E-3 or above you can expect a minimum base pay of about 2000 a month plus benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When factoring in bonuses and additional compensation a Scout Sniper at US Marine Corps can expect to make an average total pay of 3249. 
+																	This estimate is based upon 5 US Army Sniper salary report s provided by employees or estimated based upon statistical methods. 
+																	Most of those guys were E3s and E4s with 24 years of service so 26k to 30k. 
+																	To be selected by a battalion to join the scout sniper platoon a Marine must earn the rank of Lance Corporal and complete the 79-day scout sniper course at Marine Corps Base Quantico in Virginia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And look it up. 
+																	I was also involved in Afghanistan Liberia Djibouti and a slew of other places many people have never heard of. 
+																	E5 Marines Sergeant. 
+																	I fought in Fallujah Iraq in Nov with 1st Battalion 8th Marines Alpha Co 1st plt. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sniper salaries at US Army can range from 32694 - 60852. 
+																	A sniper the rank of Sergeant gets paid the same amount as a Band member Sergeant not Presidents Own thats a whole different story. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/7a/14/0e7a144ad8383f505c665d1fceaa296d.jpg" data-lightbox="roadtrip" data-title="Pin By Angela On Art Of War Military Marines United States Marine Corps Marine Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/7a/14/0e7a144ad8383f505c665d1fceaa296d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9hVgzU4fK7WSrQMInjyH_jX6FIBKJsd9fUg&amp;ec=45774421';" alt="Pin By Angela On Art Of War Military Marines United States Marine Corps Marine Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Angela On Art Of War Military Marines United States Marine Corps Marine Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/f7/1a/14f71a1bd18822eaa852cb4991617605.jpg" data-lightbox="roadtrip" data-title="Us Marine Recon Marksman Schematic Special Forces Sniper Future Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/f7/1a/14f71a1bd18822eaa852cb4991617605.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDVn64PsTnYhXZkyCbUdedK-EsbFvdK_Sm4w&amp;ec=45774421';" alt="Us Marine Recon Marksman Schematic Special Forces Sniper Future Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Marine Recon Marksman Schematic Special Forces Sniper Future Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/d9/0f/cdd90fb700bb009c4a0198d79f5918cc.jpg" data-lightbox="roadtrip" data-title="5 Things I Learned From The Marine Corps Scout Sniper School In 2020 Marine Recon Sniper Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/d9/0f/cdd90fb700bb009c4a0198d79f5918cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-dAQ7fULObiqtGgDYCTStTHMaotIxQuRdww&amp;ec=45774421';" alt="5 Things I Learned From The Marine Corps Scout Sniper School In 2020 Marine Recon Sniper Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Things I Learned From The Marine Corps Scout Sniper School In 2020 Marine Recon Sniper Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/f5/e2/ddf5e2159525a44be3fd53f5c9a58a90.jpg" data-lightbox="roadtrip" data-title="Pin By J P On Facts That Will Blow Your Mind Sniper Royal Marine Commando Royal Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/f5/e2/ddf5e2159525a44be3fd53f5c9a58a90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUIO9LLgSYBsaCinrDwQDqkTPskWzUeaBlFg&amp;ec=45774421';" alt="Pin By J P On Facts That Will Blow Your Mind Sniper Royal Marine Commando Royal Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By J P On Facts That Will Blow Your Mind Sniper Royal Marine Commando Royal Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/40/e6/d040e60cb827da2c12da2842d7810063.jpg" data-lightbox="roadtrip" data-title="Pin On Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/40/e6/d040e60cb827da2c12da2842d7810063.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIpUnxw-bKokvLbSRMZaFCGs8fuWD2MARaCw&amp;ec=45774421';" alt="Pin On Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/fe/e6/fbfee69c4318be066ac5a550161dbde0.jpg" data-lightbox="roadtrip" data-title="Pin On Weapons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/fe/e6/fbfee69c4318be066ac5a550161dbde0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Zd4SfhQQwjzBk15cNbFZsdYEH69SVnlx0g&amp;ec=45774421';" alt="Pin On Weapons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Weapons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/81/74/3e8174e842f9680af1baf5aa8f0ce130.jpg" data-lightbox="roadtrip" data-title="Marine Recon And Scout Snipers Train Marksmanship With Thai And Korean Special Forces Marine Recon Sniper Training Sniper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/81/74/3e8174e842f9680af1baf5aa8f0ce130.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8ULJWHRZdnrHd9MoiyWBIO7q69OfZRerwJw&amp;ec=45774421';" alt="Marine Recon And Scout Snipers Train Marksmanship With Thai And Korean Special Forces Marine Recon Sniper Training Sniper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Recon And Scout Snipers Train Marksmanship With Thai And Korean Special Forces Marine Recon Sniper Training Sniper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/d3/d1/23d3d108fc377ba19e1f1e5ddf69d6fc.png" data-lightbox="roadtrip" data-title="5 Key Predictors Of Success In Marine Corps Sniper School Tier Three Tactical Marine Corps Humor Marine Corps Bootcamp Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/d3/d1/23d3d108fc377ba19e1f1e5ddf69d6fc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBfToPl6wmS_J4taz1Q_p9OEjcoEs5Y197KQ&amp;ec=45774421';" alt="5 Key Predictors Of Success In Marine Corps Sniper School Tier Three Tactical Marine Corps Humor Marine Corps Bootcamp Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Key Predictors Of Success In Marine Corps Sniper School Tier Three Tactical Marine Corps Humor Marine Corps Bootcamp Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/1e/94/741e94e1654ca24ee898c3a6a3e65589.jpg" data-lightbox="roadtrip" data-title="Pin By William Sealock On Parade Marines Sniper Military Action Figures Us Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/1e/94/741e94e1654ca24ee898c3a6a3e65589.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS5yUJqji3GG0kYF69cKMnd2-IPgINDNh3Jg&amp;ec=45774421';" alt="Pin By William Sealock On Parade Marines Sniper Military Action Figures Us Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By William Sealock On Parade Marines Sniper Military Action Figures Us Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/7b/67/527b67af60ec305c50fa61878026a235.jpg" data-lightbox="roadtrip" data-title="Pin On United States Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/7b/67/527b67af60ec305c50fa61878026a235.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMOqrkVNw2zuTF7xyoHqgi2AUuLQT_SbjqWQ&amp;ec=45774421';" alt="Pin On United States Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On United States Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/9e/1b/749e1b42765f1843cf10150b8200c344.jpg" data-lightbox="roadtrip" data-title="Carlos Norman Hathcock Ii Was A United States Marine Corps Usmc Sniper With A Service Record Of 93 Confirmed Kills Hen Vietnam War Sniper Vietnam War Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/9e/1b/749e1b42765f1843cf10150b8200c344.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZy_yUbyKhT9VJ6Vcgkp6d6QzqkbLuabUcCA&amp;ec=45774421';" alt="Carlos Norman Hathcock Ii Was A United States Marine Corps Usmc Sniper With A Service Record Of 93 Confirmed Kills Hen Vietnam War Sniper Vietnam War Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Carlos Norman Hathcock Ii Was A United States Marine Corps Usmc Sniper With A Service Record Of 93 Confirmed Kills Hen Vietnam War Sniper Vietnam War Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/18/1e/5d181e39c2227ae8ad4593236760d9ba.jpg" data-lightbox="roadtrip" data-title="Pin On Militarian">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/18/1e/5d181e39c2227ae8ad4593236760d9ba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoObohiBUuEcACpIC8RCEuoUCZvRuFsjx0yw&amp;ec=45774421';" alt="Pin On Militarian">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Militarian</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/fe/c5/78/fec578e90f391f5ff23d6985975e5abc.jpg" data-lightbox="roadtrip" data-title="Amazing Video U S Marine Sniper Training Usmc Scout Sniper Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/fe/c5/78/fec578e90f391f5ff23d6985975e5abc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHDj7Vv58PyKUF6M6NtM4MzCP4WvJ5CiS0ig&amp;ec=45774421';" alt="Amazing Video U S Marine Sniper Training Usmc Scout Sniper Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amazing Video U S Marine Sniper Training Usmc Scout Sniper Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/my-husband-kicked-me.html">My Husband Kicked Me</a></li>
+													<li class="list-group-item"><a href="/my-husband-lies-about-his-whereabouts.html">My Husband Lies About His Whereabouts</a></li>
+													<li class="list-group-item"><a href="/my-husband-just-died-do-i-get-his-social-security.html">My Husband Just Died Do I Get His Social Security</a></li>
+													<li class="list-group-item"><a href="/my-husband-left-me-twice.html">My Husband Left Me Twice</a></li>
+													<li class="list-group-item"><a href="/my-husband-left-me-because-i-want-an-open-relationship-reddit.html">My Husband Left Me Because I Want An Open Relationship Reddit</a></li>
+													<li class="list-group-item"><a href="/my-husband-left-me-8-months-ago.html">My Husband Left Me 8 Months Ago</a></li>
+													<li class="list-group-item"><a href="/my-husband-just-died-now-what.html">My Husband Just Died Now What</a></li>
+													<li class="list-group-item"><a href="/my-husband-kicked-me-out-while-pregnant.html">My Husband Kicked Me Out While Pregnant</a></li>
+													<li class="list-group-item"><a href="/my-husband-left-me-over-money.html">My Husband Left Me Over Money</a></li>
+													<li class="list-group-item"><a href="/my-husband-lies-about-me-to-his-friends.html">My Husband Lies About Me To His Friends</a></li>
+													<li class="list-group-item"><a href="/my-husband-lies-about-me.html">My Husband Lies About Me</a></li>
+													<li class="list-group-item"><a href="/my-husband-lies-about-dipping.html">My Husband Lies About Dipping</a></li>
+													<li class="list-group-item"><a href="/my-husband-left-me-after-20-years.html">My Husband Left Me After 20 Years</a></li>
+													<li class="list-group-item"><a href="/my-husband-left-me-over-a-tattoo.html">My Husband Left Me Over A Tattoo</a></li>
+													<li class="list-group-item"><a href="/my-husband-kicks-me-when-im-down.html">My Husband Kicks Me When Im Down</a></li>
+													<li class="list-group-item"><a href="/my-husband-lies-about-going-out.html">My Husband Lies About Going Out</a></li>
+													<li class="list-group-item"><a href="/my-husband-left-me-nothing-in-his-will.html">My Husband Left Me Nothing In His Will</a></li>
+													<li class="list-group-item"><a href="/my-husband-left-me-for-younger-woman.html">My Husband Left Me For Younger Woman</a></li>
+													<li class="list-group-item"><a href="/my-husband-left-me-for-someone-else-will-he-come-back.html">My Husband Left Me For Someone Else Will He Come Back</a></li>
+													<li class="list-group-item"><a href="/my-husband-left-me-for-a-prettier-woman.html">My Husband Left Me For A Prettier Woman</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

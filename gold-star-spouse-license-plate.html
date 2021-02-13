@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Gold Star Spouse License Plate - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Gold Star Spouse License Plate",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/bb/38/b1/bb38b173f12b5856604b1b47a5c6edaa.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gold+star+spouse+license+plate",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Gold Star Spouse License Plate</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Armed Forces or in forces incorporated as part of the US. License plates issued under this section must include the words Gold Star Mother Gold Star Father Gold Star Spouse or Gold Star Family and a gold star. Gold Star Family plate Who is eligible An owner who is the surviving spouse parent child or sibling of a deceased member of the US. <br>				
+			</p>
+										<a class="badge badge-info" href="/military-marriage-meme.html">military marriage meme</a>
+											<a class="badge badge-dark" href="/military-jobs-for-visually-impaired.html">military jobs for visually impaired</a>
+											<a class="badge badge-secondary" href="/military-life-insurance-sgli.html">military life insurance sgli</a>
+											<a class="badge badge-light" href="/military-making-parents-dependents.html">military making parents dependents</a>
+											<a class="badge badge-primary" href="/military-life-insurance-for-spouse.html">military life insurance for spouse</a>
+											<a class="badge badge-success" href="/military-jobs-for-retirees.html">military jobs for retirees</a>
+											<a class="badge badge-light" href="/military-jobs-for-veterans.html">military jobs for veterans</a>
+											<a class="badge badge-danger" href="/military-jobs-for-spouses-on-base.html">military jobs for spouses on base</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the ideal blog.  Our site provides you with suggestions for viewing the highest quality video and picture content, hunt and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie that you see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/0e/18/f90e185fd9aead85bad87acb9df7fc53.jpg" data-lightbox="roadtrip" data-title="Pin By Jacqueline Winters Reed On Grief I Am A Gold Star Mom Star Family Gold Star Mom Gold Stars">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/0e/18/f90e185fd9aead85bad87acb9df7fc53.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQot0m2MTV602UUeBBnT6rgs_b_1o-B633nMA';" alt="Pin By Jacqueline Winters Reed On Grief I Am A Gold Star Mom Star Family Gold Star Mom Gold Stars">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jacqueline Winters Reed On Grief I Am A Gold Star Mom Star Family Gold Star Mom Gold Stars</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/18/e1/4518e105faf75e8ac2fb644915a60cab.png" data-lightbox="roadtrip" data-title="La66 U S Army Wife License Plate Made In Usa Black Gold Army Mom Army Army Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/18/e1/4518e105faf75e8ac2fb644915a60cab.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFu9kg1_tUzoPrc-xEmuLXO0_y6PV_YG81kQ';" alt="La66 U S Army Wife License Plate Made In Usa Black Gold Army Mom Army Army Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">La66 U S Army Wife License Plate Made In Usa Black Gold Army Mom Army Army Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/fb/43/99fb4350d0f6b6f93a1e5cbdcf575dd1.jpg" data-lightbox="roadtrip" data-title="Order Your American Gold Star Mothers Shirts Here Gold Star Mother Gold Stars Stars">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/fb/43/99fb4350d0f6b6f93a1e5cbdcf575dd1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk5i0Otx6xYsox8xAHO1ozmafBJvHV5QA_Nw';" alt="Order Your American Gold Star Mothers Shirts Here Gold Star Mother Gold Stars Stars">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Order Your American Gold Star Mothers Shirts Here Gold Star Mother Gold Stars Stars</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/94/e2/45/94e2456c9fd2af5228d41a2b64b3be29.jpg" data-lightbox="roadtrip" data-title="Gold Star Military Surviving Spouse Pin">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/94/e2/45/94e2456c9fd2af5228d41a2b64b3be29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP0erK1UnnBcMTtGl1YRl0M-_b2F1De-WPwA';" alt="Gold Star Military Surviving Spouse Pin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gold Star Military Surviving Spouse Pin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/78/34/b4/7834b430a4d8e686f81ab7e8f20d60f7.jpg" data-lightbox="roadtrip" data-title="Gold Star Wife T Shirt Zazzle Com In 2020 T Shirts For Women Shirts Gold Stars">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/78/34/b4/7834b430a4d8e686f81ab7e8f20d60f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3suH4ZBRZyMenZ387WIJQIYTDJHIY0ePZ5A';" alt="Gold Star Wife T Shirt Zazzle Com In 2020 T Shirts For Women Shirts Gold Stars">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gold Star Wife T Shirt Zazzle Com In 2020 T Shirts For Women Shirts Gold Stars</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/09/1a/81/091a8126b9ba52a34488a9fab594bfc3.jpg" data-lightbox="roadtrip" data-title="U S Army Veteran Gold St Aluminum License Plate By 13 Tactical Cafepress Army Veteran Gift Gifts For Veterans Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/09/1a/81/091a8126b9ba52a34488a9fab594bfc3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp5rtDm7OwpCi9GnAebP8OSgLd4ETs8iu2MA';" alt="U S Army Veteran Gold St Aluminum License Plate By 13 Tactical Cafepress Army Veteran Gift Gifts For Veterans Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Veteran Gold St Aluminum License Plate By 13 Tactical Cafepress Army Veteran Gift Gifts For Veterans Army</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/e6/32/0e/e6320ebe174f13e92521d0fd55cf1b75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp5rtDm7OwpCi9GnAebP8OSgLd4ETs8iu2MA';" alt="U S Army Veteran Gold St Aluminum License Plate By 13 Tactical Cafepress Army Veteran Gift Gifts For Veterans Army">
+										<div class="card-body">
+						<h3 class="h5"><b>Beginning January 1 2018 a Gold Star Sons Daughters license plate will become available to individuals whose parent died while serving the country in the United States Armed Forces.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Gold star spouse license plate</strong>. 
+								
+																	Special plates for military personnel veterans spouses and gold star families. 
+																	Gold Star Families Motor Vehicle Code Section 66-3-42424 NMSA 1978 The Gold Star Family registration plate is available to the surviving parent spouse child or sibling of a service member killed in an armed conflict with an enemy of the United States. 
+																	DD Form 1300 Report of Casualty. 
+																	Section 341146rf19m of the Wisconsin statutes states that Gold Star plates are available for persons who have had an immediate family member die while serving in the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Gold Star Plates are available for the loved ones of those who served in the United States Armed Forces and lost his or her life. 
+																	Gold Star plates are available for passenger cars and trucks up to 18000 lbs and motorcyclesmopeds. 
+																	Armed forces or its allies or died as a result of injuries sustained in such service. 
+																	None for first plate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Gold Star plate is available for family members of a US armed forces member who died while in service to his or her country or as a result of his or her service. 
+																	To honor their deceased loved ones the creation of the plate was established by Senate Bill 122 passed by the 2017 Kentucky General Assembly. 
+																	55-4-288 c requires the Department of Revenue to determine eligibility for the Gold Star family plate by consulting with the Department of Veterans Services on appropriate documentation. 
+																	The department shall issue a specialty license plate for the mother father or surviving spouse or an immediate family member of a person who died while serving in the United States armed forces. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Widow or widower. 
+																	The Department of Finance and Administration is authorized to issue one 1 Gold Star Family special license plate to an applicant who establishes upon initial application that he or she is a family member of a deceased service member recognized by the United States Department of Defense. 
+																	The person must be related to the fallen service member as a spouse mother father sibling child stepparent or surviving spouse of such members sibling. 
+																	A Gold Star Family Plate can be issued without charge to spouses parents children siblings grandparents and grandchildren of soldiers who died while on active duty with the Armed Forces of the United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Armed Forces if the immediate family member meets any of. 
+																	These plates honor parents spouses children and siblings of military men and women who lost their lives in service to our Country. 
+																	Additional plates - 2650 annual fee. 
+																	Gold Star Survivor - Surviving Spouse License Plates such plates shall be designed to honor the surviving spouses and children of an honorably discharged veteran who died due to or as a consequence of a service-connected injury illness or disease. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You must be a WA vehicle owner and request a certified letter from the Department of Veterans Affairs as proof that you are a. 
+																	Olympia WA 98507-8500 Gold Star Parents Spouses Children and Siblings may qualify for a Gold Star License Plate under RCW 4618245. 
+																	Gold Star Family Plate Michigan is proud to offer the Gold Star Family plate to immediate family members of military personnel who lost their lives in combat. 
+																	Gold Star Family plates are available to the parent spouse sibling or child of a person who has died while. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Make your selection on page 2. 
+																	Armed Forces who died while serving on active duty during a time of military conflict. 
+																	1 a Active military personnel veterans or the surviving spouse of an eligible veteran if the spouse has not remarried may be issued special military or veteran license plates as provided in this section. 
+																	1000 upon initial registration to child or sibling of the service member. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Each qualifying applicant can register one private passenger motor vehicle or motorcycle owned and principally used by himher. 
+																	There is a limit of one Gold Star specialty plate per applicant. 
+																	An eligible family member may apply for a Gold Star license plate per OCGA. 
+																	AFFIDAVIT FOR GOLD STAR FAMILY LICENSE PLATES Section 4503546 of the Ohio Revised Code RC provides for the issuance of Gold Star Family License Plates to any member of the immediate family of a person who died in a combat zone while serving as a member of any branch of the armed forces of the United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are the surviving spouse parent child or a sibling of a lost service member you may apply for a Gold Star Plate. 
+																	Plates may be personalized for an additional fee of 40. 
+																	The personalization fee is non-refundable. 
+																	In addition the surviving spouse is eligible to reapply for and shall be issued gold star license plates if the deceased qualifying family member died on or after January 1 of the five 5 years preceding the date of reapplication for the gold star license plates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you have questions or need additional information please contact DVS at 651 297-3166. 
+																	Person with spouse parent sibling or child who served and died in the line of duty in the US. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e6/e0/e2/e6e0e2adffa5f57f5bf612431cd6d118.jpg" data-lightbox="roadtrip" data-title="Soulmate24 Com Dubai Man Spends 9 Million For A License Plate Mens Style Dubai License Plate Rolls Royce Dubai">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e6/e0/e2/e6e0e2adffa5f57f5bf612431cd6d118.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIqVrsgvr_j5QE0NrnUU1qmIZrAT06_TEb6Q';" alt="Soulmate24 Com Dubai Man Spends 9 Million For A License Plate Mens Style Dubai License Plate Rolls Royce Dubai">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soulmate24 Com Dubai Man Spends 9 Million For A License Plate Mens Style Dubai License Plate Rolls Royce Dubai</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/31/98/75/3198751dc0806718f613126a89b26f76.jpg" data-lightbox="roadtrip" data-title="You Tried Gold Star Keychain In 2021 Keychain Cool Keychains You Tried Star">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/31/98/75/3198751dc0806718f613126a89b26f76.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdZ_e4jMZ50lgcC2vO_krsh7Tj-UBc_B2M6A';" alt="You Tried Gold Star Keychain In 2021 Keychain Cool Keychains You Tried Star">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Tried Gold Star Keychain In 2021 Keychain Cool Keychains You Tried Star</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/43/cd/f743cd1f31e8b9098cae5b148b0a8236.jpg" data-lightbox="roadtrip" data-title="Personalized Gold Star 11in X 15in Flag With Options Gold Stars Gold Star Mother Blue Star Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/43/cd/f743cd1f31e8b9098cae5b148b0a8236.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlAjabDaDMRhMIrax_5xEx7uArUBUKxIErDA';" alt="Personalized Gold Star 11in X 15in Flag With Options Gold Stars Gold Star Mother Blue Star Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Personalized Gold Star 11in X 15in Flag With Options Gold Stars Gold Star Mother Blue Star Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/3a/e3/853ae3b97184dd68697e53f480d932b3.jpg" data-lightbox="roadtrip" data-title="Emt Heartbeat Flag Star Car Tag Car Tag Car Tags Tag Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/3a/e3/853ae3b97184dd68697e53f480d932b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9pj_t7UjHZ4ubsjmsNbITRZdruwLduxNu4w';" alt="Emt Heartbeat Flag Star Car Tag Car Tag Car Tags Tag Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emt Heartbeat Flag Star Car Tag Car Tag Car Tags Tag Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/cb/0e/3bcb0ee0310370a815858127c75b6e42.png" data-lightbox="roadtrip" data-title="Pin On Tennessee License Plates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/cb/0e/3bcb0ee0310370a815858127c75b6e42.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7JpOIL_lPREgcIEr0QtHhOtTOGgUriqEm8Q';" alt="Pin On Tennessee License Plates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tennessee License Plates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/77/55/347755659693df7a69f6aa29e2f85f32.jpg" data-lightbox="roadtrip" data-title="Noble Shriner License Plate Frame Cover License Plate Frames License Plate Frame">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/77/55/347755659693df7a69f6aa29e2f85f32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6yYtlicNBw4YsDBioV0TklqNsxLfO-fgigA';" alt="Noble Shriner License Plate Frame Cover License Plate Frames License Plate Frame">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Noble Shriner License Plate Frame Cover License Plate Frames License Plate Frame</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/82/1c/ea821c979286fbfe15ab00e902170fd4.jpg" data-lightbox="roadtrip" data-title="Us Navy Blue Military License Plate Frame Holder Car Tag License Plate Frames License Plate Plate Frames">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/82/1c/ea821c979286fbfe15ab00e902170fd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxWJ2bw2mIupp-SgLgBkn_7SYBc2ZcpOmIJw';" alt="Us Navy Blue Military License Plate Frame Holder Car Tag License Plate Frames License Plate Plate Frames">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Navy Blue Military License Plate Frame Holder Car Tag License Plate Frames License Plate Plate Frames</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/ac/51/d3ac51fec97e73cccab528117d4a8361.jpg" data-lightbox="roadtrip" data-title="Pin On Decorative Signs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/ac/51/d3ac51fec97e73cccab528117d4a8361.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU59AQ5-YmdR3n6CmsdQAoS3ko15yhBGv8Yg';" alt="Pin On Decorative Signs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Decorative Signs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/2d/b4/382db422730fc41cc5eb3808de9deb02.jpg" data-lightbox="roadtrip" data-title="Firefighter S Wife Car Tag Firefighter Wife Car Tag Firefighter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/2d/b4/382db422730fc41cc5eb3808de9deb02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoUcpKeU_DYSUHTwKrKwc7j33133A49_69Vw';" alt="Firefighter S Wife Car Tag Firefighter Wife Car Tag Firefighter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Firefighter S Wife Car Tag Firefighter Wife Car Tag Firefighter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/5c/01/a15c01cbfcb49fa98c7e470346943488.jpg" data-lightbox="roadtrip" data-title="Us Navy Chief Tested American Flag Aluminum License Plate Navy Chief Navy Us Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/5c/01/a15c01cbfcb49fa98c7e470346943488.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMBwKp4NTFNK7DpjxwSS2ytI5eVV-h3p5RJw';" alt="Us Navy Chief Tested American Flag Aluminum License Plate Navy Chief Navy Us Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Navy Chief Tested American Flag Aluminum License Plate Navy Chief Navy Us Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e6/32/0e/e6320ebe174f13e92521d0fd55cf1b75.jpg" data-lightbox="roadtrip" data-title="Gold Glitter Sparkle Eyelashes Monogram Name License Plate Zazzle Com In 2020 Monogram Gold Glitter Personlized Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e6/32/0e/e6320ebe174f13e92521d0fd55cf1b75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkBO2UQZOFaluHfuX4M1ANfOBfohFBF9b7_w';" alt="Gold Glitter Sparkle Eyelashes Monogram Name License Plate Zazzle Com In 2020 Monogram Gold Glitter Personlized Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gold Glitter Sparkle Eyelashes Monogram Name License Plate Zazzle Com In 2020 Monogram Gold Glitter Personlized Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/7e/f8/c77ef8a6eb4b12825b7b179ebed4febd.jpg" data-lightbox="roadtrip" data-title="Texaslicenseplate Small Star Black At Myplates Com Personalized License Plates License Plate Plates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/7e/f8/c77ef8a6eb4b12825b7b179ebed4febd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRshP8NNEN_BMQoiTaN0vDdgLK8-kWEgMd5hw';" alt="Texaslicenseplate Small Star Black At Myplates Com Personalized License Plates License Plate Plates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texaslicenseplate Small Star Black At Myplates Com Personalized License Plates License Plate Plates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/bb/38/b1/bb38b173f12b5856604b1b47a5c6edaa.jpg" data-lightbox="roadtrip" data-title="Red 3d I Love My Wife License Plate Zazzle Com In 2020 I Love My Wife License Plate My Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/bb/38/b1/bb38b173f12b5856604b1b47a5c6edaa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPjuwr_4ZL0rVkJd7o8bghwCa0o8u1-33h6A';" alt="Red 3d I Love My Wife License Plate Zazzle Com In 2020 I Love My Wife License Plate My Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Red 3d I Love My Wife License Plate Zazzle Com In 2020 I Love My Wife License Plate My Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/why-your-spouse-accuses-you-of-cheating.html">Why Your Spouse Accuses You Of Cheating</a></li>
+													<li class="list-group-item"><a href="/wife-of-us-marine-deported-to-mexico.html">Wife Of Us Marine Deported To Mexico</a></li>
+													<li class="list-group-item"><a href="/why-wont-my-wife-forgive-me.html">Why Wont My Wife Forgive Me</a></li>
+													<li class="list-group-item"><a href="/will-i-lose-my-ex-husbands-military-retirement-if-i-remarry.html">Will I Lose My Ex Husbands Military Retirement If I Remarry</a></li>
+													<li class="list-group-item"><a href="/womens-army-corps-wikipedia.html">Womens Army Corps Wikipedia</a></li>
+													<li class="list-group-item"><a href="/will-veterans-benefits-pay-for-nursing-home.html">Will Veterans Benefits Pay For Nursing Home</a></li>
+													<li class="list-group-item"><a href="/wife-kicked-me-out-where-can-i-go.html">Wife Kicked Me Out Where Can I Go</a></li>
+													<li class="list-group-item"><a href="/why-my-sister-is-jealous-of-me.html">Why My Sister Is Jealous Of Me</a></li>
+													<li class="list-group-item"><a href="/why-my-wife-doesnt-want-to-make-love.html">Why My Wife Doesnt Want To Make Love</a></li>
+													<li class="list-group-item"><a href="/why-my-wife-constantly-criticizes-me.html">Why My Wife Constantly Criticizes Me</a></li>
+													<li class="list-group-item"><a href="/will-the-military-pay-for-my-wifes-college.html">Will The Military Pay For My Wifes College</a></li>
+													<li class="list-group-item"><a href="/widow-of-retired-military-benefits.html">Widow Of Retired Military Benefits</a></li>
+													<li class="list-group-item"><a href="/why-wife-doesnt-respect-husband.html">Why Wife Doesnt Respect Husband</a></li>
+													<li class="list-group-item"><a href="/will-mycah-pittman-get-drafted.html">Will Mycah Pittman Get Drafted</a></li>
+													<li class="list-group-item"><a href="/will-my-husband-get-my-social-security-if-i-die.html">Will My Husband Get My Social Security If I Die</a></li>
+													<li class="list-group-item"><a href="/will-the-army-pay-for-my-spouse-to-move.html">Will The Army Pay For My Spouse To Move</a></li>
+													<li class="list-group-item"><a href="/will-military-wives-be-on-netflix.html">Will Military Wives Be On Netflix</a></li>
+													<li class="list-group-item"><a href="/will-army-wives-come-back-to-netflix.html">Will Army Wives Come Back To Netflix</a></li>
+													<li class="list-group-item"><a href="/why-to-join-indian-army-as-an-officer.html">Why To Join Indian Army As An Officer</a></li>
+													<li class="list-group-item"><a href="/will-army-wives-return-to-netflix.html">Will Army Wives Return To Netflix</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

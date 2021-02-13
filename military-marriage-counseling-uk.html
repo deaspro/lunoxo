@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Marriage Counseling Uk - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Marriage Counseling Uk",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/57/6b/f0/576bf0c98ed6edbd5c7abde3d7b57e94.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+marriage+counseling+uk",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Marriage Counseling Uk</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Specialist mental health services are primarily delivered through 16 military Departments of Community Mental Health DCMHs located in large military centres across the UK as well as centres. These counseling professionals understand the unique challenges you face and they can help. You have to go through counseling but you get free lodging at the Army resort get to see the Alps. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/mba-scholarship-for-graduate-students.html">mba scholarship for graduate students</a>
+											<a class="badge badge-dark" href="/marine-corps-spouse-education-benefits.html">marine corps spouse education benefits</a>
+											<a class="badge badge-warning" href="/me-and-my-spouse-are-drifting-apart.html">me and my spouse are drifting apart</a>
+											<a class="badge badge-danger" href="/masters-athletics-british-records.html">masters athletics british records</a>
+											<a class="badge badge-success" href="/masters-degree-scholarships-for-military-spouses.html">masters degree scholarships for military spouses</a>
+											<a class="badge badge-primary" href="/masters-swimming-british-records.html">masters swimming british records</a>
+											<a class="badge badge-secondary" href="/marine-spouse-death-benefits.html">marine spouse death benefits</a>
+											<a class="badge badge-dark" href="/marine-le-pen-husband.html">marine le pen husband</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to pay a visit to the right site.  Our website provides you with suggestions for seeing the highest quality video and image content, hunt and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie for you to see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lh3.googleusercontent.com/tw5nAJms0fJBLpz8INYqrxhAQWWz4TX4t6cpk4otR0fjx3JmRZdx2RBDptiUDaM-NP2HqiSMwdsq8ItVqeZM=s0" data-lightbox="roadtrip" data-title="The Best Advice For The Military Girlfriend">
+											<img class="card-img v-image ads-img " src="https://lh3.googleusercontent.com/tw5nAJms0fJBLpz8INYqrxhAQWWz4TX4t6cpk4otR0fjx3JmRZdx2RBDptiUDaM-NP2HqiSMwdsq8ItVqeZM=s0" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyE4vu3KoIrBFF5cNuNavtFcA5RXeeGR9i1w';" alt="The Best Advice For The Military Girlfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Advice For The Military Girlfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/1c/11/6d1c117f186590bf4e6c7cc489adfdfd.png" data-lightbox="roadtrip" data-title="Are Soldiers Faithful During Deployment Military Divorce Cheating Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/1c/11/6d1c117f186590bf4e6c7cc489adfdfd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdXd_cMxD0m7x5ZBZ8z_wienZqAxk8AZ4TMQ';" alt="Are Soldiers Faithful During Deployment Military Divorce Cheating Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are Soldiers Faithful During Deployment Military Divorce Cheating Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wheretotalk.org/wp-content/uploads/charities_war_veterans.jpg" data-lightbox="roadtrip" data-title="Counselling And Therapy Services From Charities Where To Talk">
+											<img class="card-img v-image ads-img " src="https://www.wheretotalk.org/wp-content/uploads/charities_war_veterans.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM_mKLvF7FbH68VB-4qH-sN8LvuHedcIHNIw';" alt="Counselling And Therapy Services From Charities Where To Talk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Counselling And Therapy Services From Charities Where To Talk</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="eGWFsEaGlKQu9M" data-lightbox="roadtrip" data-title="Https Www England Nhs Uk Commissioning Wp Content Uploads Sites 12 2016 09 Veterans Mh Services Engagement Rep Pdf">
+											<img class="card-img v-image ads-img " src="eGWFsEaGlKQu9M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5E5r2CpwVpZQpMpv_SZM8tdJTu3ykQfdIYA';" alt="Https Www England Nhs Uk Commissioning Wp Content Uploads Sites 12 2016 09 Veterans Mh Services Engagement Rep Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www England Nhs Uk Commissioning Wp Content Uploads Sites 12 2016 09 Veterans Mh Services Engagement Rep Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/22499646/origin.jpg" data-lightbox="roadtrip" data-title="10 Instagram Accounts Every Military Spouse Should Follow We Are The Mighty">
+											<img class="card-img v-image ads-img " src="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/22499646/origin.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEpYdby_GTfAKawVXaRHxCvQAYvK7obNcPHg';" alt="10 Instagram Accounts Every Military Spouse Should Follow We Are The Mighty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Instagram Accounts Every Military Spouse Should Follow We Are The Mighty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="YBQWeEYgYypSZM" data-lightbox="roadtrip" data-title="Https Www Kcl Ac Uk Kcmhr Publications Assetfiles 2015 Keeling2015 Pdf">
+											<img class="card-img v-image ads-img " src="YBQWeEYgYypSZM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToDxat50-kN9rPUU69wiJtEw6HyO6Sen2Zdg';" alt="Https Www Kcl Ac Uk Kcmhr Publications Assetfiles 2015 Keeling2015 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Kcl Ac Uk Kcmhr Publications Assetfiles 2015 Keeling2015 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/84/69/24/84692418d07ed86fc648c28bdb3720b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToDxat50-kN9rPUU69wiJtEw6HyO6Sen2Zdg';" alt="Https Www Kcl Ac Uk Kcmhr Publications Assetfiles 2015 Keeling2015 Pdf">
+										<div class="card-body">
+						<h3 class="h5"><b>Military Marriage Counseling Copes With Familiar Stressors Depression andor a drug and alcohol problem impact many military families.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military marriage counseling uk</strong>. 
+								
+																	The health benefits military members have typically cover these services as well. 
+																	Masters in MFT Programs. 
+																	Marriage counseling or couples therapy is similar to family counseling but focuses primarily on committed couples both married and otherwise. 
+																	Learn relationship skills and build resilience in your marriage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Non-medical counseling resources available through Military OneSource and the Military Family Life Consultant program can help with marital problems before and after they evolve into more serious. 
+																	Learn and Live Military Marriage counseling finds a population that is very diverse. 
+																	Some of their services are currently suspended due to a lack of funding but they plan to resume services as soon as they find new funding sources. 
+																	Luckily military marriage counseling can help military couples when they face marital issues. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Marriage counseling aims to assist couples in identifying and negotiating differences solve relationship problems and communicate more effectively. 
+																	As a Department of Defense-funded program we put expert confidential help to work for service members immediate family and survivors who need a little extra guidance for all things MilLife. 
+																	Military Marriage Counseling in Bethesda Marriage is a complex and challenging endeavor that will leave both parties feeling strained at times over the course of years being together. 
+																	Behavior problems with younger children. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See more ideas about marriage military marriage marriage relationship. 
+																	Enter a location below to continue or browse all locationsYou can also narrow your search. 
+																	Free service for members of the armed forces including reservists and their families. 
+																	The military also provides family health coverage housing day care services and schooling systems plus direct support for married couples. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military OneSource is your free 247 gateway to information answers and support. 
+																	As one respondent explained. 
+																	Any marriage can benefit from the perspective of a qualified professional. 
+																	The breakdown of a marriagecivil partnership is a private matter between two individuals but the Army is able to offer help and support. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Marriage Resources Support Encouragement Collection by Operation We Are Here Military Resources Last updated 1 day ago. 
+																	Once a month theres a marriage retreat. 
+																	A limited number of references have been included below to provide some context to the counselling research. 
+																	There are licensed counselors and marriage counseling military experts available for those who need it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Royal Air Force Benevolent Fund support the programme which is available to serving RAF personnel their partners and family and veterans whether they are married living together separated divorced in a same sex relationship civil partnership or coping with the end of a relationship. 
+																	No one feels that challenge or strain more than military couples who move every few years and are separated for long periods of time. 
+																	The Soldiers Project offers free confidential and unlimited mental health services including marriage and family counseling to post-911 veterans and their family members regardless of discharge status branch of service or combat experience. 
+																	These can be received as face-to-face counselling over the phone by webcam or via email meaning you can get in touch whichever way suits you best even if you are deployed overseas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military marriage counseling is keenly focused on managing the mental stress of being a warrior. 
+																	Theyre highly qualified well-trained professionals who deliver valuable face-to-face counseling services to the military community. 
+																	Schedule a free counseling appointment by calling 800-342-9647 247365. 
+																	Understanding Military Marriage Counseling. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The majority of relevant evidence in relation to the psychological treatment of military. 
+																	On the UK mainland access to publicly-funded counselling is provided under contract and can be obtained through referral from the Army Welfare Service AWS. 
+																	Financial stress and caring for aging parents. 
+																	Find Relationship counselling services. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military personnel in both the UK and particularly US literature. 
+																	And military marriages struggle with the typical constellation of problems and challenges faced by civilian families. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/69/24/84692418d07ed86fc648c28bdb3720b5.jpg" data-lightbox="roadtrip" data-title="Dating Marriage Resources For Military Veteran Couples Military Marriage Dating Marriage Marriage Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/69/24/84692418d07ed86fc648c28bdb3720b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCoTysRfzYtVK7Llh61o3j-rofgY0Pr8Risg';" alt="Dating Marriage Resources For Military Veteran Couples Military Marriage Dating Marriage Marriage Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dating Marriage Resources For Military Veteran Couples Military Marriage Dating Marriage Marriage Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="HMwQx-FVpPVIqM" data-lightbox="roadtrip" data-title="Https Www Bacp Co Uk Media 1964 Bacp Research Relating To Counselling Military Service Personnel Pdf">
+											<img class="card-img v-image ads-img " src="HMwQx-FVpPVIqM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-qPMEdrM_oWv_mr3k47Zca5E1pnlKiVjBaw';" alt="Https Www Bacp Co Uk Media 1964 Bacp Research Relating To Counselling Military Service Personnel Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Bacp Co Uk Media 1964 Bacp Research Relating To Counselling Military Service Personnel Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.militaryspouse.com/wp-content/uploads/2018/08/Military-Marriage-Benefits.png" data-lightbox="roadtrip" data-title="8 Awesome Military Marriage Benefits You Have As A Spouse Military Spouse">
+											<img class="card-img v-image ads-img " src="https://www.militaryspouse.com/wp-content/uploads/2018/08/Military-Marriage-Benefits.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiMyB23pgqsh35YECfNI0U7m1llOD7P4jxDA';" alt="8 Awesome Military Marriage Benefits You Have As A Spouse Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Awesome Military Marriage Benefits You Have As A Spouse Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/d7/a3/69d7a32c7a1584d773d751eff314d875.png" data-lightbox="roadtrip" data-title="You Know You Are A Military Brat If 1 A Compass Rose Military Brat Military Kids Brat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/d7/a3/69d7a32c7a1584d773d751eff314d875.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWopAiFtiLvKSKkozfsS3XJfD9Nm5cO-Q2Aw';" alt="You Know You Are A Military Brat If 1 A Compass Rose Military Brat Military Kids Brat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Know You Are A Military Brat If 1 A Compass Rose Military Brat Military Kids Brat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/31/8a/40318afd85d140e18f99dfb46c04155e.jpg" data-lightbox="roadtrip" data-title="Pin On School Counseling Ideas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/31/8a/40318afd85d140e18f99dfb46c04155e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXbpalRc4B9KxY4fG7Ht9CY2XkyjVaGqeKwg';" alt="Pin On School Counseling Ideas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On School Counseling Ideas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/57/6b/f0/576bf0c98ed6edbd5c7abde3d7b57e94.jpg" data-lightbox="roadtrip" data-title="Be The Change Onefleshmarriage Marriage Tips Marriage Marriage Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/57/6b/f0/576bf0c98ed6edbd5c7abde3d7b57e94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy2ColSO07jr_f0MNjzP_bczJeYE6Wo60YdA';" alt="Be The Change Onefleshmarriage Marriage Tips Marriage Marriage Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Be The Change Onefleshmarriage Marriage Tips Marriage Marriage Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/58/3f/e7583f922eb087da9ad7b3186604121c.jpg" data-lightbox="roadtrip" data-title="Plz Like Comment Or Repin If You Like Counseling Counsellor Post">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/58/3f/e7583f922eb087da9ad7b3186604121c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkH2RFIxcTX7qLa4fLsOmCLTfB3pELL4kdLQ';" alt="Plz Like Comment Or Repin If You Like Counseling Counsellor Post">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Plz Like Comment Or Repin If You Like Counseling Counsellor Post</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/b0/90/0db0904118b2afdf7a319b42b51f29ce.png" data-lightbox="roadtrip" data-title="5 Ways To Keep Your Marriage Army Strong In 2020 Army Strong Army Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/b0/90/0db0904118b2afdf7a319b42b51f29ce.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzm-C-pXCmH7CHXzQ2hhDpiIpKy9PoqQIcqA';" alt="5 Ways To Keep Your Marriage Army Strong In 2020 Army Strong Army Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Ways To Keep Your Marriage Army Strong In 2020 Army Strong Army Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/86/87/0e86872ed416c42b0ce9f44fd3784032.jpg" data-lightbox="roadtrip" data-title="A Soldier S Poem Soldier Quotes Soldier Poem Veterans Day Poem">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/86/87/0e86872ed416c42b0ce9f44fd3784032.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD3g5H9b_YDGwPK9nIwTSbwO79UuZ11lAObQ';" alt="A Soldier S Poem Soldier Quotes Soldier Poem Veterans Day Poem">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Soldier S Poem Soldier Quotes Soldier Poem Veterans Day Poem</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/9c/2d/b09c2db1319fe55a091ab5db19a7b282.png" data-lightbox="roadtrip" data-title="Free E Book Military Families And Students With Learning Disabilities Learning Disability Awareness Learning Disabilities Military Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/9c/2d/b09c2db1319fe55a091ab5db19a7b282.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3W9x2kPcWUYn4caUUKFlk0uSdNTHDL8AlKw';" alt="Free E Book Military Families And Students With Learning Disabilities Learning Disability Awareness Learning Disabilities Military Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free E Book Military Families And Students With Learning Disabilities Learning Disability Awareness Learning Disabilities Military Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/8b/b7/bd8bb7d10386497749c7b58c01e80eb7.png" data-lightbox="roadtrip" data-title="Snu For Veterans Veteran Student Career Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/8b/b7/bd8bb7d10386497749c7b58c01e80eb7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc_QL4JCbEy9Xp50PTdMC5VaJ4IzlUkvyrEQ';" alt="Snu For Veterans Veteran Student Career Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Snu For Veterans Veteran Student Career Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/top-military-spouse-benefits.jpg" data-lightbox="roadtrip" data-title="5 Top Military Spouse Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/top-military-spouse-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF0oveY9ro574qkxemJ221vg2HzcoRtgskAA';" alt="5 Top Military Spouse Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Top Military Spouse Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/c2/3d/a5c23db41357da894839934143bd7d37.png" data-lightbox="roadtrip" data-title="Pin By Cezar Telles On Keep Calm And Army Family Army Quotes Army Strong">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/c2/3d/a5c23db41357da894839934143bd7d37.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxCgEjc1trtBVtsYry2zv9J9bKL5dIbh5PGA';" alt="Pin By Cezar Telles On Keep Calm And Army Family Army Quotes Army Strong">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Cezar Telles On Keep Calm And Army Family Army Quotes Army Strong</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/do-military-spouses-get-an-id.html">Do Military Spouses Get An Id</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-discounts.html">Do Military Spouses Get Discounts</a></li>
+													<li class="list-group-item"><a href="/divorce-support-for-military-spouse.html">Divorce Support For Military Spouse</a></li>
+													<li class="list-group-item"><a href="/do-military-dependents-get-tsa-precheck.html">Do Military Dependents Get Tsa Precheck</a></li>
+													<li class="list-group-item"><a href="/do-ex-spouses-of-deceased-veterans-get-benefits.html">Do Ex Spouses Of Deceased Veterans Get Benefits</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-burial-benefits.html">Do Military Spouses Get Burial Benefits</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-college-benefits.html">Do Military Spouses Get College Benefits</a></li>
+													<li class="list-group-item"><a href="/do-military-dependents-get-dental-coverage.html">Do Military Dependents Get Dental Coverage</a></li>
+													<li class="list-group-item"><a href="/do-military-reserve-get-benefits.html">Do Military Reserve Get Benefits</a></li>
+													<li class="list-group-item"><a href="/divorce-when-spouse-is-in-military.html">Divorce When Spouse Is In Military</a></li>
+													<li class="list-group-item"><a href="/do-military-families-live-on-base.html">Do Military Families Live On Base</a></li>
+													<li class="list-group-item"><a href="/divorced-navy-wife-benefits.html">Divorced Navy Wife Benefits</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-dental-insurance.html">Do Military Spouses Get Dental Insurance</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-benefits.html">Do Military Spouses Get Benefits</a></li>
+													<li class="list-group-item"><a href="/divorce-military-spouse-tricare.html">Divorce Military Spouse Tricare</a></li>
+													<li class="list-group-item"><a href="/divorce-retired-military-spouse-benefits.html">Divorce Retired Military Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/do-i-have-to-quarantine-if-my-husband-has-covid.html">Do I Have To Quarantine If My Husband Has Covid</a></li>
+													<li class="list-group-item"><a href="/do-dual-military-both-get-separation-pay.html">Do Dual Military Both Get Separation Pay</a></li>
+													<li class="list-group-item"><a href="/do-military-dependents-get-tuition-assistance.html">Do Military Dependents Get Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/do-husbands-gain-weight-during-pregnancy.html">Do Husbands Gain Weight During Pregnancy</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

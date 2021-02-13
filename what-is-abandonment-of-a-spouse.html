@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is Abandonment Of A Spouse - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is Abandonment Of A Spouse",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/e3/2d/57/e32d57d17dcd96b9c75507fd95ac8dd9.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+abandonment+of+a+spouse",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is Abandonment Of A Spouse</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Abandonment divorce is a dissolution of marriage based on the fact that one spouse left the marital home and did not return. So although it may be wrong for your partner to abandon you it is not illegal and it is not a valid ground for divorce. Marital abandonment occurs when one spouse deliberately severs all ties with his or her family with no intention of returning. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/mycargr.html">mycargr</a>
+											<a class="badge badge-danger" href="/mycargo-system.html">mycargo system</a>
+											<a class="badge badge-dark" href="/mycare-trinity-health.html">mycare trinity health</a>
+											<a class="badge badge-primary" href="/mycareersfuture.html">mycareersfuture</a>
+											<a class="badge badge-light" href="/mycarede-erfahrungen.html">mycarede erfahrungen</a>
+											<a class="badge badge-dark" href="/mycarhelpline.html">mycarhelpline</a>
+											<a class="badge badge-success" href="/mycargo-bike.html">mycargo bike</a>
+											<a class="badge badge-info" href="/mycargo-fleet.html">mycargo fleet</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to pay a visit to the ideal site.  Our site gives you suggestions for viewing the maximum quality video and image content, hunt and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video that you see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/e6/70/59e67062d8f7f7e86a74edfad023746c.jpg" data-lightbox="roadtrip" data-title="The Mind Of A Husband Who Easily Discards His Wife Runawayhusband Ex Husband Quotes Husband Quotes Marriage Husband Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/e6/70/59e67062d8f7f7e86a74edfad023746c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRErsjO8EoKj8CiUhP2yLcTtOPLG55pB2b67A';" alt="The Mind Of A Husband Who Easily Discards His Wife Runawayhusband Ex Husband Quotes Husband Quotes Marriage Husband Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Mind Of A Husband Who Easily Discards His Wife Runawayhusband Ex Husband Quotes Husband Quotes Marriage Husband Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/9d/8c/2f/9d8c2f3eed617a20c4f06d7d07e2537a.jpg" data-lightbox="roadtrip" data-title="Emotional Abandonment When Your Spouse Shuts You Out Marriage Missions International Emotional Abandonment Emotions Spouse Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/9d/8c/2f/9d8c2f3eed617a20c4f06d7d07e2537a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7yVobyFCnnoeEFQpLL2xvcLQO7JM46YsjNA';" alt="Emotional Abandonment When Your Spouse Shuts You Out Marriage Missions International Emotional Abandonment Emotions Spouse Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emotional Abandonment When Your Spouse Shuts You Out Marriage Missions International Emotional Abandonment Emotions Spouse Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/63/b4/0463b4be72c9a28b47b9e0c0580cab77.jpg" data-lightbox="roadtrip" data-title="Losing A Spouse From Abandonment Is Difficult Being Separated From Your Loved One Can Be So Painful Some Days You May Cry Alot And Other Days You Feel Just Fi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/63/b4/0463b4be72c9a28b47b9e0c0580cab77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXaxjNlcDqaWK6QPUr2pZRyjBI2ROpzu_tTQ';" alt="Losing A Spouse From Abandonment Is Difficult Being Separated From Your Loved One Can Be So Painful Some Days You May Cry Alot And Other Days You Feel Just Fi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Losing A Spouse From Abandonment Is Difficult Being Separated From Your Loved One Can Be So Painful Some Days You May Cry Alot And Other Days You Feel Just Fi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/be/9a/c7be9a6f5a56b94120ab20d1fd10fa3c.png" data-lightbox="roadtrip" data-title="Marital Abandonment Defined And Discussed With Examples The Severing Of Ties With The Family By A Spouse Who Forsakes His Respon Abandoned Example Definitions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/be/9a/c7be9a6f5a56b94120ab20d1fd10fa3c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN5Mxqxp0DKG-F3BVWiz6czvI6SS9i-Y8flQ';" alt="Marital Abandonment Defined And Discussed With Examples The Severing Of Ties With The Family By A Spouse Who Forsakes His Respon Abandoned Example Definitions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marital Abandonment Defined And Discussed With Examples The Severing Of Ties With The Family By A Spouse Who Forsakes His Respon Abandoned Example Definitions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/40/fb/7940fb4328739e35a2f5ba38c117e169.jpg" data-lightbox="roadtrip" data-title="Makes Me Think Of How I Felt In My Marriage Our Marriage Was Miserable Because My Husband Was Emotional Abandonment Abandonment Quotes Marriage Prayer Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/40/fb/7940fb4328739e35a2f5ba38c117e169.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsU7DAQ14a2s2d9a0KTGIRHIcq4aMCmu73hQ';" alt="Makes Me Think Of How I Felt In My Marriage Our Marriage Was Miserable Because My Husband Was Emotional Abandonment Abandonment Quotes Marriage Prayer Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Makes Me Think Of How I Felt In My Marriage Our Marriage Was Miserable Because My Husband Was Emotional Abandonment Abandonment Quotes Marriage Prayer Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/2d/57/e32d57d17dcd96b9c75507fd95ac8dd9.jpg" data-lightbox="roadtrip" data-title="A Prayer For The Wife Feeling Abandoned Heartencouragement Prayer For My Marriage Prayers For My Husband Prayer For Husband">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/2d/57/e32d57d17dcd96b9c75507fd95ac8dd9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-0f1ld6rY7_GaCJMbDgfwe4NN8MecfkFFtw';" alt="A Prayer For The Wife Feeling Abandoned Heartencouragement Prayer For My Marriage Prayers For My Husband Prayer For Husband">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Prayer For The Wife Feeling Abandoned Heartencouragement Prayer For My Marriage Prayers For My Husband Prayer For Husband</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/00/38/61/003861e3a9211097c455b809436594f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-0f1ld6rY7_GaCJMbDgfwe4NN8MecfkFFtw';" alt="A Prayer For The Wife Feeling Abandoned Heartencouragement Prayer For My Marriage Prayers For My Husband Prayer For Husband">
+										<div class="card-body">
+						<h3 class="h5"><b>Sometimes though one spouse leaves the other either physically or in their actions.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is abandonment of a spouse</strong>. 
+								
+																	This includes no longer taking care of financial obligations and support without a good reason. 
+																	This could be the cliche scenario in which one spouse goes out for a pack of cigarettes and is never heard from again. 
+																	Often the absent spouse will have waited until they obtained a British passport before withdrawing funds from their joint bank account and abandoning their spouse. 
+																	Abandonment as a Divorce Ground Ohios statutes call abandonment a willful absence. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are some elements that tend to be common however. 
+																	He or she has in effect walked away from the family and all related financial obligations and support without a good reason. 
+																	This means that a Court does not have to find one spouse or the other is at fault for the breakdown of the marriage. 
+																	Every state has its own definition of abandonment or desertion but generally it means that one spouse leaves the family home and the relationship without communicating and without warning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is a growing trend in the United States. 
+																	Ultimately marital abandonment occurs when one spouse completely severs ties with the other and their family therefore abandoning their family duties. 
+																	In Alabama a continuous absence from the marriage bed and board is considered voluntary abandonment. 
+																	In emotional abandonment the spouse has essentially checked out and there is no real communication or relationship. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Marital abandonment refers to a situation in which one spouse severs ties with the family abandoning their responsibilities and duties to the family. 
+																	Marital abandonment usually occurs when one spouse purposefully makes a unilateral decision to physically leave or desert the other choosing to no longer reside in the same household as their spouse. 
+																	This person has left their spouse and severed all ties and responsibility including related financial obligations without good reason. 
+																	The only ground for a divorce in Canada in the Divorce Act is marriage breakdown. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The exact elements necessary to qualify for this type of divorce vary from one state to another. 
+																	Romance fraud is where a marriage has been entered into by one party with the specific intention of defrauding their spouse and ultimately abandoning them. 
+																	Everyone deals with death or the end of relationships in their. 
+																	Within a legal context spousal abandonment refers to the deliberate abandonment of a spouse without the intention of returning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Simply moving out of the family home in an attempt to create a temporary or permanent separation is not considered abandonment. 
+																	The abandoning spouse has severed all ties and responsibility to his or her family. 
+																	This occurs when one person stops providing for the care protection or support for their spouse who has. 
+																	This means that one spouse leaves without the intent of returning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fear of abandonment is a type of anxiety that some people experience when faced with the idea of losing someone they care about. 
+																	Marital desertion abandonment refers to a situation in which one spouse severs ties with the family forsaking his or her responsibilities and duties to the family. 
+																	Its important to figure out whether your state is a at-fault or no-fault divorce state. 
+																	Simply moving out of the family home in an attempt to create a temporary or permanent separation is not considered abandonment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youll need to check local laws to determine the exact term and definition that applies to divorce in your state. 
+																	If your spouse has abandoned you this is a fault ground in Ohio. 
+																	Spousal abandonment occurs when one spouse leaves or forsakes the other spouse without justification and renounces their duties and responsibilities as outlined by the marital agreement. 
+																	In cases of emotional abandonment there is almost always a point of contention and it is usually necessary to get outside help. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	One major type of marital abandonment is criminal abandonment. 
+																	This is known as marital abandonment. 
+																	Spousal Abandonment Syndrome is the opposite of the traditional divorce which typically comes after years of trying to work out difficulties in a marriage. 
+																	Marital abandonment refers to a situation in which one spouse severs ties with the family forsaking his or her responsibilities and duties to the family. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Spousal Abandonment Syndrome is when one of the spouses leaves the marriage without any warning andusuallywithout having shown any signs of unhappiness with the relationship. 
+																	Divorce requires a fault ground and court involvement to sort out issues such as property division support and custody. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/e2/aa/24e2aa8068bc6c5677698635c2e8734d.png" data-lightbox="roadtrip" data-title="5 Emotional Abandonment Signs In Marriage Emotional Abandonment Emotions Feeling Abandoned">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/e2/aa/24e2aa8068bc6c5677698635c2e8734d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1VDqXmC9DpcWPXc-565E-UFwD9Wh1DrNsrQ';" alt="5 Emotional Abandonment Signs In Marriage Emotional Abandonment Emotions Feeling Abandoned">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Emotional Abandonment Signs In Marriage Emotional Abandonment Emotions Feeling Abandoned</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/55/ad/0555ad14f15247b7e6e02f5ddc5f875f.png" data-lightbox="roadtrip" data-title="When One Spouse Just Up And Leaves The Marriage The Other May Have A Fault Ground For Divorce Abandonment Which Is Als Divorce Grounds For Divorce Abandoned">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/55/ad/0555ad14f15247b7e6e02f5ddc5f875f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLrwVLVg_3tlCdjfz36wvjqAe-q3YPz3ZUwA';" alt="When One Spouse Just Up And Leaves The Marriage The Other May Have A Fault Ground For Divorce Abandonment Which Is Als Divorce Grounds For Divorce Abandoned">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When One Spouse Just Up And Leaves The Marriage The Other May Have A Fault Ground For Divorce Abandonment Which Is Als Divorce Grounds For Divorce Abandoned</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/73/9a/66/739a66388f91fadf07b64e6c4ce719e2.jpg" data-lightbox="roadtrip" data-title="For The Abandoned Wife There Is Hope In Jesus This One S For You 3 Lonely Marriage Abandonment Quotes Wife Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/73/9a/66/739a66388f91fadf07b64e6c4ce719e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOTmF5nTPWivA_DY4WWOz0jKGigZlv5RIMVw';" alt="For The Abandoned Wife There Is Hope In Jesus This One S For You 3 Lonely Marriage Abandonment Quotes Wife Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For The Abandoned Wife There Is Hope In Jesus This One S For You 3 Lonely Marriage Abandonment Quotes Wife Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/2a/dd/4e2add6b616b650203720f4465f1d68c.jpg" data-lightbox="roadtrip" data-title="5 Emotional Abandonment Signs In Marriage Emotional Abandonment Emotions Feeling Abandoned">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/2a/dd/4e2add6b616b650203720f4465f1d68c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJlohKcMcWxs-Jpre2smLAL8w5e_NY0Fi74A';" alt="5 Emotional Abandonment Signs In Marriage Emotional Abandonment Emotions Feeling Abandoned">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Emotional Abandonment Signs In Marriage Emotional Abandonment Emotions Feeling Abandoned</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/38/61/003861e3a9211097c455b809436594f0.jpg" data-lightbox="roadtrip" data-title="Sometimes People Can Hunger For More Than Bread It Is Possible That Our Children Our Husband Our Quote 1 Jpg Affection Quotes Neglect Quotes Abandonment Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/38/61/003861e3a9211097c455b809436594f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrL2lCjoY7v2X6pWSm88TVDUUGOwEF-0Qn2g';" alt="Sometimes People Can Hunger For More Than Bread It Is Possible That Our Children Our Husband Our Quote 1 Jpg Affection Quotes Neglect Quotes Abandonment Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sometimes People Can Hunger For More Than Bread It Is Possible That Our Children Our Husband Our Quote 1 Jpg Affection Quotes Neglect Quotes Abandonment Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/39/7b/09397b48255066bc7e0cf3b513434ce4.png" data-lightbox="roadtrip" data-title="Marital Abandonment Definition Examples Cases Definitions Abandoned Case">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/39/7b/09397b48255066bc7e0cf3b513434ce4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR79DkySszgfNWllGpgGZlIUDwUVFIRENfTDg';" alt="Marital Abandonment Definition Examples Cases Definitions Abandoned Case">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marital Abandonment Definition Examples Cases Definitions Abandoned Case</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/56/46/195646d948e40652245fde6432bc9317.jpg" data-lightbox="roadtrip" data-title="Reckless Abandonment An Open Letter To My Future Husband I M Not Waiting For You Future Husband To My Future Husband Dear Future Husband">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/56/46/195646d948e40652245fde6432bc9317.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOq2Aj70wCa9uJGpIQW9cxE7tVCR9PJ2qW4A';" alt="Reckless Abandonment An Open Letter To My Future Husband I M Not Waiting For You Future Husband To My Future Husband Dear Future Husband">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reckless Abandonment An Open Letter To My Future Husband I M Not Waiting For You Future Husband To My Future Husband Dear Future Husband</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/1f/84/2a/1f842aa9048a502e1bc74683596f887f.jpg" data-lightbox="roadtrip" data-title="13 Worst Emotionally Distant Husband Signs Middle Class Dad Emotional Abandonment Me Quotes Funny Cheating Husband Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/1f/84/2a/1f842aa9048a502e1bc74683596f887f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkLk1-i9LU1bTWXqR6XHNfiY5ULT8S8IaXQw';" alt="13 Worst Emotionally Distant Husband Signs Middle Class Dad Emotional Abandonment Me Quotes Funny Cheating Husband Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">13 Worst Emotionally Distant Husband Signs Middle Class Dad Emotional Abandonment Me Quotes Funny Cheating Husband Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a1/fc/01/a1fc01f35a42254783ea56daa1a7bb21.jpg" data-lightbox="roadtrip" data-title="How Fear Of Abandonment Can Push Your Spouse Away Marriage Counseling In Frederick Md Rekindle Romance Memes Quotes Romantic Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a1/fc/01/a1fc01f35a42254783ea56daa1a7bb21.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Et_nU9m7ySgHg7tb1P0infOSGyGTWHtiXA';" alt="How Fear Of Abandonment Can Push Your Spouse Away Marriage Counseling In Frederick Md Rekindle Romance Memes Quotes Romantic Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Fear Of Abandonment Can Push Your Spouse Away Marriage Counseling In Frederick Md Rekindle Romance Memes Quotes Romantic Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/15/58/b315585e8658d8d38f432f2ac61ffe9d.jpg" data-lightbox="roadtrip" data-title="Emotional Abandonment When Your Spouse Shuts You Out Marriage Missions International Legal Separation Emotional Abandonment Divorce Help">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/15/58/b315585e8658d8d38f432f2ac61ffe9d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6F54udUgVMyadJd21cBO2Q7Jw6DKWssxbuw';" alt="Emotional Abandonment When Your Spouse Shuts You Out Marriage Missions International Legal Separation Emotional Abandonment Divorce Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emotional Abandonment When Your Spouse Shuts You Out Marriage Missions International Legal Separation Emotional Abandonment Divorce Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/37/b3/9c37b3800ea5e5a456082080fa791cad.png" data-lightbox="roadtrip" data-title="It S A Complaint We Hear Often From People Looking For Help For Their Marriages I Feel Distant Husband Quotes Marriage Unhappy Marriage Quotes Husband Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/37/b3/9c37b3800ea5e5a456082080fa791cad.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_I4qEudU7XmaNaEZ3h1DZcn1NNN3hJ0Cr-Q';" alt="It S A Complaint We Hear Often From People Looking For Help For Their Marriages I Feel Distant Husband Quotes Marriage Unhappy Marriage Quotes Husband Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">It S A Complaint We Hear Often From People Looking For Help For Their Marriages I Feel Distant Husband Quotes Marriage Unhappy Marriage Quotes Husband Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/64/15/1764152aebf042a5de61cf43cda4dbc7.jpg" data-lightbox="roadtrip" data-title="Jealousy Fear Quotes Abandonment Quotes Our Deepest Fear Quote">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/64/15/1764152aebf042a5de61cf43cda4dbc7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROo2Ci05uZtNou8VMWyWi1zDwHT2xeh_MPWg';" alt="Jealousy Fear Quotes Abandonment Quotes Our Deepest Fear Quote">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jealousy Fear Quotes Abandonment Quotes Our Deepest Fear Quote</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/06/1a/f4061a14ff597c4acf900289bb32c3cb.jpg" data-lightbox="roadtrip" data-title="Pin On Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/06/1a/f4061a14ff597c4acf900289bb32c3cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzjnzYbUA_aDINUOrPDZmizg5fQze9919g0Q';" alt="Pin On Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-spouse-precheck.html">Military Spouse Precheck</a></li>
+													<li class="list-group-item"><a href="/military-spouse-preference-for-overseas-employment.html">Military Spouse Preference For Overseas Employment</a></li>
+													<li class="list-group-item"><a href="/military-spouse-pay-entitlements-during-separation.html">Military Spouse Pay Entitlements During Separation</a></li>
+													<li class="list-group-item"><a href="/military-spouse-medal-certificate.html">Military Spouse Medal Certificate</a></li>
+													<li class="list-group-item"><a href="/military-spouse-masters-degree-scholarships.html">Military Spouse Masters Degree Scholarships</a></li>
+													<li class="list-group-item"><a href="/military-spouse-of-the-year-2019-nominees.html">Military Spouse Of The Year 2019 Nominees</a></li>
+													<li class="list-group-item"><a href="/military-spouse-network.html">Military Spouse Network</a></li>
+													<li class="list-group-item"><a href="/military-spouse-money-for-college.html">Military Spouse Money For College</a></li>
+													<li class="list-group-item"><a href="/military-spouse-pay-for-college.html">Military Spouse Pay For College</a></li>
+													<li class="list-group-item"><a href="/military-spouse-preference-letter.html">Military Spouse Preference Letter</a></li>
+													<li class="list-group-item"><a href="/military-spouse-mycaa.html">Military Spouse Mycaa</a></li>
+													<li class="list-group-item"><a href="/military-spouse-permanent-residency.html">Military Spouse Permanent Residency</a></li>
+													<li class="list-group-item"><a href="/military-spouse-out-of-state-jury-duty.html">Military Spouse Out Of State Jury Duty</a></li>
+													<li class="list-group-item"><a href="/military-spouse-of-the-year.html">Military Spouse Of The Year</a></li>
+													<li class="list-group-item"><a href="/military-spouse-preference-msp-program.html">Military Spouse Preference Msp Program</a></li>
+													<li class="list-group-item"><a href="/military-spouse-mentor-program.html">Military Spouse Mentor Program</a></li>
+													<li class="list-group-item"><a href="/military-spouse-passport.html">Military Spouse Passport</a></li>
+													<li class="list-group-item"><a href="/military-spouse-preference-checklist.html">Military Spouse Preference Checklist</a></li>
+													<li class="list-group-item"><a href="/military-spouse-living-in-japan.html">Military Spouse Living In Japan</a></li>
+													<li class="list-group-item"><a href="/military-spouse-preference-form.html">Military Spouse Preference Form</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

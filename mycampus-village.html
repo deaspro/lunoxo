@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mycampus Village - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mycampus Village",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/5e/4c/49/5e4c49d1f9e9c22be972963304adaefe.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mycampus+village",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mycampus Village</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">44 0161 850 6664 contactcampuslivingvillagescouk. Located right on campus this is the ideal choice if youre looking for convenient student living. Remember my username Remember my username and password Always ask for my username and password. <br>				
+			</p>
+										<a class="badge badge-success" href="/do-military-spouses-get-free-education.html">do military spouses get free education</a>
+											<a class="badge badge-primary" href="/do-spouses-qualify-for-scra.html">do spouses qualify for scra</a>
+											<a class="badge badge-secondary" href="/do-you-get-bah-if-you-are-divorced.html">do you get bah if you are divorced</a>
+											<a class="badge badge-warning" href="/does-a-military-spouse-pay-state-taxes.html">does a military spouse pay state taxes</a>
+											<a class="badge badge-light" href="/do-retired-military-widows-receive-benefits.html">do retired military widows receive benefits</a>
+											<a class="badge badge-primary" href="/do-military-wives-have-to-work.html">do military wives have to work</a>
+											<a class="badge badge-primary" href="/do-military-spouses-qualify-for-unemployment.html">do military spouses qualify for unemployment</a>
+											<a class="badge badge-primary" href="/do-military-spouses-get-tsa-precheck.html">do military spouses get tsa precheck</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to pay a visit to the ideal blog.  Our site provides you with suggestions for seeing the highest quality video and image content, hunt and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/61/73/976173fa89aa5785701c06bdb5294c11.jpg" data-lightbox="roadtrip" data-title="Floorplan With Dimensions For Four Bedroom Units In East Campus Village Ualberta House Plans Floor Plans Housing Options">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/61/73/976173fa89aa5785701c06bdb5294c11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNT1o8eebJlx5a9Eq-PZmRpthnnpoWlYZohw';" alt="Floorplan With Dimensions For Four Bedroom Units In East Campus Village Ualberta House Plans Floor Plans Housing Options">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Floorplan With Dimensions For Four Bedroom Units In East Campus Village Ualberta House Plans Floor Plans Housing Options</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/46/2e/d2462e712bc32317a9d4ad77a96c9f62.jpg" data-lightbox="roadtrip" data-title="Floorplan With Dimensions For Two Bedroom Units In East Campus Village Small Tiny House House Apartment Checklist">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/46/2e/d2462e712bc32317a9d4ad77a96c9f62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4riGhtRgilstJZyihQZG7H06SSqaupqS5Q';" alt="Floorplan With Dimensions For Two Bedroom Units In East Campus Village Small Tiny House House Apartment Checklist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Floorplan With Dimensions For Two Bedroom Units In East Campus Village Small Tiny House House Apartment Checklist</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/61/04/406104de4b2851d24cd56be28bb8e098.jpg" data-lightbox="roadtrip" data-title="Campus Village Apartments Denver Co University Of Colorado Denver University Of Denver University Of Colorado">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/61/04/406104de4b2851d24cd56be28bb8e098.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDgcHGvaIiD71bUE7GMvf3obpOps7rbbtpDw';" alt="Campus Village Apartments Denver Co University Of Colorado Denver University Of Denver University Of Colorado">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Campus Village Apartments Denver Co University Of Colorado Denver University Of Denver University Of Colorado</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/bb/a6/d1bba6aac9fcaf26fd0064360e581bb1.png" data-lightbox="roadtrip" data-title="4 Bedroom 2 Bathroom Ide Dekorasi Rumah Aksesoris Dekorasi Rumah Desain Rumah">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/bb/a6/d1bba6aac9fcaf26fd0064360e581bb1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSht9TYfJ9RlLR1AqAGdp4lZPpXYxrphdEtlg';" alt="4 Bedroom 2 Bathroom Ide Dekorasi Rumah Aksesoris Dekorasi Rumah Desain Rumah">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Bedroom 2 Bathroom Ide Dekorasi Rumah Aksesoris Dekorasi Rumah Desain Rumah</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/30/df/5530df6d8d116495ec0a5c604c195979.jpg" data-lightbox="roadtrip" data-title="East Campus Village Residents Have Tons Of Support And Services Nearby Including A Centrally Located And Well Establish Housing Options House Styles Residences">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/30/df/5530df6d8d116495ec0a5c604c195979.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfdpdbW1kYZky_P0qdSeMQUCiOAd4ubYVKuw';" alt="East Campus Village Residents Have Tons Of Support And Services Nearby Including A Centrally Located And Well Establish Housing Options House Styles Residences">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">East Campus Village Residents Have Tons Of Support And Services Nearby Including A Centrally Located And Well Establish Housing Options House Styles Residences</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/97/58/7f9758844d96c959e0316430a90cb461.jpg" data-lightbox="roadtrip" data-title="East Campus Village Corner Apartments University Of Alberta Residences Village">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/97/58/7f9758844d96c959e0316430a90cb461.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWs90p4PP24PcFkZija8BijjCAlUdneyBlDQ';" alt="East Campus Village Corner Apartments University Of Alberta Residences Village">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">East Campus Village Corner Apartments University Of Alberta Residences Village</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/9f/6f/48/9f6f48d1d11970c1ea1746ec62ffd126.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWs90p4PP24PcFkZija8BijjCAlUdneyBlDQ';" alt="East Campus Village Corner Apartments University Of Alberta Residences Village">
+										<div class="card-body">
+						<h3 class="h5"><b>Mycampushomes My Campus Home Believes in Making Campus life to be at Ease.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mycampus village</strong>. 
+								
+																	College Station TX Big Rapids MI Saginaw MI Flint MI Croswell MI Ann Arbor MI Rochester MI. 
+																	Engaging blended courses. 
+																	The village is located in the city centre and close to University supermarket and shopping centre which was helpful for me as it was my first time in Newport. 
+																	John Lester and Eddie Colman Courts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Were specialists in student accommodation across the UK and we pride ourselves on providing environments in which our residents can prosper. 
+																	Campus Living Villages UK Limited CLV is a company registered in England and Wales company number 06604874 at 7th Floor Digital World Centre 1 Lowry Plaza The Quays Salford M50 3UB. 
+																	CLV wants to provide you with the best experience when you browse the CLV website the Website. 
+																	Your village team is there to support you 24 hours a day seven days a week particularly if you need to self-isolate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to Campus Village Diverse neighbors close to several multinational firms and proximity to the Dalian Development Area and Downtown Dalian make Campus Village housing a great place to live. 
+																	Campus Village Communities is a Michigan-based multiple-family and mixed-use student. 
+																	Campus Village offers furnished 1 to 5-bedroom apartments near Michigan State University in East Lansing. 
+																	MyCampus for Partners is available on Mobile Tablet or Desktop ensuring ease of access. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	From the sustainable design features we incorporate into our buildings to the resources and information we share with our residents we aim to reduce our environmental footprint and create communities that care about the important things in life. 
+																	The official accommodation for the University of Bedfordshire in Luton with a range of fully furnished modern studios and en-suites to suit different budgets. 
+																	It was a great experience for me to move in the Newport Student Village and I will definitely recommend it to international students because it is a way to meet other students. 
+																	The images above are representative of the indicated room type actual room size layout and fittings can vary. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With our wonderfully unique Village Life events so you can make the most of your educational adventure. 
+																	Campus Village at College Station From our vast amenities to our friendly staff Campus Village is a worry-free environment that allows you to focus on the most important thing - being a college student. 
+																	You will experience our Best of Class luxury housing with the freedom of an apartment designed for todays busy student. 
+																	CLV is committed to minimising the environmental impact of our villages where possible. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Campus village - exceptional student housing choose a community below. 
+																	There is a wide range of engaging e-learning and blended learning courses allowing you to experience content developed by online learning professionals and dedicated subject matter experts. 
+																	John Lester Eddie Colman Courts. 
+																	Our Salford student accommodation village at Peel Park Quarter is located on the campus while the John Lester and Eddie Colman Court accommodation is a short walk away. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Please login with your email and password below. 
+																	If you are showing symptoms of COVID-19 or have been in contact with someone who has tested positive you should use the NHS 111 coronavirus online service and follow the guidance on self-isolation. 
+																	Please fill in your details. 
+																	We are in the heart of all the things that make this community unique and lovable. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Were walking distance from Michigan State right next door to the Brody Neighborhood and near all the fun happening on the Grand River. 
+																	Property details Arrange a viewing. 
+																	First name Last name. 
+																	Please enter your login details below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you dont know your password or never set one please use the reset password option below. 
+																	Make our village your home. 
+																	Ease of access learn when it suits you. 
+																	Roofed under the Campus Village Brand. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Transitioning to life as an expatriate living China can be a tumultuous event for the entire family. 
+																	The Salford Museum Art Gallery and the Working Class Movement Library can also be found on the University of Salford campus. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/68/bd/0f68bdced9d0c102414401491def7df3.jpg" data-lightbox="roadtrip" data-title="Campus Village At Auraria Denver Co Unfortunately University Of Colorado Denver University Of Denver University Of Colorado">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/68/bd/0f68bdced9d0c102414401491def7df3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi4iqIYZrQhTK6sF5LVl--NhH0S4AyfzSmpg';" alt="Campus Village At Auraria Denver Co Unfortunately University Of Colorado Denver University Of Denver University Of Colorado">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Campus Village At Auraria Denver Co Unfortunately University Of Colorado Denver University Of Denver University Of Colorado</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/6b/02/2b6b02f94f3a4d55b99389284069ce89.jpg" data-lightbox="roadtrip" data-title="Floorplan With Dimensions For One Bedroom Units In East Campus Village Ualberta House House Plans Housing Options">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/6b/02/2b6b02f94f3a4d55b99389284069ce89.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1KcQyBe094gRzy-FoUWzwxwlKUi8uJujMAQ';" alt="Floorplan With Dimensions For One Bedroom Units In East Campus Village Ualberta House House Plans Housing Options">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Floorplan With Dimensions For One Bedroom Units In East Campus Village Ualberta House House Plans Housing Options</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/e6/0d/f4e60df28effdd6a157a395f1b835424.jpg" data-lightbox="roadtrip" data-title="Campus Village Apartments Denver Co Student House University Of Colorado Campus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/e6/0d/f4e60df28effdd6a157a395f1b835424.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKVkJTgG7VsdWkOjtAzPt9mkSrfIQ1ljTq_Q';" alt="Campus Village Apartments Denver Co Student House University Of Colorado Campus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Campus Village Apartments Denver Co Student House University Of Colorado Campus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/d0/38/afd038d5878f5e96586c990b468e75cb.jpg" data-lightbox="roadtrip" data-title="Campus Village Apartments Denver Co University Of Colorado Campus Student House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/d0/38/afd038d5878f5e96586c990b468e75cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqzTThtoKclZ5oqYbvKbH8xVPxL5jJFo30Vw';" alt="Campus Village Apartments Denver Co University Of Colorado Campus Student House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Campus Village Apartments Denver Co University Of Colorado Campus Student House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/c6/f5/45c6f55d4d4c4e8fe827f78a40858121.jpg" data-lightbox="roadtrip" data-title="Campus Village Apartments Denver Co University Of Colorado Campus Student House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/c6/f5/45c6f55d4d4c4e8fe827f78a40858121.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6NEOv-JhmUiKrJZUJu0Pc98q9jXXrDEbadA';" alt="Campus Village Apartments Denver Co University Of Colorado Campus Student House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Campus Village Apartments Denver Co University Of Colorado Campus Student House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/13/d3/1f13d374bf05930341b9efdf022e6f98.png" data-lightbox="roadtrip" data-title="Campus Village Layout Dorm Room Styles Fashion Room Diy Style">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/13/d3/1f13d374bf05930341b9efdf022e6f98.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjNxGSuTgnxAWyS4hD6A4dGAOc9uISOt3D_w';" alt="Campus Village Layout Dorm Room Styles Fashion Room Diy Style">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Campus Village Layout Dorm Room Styles Fashion Room Diy Style</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/12/8b/51128b840626394d58bcdd5d6febb02a.png" data-lightbox="roadtrip" data-title="2 Bedroom 2 Bathroom Guest House Plans Sims House Plans Sims House Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/12/8b/51128b840626394d58bcdd5d6febb02a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTqly6PmqtHcWubQp_rgY6v1VR_ICc6fBeGA';" alt="2 Bedroom 2 Bathroom Guest House Plans Sims House Plans Sims House Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2 Bedroom 2 Bathroom Guest House Plans Sims House Plans Sims House Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/e1/d8/86e1d8b8ce50d8b777eafc39846e0424.jpg" data-lightbox="roadtrip" data-title="Tree Village Campus Beijing Campus Village Beijing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/e1/d8/86e1d8b8ce50d8b777eafc39846e0424.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ8jLq3gScDhMS1b3eloiyWYwjG-TvdOogTg';" alt="Tree Village Campus Beijing Campus Village Beijing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tree Village Campus Beijing Campus Village Beijing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/bf/dd/33bfdd81380129b61e5b8b6ded37abdd.jpg" data-lightbox="roadtrip" data-title="Campus Village Apartments Denver Co Campus University Of Colorado Village">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/bf/dd/33bfdd81380129b61e5b8b6ded37abdd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjPSprem6H-GZOaqiOLSj_klzKAexa-3ghPA';" alt="Campus Village Apartments Denver Co Campus University Of Colorado Village">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Campus Village Apartments Denver Co Campus University Of Colorado Village</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/4c/49/5e4c49d1f9e9c22be972963304adaefe.jpg" data-lightbox="roadtrip" data-title="Campus Village Apartments Denver Co University Of Colorado Campus Village">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/4c/49/5e4c49d1f9e9c22be972963304adaefe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxihDRWvFWFJArM8n0Q9XzPxjqhAEXWxFQig';" alt="Campus Village Apartments Denver Co University Of Colorado Campus Village">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Campus Village Apartments Denver Co University Of Colorado Campus Village</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/6f/48/9f6f48d1d11970c1ea1746ec62ffd126.png" data-lightbox="roadtrip" data-title="2 Bedroom 2 Bathroom Campus Village Floor Plans House Design Boys Dorm Room">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/6f/48/9f6f48d1d11970c1ea1746ec62ffd126.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-FqvXC3mOeUD9qz9IFgyZO4sCWHYT_VaRzg';" alt="2 Bedroom 2 Bathroom Campus Village Floor Plans House Design Boys Dorm Room">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2 Bedroom 2 Bathroom Campus Village Floor Plans House Design Boys Dorm Room</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/d1/93/b7d193ba26975cde0c2b9488289ee458.jpg" data-lightbox="roadtrip" data-title="East Campus Village Is Composed Of Aspen Maple House And Is Located Amongst Grad Res Ihouse Tamarack Pinecrest Campus Commons Pinecrest Student Living">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/d1/93/b7d193ba26975cde0c2b9488289ee458.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX_hrfzH7sHshJnQg8h2tQ16AvLxIKPMWFbg';" alt="East Campus Village Is Composed Of Aspen Maple House And Is Located Amongst Grad Res Ihouse Tamarack Pinecrest Campus Commons Pinecrest Student Living">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">East Campus Village Is Composed Of Aspen Maple House And Is Located Amongst Grad Res Ihouse Tamarack Pinecrest Campus Commons Pinecrest Student Living</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/8e/60/5b8e608f338251deda458395129bf849.jpg" data-lightbox="roadtrip" data-title="Campus Village Apartments Denver Co University Of Colorado Campus Student House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/8e/60/5b8e608f338251deda458395129bf849.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAEzp9m956c0yhvuA9tzi814CfdvaQQPmScg';" alt="Campus Village Apartments Denver Co University Of Colorado Campus Student House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Campus Village Apartments Denver Co University Of Colorado Campus Student House</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-records-retention-schedule.html">Department Of Veterans Affairs Records Retention Schedule</a></li>
+													<li class="list-group-item"><a href="/deployed-with-spouse.html">Deployed With Spouse</a></li>
+													<li class="list-group-item"><a href="/deployment-anger-spouse.html">Deployment Anger Spouse</a></li>
+													<li class="list-group-item"><a href="/dependent-va-benefits-for-education.html">Dependent Va Benefits For Education</a></li>
+													<li class="list-group-item"><a href="/death-benefits-for-retired-military-spouses.html">Death Benefits For Retired Military Spouses</a></li>
+													<li class="list-group-item"><a href="/deployment-gifts-for-brother.html">Deployment Gifts For Brother</a></li>
+													<li class="list-group-item"><a href="/cuales-son-los-beneficios-de-comer-guajes.html">Cuales Son Los Beneficios De Comer Guajes</a></li>
+													<li class="list-group-item"><a href="/deployed-soldier-spouse.html">Deployed Soldier Spouse</a></li>
+													<li class="list-group-item"><a href="/current-military-spouse-unemployment-rate.html">Current Military Spouse Unemployment Rate</a></li>
+													<li class="list-group-item"><a href="/dental-coverage-for-military-spouses.html">Dental Coverage For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/dental-assistant-programs-for-military-spouses.html">Dental Assistant Programs For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/cover-my-cargo.html">Cover My Cargo</a></li>
+													<li class="list-group-item"><a href="/department-of-defense-spouse-education-and-career-opportunities-program.html">Department Of Defense Spouse Education And Career Opportunities Program</a></li>
+													<li class="list-group-item"><a href="/department-of-veteran-affairs-records-management.html">Department Of Veteran Affairs Records Management</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-records-management-center-phone-number.html">Department Of Veterans Affairs Records Management Center Phone Number</a></li>
+													<li class="list-group-item"><a href="/deployed-spouse-care-package.html">Deployed Spouse Care Package</a></li>
+													<li class="list-group-item"><a href="/deployment-gifts-for-child.html">Deployment Gifts For Child</a></li>
+													<li class="list-group-item"><a href="/dependents-of-veterans-scholarships-and-grants.html">Dependents Of Veterans Scholarships And Grants</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-records-management-center-varmc-st-louis-mo.html">Department Of Veterans Affairs Records Management Center Varmc St Louis Mo</a></li>
+													<li class="list-group-item"><a href="/deployment-gift-for-wife.html">Deployment Gift For Wife</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

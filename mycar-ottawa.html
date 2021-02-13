@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mycar Ottawa - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mycar Ottawa",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/97/df/27/97df27e4b1a821a92cf363555ee074a2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mycar+ottawa",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mycar Ottawa</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">97 people follow this. Visit us to sell or buy used cars. MyCar is a used car dealership in Ottawa Kingston and North Bay area. <br>				
+			</p>
+										<a class="badge badge-warning" href="/my-husband-verbally-abuses-me-in-front-of-our-daughter.html">my husband verbally abuses me in front of our daughter</a>
+											<a class="badge badge-primary" href="/my-husband-tested-positive-for-covid-will-i-get-it.html">my husband tested positive for covid will i get it</a>
+											<a class="badge badge-light" href="/my-husband-wants-to-divorce.html">my husband wants to divorce</a>
+											<a class="badge badge-warning" href="/my-husband-shuts-me-down.html">my husband shuts me down</a>
+											<a class="badge badge-warning" href="/my-husband-talks-about-work-too-much.html">my husband talks about work too much</a>
+											<a class="badge badge-danger" href="/my-husband-wants-a-divorce-because-of-my-past.html">my husband wants a divorce because of my past</a>
+											<a class="badge badge-success" href="/my-husband-wants-a-divorce-uk.html">my husband wants a divorce uk</a>
+											<a class="badge badge-secondary" href="/my-husband-wants-a-divorce-then-changed-his-mind.html">my husband wants a divorce then changed his mind</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to visit the ideal site.  Our site gives you hints for seeing the highest quality video and picture content, hunt and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video for you to see.  You can also bring about supporting this website by sharing videos and images that you like on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a1/84/f5/a184f5ddc06f48f773d039c919302f95.jpg" data-lightbox="roadtrip" data-title="Pin By Scrap My Car Ottawa On Scrap My Car Ottawa Car Make Model Social Media">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a1/84/f5/a184f5ddc06f48f773d039c919302f95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkBidEhCuPoSttc3wVBSnZ18HEoy8pv6N06A';" alt="Pin By Scrap My Car Ottawa On Scrap My Car Ottawa Car Make Model Social Media">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Scrap My Car Ottawa On Scrap My Car Ottawa Car Make Model Social Media</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/a4/1e/9ba41ed0bdf70ecd6b6965f1046f2b2b.jpg" data-lightbox="roadtrip" data-title="Smc Ottawa Towing Group Now Offers Full Service Towing Throughout Ottawa In 2020 Towing Company Towing Service Scrap My Car">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/a4/1e/9ba41ed0bdf70ecd6b6965f1046f2b2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkD6EbqCJB54bdR35XtXYSz_wudwqJ5_zajQ';" alt="Smc Ottawa Towing Group Now Offers Full Service Towing Throughout Ottawa In 2020 Towing Company Towing Service Scrap My Car">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Smc Ottawa Towing Group Now Offers Full Service Towing Throughout Ottawa In 2020 Towing Company Towing Service Scrap My Car</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/cc/7f/13cc7f76ed060ab660d83c6f609d0700.jpg" data-lightbox="roadtrip" data-title="Ottawa University Of Ottawa Capital Of Canada Ottawa Canada">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/cc/7f/13cc7f76ed060ab660d83c6f609d0700.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq4EYATMrL07ZtjYUmCkoZ7jG7e7pv_4EIlA';" alt="Ottawa University Of Ottawa Capital Of Canada Ottawa Canada">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ottawa University Of Ottawa Capital Of Canada Ottawa Canada</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/84/82/ed84820869f04200f044555ef15a418c.jpg" data-lightbox="roadtrip" data-title="Pin On Followus Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/84/82/ed84820869f04200f044555ef15a418c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPIVDiW6QAa1VKSryFuO68uVxyGqm1eBWaLA';" alt="Pin On Followus Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Followus Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/97/df/27/97df27e4b1a821a92cf363555ee074a2.jpg" data-lightbox="roadtrip" data-title="Im Not A Car Person But I Am A Clean Car Person Thank You Autokonnect For The Amazing Detailing You Did To Fashion Plus Size Fashion For Women Insta Fashion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/97/df/27/97df27e4b1a821a92cf363555ee074a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxmBGJiuMI3UqFvZO5Iv-dMN8_4t41R_g90g';" alt="Im Not A Car Person But I Am A Clean Car Person Thank You Autokonnect For The Amazing Detailing You Did To Fashion Plus Size Fashion For Women Insta Fashion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Im Not A Car Person But I Am A Clean Car Person Thank You Autokonnect For The Amazing Detailing You Did To Fashion Plus Size Fashion For Women Insta Fashion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/55/62/ae/5562ae3c593ae589f652c5093b63977c.jpg" data-lightbox="roadtrip" data-title="Pin On Usweedchannel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/55/62/ae/5562ae3c593ae589f652c5093b63977c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoy1X45sI5h6ypFEJYKwnrU3FKfeYMxYJxEA';" alt="Pin On Usweedchannel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Usweedchannel</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/0a/4a/68/0a4a68c6c8ad6f24c78bc35f4bc8fe77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoy1X45sI5h6ypFEJYKwnrU3FKfeYMxYJxEA';" alt="Pin On Usweedchannel">
+										<div class="card-body">
+						<h3 class="h5"><b>78 views August 17 2020.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mycar ottawa</strong>. 
+								
+																	6104 Perth St 205905 mi Ottawa ON Canada ON K0A 2Z0. 
+																	Ask us how the MyCar Lowest Price Guarantee works. 
+																	Avoir trouver un vehicule et mavoir donner pleins de chose en plus qui netait pas sur mon contrat. 
+																	My Car RichmondOttawa Branch Car Dealers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Car Dealership Automotive Store. 
+																	Multi Location Business Find locations. 
+																	MyCar Ottawa Kingston North Bay and Cornwall Mycarca. 
+																	9 am - 7 pm. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	46 out of 5 stars. 
+																	Je recommande my car a tout le monde jai pu avoir un lift de kingston a ottawa des pneu dhivers sur rims gratuitement et meme un plein dessence. 
+																	You wont regret it. 
+																	MyCar Ottawa 6104 Perth St Ottawa ON K0A 2Z0 Find out how much your trade-in is worth. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Merci infiniment pour votre bon travaille et votre service exceptionnel. 
+																	MyCar Ottawa 6104 Perth St Ottawa ON K0A 2Z0 Used Cars SUVs Trucks for Sale in Ottawa. 
+																	Are you following us. 
+																	Price Range Hours 900 AM - 600 PM. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	BMW 3 Buick 4 Cadillac 1 Chevrolet 20 Chrysler 1 Dodge 8 Ford 24 GMC 2 Honda 3 Hyundai 26 Infiniti 1 Jeep 8 Kia 39 Lincoln 1 MINI 3 Mazda 7 Mitsubishi 2. 
+																	Richmond ON K0A 2Z0. 
+																	My Car RichmondOttawa Branch 6104 Perth Street. 
+																	665 views December 11 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	95 people like this. 
+																	Delivery to Cornwall available today. 
+																	WE WILL BEAT ANY ADVERTISED PRICE BY 250. 
+																	49 292 Lifetime Reviews. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Quick Pre-Approval process Over 500 Vehicles in stock Ottawa Kingston North Bay and NOW Cornwall. 
+																	5571 likes 5 talking about this 234 were here. 
+																	Mycarca Location 888 241-6512. 
+																	En plus il ma. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MyCar Ottawa 6104 Perth St Ottawa ON K0A 2Z0 6104 Perth St Ottawa ON K0A 2Z0. 
+																	Mycarca - - Rated 47 based on 40 Reviews Tony and Jason really helped my mom and I find a perfect car for me driving all over the Ottawa vall Jump to Sections of this page. 
+																	We analyze hundreds of thousands of used cars daily. 
+																	Mycarca Ottawa Car Dealership in Ottawa Ontario. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Friday 9 am - 5 pm. 
+																	Search listings from My Car Richmond in Richmond ON to find the right vehicle for you. 
+																	2020 55 2019 60 2018 21 2017 38 2016 25 2015 3 2014 1 Make. 
+																	MyCar UsedCars UsedVehicles LowestPrice Guarantee SaveMoney UnbeatablePrices. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	June 1 Ottawa ON Canada On behalf of the team at MyCarca we would like to thank each and every one of our customers that came down to any of our 3 locations in an effort to support us during these challenging times. 
+																	Mycarca is at Mycarca Ottawa. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/5e/18/aa/5e18aaa890bfc4bb2d2a0b3e38f5c7db.jpg" data-lightbox="roadtrip" data-title="Pin On Travel Ideas Plans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/5e/18/aa/5e18aaa890bfc4bb2d2a0b3e38f5c7db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpaffHUAr2ODMlXUC90H70heCzaiO5Je6l-g';" alt="Pin On Travel Ideas Plans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Travel Ideas Plans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/cc/a8/bbcca8f16d286a42ca3466350b306181.jpg" data-lightbox="roadtrip" data-title="My Car Has Become A Parts Warehouse But That S A Good Problem To Have I Suppose Unboxing Vlog Coming Soon Misobishi Misobis Amsoil Motul Coilovers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/cc/a8/bbcca8f16d286a42ca3466350b306181.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPVyaDNfliyBRgky2e3SFSWiZsjUMs9JNOwg';" alt="My Car Has Become A Parts Warehouse But That S A Good Problem To Have I Suppose Unboxing Vlog Coming Soon Misobishi Misobis Amsoil Motul Coilovers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Car Has Become A Parts Warehouse But That S A Good Problem To Have I Suppose Unboxing Vlog Coming Soon Misobishi Misobis Amsoil Motul Coilovers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e5/28/b1/e528b116484ccdd7e077ae21a71f63e8.jpg" data-lightbox="roadtrip" data-title="7 Heartwarming Photos With Great Backstories Heartwarming Photos Reasons To Smile Heartwarming">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e5/28/b1/e528b116484ccdd7e077ae21a71f63e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThgDOIwfFcxTBzEmKbv0SSAoaFs8h8hLvzrw';" alt="7 Heartwarming Photos With Great Backstories Heartwarming Photos Reasons To Smile Heartwarming">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Heartwarming Photos With Great Backstories Heartwarming Photos Reasons To Smile Heartwarming</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2d/1d/85/2d1d851ab516da8e817ea9289dd8e045.jpg" data-lightbox="roadtrip" data-title="Objects In Mirror Are Happier Than They Appear Thank You Autokonnect For Detailing My Car To A Standard That I Can Never Achieve Its Like I Drove Away In A">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2d/1d/85/2d1d851ab516da8e817ea9289dd8e045.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT53WerKevKn4uaJvN0_7pcohtnQe3tu5uNWQ';" alt="Objects In Mirror Are Happier Than They Appear Thank You Autokonnect For Detailing My Car To A Standard That I Can Never Achieve Its Like I Drove Away In A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Objects In Mirror Are Happier Than They Appear Thank You Autokonnect For Detailing My Car To A Standard That I Can Never Achieve Its Like I Drove Away In A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/26/6f/8b266ff36a27d189bd54fa3065e98c75.jpg" data-lightbox="roadtrip" data-title="24 Sussex Drive Official Residence Of The Prime Minister Of Canada Ottawa Ontario Canada By Flipkeat Via Flickr Ontario Canada Ontario Canadian Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/26/6f/8b266ff36a27d189bd54fa3065e98c75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC4imaoUjqrneNX9dQMa6eryW_R3Zu7tFEIg';" alt="24 Sussex Drive Official Residence Of The Prime Minister Of Canada Ottawa Ontario Canada By Flipkeat Via Flickr Ontario Canada Ontario Canadian Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">24 Sussex Drive Official Residence Of The Prime Minister Of Canada Ottawa Ontario Canada By Flipkeat Via Flickr Ontario Canada Ontario Canadian Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/91/9f/7b/919f7b0693e5ad67923eb3b24abc9583.jpg" data-lightbox="roadtrip" data-title="Ottawa Freeways Ontario Highway 417 Youtube Ottawa Ottawa Ontario Ontario">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/91/9f/7b/919f7b0693e5ad67923eb3b24abc9583.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgPxc2nUxfcXo_LQhEO0IXnjGv5vUG_EZfBg';" alt="Ottawa Freeways Ontario Highway 417 Youtube Ottawa Ottawa Ontario Ontario">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ottawa Freeways Ontario Highway 417 Youtube Ottawa Ottawa Ontario Ontario</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/5b/54/c25b54a222b6b94c1ccb6fe5c4159a8b.jpg" data-lightbox="roadtrip" data-title="Jason Ford On Twitter Ottawa Senators Ottawa Senators Hockey Sens">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/5b/54/c25b54a222b6b94c1ccb6fe5c4159a8b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQABztw1eHUmDDkHvLvK91d1p6lKuLy3G89cw';" alt="Jason Ford On Twitter Ottawa Senators Ottawa Senators Hockey Sens">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jason Ford On Twitter Ottawa Senators Ottawa Senators Hockey Sens</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/bb/82/c1bb828cfa752e18acc03862ba6d95fc.jpg" data-lightbox="roadtrip" data-title="Parliament Of Canada In Ottawa Walk Around Parliament Of Canada Ottawa Ontario Canada">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/bb/82/c1bb828cfa752e18acc03862ba6d95fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqXVQqJkKCkRUIqWQDMs4bx-kG4cqUl008zg';" alt="Parliament Of Canada In Ottawa Walk Around Parliament Of Canada Ottawa Ontario Canada">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Parliament Of Canada In Ottawa Walk Around Parliament Of Canada Ottawa Ontario Canada</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/4a/68/0a4a68c6c8ad6f24c78bc35f4bc8fe77.jpg" data-lightbox="roadtrip" data-title="Chateau Laurier And Rideau Canal Ottawa Ontario Canada Ottawa Canada Ontario">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/4a/68/0a4a68c6c8ad6f24c78bc35f4bc8fe77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDzLQNIQ3EPU-R6k-asmcX2-SeGiekwL9fA';" alt="Chateau Laurier And Rideau Canal Ottawa Ontario Canada Ottawa Canada Ontario">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chateau Laurier And Rideau Canal Ottawa Ontario Canada Ottawa Canada Ontario</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/74/1b/7d741b6107477f76596aad8d2c57f21c.jpg" data-lightbox="roadtrip" data-title="I M Just Packing Up My Hotel Room To Head Back To Algonquin Park For More Sleeping In My Car I Ve Had A Fantastic Week He Algonquin Park Timber Wolf Wolf Pup">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/74/1b/7d741b6107477f76596aad8d2c57f21c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSErilS54FVEZzvfmpqhzj4svvSfc1QXl6QWQ';" alt="I M Just Packing Up My Hotel Room To Head Back To Algonquin Park For More Sleeping In My Car I Ve Had A Fantastic Week He Algonquin Park Timber Wolf Wolf Pup">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I M Just Packing Up My Hotel Room To Head Back To Algonquin Park For More Sleeping In My Car I Ve Had A Fantastic Week He Algonquin Park Timber Wolf Wolf Pup</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/0f/81/e20f818248ca008183a6dce966032d2b.jpg" data-lightbox="roadtrip" data-title="Pin En Cars">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/0f/81/e20f818248ca008183a6dce966032d2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStjka_omjhS4D-SeiqYKwTN1gLfGhzeWQMkQ';" alt="Pin En Cars">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin En Cars</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/5c/1e/875c1ecd0327f3357bb24a437ad26ef8.jpg" data-lightbox="roadtrip" data-title="Fairmont Chateau Laurier Ottawa Chateau Laurier Ontario Travel Ottawa Hotels">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/5c/1e/875c1ecd0327f3357bb24a437ad26ef8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGIbfu0sQNOKusbDi9N3Xc8e_L2Y2ifdlfjQ';" alt="Fairmont Chateau Laurier Ottawa Chateau Laurier Ontario Travel Ottawa Hotels">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fairmont Chateau Laurier Ottawa Chateau Laurier Ontario Travel Ottawa Hotels</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/5a/26/355a269c69e0cc6ee80b9d522cc67fab.jpg" data-lightbox="roadtrip" data-title="The Best Of Fall Colours Along The Rideau Canal A Unesco World Heritage Site For More Information Pl Capital Of Canada Places To Go">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/5a/26/355a269c69e0cc6ee80b9d522cc67fab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsmdBN1ILCb0U-KllC6n0BqSRD-uWj1f9zGA';" alt="The Best Of Fall Colours Along The Rideau Canal A Unesco World Heritage Site For More Information Pl Capital Of Canada Places To Go">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Of Fall Colours Along The Rideau Canal A Unesco World Heritage Site For More Information Pl Capital Of Canada Places To Go</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-and-navy-marriage.html">Army And Navy Marriage</a></li>
+													<li class="list-group-item"><a href="/army-contact-number-lahore.html">Army Contact Number Lahore</a></li>
+													<li class="list-group-item"><a href="/armed-forces-military-spouse-of-the-year.html">Armed Forces Military Spouse Of The Year</a></li>
+													<li class="list-group-item"><a href="/are-va-dependent-benefits-taxable.html">Are Va Dependent Benefits Taxable</a></li>
+													<li class="list-group-item"><a href="/army-education-benefits-transfer.html">Army Education Benefits Transfer</a></li>
+													<li class="list-group-item"><a href="/arkansas-army-national-guard-human-resources.html">Arkansas Army National Guard Human Resources</a></li>
+													<li class="list-group-item"><a href="/army-42a-mos-job-description.html">Army 42a Mos Job Description</a></li>
+													<li class="list-group-item"><a href="/army-benefits-for-being-married.html">Army Benefits For Being Married</a></li>
+													<li class="list-group-item"><a href="/army-benefits-for-dependents.html">Army Benefits For Dependents</a></li>
+													<li class="list-group-item"><a href="/army-benefits-for-family.html">Army Benefits For Family</a></li>
+													<li class="list-group-item"><a href="/are-there-any-benefits-for-widows-of-veterans.html">Are There Any Benefits For Widows Of Veterans</a></li>
+													<li class="list-group-item"><a href="/army-dependents-parents.html">Army Dependents Parents</a></li>
+													<li class="list-group-item"><a href="/army-complaint-contact-number.html">Army Complaint Contact Number</a></li>
+													<li class="list-group-item"><a href="/army-careers-cardiff-phone-number.html">Army Careers Cardiff Phone Number</a></li>
+													<li class="list-group-item"><a href="/army-benefits-of-being-married.html">Army Benefits Of Being Married</a></li>
+													<li class="list-group-item"><a href="/army-dual-spouse-program.html">Army Dual Spouse Program</a></li>
+													<li class="list-group-item"><a href="/army-couple-quotes.html">Army Couple Quotes</a></li>
+													<li class="list-group-item"><a href="/army-benefits-for-child.html">Army Benefits For Child</a></li>
+													<li class="list-group-item"><a href="/army-asap-online-course.html">Army Asap Online Course</a></li>
+													<li class="list-group-item"><a href="/are-spouses-covered-under-tricare-for-life.html">Are Spouses Covered Under Tricare For Life</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

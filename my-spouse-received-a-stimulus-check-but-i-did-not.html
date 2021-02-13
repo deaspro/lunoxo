@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>My Spouse Received A Stimulus Check But I Did Not - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "My Spouse Received A Stimulus Check But I Did Not",
+  "datePublished": "2021-02-13",
+  "image": "https://specials-images.forbesimg.com/imageserve/5eb45490e249d20007bb3dc1/960x0.jpg?fit=scale",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=my+spouse+received+a+stimulus+check+but+i+did+not",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>My Spouse Received A Stimulus Check But I Did Not</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">That was the dilemma facing Americans who received 1200 stimulus payments in 2020 by paper check or direct deposit in the names of deceased spouses and other family members. That will have the effect of increasing your refund or decreasing what you owe. What can I do. <br>				
+			</p>
+										<a class="badge badge-dark" href="/military-spouse-visa.html">military spouse visa</a>
+											<a class="badge badge-warning" href="/military-spouse-working-in-california.html">military spouse working in california</a>
+											<a class="badge badge-secondary" href="/military-spouses-baby-shower.html">military spouses baby shower</a>
+											<a class="badge badge-primary" href="/military-spouse-voting-residence.html">military spouse voting residence</a>
+											<a class="badge badge-info" href="/military-spouse-voting.html">military spouse voting</a>
+											<a class="badge badge-info" href="/military-spouse-wedding-dress.html">military spouse wedding dress</a>
+											<a class="badge badge-warning" href="/military-spouse-unemployment-rate-2020.html">military spouse unemployment rate 2020</a>
+											<a class="badge badge-dark" href="/military-spouse-working-remotely-in-germany.html">military spouse working remotely in germany</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to pay a visit to the right site.  Our website gives you hints for seeing the highest quality video and picture content, hunt and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie for you to see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.eitcoutreach.org/wp-content/uploads/pexels-olia-danilevich-5466811-368x276.jpg" data-lightbox="roadtrip" data-title="What Do I Do If I Didn T Get My First Or Second Stimulus Checks Get It Back Tax Credits For People Who Work">
+											<img class="card-img v-image ads-img " src="https://www.eitcoutreach.org/wp-content/uploads/pexels-olia-danilevich-5466811-368x276.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa7TtWeXshmjgfDIN3ADd5l2N-rw4aEX6Gqw';" alt="What Do I Do If I Didn T Get My First Or Second Stimulus Checks Get It Back Tax Credits For People Who Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Do I Do If I Didn T Get My First Or Second Stimulus Checks Get It Back Tax Credits For People Who Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.eitcoutreach.org/wp-content/uploads/thumbnail-6-368x276.jpg" data-lightbox="roadtrip" data-title="What Do I Do If I Am Separated Or Divorced And My Stimulus Check Went To My Spouse Get It Back Tax Credits For People Who Work">
+											<img class="card-img v-image ads-img " src="https://www.eitcoutreach.org/wp-content/uploads/thumbnail-6-368x276.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGLemkOqZEtLvaDBKZYv1e7M8u9eh3147C1Q';" alt="What Do I Do If I Am Separated Or Divorced And My Stimulus Check Went To My Spouse Get It Back Tax Credits For People Who Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Do I Do If I Am Separated Or Divorced And My Stimulus Check Went To My Spouse Get It Back Tax Credits For People Who Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/www.savingtoinvest.com/wp-content/uploads/2020/04/IRS-Stimulus-check-payment-status-2.png?resize=352%2C194&amp;ssl=1" data-lightbox="roadtrip" data-title="Where Is My Stimulus Check Payment Status And Bank Direct Deposit Or Check Updates Aving To Invest">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/www.savingtoinvest.com/wp-content/uploads/2020/04/IRS-Stimulus-check-payment-status-2.png?resize=352%2C194&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBfZ4FNJpFb38br_DxzRJqWeL0SWIX9fu4sg';" alt="Where Is My Stimulus Check Payment Status And Bank Direct Deposit Or Check Updates Aving To Invest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Where Is My Stimulus Check Payment Status And Bank Direct Deposit Or Check Updates Aving To Invest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cnet1.cbsistatic.com/img/xw-tJ1beWTMCJjx2XMzdiZwudtg=/940x0/2020/10/25/37454222-e935-41b8-a120-75d0eebe5a56/money-dollar-bill-cash-finance-stimulus-covid-9771.jpg" data-lightbox="roadtrip" data-title="Stimulus Check Dependents 2 Possible Changes For A Third Check And Who They Could Benefit Cnet">
+											<img class="card-img v-image ads-img " src="https://cnet1.cbsistatic.com/img/xw-tJ1beWTMCJjx2XMzdiZwudtg=/940x0/2020/10/25/37454222-e935-41b8-a120-75d0eebe5a56/money-dollar-bill-cash-finance-stimulus-covid-9771.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqKjLmD1XU7YFoEFftXtMYmQdEXUyWtZ2UZA';" alt="Stimulus Check Dependents 2 Possible Changes For A Third Check And Who They Could Benefit Cnet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stimulus Check Dependents 2 Possible Changes For A Third Check And Who They Could Benefit Cnet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cnet3.cbsistatic.com/img/iB2KRNw1PHy3vvFGE0QJ8YmCxLE=/940x0/2021/01/05/1dec3f39-7b6a-43bc-ad7f-35b3832ccdfd/29-2021-cash-money-stimulus-bill-600-dollars-check-americans-congress-signed-law-direct-deposit-mail.jpg" data-lightbox="roadtrip" data-title="Stimulus Check Lost In The Mail Probably Not 11 Things Causing A Holdup Cnet">
+											<img class="card-img v-image ads-img " src="https://cnet3.cbsistatic.com/img/iB2KRNw1PHy3vvFGE0QJ8YmCxLE=/940x0/2021/01/05/1dec3f39-7b6a-43bc-ad7f-35b3832ccdfd/29-2021-cash-money-stimulus-bill-600-dollars-check-americans-congress-signed-law-direct-deposit-mail.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPu9SbGPijZbFVi6l21mIHdRBzJ_N-gUPgbw';" alt="Stimulus Check Lost In The Mail Probably Not 11 Things Causing A Holdup Cnet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stimulus Check Lost In The Mail Probably Not 11 Things Causing A Holdup Cnet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://specials-images.forbesimg.com/imageserve/5eb45490e249d20007bb3dc1/960x0.jpg?fit=scale" data-lightbox="roadtrip" data-title="Is Your Stimulus Check Missing Or Inaccurate Here S What To Do">
+											<img class="card-img v-image ads-img " src="https://specials-images.forbesimg.com/imageserve/5eb45490e249d20007bb3dc1/960x0.jpg?fit=scale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSETbC1ujT6B2WT2fMCuV3sjXYdWYVhSJ5ndg';" alt="Is Your Stimulus Check Missing Or Inaccurate Here S What To Do">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Is Your Stimulus Check Missing Or Inaccurate Here S What To Do</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://cnet4.cbsistatic.com/img/9kn6o7tVx-knAzSfSuOAvCXjIg4=/940x0/2020/10/03/f08d8134-c110-4179-8e8c-7cecda58aad0/money-cash-dollar-bills-flag-8184.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSETbC1ujT6B2WT2fMCuV3sjXYdWYVhSJ5ndg';" alt="Is Your Stimulus Check Missing Or Inaccurate Here S What To Do">
+										<div class="card-body">
+						<h3 class="h5"><b>2 You were not dependent on anyones tax return for 2018 or 2019 you should be getting your stimulus payment today or tomorrow.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>My spouse received a stimulus check but i did not</strong>. 
+								
+																	If you did not receive all or part of your money youll need to. 
+																	He got his stimilus check two weeks ago however l have not received one Our information is the same but again l have not received any thing. 
+																	The bad news is that unlike the first stimulus check issued in the Spring. 
+																	Click here for more information on. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Not everyone has received their stimulus payment yet and others received amounts different from what they were expecting. 
+																	The specifics of your case could reveal the answer. 
+																	When the SSA payment method is used each payment is received individually. 
+																	Do not check with your bank prior to 5 days because they may not have any information. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I know he received the payment because I checked the irsgov website and the money was deposited to his bank account. 
+																	If your spouse passed away in early 2020 before COVID and then you got a stimulus check that was for you and your deceased spouse the IRS is saying you have to pay back the portion that went to. 
+																	Individuals and married couples filing jointly can also claim the Recovery Rebate Credit if they did not receive the full amount of the first stimulus payment. 
+																	They are supposed to be 1200 per person. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The stimulus checks are an advance on a credit you can receive on your 2020 tax return. 
+																	My spouse received the stimulus check and refuses to give me my part. 
+																	1 If you did not file tax returns in 2018 or 2019 and. 
+																	The good news is that if you qualify for a second stimulus check but didnt receive one you can still get your money. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The payments are attached to a new set of rules which could leave out some higher-income earners who received partial checks last time. 
+																	This helps eligible Americans who either didnt receive a stimulus check or didnt get the full amountAnd in some cases even a person who received both a 1200 first-round stimulus check and a. 
+																	I would wait to file until the end of January. 
+																	New 600 stimulus checks will be arriving in the coming weeks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 900 billion stimulus legislation makes it possible for families with a noncitizen spouse to qualify for a second stimulus check even if they themselves are issued a taxpayer identification. 
+																	As a single person you needed to have filed a tax return for either 2018 or 2019. 
+																	If something went wrong or you did not get the stimulus check this year you can get it when you file your 2020 return in early 2021if you are eligible. 
+																	Then look at Line 30 of the 1040 form and the Recovery Credit the missing money will be displayed there. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If Get My Payment shows a message of Payment Status 2 Not Available that means you may not get a stimulus payment right now and will need to claim the Recovery Rebate Credit on your. 
+																	If Get My Payment or your Notice 1444 or 1444-B shows your payment was issued as a direct deposit more than 5 days after the payment date your first step is to check with your bank and make sure they didnt receive a deposit. 
+																	So your husband received his now is your turn. 
+																	Look at the Federal Review section and enter the stimulus that you did receive. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However older people who were claimed as a dependent on 2019 tax forms were not eligible for a stimulus check under the CARES Act. 
+																	It will end up on line 30 of your 2020 Form 1040. 
+																	In order to get the 2400 a joint return had to have been filed. 
+																	The federal government had sent stimulus payments to about 11 million dead people totaling nearly 14 billion. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Not only do these principles apply to your stimulus check but Waltzer says there is even a stronger case for the equal division of stimulus checks. 
+																	We filed a 2018 return. 
+																	As you did not file a joint tax return and you were not employed you are not eligible for a stimulus payment. 
+																	People who did not receive either the first or second round of payments that were due to them or received an incorrect amount can claim the Recovery Rebate Credit on their 2020 tax return to get. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	My husband and I have filed a joint tax return for about 30 years. 
+																	I place a restraining order on my spouse mid-March for domestic violence and have only contacted him to ask for my part of the check. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cnet1.cbsistatic.com/img/MadQyrhBKZ72QQGtjViHPthxP1s=/940x0/2020/10/15/6c2600e8-c1b5-45b1-a4a1-a4071e0d3180/money-dollars-bills-sock-american-flag.jpg" data-lightbox="roadtrip" data-title="Stimulus Checks And Child Support Everything You Need To Know Today Cnet">
+											<img class="card-img v-image ads-img " src="https://cnet1.cbsistatic.com/img/MadQyrhBKZ72QQGtjViHPthxP1s=/940x0/2020/10/15/6c2600e8-c1b5-45b1-a4a1-a4071e0d3180/money-dollars-bills-sock-american-flag.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRinP4dMwGo54VrhLt7xelmU3gB_e8TY21ByA';" alt="Stimulus Checks And Child Support Everything You Need To Know Today Cnet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stimulus Checks And Child Support Everything You Need To Know Today Cnet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://specials-images.forbesimg.com/imageserve/5ed8080fd137d500075a6d35/960x0.jpg?fit=scale" data-lightbox="roadtrip" data-title="What To Do If You Haven T Received Your Stimulus Check Yet">
+											<img class="card-img v-image ads-img " src="https://specials-images.forbesimg.com/imageserve/5ed8080fd137d500075a6d35/960x0.jpg?fit=scale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLEHzHtlap1TBoxWRPHtOP5uALaqAD-0o3Iw';" alt="What To Do If You Haven T Received Your Stimulus Check Yet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Do If You Haven T Received Your Stimulus Check Yet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/www.savingtoinvest.com/wp-content/uploads/2020/04/IRS-Deposit-Information.png?resize=751%2C185&amp;ssl=1" data-lightbox="roadtrip" data-title="Calling The Irs For Stimulus Check Payment Issues Or Checking The Get My Payment Tool Vs Getting Through To A Live Agent Aving To Invest">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/www.savingtoinvest.com/wp-content/uploads/2020/04/IRS-Deposit-Information.png?resize=751%2C185&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtzU5NiaX_rVSKhc2AxsUzZMvFG6PT-FNuLw';" alt="Calling The Irs For Stimulus Check Payment Issues Or Checking The Get My Payment Tool Vs Getting Through To A Live Agent Aving To Invest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Calling The Irs For Stimulus Check Payment Issues Or Checking The Get My Payment Tool Vs Getting Through To A Live Agent Aving To Invest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cnet3.cbsistatic.com/img/BTlMzsOkKpgd2F6b5gwN3LGaTks=/940x0/2020/10/01/f91a90aa-cd75-47d1-bcf4-9a0384b7b5fb/004-cash-stimulus-empty-wallet-economic-crisis-dollar-bill-currency-2020.jpg" data-lightbox="roadtrip" data-title="600 Stimulus Check Here S Who Won T Qualify For Another Payment Cnet">
+											<img class="card-img v-image ads-img " src="https://cnet3.cbsistatic.com/img/BTlMzsOkKpgd2F6b5gwN3LGaTks=/940x0/2020/10/01/f91a90aa-cd75-47d1-bcf4-9a0384b7b5fb/004-cash-stimulus-empty-wallet-economic-crisis-dollar-bill-currency-2020.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ERmxuNkLypnAdzc14WCw1ufNEEgT14_3Lw';" alt="600 Stimulus Check Here S Who Won T Qualify For Another Payment Cnet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">600 Stimulus Check Here S Who Won T Qualify For Another Payment Cnet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106658716-1597159452930-hand-of-a-woman-with-deposit-stimulus-check-in-banking-using-an-atm_t20_zWX3Rr_1.jpg?v=1597159559&amp;w=1910&amp;h=1000" data-lightbox="roadtrip" data-title="Why You Might Not Receive A 600 Stimulus Check">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106658716-1597159452930-hand-of-a-woman-with-deposit-stimulus-check-in-banking-using-an-atm_t20_zWX3Rr_1.jpg?v=1597159559&amp;w=1910&amp;h=1000" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvYCqevPOgFRf_u0Imp9A09z_eT6UQiKXBQA';" alt="Why You Might Not Receive A 600 Stimulus Check">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why You Might Not Receive A 600 Stimulus Check</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://creditkarma-cms.imgix.net/wp-content/uploads/2020/04/wheres-my-stimulus-check_1135741284.jpg?w=1024&amp;auto=compress" data-lightbox="roadtrip" data-title="Haven T Received Your Stimulus Check This Could Be Why Credit Karma">
+											<img class="card-img v-image ads-img " src="https://creditkarma-cms.imgix.net/wp-content/uploads/2020/04/wheres-my-stimulus-check_1135741284.jpg?w=1024&amp;auto=compress" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfw3jqZaHaZgjh-xhsh2rWJdBoXRG0FLNZeQ';" alt="Haven T Received Your Stimulus Check This Could Be Why Credit Karma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Haven T Received Your Stimulus Check This Could Be Why Credit Karma</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.eitcoutreach.org/wp-content/uploads/AdobeStock_5166329-368x276.jpg?theia_smart_thumbnails_file_version=5" data-lightbox="roadtrip" data-title="What To Know About The Economic Impact Payments Stimulus Checks Get It Back Tax Credits For People Who Work">
+											<img class="card-img v-image ads-img " src="https://www.eitcoutreach.org/wp-content/uploads/AdobeStock_5166329-368x276.jpg?theia_smart_thumbnails_file_version=5" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrdaB41nH7yQLfmGF1__4Evn7htyUpMcf6sw';" alt="What To Know About The Economic Impact Payments Stimulus Checks Get It Back Tax Credits For People Who Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Know About The Economic Impact Payments Stimulus Checks Get It Back Tax Credits For People Who Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2020/12/have-i-received-my-stimulus-check.jpg" data-lightbox="roadtrip" data-title="Many Americans Have Already Received Their 600 Stimulus Payments Did You Receive Yours Forbes Advisor">
+											<img class="card-img v-image ads-img " src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2020/12/have-i-received-my-stimulus-check.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbrGmTVKkwBRa5EdL-XnJKn3J4feMxqKDdiQ';" alt="Many Americans Have Already Received Their 600 Stimulus Payments Did You Receive Yours Forbes Advisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Many Americans Have Already Received Their 600 Stimulus Payments Did You Receive Yours Forbes Advisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gannett-cdn.com/-mm-/75c3297ee01e8b07ee271ac5bc91ca90da96ae64/c=0-120-2544-1551/local/-/media/2020/08/20/ColumbusOH/ghows-OH-200829944-cc00bc66.jpg?width=660&amp;height=372&amp;fit=crop&amp;format=pjpg&amp;auto=webp" data-lightbox="roadtrip" data-title="Why Some People Are Still Waiting On A Stimulus Check">
+											<img class="card-img v-image ads-img " src="https://www.gannett-cdn.com/-mm-/75c3297ee01e8b07ee271ac5bc91ca90da96ae64/c=0-120-2544-1551/local/-/media/2020/08/20/ColumbusOH/ghows-OH-200829944-cc00bc66.jpg?width=660&amp;height=372&amp;fit=crop&amp;format=pjpg&amp;auto=webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuamXSpfe1aYW8-_vsidzAmrgGFbjI_QWzzQ';" alt="Why Some People Are Still Waiting On A Stimulus Check">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Some People Are Still Waiting On A Stimulus Check</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://specials-images.forbesimg.com/imageserve/5e99bfc6f57d440006ee3603/960x0.jpg?cropX1=338&amp;cropX2=5000&amp;cropY1=290&amp;cropY2=3333" data-lightbox="roadtrip" data-title="5 Reasons You Didn T Get A Stimulus Check">
+											<img class="card-img v-image ads-img " src="https://specials-images.forbesimg.com/imageserve/5e99bfc6f57d440006ee3603/960x0.jpg?cropX1=338&amp;cropX2=5000&amp;cropY1=290&amp;cropY2=3333" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiyarujZbTEu7d2IeDUkIFzpve7-apqXLkJA';" alt="5 Reasons You Didn T Get A Stimulus Check">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Reasons You Didn T Get A Stimulus Check</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mediacloud.kiplinger.com/image/private/s--KywZ36dr--/f_auto,t_primary-image-mobile@1/v1597454677/MissingSpouseInBed.jpg" data-lightbox="roadtrip" data-title="Stimulus Check Relief For Spouses Of Deceased People Is Coming Kiplinger">
+											<img class="card-img v-image ads-img " src="https://mediacloud.kiplinger.com/image/private/s--KywZ36dr--/f_auto,t_primary-image-mobile@1/v1597454677/MissingSpouseInBed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQvmcgZgNynwDa1TnTxwoByM3h_hdLb4XTFw';" alt="Stimulus Check Relief For Spouses Of Deceased People Is Coming Kiplinger">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stimulus Check Relief For Spouses Of Deceased People Is Coming Kiplinger</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106633827-1595856880495-corona-virus-stimulus-payment-check-and-envelope-rltheis_t20_G0yPl1.jpg?v=1595858600" data-lightbox="roadtrip" data-title="1 200 Stimulus Check Final Nov 21 Deadline To Get Money This Year">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106633827-1595856880495-corona-virus-stimulus-payment-check-and-envelope-rltheis_t20_G0yPl1.jpg?v=1595858600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ySK24Fcie5NzSBe2L2CkmuCL6Vtr_G6KXA';" alt="1 200 Stimulus Check Final Nov 21 Deadline To Get Money This Year">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1 200 Stimulus Check Final Nov 21 Deadline To Get Money This Year</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cnet4.cbsistatic.com/img/9kn6o7tVx-knAzSfSuOAvCXjIg4=/940x0/2020/10/03/f08d8134-c110-4179-8e8c-7cecda58aad0/money-cash-dollar-bills-flag-8184.jpg" data-lightbox="roadtrip" data-title="It S True You Don T Have To Be A Us Citizen Living In America To Get A Stimulus Check Cnet">
+											<img class="card-img v-image ads-img " src="https://cnet4.cbsistatic.com/img/9kn6o7tVx-knAzSfSuOAvCXjIg4=/940x0/2020/10/03/f08d8134-c110-4179-8e8c-7cecda58aad0/money-cash-dollar-bills-flag-8184.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRckBj8q9FTtLbX9WnoDk-ukzC2B2ycbqAtUA';" alt="It S True You Don T Have To Be A Us Citizen Living In America To Get A Stimulus Check Cnet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">It S True You Don T Have To Be A Us Citizen Living In America To Get A Stimulus Check Cnet</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/scholarships-for-dependents-of-100-disabled-veterans.html">Scholarships For Dependents Of 100 Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/scholarships-for-army-veteran-dependents.html">Scholarships For Army Veteran Dependents</a></li>
+													<li class="list-group-item"><a href="/scholarship-for-mba-students-in-telangana.html">Scholarship For Mba Students In Telangana</a></li>
+													<li class="list-group-item"><a href="/scholarship-opportunities-for-military-dependents.html">Scholarship Opportunities For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/scholarship-for-mba-in-canada-for-indian-students.html">Scholarship For Mba In Canada For Indian Students</a></li>
+													<li class="list-group-item"><a href="/salvation-army-human-resources-number.html">Salvation Army Human Resources Number</a></li>
+													<li class="list-group-item"><a href="/scholarships-for-army-wives.html">Scholarships For Army Wives</a></li>
+													<li class="list-group-item"><a href="/scholarships-for-federal-employee-dependents.html">Scholarships For Federal Employee Dependents</a></li>
+													<li class="list-group-item"><a href="/scholarship-for-mba-malaysia.html">Scholarship For Mba Malaysia</a></li>
+													<li class="list-group-item"><a href="/salvation-army-emergency-line.html">Salvation Army Emergency Line</a></li>
+													<li class="list-group-item"><a href="/scholarship-for-mba-in-london.html">Scholarship For Mba In London</a></li>
+													<li class="list-group-item"><a href="/salvation-army-phone-number-bowling-green-kentucky.html">Salvation Army Phone Number Bowling Green Kentucky</a></li>
+													<li class="list-group-item"><a href="/scholarships-for-dependents-of-retired-military.html">Scholarships For Dependents Of Retired Military</a></li>
+													<li class="list-group-item"><a href="/scholarships-for-marine-veterans-dependents.html">Scholarships For Marine Veterans Dependents</a></li>
+													<li class="list-group-item"><a href="/salvation-army-donation-pick-up-number.html">Salvation Army Donation Pick Up Number</a></li>
+													<li class="list-group-item"><a href="/scholarship-for-mba-students-in-tamilnadu.html">Scholarship For Mba Students In Tamilnadu</a></li>
+													<li class="list-group-item"><a href="/salvation-army-human-resources-jobs.html">Salvation Army Human Resources Jobs</a></li>
+													<li class="list-group-item"><a href="/scholarship-for-mba-online.html">Scholarship For Mba Online</a></li>
+													<li class="list-group-item"><a href="/scholarships-available-for-dependents-of-veterans.html">Scholarships Available For Dependents Of Veterans</a></li>
+													<li class="list-group-item"><a href="/scholarship-for-mba-for-indian-students.html">Scholarship For Mba For Indian Students</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

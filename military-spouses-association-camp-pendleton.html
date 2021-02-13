@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Spouses Association Camp Pendleton - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Spouses Association Camp Pendleton",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/3a/03/44/3a034481f7c77d1c92ed2d99d1f26a8e.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+spouses+association+camp+pendleton",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Spouses Association Camp Pendleton</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Lincoln Military Housing - Camp Pendleton. Military Spouse Association of Camp Pendleton CA Link. The sponsor may be an officer or enlisted service member. <br>				
+			</p>
+										<a class="badge badge-danger" href="/do-you-have-to-pay-federal-taxes-on-military-retirement.html">do you have to pay federal taxes on military retirement</a>
+											<a class="badge badge-light" href="/do-va-dependents-get-a-stimulus-check.html">do va dependents get a stimulus check</a>
+											<a class="badge badge-light" href="/do-military-spouses-go-to-college-for-free.html">do military spouses go to college for free</a>
+											<a class="badge badge-success" href="/do-you-salute-an-officers-wife.html">do you salute an officers wife</a>
+											<a class="badge badge-dark" href="/do-military-spouses-have-to-pay-out-of-state-tuition.html">do military spouses have to pay out of state tuition</a>
+											<a class="badge badge-info" href="/do-military-spouses-pay-taxes.html">do military spouses pay taxes</a>
+											<a class="badge badge-success" href="/documents-needed-for-military-dependent-id-card.html">documents needed for military dependent id card</a>
+											<a class="badge badge-warning" href="/do-you-have-to-salute-an-officers-wife.html">do you have to salute an officers wife</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to visit the right site.  Our website provides you with suggestions for viewing the highest quality video and image content, hunt and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie that you view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=761831967752688" data-lightbox="roadtrip" data-title="Military Spouse Association Of Camp Pendleton Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=761831967752688" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBSYYGYQ6CtIKo0cOic4eiUKVJo6PsW3CsMw';" alt="Military Spouse Association Of Camp Pendleton Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Association Of Camp Pendleton Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/62/c3/3362c3c8ff9b122ed3fa9f3ee3351acf.jpg" data-lightbox="roadtrip" data-title="Military Spouse Education Guide All You Need To Know On Starting Your Education Available Schol Military Spouse Scholarships Military Spouse Education Guide">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/62/c3/3362c3c8ff9b122ed3fa9f3ee3351acf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjVZrLl1rhs7D_w2tXg5vKrsdrwoskB9Gomg';" alt="Military Spouse Education Guide All You Need To Know On Starting Your Education Available Schol Military Spouse Scholarships Military Spouse Education Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Education Guide All You Need To Know On Starting Your Education Available Schol Military Spouse Scholarships Military Spouse Education Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/60/c1/e260c1a47e772cea1dd9e809e651e48d.jpg" data-lightbox="roadtrip" data-title="Camp Pendleton Marine Couples Session Military Couples Military Couple Pictures Military Couple Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/60/c1/e260c1a47e772cea1dd9e809e651e48d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQyBgxE1GCVHAQcwfJx1cKubSgUeSOyeS8oQ';" alt="Camp Pendleton Marine Couples Session Military Couples Military Couple Pictures Military Couple Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Camp Pendleton Marine Couples Session Military Couples Military Couple Pictures Military Couple Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/e4/0e/28e40e905f61f7a1d5c317fb179d1436.jpg" data-lightbox="roadtrip" data-title="Jul 14 Dod Military Spouse Networking Event Location Marine Family Programs 13150 12 30pm 2 30pm Learn About Ci Job Search Success Books Success Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/e4/0e/28e40e905f61f7a1d5c317fb179d1436.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQopSIZexiAD-gR67atgxrfSqOFRd_m-jJTg';" alt="Jul 14 Dod Military Spouse Networking Event Location Marine Family Programs 13150 12 30pm 2 30pm Learn About Ci Job Search Success Books Success Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jul 14 Dod Military Spouse Networking Event Location Marine Family Programs 13150 12 30pm 2 30pm Learn About Ci Job Search Success Books Success Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/d1/1a/83d11a1ccd954cfe56cc2ef17d74308f.jpg" data-lightbox="roadtrip" data-title="It S Called Frog Voice Here S What Parris Island Drill Instructors Do To Prevent It Drill Instructor Camp Pendleton Parris Island">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/d1/1a/83d11a1ccd954cfe56cc2ef17d74308f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8DQ8GoeEIs1Gjgoy_z_0SDRz793dW3hMz5Q';" alt="It S Called Frog Voice Here S What Parris Island Drill Instructors Do To Prevent It Drill Instructor Camp Pendleton Parris Island">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">It S Called Frog Voice Here S What Parris Island Drill Instructors Do To Prevent It Drill Instructor Camp Pendleton Parris Island</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Feb/20/2002252536/-1/-1/0/200219-M-BH464-1005.JPG" data-lightbox="roadtrip" data-title="200219 M Bh464 1005">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Feb/20/2002252536/-1/-1/0/200219-M-BH464-1005.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQav9E4Iq1nxnheZu6Og7UayMstdpWBo5aUvQ';" alt="200219 M Bh464 1005">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">200219 M Bh464 1005</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/56/9d/df/569ddf6d1d16fd284914ab580ec9ac07.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQav9E4Iq1nxnheZu6Og7UayMstdpWBo5aUvQ';" alt="200219 M Bh464 1005">
+										<div class="card-body">
+						<h3 class="h5"><b>Charity Organization Community Event.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military spouses association camp pendleton</strong>. 
+								
+																	October 8 2020 An association that is supposed to be there for fellow military spouses to show support and in an instant has done the exact opposite. 
+																	I have been a member of the Military Spouse Association Camp Pendleton from the moment we stepped foot on Camp Pendleton. 
+																	Our mission is to foster camaraderie among members while supporting social educational and community initiatives through service and philanthropy to improve the greater Camp Pendleton community. 
+																	About the Nonprofit Visit Our Website. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	501c3 IRS Form 990 Filed The MSACP is a non-profit and all volunteer service organization committed to providing assistance to our military and surrounding communities. 
+																	B - Education. 
+																	The scholarship is open to spouses and dependents who have an AD or retired sponsor from Camp Pendleton. 
+																	Military Spouses Association- MSA 29 Palms. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	719 likes 1 talking about this. 
+																	The scholarship is open to spouses and dependents who have an AD or retired sponsor from Camp Pendleton. 
+																	Monterey Bay Officers Spouse Club CA Link. 
+																	The Military Spouse Association of Camp Pendleton is a member run organization that supports social educational and community initiatives through service and philanthropy to improve the lives of military members and their families aboard Camp Pendleton while strengthening and supporting the surrounding community. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Recent Post by Page. 
+																	Military Spouse Association Of Camp Pendleton. 
+																	Margaritaville Auction - Military Spouse Association of Camp Pendleton. 
+																	Mission TO SUPPORT MILITARY FAMILIES AND OTHERS INVOLVED WITHIN THE MILITARY COMMUNITY BY PROVIDING EDUCATIONAL SCHOLARSHIP FUNDS AND DIRECT SUPPORT. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Contact Military Spouse Association Of Camp Pendleton on Messenger. 
+																	WelcomeThe Military Spouse Association of Camp Pendleton fosters camaraderie among members while supporting social educational and community initiatives through service and philanthropy to improve the greater Camp Pendleton communityPresidents Message Hello. 
+																	Welcome to the 2016-2017 MSACP year. 
+																	Military Spouse Association of Camp Pendleton We are open to all spouses of Active Duty Retired and Gold Star Military Service Members in the Camp Pendleton area. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Im Toni President of the Military Spouse Association of Camp Pendleton. 
+																	Marine Corps Base Camp Pendleton Civilian Personnel Office 760 725-3794. 
+																	Military babyshowers specifically for Marine battalions at Camp Pendleton and Marine Corps. 
+																	Are you getting the support you need from official channels. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Marine Corps Base Camp Pendleton Spouse Education Training and Careers 760 763-4199. 
+																	Today at 1215 PM. 
+																	28 February 2021 Description. 
+																	Individuals whose sponsors are active duty members of the United States Marine Corps Navy or any of the sister services currently stationed aboard Camp Pendleton may submit an application. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Facebook is showing information to help you better understand the purpose of a Page. 
+																	MCB Camp Pendleton Military Spouse Information Heres the place to discuss whatevers on your mind Marine spouses. 
+																	Military Spouses Association of Camp Pendleton Scholarship. 
+																	Kimberly Petrillo doesnt recommend Margaritaville Auction - Military Spouse Association of Camp Pendleton. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Spouse Association of Camp Pendleton CA Link. 
+																	As a member and executive secretary of the association I have helped raise over 11000000 to provide scholarships to military dependents and community enrichment grants to local nonprofits who provide services to the military community. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/03/44/3a034481f7c77d1c92ed2d99d1f26a8e.png" data-lightbox="roadtrip" data-title="Security Check Required Marine Corps United States Marine Corps My Marine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/03/44/3a034481f7c77d1c92ed2d99d1f26a8e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ_D2K9ydHq8_DvRC_fH84IjJvRpoAy1PJEw';" alt="Security Check Required Marine Corps United States Marine Corps My Marine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Security Check Required Marine Corps United States Marine Corps My Marine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/9d/df/569ddf6d1d16fd284914ab580ec9ac07.jpg" data-lightbox="roadtrip" data-title="Pin On Marines With Dogs And Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/9d/df/569ddf6d1d16fd284914ab580ec9ac07.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZoY-Hx8quMJn0o76HgxaRezutefG-oF04rw';" alt="Pin On Marines With Dogs And Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Marines With Dogs And Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/f0/c1/0af0c1f0696fccb2bf0b984ac5926571.jpg" data-lightbox="roadtrip" data-title="Sgt Lena Mae Riggi Basilone Wwii Women Female Marines Military Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/f0/c1/0af0c1f0696fccb2bf0b984ac5926571.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQervuKu7TQ2RfSYhPDRoDiQFLjxYxwe-N8gw';" alt="Sgt Lena Mae Riggi Basilone Wwii Women Female Marines Military Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sgt Lena Mae Riggi Basilone Wwii Women Female Marines Military Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Apr/01/2002273472/-1/-1/0/200315-M-BH464-502.JPG" data-lightbox="roadtrip" data-title="200315 M Bh464 502">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Apr/01/2002273472/-1/-1/0/200315-M-BH464-502.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI2o3OYA9jj1wbmUwhxIA8wHonz2zFcInpmQ';" alt="200315 M Bh464 502">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">200315 M Bh464 502</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/c9/4c/16c94c68d70b939914df2387fd63f8f2.jpg" data-lightbox="roadtrip" data-title="Thank You Military Spouse Business Association For Telling Your Members About Our App Calldibsapp Milspouse Milso Milkids M Smartphone Apps Military App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/c9/4c/16c94c68d70b939914df2387fd63f8f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkQozr0n6fH5APH6Ira44utUvf9Vy149h-SQ';" alt="Thank You Military Spouse Business Association For Telling Your Members About Our App Calldibsapp Milspouse Milso Milkids M Smartphone Apps Military App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thank You Military Spouse Business Association For Telling Your Members About Our App Calldibsapp Milspouse Milso Milkids M Smartphone Apps Military App</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/02/45/3e/02453e2a3615fa35e3bfe0e8ba59c475.jpg" data-lightbox="roadtrip" data-title="Service Members Recieve Help From The Navy Marine Corps Relief Society T Relief Society Navy Marine Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/02/45/3e/02453e2a3615fa35e3bfe0e8ba59c475.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuSQ7U7iNDF89XCCtrLbFVzPv2sjpNLGhE3Q';" alt="Service Members Recieve Help From The Navy Marine Corps Relief Society T Relief Society Navy Marine Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Service Members Recieve Help From The Navy Marine Corps Relief Society T Relief Society Navy Marine Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2018/Dec/12/2002071820/-1/-1/0/181211-M-WH325-1033.JPG" data-lightbox="roadtrip" data-title="181211 M Wh325 1033">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2018/Dec/12/2002071820/-1/-1/0/181211-M-WH325-1033.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2_FtAbMjE-gtfyxxQqoFTnKJvCROuIkjj2A';" alt="181211 M Wh325 1033">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">181211 M Wh325 1033</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/3b/08/cc3b0873a8337475bb0c98f32c3fa92a.png" data-lightbox="roadtrip" data-title="Majgen Joseph H Pendleton Veteran Of The Spanish American War The Philippine American War The Spanish American War Marine Forces United States Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/3b/08/cc3b0873a8337475bb0c98f32c3fa92a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-S3QRT9zBPboJRQnlroBAx84TdTRcY0xhjA';" alt="Majgen Joseph H Pendleton Veteran Of The Spanish American War The Philippine American War The Spanish American War Marine Forces United States Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Majgen Joseph H Pendleton Veteran Of The Spanish American War The Philippine American War The Spanish American War Marine Forces United States Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/09/f3/d109f3c61c8616f9521d9a462e36d30f.jpg" data-lightbox="roadtrip" data-title="Eagle Young Marines Marines Camp Pendleton Marines Marine Corps Bases">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/09/f3/d109f3c61c8616f9521d9a462e36d30f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT56Q9FAVLfUkwKN7FKMasgGonjcyeWBywgOA';" alt="Eagle Young Marines Marines Camp Pendleton Marines Marine Corps Bases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eagle Young Marines Marines Camp Pendleton Marines Marine Corps Bases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://usveteransmagazine.com/wp-content/uploads/2018/04/Camp-Pendleton_preview.jpeg" data-lightbox="roadtrip" data-title="Working Wardrobes And Vetnet S Men S Power Up For Success Event At Camp Pendleton Us Veterans And Military Magazine A Us Veterans News Resource">
+											<img class="card-img v-image ads-img " src="https://usveteransmagazine.com/wp-content/uploads/2018/04/Camp-Pendleton_preview.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-05cTz7Xvqd98o16IveeLVD3THLNrjZ7Ziw';" alt="Working Wardrobes And Vetnet S Men S Power Up For Success Event At Camp Pendleton Us Veterans And Military Magazine A Us Veterans News Resource">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Working Wardrobes And Vetnet S Men S Power Up For Success Event At Camp Pendleton Us Veterans And Military Magazine A Us Veterans News Resource</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2013/Nov/22/2000748156/-1/-1/0/131121-M-DB645-005.JPG" data-lightbox="roadtrip" data-title="Camp Pendleton Holds Memorial">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2013/Nov/22/2000748156/-1/-1/0/131121-M-DB645-005.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAjIgk13kuL984fGsror3gRVk0lR-vtBglNg';" alt="Camp Pendleton Holds Memorial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Camp Pendleton Holds Memorial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2015/Jun/17/2001066185/-1/-1/0/150617-M-MM729-085.JPG" data-lightbox="roadtrip" data-title="Camp Pendleton Conducts Active Shooter Response Exercise">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2015/Jun/17/2001066185/-1/-1/0/150617-M-MM729-085.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStrXm3I0LRyRC7vTHvBst1KHmQtTcFikFQRg';" alt="Camp Pendleton Conducts Active Shooter Response Exercise">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Camp Pendleton Conducts Active Shooter Response Exercise</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Jan/08/2002231522/-1/-1/0/180831-M-XF840-1166.JPG" data-lightbox="roadtrip" data-title="180831 M Xf840 1166">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Jan/08/2002231522/-1/-1/0/180831-M-XF840-1166.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFMjyZob0K-KqIVts3eJACjusTCPHksr9pOw';" alt="180831 M Xf840 1166">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">180831 M Xf840 1166</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-flight-hours-to-civilian.html">Military Flight Hours To Civilian</a></li>
+													<li class="list-group-item"><a href="/military-early-retirement-pay-calculator.html">Military Early Retirement Pay Calculator</a></li>
+													<li class="list-group-item"><a href="/military-haircut-high-fade.html">Military Haircut High Fade</a></li>
+													<li class="list-group-item"><a href="/military-haircut-canada.html">Military Haircut Canada</a></li>
+													<li class="list-group-item"><a href="/military-haircut-how-to.html">Military Haircut How To</a></li>
+													<li class="list-group-item"><a href="/military-fallen-heroes.html">Military Fallen Heroes</a></li>
+													<li class="list-group-item"><a href="/military-doctor-who-killed-his-wife.html">Military Doctor Who Killed His Wife</a></li>
+													<li class="list-group-item"><a href="/military-for-hong-kong.html">Military For Hong Kong</a></li>
+													<li class="list-group-item"><a href="/military-fade-haircut-video.html">Military Fade Haircut Video</a></li>
+													<li class="list-group-item"><a href="/military-guy-killed-wife-and-daughters.html">Military Guy Killed Wife And Daughters</a></li>
+													<li class="list-group-item"><a href="/military-haircut-boy.html">Military Haircut Boy</a></li>
+													<li class="list-group-item"><a href="/military-german-haircut.html">Military German Haircut</a></li>
+													<li class="list-group-item"><a href="/military-haircut-diy.html">Military Haircut Diy</a></li>
+													<li class="list-group-item"><a href="/military-haircut-curly-hair.html">Military Haircut Curly Hair</a></li>
+													<li class="list-group-item"><a href="/military-dog-hero-conan.html">Military Dog Hero Conan</a></li>
+													<li class="list-group-item"><a href="/military-haircut-and-beard.html">Military Haircut And Beard</a></li>
+													<li class="list-group-item"><a href="/military-haircut-history.html">Military Haircut History</a></li>
+													<li class="list-group-item"><a href="/military-english-resources.html">Military English Resources</a></li>
+													<li class="list-group-item"><a href="/military-haircut-discounts.html">Military Haircut Discounts</a></li>
+													<li class="list-group-item"><a href="/military-former-spouse-medical-benefits.html">Military Former Spouse Medical Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

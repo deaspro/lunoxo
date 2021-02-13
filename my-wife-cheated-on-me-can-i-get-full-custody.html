@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>My Wife Cheated On Me Can I Get Full Custody - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "My Wife Cheated On Me Can I Get Full Custody",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/c3/6b/95/c36b953ea8c036867b9371c423b29022.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=my+wife+cheated+on+me+can+i+get+full+custody",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>My Wife Cheated On Me Can I Get Full Custody</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">There is almost no situation which would give you total say so in the courts. Can I get full custody the house if I file for divorce. And this led to him asking his sister and his dad at every opportunity to look after my son as he didnt want me to find out about his new relationship. <br>				
+			</p>
+										<a class="badge badge-info" href="/rare-nike-air-force-1-womens.html">rare nike air force 1 womens</a>
+											<a class="badge badge-secondary" href="/retired-military-college-benefits-for-dependents.html">retired military college benefits for dependents</a>
+											<a class="badge badge-warning" href="/renew-military-id-card-for-spouse.html">renew military id card for spouse</a>
+											<a class="badge badge-success" href="/rebirth-of-the-little-military-wife-novel-updates.html">rebirth of the little military wife novel updates</a>
+											<a class="badge badge-warning" href="/retired-military-dependent-id-renewal.html">retired military dependent id renewal</a>
+											<a class="badge badge-secondary" href="/quotes-about-being-a-military-girlfriend.html">quotes about being a military girlfriend</a>
+											<a class="badge badge-warning" href="/rap-monster-military-service.html">rap monster military service</a>
+											<a class="badge badge-danger" href="/quotes-for-my-spouse.html">quotes for my spouse</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to visit the ideal blog.  Our site gives you hints for viewing the highest quality video and picture content, hunt and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie that you see.  It is also possible to bring about supporting this site by sharing videos and images that you enjoy on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fc/da/ba/fcdabab1a94c76e8a6ad273acfc4f7fa.jpg" data-lightbox="roadtrip" data-title="How To Confront A Cheating Girlfriend In 2020 Relationship Cheating Girlfriend Emotional Manipulation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fc/da/ba/fcdabab1a94c76e8a6ad273acfc4f7fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUhYTnHSsIAQkTgP2gPWT0yogrf1CKBbh2bQ';" alt="How To Confront A Cheating Girlfriend In 2020 Relationship Cheating Girlfriend Emotional Manipulation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Confront A Cheating Girlfriend In 2020 Relationship Cheating Girlfriend Emotional Manipulation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/ba/00/ffba00f7aa0cbeba3c7ca2461984e162.png" data-lightbox="roadtrip" data-title="Signs Your Wife Is Having An Affair Signs Your Wife Is Cheating Cheating Husband Catch Cheating Husband Emotional Affair Signs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/ba/00/ffba00f7aa0cbeba3c7ca2461984e162.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbtaKgyof36ZtaQvccWF0LubXMqPJfSLuSjw';" alt="Signs Your Wife Is Having An Affair Signs Your Wife Is Cheating Cheating Husband Catch Cheating Husband Emotional Affair Signs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Signs Your Wife Is Having An Affair Signs Your Wife Is Cheating Cheating Husband Catch Cheating Husband Emotional Affair Signs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/80/37/4380372971c574389308c05675d0e0ec.jpg" data-lightbox="roadtrip" data-title="Pin On Cheating Partners">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/80/37/4380372971c574389308c05675d0e0ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXyNM40f9vWKI04PtHB6Pfw4HmHgqOr0nYMA';" alt="Pin On Cheating Partners">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cheating Partners</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c3/6b/95/c36b953ea8c036867b9371c423b29022.jpg" data-lightbox="roadtrip" data-title="I Lost My Love For My Wife And Got A Divorce We Fell In Love Again And We Whisper Confessions Relationships Boyfriend Quotes Relationships Whisper Confessions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c3/6b/95/c36b953ea8c036867b9371c423b29022.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpflmu6RRZSocTik63Fm9ZvapBYWT9-pseNA';" alt="I Lost My Love For My Wife And Got A Divorce We Fell In Love Again And We Whisper Confessions Relationships Boyfriend Quotes Relationships Whisper Confessions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Lost My Love For My Wife And Got A Divorce We Fell In Love Again And We Whisper Confessions Relationships Boyfriend Quotes Relationships Whisper Confessions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/77/73/d97773579c7bb95e2911f2f9fa619d35.jpg" data-lightbox="roadtrip" data-title="Spouse Cheated 5 Tips For Overcoming Adultery This Is Good Advice To Help Work Through Infidelity In A Marriag Best Marriage Advice Marriage Advice Cheating">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/77/73/d97773579c7bb95e2911f2f9fa619d35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTum-uuDZKnewNfDvdPAF91_3ukXZ35aCpmEA';" alt="Spouse Cheated 5 Tips For Overcoming Adultery This Is Good Advice To Help Work Through Infidelity In A Marriag Best Marriage Advice Marriage Advice Cheating">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spouse Cheated 5 Tips For Overcoming Adultery This Is Good Advice To Help Work Through Infidelity In A Marriag Best Marriage Advice Marriage Advice Cheating</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/5c/46/085c46d24d899c9ec31d9d32807d7306.png" data-lightbox="roadtrip" data-title="Does Cheating Affect Your Divorce Case In 2020 Divorce Advice Divorce Divorce And Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/5c/46/085c46d24d899c9ec31d9d32807d7306.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgPZFKlHnGlHzil2qOHJjuoeSYsh8Gv3QhYA';" alt="Does Cheating Affect Your Divorce Case In 2020 Divorce Advice Divorce Divorce And Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Does Cheating Affect Your Divorce Case In 2020 Divorce Advice Divorce Divorce And Kids</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/91/38/a2/9138a2666b155eb9623fd9595442f568.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgPZFKlHnGlHzil2qOHJjuoeSYsh8Gv3QhYA';" alt="Does Cheating Affect Your Divorce Case In 2020 Divorce Advice Divorce Divorce And Kids">
+										<div class="card-body">
+						<h3 class="h5"><b>If your husband cheated youd.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>My wife cheated on me can i get full custody</strong>. 
+								
+																	It is difficult to answer this question solely based upon the fact that your wife cheated on you. 
+																	If my wife cheated on me can I get full custody. 
+																	Child custody Family court and child custody cases Guardian ad litem Representing yourself. 
+																	Even if the judge gives you custody absent some anise on the part of the other parent the other parent will get visitation of some sort. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He also then started isolating himself and my son from me. 
+																	Typically a husband or wife that has been cheated on might feel that they have a right to full custody but in the sight of a judge adultery doesnt make anyone unfit to be a childs caregiver. 
+																	It always depends on each cases unique circumstances BUT it is unlikely that mere garden-variety infidelity would be a basis for awarding the injured spouse sole legal or physical custody of the parties children. 
+																	Naturally the character of the other woman or man is a common concern for parents seeking primary custody Broder explains which is completely understandable. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	More information would be needed. 
+																	If your wife has been a good mother the adultery may have little to no impact whatsoever. 
+																	While confirmed cheating alone may not provide support for your child custody position it is largely dependent on the facts of your case. 
+																	My first piece of advice to anyone who doesnt have definitive proof of cheating is to not let your suspicions get away with you and dont make accusations of infidelity unless youre absolutely sure there is an issue to be dealt with. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If this affected your ability to provide proper care for your child this can keep you from winning custody of your child. 
+																	It finally transpired that he had met someone. 
+																	While your ex may have done you wrong winning full custody to avoid interacting with your former mate again isnt a reason for full custody. 
+																	While having an affair isnt grounds for losing custody of the child there are circumstances that might contribute to the fact that the cheating spouse makes bad decisions or puts their needs before the child. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Few months ago he had sex with my best friend she is a nurse like me and we work together my husband and I went to counseling and after a while we reconciled and things were going normal. 
+																	My husband cheated on me again with my best friend. 
+																	Unless your ex poses a serious danger to your child and has a history that indicates a pattern of unsafe behavior you should question your goal to win full custody. 
+																	And it made it very difficult for me to get access to my son. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 The parent who has the most involvement in the childs daily life usually has an advantage in winning a child custody case. 
+																	This answer only includes general divorce information for men as I am only licensed to practice in Oklahoma and cannot provide advice on child custody laws in your state. 
+																	The short answer to your question is. 
+																	Evidence of cheating will not automatically result in the award of custody of the children but it will not do your spouse any favors when it comes to resolving the child custody issue. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sometimes a wifes behavior can indicate cheating just because there are indications and suspicions though does not mean there is cheating. 
+																	In Utah moral conduct during the marriage is not a factor considered when the court determines whether the man or woman should get primary custody. 
+																	Infidelity does not always have a direct affect on custody. 
+																	The parent seeking full-custody to become the sole care giver must prove to the courts that the other parent is unfit to care for the children. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Show 1 more Show 1 less. 
+																	My spouse left for the person they are having an affair with how will that affect custody of our children. 
+																	In Ohio the standard the court will use to determine custody in known as the Best Interest standard. 
+																	There are a variety of ways to prove a mother or father is an unfit parent as it will depend on the specific situation you are in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Who gets custody is based on what a judge determines is in the childs best interest. 
+																	She brought some man in my house and slept with him on my bed he was also a drug addict can she be deemed unfit. 
+																	Your wifes adultery may or may not have an influence on your case depending on the circumstances. 
+																	In most cases as long as the person your spouse had an affair with doesnt present potential harm to the child it will not affect the custody decision. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A court in this instance a Domestic Relations Court will not based a decision regarding custody only on based on marital faithfulness. 
+																	The court is only looking out for the best interest of the child in custody cases. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/2c/75/e22c75bb6f49c30d326a691645f0dff4.jpg" data-lightbox="roadtrip" data-title="A Bride S Worst Nightmare Cheated On Right Before The Wedding Whisper Quotes Whisper Confessions Cheating">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/2c/75/e22c75bb6f49c30d326a691645f0dff4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR58LtMx12V5NYDmIrtTUcuWUppbguFZRhRow';" alt="A Bride S Worst Nightmare Cheated On Right Before The Wedding Whisper Quotes Whisper Confessions Cheating">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Bride S Worst Nightmare Cheated On Right Before The Wedding Whisper Quotes Whisper Confessions Cheating</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/58/df/6358dfa54f6fd82ffbd21b79346868e8.png" data-lightbox="roadtrip" data-title="To The Wife Of The Broken Man Who Left You For Another Wholesome Housewife Christian Divorce Cheating Husband Men Who Cheat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/58/df/6358dfa54f6fd82ffbd21b79346868e8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuoCua9WoqYNyWcWVUOKtNGpnnpdGQKYfN7A';" alt="To The Wife Of The Broken Man Who Left You For Another Wholesome Housewife Christian Divorce Cheating Husband Men Who Cheat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">To The Wife Of The Broken Man Who Left You For Another Wholesome Housewife Christian Divorce Cheating Husband Men Who Cheat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/72/e6/6f72e63725cb25297b7115582b90f558.png" data-lightbox="roadtrip" data-title="Did Your Spouse Cheat On You In 2020 Divorce Divorce And Kids Divorce Help">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/72/e6/6f72e63725cb25297b7115582b90f558.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwEtK7Wumd_absPnaPrUfMG4FhrRuKaTHhjA';" alt="Did Your Spouse Cheat On You In 2020 Divorce Divorce And Kids Divorce Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Did Your Spouse Cheat On You In 2020 Divorce Divorce And Kids Divorce Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b9/87/b4/b987b41b6488f6dd22dabfbaa00f2b0b.jpg" data-lightbox="roadtrip" data-title="Why He Can Never Cheat On Me I On Him Marriage Tips Best Marriage Advice Is He Cheating">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b9/87/b4/b987b41b6488f6dd22dabfbaa00f2b0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5l3i-1L5BjM_gtIAnmMacehTywlenZUm5hA';" alt="Why He Can Never Cheat On Me I On Him Marriage Tips Best Marriage Advice Is He Cheating">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why He Can Never Cheat On Me I On Him Marriage Tips Best Marriage Advice Is He Cheating</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/9b/42/009b4229586419da23d88281cabd0d29.jpg" data-lightbox="roadtrip" data-title="14 Ways To Get Revenge On Your Cheating Ex How To Get Revenge Losing A Dog Revenge Ideas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/9b/42/009b4229586419da23d88281cabd0d29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKerxQ1v6qSha5ptiGk0HUCdoJqsrHD8yuLw';" alt="14 Ways To Get Revenge On Your Cheating Ex How To Get Revenge Losing A Dog Revenge Ideas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">14 Ways To Get Revenge On Your Cheating Ex How To Get Revenge Losing A Dog Revenge Ideas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/06/2c/c3/062cc33ced65f8f7884e620af5b99840.jpg" data-lightbox="roadtrip" data-title="Can I Lose Custody Of My Child For Adultery In Utah In 2020 Child Custody Lawyers Child Custody Custody Lawyer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/06/2c/c3/062cc33ced65f8f7884e620af5b99840.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuwkM9aWD0qoS1UJ48ytC_Tq-iAzMe476ZCQ';" alt="Can I Lose Custody Of My Child For Adultery In Utah In 2020 Child Custody Lawyers Child Custody Custody Lawyer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can I Lose Custody Of My Child For Adultery In Utah In 2020 Child Custody Lawyers Child Custody Custody Lawyer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/5b/f9/e15bf9f56225658da812ba2cc65f77c5.jpg" data-lightbox="roadtrip" data-title="A Letter To My Husband Who Had An Affair And Blamed Me Narcissistic Husband Ex Husband Quotes Cheating Husband Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/5b/f9/e15bf9f56225658da812ba2cc65f77c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtZB9tB8HXZuiFP-gyM-6Dzu5WPYw5fgrXLg';" alt="A Letter To My Husband Who Had An Affair And Blamed Me Narcissistic Husband Ex Husband Quotes Cheating Husband Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Letter To My Husband Who Had An Affair And Blamed Me Narcissistic Husband Ex Husband Quotes Cheating Husband Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/06/e0/b506e0cc51bf4a21e17271ec2e9c5e86.jpg" data-lightbox="roadtrip" data-title="Caught Cheating Can You File For Divorce Based On Adultery Weinberger Blog Divorce Advice Divorce Divorce Help">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/06/e0/b506e0cc51bf4a21e17271ec2e9c5e86.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSlBOxG-OVBaNVvbbK990IgoAPZE1jLJx7vA';" alt="Caught Cheating Can You File For Divorce Based On Adultery Weinberger Blog Divorce Advice Divorce Divorce Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Caught Cheating Can You File For Divorce Based On Adultery Weinberger Blog Divorce Advice Divorce Divorce Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/f2/6f/51f26f758e84e4f214ac3f81af2674e5.png" data-lightbox="roadtrip" data-title="How To Move On After You Ve Been Ruthlessly Cheated On Cheating Husband Quotes Cheating Surviving Infidelity">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/f2/6f/51f26f758e84e4f214ac3f81af2674e5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwPm7W8OQWdJXCs9isyfCzO-tzndB7DIelYQ';" alt="How To Move On After You Ve Been Ruthlessly Cheated On Cheating Husband Quotes Cheating Surviving Infidelity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Move On After You Ve Been Ruthlessly Cheated On Cheating Husband Quotes Cheating Surviving Infidelity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e2/a7/0f/e2a70fa183c49e764c9680c81fac9d69.jpg" data-lightbox="roadtrip" data-title="What Needs To Be Done If I Have Full Custody For The Father To Sign Over Rights Child Custody Lawyers Child Custody Custody Lawyer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e2/a7/0f/e2a70fa183c49e764c9680c81fac9d69.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7E6KFitDNbMMMAnmnxrv56GhOsXcX_xoLfw';" alt="What Needs To Be Done If I Have Full Custody For The Father To Sign Over Rights Child Custody Lawyers Child Custody Custody Lawyer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Needs To Be Done If I Have Full Custody For The Father To Sign Over Rights Child Custody Lawyers Child Custody Custody Lawyer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/91/38/a2/9138a2666b155eb9623fd9595442f568.jpg" data-lightbox="roadtrip" data-title="Pin By Anouk Vermeersch On Z Random Shit Lol How To Get Revenge Revenge Stories Revenge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/91/38/a2/9138a2666b155eb9623fd9595442f568.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX9oC8V0jAtFGzV1aCGlnpieiTHhIjPRjUWA';" alt="Pin By Anouk Vermeersch On Z Random Shit Lol How To Get Revenge Revenge Stories Revenge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Anouk Vermeersch On Z Random Shit Lol How To Get Revenge Revenge Stories Revenge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/71/a2/af71a232a01b215dd3f5f7e23a531fca.png" data-lightbox="roadtrip" data-title="Aita For Giving My Husband An Ultimatum Regarding His Kids And Ex Wife Either They Show Up To Our House Clean And Fed Or We Give It To Me Ex Wives Clean">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/71/a2/af71a232a01b215dd3f5f7e23a531fca.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIC4uVb52os7lYsRBk9BIvsj3o4FPHybj7Bg';" alt="Aita For Giving My Husband An Ultimatum Regarding His Kids And Ex Wife Either They Show Up To Our House Clean And Fed Or We Give It To Me Ex Wives Clean">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aita For Giving My Husband An Ultimatum Regarding His Kids And Ex Wife Either They Show Up To Our House Clean And Fed Or We Give It To Me Ex Wives Clean</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/f3/f1/92f3f1dc9f56518286f2be772574ac87.png" data-lightbox="roadtrip" data-title="Pin By Lunafae On Just Saying Quotes Parenting E Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/f3/f1/92f3f1dc9f56518286f2be772574ac87.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7O2xV2YQyRTvkm1my16303ZiG85LpvHJV4A';" alt="Pin By Lunafae On Just Saying Quotes Parenting E Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Lunafae On Just Saying Quotes Parenting E Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-to-know-if-my-partner-is-abusive.html">How To Know If My Partner Is Abusive</a></li>
+													<li class="list-group-item"><a href="/how-to-get-tsa-precheck-for-military-dependents.html">How To Get Tsa Precheck For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/how-to-obtain-my-military-shot-records.html">How To Obtain My Military Shot Records</a></li>
+													<li class="list-group-item"><a href="/how-to-get-spouse-on-tricare.html">How To Get Spouse On Tricare</a></li>
+													<li class="list-group-item"><a href="/how-to-look-up-veteran-status.html">How To Look Up Veteran Status</a></li>
+													<li class="list-group-item"><a href="/how-to-know-spouse-name-by-astrology.html">How To Know Spouse Name By Astrology</a></li>
+													<li class="list-group-item"><a href="/how-to-look-up-relatives-military-records.html">How To Look Up Relatives Military Records</a></li>
+													<li class="list-group-item"><a href="/how-to-love-husband-unconditionally.html">How To Love Husband Unconditionally</a></li>
+													<li class="list-group-item"><a href="/how-to-live-with-inattentive-adhd.html">How To Live With Inattentive Adhd</a></li>
+													<li class="list-group-item"><a href="/how-to-manage-spouse-anger.html">How To Manage Spouse Anger</a></li>
+													<li class="list-group-item"><a href="/how-to-manage-anxiety-books.html">How To Manage Anxiety Books</a></li>
+													<li class="list-group-item"><a href="/how-to-look-up-car-details-by-vin.html">How To Look Up Car Details By Vin</a></li>
+													<li class="list-group-item"><a href="/how-to-handle-spouse-deployment.html">How To Handle Spouse Deployment</a></li>
+													<li class="list-group-item"><a href="/how-to-keep-my-military-retirement-in-a-divorce.html">How To Keep My Military Retirement In A Divorce</a></li>
+													<li class="list-group-item"><a href="/how-to-renew-military-dependent-id-card.html">How To Renew Military Dependent Id Card</a></li>
+													<li class="list-group-item"><a href="/how-to-help-my-wife-with-mental-health.html">How To Help My Wife With Mental Health</a></li>
+													<li class="list-group-item"><a href="/how-to-get-ww1-service-records.html">How To Get Ww1 Service Records</a></li>
+													<li class="list-group-item"><a href="/how-to-know-if-you-and-your-partner-are-drifting-apart.html">How To Know If You And Your Partner Are Drifting Apart</a></li>
+													<li class="list-group-item"><a href="/how-to-look-up-dd214-online.html">How To Look Up Dd214 Online</a></li>
+													<li class="list-group-item"><a href="/how-to-make-your-husband-listen-to-you-in-islam.html">How To Make Your Husband Listen To You In Islam</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

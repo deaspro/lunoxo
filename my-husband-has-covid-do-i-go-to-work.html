@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>My Husband Has Covid Do I Go To Work - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "My Husband Has Covid Do I Go To Work",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/7f/52/e8/7f52e8e8bf0d5acb754119b1b52ff5a1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=my+husband+has+covid+do+i+go+to+work",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>My Husband Has Covid Do I Go To Work</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A new continuous cough a high temperature or a loss of or. Your employer could be breaking the law if they tell you to return to your workplace after youve told them youre shielding. Someone who has had COVID-19 whether they got tested or not should stay home and away from others until they meet the following criteria. <br>				
+			</p>
+										<a class="badge badge-primary" href="/military-time-conversion-table-with-minutes.html">military time conversion table with minutes</a>
+											<a class="badge badge-primary" href="/military-time-for-now.html">military time for now</a>
+											<a class="badge badge-secondary" href="/military-time-on-fitbit-inspire-hr.html">military time on fitbit inspire hr</a>
+											<a class="badge badge-success" href="/military-time-now-live.html">military time now live</a>
+											<a class="badge badge-warning" href="/military-time-to-12-hour-format.html">military time to 12 hour format</a>
+											<a class="badge badge-warning" href="/military-time-pm-hours.html">military time pm hours</a>
+											<a class="badge badge-primary" href="/military-time-converted-to-pst.html">military time converted to pst</a>
+											<a class="badge badge-dark" href="/military-time-converter-excel.html">military time converter excel</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to visit the ideal blog.  Our site provides you with hints for seeing the highest quality video and image content, hunt and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/5c/85/c75c85f485df62ec023fbc6a048cc446.jpg" data-lightbox="roadtrip" data-title="Pin By Stacey Hill On Family To My Husband Poster Love My Husband Quotes My Husband Quotes Wedding Quotes Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/5c/85/c75c85f485df62ec023fbc6a048cc446.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShpk0MNioglyQI5RZS8-dWHiNqTr_HqX1eyg';" alt="Pin By Stacey Hill On Family To My Husband Poster Love My Husband Quotes My Husband Quotes Wedding Quotes Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Stacey Hill On Family To My Husband Poster Love My Husband Quotes My Husband Quotes Wedding Quotes Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/62/0c/44620c830e7d3f244a06517344d38b4d.jpg" data-lightbox="roadtrip" data-title="Prayer For My Husbands Job Small Prayers For My Husband Prayer For Husband To My Future Husband">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/62/0c/44620c830e7d3f244a06517344d38b4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQfCCaBvemYV0SrkzyJlXseVL6COjngNdTgw';" alt="Prayer For My Husbands Job Small Prayers For My Husband Prayer For Husband To My Future Husband">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Prayer For My Husbands Job Small Prayers For My Husband Prayer For Husband To My Future Husband</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/6f/a0/b46fa0a5f8dbd76912ef0d2c6a7bcffb.jpg" data-lightbox="roadtrip" data-title="Marriage Quotes Yes I Do Depend On A Man My Husband And I Are A Team He Depends On Me And I Depend On Him My Husband Quotes Husband Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/6f/a0/b46fa0a5f8dbd76912ef0d2c6a7bcffb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1oFX60JkYm7Loj9s0HlTQW5yJ-3-BRjeZjg';" alt="Marriage Quotes Yes I Do Depend On A Man My Husband And I Are A Team He Depends On Me And I Depend On Him My Husband Quotes Husband Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marriage Quotes Yes I Do Depend On A Man My Husband And I Are A Team He Depends On Me And I Depend On Him My Husband Quotes Husband Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/04/ba/4304ba89cbbb054967ab2f12a437bcbc.jpg" data-lightbox="roadtrip" data-title="Yes I Do Depend On A Man My Husband And I Are A Team He Depends On Me And I Depend On Him We Support Each Love And Marriage Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/04/ba/4304ba89cbbb054967ab2f12a437bcbc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtbE3df5yxGc9yXRcIjQ1TK-7YoHweL6RjFw';" alt="Yes I Do Depend On A Man My Husband And I Are A Team He Depends On Me And I Depend On Him We Support Each Love And Marriage Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yes I Do Depend On A Man My Husband And I Are A Team He Depends On Me And I Depend On Him We Support Each Love And Marriage Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/45/5a/79455a20da930f21101ff035bfb46448.jpg" data-lightbox="roadtrip" data-title="Dear Lord Please Protect Him Always Prayers For My Husband Praying For Your Husband Love My Husband">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/45/5a/79455a20da930f21101ff035bfb46448.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoHPArfEUD0G6Od-lsYPMAck0js9rqd2iDrg';" alt="Dear Lord Please Protect Him Always Prayers For My Husband Praying For Your Husband Love My Husband">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dear Lord Please Protect Him Always Prayers For My Husband Praying For Your Husband Love My Husband</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/59/fc/5659fcffe7605465a4255325bc9cc201.jpg" data-lightbox="roadtrip" data-title="For His Family Time Warp Wife Hard Working Husband Quotes My Husband Quotes Hard Working Man Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/59/fc/5659fcffe7605465a4255325bc9cc201.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjcaCjovslEZYAKU8qHoQzbYFRctoY-ux5ag';" alt="For His Family Time Warp Wife Hard Working Husband Quotes My Husband Quotes Hard Working Man Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For His Family Time Warp Wife Hard Working Husband Quotes My Husband Quotes Hard Working Man Quotes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b4/6f/a0/b46fa0a5f8dbd76912ef0d2c6a7bcffb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjcaCjovslEZYAKU8qHoQzbYFRctoY-ux5ag';" alt="For His Family Time Warp Wife Hard Working Husband Quotes My Husband Quotes Hard Working Man Quotes">
+										<div class="card-body">
+						<h3 class="h5"><b>Using the governments furlough scheme to put staff on temporary leave during coronavirus.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>My husband has covid do i go to work</strong>. 
+								
+																	Are told to self-isolate stay at home by a government test and trace service because theyve been in close contact with someone whos tested positive. 
+																	Jane works as an administrator for a private healthcare firm in Oxfordshire a job she is expected to do from the office even in lockdown. 
+																	If your employer has less or no work for you because of coronavirus they could get a Coronavirus Job Retention Scheme grant to help them to carry on paying you. 
+																	You can find out how to talk to your employer or raise a grievance against them. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It goes without saying that the coronavirus pandemic COVID-19 has already had a huge impact on peoples lives from how where and whether were working to what well do with all this time in self-quarantineIts challenging enough to manage corona anxiety day to day while social distancing but what happens if you think your partner or family member actually has the coronavirus. 
+																	If they have not got symptoms they live in the same household they do not need to incarcerate themselves for the duration. 
+																	An individual should not go to the workplace if they. 
+																	Advice on staying safe at work testing staff for coronavirus and getting the vaccine. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Do not go to work school or public areas and do not use public transport or taxis. 
+																	However since she caught Covid-19 at work before. 
+																	People who have been in close contact with someone who has COVID-19excluding people who have had COVID-19 within the past 3 months. 
+																	You should continue to keep at least 2 metres away from people who arent members of your household or at least 1 metre if thats not possible. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The government guidance doesnt say you need to self-isolate just because youve been in contact with someone with coronavirus unless youre told to by the NHS or your school. 
+																	I was interacting with children who were. 
+																	This is known as being put on. 
+																	I contracted COVID-19 at a daycare I was working at in late spring. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Do not go to work school or public places work from home if you can do not go on public transport or use taxis do not go out to get food and medicine order it online or by phone or ask someone to bring it to your home do not have visitors in your home including friends and family except for people providing essential care. 
+																	If you have symptoms and have not had a test stay at home and get a test to check if you have coronavirus on GOVUK. 
+																	If you test positive your self-isolation period includes the day your symptoms started or the day you had the test if you do not have symptoms and the next 10 full days. 
+																	If you live or work in Northern Ireland Scotland or Wales you are advised to go your own countrys advice pages see links at the top of the page. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If someone at work might have coronavirus. 
+																	Have coronavirus COVID-19 symptoms or have tested positive for coronavirus. 
+																	Agreement letter templates for employers to start extend or end furlough. 
+																	People who are unable to work from home have been told they can return to their jobs as part of the Governments partial easing of the coronavirus lockdown restrictions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you feel you have to go to work to keep your income or avoid losing your job this could be disability discrimination. 
+																	If you develop any of the following symptoms. 
+																	Your employer is required to keep your workplace COVID-secure through social distancing good hygiene and other measures Our How to work safely guide PDF explains more. 
+																	As for partners they can still go to work. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Health Secretary Matt Hancock has had to self-isolate after being. 
+																	I got COVID at work and it took a couple of months for my symptoms to go away. 
+																	Need to self-isolate because someone in their household has symptoms or has tested positive. 
+																	Under the current national lockdown rules in force across. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Do I need a negative test result to go back to work or school if I previously tested positive for COVID-19. 
+																	The answer is NO as long as youve quarantined for 14 days. 
+																	People who have tested positive for coronavirus and those considered at risk of having been exposed to it must self-isolate. 
+																	Trade unions are calling for tougher enforcement of Covid safety rules at work because they say too many employees are being put at risk. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	People who have tested positive for COVID-19 within the past 3 months and recovered do not have to quarantine or get tested again as long as they do not develop new symptoms. 
+																	As of July 2 2020 CDC guidelines state that if you think or know someone has had COVID-19 they can be with others only after theyve been fever-free without medication for three days AND their respiratory symptoms have improved this includes coughing or shortness of breath AND it has been 10 days since their symptoms. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/f4/49/7cf449f82e58d4b5777472f0a4907a98.jpg" data-lightbox="roadtrip" data-title="A Man Decides To Leave His Wife Her Reply Is Priceless Funny Relationship Jokes Funny Work Jokes Funny Marriage Jokes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/f4/49/7cf449f82e58d4b5777472f0a4907a98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbw-U7AAnODj-x3q4gCKpRNzcZlN3VFoX4Ug';" alt="A Man Decides To Leave His Wife Her Reply Is Priceless Funny Relationship Jokes Funny Work Jokes Funny Marriage Jokes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Man Decides To Leave His Wife Her Reply Is Priceless Funny Relationship Jokes Funny Work Jokes Funny Marriage Jokes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/14/1f/c3141f605aa6ac0ed0254921d94b8162.jpg" data-lightbox="roadtrip" data-title="Prayer Of The Day My Husband S Job Prayer For Husband Prayer For The Day Prayers For My Husband">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/14/1f/c3141f605aa6ac0ed0254921d94b8162.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_2opbJqVi20RcfeO4JGKAZdElUMVKpANcgg';" alt="Prayer Of The Day My Husband S Job Prayer For Husband Prayer For The Day Prayers For My Husband">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Prayer Of The Day My Husband S Job Prayer For Husband Prayer For The Day Prayers For My Husband</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2d/07/0e/2d070e3341ca97ed8ebd35a177084be2.jpg" data-lightbox="roadtrip" data-title="Pin On Top Pins Of Work It Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2d/07/0e/2d070e3341ca97ed8ebd35a177084be2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrSyeIhrzC-yWmwbpgdhcDql18HcnzTcimVw';" alt="Pin On Top Pins Of Work It Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Top Pins Of Work It Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/f4/22/30f4220787cd95a152562e9710cb5b7d.jpg" data-lightbox="roadtrip" data-title="When To Get Tested True To My Instagram Name Today I Am Sharing A Real Question From My Friend This Or That Questions Instagram Names Negativity">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/f4/22/30f4220787cd95a152562e9710cb5b7d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGTqYfwi6N6oQ2NzhBdKhaKJqLDiOXEWNqFw';" alt="When To Get Tested True To My Instagram Name Today I Am Sharing A Real Question From My Friend This Or That Questions Instagram Names Negativity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When To Get Tested True To My Instagram Name Today I Am Sharing A Real Question From My Friend This Or That Questions Instagram Names Negativity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/52/e8/7f52e8e8bf0d5acb754119b1b52ff5a1.jpg" data-lightbox="roadtrip" data-title="35 Sweet And Meaningful Happy Anniversary Quotes For Couples Part 18 Anniversary Quotes For Him Anniversary Quotes For Couple Happy Anniversary Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/52/e8/7f52e8e8bf0d5acb754119b1b52ff5a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnOjXSyKDrm1altq8QghMHnNUh9HxUMrSmoQ';" alt="35 Sweet And Meaningful Happy Anniversary Quotes For Couples Part 18 Anniversary Quotes For Him Anniversary Quotes For Couple Happy Anniversary Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">35 Sweet And Meaningful Happy Anniversary Quotes For Couples Part 18 Anniversary Quotes For Him Anniversary Quotes For Couple Happy Anniversary Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d1/dd/b7/d1ddb73b4c8ca2ae144d98dc1682b0e2--some-quotes-be-a-man-quotes.jpg" data-lightbox="roadtrip" data-title="Unfortunately For You Not Much Said Is Good Disrespectful Is Your Middle Name And Laziness Is Your Game Husband Quotes Words Inspirational Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d1/dd/b7/d1ddb73b4c8ca2ae144d98dc1682b0e2--some-quotes-be-a-man-quotes.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWcGLsZ_BFLlr6jyH9gHWzjI1VHuqNcYgOPg';" alt="Unfortunately For You Not Much Said Is Good Disrespectful Is Your Middle Name And Laziness Is Your Game Husband Quotes Words Inspirational Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unfortunately For You Not Much Said Is Good Disrespectful Is Your Middle Name And Laziness Is Your Game Husband Quotes Words Inspirational Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/3f/af/333faf365fcc2d7172e4853e2f8fb88d.jpg" data-lightbox="roadtrip" data-title="Prayer For My Husband Prayer For My Wife Prayers For My Husband Prayer For Husband">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/3f/af/333faf365fcc2d7172e4853e2f8fb88d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDIfURvidRzyEMrtOLNWk89mA0W55X7YbbRw';" alt="Prayer For My Husband Prayer For My Wife Prayers For My Husband Prayer For Husband">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Prayer For My Husband Prayer For My Wife Prayers For My Husband Prayer For Husband</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/d0/db/a9d0db873d58007f40820bfa1660276b.jpg" data-lightbox="roadtrip" data-title="21 Of The Best Anniversary Quotes Memes To Share With Your Partner Anniversary Quotes Funny Husband Quotes Funny Anniversary Quotes For Couple">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/d0/db/a9d0db873d58007f40820bfa1660276b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2tEMID448vwQkDsoapiBgQ90ptHDnQyrtRw';" alt="21 Of The Best Anniversary Quotes Memes To Share With Your Partner Anniversary Quotes Funny Husband Quotes Funny Anniversary Quotes For Couple">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">21 Of The Best Anniversary Quotes Memes To Share With Your Partner Anniversary Quotes Funny Husband Quotes Funny Anniversary Quotes For Couple</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/02/1a/e1021a6dd19b0d82925aaf7c8de86aaf.jpg" data-lightbox="roadtrip" data-title="Whisper Funny Relationship Whisper Quotes Cute Love Stories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/02/1a/e1021a6dd19b0d82925aaf7c8de86aaf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-02lmDkRNCShqw4faikNbNPLN_wu_o7Wl6Q';" alt="Whisper Funny Relationship Whisper Quotes Cute Love Stories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Whisper Funny Relationship Whisper Quotes Cute Love Stories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/3f/18/413f18838b5655f7664b5ec48fe912f6.jpg" data-lightbox="roadtrip" data-title="Pin On Motivational Religious Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/3f/18/413f18838b5655f7664b5ec48fe912f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjwa1QKj-SCcWTQT01y4KERkX0cMuS5NV-IA';" alt="Pin On Motivational Religious Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Motivational Religious Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/c9/77/a3c9773f1f97bf4f3bb98243f5fec5a7.jpg" data-lightbox="roadtrip" data-title="10 Ways To Make Your Husband Feel Special On His Birthday True Aim Husband Birthday Birthday Surprise Boyfriend Hubby Birthday">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/c9/77/a3c9773f1f97bf4f3bb98243f5fec5a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7EwulSzkiYHFKpTcbQcenK3XAkzS9luxZMw';" alt="10 Ways To Make Your Husband Feel Special On His Birthday True Aim Husband Birthday Birthday Surprise Boyfriend Hubby Birthday">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Ways To Make Your Husband Feel Special On His Birthday True Aim Husband Birthday Birthday Surprise Boyfriend Hubby Birthday</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/be/6f/69be6fac4516d1883438bdff75771165.jpg" data-lightbox="roadtrip" data-title="Husband Prayer Quote Wives Don T Give Up On Your Prayers For You Husband Keep Walking Trying Trusting Prayer For Husband Giving Up Quotes Husband Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/be/6f/69be6fac4516d1883438bdff75771165.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTDRr9UuTQkl82m1AXgPbHGPOYy26r61Uczw';" alt="Husband Prayer Quote Wives Don T Give Up On Your Prayers For You Husband Keep Walking Trying Trusting Prayer For Husband Giving Up Quotes Husband Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Husband Prayer Quote Wives Don T Give Up On Your Prayers For You Husband Keep Walking Trying Trusting Prayer For Husband Giving Up Quotes Husband Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/36/94/4536942caf9cb1e541bbf34732cc1b10.jpg" data-lightbox="roadtrip" data-title="Pin By Kelly Sheehan On Man Of My Dreams Quotes Words Happy Wives Club">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/36/94/4536942caf9cb1e541bbf34732cc1b10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNBRawRsPY9BJdW3amGKL-6p3QI2Q6SYjqhw';" alt="Pin By Kelly Sheehan On Man Of My Dreams Quotes Words Happy Wives Club">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Kelly Sheehan On Man Of My Dreams Quotes Words Happy Wives Club</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-many-times-can-i-use-mycaa.html">How Many Times Can I Use Mycaa</a></li>
+													<li class="list-group-item"><a href="/how-long-will-military-mres-last.html">How Long Will Military Mres Last</a></li>
+													<li class="list-group-item"><a href="/how-long-to-get-spouse-green-card.html">How Long To Get Spouse Green Card</a></li>
+													<li class="list-group-item"><a href="/how-mycaa-works.html">How Mycaa Works</a></li>
+													<li class="list-group-item"><a href="/how-much-is-the-military-life-insurance.html">How Much Is The Military Life Insurance</a></li>
+													<li class="list-group-item"><a href="/how-much-is-army-spouse-pay.html">How Much Is Army Spouse Pay</a></li>
+													<li class="list-group-item"><a href="/how-tall-is-mycah-pittman.html">How Tall Is Mycah Pittman</a></li>
+													<li class="list-group-item"><a href="/how-to-add-a-spouse-in-deers.html">How To Add A Spouse In Deers</a></li>
+													<li class="list-group-item"><a href="/how-much-do-fbi-hrt-get-paid.html">How Much Do Fbi Hrt Get Paid</a></li>
+													<li class="list-group-item"><a href="/how-many-years-of-eligibility-ncaa-division-1.html">How Many Years Of Eligibility Ncaa Division 1</a></li>
+													<li class="list-group-item"><a href="/how-to-accept-that-your-husband-doesnt-love-you.html">How To Accept That Your Husband Doesnt Love You</a></li>
+													<li class="list-group-item"><a href="/how-long-to-become-addicted-to-benzos.html">How Long To Become Addicted To Benzos</a></li>
+													<li class="list-group-item"><a href="/how-to-accept-that-your-husband-doesnt-love-you-anymore.html">How To Accept That Your Husband Doesnt Love You Anymore</a></li>
+													<li class="list-group-item"><a href="/how-spousal-support-is-calculated.html">How Spousal Support Is Calculated</a></li>
+													<li class="list-group-item"><a href="/how-many-dependents-does-the-military-pay-for.html">How Many Dependents Does The Military Pay For</a></li>
+													<li class="list-group-item"><a href="/how-much-are-federal-grants-for-college.html">How Much Are Federal Grants For College</a></li>
+													<li class="list-group-item"><a href="/how-much-is-federal-tax-on-military-retirement.html">How Much Is Federal Tax On Military Retirement</a></li>
+													<li class="list-group-item"><a href="/how-many-marines-in-camp-lejeune.html">How Many Marines In Camp Lejeune</a></li>
+													<li class="list-group-item"><a href="/how-much-does-us-military-spend-per-day.html">How Much Does Us Military Spend Per Day</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-fee-waiver-for-green-card.html">How To Apply For Fee Waiver For Green Card</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

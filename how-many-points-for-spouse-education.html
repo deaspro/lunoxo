@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How Many Points For Spouse Education - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How Many Points For Spouse Education",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/b5/85/26/b58526665234e55d1a3f309337051125.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+many+points+for+spouse+education",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How Many Points For Spouse Education</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">To be eligible for Express Entry your work experience your occupation must be classified in the National Occupational Classification. What you need to do. Core human capital factors With a spouse or common-law partner Maximum 460 points. <br>				
+			</p>
+										<a class="badge badge-danger" href="/air-force-education-programs-for-enlisted.html">air force education programs for enlisted</a>
+											<a class="badge badge-secondary" href="/air-force-family-separation-pay-form.html">air force family separation pay form</a>
+											<a class="badge badge-light" href="/af-wife-meaning.html">af wife meaning</a>
+											<a class="badge badge-danger" href="/air-command-force-billy-hoyle-release.html">air command force billy hoyle release</a>
+											<a class="badge badge-light" href="/air-force-enlisted-aide-program.html">air force enlisted aide program</a>
+											<a class="badge badge-warning" href="/air-force-cost-per-man-hour.html">air force cost per man hour</a>
+											<a class="badge badge-light" href="/air-force-enlisted-flying-program.html">air force enlisted flying program</a>
+											<a class="badge badge-light" href="/aer-spouse-education-assistance-program.html">aer spouse education assistance program</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to pay a visit to the right site.  Our website gives you hints for seeing the maximum quality video and image content, hunt and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this movie that you see.  It is also possible to bring about supporting this website by sharing videos and graphics that you like on this blog on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e7/ad/31/e7ad31303800fcb3acc2f7ea9602fe17.jpg" data-lightbox="roadtrip" data-title="Canada Express Entry Crs Points Calculator Apply For Pr Visa Work Skills Expressions Work Opportunities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e7/ad/31/e7ad31303800fcb3acc2f7ea9602fe17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbirHK3VA1VGTGLNCvaAEwAsAkcgBny6v6Iw';" alt="Canada Express Entry Crs Points Calculator Apply For Pr Visa Work Skills Expressions Work Opportunities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canada Express Entry Crs Points Calculator Apply For Pr Visa Work Skills Expressions Work Opportunities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/c6/6e/cfc66e9a6d9ef7884a54222264f4bd75.png" data-lightbox="roadtrip" data-title="Bc Pnp Noc List Levels Of Education Work Experience Medical Tests">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/c6/6e/cfc66e9a6d9ef7884a54222264f4bd75.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrzvcN2iOkbQouHDU1dDUUfOw6chYaU4dXCg';" alt="Bc Pnp Noc List Levels Of Education Work Experience Medical Tests">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bc Pnp Noc List Levels Of Education Work Experience Medical Tests</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/2a/d8/b2/2ad8b2923ae9c91f4f71dd87eba35ff2.jpg" data-lightbox="roadtrip" data-title="How Can I Increase My Crs Expressions Work Experience Communication Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/2a/d8/b2/2ad8b2923ae9c91f4f71dd87eba35ff2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQytocyU8h8EjsfF4lGTTFoci1EgJ-BxrT-RQ';" alt="How Can I Increase My Crs Expressions Work Experience Communication Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Can I Increase My Crs Expressions Work Experience Communication Skills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/29/e4/5929e4696570e4203c69966e9e1f2154.jpg" data-lightbox="roadtrip" data-title="Canada Express Entry Crs Points Calculator Apply For Pr Visa Work Experience Post Secondary Education Education Level">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/29/e4/5929e4696570e4203c69966e9e1f2154.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREal6w2XQj3ob21vFA1UWAvlQxKc1W5TjzmA';" alt="Canada Express Entry Crs Points Calculator Apply For Pr Visa Work Experience Post Secondary Education Education Level">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canada Express Entry Crs Points Calculator Apply For Pr Visa Work Experience Post Secondary Education Education Level</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/d2/69/c5d269c0591b770071566b57944edc1d.jpg" data-lightbox="roadtrip" data-title="Dreaming Of Settling In Australia Check The 4 Easy Steps To Boost Your Profile On Our Post Today Australia Immigration Stem Education Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/d2/69/c5d269c0591b770071566b57944edc1d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7owTbdhF9OBd6TcWR4Q3UcEJcRCuaoqosyA';" alt="Dreaming Of Settling In Australia Check The 4 Easy Steps To Boost Your Profile On Our Post Today Australia Immigration Stem Education Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dreaming Of Settling In Australia Check The 4 Easy Steps To Boost Your Profile On Our Post Today Australia Immigration Stem Education Skills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/85/26/b58526665234e55d1a3f309337051125.jpg" data-lightbox="roadtrip" data-title="Overseas Education Consultants In Vadodara Canada Spouse Visa Educational Consultant Overseas Education Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/85/26/b58526665234e55d1a3f309337051125.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3L8cOvClBf5Y0830J1aztDWNAD60tUtBqvw';" alt="Overseas Education Consultants In Vadodara Canada Spouse Visa Educational Consultant Overseas Education Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Overseas Education Consultants In Vadodara Canada Spouse Visa Educational Consultant Overseas Education Education</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/e7/ad/31/e7ad31303800fcb3acc2f7ea9602fe17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3L8cOvClBf5Y0830J1aztDWNAD60tUtBqvw';" alt="Overseas Education Consultants In Vadodara Canada Spouse Visa Educational Consultant Overseas Education Education">
+										<div class="card-body">
+						<h3 class="h5"><b>Lastly the ECA is not mandatory for your Spouse if she is a secondary applicant.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How many points for spouse education</strong>. 
+								
+																	EU EEA and Commonwealth citizens. 
+																	The CRS is a points-based system that we use to assess and score your profile and rank it in the Express Entry pool. 
+																	6 with a spouse or common-law partner up to a combined maximum of 22 points 6 without a spouse or common-law partner up to a combined maximum of 24 points Subtotal. 
+																	You and your spouse or common-law partner can earn a total of 10 points together for adaptability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If i apply without spouse am getting 342 points if i apply with spouse am getting 333 pointsincluding spouse language skills. 
+																	It is also worth noting that for candidates with a spouse there are 20 points available for a spouse demonstrating his or her language proficiency. 
+																	Get your education evaluated. 
+																	By age criteria 17 years of age or less or 45 years of age or more gains no extra points. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Between 18 and 44 years old you can earn extra points. 
+																	This is because candidates that are applying for Express Entry with a spouse are awarded points specifically for their spouses attributes. 
+																	For your case I would rather consider 3 points instead of 0 to your spouse as she finished a year in education at the lock-in date which also 3 but not 4. 
+																	Level of Education With a spouse or common-law partner Maximum 140 points Without a spouse or common-law partner Maximum 150 points Less than secondary school high school 0. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Points from both tables can be combined but the maximum total points award for skilled employment is 20 points. 
+																	Level of Education of Spouse or Common-Law Partner maximum 10 points In many of the previous Canada Express Entry eligibility components applicants without a spouse or common-law partner were eligible for more points. 
+																	Mkennedy Jan 3 15 at 455. 
+																	The scheme was phased in between 2008 and 2010. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find out if youre affected by coronavirusCOVID-19. 
+																	Points are given on the following categories of points. 
+																	The total maximum you can reach for all factors in this category is 460 points with a spouse or common-law partner and 500 points without a spouse or common-law partner. 
+																	Certain provincial programs also give points for well-qualified spouses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Secondary diploma high school graduation 28. 
+																	One-year degree diploma or certificate from a university college trade or technical school or other institute. 
+																	The points-based immigration system is the means of regulating immigration to the United Kingdom from outside the European Economic Area EEA. 
+																	UK Visas and Immigration is responsible for making millions of decisions every year about who has the right to visit or stay in the country with a firm emphasis on national security and a culture. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is composed of five tiers which replaced all the previous work permits and entry schemes including Scotlands Fresh Talent InitiativeThe system was administered by the UK Border Agency the. 
+																	However it is advisable that you obtain the same for your spouses education to earn some valuable Canada immigration points or CRS points in Federal Express Entry System. 
+																	Check if you need a UK visa apply manage your application biometric residence permits. 
+																	Read more Your work experience is calculated. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For age you can get maximum 12 points for Education you can get maximum 25 points for Work experience you can get maximum 15 points and for IELTS you get maximum 24 points 4 points you get if you have French language ability 5 points you can claim for your spouse education and language ability if you have arranged employment letter that 10 points you can claim for that as well 5 points if you or your spouse have any blood relative in Canada. 
+																	Anyway you are doing the good thing by sending updates to your VO on your spouse education and lets hope that they consider the extra points. 
+																	How many years of foreign skilled work experiencein outside Canada do you have in the last ten years. 
+																	Five years or more - 70 points. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Core human capital factors Maximum Points 460 Accompanying spouse or common-law partner factors Maximum Points 40 With a valid job offer Maximum 200 points Additional points relating to Provincial Nomination or a qualifying offer of arranged employment Maximum Points 600. 
+																	Your work experience must also be paid work and classified as Skill Type 0 or Skill Levels A or B. 
+																	This tool will help you calculate your Comprehensive Ranking System CRS score based on the answers you provide below. 
+																	A candidate in the Canadian Experience Class may enter the pool with no Educational Credential Assessment ECA and then increase their score by up to 200 points by having a degree assessed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your spouse can score points Once you have decided who the principle applicant is the other person in the relationship can boost the CRS score by up to 40 points by increasing Canadian work experience boosting education or improving language skills. 
+																	Overexchange Jan 3 15 at 257 Look in the CRS section B spouse education counts up to ten points for a masters. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/f0/d7/44f0d7a4761ac0f8d021ac52dd1d5058.png" data-lightbox="roadtrip" data-title="Pin On Canada Provincial Nominee Program">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/f0/d7/44f0d7a4761ac0f8d021ac52dd1d5058.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqBKXimxZiqgHGSGi2l9lc2wPXozYRNNaSNA';" alt="Pin On Canada Provincial Nominee Program">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Canada Provincial Nominee Program</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/91/dc/e591dc85a3afd919dc9bdbecadf3cb40.jpg" data-lightbox="roadtrip" data-title="Overseas Education Consultants In Vadodara Canada Spouse Visa Overseas Education Educational Consultant Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/91/dc/e591dc85a3afd919dc9bdbecadf3cb40.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyDQRWTqjXJIWC880lvRC1PCnFXB8bre53Kg';" alt="Overseas Education Consultants In Vadodara Canada Spouse Visa Overseas Education Educational Consultant Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Overseas Education Consultants In Vadodara Canada Spouse Visa Overseas Education Educational Consultant Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/28/f6/72/28f672086baadd720629e85a33e288f5.jpg" data-lightbox="roadtrip" data-title="Factors That Decides Crs Score For Canada Express Entry Scores Expressions Factors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/28/f6/72/28f672086baadd720629e85a33e288f5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkOeqpewrkJuLjWRlFq0WyDHyASUqhxWNapw';" alt="Factors That Decides Crs Score For Canada Express Entry Scores Expressions Factors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Factors That Decides Crs Score For Canada Express Entry Scores Expressions Factors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/69/85/136985504f138567535787eee64046b1.png" data-lightbox="roadtrip" data-title="International Educational Organization Best Courses To Study Overseas Educli Educational Assessment Education International Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/69/85/136985504f138567535787eee64046b1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUBnbQEG0FpT71dUPevhSGH17h_hVL-s01QQ';" alt="International Educational Organization Best Courses To Study Overseas Educli Educational Assessment Education International Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">International Educational Organization Best Courses To Study Overseas Educli Educational Assessment Education International Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/9b/c5/97/9bc5972da96f03f298b1b15750b82b0b.jpg" data-lightbox="roadtrip" data-title="Canada Express Entry Points Factors That Effects Score Post Secondary Education Education Level Work Experience">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/9b/c5/97/9bc5972da96f03f298b1b15750b82b0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRDoil4iZESWfKWA7yg7vnnPTvvkgwHd21NQ';" alt="Canada Express Entry Points Factors That Effects Score Post Secondary Education Education Level Work Experience">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canada Express Entry Points Factors That Effects Score Post Secondary Education Education Level Work Experience</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/21/3a/17213ac942b0d71397361e7ad5fdf74f.jpg" data-lightbox="roadtrip" data-title="Know About Express Entry Canada Requirements Work Experience Expressions Language Proficiency">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/21/3a/17213ac942b0d71397361e7ad5fdf74f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZf7ht6OXlp7qK0X-8YyxchAiFCiNTZcR7fA';" alt="Know About Express Entry Canada Requirements Work Experience Expressions Language Proficiency">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Know About Express Entry Canada Requirements Work Experience Expressions Language Proficiency</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/66/a8/6b66a87a0889d382afa2d11cee4aa0fe.jpg" data-lightbox="roadtrip" data-title="Major Changes In Australia Point System Australia Immigration Mathematics Education Australia Visa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/66/a8/6b66a87a0889d382afa2d11cee4aa0fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCOgMkkwOI7O_7SviH4BNFSBcQoUU4SCwlYg';" alt="Major Changes In Australia Point System Australia Immigration Mathematics Education Australia Visa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Major Changes In Australia Point System Australia Immigration Mathematics Education Australia Visa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/97/83/ab9783f910cc4456616d748e0594f041.jpg" data-lightbox="roadtrip" data-title="Canada Express Entry Canada Express Entry Is Now The First Step To Immigrate To Canada And Settle Permanently Ove Moving To Canada Expressions Work Experience">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/97/83/ab9783f910cc4456616d748e0594f041.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9UliCgBsxRRg2EvHlprU5FvJq3hLcSoyE2Q';" alt="Canada Express Entry Canada Express Entry Is Now The First Step To Immigrate To Canada And Settle Permanently Ove Moving To Canada Expressions Work Experience">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canada Express Entry Canada Express Entry Is Now The First Step To Immigrate To Canada And Settle Permanently Ove Moving To Canada Expressions Work Experience</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/92/ee/7392eefab9e0ce9ef60ff4e0babd3307.jpg" data-lightbox="roadtrip" data-title="Study In Sweden Masters Programs Available Spouse Can Apply Key Points Internationall Masters Programs Education System International Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/92/ee/7392eefab9e0ce9ef60ff4e0babd3307.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxAS10H39ZW2iA6KXolWnOpm7e7WnbTGPDoA';" alt="Study In Sweden Masters Programs Available Spouse Can Apply Key Points Internationall Masters Programs Education System International Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Study In Sweden Masters Programs Available Spouse Can Apply Key Points Internationall Masters Programs Education System International Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/0d/fa/550dfa7d90e4b1d02db9a856bac6ee8c.jpg" data-lightbox="roadtrip" data-title="Everything You Need To Be Aware Of The Skilled Work Regional Provisional Visa Subclass 491 Australia Immigration Australia Visa Visa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/0d/fa/550dfa7d90e4b1d02db9a856bac6ee8c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBPqHSuDQBAqUpubrRtYJo3Obw-39EujNHfA';" alt="Everything You Need To Be Aware Of The Skilled Work Regional Provisional Visa Subclass 491 Australia Immigration Australia Visa Visa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Everything You Need To Be Aware Of The Skilled Work Regional Provisional Visa Subclass 491 Australia Immigration Australia Visa Visa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/cd/24/accd24769c5310a85c65b6f8bb43af16.png" data-lightbox="roadtrip" data-title="Twenty Two Important Points In The Education Of Etiquette Between Spouses Etiquette Family Deal The Twenties">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/cd/24/accd24769c5310a85c65b6f8bb43af16.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPbvlS3OTVchPmzfuenPtr7sYbmvoCrVmfxg';" alt="Twenty Two Important Points In The Education Of Etiquette Between Spouses Etiquette Family Deal The Twenties">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Twenty Two Important Points In The Education Of Etiquette Between Spouses Etiquette Family Deal The Twenties</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/6c/12/1c6c1245c9285b4a37a44e5768efffea.jpg" data-lightbox="roadtrip" data-title="Canada Express Entry Crs Points Calculator Apply For Pr Visa In 2020 Expressions Language Proficiency Canada">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/6c/12/1c6c1245c9285b4a37a44e5768efffea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCB6uXeFZs8gP43d7qKmwrde4P8zA0HypLWA';" alt="Canada Express Entry Crs Points Calculator Apply For Pr Visa In 2020 Expressions Language Proficiency Canada">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canada Express Entry Crs Points Calculator Apply For Pr Visa In 2020 Expressions Language Proficiency Canada</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/a6/08/2ca608dd8fef44c147d954f07b5071d6.png" data-lightbox="roadtrip" data-title="Canada Express Entry 2020 Aptechvisa What Is Canada Canada Information Canada">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/a6/08/2ca608dd8fef44c147d954f07b5071d6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQBlGAkXZ9yd7CMuM0Q5ZKLQbfS5wOFSBd9g';" alt="Canada Express Entry 2020 Aptechvisa What Is Canada Canada Information Canada">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canada Express Entry 2020 Aptechvisa What Is Canada Canada Information Canada</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/us-navy-shirt-colors.html">Us Navy Shirt Colors</a></li>
+													<li class="list-group-item"><a href="/us-navy-apparel-near-me.html">Us Navy Apparel Near Me</a></li>
+													<li class="list-group-item"><a href="/us-navy-female-enlisted-uniforms.html">Us Navy Female Enlisted Uniforms</a></li>
+													<li class="list-group-item"><a href="/us-military-reserve-retirement-pay-calculator.html">Us Military Reserve Retirement Pay Calculator</a></li>
+													<li class="list-group-item"><a href="/us-marine-wife-benefits.html">Us Marine Wife Benefits</a></li>
+													<li class="list-group-item"><a href="/us-navy-female-hair-regulations.html">Us Navy Female Hair Regulations</a></li>
+													<li class="list-group-item"><a href="/us-military-wife-benefits.html">Us Military Wife Benefits</a></li>
+													<li class="list-group-item"><a href="/us-army-womens-volleyball-team.html">Us Army Womens Volleyball Team</a></li>
+													<li class="list-group-item"><a href="/us-military-service-records-search.html">Us Military Service Records Search</a></li>
+													<li class="list-group-item"><a href="/us-navy-woman-dresses-up-as-a-giant-husky-dog-in-a-homemade-fursuit.html">Us Navy Woman Dresses Up As A Giant Husky Dog In A Homemade Fursuit</a></li>
+													<li class="list-group-item"><a href="/us-navy-shirts-amazon.html">Us Navy Shirts Amazon</a></li>
+													<li class="list-group-item"><a href="/us-navy-benefits-for-dependents.html">Us Navy Benefits For Dependents</a></li>
+													<li class="list-group-item"><a href="/us-naval-academy-womens-tennis.html">Us Naval Academy Womens Tennis</a></li>
+													<li class="list-group-item"><a href="/us-navy-female-khaki-uniform.html">Us Navy Female Khaki Uniform</a></li>
+													<li class="list-group-item"><a href="/us-civil-war-soldiers-records-and-profiles.html">Us Civil War Soldiers Records And Profiles</a></li>
+													<li class="list-group-item"><a href="/us-naval-academy-womens-basketball.html">Us Naval Academy Womens Basketball</a></li>
+													<li class="list-group-item"><a href="/us-military-24-hour-mre.html">Us Military 24 Hour Mre</a></li>
+													<li class="list-group-item"><a href="/us-navy-wife.html">Us Navy Wife</a></li>
+													<li class="list-group-item"><a href="/us-army-womens-uniforms.html">Us Army Womens Uniforms</a></li>
+													<li class="list-group-item"><a href="/us-navy-benefits-after-4-years.html">Us Navy Benefits After 4 Years</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

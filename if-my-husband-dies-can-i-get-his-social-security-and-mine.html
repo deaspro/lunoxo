@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>If My Husband Dies Can I Get His Social Security And Mine - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "If My Husband Dies Can I Get His Social Security And Mine",
+  "datePublished": "2021-02-13",
+  "image": "https://media.theeverygirl.com/wp-content/uploads/2018/03/I%E2%80%99m-an-Everygirl-and-I-discovered-my-husband-was-an-alcoholic-1.jpeg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=if+my+husband+dies+can+i+get+his+social+security+and+mine",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>If My Husband Dies Can I Get His Social Security And Mine</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In most cases you will be entitled to full benefits if you are of retirement age 62 or older. See Social Securitys coronavirus page or call your local office for more information In most cases a widow or widower qualifies for survivor benefits if he or she is at least 60 and had been married to the deceased for at least nine months at the time of death. Keep in mind If you are already receiving a spousal benefit when your husband or wife dies Social Security will in most cases convert it automatically to a survivor benefit once the death is reported. <br>				
+			</p>
+										<a class="badge badge-warning" href="/texas-college-tuition-for-military-dependents.html">texas college tuition for military dependents</a>
+											<a class="badge badge-primary" href="/survivors-and-dependents-educational-assistance-dea-program.html">survivors and dependents educational assistance dea program</a>
+											<a class="badge badge-light" href="/swiss-military-hanowa-hk.html">swiss military hanowa hk</a>
+											<a class="badge badge-success" href="/swiss-military-watch-hk.html">swiss military watch hk</a>
+											<a class="badge badge-success" href="/surviving-spouse-veterans-benefits-assisted-living.html">surviving spouse veterans benefits assisted living</a>
+											<a class="badge badge-info" href="/telecharger-mycanal-afrique-sur-pc.html">telecharger mycanal afrique sur pc</a>
+											<a class="badge badge-dark" href="/survivors-and-dependents-educational-assistance-dea.html">survivors and dependents educational assistance dea</a>
+											<a class="badge badge-info" href="/tennessee-civil-war-service-records-of-confederate-soldiers.html">tennessee civil war service records of confederate soldiers</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to pay a visit to the ideal site.  Our website gives you hints for viewing the maximum quality video and picture content, search and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie for you to view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.simplywise.com/blog/wp-content/uploads/2020/09/approved_small.svg" data-lightbox="roadtrip" data-title="If My Spouse Dies Do I Get His Social Security And Mine Simplywise">
+											<img class="card-img v-image ads-img " src="https://www.simplywise.com/blog/wp-content/uploads/2020/09/approved_small.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ9HFiAkXRIQ3ABojbt7f6gHvE_GKmpKvW5Q';" alt="If My Spouse Dies Do I Get His Social Security And Mine Simplywise">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If My Spouse Dies Do I Get His Social Security And Mine Simplywise</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lauradoyle.org/wp-content/uploads/2016/12/my-husband-lies-to-me.jpeg" data-lightbox="roadtrip" data-title="My Husband Lies To Me 4 Reasons Why He S Dishonest">
+											<img class="card-img v-image ads-img " src="https://lauradoyle.org/wp-content/uploads/2016/12/my-husband-lies-to-me.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSbv_weJPwrf51ia8w5I9tGsB_jQWbGI27Lw';" alt="My Husband Lies To Me 4 Reasons Why He S Dishonest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Husband Lies To Me 4 Reasons Why He S Dishonest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/dd/45/34dd457cf003a54845a36f2e23f5deec.jpg" data-lightbox="roadtrip" data-title="What Husband Stands For Love My Husband Quotes My Husband Quotes Love Husband Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/dd/45/34dd457cf003a54845a36f2e23f5deec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0zr1sNnjgPdCHV3iFEEVG61s9_OWXT3B7cQ';" alt="What Husband Stands For Love My Husband Quotes My Husband Quotes Love Husband Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Husband Stands For Love My Husband Quotes My Husband Quotes Love Husband Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.simplywise.com/blog/wp-content/uploads/2019/12/gwens-story-1.png" data-lightbox="roadtrip" data-title="The 2020 Guide To Social Security Spousal Benefits Simplywise">
+											<img class="card-img v-image ads-img " src="https://www.simplywise.com/blog/wp-content/uploads/2019/12/gwens-story-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT-YIsPtFuqMZzxehnjLp8WTU_lEazllfLjQ';" alt="The 2020 Guide To Social Security Spousal Benefits Simplywise">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 2020 Guide To Social Security Spousal Benefits Simplywise</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://how-to-save-marriage.org/wp-content/uploads/2016/06/change-husband-mind-about-divorce.jpg" data-lightbox="roadtrip" data-title="How To Change Your Husband S Mind About Divorce Fast">
+											<img class="card-img v-image ads-img " src="https://how-to-save-marriage.org/wp-content/uploads/2016/06/change-husband-mind-about-divorce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ5tabcqvYTFuEwqhIp2UxrIIeu_qebQXGug';" alt="How To Change Your Husband S Mind About Divorce Fast">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Change Your Husband S Mind About Divorce Fast</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/db/b4/4adbb44a23d1c8630b89cf9bca45c812.jpg" data-lightbox="roadtrip" data-title="Ashley M Fish M Fishyfish0062 Love You Husband Love My Husband Husband Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/db/b4/4adbb44a23d1c8630b89cf9bca45c812.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiVAMWOMT3ZrGQRfjruXG5bv9iw57A0WNByw';" alt="Ashley M Fish M Fishyfish0062 Love You Husband Love My Husband Husband Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ashley M Fish M Fishyfish0062 Love You Husband Love My Husband Husband Quotes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ba/f1/32/baf13299e3e9315a7d5575bd4736bfc8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiVAMWOMT3ZrGQRfjruXG5bv9iw57A0WNByw';" alt="Ashley M Fish M Fishyfish0062 Love You Husband Love My Husband Husband Quotes">
+										<div class="card-body">
+						<h3 class="h5"><b>If you are already receiving spousal benefits when your spouse dies.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>If my husband dies can i get his social security and mine</strong>. 
+								
+																	If your deceased spouse HAS NOT FILED for benefits and passed away AFTER FULL RETIREMENT AGE you are entitled to receive the deceaseds benefit as if they filed on the date of death. 
+																	If you have been receiving your retirement benefit for more than 12 months when your spouse dies you can only apply for survivors benefits if the benefit of your spouses account is more than the benefit you receive on your own. 
+																	These retirement benefits are supposed to help us but they can be so complicated. 
+																	Otherwise you will need to apply for survivor benefits by phone at 800-772-1213 or in person at your local Social Security office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youre at least 60 but not yet at Social Securitys definition of full retirement age your payout will be somewhere in the range of 71 to 99 of your deceased spouses full benefit. 
+																	If you never worked but are married to someone whos entitled to Social Security benefits you can claim benefits based on his or her work record. 
+																	You can start taking the benefit at age 62 but then your benefit will be reduced by about a third versus if you take it at full retirement age generally 66 or 67 Lynch said. 
+																	We break down what you need to know about benefits after the passing of a spouse. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Please tell me more so we can help you best. 
+																	The amount of Social Security survivors benefits to which you are entitled varies depending on the amount of retirement benefit your deceased spouse was entitled to your age and potentially how long you were married. 
+																	The Retirement Expert will help you get the most benefits propertly. 
+																	If you are the divorced spouse of a worker who dies you could get benefits the same as a widow or widower provided that your marriage lasted 10 years or more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you took your reduced retirement first while waiting for your spouse to reach retirement age when you add spouses benefits later your own retirement portion remains reduced which causes the total retirement and spouses benefit together to total less than 50 percent of the workers amount. 
+																	If the higher-earning spouse dies the current spouse can claim the higher of their own benefit or that of the. 
+																	You can find out more on our website. 
+																	You must have been married to your ex-spouse for 10 years or more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	His Is greater than mine I recieve a small amount. 
+																	Contact the pension scheme to find out. 
+																	And Social Security does also offer flexibility for a spouse whose partner dies. 
+																	There are other rules of course. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But its a bit more complicated than that. 
+																	The 2020 Widows Benefits Guide Calculator. 
+																	You may get payments from your husband wife or civil partners workplace personal or stakeholder pension - it will depend on the pension scheme. 
+																	His Is greater than mine I recieve a small amount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Yes your spousal Social Security benefits you currently receive will convert to survivor benefits at the time of your ex-husbands death according to David Cechanowicz director of education. 
+																	My husbands social security benefit was more than mine can I receive his amount instead of mine. 
+																	Benefits paid to you as a surviving divorced spouse wont affect the benefit amount for other survivors getting benefits on the workers record. 
+																	The short answer is that you cannot collect both your own Social Security benefits and survivor benefits at the same time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If the amount you qualify for based on your own work record is more than what youd get from 50 of your former spouses full retirement Social Security gives you your benefit not your exs. 
+																	If you take it at. 
+																	But there are a few exceptions to those requirements. 
+																	If I am on Social Security and my husband dies do I get the greater amount My benefits or his. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Specifically youre entitled to up to 50 of your. 
+																	If you are age 62 unmarried and divorced from someone entitled to Social Security retirement or disability benefits you may be eligible to receive benefits based on his or her record. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/62/7e/85627eaadd1d82a3249e9b2f740b4ced.jpg" data-lightbox="roadtrip" data-title="Pin On T Khan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/62/7e/85627eaadd1d82a3249e9b2f740b4ced.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDFRylOqeDbXZl9nQ1RWr1oMvqR8mvMe3ZlQ';" alt="Pin On T Khan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On T Khan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b5/43/05/b54305b4da940e26a18ce800d2f409a9.jpg" data-lightbox="roadtrip" data-title="Russell Gloor Ask Rusty Should My Wife Take Her Social Security At Age 62 Social Security Benefits Social Security Social">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b5/43/05/b54305b4da940e26a18ce800d2f409a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScbHKebca3ZgkIZuzHBsB5IyCrkfBTSB-1kw';" alt="Russell Gloor Ask Rusty Should My Wife Take Her Social Security At Age 62 Social Security Benefits Social Security Social">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Russell Gloor Ask Rusty Should My Wife Take Her Social Security At Age 62 Social Security Benefits Social Security Social</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/58/49/795849034a7a4a87c3e77c656d385970.jpg" data-lightbox="roadtrip" data-title="Happy New Year Widow Quotes Grief Quotes Tough Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/58/49/795849034a7a4a87c3e77c656d385970.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG16C424tyE73-twEa8vVMMP4LmRYfkNXVsw';" alt="Happy New Year Widow Quotes Grief Quotes Tough Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Happy New Year Widow Quotes Grief Quotes Tough Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d4/fd/df/d4fddf799317ff2b6dd6466a1513d658.jpg" data-lightbox="roadtrip" data-title="How Not To Be A Stay At Home Lonely Widow Widow Quotes Grief Journey Widow">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d4/fd/df/d4fddf799317ff2b6dd6466a1513d658.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBKMLbOvWsix-wsBh4eoIQOqFTldfG_15t6w';" alt="How Not To Be A Stay At Home Lonely Widow Widow Quotes Grief Journey Widow">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Not To Be A Stay At Home Lonely Widow Widow Quotes Grief Journey Widow</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/02/2e/67022e0f211fe14d74c8ca8821dcdfa5.jpg" data-lightbox="roadtrip" data-title="Birthdays Are Never Complete Until You Ve Sent Happy Birthday Wishes To The Birthday Gal Or Bo Husband Birthday Quotes Birthday Wish For Husband Husband Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/02/2e/67022e0f211fe14d74c8ca8821dcdfa5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJrkjZGdu__sZ8Oklvuczz2vJul6eP0BSPZg';" alt="Birthdays Are Never Complete Until You Ve Sent Happy Birthday Wishes To The Birthday Gal Or Bo Husband Birthday Quotes Birthday Wish For Husband Husband Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Birthdays Are Never Complete Until You Ve Sent Happy Birthday Wishes To The Birthday Gal Or Bo Husband Birthday Quotes Birthday Wish For Husband Husband Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/c6/87/e3c68732134b122d59a270ec7543d71d.jpg" data-lightbox="roadtrip" data-title="What To Do When A Husband Cheats Cheating Husband Emotional Infidelity Cheating">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/c6/87/e3c68732134b122d59a270ec7543d71d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBnzaZvmlnsE6igFUjXJ_Sv98YB_oOR4fo4g';" alt="What To Do When A Husband Cheats Cheating Husband Emotional Infidelity Cheating">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Do When A Husband Cheats Cheating Husband Emotional Infidelity Cheating</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/1200/1*vGVrtDmkqSjhfr2y9_CnbQ.jpeg" data-lightbox="roadtrip" data-title="He Thought We D Be Better Off Two Years Ago My Husband Of 18 Years By Jennifer B Calder Human Parts">
+											<img class="card-img v-image ads-img " src="https://miro.medium.com/max/1200/1*vGVrtDmkqSjhfr2y9_CnbQ.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX8M6kXr8v7VM8YsxpIJCKMR8E1VKC2HQYqA';" alt="He Thought We D Be Better Off Two Years Ago My Husband Of 18 Years By Jennifer B Calder Human Parts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">He Thought We D Be Better Off Two Years Ago My Husband Of 18 Years By Jennifer B Calder Human Parts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/80/ef/bd80ef5c9d423e10b9aa9f0108af59c5.jpg" data-lightbox="roadtrip" data-title="Graveside Bereavement Memorial Cards B Variety You Choose Ebay Happy Anniversary To My Husband Happy Wedding Anniversary Wishes Happy Anniversary Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/80/ef/bd80ef5c9d423e10b9aa9f0108af59c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYuJ32KJ9H7rvCGyTt2howLJP_2VSDv76k4w';" alt="Graveside Bereavement Memorial Cards B Variety You Choose Ebay Happy Anniversary To My Husband Happy Wedding Anniversary Wishes Happy Anniversary Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Graveside Bereavement Memorial Cards B Variety You Choose Ebay Happy Anniversary To My Husband Happy Wedding Anniversary Wishes Happy Anniversary Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.theeverygirl.com/wp-content/uploads/2018/03/I%E2%80%99m-an-Everygirl-and-I-discovered-my-husband-was-an-alcoholic-1.jpeg" data-lightbox="roadtrip" data-title="I M An Everygirl And I Discovered My Husband Was An Alcoholic The Everygirl">
+											<img class="card-img v-image ads-img " src="https://media.theeverygirl.com/wp-content/uploads/2018/03/I%E2%80%99m-an-Everygirl-and-I-discovered-my-husband-was-an-alcoholic-1.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbsw-M0FQQ-C3-SMzSaoybvB_htW-nALMRzA';" alt="I M An Everygirl And I Discovered My Husband Was An Alcoholic The Everygirl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I M An Everygirl And I Discovered My Husband Was An Alcoholic The Everygirl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/13/af/6713afdfc8ad4c718b2bff4866265fa4.jpg" data-lightbox="roadtrip" data-title="So This Story Has A Very Interesting Atmosphere About It That Could Be Very Nice To Recreate Writing Inspiration Words Writing Advice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/13/af/6713afdfc8ad4c718b2bff4866265fa4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7C977Y1rTIcM_i6Emr0C-J5qzlOSrcX6zww';" alt="So This Story Has A Very Interesting Atmosphere About It That Could Be Very Nice To Recreate Writing Inspiration Words Writing Advice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">So This Story Has A Very Interesting Atmosphere About It That Could Be Very Nice To Recreate Writing Inspiration Words Writing Advice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/f1/32/baf13299e3e9315a7d5575bd4736bfc8.png" data-lightbox="roadtrip" data-title="You Are In Absolute Control Of These 5 Things Widow Quotes What Is Life About Stages Of Grief">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/f1/32/baf13299e3e9315a7d5575bd4736bfc8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtmvpGPsKDE-y9WCT2-J7nqE4ivO_jmqb8MA';" alt="You Are In Absolute Control Of These 5 Things Widow Quotes What Is Life About Stages Of Grief">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Are In Absolute Control Of These 5 Things Widow Quotes What Is Life About Stages Of Grief</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.baggagereclaim.co.uk/wp-content/uploads/2016/09/too-sensitive-quote.jpg" data-lightbox="roadtrip" data-title="Advice Wednesday How Do I Deal With My Husband S Disrespectful Behaviour When He Keeps Denying It">
+											<img class="card-img v-image ads-img " src="https://www.baggagereclaim.co.uk/wp-content/uploads/2016/09/too-sensitive-quote.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZlkscx2EGTQW3nJvbSbaOiGJT3Sdm69sOQ';" alt="Advice Wednesday How Do I Deal With My Husband S Disrespectful Behaviour When He Keeps Denying It">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Advice Wednesday How Do I Deal With My Husband S Disrespectful Behaviour When He Keeps Denying It</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn2.thebridalbox.com/wp-content/uploads/2016/03/Short-Love-Poems-For-Husband-2.jpg" data-lightbox="roadtrip" data-title="Love Poems For Husband 19 Romantic Poems To Reignite The Spark">
+											<img class="card-img v-image ads-img " src="https://cdn2.thebridalbox.com/wp-content/uploads/2016/03/Short-Love-Poems-For-Husband-2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa5GT3HHKxh24-HD2LMBiP99O7A8ahKV851A';" alt="Love Poems For Husband 19 Romantic Poems To Reignite The Spark">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Love Poems For Husband 19 Romantic Poems To Reignite The Spark</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/benefits-of-having-a-military-husband.html">Benefits Of Having A Military Husband</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-tsp.html">Benefits Of Military Tsp</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-an-army-officer.html">Benefits Of Being An Army Officer</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-forces.html">Benefits Of Military Forces</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-training-for-youth.html">Benefits Of Military Training For Youth</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-a-navy-officer.html">Benefits Of Being A Navy Officer</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-us-army-reserve.html">Benefits Of Being Us Army Reserve</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-families.html">Benefits Of Military Families</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-police.html">Benefits Of Military Police</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-medical-retirement.html">Benefits Of Military Medical Retirement</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-engineering-services.html">Benefits Of Military Engineering Services</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-license-plates.html">Benefits Of Military License Plates</a></li>
+													<li class="list-group-item"><a href="/benefits-of-navel-oranges.html">Benefits Of Navel Oranges</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-rule-in-nigeria.html">Benefits Of Military Rule In Nigeria</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-college.html">Benefits Of Military College</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-working-dogs.html">Benefits Of Military Working Dogs</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-an-army-officer-wife.html">Benefits Of Being An Army Officer Wife</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-dictatorship.html">Benefits Of Military Dictatorship</a></li>
+													<li class="list-group-item"><a href="/benefits-of-joining-air-force-as-an-officer.html">Benefits Of Joining Air Force As An Officer</a></li>
+													<li class="list-group-item"><a href="/benefits-of-military-id-for-spouse.html">Benefits Of Military Id For Spouse</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

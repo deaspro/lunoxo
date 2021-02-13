@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Benefits Of Military Contractors - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Benefits Of Military Contractors",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/ea/d1/49/ead1494e6d32366aeb24c1bd03b468be.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=benefits+of+military+contractors",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Benefits Of Military Contractors</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Spending on service contractors is substantially above the prewar level. Heres a short list of just a few of the base amenities that exist for Army and Air Force civilians and contractors. The contractors increased pay should be enough to cover these benefits. <br>				
+			</p>
+										<a class="badge badge-info" href="/why-do-i-lie-to-my-spouse.html">why do i lie to my spouse</a>
+											<a class="badge badge-success" href="/why-does-my-boyfriend-call-me-crazy.html">why does my boyfriend call me crazy</a>
+											<a class="badge badge-dark" href="/why-does-my-husband-treat-me-like-a-child.html">why does my husband treat me like a child</a>
+											<a class="badge badge-dark" href="/why-do-the-military-use-24-hour-time.html">why do the military use 24 hour time</a>
+											<a class="badge badge-light" href="/why-do-i-dislike-my-husbands-family.html">why do i dislike my husbands family</a>
+											<a class="badge badge-primary" href="/why-does-my-boyfriend-keep-kicking-me-out.html">why does my boyfriend keep kicking me out</a>
+											<a class="badge badge-info" href="/why-does-my-boyfriend-keep-calling-me-names.html">why does my boyfriend keep calling me names</a>
+											<a class="badge badge-primary" href="/why-does-my-husband-have-no-empathy.html">why does my husband have no empathy</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to visit the right site.  Our website provides you with hints for seeing the maximum quality video and picture content, search and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, so we recommend this video for you to view.  You can also bring about supporting this site by sharing videos and images that you enjoy on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/f9/95/95f995682c93a3abbb1304417ac44408.jpg" data-lightbox="roadtrip" data-title="Do You Need Military Experience To Get Defense Contractor Jobs If Working Overseas Watch Here Military Contractor Overseas Jobs Work Overseas Contract Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/f9/95/95f995682c93a3abbb1304417ac44408.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkMb_LRzS9l1sNaNuBkvk9ik0O8Cm1_2hqvg';" alt="Do You Need Military Experience To Get Defense Contractor Jobs If Working Overseas Watch Here Military Contractor Overseas Jobs Work Overseas Contract Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do You Need Military Experience To Get Defense Contractor Jobs If Working Overseas Watch Here Military Contractor Overseas Jobs Work Overseas Contract Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/70/9b/e0709bd03319f21604923a6efb8eb90d.jpg" data-lightbox="roadtrip" data-title="Youtube Pmc Training Private Military Company Contractors Future Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/70/9b/e0709bd03319f21604923a6efb8eb90d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf06Qe-LXNcv_F8FzODqovfLIUrM701V4zKg';" alt="Youtube Pmc Training Private Military Company Contractors Future Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Youtube Pmc Training Private Military Company Contractors Future Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/61/5c/e6615c72e67540975913175a3e33e56b.jpg" data-lightbox="roadtrip" data-title="What Defense Contractors Can Learn About Blogging From The U S Army Http Defensecontractormarketing Com 2012 0 With Images Military Support Veterans Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/61/5c/e6615c72e67540975913175a3e33e56b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7tSMWTX-4g-W5q25HldKeWBVs80NGDks18g';" alt="What Defense Contractors Can Learn About Blogging From The U S Army Http Defensecontractormarketing Com 2012 0 With Images Military Support Veterans Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Defense Contractors Can Learn About Blogging From The U S Army Http Defensecontractormarketing Com 2012 0 With Images Military Support Veterans Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/2e/6d/f92e6ddd044fdf44581cf79916ca8f7b.jpg" data-lightbox="roadtrip" data-title="Thank You Anything We Can Say Is Still Not Again Honor To The Veteran S And The Soldiers They Are The Best Military Love Military Heroes Army Strong">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/2e/6d/f92e6ddd044fdf44581cf79916ca8f7b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm3Oa4JaIMoyIn3ygHM40X6e0JDmIY3wlDBQ';" alt="Thank You Anything We Can Say Is Still Not Again Honor To The Veteran S And The Soldiers They Are The Best Military Love Military Heroes Army Strong">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thank You Anything We Can Say Is Still Not Again Honor To The Veteran S And The Soldiers They Are The Best Military Love Military Heroes Army Strong</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/98/80/bc9880581f05c0fcd03bd36fb8144d93.png" data-lightbox="roadtrip" data-title="Why A Military Contractor Needs To Advertise To The Average Consumer Http Defensecontractormarketing Com Why A Advertising Marketing Department Contractors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/98/80/bc9880581f05c0fcd03bd36fb8144d93.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScxbi1NHp8gC_pEINLaEGEaylV8QmN0SjIAA';" alt="Why A Military Contractor Needs To Advertise To The Average Consumer Http Defensecontractormarketing Com Why A Advertising Marketing Department Contractors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why A Military Contractor Needs To Advertise To The Average Consumer Http Defensecontractormarketing Com Why A Advertising Marketing Department Contractors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/81/79/7a817976d7d6b5257106d2c7a93be8d2.png" data-lightbox="roadtrip" data-title="Who Benefits From Escalation With Iran Defense Contractors In 2020 National Politics Federal Budget Military Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/81/79/7a817976d7d6b5257106d2c7a93be8d2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr9FV9AuxlqXsReCBrGQizH5gEpnJcs1CKkw';" alt="Who Benefits From Escalation With Iran Defense Contractors In 2020 National Politics Federal Budget Military Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Who Benefits From Escalation With Iran Defense Contractors In 2020 National Politics Federal Budget Military Support</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/9f/41/61/9f41612339298a64e74f19028df74f6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr9FV9AuxlqXsReCBrGQizH5gEpnJcs1CKkw';" alt="Who Benefits From Escalation With Iran Defense Contractors In 2020 National Politics Federal Budget Military Support">
+										<div class="card-body">
+						<h3 class="h5"><b>It also means contractors get to choose the benefits they want whereas many employees find themselves paying tax on benefits that they may not particularly want or need.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Benefits of military contractors</strong>. 
+								
+																	It is thus easy for companies to acquire new capacities-just hire different people-or even to melt and reappear or morph from one identity to another. 
+																	Great PayBecause of Directive 8570 and 8140 those who work with secure information need certain baseline. 
+																	Maintain a good worklife balance. 
+																	Nationals or foreign residents of territory under US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Country Differences As of 2010 the POC estimates that there were 95461 contractors in Iraq and 112092 contractors in Afghanistan. 
+																	Depending on the company they may obtain health and life insurance disability coverage. 
+																	Put Your Security Clearance to WorkIf you have an active security clearance or have had one recently youll be. 
+																	Eligibility for Injury Compensation Benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This job board is specifically for military and law enforcement veterans with prior experience looking for military contractor jobs both in CONUS or OCONUS. 
+																	New jobs are posted when available. 
+																	Contract work provides greater independence and for many people a greater perceived level of job security than traditional employment. 
+																	Using contractors andor subcontractors enables your permanent staff to concentrate on the core business. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can use a contractor subcontractor for one-off jobs and jobs requiring specialist expertise or fast turnaround. 
+																	You can hire a contractor andor subcontractor when you need more flexibility with a specific job or task. 
+																	Once hired individuals working as private military contractors earn a competitive salary and benefits. 
+																	The danger and demand of contracting jobs in combat zones may have benefits worth packing your bags for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Most contractors overseas make anywhere from 80000 to 250000 a year. 
+																	Legally mercenaries must be completely detached from the conflict in an emotional sense. 
+																	Benefits Table 1 Benefits and costs of Private Military Companies There are many benefits relevant to experience and deploy them to security provided by private firms. 
+																	Contractors have become a permanent element of the federal workforce. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Benefits of Overseas Contracting Jobs. 
+																	Once hired individuals working as private military contractors earn a competitive salary and benefits. 
+																	However according to the Bureau of Labor Statistics the military also typically covered troops housing fees and offered benefits that private contractors do not enjoy. 
+																	The a particular arena. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Federal civilians and contractors may be surprised to learn that many of the same benefits available to military personnel and their Families are available to them as well. 
+																	Defense Contractors Reap the Benefits of a Growing Military Budget News provided by. 
+																	Most obvious benefit is flexibility. 
+																	Private military contractors also do not meet the UN definition of mercenaries because for the most part they are either US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Operational or battlefield contractors outnumber military personnel in the CENTCOM region 53000 to 35000 and the ratio of contractors to military personnel has increased from 11 in 2008 to 151 today. 
+																	Join us for weekly live QA sessions on our Facebook page. 
+																	There are many benefits associated with private security. 
+																	Good Education BenefitsMany defense contractors provide. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military contractors are seen as having inherent advantages over militaries in resource constraints manpower and flexibility. 
+																	Typically companies have a small full time contingent and a large data base from which to recruit for particular contract. 
+																	Less commuting fewer meetings less office politics and you can work the hours that suit you and your lifestyle best. 
+																	The Ministry of Defence MOD is a central government department with a mission to protect our country and provide the ultimate guarantee of its security and independence as well as helping to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Providing some financial cover for periods of sickness is a sensible approach and not an expensive. 
+																	Depending on the company they may obtain health and life insurance disability coverage paid time off retirement plans and flexible spending accounts. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/ed/e4/a0ede469e1f8947f844568a919de5eba.jpg" data-lightbox="roadtrip" data-title="Outsourcing Security Bruce Stanley The First Empirical Study Of The Claims About The Origins Costs A Executive Protection Reading Material Political Science">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/ed/e4/a0ede469e1f8947f844568a919de5eba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7yoPeP_ZTz2dbzrefR2ayPio7Az7oskwvbA';" alt="Outsourcing Security Bruce Stanley The First Empirical Study Of The Claims About The Origins Costs A Executive Protection Reading Material Political Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Outsourcing Security Bruce Stanley The First Empirical Study Of The Claims About The Origins Costs A Executive Protection Reading Material Political Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/d1/49/ead1494e6d32366aeb24c1bd03b468be.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/d1/49/ead1494e6d32366aeb24c1bd03b468be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2SmTjwfoW0rwcTPJKK7ALbPnHYAD2WdEvfw';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/7b/ba/c17bbae72124ade786cc54f548ee3979.jpg" data-lightbox="roadtrip" data-title="3 Major Benefits Of Gsa Schedule Contract Benefit Schedule Contract">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/7b/ba/c17bbae72124ade786cc54f548ee3979.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-nLzMUmWfbjdqz5FHKIDL0XchTJJvxn2hww';" alt="3 Major Benefits Of Gsa Schedule Contract Benefit Schedule Contract">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 Major Benefits Of Gsa Schedule Contract Benefit Schedule Contract</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/1c/7b/e61c7b34de9859f4057423f9da47d6f8.jpg" data-lightbox="roadtrip" data-title="Report Full Cost Of U S Wars Overseas Approaching 6 Trillion Overseas Post Traumatic Stress Disorder War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/1c/7b/e61c7b34de9859f4057423f9da47d6f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNYmN-rz0Aun8Fx6y8DkE8MJUUKTAdcf0utg';" alt="Report Full Cost Of U S Wars Overseas Approaching 6 Trillion Overseas Post Traumatic Stress Disorder War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Report Full Cost Of U S Wars Overseas Approaching 6 Trillion Overseas Post Traumatic Stress Disorder War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/f6/b2/3ff6b258471cf158e8faef5ec0e85918.png" data-lightbox="roadtrip" data-title="6 Reasons Why Working As A Contractor Could Be Your Best Career More Yet Best Careers Staffing Agency Contractors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/f6/b2/3ff6b258471cf158e8faef5ec0e85918.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8YK-xzyuryofUxQV_p_CHc36rgM4bO6JM5g';" alt="6 Reasons Why Working As A Contractor Could Be Your Best Career More Yet Best Careers Staffing Agency Contractors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Reasons Why Working As A Contractor Could Be Your Best Career More Yet Best Careers Staffing Agency Contractors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/fb/6d/4afb6da7d3183576657d01d8a07211fe.jpg" data-lightbox="roadtrip" data-title="Global Targets While Traditional Threats Are Often Driven By Profit Most Advanced Persistent T Cyber Security Awareness Infographic Cyber Threat Intelligence">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/fb/6d/4afb6da7d3183576657d01d8a07211fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjY7PyEIQMVKCIMZyKtyG1eMHR56sKefz5w';" alt="Global Targets While Traditional Threats Are Often Driven By Profit Most Advanced Persistent T Cyber Security Awareness Infographic Cyber Threat Intelligence">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Global Targets While Traditional Threats Are Often Driven By Profit Most Advanced Persistent T Cyber Security Awareness Infographic Cyber Threat Intelligence</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/04/f5/a804f5c8c02634e7f032b82f8d452bcf.jpg" data-lightbox="roadtrip" data-title="Pentagon Procurement And The Laws Of Physics Infantry Military News Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/04/f5/a804f5c8c02634e7f032b82f8d452bcf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT91IwExaa-OTdQi0CIS_uxyC7UM3Yo35OB3Q';" alt="Pentagon Procurement And The Laws Of Physics Infantry Military News Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pentagon Procurement And The Laws Of Physics Infantry Military News Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/c4/09/7cc40926314af0b23e414d12bdbab522.jpg" data-lightbox="roadtrip" data-title="U S Sending Troops Uav S To Cameroon Against Boko Haram Troops Boko Haram Cameroon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/c4/09/7cc40926314af0b23e414d12bdbab522.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyMRTB-2zyK3Abpnfj6Qv_8iIguTPz5m2oCQ';" alt="U S Sending Troops Uav S To Cameroon Against Boko Haram Troops Boko Haram Cameroon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Sending Troops Uav S To Cameroon Against Boko Haram Troops Boko Haram Cameroon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/cc/62/43cc6279bc04f5442da1ab29446f8776.png" data-lightbox="roadtrip" data-title="The Gaslighting Of The American Public Continues Private Security Contractor Military Officer Private Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/cc/62/43cc6279bc04f5442da1ab29446f8776.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPAK0ZV-Iswzf81Q3xk7tp0Z5dbK7gRXs5ig';" alt="The Gaslighting Of The American Public Continues Private Security Contractor Military Officer Private Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Gaslighting Of The American Public Continues Private Security Contractor Military Officer Private Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/41/61/9f41612339298a64e74f19028df74f6e.jpg" data-lightbox="roadtrip" data-title="U S Navy Seals Team 3 In Afghanistan 1066 X 800 Us Navy Seals Navy Seals Military Personnel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/41/61/9f41612339298a64e74f19028df74f6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwC8mvqly0ognNcC3Tl2cPdlsgdgEftt4AtA';" alt="U S Navy Seals Team 3 In Afghanistan 1066 X 800 Us Navy Seals Navy Seals Military Personnel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Navy Seals Team 3 In Afghanistan 1066 X 800 Us Navy Seals Navy Seals Military Personnel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/f0/f0/d9f0f0a544851159505975c901495628.jpg" data-lightbox="roadtrip" data-title="Afghanistan And The Pentagon Decades Long War With The Truth Military Veterans United States Military The Secret History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/f0/f0/d9f0f0a544851159505975c901495628.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoGHR2ZOaiJfACGHup2q00oy8YSCgv-mpl7Q';" alt="Afghanistan And The Pentagon Decades Long War With The Truth Military Veterans United States Military The Secret History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Afghanistan And The Pentagon Decades Long War With The Truth Military Veterans United States Military The Secret History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/90/74/b2/9074b21f3d7d8254c0ef6e053ba8ac08.jpg" data-lightbox="roadtrip" data-title="Pin On Military Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/90/74/b2/9074b21f3d7d8254c0ef6e053ba8ac08.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfODT42Dcwp8iWQXmDgbdSMt-R94df5D6-tQ';" alt="Pin On Military Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/6f/7c/1e6f7c93168d30b8fe5d375dfdeb0a6a.jpg" data-lightbox="roadtrip" data-title="Defense Agencies Continue Awarding Contracts To Suspended Firms Report Finds National Geospatial Intelligence Agency Contract Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/6f/7c/1e6f7c93168d30b8fe5d375dfdeb0a6a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8JZ5_rysbaI17Ivit1xmwzfPyHhoxY9isZg';" alt="Defense Agencies Continue Awarding Contracts To Suspended Firms Report Finds National Geospatial Intelligence Agency Contract Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defense Agencies Continue Awarding Contracts To Suspended Firms Report Finds National Geospatial Intelligence Agency Contract Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/marine-spouse-deported.html">Marine Spouse Deported</a></li>
+													<li class="list-group-item"><a href="/meaning-of-military-resources.html">Meaning Of Military Resources</a></li>
+													<li class="list-group-item"><a href="/marine-corps-spouse-colocation.html">Marine Corps Spouse Colocation</a></li>
+													<li class="list-group-item"><a href="/medal-for-military-spouse.html">Medal For Military Spouse</a></li>
+													<li class="list-group-item"><a href="/marine-spouse-life.html">Marine Spouse Life</a></li>
+													<li class="list-group-item"><a href="/massachusetts-unemployment-military-spouse.html">Massachusetts Unemployment Military Spouse</a></li>
+													<li class="list-group-item"><a href="/marine-spouse-rules.html">Marine Spouse Rules</a></li>
+													<li class="list-group-item"><a href="/md-military-spouse-residency-relief-act.html">Md Military Spouse Residency Relief Act</a></li>
+													<li class="list-group-item"><a href="/medical-retirement-army-spouse-benefits.html">Medical Retirement Army Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/marine-wife-quotes.html">Marine Wife Quotes</a></li>
+													<li class="list-group-item"><a href="/medical-jobs-for-military-spouses.html">Medical Jobs For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/masters-athletics-records-india.html">Masters Athletics Records India</a></li>
+													<li class="list-group-item"><a href="/merchant-navy-in-india-after-12th.html">Merchant Navy In India After 12th</a></li>
+													<li class="list-group-item"><a href="/martinsburg-college-military-spouse.html">Martinsburg College Military Spouse</a></li>
+													<li class="list-group-item"><a href="/marine-reserve-spouse-benefits.html">Marine Reserve Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/masters-swimming-records-world.html">Masters Swimming Records World</a></li>
+													<li class="list-group-item"><a href="/marine-wife-t-shirt.html">Marine Wife T Shirt</a></li>
+													<li class="list-group-item"><a href="/masters-swimming-records-uk.html">Masters Swimming Records Uk</a></li>
+													<li class="list-group-item"><a href="/marine-spouse-education-benefits.html">Marine Spouse Education Benefits</a></li>
+													<li class="list-group-item"><a href="/merchant-navy-in-india-eligibility-criteria.html">Merchant Navy In India Eligibility Criteria</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

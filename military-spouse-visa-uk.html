@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Spouse Visa Uk - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Spouse Visa Uk",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/c6/b1/44/c6b14410280f82b0c84d826dda34a6f8.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+spouse+visa+uk",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Spouse Visa Uk</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The spouse visa uk fee of 1523 for outside applications and 1033 for inside applications does not include some other services that you may want to consider. Learn how to find portable employment overseas. Whilst eligible to work on this visa the non-British partner cannot claim most of the benefits tax credits or housing assistance that UK citizens are entitled to. <br>				
+			</p>
+										<a class="badge badge-light" href="/my-wife-left-me-for-a-rich-man.html">my wife left me for a rich man</a>
+											<a class="badge badge-light" href="/my-wife-left-me-and-now-regrets-it.html">my wife left me and now regrets it</a>
+											<a class="badge badge-warning" href="/my-wife-left-me-for-someone-else.html">my wife left me for someone else</a>
+											<a class="badge badge-primary" href="/my-wife-left-me-a-year-ago.html">my wife left me a year ago</a>
+											<a class="badge badge-primary" href="/my-wife-just-got-fired.html">my wife just got fired</a>
+											<a class="badge badge-secondary" href="/my-wife-lies-about-me.html">my wife lies about me</a>
+											<a class="badge badge-secondary" href="/my-wife-kill.html">my wife kill</a>
+											<a class="badge badge-success" href="/my-wife-left-me-paper-mario.html">my wife left me paper mario</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to pay a visit to the ideal site.  Our website gives you suggestions for viewing the maximum quality video and image content, hunt and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie for you to view.  You can also bring about supporting this site by sharing videos and images that you enjoy on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/2a/3e/6e2a3ec2aaa5c460a079d66bc49997be.jpg" data-lightbox="roadtrip" data-title="Sofa Stamp A Must Before Leaving Germany Ansbach Germany Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/2a/3e/6e2a3ec2aaa5c460a079d66bc49997be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYzbE9tQy5y6t07GrZ5FllxIWSrwTIbjp9XA';" alt="Sofa Stamp A Must Before Leaving Germany Ansbach Germany Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sofa Stamp A Must Before Leaving Germany Ansbach Germany Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/19/37/1a1937ad4c6c266807ffbbcd2dcb70ca.jpg" data-lightbox="roadtrip" data-title="11 Reasons For Uk Visa Refusal And How To Overcome Them Visa Traveler Uk Visa Visa Work Visa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/19/37/1a1937ad4c6c266807ffbbcd2dcb70ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd4HxPFYhP0v4drD9mTHoxK7qvg7Eq6-0YHA';" alt="11 Reasons For Uk Visa Refusal And How To Overcome Them Visa Traveler Uk Visa Visa Work Visa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 Reasons For Uk Visa Refusal And How To Overcome Them Visa Traveler Uk Visa Visa Work Visa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5e/d1/45/5ed145c2053cec92b5a16e5d6046bd79.jpg" data-lightbox="roadtrip" data-title="Everything You Need To Know About Uk Spouse Visa The Smartmove2uk Couples Massage Massage Massage Clinic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5e/d1/45/5ed145c2053cec92b5a16e5d6046bd79.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-HP-cy2sg_T8rE7747n5rhW36OuKsnqTapg';" alt="Everything You Need To Know About Uk Spouse Visa The Smartmove2uk Couples Massage Massage Massage Clinic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Everything You Need To Know About Uk Spouse Visa The Smartmove2uk Couples Massage Massage Massage Clinic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/e2/18/b4e21812a0f62aaff09c9f8ccd2c7501.jpg" data-lightbox="roadtrip" data-title="What To Include In The I 130 Usa Visa Package Green Cards Fiance Visa Visa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/e2/18/b4e21812a0f62aaff09c9f8ccd2c7501.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvTJNb6sVi17dTSRnsu4ejDRWYN_ZtuKvO3w';" alt="What To Include In The I 130 Usa Visa Package Green Cards Fiance Visa Visa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Include In The I 130 Usa Visa Package Green Cards Fiance Visa Visa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/e7/d6/0ee7d6a818215b8ca96da6be04607782.jpg" data-lightbox="roadtrip" data-title="Your Ultimate Guide On Permanent Residence In The Uk The Smartmove2uk Permanent Residence About Uk Visa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/e7/d6/0ee7d6a818215b8ca96da6be04607782.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuCFCTnCkCL39oMRCDAe9Wbgn_hEStyxFBSQ';" alt="Your Ultimate Guide On Permanent Residence In The Uk The Smartmove2uk Permanent Residence About Uk Visa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Your Ultimate Guide On Permanent Residence In The Uk The Smartmove2uk Permanent Residence About Uk Visa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/d7/4d/2ed74dad696cf47d83ed78e1b6497da2.png" data-lightbox="roadtrip" data-title="How Strong Is Your Passport How Many Countries Can You Travel To Visa Free Compare It To Other Passports I Traveling By Yourself Passport How Many Countries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/d7/4d/2ed74dad696cf47d83ed78e1b6497da2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhSxybUbhTk9ocpKFNquZkIJ7eZICJBgoPTA';" alt="How Strong Is Your Passport How Many Countries Can You Travel To Visa Free Compare It To Other Passports I Traveling By Yourself Passport How Many Countries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Strong Is Your Passport How Many Countries Can You Travel To Visa Free Compare It To Other Passports I Traveling By Yourself Passport How Many Countries</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/5e/d1/45/5ed145c2053cec92b5a16e5d6046bd79.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhSxybUbhTk9ocpKFNquZkIJ7eZICJBgoPTA';" alt="How Strong Is Your Passport How Many Countries Can You Travel To Visa Free Compare It To Other Passports I Traveling By Yourself Passport How Many Countries">
+										<div class="card-body">
+						<h3 class="h5"><b>UK visa application form.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military spouse visa uk</strong>. 
+								
+																	I then married a UK citizen here and so now I currently have a spouse visa. 
+																	With the help of the Military Spouse Preference program you could be eligible for certain preferences when applying for Department of Defense civilian jobs including civil service careers overseas. 
+																	Army Navy Marines Air Force or Coast Guard or in a National Guard unit while the unit was federally recognized as a reserve component of the US. 
+																	For applications made outside the UK If you want your visa processed as soon as possible you can consider the Priority visa service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Valid passport with at least an empty page in order to be able to affix visa. 
+																	If you are ordering after 1282020 I would recommend upgrading to FedEx with the hopes of it arriving by. 
+																	The UK Spouse Visa requirements include proving your British partner earns at least 18600 per year. 
+																	Hi I m a US citizen who initially moved to the UK 2yrs ago under work visa with the military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Military Spouse Preference program. 
+																	Question 1-We are looking into moving back to the US due to job offer so my que. 
+																	The UK spouse visa allows applicants to join their partner and live in the UK for two and a half years. 
+																	For some military spouses looking to make extra money in Italy the Status of Forces Agreement may not be on your side. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Spouses of military members who are assigned to duty in the United Kingdom and their dependent children under the age of 21 prior to arrival no longer require visas said Carol Hubbard US. 
+																	Since the start of 2019 the Liquid Workforce has provided over 10000 hours of remote paid work to members of the military spouse community - this equates to over 70000 going into military homes. 
+																	To apply to remain within the Armed Forces immigration rules you must be on a visa or with entry clearance that was issued for more than six months. 
+																	05 Can I come to the UK on a visit visa and then apply to remain here permanently as the spouse of a Service person. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For the spouse visa you will need to submit the form VAF4A. 
+																	Most Visited Visiting the UK UK Visit Visa Types Marriage visit visa UK visit visa extension Refusal of a UK visit visa Partners and Families Apply for a UK Visa UK Fiance Visa UK Spouse Visa Domestic Violence ILR Forced Marriages Indefinite Leave to Remain Children Access to Child Visa Adult Dependant Relative Complex Human Rights Family Private Life 7 Years Child Concession Long. 
+																	To start with this post provides valuable information for US military personnel processing spouse visa. 
+																	UK Spouse Visa Requirements If youre moving from the US to be with your partner in the UK you need to complete a Spouse Visa application. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Air Forces in Europe-United Kingdom chief of foreign affairs litigation. 
+																	An additional 3800 for the first child and an additional 2400 for each additional child. 
+																	If youre living in the UK on your own visa your partner will have to either. 
+																	By US military personnel we mean active or reserve duty in the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I cannot guarantee Christmas delivery on any orders but I will always ship within processing time. 
+																	Has a parent who is an EU citizen or partner of an EU citizen if entry to the UK takes place before the end of 2020. 
+																	The UK Spouse visa required documents that you will have to submit when you go to meet with the consular officer are the below listed. 
+																	If youre visiting the UK for 6 months or less check if you need a Standard Visitor visa or Marriage Visitor visa. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Immigration Rules Appendix FM Spouse Visa is exempt from control through his or her employment typically with an embassy consulate visiting military force or international organisation. 
+																	Extending your family visa You can apply to extend your stay with your family. 
+																	The specific visa type that you need depends on your individual circumstances. 
+																	The MIR applies to all soldiers regardless of nationality who wish to bring their non-UK national spouses and children to the UK. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	90 of these members of our Liquid Workforce have been unemployed for 5 years or more. 
+																	As stated in my announcement Christmas orders were due by 1282020. 
+																	Apply as a dependant of a Tier 2 General visa holder apply as a dependant of a Tier 4 visa holder If youre a refugee or have humanitarian protection your partner will need to apply for family reunion on GOVUK. 
+																	Evidence of gross annual income of at least 18600 for 6 months. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dependants of HM armed forces personnel required to transit the UK in order to travel to join their sponsor overseas should apply for a general visit visa to transit the UK. 
+																	There are no discretions in place for the Armed Forces. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/86/2e/f4862effc846a3cd731180b9d930f07c.jpg" data-lightbox="roadtrip" data-title="Pin By Aschfords Law On Uk Visa Lawyer Overseas Business Legal Services Uk Visa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/86/2e/f4862effc846a3cd731180b9d930f07c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpl92ziaJa1SYS31F2a8CLvodb3hGC-vrNTQ';" alt="Pin By Aschfords Law On Uk Visa Lawyer Overseas Business Legal Services Uk Visa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Aschfords Law On Uk Visa Lawyer Overseas Business Legal Services Uk Visa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/58/f4/83/58f4834f92c17a0d1e48bf7d39c47fc9.jpg" data-lightbox="roadtrip" data-title="Pin On Passport Service">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/58/f4/83/58f4834f92c17a0d1e48bf7d39c47fc9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbZVrjJBmKzue5hxPchcpsMD9YOh5mNE5D-w';" alt="Pin On Passport Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Passport Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/fa/bb/51fabbd7744ee4c4d384e9b750a63984.jpg" data-lightbox="roadtrip" data-title="Pin On Bloggers Supporting Bloggers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/fa/bb/51fabbd7744ee4c4d384e9b750a63984.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRjPfZO_494pqATaSAwt-4CmdEbaf_WV2gCw';" alt="Pin On Bloggers Supporting Bloggers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Bloggers Supporting Bloggers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/ef/f0/89eff08fb4c8cb82f3ef1303da03a945.png" data-lightbox="roadtrip" data-title="Pin On Immigration Process Usa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/ef/f0/89eff08fb4c8cb82f3ef1303da03a945.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR27FikIHdXUKXeAaZ-YeOtM9hWGkucV_v94w';" alt="Pin On Immigration Process Usa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Immigration Process Usa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/01/56/d20156c8137a31e79ceef65a6f031a8b.jpg" data-lightbox="roadtrip" data-title="Student Spouse Visa For The Uk Spouse Diana Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/01/56/d20156c8137a31e79ceef65a6f031a8b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0-bMnE0Oa4OerDoD5lsRTmYWBE-Bj5iuXBQ';" alt="Student Spouse Visa For The Uk Spouse Diana Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Student Spouse Visa For The Uk Spouse Diana Student</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/7f/92/2d7f92c727ba782f745dd7475136bacc.jpg" data-lightbox="roadtrip" data-title="Experience A Unique Mix Of Nature And Culture On A Holiday To The Uk This Year Grab All Details For A Tourist Visa So You An Visa Uk Visa Amazing Destinations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/7f/92/2d7f92c727ba782f745dd7475136bacc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yfprr6VrtHzoei3I36h3I537bxaR8VYuKg';" alt="Experience A Unique Mix Of Nature And Culture On A Holiday To The Uk This Year Grab All Details For A Tourist Visa So You An Visa Uk Visa Amazing Destinations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Experience A Unique Mix Of Nature And Culture On A Holiday To The Uk This Year Grab All Details For A Tourist Visa So You An Visa Uk Visa Amazing Destinations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0a/80/96/0a8096d58f7eec463cf162aef59f2c54.jpg" data-lightbox="roadtrip" data-title="Mexico Visa Requirements Visa Traveler Visa Jobs In Mexico Mexico Tourist">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0a/80/96/0a8096d58f7eec463cf162aef59f2c54.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHxZ3zjjCMPQmaPbWQ4JONT06KHkZk3diVeQ';" alt="Mexico Visa Requirements Visa Traveler Visa Jobs In Mexico Mexico Tourist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mexico Visa Requirements Visa Traveler Visa Jobs In Mexico Mexico Tourist</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/5f/31/c35f31f8d180daf77a29c62f573d7f23.jpg" data-lightbox="roadtrip" data-title="Differences Between The American School System Compared To The English Special Education Schools School School System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/5f/31/c35f31f8d180daf77a29c62f573d7f23.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST_lfl9AFh4zTuw4-m_4e-Gn7LVDYUmUcvbA';" alt="Differences Between The American School System Compared To The English Special Education Schools School School System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Differences Between The American School System Compared To The English Special Education Schools School School System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3a/42/7e/3a427e11d566c97279106100c7b9bbbd.jpg" data-lightbox="roadtrip" data-title="Things To Consider Before Giving Birth Abroad Wellington World Travels Flying While Pregnant Travel Nursery Abroad">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3a/42/7e/3a427e11d566c97279106100c7b9bbbd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZVHLtDS0KPtTLFcYEgLfBchBk-B-ScsG1Vw';" alt="Things To Consider Before Giving Birth Abroad Wellington World Travels Flying While Pregnant Travel Nursery Abroad">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Things To Consider Before Giving Birth Abroad Wellington World Travels Flying While Pregnant Travel Nursery Abroad</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/61/96/7a6196a8d2cf6c47fda76571f88bebca.jpg" data-lightbox="roadtrip" data-title="The United Kingdom Is One Of The Most Popular Tourist Destinations In The World Sightseeing Visiting Family And Friends Traveling Bus Tourist Visa Visit Uk">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/61/96/7a6196a8d2cf6c47fda76571f88bebca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU4AFY1DiXuftd5Q9IbZRGJcFS4gY_e54jpg';" alt="The United Kingdom Is One Of The Most Popular Tourist Destinations In The World Sightseeing Visiting Family And Friends Traveling Bus Tourist Visa Visit Uk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The United Kingdom Is One Of The Most Popular Tourist Destinations In The World Sightseeing Visiting Family And Friends Traveling Bus Tourist Visa Visit Uk</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/12/c7/6012c7dbe15108e4a4b5625eb06d9bc7.png" data-lightbox="roadtrip" data-title="Study In The Uk Uk Universities Study College Fun">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/12/c7/6012c7dbe15108e4a4b5625eb06d9bc7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAqgKpYZMqF8qWG1Cx20Za0DOnwsEC7QkdBQ';" alt="Study In The Uk Uk Universities Study College Fun">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Study In The Uk Uk Universities Study College Fun</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/b1/44/c6b14410280f82b0c84d826dda34a6f8.png" data-lightbox="roadtrip" data-title="How To Travel 36 Countries Visa Free With A Canada Visa 2020 Edition Visa Traveler En 2020 Viajar A Canada Visa De Trabajo Republica Dominicana">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/b1/44/c6b14410280f82b0c84d826dda34a6f8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT41XEsgNkg4BAGHFRweOPCY8QArQ1Ay5CbSQ';" alt="How To Travel 36 Countries Visa Free With A Canada Visa 2020 Edition Visa Traveler En 2020 Viajar A Canada Visa De Trabajo Republica Dominicana">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Travel 36 Countries Visa Free With A Canada Visa 2020 Edition Visa Traveler En 2020 Viajar A Canada Visa De Trabajo Republica Dominicana</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e7/a3/bc/e7a3bca189bedf3699a2f1acdd9a7bfc.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e7/a3/bc/e7a3bca189bedf3699a2f1acdd9a7bfc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcMLBFQsstGZojbipPiaKgoN5mn6CYDfonkw';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-retirement-spouse-survivor-benefits.html">Military Retirement Spouse Survivor Benefits</a></li>
+													<li class="list-group-item"><a href="/military-retirement-spouse-death-benefit.html">Military Retirement Spouse Death Benefit</a></li>
+													<li class="list-group-item"><a href="/military-retirement-spouse-divorce-benefits.html">Military Retirement Spouse Divorce Benefits</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pay-divorce-calculator.html">Military Retirement Pay Divorce Calculator</a></li>
+													<li class="list-group-item"><a href="/military-retirement-spouse-benefits-after-death.html">Military Retirement Spouse Benefits After Death</a></li>
+													<li class="list-group-item"><a href="/military-retirement-gift-ideas-navy.html">Military Retirement Gift Ideas Navy</a></li>
+													<li class="list-group-item"><a href="/military-retirement-benefits-and-divorce.html">Military Retirement Benefits And Divorce</a></li>
+													<li class="list-group-item"><a href="/military-retirement-spouse-insurance.html">Military Retirement Spouse Insurance</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pay-to-divorced-spouse.html">Military Retirement Pay To Divorced Spouse</a></li>
+													<li class="list-group-item"><a href="/military-retirement-divorce-adultery.html">Military Retirement Divorce Adultery</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pay-for-divorced-spouses.html">Military Retirement Pay For Divorced Spouses</a></li>
+													<li class="list-group-item"><a href="/military-retirement-and-divorce-in-virginia.html">Military Retirement And Divorce In Virginia</a></li>
+													<li class="list-group-item"><a href="/military-retirement-pay-and-divorce-in-georgia.html">Military Retirement Pay And Divorce In Georgia</a></li>
+													<li class="list-group-item"><a href="/military-retirement-gift-ideas.html">Military Retirement Gift Ideas</a></li>
+													<li class="list-group-item"><a href="/military-retirement-divorce-and-disability.html">Military Retirement Divorce And Disability</a></li>
+													<li class="list-group-item"><a href="/military-retirement-benefits-divorce.html">Military Retirement Benefits Divorce</a></li>
+													<li class="list-group-item"><a href="/military-retirement-divorce-laws.html">Military Retirement Divorce Laws</a></li>
+													<li class="list-group-item"><a href="/military-retirement-and-divorce-in-florida.html">Military Retirement And Divorce In Florida</a></li>
+													<li class="list-group-item"><a href="/military-retirement-divorce-tennessee.html">Military Retirement Divorce Tennessee</a></li>
+													<li class="list-group-item"><a href="/military-retirement-gift-ideas-for-husband.html">Military Retirement Gift Ideas For Husband</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

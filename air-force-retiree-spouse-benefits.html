@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Air Force Retiree Spouse Benefits - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Air Force Retiree Spouse Benefits",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/2f/54/66/2f546642db68fbbb297132b3ed5b9211.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=air+force+retiree+spouse+benefits",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Air Force Retiree Spouse Benefits</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Section A Reporting the Death of a Retired Air Force Member. The payment amounts are adjusted yearly for a cost-of-living-allowance. Did you know that as the spouse of a retiree you may be eligible for a number of benefits. <br>				
+			</p>
+										<a class="badge badge-primary" href="/mrap-military-vehicle.html">mrap military vehicle</a>
+											<a class="badge badge-dark" href="/msc-montreal-careers.html">msc montreal careers</a>
+											<a class="badge badge-light" href="/msc-neuroscience-careers.html">msc neuroscience careers</a>
+											<a class="badge badge-danger" href="/military-work-hours-regulations.html">military work hours regulations</a>
+											<a class="badge badge-light" href="/military-wrap-around-childcare.html">military wrap around childcare</a>
+											<a class="badge badge-primary" href="/milspouse-creative.html">milspouse creative</a>
+											<a class="badge badge-light" href="/msc-careers-switzerland.html">msc careers switzerland</a>
+											<a class="badge badge-primary" href="/milspouse-sales-academy.html">milspouse sales academy</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to visit the right site.  Our site gives you suggestions for viewing the maximum quality video and image content, search and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie for you to see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images01.military.com/sites/default/files/styles/full/public/media/spouse/2016/05/spouse-retirement-ceremony-1200x800.jpg?itok=kNIGpM4j" data-lightbox="roadtrip" data-title="Are There Any Military Spouse Retirement Benefits Military Com">
+											<img class="card-img v-image ads-img " src="https://images01.military.com/sites/default/files/styles/full/public/media/spouse/2016/05/spouse-retirement-ceremony-1200x800.jpg?itok=kNIGpM4j" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlg-zR8ALQWtuZAkw3uFd08oLLHZ7LmHpHPg';" alt="Are There Any Military Spouse Retirement Benefits Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are There Any Military Spouse Retirement Benefits Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="YQ5cr4oTrqUYFM" data-lightbox="roadtrip" data-title="Https Www Retirees Af Mil Portals 53 Documents Fact 20sheets Retiree 20survivor S 20guide 20to 20benefits Keeping 20the 20promise Pdf Ver 2016 10 24 102133 533">
+											<img class="card-img v-image ads-img " src="YQ5cr4oTrqUYFM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh-VwjYNQfXlM6QEJEwZtsUK2fn7-Oh1A2lA';" alt="Https Www Retirees Af Mil Portals 53 Documents Fact 20sheets Retiree 20survivor S 20guide 20to 20benefits Keeping 20the 20promise Pdf Ver 2016 10 24 102133 533">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Retirees Af Mil Portals 53 Documents Fact 20sheets Retiree 20survivor S 20guide 20to 20benefits Keeping 20the 20promise Pdf Ver 2016 10 24 102133 533</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_MilitarySpouse1.jpg?itok=_Z72pqcw" data-lightbox="roadtrip" data-title="Explanation Of Divorced Military Spouse Benefits Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_MilitarySpouse1.jpg?itok=_Z72pqcw" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0D0IhbDAZyVxNIs2xA1O0SSEgzVTL0c5vQ';" alt="Explanation Of Divorced Military Spouse Benefits Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Explanation Of Divorced Military Spouse Benefits Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/top-military-spouse-benefits.jpg" data-lightbox="roadtrip" data-title="5 Top Military Spouse Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/top-military-spouse-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF0oveY9ro574qkxemJ221vg2HzcoRtgskAA';" alt="5 Top Military Spouse Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Top Military Spouse Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.yokota.af.mil/Portals/44/Retiree%20newsletter/Graphic-%20FEDVIP%20Comparison%20Tool%20(Sep%202018).jpg?ver=2018-11-14-193937-027" data-lightbox="roadtrip" data-title="Retiree Activities">
+											<img class="card-img v-image ads-img " src="https://www.yokota.af.mil/Portals/44/Retiree%20newsletter/Graphic-%20FEDVIP%20Comparison%20Tool%20(Sep%202018).jpg?ver=2018-11-14-193937-027" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKoc5z90Kqp1fXiTBhfz8XUAhxMU-hE3GiLQ';" alt="Retiree Activities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Retiree Activities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/a8/92/eaa892361f5fcd0b78bf90b84725b561.png" data-lightbox="roadtrip" data-title="10 Perks Of Being An Air Force Wife Spouselink Airforce Wife Air Force Spouse Air Force Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/a8/92/eaa892361f5fcd0b78bf90b84725b561.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8crm0XvcXfN014IvoqW9M_gi_gsM8rpQ3PA';" alt="10 Perks Of Being An Air Force Wife Spouselink Airforce Wife Air Force Spouse Air Force Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Perks Of Being An Air Force Wife Spouselink Airforce Wife Air Force Spouse Air Force Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/2f/54/66/2f546642db68fbbb297132b3ed5b9211.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8crm0XvcXfN014IvoqW9M_gi_gsM8rpQ3PA';" alt="10 Perks Of Being An Air Force Wife Spouselink Airforce Wife Air Force Spouse Air Force Wife Life">
+										<div class="card-body">
+						<h3 class="h5"><b>That rule states that in order to qualify for certain types of military pay garnishment dividing retired pay as property to be enforced under the USFSPAsee below for more information on that procedure the service membermilitary retiree and the former spouse must have been married to each other for 10 years or more during which the member performed at least 10 years of military service creditable towards retirement eligibility according to DFAS at the time of this writing.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Air force retiree spouse benefits</strong>. 
+								
+																	As a retired military spouse you are eligible to receive 55 percent of your spouses military retirement pay under the Survivor Benefits Plan. 
+																	If you are a military retired member you need to sit down and take a long look at contingency planning and what are the likely difficulties and hardships that your surviving spouse will have to face. 
+																	As a military widow or widower youll always be a part of the military network just as your spouses service to our country will never be forgotten. 
+																	An Air Force Pilot Earned the Medal of Honor by Daring the Enemy to Try and Catch Him. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Health and dental care. 
+																	Air Force Retiree Services cannot assist Guard and Reserve members who are not yet receiving retirement pay or retired Civil Service personnel. 
+																	The Air Force takes care of the basic needs of every Airman. 
+																	To qualify the couple must have been married for at least 20 years overlapping the members military career. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The former spouse retains an ID card and all benefits that go along with it including Tricare medical access to military installations the commissary etc. 
+																	They receive excellent rates low cost comprehensive medical and dental care at military or civilian facilities full pay and allowances for sick days and low-cost life insurance. 
+																	After military retirement. 
+																	SBP coverage costs 65 percent of the base covered amount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you marry later you can add your spouse but. 
+																	This can cause a hardship with the military surviving spouse benefits who is left without an income source and that can spell ruin for many service member families. 
+																	January 30 2008 By admin. 
+																	The retiree must send DFAS Defense Finance and Accounting Service US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Retirement Pay 8899 E 56th St Indianapolis IN 46249-1200 a copy of the document that terminates the beneficiarys eligibility spouses death certificate or divorce decree together with either. 
+																	Spouse or Former Spouse and Child. 
+																	There are several offices capable of assisting family members of retired Air Force personnel. 
+																	When a military Servicemember passes away the retirement pay stops. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If retiring the Service member is eligible for TRICARE as a military retiree and may also be eligible for certain VA benefits. 
+																	Person with a Natural Insurable Interest. 
+																	Military Spouse Retirement Benefits. 
+																	Social Security benefits are also available to surviving families in the form of lump-sum and monthly payments. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are many things for which you may be eligible including medical insurance free legal assistance. 
+																	These are so-called Group A retirees and their dependents working-age retirees under age 65 who entered the military before Jan. 
+																	The retiring service member can select to cover up to 55 percent of his or her retirement pay with SBP coverage. 
+																	PAY BENEFITS Joining the Royal Air Force entitles you to a highly competitive benefits package that includes everything from bonuses to a gym membership and discounts for you and your partner. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our former spouses receive individual- ized guidance leading them through the complex process of determining their DEERS eligibility to qualify for continu- ation of ID card benefits and privileges. 
+																	When leaving active duty Service members may be entitled to or eligible for benefits offered by TRICARE and Department of Veterans Affairs VA depending on whether the Service member retires or separates. 
+																	Families residing in the Continental United States CONUS may report the death of a member and receive personal assistance in applying for eligible benefits by contacting. 
+																	Air Force Air Force Instruction 36-2906 Personal Financial Responsibility Widowed military spouses will always have a place in the military community. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 2018 their family members and survivors. 
+																	Educational assistance is provided surviving military spouses as well as their children ages 18 to 26 under the Survivors and Dependents Educational Assistance program or the Marine Gunnery Sergeant John David Fry Scholarship. 
+																	The surviving spouse be a widow or widower who was married to you when you enrolled. 
+																	The Air Force Former Spouse Determi- nation Program provides one-source for DEERS and ID card eligibility infor- mation in the event of divorce. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SBP can provide income to a spouse or former spouse with or without children children only or a third party called an insured interest. 
+																	Depending on an individuals situation provisions of the program may include coverage of tuition and fees a monthly housing allowance a books and supplies stipend Yellow Ribbon payments college fund rural benefit payments and transferability to eligible immediate Family members Spouse and Children. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="qsmkonH95B2aiM" data-lightbox="roadtrip" data-title="Https Www Arpc Afrc Af Mil Portals 4 Drio Det6 Rio Det6 Fd Brief Retirement Preparation Pdf Ver 2019 04 01 173322 243">
+											<img class="card-img v-image ads-img " src="qsmkonH95B2aiM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH2A1njnIcq0qb7Bioru_eieG8tfw_h-Yk6g';" alt="Https Www Arpc Afrc Af Mil Portals 4 Drio Det6 Rio Det6 Fd Brief Retirement Preparation Pdf Ver 2019 04 01 173322 243">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Arpc Afrc Af Mil Portals 4 Drio Det6 Rio Det6 Fd Brief Retirement Preparation Pdf Ver 2019 04 01 173322 243</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2008/Apr/17/2002204270/780/780/0/080417-F-JZ511-244.JPG" data-lightbox="roadtrip" data-title="Retiree Activities Office Macdill Air Force Base Fact Sheet View">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2008/Apr/17/2002204270/780/780/0/080417-F-JZ511-244.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz6uEBvs9R_HA23I8whf1AEWTHwu1fmzMMhg';" alt="Retiree Activities Office Macdill Air Force Base Fact Sheet View">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Retiree Activities Office Macdill Air Force Base Fact Sheet View</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2019/11/dual-military-couples-mil-benefits.jpg" data-lightbox="roadtrip" data-title="Benefits Of Dual Military Couples Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/11/dual-military-couples-mil-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDagF0AVys9NFmdRFKIr4xbtqrYe7nAB4Gaw';" alt="Benefits Of Dual Military Couples Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benefits Of Dual Military Couples Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/23/2f/51232f5c3c6f1f187825ec85e52cb2eb.jpg" data-lightbox="roadtrip" data-title="Military Spouse Medal Military Spouse Military Spouse Appreciation Military Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/23/2f/51232f5c3c6f1f187825ec85e52cb2eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREp1elld2t9qmQH6OnNM2WpY88mBIr-hHylA';" alt="Military Spouse Medal Military Spouse Military Spouse Appreciation Military Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Medal Military Spouse Military Spouse Appreciation Military Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/Veteran%203.jpg?itok=mmPlH0bd" data-lightbox="roadtrip" data-title="Calculation Of Military Retirement Pay Shares Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/Veteran%203.jpg?itok=mmPlH0bd" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIOD4H4NSDb5ZTQmLLbtIwZpAmXXNer1RF-g';" alt="Calculation Of Military Retirement Pay Shares Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Calculation Of Military Retirement Pay Shares Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.seymourjohnson.af.mil/portals/105/Images/MiB/MiB%20Retirees.jpg?ver=2016-02-08-143700-887" data-lightbox="roadtrip" data-title="Seymour Johnson Air Force Base About Us Make It Better Retirees Retiree Resources">
+											<img class="card-img v-image ads-img " src="https://www.seymourjohnson.af.mil/portals/105/Images/MiB/MiB%20Retirees.jpg?ver=2016-02-08-143700-887" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrWHHgD8e3F67X5pSZrIaaWiEVN7riH7gLbA';" alt="Seymour Johnson Air Force Base About Us Make It Better Retirees Retiree Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seymour Johnson Air Force Base About Us Make It Better Retirees Retiree Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/a3/36/f4a33604ae77a2e0a87ecd3917771b78.jpg" data-lightbox="roadtrip" data-title="Military Medical Retirement Pay Chart 2020 Va Disability Medical Retirement Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/a3/36/f4a33604ae77a2e0a87ecd3917771b78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTphECfRFvMLwnCtQbvqVb6zI8zQdL1sUnUlw';" alt="Military Medical Retirement Pay Chart 2020 Va Disability Medical Retirement Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Medical Retirement Pay Chart 2020 Va Disability Medical Retirement Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0b/68/e5/0b68e5b4268e90b4313e6a9499fcda77.jpg" data-lightbox="roadtrip" data-title="Leaving The Military A Conversation About Retirement In 2020 Military Wife Life Military Retirement Parties Retirement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0b/68/e5/0b68e5b4268e90b4313e6a9499fcda77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRV74R2JGFtREYzgY3Imbap8w6ID64WWVnWA';" alt="Leaving The Military A Conversation About Retirement In 2020 Military Wife Life Military Retirement Parties Retirement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Leaving The Military A Conversation About Retirement In 2020 Military Wife Life Military Retirement Parties Retirement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militaryfamily.org/wp-content/uploads/divorce-sign-550.jpg" data-lightbox="roadtrip" data-title="Marriage Divorce National Military Family Association">
+											<img class="card-img v-image ads-img " src="https://militaryfamily.org/wp-content/uploads/divorce-sign-550.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQZz5A2XNO9aw7ucRo8twsGYIRyBJUQ1hbig';" alt="Marriage Divorce National Military Family Association">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marriage Divorce National Military Family Association</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6d/43/b1/6d43b1959ea08e114e6e3c3916e9e6ee.jpg" data-lightbox="roadtrip" data-title="The Best Military Discounts On Car Purchases You Need To Know About Military Discounts Military Wife Life Military Spouse Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6d/43/b1/6d43b1959ea08e114e6e3c3916e9e6ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvKty06TTfF9f-CM-_KnZmfp38cyOLmBS_9g';" alt="The Best Military Discounts On Car Purchases You Need To Know About Military Discounts Military Wife Life Military Spouse Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Military Discounts On Car Purchases You Need To Know About Military Discounts Military Wife Life Military Spouse Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ea/8d/f8/ea8df841cc35022379a0740514d47d84.jpg" data-lightbox="roadtrip" data-title="Should You Continue Serving To Earn A Military Retirement The Golden Albatross Might Help You Military Retirement Military Spouse Blog Military Retirement Pay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ea/8d/f8/ea8df841cc35022379a0740514d47d84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXzKGBBkcfwCvM6X7srurCLmJG6uWx6qkrog';" alt="Should You Continue Serving To Earn A Military Retirement The Golden Albatross Might Help You Military Retirement Military Spouse Blog Military Retirement Pay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should You Continue Serving To Earn A Military Retirement The Golden Albatross Might Help You Military Retirement Military Spouse Blog Military Retirement Pay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/54/66/2f546642db68fbbb297132b3ed5b9211.png" data-lightbox="roadtrip" data-title="Military Retirement Ceremony Dress Code Military Retirement Ceremony Dresses Ceremony">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/54/66/2f546642db68fbbb297132b3ed5b9211.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUG4IoQ_LQFm_jLh2twMwAAsWrqLcVq0EetQ';" alt="Military Retirement Ceremony Dress Code Military Retirement Ceremony Dresses Ceremony">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Retirement Ceremony Dress Code Military Retirement Ceremony Dresses Ceremony</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/b3/c6/00b3c69e639723f6da3c94a601e3e9dd.jpg" data-lightbox="roadtrip" data-title="Separating Or Retiring From The Air Force Upcoming Tap Sessions At Raf Lakenheath Military Transition Lakenheath Airman">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/b3/c6/00b3c69e639723f6da3c94a601e3e9dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZoYc5C59B0jGX6ZDLR4SEgO3Eao0NRKIy4w';" alt="Separating Or Retiring From The Air Force Upcoming Tap Sessions At Raf Lakenheath Military Transition Lakenheath Airman">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Separating Or Retiring From The Air Force Upcoming Tap Sessions At Raf Lakenheath Military Transition Lakenheath Airman</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-rap-songs.html">Military Rap Songs</a></li>
+													<li class="list-group-item"><a href="/military-pension-benefits-ex-spouse.html">Military Pension Benefits Ex Spouse</a></li>
+													<li class="list-group-item"><a href="/military-pension-spouse-after-death.html">Military Pension Spouse After Death</a></li>
+													<li class="list-group-item"><a href="/military-nurse-hours.html">Military Nurse Hours</a></li>
+													<li class="list-group-item"><a href="/military-operator-hat.html">Military Operator Hat</a></li>
+													<li class="list-group-item"><a href="/military-ptsd-resources.html">Military Ptsd Resources</a></li>
+													<li class="list-group-item"><a href="/military-move-weight-allowances.html">Military Move Weight Allowances</a></li>
+													<li class="list-group-item"><a href="/military-pension-divorce-formula.html">Military Pension Divorce Formula</a></li>
+													<li class="list-group-item"><a href="/military-pension-and-divorce.html">Military Pension And Divorce</a></li>
+													<li class="list-group-item"><a href="/military-pension-spouse-benefits.html">Military Pension Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/military-records-ancestry.html">Military Records Ancestry</a></li>
+													<li class="list-group-item"><a href="/military-ptsd-support-groups-uk.html">Military Ptsd Support Groups Uk</a></li>
+													<li class="list-group-item"><a href="/military-officer-spouse-benefits.html">Military Officer Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/military-pension-records-national-archives.html">Military Pension Records National Archives</a></li>
+													<li class="list-group-item"><a href="/military-rap-debbie-harry.html">Military Rap Debbie Harry</a></li>
+													<li class="list-group-item"><a href="/military-pay-with-dependents-2018.html">Military Pay With Dependents 2018</a></li>
+													<li class="list-group-item"><a href="/military-pension-for-divorced-spouse.html">Military Pension For Divorced Spouse</a></li>
+													<li class="list-group-item"><a href="/military-pension-divorce-in-florida.html">Military Pension Divorce In Florida</a></li>
+													<li class="list-group-item"><a href="/military-rap-group.html">Military Rap Group</a></li>
+													<li class="list-group-item"><a href="/military-records-destroyed-in-st-louis-fire.html">Military Records Destroyed In St Louis Fire</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

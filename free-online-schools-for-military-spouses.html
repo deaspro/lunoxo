@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Free Online Schools For Military Spouses - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Free Online Schools For Military Spouses",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/30/65/10/306510d698aaf35ceacf6b4d7e611591.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=free+online+schools+for+military+spouses",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Free Online Schools For Military Spouses</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">If you are a spouse of a military person you should seek out these online programs. The Purdue University GlobalThanksUSA Scholarship awards a full tuition scholarship for an eligible military spouse for an online undergraduate degree program at Purdue University Global. In fact its considered as one of the best online colleges for military spouses since they can use the service members scholarship and financing options. <br>				
+			</p>
+										<a class="badge badge-info" href="/what-happens-if-you-divorce-in-the-military.html">what happens if you divorce in the military</a>
+											<a class="badge badge-success" href="/what-is-a-good-quote-for-love.html">what is a good quote for love</a>
+											<a class="badge badge-danger" href="/what-if-my-husband-dies-without-a-will.html">what if my husband dies without a will</a>
+											<a class="badge badge-warning" href="/what-happens-to-your-health-insurance-when-your-spouse-dies.html">what happens to your health insurance when your spouse dies</a>
+											<a class="badge badge-danger" href="/what-is-a-high-functioning-anxiety.html">what is a high functioning anxiety</a>
+											<a class="badge badge-danger" href="/what-is-a-selfish-husband.html">what is a selfish husband</a>
+											<a class="badge badge-warning" href="/what-happens-if-someone-dies-without-a-will-in-new-york-state.html">what happens if someone dies without a will in new york state</a>
+											<a class="badge badge-primary" href="/what-happens-if-my-spouse-dies-without-a-will-in-michigan.html">what happens if my spouse dies without a will in michigan</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to pay a visit to the ideal site.  Our website provides you with hints for seeing the maximum quality video and picture content, search and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this video that you view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/83/7b/ec837be8029ea8c795fd33262c80fcb2.jpg" data-lightbox="roadtrip" data-title="Online School For Military Spouses Medical Coding Online School Pharmacy Technician">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/83/7b/ec837be8029ea8c795fd33262c80fcb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnlQI2VfU0nNUjOGtCr6JU61anfrvrTdj_kQ';" alt="Online School For Military Spouses Medical Coding Online School Pharmacy Technician">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Online School For Military Spouses Medical Coding Online School Pharmacy Technician</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/19/e7/bf19e7339977cd1bf28a041652cbf8fc.jpg" data-lightbox="roadtrip" data-title="Military Wife Appreciation Certificate Veterans Appreciation Certificate Of Appreciation Appreciation Letter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/19/e7/bf19e7339977cd1bf28a041652cbf8fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaJJC7-idt79iYF7c9QxmoWldBROEv4IDnoA';" alt="Military Wife Appreciation Certificate Veterans Appreciation Certificate Of Appreciation Appreciation Letter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wife Appreciation Certificate Veterans Appreciation Certificate Of Appreciation Appreciation Letter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/75/52/0a7552741711f59e3217a1ab5bcb8140.png" data-lightbox="roadtrip" data-title="Joining An Mlm Business Paid For Her Daughter S College The Milspo Millionaire Project In 2020 Mlm Business Network Marketing Companies Network Marketing Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/75/52/0a7552741711f59e3217a1ab5bcb8140.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPc39ToguUROWNHRWDJV5awPGNkdgIlrNe2A';" alt="Joining An Mlm Business Paid For Her Daughter S College The Milspo Millionaire Project In 2020 Mlm Business Network Marketing Companies Network Marketing Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Joining An Mlm Business Paid For Her Daughter S College The Milspo Millionaire Project In 2020 Mlm Business Network Marketing Companies Network Marketing Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ea/d7/7b/ead77b96955b36f6f615af9e46e52a8d--military-spouse-jobs-navy-military.jpg" data-lightbox="roadtrip" data-title="4 Free Career Programs For Military Spouses Military Spouse Jobs Military Spouse Military Spouse Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ea/d7/7b/ead77b96955b36f6f615af9e46e52a8d--military-spouse-jobs-navy-military.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2btL-kKb90R88tUeGZ63TzPBDT_I57tuJnQ';" alt="4 Free Career Programs For Military Spouses Military Spouse Jobs Military Spouse Military Spouse Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Free Career Programs For Military Spouses Military Spouse Jobs Military Spouse Military Spouse Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/6e/03/106e03538e8ab63a5e5a7dc8ccc518b8.png" data-lightbox="roadtrip" data-title="Free Training By Stay At Home Profit Work From Home Tips Free Training Virtual Assistant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/6e/03/106e03538e8ab63a5e5a7dc8ccc518b8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDOwMbh6VpXfUhio1fl4pH3bDh5AD5QeBwzw';" alt="Free Training By Stay At Home Profit Work From Home Tips Free Training Virtual Assistant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Training By Stay At Home Profit Work From Home Tips Free Training Virtual Assistant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/27/6b/ab276bd8fa1a0773b7af093d8b7499f1.png" data-lightbox="roadtrip" data-title="Get Started With A Remote Career Free Training Virtual Assistant Training Free Training Virtual Assistant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/27/6b/ab276bd8fa1a0773b7af093d8b7499f1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNvNQyMuo3BZ-VjeEnxXUaOD7MDN_ZI9QfxQ';" alt="Get Started With A Remote Career Free Training Virtual Assistant Training Free Training Virtual Assistant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Started With A Remote Career Free Training Virtual Assistant Training Free Training Virtual Assistant</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/99/49/ee/9949eef0af39e52ad54099f68f264865.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNvNQyMuo3BZ-VjeEnxXUaOD7MDN_ZI9QfxQ';" alt="Get Started With A Remote Career Free Training Virtual Assistant Training Free Training Virtual Assistant">
+										<div class="card-body">
+						<h3 class="h5"><b>Military Spouse Friendly Schools.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Free online schools for military spouses</strong>. 
+								
+																	We offer programs in nursing healthcare business computer science and more at the certificate associate bachelors and masters levels. 
+																	Now that you have seen the funding opportunities available to you to fund your online education lets proceed to show you the most affordable online colleges for military spouses. 
+																	Not all online colleges offer military incentive programs let alone offer incentives for their spouses. 
+																	Many top online universities offer spousal support in a number of ways including a credit hour discount and scholarships. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Graduate Programs Spouses and dependents of an active-duty military service members are eligible for a 20 percent tuition discount on masters degree and graduate certificate programs. 
+																	The MySECO website built exclusively for military spouses ensures you have 247 online access to information for a successful return to school. 
+																	Most schools also provide scholarships grants and discount programs to military spouses depending on the status and terms of their military credentials and the GI bill. 
+																	Military spouses can choose from more than 60 fully online degree and certificate programs at Grantham University. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are three tracks to choose from. 
+																	In-District Residents 90 Out-of-District Residents 113 and Non Residents 235Credi. 
+																	They can continue their online education with little interruption. 
+																	It is online and it is free for post-911 separated or retired vets military service members transitioning to the civilian workforce in 18 months and spouses whose military members are active duty or eligible vets. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Professional Skills Tech and Independent Study. 
+																	Salute to Spouses There are a few scholarship opportunities available here including the Bryant Stratton College Online scholarship of up to 6000 for a military spouse to apply toward an online degree. 
+																	A military spouse may be eligible for financial aid to assist with the credentials needed and tuition expense to transition himher to a new career. 
+																	These 100 online military-friendly schools are dedicated to serving the unique needs of military service members veterans and their families. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	AOMA Graduate School of Integrative Medicine. 
+																	They all provide strong military communities and support networks for military-affiliated online students. 
+																	Few online colleges offer as much support to military spouses and other military-affiliated students like the University of the Incarnate Word in San Antonio Texas. 
+																	Franklins 100 percent online masters degrees are accelerated and many can be completed within 14 months while working full time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	FILTERS SEARCH RESULTS FOR. 
+																	Most colleges with online distance learning programs have no idea how to manage a military spouses unique set of circumstances to allow her to complete an education. 
+																	Private not offering Doctorate. 
+																	Online schools are a good option for military spouses who are stationed in a remote area or are suddenly relocated. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Small Business Administrations Veterans Business Outreach Center VBOC Program provides free business training and entrepreneurial resources to transitioning servicemembers National Guard and Reserve servicemembers veterans and military spouses. 
+																	Visit the MySECO Education Training and Licensing section to identify your education path plan for your education and compare colleges. 
+																	Norwich University has almost 200 years of experience in educating and serving military students and their families. 
+																	ThanksUSA Special Military Spouse Scholarships. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In addition to full support for all national aid programs the school offers several unique perks to military families like accelerated programs free textbooks and access to a personal advisor to help maximize aid and optimize their schooling options. 
+																	University of Texas - Tyler This university offers the RN-BSN degree which stands. 
+																	Military Spouse Friendly Schools. 
+																	This certificate program is offered by Syracuse University and underwritten by JP Morgan Chase Co. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I was so impressed to hear that Martinsburg College has been working with the military community for over 10 years. 
+																	These schools are military-friendly and allow spouses to take advantage of government or other veteran benefits. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/83/80/b2838097d6e6071acc16bed7cbb8fbc8.png" data-lightbox="roadtrip" data-title="3 High Demand Jobs You Can Do Working From Home Today No Degree Or Experience Needed Free Online Jobs Online Work From Home Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/83/80/b2838097d6e6071acc16bed7cbb8fbc8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ZSvb4WUjoBeiibYSTJsDWjJ7icdorAuyIA';" alt="3 High Demand Jobs You Can Do Working From Home Today No Degree Or Experience Needed Free Online Jobs Online Work From Home Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 High Demand Jobs You Can Do Working From Home Today No Degree Or Experience Needed Free Online Jobs Online Work From Home Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/5d/ad/48/5dad48f39b2c899debecf55f9190b527.jpg" data-lightbox="roadtrip" data-title="Download Pdf Jobseeker S Guide Ten Steps To A Federal Job For Military Personnel And Spouses By Kathr Military Personnel Federal Resume Books To Read Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/5d/ad/48/5dad48f39b2c899debecf55f9190b527.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwBW5YwfLTjzhg-S2hEnamYumhkIOHZZSrwA';" alt="Download Pdf Jobseeker S Guide Ten Steps To A Federal Job For Military Personnel And Spouses By Kathr Military Personnel Federal Resume Books To Read Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Pdf Jobseeker S Guide Ten Steps To A Federal Job For Military Personnel And Spouses By Kathr Military Personnel Federal Resume Books To Read Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/ad/17/9aad179d2bf31abe0e8e737ee74c9cc9.jpg" data-lightbox="roadtrip" data-title="The Journey Of Motherhood Finding Yourself Again Military Spouse Military Life Finding Yourself">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/ad/17/9aad179d2bf31abe0e8e737ee74c9cc9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbS9M-m77oZoQDh-83iC8Ow_NDXJYGUnzWNA';" alt="The Journey Of Motherhood Finding Yourself Again Military Spouse Military Life Finding Yourself">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Journey Of Motherhood Finding Yourself Again Military Spouse Military Life Finding Yourself</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/0b/63/f20b63679a0d05070442c053b81a09ab.png" data-lightbox="roadtrip" data-title="15 Ways To Monetize Your Brilliance Military Spouse Quotes Military Spouse Career Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/0b/63/f20b63679a0d05070442c053b81a09ab.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv8b6UhSc9GU6B05M5NO1YvecoRt1uSukoeQ';" alt="15 Ways To Monetize Your Brilliance Military Spouse Quotes Military Spouse Career Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 Ways To Monetize Your Brilliance Military Spouse Quotes Military Spouse Career Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/85/3a/08853ab73eb607028d5d3d545e945ad4.png" data-lightbox="roadtrip" data-title="How To Work From Home Without A Blog Perfect For Beginners Virtual Assistant Free Online Jobs Working From Home">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/85/3a/08853ab73eb607028d5d3d545e945ad4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT9QJ5H4GpXP_vwPvBUe0bOxbySG9SsSYV8A';" alt="How To Work From Home Without A Blog Perfect For Beginners Virtual Assistant Free Online Jobs Working From Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Work From Home Without A Blog Perfect For Beginners Virtual Assistant Free Online Jobs Working From Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/49/ee/9949eef0af39e52ad54099f68f264865.jpg" data-lightbox="roadtrip" data-title="Call Dibs The Free Online Marketplace For Buying And Selling Personal Goods Exclusively Within Your Military Com Military Spouse Forced Labor Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/49/ee/9949eef0af39e52ad54099f68f264865.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4D7gQyiDL8CFbGTvfgHDhK_zLImb7vbXaaw';" alt="Call Dibs The Free Online Marketplace For Buying And Selling Personal Goods Exclusively Within Your Military Com Military Spouse Forced Labor Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Call Dibs The Free Online Marketplace For Buying And Selling Personal Goods Exclusively Within Your Military Com Military Spouse Forced Labor Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/d2/2f/76d22f574bd055822b71264d9581946e.jpg" data-lightbox="roadtrip" data-title="4 Days To Linkedin Success For The Military Community Entrepreneur Ever Wondered How To Use Linkedin As Social Media Advice Marketing Advice Linkedin Marketing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/d2/2f/76d22f574bd055822b71264d9581946e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkR-xnL4yM-6lJmwmh7B54k9LfnZPNkIkjzQ';" alt="4 Days To Linkedin Success For The Military Community Entrepreneur Ever Wondered How To Use Linkedin As Social Media Advice Marketing Advice Linkedin Marketing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Days To Linkedin Success For The Military Community Entrepreneur Ever Wondered How To Use Linkedin As Social Media Advice Marketing Advice Linkedin Marketing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/f5/de/6bf5def0da70c915d1a5779463730900.png" data-lightbox="roadtrip" data-title="Pin On Stay At Home Mom Jobs Work At Home Jobs For Moms Resources To Work From Home Tips For Working From Home Productively">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/f5/de/6bf5def0da70c915d1a5779463730900.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0DIpRMmairO2McL0tVHX0N3rRFRw54rqSyw';" alt="Pin On Stay At Home Mom Jobs Work At Home Jobs For Moms Resources To Work From Home Tips For Working From Home Productively">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Stay At Home Mom Jobs Work At Home Jobs For Moms Resources To Work From Home Tips For Working From Home Productively</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/b6/e1/51b6e11f449305e737bb82ffbc3d9f89.png" data-lightbox="roadtrip" data-title="The Mycaa Scholarship Helps Military Spouses Going Back To School With Up To 4 000 Learn More About Eligibili In 2020 Military Spouse Veteran Owned Business Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/b6/e1/51b6e11f449305e737bb82ffbc3d9f89.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqyzg4QAnQ7C6Z4AHIDFzMjsGQcKH05VE32w';" alt="The Mycaa Scholarship Helps Military Spouses Going Back To School With Up To 4 000 Learn More About Eligibili In 2020 Military Spouse Veteran Owned Business Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Mycaa Scholarship Helps Military Spouses Going Back To School With Up To 4 000 Learn More About Eligibili In 2020 Military Spouse Veteran Owned Business Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/40/c9/03/40c903d85473ab81f6b6800e076d6ae3.jpg" data-lightbox="roadtrip" data-title="20 Legit Online Jobs For Military Wives And Spouses Designed To Survive Any Deployment If You Want To Have Military Spouse Jobs Virtual Jobs Legit Online Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/40/c9/03/40c903d85473ab81f6b6800e076d6ae3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0qy4ZEGTAy-qNkrvtYhSgEdV44CVi7I1xKA';" alt="20 Legit Online Jobs For Military Wives And Spouses Designed To Survive Any Deployment If You Want To Have Military Spouse Jobs Virtual Jobs Legit Online Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">20 Legit Online Jobs For Military Wives And Spouses Designed To Survive Any Deployment If You Want To Have Military Spouse Jobs Virtual Jobs Legit Online Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/36/40/80/36408075921f075aaab43c2c89ca7b7a.jpg" data-lightbox="roadtrip" data-title="May 2020 Military Spouse Magazine Military Spouse Magazine Military Spouse Military Husband">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/36/40/80/36408075921f075aaab43c2c89ca7b7a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS49YEVJwLZipraswvUihdJX8UH8t0EVYrhFQ';" alt="May 2020 Military Spouse Magazine Military Spouse Magazine Military Spouse Military Husband">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">May 2020 Military Spouse Magazine Military Spouse Magazine Military Spouse Military Husband</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e1/25/77/e125777ecf29d1ad9803086ab35de6d5.jpg" data-lightbox="roadtrip" data-title="Pin On Travel With Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e1/25/77/e125777ecf29d1ad9803086ab35de6d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcaSO3G-_4raCLqnNjPUYixn5CkqjgXCcysQ';" alt="Pin On Travel With Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Travel With Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/65/10/306510d698aaf35ceacf6b4d7e611591.png" data-lightbox="roadtrip" data-title="How To Become A Virtual Assistant With No Experience Virtual Assistant Online Work Mom Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/65/10/306510d698aaf35ceacf6b4d7e611591.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwRbqrp9zo5hQXuFG4QGTrHH-NwUvbcTeGHQ';" alt="How To Become A Virtual Assistant With No Experience Virtual Assistant Online Work Mom Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become A Virtual Assistant With No Experience Virtual Assistant Online Work Mom Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-spouses-in-the-workplace.html">Military Spouses In The Workplace</a></li>
+													<li class="list-group-item"><a href="/military-spouses-equity-act.html">Military Spouses Equity Act</a></li>
+													<li class="list-group-item"><a href="/military-spouses-what.html">Military Spouses What</a></li>
+													<li class="list-group-item"><a href="/military-spouses-remote-jobs.html">Military Spouses Remote Jobs</a></li>
+													<li class="list-group-item"><a href="/military-spouses-residency-relief-act-text.html">Military Spouses Residency Relief Act Text</a></li>
+													<li class="list-group-item"><a href="/military-spouses-meaning.html">Military Spouses Meaning</a></li>
+													<li class="list-group-item"><a href="/military-spouses-work-from-home.html">Military Spouses Work From Home</a></li>
+													<li class="list-group-item"><a href="/military-spouses-okinawa-facebook.html">Military Spouses Okinawa Facebook</a></li>
+													<li class="list-group-item"><a href="/military-spouses-meme.html">Military Spouses Meme</a></li>
+													<li class="list-group-item"><a href="/military-style-hat-mens.html">Military Style Hat Mens</a></li>
+													<li class="list-group-item"><a href="/military-spouses-that.html">Military Spouses That</a></li>
+													<li class="list-group-item"><a href="/military-spouses-residency-relief-act-irs.html">Military Spouses Residency Relief Act Irs</a></li>
+													<li class="list-group-item"><a href="/military-spouses-tuition-assistance.html">Military Spouses Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/military-student-loans-for-dependents.html">Military Student Loans For Dependents</a></li>
+													<li class="list-group-item"><a href="/military-spouses-unemployment-rate.html">Military Spouses Unemployment Rate</a></li>
+													<li class="list-group-item"><a href="/military-spouses-tax-relief-act.html">Military Spouses Tax Relief Act</a></li>
+													<li class="list-group-item"><a href="/military-spouses-unemployment.html">Military Spouses Unemployment</a></li>
+													<li class="list-group-item"><a href="/military-spouses-jobs.html">Military Spouses Jobs</a></li>
+													<li class="list-group-item"><a href="/military-spouses-photo.html">Military Spouses Photo</a></li>
+													<li class="list-group-item"><a href="/military-spouses-reddit.html">Military Spouses Reddit</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

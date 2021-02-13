@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>My Husband Died Do I Get His State Pension - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "My Husband Died Do I Get His State Pension",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/97/4f/fc/974ffce8e138f7d5b2c6259a337cec42.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=my+husband+died+do+i+get+his+state+pension",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>My Husband Died Do I Get His State Pension</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Experts from PensionBee told Expresscouk. By Steve Webb for This Is Money. The basic state pension is 8730 at present and if his wife was getting a pension that would be 60 of 8730 weekly. <br>				
+			</p>
+										<a class="badge badge-danger" href="/getting-divorced-in-the-military-while-overseas.html">getting divorced in the military while overseas</a>
+											<a class="badge badge-info" href="/free-linkedin-account-for-military-spouses.html">free linkedin account for military spouses</a>
+											<a class="badge badge-info" href="/free-college-tuition-for-veterans-dependents-california.html">free college tuition for veterans dependents california</a>
+											<a class="badge badge-dark" href="/free-education-for-military-spouses.html">free education for military spouses</a>
+											<a class="badge badge-warning" href="/free-tsa-precheck-for-military-dependents.html">free tsa precheck for military dependents</a>
+											<a class="badge badge-danger" href="/free-college-tuition-for-veterans-dependents-indiana.html">free college tuition for veterans dependents indiana</a>
+											<a class="badge badge-warning" href="/free-linkedin-premium-for-military-spouses.html">free linkedin premium for military spouses</a>
+											<a class="badge badge-info" href="/free-tuition-for-military-dependents-alabama.html">free tuition for military dependents alabama</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to visit the ideal site.  Our site provides you with hints for seeing the highest quality video and image content, hunt and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie that you view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/d7/86/2cd7866888e8d6d9c5518936b95e84d0.jpg" data-lightbox="roadtrip" data-title="Did An Officer S Wife Receive A Pension If Her Husband Died In The Napoleonic Wars Napoleonic Wars Non Commissioned Officer Army Structure">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/d7/86/2cd7866888e8d6d9c5518936b95e84d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOLpYXJgI4Jv4wtDuLyczemKTdOzHMklO8jQ';" alt="Did An Officer S Wife Receive A Pension If Her Husband Died In The Napoleonic Wars Napoleonic Wars Non Commissioned Officer Army Structure">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Did An Officer S Wife Receive A Pension If Her Husband Died In The Napoleonic Wars Napoleonic Wars Non Commissioned Officer Army Structure</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/31/40/3131401dbd3a5a486f0d9cfb5a0d0947.png" data-lightbox="roadtrip" data-title="My Mom Who Is Not Good At Money Management Nevertheless Handles All Of Her And My Dad S Finances She Money Management Personal Finance Organization Finance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/31/40/3131401dbd3a5a486f0d9cfb5a0d0947.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkkOalPPVG6aJxKJ9jFQ-IhQFg2VLY4z3HOQ';" alt="My Mom Who Is Not Good At Money Management Nevertheless Handles All Of Her And My Dad S Finances She Money Management Personal Finance Organization Finance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Mom Who Is Not Good At Money Management Nevertheless Handles All Of Her And My Dad S Finances She Money Management Personal Finance Organization Finance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/b7/cd/11b7cdff4f5b7205dbc6703d44f6cfa8.png" data-lightbox="roadtrip" data-title="Baby Boomers Are In The Retirement Home Stretch Best Retirement Cities Retirement Strategies Saving For Retirement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/b7/cd/11b7cdff4f5b7205dbc6703d44f6cfa8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-J5Ems8XeX7uNT9l8YW9xWhVqf3s_seEIrw';" alt="Baby Boomers Are In The Retirement Home Stretch Best Retirement Cities Retirement Strategies Saving For Retirement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Baby Boomers Are In The Retirement Home Stretch Best Retirement Cities Retirement Strategies Saving For Retirement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/d1/59/a6d159fb80d10b89e568a8830a56ce13.jpg" data-lightbox="roadtrip" data-title="Ibori Letter Drag To Reposition Thank You Messages For Dad Poems">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/d1/59/a6d159fb80d10b89e568a8830a56ce13.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVKZxeNiMP01Dx-kgKwT8pLroMGyFoUHqOyQ';" alt="Ibori Letter Drag To Reposition Thank You Messages For Dad Poems">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ibori Letter Drag To Reposition Thank You Messages For Dad Poems</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/6d/27/03/6d27035b3f92b52a45c33c901beacacc.jpg" data-lightbox="roadtrip" data-title="Inherited State Pension Many People Benefit From An Uplift To Payouts From Late Spouses W In 2020 Retirement Age Retirement Benefits Married Woman">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/6d/27/03/6d27035b3f92b52a45c33c901beacacc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWmTADCTYqLKHDiUQsU0r5MnbWjy-A273phA';" alt="Inherited State Pension Many People Benefit From An Uplift To Payouts From Late Spouses W In 2020 Retirement Age Retirement Benefits Married Woman">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Inherited State Pension Many People Benefit From An Uplift To Payouts From Late Spouses W In 2020 Retirement Age Retirement Benefits Married Woman</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/44/83/5c44834962cc890274e9be65ffa6399e.jpg" data-lightbox="roadtrip" data-title="Pin By The Money Doctor On Irish Daily Star Finance In 2020 Daily Star Finance Irish">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/44/83/5c44834962cc890274e9be65ffa6399e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7azm0EbEpejyBqB-qwWj2R2KS3RErAhTHRg';" alt="Pin By The Money Doctor On Irish Daily Star Finance In 2020 Daily Star Finance Irish">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By The Money Doctor On Irish Daily Star Finance In 2020 Daily Star Finance Irish</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a6/d1/59/a6d159fb80d10b89e568a8830a56ce13.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7azm0EbEpejyBqB-qwWj2R2KS3RErAhTHRg';" alt="Pin By The Money Doctor On Irish Daily Star Finance In 2020 Daily Star Finance Irish">
+										<div class="card-body">
+						<h3 class="h5"><b>However he is currently receiving only about 15 of the spouses pension before she died.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>My husband died do i get his state pension</strong>. 
+								
+																	It depends on the amount of National Insurance NI contributions they made and when you and your spouse or civil partner reached the State Pension age. 
+																	However some of us do get SERPS which can make the total amount a lot more and this would happen if hed never been contracted-out into an employers pension scheme and if hed had decent earnings in the years when it mattered. 
+																	Call the Pension Service helpline on 0800 731 0469. 
+																	They died while they were deferring their State Pension before claiming or they had started claiming it after. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Age UK factsheet 19 April 2020 State Pension Page 5 of 28 2 State Pension age. 
+																	Where the death occurred before 6th October 2002 as with your husband you inherit 100 of his SERPS pension. 
+																	My husband was a firefighter for 30 years but died before getting his state pension - will I inherit it. 
+																	When your husband or wife dies you may be entitled to receive part or all of their pension. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If your spouse was receiving a State Pension and you are also over the State Pension age you may be able to claim extra pension payments. 
+																	More than a quarter of a million bereaved pensioners currently benefit from a state pension uplift from National Insurance contributions made by a spouse who died before official retirement age. 
+																	Basic State Pension - Your spouse or civil partner may be entitled to some basic state pension based on your National Insurance NI contributions but only if they have not already built up a full basic state pension from their own NI contributions record. 
+																	However they must have died through service before 6 April 2005 for you to claim the pension. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its possible to pass on your state pension payments after death but this can only go to your spouse or civil partner If you are only cohabiting with. 
+																	If the person who died was getting a State Pension you should tell the Pension Service that he or she has died so that payments stop. 
+																	You might be entitled to extra pension payments from your spouses or civil partners State Pension. 
+																	Youll get any State Pension based on your husband wife or civil partners National Insurance contribution when you claim your own pension. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	War Widows or Widowers Pension If your husband wife or civil partner died as a result of their service in the Armed Forces or because of a war you might be entitled to the War Widows or Widowers Pension. 
+																	If they died on or after this date they could qualify for bereavement support payment. 
+																	You may inherit part of or all of your partners extra State Pension or lump sum if. 
+																	When you die your spouse or civil partner can apply for your National Insurance record to be used instead of their own so this will only help them if your record is more complete than theirs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This could be because you paid married womens or widows reduced-rate NI contributions or you are widowed or your civil partner has died. 
+																	If you have at least one dependent child and are under state pension age you may be able to claim Widowed Parents Allowance. 
+																	You may also be able to claim if you are pregnant and your husband has died. 
+																	0551 EST 7 September 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You may even be able to claim if you are pregnant after fertility treatment and your civil partner has died. 
+																	He cannot understand why he is not receiving 50 of his late wifes pension but he cannot make sense of the tirade of conflicting information given by the pension providers. 
+																	This largely depends on the type of pension your spouse had the age at which heshe died and your age. 
+																	It depends on whether your spouse chose a monthly payout based solely on hisher life expectancy or a monthly payout that continues through your life - that is the joint and survivor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When both partners reach State Pension age after April 6 2016 a surviving spouse or civil partner will be able to inherit 50 percent of any protected payment that exists when one of them dies. 
+																	You will not get it if you remarry or form a new civil. 
+																	This benefit only applies to people whose partners died before 6 April 2017. 
+																	Where the death was on or after that date the proportion that could be inherited. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See section 8 for information about increasing or inheriting State Pension from a spouse or civil partner. 
+																	Claiming their State Pension. 
+																	The bereavement allowance is given to widows widowers or surviving civil partners over age 45 until they reach state pension age. 
+																	They died while deferring their state pension before claiming or had started claiming. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is paid for up to 52 weeks. 
+																	The guidelines state that you may inherit part or all of your husbands extra state pension or lump sum if. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/0e/54/310e54bb8e2419ba3043ae2633297644.jpg" data-lightbox="roadtrip" data-title="Free Civil War Records And Tips For Finding State Pensions Free Genealogy Sites Family Genealogy Genealogy Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/0e/54/310e54bb8e2419ba3043ae2633297644.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRli7a1DFy0VW5YVxDp5xBpeSnrkRzdQJUznA';" alt="Free Civil War Records And Tips For Finding State Pensions Free Genealogy Sites Family Genealogy Genealogy Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Civil War Records And Tips For Finding State Pensions Free Genealogy Sites Family Genealogy Genealogy Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/86/e4/d586e45233ddbe5131b8260be4e58c21.jpg" data-lightbox="roadtrip" data-title="Pin On I Love Genealogy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/86/e4/d586e45233ddbe5131b8260be4e58c21.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxmUbpnK27h9zlUIjugr3pd_Z17xHOh4a6EA';" alt="Pin On I Love Genealogy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On I Love Genealogy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/ee/56/4cee563f29db4e2ca6f3032e021fbe42.jpg" data-lightbox="roadtrip" data-title="Pin On Firsts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/ee/56/4cee563f29db4e2ca6f3032e021fbe42.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2tQUHHL41eAGB1Dm7T-En9E3zgLSzU6qgmQ';" alt="Pin On Firsts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Firsts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/76/ef/81/76ef819689016a2d1883cd1443a3bf55.jpg" data-lightbox="roadtrip" data-title="Free Codicil To Will Form Pdf Word Eforms Free Fillable Forms Itinerary Template Travel Itinerary Template Power Of Attorney Form">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/76/ef/81/76ef819689016a2d1883cd1443a3bf55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRUfW2Cdg7MzUDa9DPES5pf0qaHRKASbM26w';" alt="Free Codicil To Will Form Pdf Word Eforms Free Fillable Forms Itinerary Template Travel Itinerary Template Power Of Attorney Form">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Codicil To Will Form Pdf Word Eforms Free Fillable Forms Itinerary Template Travel Itinerary Template Power Of Attorney Form</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/0e/21/780e21ed5732cc95d577a3d6b0be701c.jpg" data-lightbox="roadtrip" data-title="Almedia Marcum Sizemore Family History Cherokee Ancestry History Lover">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/0e/21/780e21ed5732cc95d577a3d6b0be701c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg5t8Mkg7XOALq-R19bP1061U3onNQdT7Vdg';" alt="Almedia Marcum Sizemore Family History Cherokee Ancestry History Lover">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Almedia Marcum Sizemore Family History Cherokee Ancestry History Lover</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/9c/2e/639c2e6790fdd23a8ecf2e707b797dea.jpg" data-lightbox="roadtrip" data-title="When I Die This What I Want On My Obituary I M Still Here In Loving Memory Quotes Memories Quotes Grief Poems">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/9c/2e/639c2e6790fdd23a8ecf2e707b797dea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToviwjl1mCEWr_EyDANwcVwUcLFDpuLidZgA';" alt="When I Die This What I Want On My Obituary I M Still Here In Loving Memory Quotes Memories Quotes Grief Poems">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When I Die This What I Want On My Obituary I M Still Here In Loving Memory Quotes Memories Quotes Grief Poems</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9b/26/8c/9b268c5b9aa43c790d37079cd7b18315.jpg" data-lightbox="roadtrip" data-title="Ancestor Inventory Form Family Genealogy Genealogy Organization Genealogy Forms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9b/26/8c/9b268c5b9aa43c790d37079cd7b18315.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWpXO4GcKKub3Dm7QoLLSOfDRqYRp_CG2sNA';" alt="Ancestor Inventory Form Family Genealogy Genealogy Organization Genealogy Forms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ancestor Inventory Form Family Genealogy Genealogy Organization Genealogy Forms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.shortpixel.ai/spai/w_977+q_lossy+ret_img+to_webp/https://tbmej2jfb43oaryk14a5cwb9-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/working-out-state-pension-amount-iexpats.jpg" data-lightbox="roadtrip" data-title="How To Claim Your Uk State Pension As An Expat Retired Overseas Iexpats">
+											<img class="card-img v-image ads-img " src="https://cdn.shortpixel.ai/spai/w_977+q_lossy+ret_img+to_webp/https://tbmej2jfb43oaryk14a5cwb9-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/working-out-state-pension-amount-iexpats.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuyA0_8tY1UmqPrUuoORM-Zlmg8VVVttAhdg';" alt="How To Claim Your Uk State Pension As An Expat Retired Overseas Iexpats">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Claim Your Uk State Pension As An Expat Retired Overseas Iexpats</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ae/42/3d/ae423d3ed679da911ee10088c6dbbc52.jpg" data-lightbox="roadtrip" data-title="Custom Blank Forms For Genealogy Research For Ty And Logan Dating Marriage Genealogy Forms Family History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ae/42/3d/ae423d3ed679da911ee10088c6dbbc52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0otYhrhx3akY5cWaWQf0AEGS9X5hnrjrYdg';" alt="Custom Blank Forms For Genealogy Research For Ty And Logan Dating Marriage Genealogy Forms Family History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Custom Blank Forms For Genealogy Research For Ty And Logan Dating Marriage Genealogy Forms Family History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/18/94/6e189412549babe337dcb14b72dfcda1.jpg" data-lightbox="roadtrip" data-title="Printable Research Checklist Free From Midwest Genealogy Center Independence Mo For Other Forms Family Genealogy Genealogy Forms Family Tree Genealogy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/18/94/6e189412549babe337dcb14b72dfcda1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZx32WwFjgG8rL6LRZB_sXA0IDCOEAJ0dNQA';" alt="Printable Research Checklist Free From Midwest Genealogy Center Independence Mo For Other Forms Family Genealogy Genealogy Forms Family Tree Genealogy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Printable Research Checklist Free From Midwest Genealogy Center Independence Mo For Other Forms Family Genealogy Genealogy Forms Family Tree Genealogy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/0e/56/370e56356c31ba834306b049608c3993.jpg" data-lightbox="roadtrip" data-title="Pin By Andria Mae Romero On Funny Old People Jokes Senior Jokes Old People">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/0e/56/370e56356c31ba834306b049608c3993.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe6UQNUee6y2DSppW4ZsWp3-Zknc7dJh2qJw';" alt="Pin By Andria Mae Romero On Funny Old People Jokes Senior Jokes Old People">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Andria Mae Romero On Funny Old People Jokes Senior Jokes Old People</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/4f/fc/974ffce8e138f7d5b2c6259a337cec42.jpg" data-lightbox="roadtrip" data-title="Pin On Veteranaid Org Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/4f/fc/974ffce8e138f7d5b2c6259a337cec42.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ccwkTun-XqvbJneypRPZkU92rapJjVHbsw';" alt="Pin On Veteranaid Org Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veteranaid Org Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/e6/32/3be6326dfbc2054621b3c2e5c0f15223.jpg" data-lightbox="roadtrip" data-title="Stock Trading Is All About Arriving At The Right Estimates And Making Nearly Accurate Speculations So That The Trade Payday Loans Money Lender Hard Money Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/e6/32/3be6326dfbc2054621b3c2e5c0f15223.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYakBz3gGZIYPp74Sd4L0zl0LLe1PSdr9z-Q';" alt="Stock Trading Is All About Arriving At The Right Estimates And Making Nearly Accurate Speculations So That The Trade Payday Loans Money Lender Hard Money Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stock Trading Is All About Arriving At The Right Estimates And Making Nearly Accurate Speculations So That The Trade Payday Loans Money Lender Hard Money Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-haircut-name.html">Military Haircut Name</a></li>
+													<li class="list-group-item"><a href="/military-haircut-images.html">Military Haircut Images</a></li>
+													<li class="list-group-item"><a href="/military-hat-emoji.html">Military Hat Emoji</a></li>
+													<li class="list-group-item"><a href="/military-haircut-wiki.html">Military Haircut Wiki</a></li>
+													<li class="list-group-item"><a href="/military-haircut-quotes.html">Military Haircut Quotes</a></li>
+													<li class="list-group-item"><a href="/military-haircut-officer.html">Military Haircut Officer</a></li>
+													<li class="list-group-item"><a href="/military-haircut-styles.html">Military Haircut Styles</a></li>
+													<li class="list-group-item"><a href="/military-haircut-styles-female.html">Military Haircut Styles Female</a></li>
+													<li class="list-group-item"><a href="/military-hat-black.html">Military Hat Black</a></li>
+													<li class="list-group-item"><a href="/military-hat-clipart.html">Military Hat Clipart</a></li>
+													<li class="list-group-item"><a href="/military-hat-crossword-solver.html">Military Hat Crossword Solver</a></li>
+													<li class="list-group-item"><a href="/military-haircut-long-face.html">Military Haircut Long Face</a></li>
+													<li class="list-group-item"><a href="/military-hat-costume.html">Military Hat Costume</a></li>
+													<li class="list-group-item"><a href="/military-haircut-reddit.html">Military Haircut Reddit</a></li>
+													<li class="list-group-item"><a href="/military-hat-for-sale.html">Military Hat For Sale</a></li>
+													<li class="list-group-item"><a href="/military-haircut-medium-fade.html">Military Haircut Medium Fade</a></li>
+													<li class="list-group-item"><a href="/military-haircut-top.html">Military Haircut Top</a></li>
+													<li class="list-group-item"><a href="/military-haircut-nyc.html">Military Haircut Nyc</a></li>
+													<li class="list-group-item"><a href="/military-hat-adornments-crossword.html">Military Hat Adornments Crossword</a></li>
+													<li class="list-group-item"><a href="/military-haircuts-allowed.html">Military Haircuts Allowed</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

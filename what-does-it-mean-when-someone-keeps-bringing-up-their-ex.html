@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Does It Mean When Someone Keeps Bringing Up Their Ex - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Does It Mean When Someone Keeps Bringing Up Their Ex",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/a9/14/fd/a914fdb41182268ab1948caedc1e7867.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+does+it+mean+when+someone+keeps+bringing+up+their+ex",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Does It Mean When Someone Keeps Bringing Up Their Ex</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Simply put people talk about whats on their mind. This means that they would definitely want those times back and would like to rekindle your romance to make more memories. This is a red flag A man may talk to you about his ex because he did not have closure and is still hoping to reunite with the ex. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/military-dependent-id-card-renewal-requirements.html">military dependent id card renewal requirements</a>
+											<a class="badge badge-secondary" href="/military-dependent-id-card-requirements.html">military dependent id card requirements</a>
+											<a class="badge badge-danger" href="/military-dependent-passport.html">military dependent passport</a>
+											<a class="badge badge-success" href="/military-dependent-medical-records.html">military dependent medical records</a>
+											<a class="badge badge-secondary" href="/military-dependent-id-card-retired.html">military dependent id card retired</a>
+											<a class="badge badge-warning" href="/military-dependent-id-card-online.html">military dependent id card online</a>
+											<a class="badge badge-primary" href="/military-dependent-id-card-office.html">military dependent id card office</a>
+											<a class="badge badge-warning" href="/military-dependent-id-stolen.html">military dependent id stolen</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to visit the ideal site.  Our website gives you suggestions for seeing the highest quality video and picture content, hunt and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this video that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/87/78/d5877847dd9f40a2332693a61b7cc413.png" data-lightbox="roadtrip" data-title="How To Shut Up Someone Who Keeps Bringing Up Your Past Bring It On When Someone Bring Up">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/87/78/d5877847dd9f40a2332693a61b7cc413.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRomseKUiDbi2eX8ciTp93fTUBjYju_2or55w&amp;ec=45774421';" alt="How To Shut Up Someone Who Keeps Bringing Up Your Past Bring It On When Someone Bring Up">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Shut Up Someone Who Keeps Bringing Up Your Past Bring It On When Someone Bring Up</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/98/2b/01982b7274852789551151261a66a3e5.png" data-lightbox="roadtrip" data-title="How To Shut Up Someone Who Keeps Bringing Up Your Past Funny Insults And Comebacks Really Good Comebacks Sarcastic Comebacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/98/2b/01982b7274852789551151261a66a3e5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5wYPHrpMjuKt28v7Vq7kUo9Tl0ChgHol6fQ&amp;ec=45774421';" alt="How To Shut Up Someone Who Keeps Bringing Up Your Past Funny Insults And Comebacks Really Good Comebacks Sarcastic Comebacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Shut Up Someone Who Keeps Bringing Up Your Past Funny Insults And Comebacks Really Good Comebacks Sarcastic Comebacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/a2/93/71a2934f796bdb4d6edcecad8230f459.jpg" data-lightbox="roadtrip" data-title="Why Is Your Ex Contacting You If They Re Dating Someone Else Evolved Woman Society Ex Quotes Girlfriend Quotes Positive Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/a2/93/71a2934f796bdb4d6edcecad8230f459.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTNCYNnpltLI-HTVx8-O0CnIS-S3Fqj8Qrg&amp;ec=45774421';" alt="Why Is Your Ex Contacting You If They Re Dating Someone Else Evolved Woman Society Ex Quotes Girlfriend Quotes Positive Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Is Your Ex Contacting You If They Re Dating Someone Else Evolved Woman Society Ex Quotes Girlfriend Quotes Positive Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/11/71/87117101538616af0d5739c991a2f210.jpg" data-lightbox="roadtrip" data-title="There Is Always That One Ex That Has To Stay Friends W Her Exes And If She Cant She Throws A Fit Ex Boyfriend Quotes Ex Humor Funny Quotes About Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/11/71/87117101538616af0d5739c991a2f210.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQi0EzZm4E4Q_-OeMgJ5R2QQQJS2zTf_Txgg&amp;ec=45774421';" alt="There Is Always That One Ex That Has To Stay Friends W Her Exes And If She Cant She Throws A Fit Ex Boyfriend Quotes Ex Humor Funny Quotes About Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There Is Always That One Ex That Has To Stay Friends W Her Exes And If She Cant She Throws A Fit Ex Boyfriend Quotes Ex Humor Funny Quotes About Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/44/59/d3445950b0266f1ec93d2ec5083a2aef.jpg" data-lightbox="roadtrip" data-title="Quotes About Him Going Back To His Ex Confessions Of The Picture Quotes For Him Ex Quotes Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/44/59/d3445950b0266f1ec93d2ec5083a2aef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbzgHZt8qeXlaxo8qaFYL2uW5RxmmNG4-uVw&amp;ec=45774421';" alt="Quotes About Him Going Back To His Ex Confessions Of The Picture Quotes For Him Ex Quotes Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Quotes About Him Going Back To His Ex Confessions Of The Picture Quotes For Him Ex Quotes Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/14/fd/a914fdb41182268ab1948caedc1e7867.jpg" data-lightbox="roadtrip" data-title="To Forget The Past Ex Boyfriend Quotes Love Picture Quotes Ex Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/14/fd/a914fdb41182268ab1948caedc1e7867.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8aFnOreD2NuJc_3lSuhh_MOSY5Hxil_EVDw&amp;ec=45774421';" alt="To Forget The Past Ex Boyfriend Quotes Love Picture Quotes Ex Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">To Forget The Past Ex Boyfriend Quotes Love Picture Quotes Ex Quotes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/e1/8c/a7/e18ca7fb35c2764186c2256321e9cb73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8aFnOreD2NuJc_3lSuhh_MOSY5Hxil_EVDw&amp;ec=45774421';" alt="To Forget The Past Ex Boyfriend Quotes Love Picture Quotes Ex Quotes">
+										<div class="card-body">
+						<h3 class="h5"><b>If your ex constantly brings up memories of the time you guys were together and paints an excessively rosy picture of those memories they clearly miss those times and you.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What does it mean when someone keeps bringing up their ex</strong>. 
+								
+																	I honestly have no clue. 
+																	The best move is to break up with such a man and allow him to go back to the ex. 
+																	Such a man is not emotionally available because he is still in love with the ex which is a red flag. 
+																	Im not going that way. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is not feasible to expect someones ex to never come up in conversation especially if a great deal of pain was involved eg divorce broken engagement unfaithfulness abuse etc. 
+																	So what is she expecting me to say to her. 
+																	Its common to feel insecure jealous and confused by this. 
+																	What to say to someone who keeps bringing up your past I dont look back. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are so many reasons why someone might seem to still have feelings for their ex. 
+																	Continually condemning and complaining about an ex is a sign he may not be taking personal responsibility for his role and has the same unhealed wounds and unfinished business that hes bringing. 
+																	If you judge me by my past dont be surprised when you become part of it. 
+																	If they are not someone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And not all of them are romantic or threatening to your relationship. 
+																	But if he or she cant stop talking about the ex even if the talk is negative you can assume there is still a lot of healing needed. 
+																	If he is bringing up vacations they took or habits they had nonstop hes probably remembering those times as being great and missing them. 
+																	Even the best of relationships can be tested when a guy continually brings up his ex. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Women tend to emotionally process while they externally express. 
+																	If your ex keeps showing up to the same social events that you attend they may be trying to see you on purpose. 
+																	Youre like a plunger you keep bringing up old shit. 
+																	Even if they are its normal - most people are curious about what their exes are up to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Silence about a former lover can indicate lack of closure. 
+																	If your partner still talks to their ex. 
+																	When they are bringing up your past mistakes they are often talking to themselves about the areas of their lives they think they need to improve but havent made progress. 
+																	Guilty feelings from carrying a secret torch often make a person not want to talk about an ex. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Generally when you break up with someone you stop hanging out with his or her family. 
+																	If hes trying to deflect things back onto you for being jealous and overprotective assuming you dont bring up his exes daily its probably because he feels theres something to hide. 
+																	I feel like every time she expects me to say something but idk what. 
+																	Perhaps this isnt odd because you have the same circle of friends. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you notice your partners afraid to. 
+																	If your partner has no problem bringing up their ex in conversation but refuses to talk about them if you bring it up breakup coach Lee Wilson tells Bustle they might not have moved on. 
+																	Ok this one girl im pretty sure keeps bringing up her ex boyfriend on purpose because she always repeats what she says about him every time and theyre short things not long stories. 
+																	Just because your ex hasnt unfollowed you doesnt mean they are poring over every picture you post. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When most of us look at our past we think about the positive so if hes bringing up his past with his ex it may be because hes remembering her in a positive light. 
+																	Your reaction to your boyfriends chatter about an ex-girlfriend will depend on how much he does it and how deeply it bothers you. 
+																	But if he says hes still tight with his exs parentsdespite the fact that he doesnt talk to my ex at all. 
+																	If you find that your boyfriend is telling you all about his ex why they broke up and what went wrong you can be certain that hes far from. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Men tend to internally process then choose to emotionally externally express. 
+																	If your partner keeps bringing up reoccurring issues it may be because you are trying too hard to fix it rather than just acknowledge it. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/86/76/d086761d45560a5647a76161afb3d053.jpg" data-lightbox="roadtrip" data-title="If Someone Compares You To Their Ex It S A Red Flag Regardless Of Gender Dont Compare Learning To Love Yourself Relationship Lessons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/86/76/d086761d45560a5647a76161afb3d053.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo9bPGZatpdL5b6AOubz_1vscikKjfugi6sw&amp;ec=45774421';" alt="If Someone Compares You To Their Ex It S A Red Flag Regardless Of Gender Dont Compare Learning To Love Yourself Relationship Lessons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If Someone Compares You To Their Ex It S A Red Flag Regardless Of Gender Dont Compare Learning To Love Yourself Relationship Lessons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/c5/c1/acc5c1125072371cebd08eaf86bc1e32.jpg" data-lightbox="roadtrip" data-title="Pin By Devin On Petty Petty Ex Girlfriend Quotes Ex Quotes Ex Wife Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/c5/c1/acc5c1125072371cebd08eaf86bc1e32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-7xtgivCaqDJLL-ZUeNeknWSvSrT90mYD_g&amp;ec=45774421';" alt="Pin By Devin On Petty Petty Ex Girlfriend Quotes Ex Quotes Ex Wife Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Devin On Petty Petty Ex Girlfriend Quotes Ex Quotes Ex Wife Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/db/85/39db85fd762f5da43e750d040f54ce04.png" data-lightbox="roadtrip" data-title="Common Courtesy 101 No It S Not Ok For Family Members To Still Be Involved With An Ex Funny Quotes Words Life Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/db/85/39db85fd762f5da43e750d040f54ce04.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT640B1oir2_86-76NANl7gMPjAmO-9bEXN5Q&amp;ec=45774421';" alt="Common Courtesy 101 No It S Not Ok For Family Members To Still Be Involved With An Ex Funny Quotes Words Life Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Common Courtesy 101 No It S Not Ok For Family Members To Still Be Involved With An Ex Funny Quotes Words Life Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e6/92/29/e692296a18daf8bdb79c316320d07cf2.jpg" data-lightbox="roadtrip" data-title="What It Means When You Keep Breaking Up And Getting Back Together Giving Up Quotes Relationship Breaking Up With Someone You Love Getting Back Together Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e6/92/29/e692296a18daf8bdb79c316320d07cf2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6JWFDxrwbhoVW8dPIx5jnjo7zVffEZ5_jAw&amp;ec=45774421';" alt="What It Means When You Keep Breaking Up And Getting Back Together Giving Up Quotes Relationship Breaking Up With Someone You Love Getting Back Together Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What It Means When You Keep Breaking Up And Getting Back Together Giving Up Quotes Relationship Breaking Up With Someone You Love Getting Back Together Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/0a/2d/db0a2dfc7e32c308a3f4d598c8ccdc54.png" data-lightbox="roadtrip" data-title="Pin By Alex Savage On Why Don T You Be You And I Ll Be Me Ex Girlfriend Quotes Girlfriend Quotes Funny Girlfriend Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/0a/2d/db0a2dfc7e32c308a3f4d598c8ccdc54.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJYhd2DoQguvB8cruGcEPyEel8oAiImOP_8g&amp;ec=45774421';" alt="Pin By Alex Savage On Why Don T You Be You And I Ll Be Me Ex Girlfriend Quotes Girlfriend Quotes Funny Girlfriend Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Alex Savage On Why Don T You Be You And I Ll Be Me Ex Girlfriend Quotes Girlfriend Quotes Funny Girlfriend Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e1/8c/a7/e18ca7fb35c2764186c2256321e9cb73.jpg" data-lightbox="roadtrip" data-title="10 Signs He Still Loves His Ex Is Only Using You As A Diversion He Has A Girlfriend Love Him Still Love Her">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e1/8c/a7/e18ca7fb35c2764186c2256321e9cb73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo244q_Ac9h4ZFrxvDTKY0lg_1qJL_xv4g4Q&amp;ec=45774421';" alt="10 Signs He Still Loves His Ex Is Only Using You As A Diversion He Has A Girlfriend Love Him Still Love Her">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Signs He Still Loves His Ex Is Only Using You As A Diversion He Has A Girlfriend Love Him Still Love Her</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/4b/e2/d04be2378fe803e5d31073a6ba939a9f.jpg" data-lightbox="roadtrip" data-title="Im Not Your Ex Ex Quotes Words Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/4b/e2/d04be2378fe803e5d31073a6ba939a9f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLSA_UOWUNovtK0uwDrUv_w5EhN0oaXAl_bw&amp;ec=45774421';" alt="Im Not Your Ex Ex Quotes Words Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Im Not Your Ex Ex Quotes Words Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/e0/b4/5ae0b42db4558877bdcc26c86f17e7ec.jpg" data-lightbox="roadtrip" data-title="Someone Who Wants You In Their Life I Love My Lsi Words Inspirational Quotes Love Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/e0/b4/5ae0b42db4558877bdcc26c86f17e7ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXE8pHBkIDf1aRJ6Tj-q1kyBAX5-gvK72v6g&amp;ec=45774421';" alt="Someone Who Wants You In Their Life I Love My Lsi Words Inspirational Quotes Love Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Someone Who Wants You In Their Life I Love My Lsi Words Inspirational Quotes Love Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e2/1d/ce/e21dce8eb82174b0f75f81ec167a6ace.jpg" data-lightbox="roadtrip" data-title="How To Make Him Want You After Breakup Make Him Want You How To Get Boyfriend After Break Up">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e2/1d/ce/e21dce8eb82174b0f75f81ec167a6ace.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd6Yq-Bp1cR392yPhu9frRyBgx20oGOH13Wg&amp;ec=45774421';" alt="How To Make Him Want You After Breakup Make Him Want You How To Get Boyfriend After Break Up">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Make Him Want You After Breakup Make Him Want You How To Get Boyfriend After Break Up</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/86/71/8f/86718f8ff084e0d45b7fb76d5023919a.jpg" data-lightbox="roadtrip" data-title="She Keeps On Bringing Up The Past Tru Works Blog Past Quotes Past Relationships Relationship">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/86/71/8f/86718f8ff084e0d45b7fb76d5023919a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6AYcfr3TmWgyvjJ3lYI7R3imJTtJ6eivTcQ&amp;ec=45774421';" alt="She Keeps On Bringing Up The Past Tru Works Blog Past Quotes Past Relationships Relationship">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">She Keeps On Bringing Up The Past Tru Works Blog Past Quotes Past Relationships Relationship</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0d/80/d0/0d80d03ce1d10a64ebdcc2ee16aa8f50.jpg" data-lightbox="roadtrip" data-title="7 Facts About Exes You Didn T Know Relationship Facts Exes Relationship Goals Boyfriends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0d/80/d0/0d80d03ce1d10a64ebdcc2ee16aa8f50.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSJ8Qcb0ErVzZX9jbDt_5skCel52hUo1HXYA&amp;ec=45774421';" alt="7 Facts About Exes You Didn T Know Relationship Facts Exes Relationship Goals Boyfriends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Facts About Exes You Didn T Know Relationship Facts Exes Relationship Goals Boyfriends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/37/b5/07/37b507559f19f19a272b6509ab7d7317.jpg" data-lightbox="roadtrip" data-title="13 Signs Your Ex Is Trying To Get Your Attention Ex Love Boyfriend Advice You Got This">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/37/b5/07/37b507559f19f19a272b6509ab7d7317.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd0qHkxr9mMz4v7WRXWRXjTN29g3M7Crq1Rg&amp;ec=45774421';" alt="13 Signs Your Ex Is Trying To Get Your Attention Ex Love Boyfriend Advice You Got This">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">13 Signs Your Ex Is Trying To Get Your Attention Ex Love Boyfriend Advice You Got This</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ae/69/b8/ae69b84c67985bc0bf347b60852491fd.jpg" data-lightbox="roadtrip" data-title="Red Flag Signs He S Still In Love With His Ex Girlfriend Ex Girlfriend Quotes Girlfriend Quotes Funny Girlfriend Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ae/69/b8/ae69b84c67985bc0bf347b60852491fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT78dYHHejNjeLpKvootogiNlZN5xoe28kqug&amp;ec=45774421';" alt="Red Flag Signs He S Still In Love With His Ex Girlfriend Ex Girlfriend Quotes Girlfriend Quotes Funny Girlfriend Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Red Flag Signs He S Still In Love With His Ex Girlfriend Ex Girlfriend Quotes Girlfriend Quotes Funny Girlfriend Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/navy-retirement-spouse-letter-of-appreciation.html">Navy Retirement Spouse Letter Of Appreciation</a></li>
+													<li class="list-group-item"><a href="/navy-power-of-attorney-template.html">Navy Power Of Attorney Template</a></li>
+													<li class="list-group-item"><a href="/navy-power-of-attorney-worksheet.html">Navy Power Of Attorney Worksheet</a></li>
+													<li class="list-group-item"><a href="/navy-housing-in-san-diego-ca.html">Navy Housing In San Diego Ca</a></li>
+													<li class="list-group-item"><a href="/navy-former-spouse-coordinator.html">Navy Former Spouse Coordinator</a></li>
+													<li class="list-group-item"><a href="/navy-lodge-in-san-diego-on-coronado-island.html">Navy Lodge In San Diego On Coronado Island</a></li>
+													<li class="list-group-item"><a href="/navy-joint-spouse-program.html">Navy Joint Spouse Program</a></li>
+													<li class="list-group-item"><a href="/navy-military-marriage-benefits.html">Navy Military Marriage Benefits</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-exchange.html">Navy San Diego Exchange</a></li>
+													<li class="list-group-item"><a href="/navy-marriage-benefits.html">Navy Marriage Benefits</a></li>
+													<li class="list-group-item"><a href="/navy-instruction-spousal-support.html">Navy Instruction Spousal Support</a></li>
+													<li class="list-group-item"><a href="/navy-retirement-gift-items.html">Navy Retirement Gift Items</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-golf.html">Navy San Diego Golf</a></li>
+													<li class="list-group-item"><a href="/navy-pension-for-surviving-spouse.html">Navy Pension For Surviving Spouse</a></li>
+													<li class="list-group-item"><a href="/navy-license-plate-cover.html">Navy License Plate Cover</a></li>
+													<li class="list-group-item"><a href="/navy-husband-pillow.html">Navy Husband Pillow</a></li>
+													<li class="list-group-item"><a href="/navy-sailor-kills-wife.html">Navy Sailor Kills Wife</a></li>
+													<li class="list-group-item"><a href="/navy-military-spouse-preference.html">Navy Military Spouse Preference</a></li>
+													<li class="list-group-item"><a href="/navy-medical-records-request-form.html">Navy Medical Records Request Form</a></li>
+													<li class="list-group-item"><a href="/navy-license-plate-texas.html">Navy License Plate Texas</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

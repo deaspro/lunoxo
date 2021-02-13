@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Spouse Jobs Fort Bragg - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Spouse Jobs Fort Bragg",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/bf/d3/9e/bfd39e76900d871091fc54527046b8e8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+spouse+jobs+fort+bragg",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Spouse Jobs Fort Bragg</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Apply to Forklift Operator Distribution Associate Secretary and more. The Military Spouse Employment Partnership MSEP is a targeted recruitment and employment solution for spouses. The Navys top officer has received dozens of recommendations to improve inclusion and diversity in the ranks that could change everything from who appears in recruitment ads to how promotion. <br>				
+			</p>
+										<a class="badge badge-danger" href="/becoming-an-army-ranger-officer.html">becoming an army ranger officer</a>
+											<a class="badge badge-warning" href="/benefits-do-military-spouses-get-after-divorce.html">benefits do military spouses get after divorce</a>
+											<a class="badge badge-info" href="/benefits-as-a-military-wife.html">benefits as a military wife</a>
+											<a class="badge badge-secondary" href="/badr-hari-army-hoodie.html">badr hari army hoodie</a>
+											<a class="badge badge-success" href="/being-a-navy-seals-wife.html">being a navy seals wife</a>
+											<a class="badge badge-light" href="/becoming-a-military-trauma-surgeon.html">becoming a military trauma surgeon</a>
+											<a class="badge badge-secondary" href="/become-a-royal-navy-officer.html">become a royal navy officer</a>
+											<a class="badge badge-dark" href="/being-a-military-wife-uk.html">being a military wife uk</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to visit the right blog.  Our website provides you with hints for seeing the maximum quality video and picture content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, therefore we recommend this video that you view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/d3/6c/78/d36c78ac6fcb176f0d47b97e92137a73.jpg" data-lightbox="roadtrip" data-title="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Fort Bragg Job Fair 21 22 March Job Fair Fort Bragg Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/d3/6c/78/d36c78ac6fcb176f0d47b97e92137a73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_p_0N5AkgX_Ib0QCSUolhnhvV_LMnz1qMLQ';" alt="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Fort Bragg Job Fair 21 22 March Job Fair Fort Bragg Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Fort Bragg Job Fair 21 22 March Job Fair Fort Bragg Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ff/c6/7c/ffc67c27254315553072f8a669c8d4a3.jpg" data-lightbox="roadtrip" data-title="Home Is Where The Army Sends You Fort Bragg North Carolina Fort Bragg Fort Bragg North Carolina Military Spouse Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ff/c6/7c/ffc67c27254315553072f8a669c8d4a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvYRni39ls5ug0ey5EXe0p1N8eYYsn49jZ1g';" alt="Home Is Where The Army Sends You Fort Bragg North Carolina Fort Bragg Fort Bragg North Carolina Military Spouse Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Is Where The Army Sends You Fort Bragg North Carolina Fort Bragg Fort Bragg North Carolina Military Spouse Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/c2/f9/e2c2f937cc7df109b2e6c23a0357050e.jpg" data-lightbox="roadtrip" data-title="Home At Last Military Spouse Military Military Spouse Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/c2/f9/e2c2f937cc7df109b2e6c23a0357050e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX51QgrcE_iT5Tiyx-QpSSCzzQI87hEjP2Fg';" alt="Home At Last Military Spouse Military Military Spouse Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home At Last Military Spouse Military Military Spouse Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/53/01/55/530155dfabb09197cf6fea00eacb4ef9.jpg" data-lightbox="roadtrip" data-title="Pcs Season Got You On The Job Hunt Yet Again Maybe Entrepreneurship Has Your Name Written Military Spouse Military Wife Life Military Spouse Appreciation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/53/01/55/530155dfabb09197cf6fea00eacb4ef9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScldxVZiBFxwJiHISvraZNPz4KPZt48TCFMg';" alt="Pcs Season Got You On The Job Hunt Yet Again Maybe Entrepreneurship Has Your Name Written Military Spouse Military Wife Life Military Spouse Appreciation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pcs Season Got You On The Job Hunt Yet Again Maybe Entrepreneurship Has Your Name Written Military Spouse Military Wife Life Military Spouse Appreciation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/bf/d3/9e/bfd39e76900d871091fc54527046b8e8.jpg" data-lightbox="roadtrip" data-title="The Smart Military Spouse S Guide To Military Promotions Nextgen Milspouse Military Spouse Promotion Celebration Military Party">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/bf/d3/9e/bfd39e76900d871091fc54527046b8e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl1sYImYC9Nf0eR16iCdtpFlOpbsBN70x0Ng';" alt="The Smart Military Spouse S Guide To Military Promotions Nextgen Milspouse Military Spouse Promotion Celebration Military Party">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Smart Military Spouse S Guide To Military Promotions Nextgen Milspouse Military Spouse Promotion Celebration Military Party</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/39/36/dc39366e0bfd0ec2730a08461e58ac73.jpg" data-lightbox="roadtrip" data-title="Ask Yourself Why Not Today Military Spouse Resources Military Life Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/39/36/dc39366e0bfd0ec2730a08461e58ac73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShjzdmRhukoO_uCsjSlB6LB6C3i5Rka4MHog';" alt="Ask Yourself Why Not Today Military Spouse Resources Military Life Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ask Yourself Why Not Today Military Spouse Resources Military Life Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/00/53/60/005360cf131d4d91ed0bf13c58ffc19e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShjzdmRhukoO_uCsjSlB6LB6C3i5Rka4MHog';" alt="Ask Yourself Why Not Today Military Spouse Resources Military Life Military Spouse">
+										<div class="card-body">
+						<h3 class="h5"><b>Her husband serves at Fort Bragg.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military spouse jobs fort bragg</strong>. 
+								
+																	Golden Sun Lumpia. 
+																	Military Spouses Career stories. 
+																	Leverage your professional network and get hired. 
+																	Apply to Logistics Management Specialist Technician Security Specialist and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to the Facebook page of Womack Army Medical Center at Fort Bragg NC medical providers are still in the first phase of the vaccinations administering the vaccine to healthcare. 
+																	With the military you never know when youre moving or where you have to go. 
+																	MyCAA The My Career Advancement Account MyCAA Scholarship Program is a workforce development program that provides up to 4000 of financial assistance to eligible military spouses who are pursuing a license certification or Associates degree in a portable career field and. 
+																	It has approximately 57000 military personnel 11000 civilian employees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Free fast and easy way find a job of 1837000 postings in Fort Bragg NC and other big cities in USA. 
+																	Apply to Verifying Official Id Card Services Brand Ambassador Human Resources Specialist and more. 
+																	Apply to Security Guard Retail Sales Associate Equipment Operator and more. 
+																	Fort Bragg Army Community Service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fort Bragg Spouses Community Outreach Program. 
+																	Chamber of Commerce Foundation More than 1500 service. 
+																	Full-time temporary and part-time jobs. 
+																	Military Spouse Jobs Employment in Fort Bragg NC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tampa virtual job fair for veterans military spouses The Tampa Bay area is home to nearly 100000 veterans. 
+																	Jacobs Network Engineer in Fort Bragg North Carolina. 
+																	Apply to Office Automation Clerk Human Resources Specialist Program Coordinator and more. 
+																	Todays top 141 Military Spouse jobs in Fort Bragg North Carolina United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fort Bragg Victim Advocate Services. 
+																	Interior designer Rachel Szabo worked remotely for a Chicago-based company earlier this year. 
+																	Location field must contain city state or a zip code to perform a radius search eg Denver CO or 46122. 
+																	AP Images for US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply to Operations Officer Technician Security Specialist and more. 
+																	Fort Bragg Now Admits. 
+																	Fort Bragg Spouse Education Training and Careers. 
+																	Search and apply for the latest Day program manager jobs in Fort Bragg NC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	No Health Issues Reported After Mold Found in Barracks The root cause of the mold was malfunctioning heating ventilation and air-conditioning systems. 
+																	SpouseLink of MacDill AFB. 
+																	New Military Spouse jobs added daily. 
+																	Whether youre interested in furthering your professional career or just supplementing the familys income or both the Fort Bragg area has a number of opportunities for spouses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	USO of North Carolina. 
+																	Apply Now View All Jobs. 
+																	WNCN Thousands of North Carolinians have lost their jobs this year including military spouses in the area. 
+																	Fort Bragg covering nearly 172000 acres is one of the worlds largest military complexes according to its website. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SpouseLink of the DC Metro Area. 
+																	Paratroopers from the 82nd Airborne Division training at the Joint Readiness Training Center at Fort Polk Louisiana are complaining of a mass outbreak of COVID-19 within the unit and claiming. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/06/9c/54069c6943feb53b42774954f9c54fa5.png" data-lightbox="roadtrip" data-title="Five Things Military Spouses Should Never Stop Doing Countdowns And Cupcakes Military Spouse Military Military Lifestyle">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/06/9c/54069c6943feb53b42774954f9c54fa5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH9I8I3IS0G2lvT_mB9DvDTMGaD85TmJBDcA';" alt="Five Things Military Spouses Should Never Stop Doing Countdowns And Cupcakes Military Spouse Military Military Lifestyle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Five Things Military Spouses Should Never Stop Doing Countdowns And Cupcakes Military Spouse Military Military Lifestyle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/e0/90/bee090fa270794e1831291bc159fbe4a.png" data-lightbox="roadtrip" data-title="Pin On Fort Bragg">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/e0/90/bee090fa270794e1831291bc159fbe4a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgbGu81R_RCmpYTYWvolImCvzAWMZ__gubvA';" alt="Pin On Fort Bragg">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fort Bragg</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/f5/57/e0f5579f9556edd1c702273d6a06c371.jpg" data-lightbox="roadtrip" data-title="Recap Of Milspouse Fest At Fort Bragg Milspouse Military Life Fort Bragg">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/f5/57/e0f5579f9556edd1c702273d6a06c371.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3SEEsQ8xo1hUOJ-1Dqbf-Gn93eg5X9lainQ';" alt="Recap Of Milspouse Fest At Fort Bragg Milspouse Military Life Fort Bragg">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Recap Of Milspouse Fest At Fort Bragg Milspouse Military Life Fort Bragg</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/8e/4e/5d8e4e3127c8361d93175f4a65a858d9.jpg" data-lightbox="roadtrip" data-title="You Don T Need To Save The World You Do Need To Make A Difference Anonymous Join Us On April 11th And 12th For Military Veteran Jobs Military Life Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/8e/4e/5d8e4e3127c8361d93175f4a65a858d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5p9RCnjpxK-OxogFVeFj-VKC3pM-bXfDcA';" alt="You Don T Need To Save The World You Do Need To Make A Difference Anonymous Join Us On April 11th And 12th For Military Veteran Jobs Military Life Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Don T Need To Save The World You Do Need To Make A Difference Anonymous Join Us On April 11th And 12th For Military Veteran Jobs Military Life Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/03/7d/3a/037d3a140583ff695d31aaecc455c23a.jpg" data-lightbox="roadtrip" data-title="Pin On Ginigi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/03/7d/3a/037d3a140583ff695d31aaecc455c23a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWO2BCREFwmZ2eEJQeT-sqq3JK_uFittWpZw';" alt="Pin On Ginigi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ginigi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/05/e6/fa05e6c83aceffc6312aae2719c982b7.png" data-lightbox="roadtrip" data-title="Milspo Miles Military Spouse Just Friends Crazy Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/05/e6/fa05e6c83aceffc6312aae2719c982b7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz2MoByoR6ii7GHeNKfQYSPeWSRlUcjXPvtg';" alt="Milspo Miles Military Spouse Just Friends Crazy Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Milspo Miles Military Spouse Just Friends Crazy Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/53/60/005360cf131d4d91ed0bf13c58ffc19e.png" data-lightbox="roadtrip" data-title="Time For A Pcs In 2020 Military Life Military Spouse Deployed Husband">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/53/60/005360cf131d4d91ed0bf13c58ffc19e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEbbvX8mVM1lV0bzT_X7XHFUMWy5Bt18hFNg';" alt="Time For A Pcs In 2020 Military Life Military Spouse Deployed Husband">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Time For A Pcs In 2020 Military Life Military Spouse Deployed Husband</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/36/3a/37/363a378c75c17a9a44a01c391329435a.jpg" data-lightbox="roadtrip" data-title="Must Do S When Moving Overseas As A Military Spouse In 2020 Military Spouse Military Living Military Move">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/36/3a/37/363a378c75c17a9a44a01c391329435a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCHNK9rvJTubGlvNQajFW3R8_2tZrb30MrAA';" alt="Must Do S When Moving Overseas As A Military Spouse In 2020 Military Spouse Military Living Military Move">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Must Do S When Moving Overseas As A Military Spouse In 2020 Military Spouse Military Living Military Move</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/cd/d0/92cdd04a19e6ec820e6f5504f2ad04e9.jpg" data-lightbox="roadtrip" data-title="Army Wife Readings Military Family Infantry Museum Fort Benning Military Family Army Life Army Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/cd/d0/92cdd04a19e6ec820e6f5504f2ad04e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfT-SObkcvShxI2cfZbN_Q3iTdtZOTFBV_Xw';" alt="Army Wife Readings Military Family Infantry Museum Fort Benning Military Family Army Life Army Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Wife Readings Military Family Infantry Museum Fort Benning Military Family Army Life Army Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/79/d3/8379d3b5572e7de621217e750def156b.jpg" data-lightbox="roadtrip" data-title="Pin On Military To Civilian Job Fairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/79/d3/8379d3b5572e7de621217e750def156b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiE-kjh0L08Ez1m-HJH9ST7eVNFedYN4Nz0w';" alt="Pin On Military To Civilian Job Fairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military To Civilian Job Fairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1b/98/1b/1b981be93798aa3672120617b8fb2f65.jpg" data-lightbox="roadtrip" data-title="7 Things To Know About Fort Campbell Find Out More At Gomillie Com Fort Campbell Campbell Tough Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1b/98/1b/1b981be93798aa3672120617b8fb2f65.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEZeSnuCLaeUgTE7MBHutNAdZN_2hfML-nQ';" alt="7 Things To Know About Fort Campbell Find Out More At Gomillie Com Fort Campbell Campbell Tough Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Things To Know About Fort Campbell Find Out More At Gomillie Com Fort Campbell Campbell Tough Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/74/28/e37428a90c07b96c87e883678510af50.jpg" data-lightbox="roadtrip" data-title="Instead Of Traveling We Ve Decided To Try To Live Everywhere For A Few Years At A Time For Us It S B Military Wife Life Husband Quotes Funny Military Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/74/28/e37428a90c07b96c87e883678510af50.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR5bpiei1s7xMVZLCAqL2JmkM0VSleecBwqw';" alt="Instead Of Traveling We Ve Decided To Try To Live Everywhere For A Few Years At A Time For Us It S B Military Wife Life Husband Quotes Funny Military Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Instead Of Traveling We Ve Decided To Try To Live Everywhere For A Few Years At A Time For Us It S B Military Wife Life Husband Quotes Funny Military Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cd/e2/79/cde279eb6fc05deed6bc484be8ebffb2.jpg" data-lightbox="roadtrip" data-title="Tips For Surviving Ocs My Greatest Adventure Military Husband Military Wife Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cd/e2/79/cde279eb6fc05deed6bc484be8ebffb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSerei6OzcjUiwj3bmFjXxyxtkT0QbviUWtkw';" alt="Tips For Surviving Ocs My Greatest Adventure Military Husband Military Wife Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tips For Surviving Ocs My Greatest Adventure Military Husband Military Wife Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mycarriercardscom-coupon-code.html">Mycarriercardscom Coupon Code</a></li>
+													<li class="list-group-item"><a href="/mychart-dha.html">Mychart Dha</a></li>
+													<li class="list-group-item"><a href="/mychart-ghs.html">Mychart Ghs</a></li>
+													<li class="list-group-item"><a href="/mychart-geisinger.html">Mychart Geisinger</a></li>
+													<li class="list-group-item"><a href="/mychart-atlantic-health.html">Mychart Atlantic Health</a></li>
+													<li class="list-group-item"><a href="/mycarolinas-login-page.html">Mycarolinas Login Page</a></li>
+													<li class="list-group-item"><a href="/mychart-parkland.html">Mychart Parkland</a></li>
+													<li class="list-group-item"><a href="/mychart-cvs.html">Mychart Cvs</a></li>
+													<li class="list-group-item"><a href="/mychart-nyu-langone.html">Mychart Nyu Langone</a></li>
+													<li class="list-group-item"><a href="/mychart-fmolhs.html">Mychart Fmolhs</a></li>
+													<li class="list-group-item"><a href="/mychart-allina.html">Mychart Allina</a></li>
+													<li class="list-group-item"><a href="/mychart-guest-pay.html">Mychart Guest Pay</a></li>
+													<li class="list-group-item"><a href="/mychart-bmc.html">Mychart Bmc</a></li>
+													<li class="list-group-item"><a href="/mychart-dupage.html">Mychart Dupage</a></li>
+													<li class="list-group-item"><a href="/mychart-elmhurst.html">Mychart Elmhurst</a></li>
+													<li class="list-group-item"><a href="/mychart-essentia.html">Mychart Essentia</a></li>
+													<li class="list-group-item"><a href="/mychart-quest.html">Mychart Quest</a></li>
+													<li class="list-group-item"><a href="/mycarx431.html">Mycarx431</a></li>
+													<li class="list-group-item"><a href="/mycarinfo-my-ncd-check-online.html">Mycarinfo My Ncd Check Online</a></li>
+													<li class="list-group-item"><a href="/mychart-beaumont.html">Mychart Beaumont</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

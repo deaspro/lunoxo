@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>My Carrier Infinity - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "My Carrier Infinity",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/cd/be/da/cdbeda6c959c6857584a539681a1ca04.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=my+carrier+infinity",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>My Carrier Infinity</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">While attempting to adjust the temperature on my carrier infinity control the indicator screen went blank. The Carrier Infinity control can direct an entire advanced home comfort system to let you precisely manage comfort humidity ventilation and air purification from one source. Registering your device is required to use Remote Access. <br>				
+			</p>
+										<a class="badge badge-success" href="/proud-soldier-wife-quotes.html">proud soldier wife quotes</a>
+											<a class="badge badge-primary" href="/proud-navy-wife-hoodie.html">proud navy wife hoodie</a>
+											<a class="badge badge-success" href="/portal-mi-campus.html">portal mi campus</a>
+											<a class="badge badge-secondary" href="/polish-military-hats-for-sale.html">polish military hats for sale</a>
+											<a class="badge badge-dark" href="/portal-campus-training.html">portal campus training</a>
+											<a class="badge badge-success" href="/philippine-air-force-personnel-management-center-pasay-metro-manila.html">philippine air force personnel management center pasay metro manila</a>
+											<a class="badge badge-primary" href="/phd-programs-for-military-spouses.html">phd programs for military spouses</a>
+											<a class="badge badge-info" href="/presidential-proclamation-military-spouse-appreciation-day.html">presidential proclamation military spouse appreciation day</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the ideal blog.  Our site gives you suggestions for seeing the maximum quality video and image content, hunt and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie that you see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/be/da/cdbeda6c959c6857584a539681a1ca04.jpg" data-lightbox="roadtrip" data-title="Https Www Youtube Com Watch V 1eheompdc A Energy Saving Features Save Energy Infinity">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/be/da/cdbeda6c959c6857584a539681a1ca04.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmo_ZRQ22kpCTJ-u-HpOa8Tx21G5K8U8523w';" alt="Https Www Youtube Com Watch V 1eheompdc A Energy Saving Features Save Energy Infinity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Youtube Com Watch V 1eheompdc A Energy Saving Features Save Energy Infinity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/46/e7/21/46e7218a0e4f906ec9f4d4f8d39c6153.jpg" data-lightbox="roadtrip" data-title="How Do I Program My Carrier Thermostat Hunker Thermostat Carriers Household Hacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/46/e7/21/46e7218a0e4f906ec9f4d4f8d39c6153.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO2Sza63j2FDL_APSMFbChOnquV8XjBDIVaA';" alt="How Do I Program My Carrier Thermostat Hunker Thermostat Carriers Household Hacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Do I Program My Carrier Thermostat Hunker Thermostat Carriers Household Hacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/61/18/17611898c9f01b3119b5c0c236b64adf.jpg" data-lightbox="roadtrip" data-title="3 Carrier Infinity Air Conditioning Systems Installed In Boca Raton Fl Air Conditioning System Conditioner Air Conditioning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/61/18/17611898c9f01b3119b5c0c236b64adf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVLLKithPPy-hBSQFlrEjLVYm9epyC_fCQww';" alt="3 Carrier Infinity Air Conditioning Systems Installed In Boca Raton Fl Air Conditioning System Conditioner Air Conditioning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 Carrier Infinity Air Conditioning Systems Installed In Boca Raton Fl Air Conditioning System Conditioner Air Conditioning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/f4/ff/d3f4ffee3dd11b8c0be0e55b553fa169.jpg" data-lightbox="roadtrip" data-title="Carrier Infinity Air Purifier Captures Bacteria Mold Pet Dander Dust And Other Allergens High Efficiency Air C Indoor Air Quality Hvac System Indoor Air">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/f4/ff/d3f4ffee3dd11b8c0be0e55b553fa169.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Mv7sKBzk9yCNDloa3HWhtUAI-BTsdjnzwQ';" alt="Carrier Infinity Air Purifier Captures Bacteria Mold Pet Dander Dust And Other Allergens High Efficiency Air C Indoor Air Quality Hvac System Indoor Air">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Carrier Infinity Air Purifier Captures Bacteria Mold Pet Dander Dust And Other Allergens High Efficiency Air C Indoor Air Quality Hvac System Indoor Air</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/c4/7b/b6c47b47f756b83c32e35692b3d2532c.jpg" data-lightbox="roadtrip" data-title="Carrier Infinity Carrier Performance Units Furnace Repair Hvac Services Carrier Furnace">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/c4/7b/b6c47b47f756b83c32e35692b3d2532c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyoStii6X8iUrag__D5JQn_fjTaf-qbp_cGQ';" alt="Carrier Infinity Carrier Performance Units Furnace Repair Hvac Services Carrier Furnace">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Carrier Infinity Carrier Performance Units Furnace Repair Hvac Services Carrier Furnace</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/4c/8f/b14c8f8db8a0c0dca7254d56c283dcf8.jpg" data-lightbox="roadtrip" data-title="Carrier Infinity 96 Gas Furnace 58mvb Running In Heat Mode Gas Furnace Furnace Gas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/4c/8f/b14c8f8db8a0c0dca7254d56c283dcf8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrMVSz0hV5PANjaNeKC9QAmMZ5M5BLmOvYOg';" alt="Carrier Infinity 96 Gas Furnace 58mvb Running In Heat Mode Gas Furnace Furnace Gas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Carrier Infinity 96 Gas Furnace 58mvb Running In Heat Mode Gas Furnace Furnace Gas</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/9c/70/4c/9c704cedcb20d7816e38db796e07ac73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrMVSz0hV5PANjaNeKC9QAmMZ5M5BLmOvYOg';" alt="Carrier Infinity 96 Gas Furnace 58mvb Running In Heat Mode Gas Furnace Furnace Gas">
+										<div class="card-body">
+						<h3 class="h5"><b>Once youve properly registered your system you will be able to immediately interact through your web browser with the system in the same way you interact at home.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>My carrier infinity</strong>. 
+								
+																	If you are not using any Xfi Pods you can try separating the 24 and the 50 bands and give them two different broadcast names SSIDs. 
+																	The Twin-Turbo drive unit controls the movement of air within the respirator delivering a minimum of 160 litres a minute of clean filtered clean air. 
+																	MyInfinity Home Welcome to MyInfinity SM your portal for remote access. 
+																	It seemed to occur when my finger touched the - control and there was a shock of static el read more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Read our Privacy Policy. 
+																	Manage your Infinity control system remotely with MyInfinity Touch. 
+																	MyInfinity requires that Adobe AIR 330 or later be installed on your operating system. 
+																	Carrier Wi-Fi Thermostat Login Welcome to your portal for remote access. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Anybody else had this pro. 
+																	Page 1 INSTALLATION INTRODUCTION Step 1Select Smart Sensor Location Carriers Infinity Smart Sensors are optional replacements for Sensor should be mounted. 
+																	I have heat but I am guessing as to what the setting and temperature actually are at any given time. 
+																	The Description The Carrier Infinity control can direct an entire advanced home comfort system to let you precisely manage comfort humidity ventilation and air purification from one source. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Manage your Infinity control system remotely with MyInfinity Touch. 
+																	A free management tool for your freight. 
+																	The Infinity System is a full range of top-of-the-line heating and cooling productsfrom traditional single-stage models to our fully variable-speed models with Greenspeed Intelligence. 
+																	Reset the setting by pressing the button next to the right arrow. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Now it cannot connect to my Orbi despite that it shows on my connected devices list when I log into my orbi router. 
+																	Modernize your shipping experience with a single end-to-end platform for all your carriers. 
+																	Scroll through the accessories by pressing the Scroll button on the thermostat. 
+																	Once youve properly registered your system you will be able to immediately interact through your web browser with the system in the same way as you do at home. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get the Latest Software for Your Infinity System Control You must first agree to the End User License Agreement then you will then have the option to download the software and installation instructions. 
+																	The Carrier Infinity control can direct an entire advanced home comfort system to let you precisely manage comfort humidity ventilation and air purification from one source. 
+																	My carrier Infinity Thermostat screen went blank when I touched the temperature button to raise the heat. 
+																	The Infinity-class supercarrier is a United Nations Space Command heavy warship class designed by the Office of Naval Intelligence during the Human-Covenant war. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Remote Room Sensors used with Infinity zoning systems. 
+																	Is there a way to reset the thermostat. 
+																	It even makes scheduling a breeze. 
+																	Infinity Logistics and Transport Ventures Limited Services Non-Vessel Operating Common Carrier NVOCC Our NVOCC services focus on providing full container load shipments and vessel space as carriers to our customers which are mainly freight forwarders. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How to Reset a Carrier Infinity System Thermostat Hold the button next to the left arrow for several seconds until the Accessory Status screen appears on the display. 
+																	My Carrier Infinity conection The two WiFi bands have recently been combined into one with the Comcast gateway devices. 
+																	They allow viewing and adjustment of temperatures from within the Approximately 5 ft. 
+																	You can also download a MyInfinity SM app for use on your smartphone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some devices get confused and dont know how to see talk to combined bands. 
+																	I still have lighting on the thermostat when I open the door to adjust the temperature but I cannot. 
+																	I have a Carrier Infinity Thermostat that used to connect to internet with no problems on my previous 2 routers Previous Century Link and Netgear routers. 
+																	It even makes scheduling a breeze. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	JSP PowerCap Infinity Twin-Turbo Drive Unit and Visor Carrier Assembly 55590 vat A replacement drive unit and visor carrier assembly for the PowerCap Infinity. 
+																	We use Cookies to ensure that we give you the best experience on our website. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/6a/3f/716a3f04106d634244aae84ced227cf0.jpg" data-lightbox="roadtrip" data-title="Carrier Infinity Variable Speed Air Handler With New Ducted Return Carrier Dual Bulb Uv Light And Carrier Infinity Air Puri Air Handler Air Purifier Carriers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/6a/3f/716a3f04106d634244aae84ced227cf0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVNaLWifUgaGXdG__5q71xSqSkDbxDoHfjfQ';" alt="Carrier Infinity Variable Speed Air Handler With New Ducted Return Carrier Dual Bulb Uv Light And Carrier Infinity Air Puri Air Handler Air Purifier Carriers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Carrier Infinity Variable Speed Air Handler With New Ducted Return Carrier Dual Bulb Uv Light And Carrier Infinity Air Puri Air Handler Air Purifier Carriers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/46/fd/2a46fd7408b252e06d3451e5fa818c4c.jpg" data-lightbox="roadtrip" data-title="New Carrier Infinity Thermostat Wiring Diagram In 2020 Thermostat Wiring Wire Carrier Heat Pump">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/46/fd/2a46fd7408b252e06d3451e5fa818c4c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStApUsunX3-AY3iN2fXp4pKJtLLLm3SgsG-g';" alt="New Carrier Infinity Thermostat Wiring Diagram In 2020 Thermostat Wiring Wire Carrier Heat Pump">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Carrier Infinity Thermostat Wiring Diagram In 2020 Thermostat Wiring Wire Carrier Heat Pump</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/70/4c/9c704cedcb20d7816e38db796e07ac73.jpg" data-lightbox="roadtrip" data-title="Carrier Infinity Greenspeed Heat Pump Air Conditioning System Installed In Boynton Beach Fl Heat Pump Air Conditioning System Boynton Beach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/70/4c/9c704cedcb20d7816e38db796e07ac73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_SA10_vSRVdKVCGlMODgSf5bVUkrj95ZIlg';" alt="Carrier Infinity Greenspeed Heat Pump Air Conditioning System Installed In Boynton Beach Fl Heat Pump Air Conditioning System Boynton Beach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Carrier Infinity Greenspeed Heat Pump Air Conditioning System Installed In Boynton Beach Fl Heat Pump Air Conditioning System Boynton Beach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/d5/7d/9ed57d8258d75f589a4f22dc55e9cd9e.jpg" data-lightbox="roadtrip" data-title="Infiniti Thermostats Are Super Modern And Easy To Use I Love The Touchscreen Tech Hometech Hom Carrier Air Conditioner Wireless Thermostat Heating Company">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/d5/7d/9ed57d8258d75f589a4f22dc55e9cd9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDo-_JnmUhgwopIk3tYXpOk9gJLuInALKk8w';" alt="Infiniti Thermostats Are Super Modern And Easy To Use I Love The Touchscreen Tech Hometech Hom Carrier Air Conditioner Wireless Thermostat Heating Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infiniti Thermostats Are Super Modern And Easy To Use I Love The Touchscreen Tech Hometech Hom Carrier Air Conditioner Wireless Thermostat Heating Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/1f/f1/371ff132aef4065646ca706eea99ef26.jpg" data-lightbox="roadtrip" data-title="Carrier Air Conditioners Are Manufactured And Sold In More Than 170 Countries By More Than 43 000 Carrier Air Conditioner Air Conditioning System Manufacturing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/1f/f1/371ff132aef4065646ca706eea99ef26.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDqqWMvAgWc8LEJ37EwLjHoPztSRhRJt_BWg';" alt="Carrier Air Conditioners Are Manufactured And Sold In More Than 170 Countries By More Than 43 000 Carrier Air Conditioner Air Conditioning System Manufacturing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Carrier Air Conditioners Are Manufactured And Sold In More Than 170 Countries By More Than 43 000 Carrier Air Conditioner Air Conditioning System Manufacturing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/34/16/c33416d171483cc35d77b53c8397f2ef.jpg" data-lightbox="roadtrip" data-title="Carrier Performance 24acb7 2 Speed Air Conditioning System Installed In Fort Lauderdale Fl Air Conditioning System Installation Air Conditioning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/34/16/c33416d171483cc35d77b53c8397f2ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfQzKlzYXFGLnOP40EkInDw6o6hx3MPo99eg';" alt="Carrier Performance 24acb7 2 Speed Air Conditioning System Installed In Fort Lauderdale Fl Air Conditioning System Installation Air Conditioning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Carrier Performance 24acb7 2 Speed Air Conditioning System Installed In Fort Lauderdale Fl Air Conditioning System Installation Air Conditioning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/32/0e/4b320e102e3d2927d366a868020ce5b1.jpg" data-lightbox="roadtrip" data-title="Carrier Infinity Wifi Thermostat Features Continuous Fan Humidity Myinfinity 6 Of 7 Hvac Summer Hot Diy Thermostat Humidity Wifi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/32/0e/4b320e102e3d2927d366a868020ce5b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFFf0i4ATp_k51erZkL8RIPPkQyK7x_N7tbA';" alt="Carrier Infinity Wifi Thermostat Features Continuous Fan Humidity Myinfinity 6 Of 7 Hvac Summer Hot Diy Thermostat Humidity Wifi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Carrier Infinity Wifi Thermostat Features Continuous Fan Humidity Myinfinity 6 Of 7 Hvac Summer Hot Diy Thermostat Humidity Wifi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/c0/94/b8c0945b59084788351bba3497cf4518.jpg" data-lightbox="roadtrip" data-title="Carrier Infinity Variable Speed Air Handler Installation With Carrier Infinity Air Purifier In Palm Beach Fl Air Handler Home Appliances Air Purifier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/c0/94/b8c0945b59084788351bba3497cf4518.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbtp6cumUefsJMOCvN6do0U0YeNw2AWMrz8Q';" alt="Carrier Infinity Variable Speed Air Handler Installation With Carrier Infinity Air Purifier In Palm Beach Fl Air Handler Home Appliances Air Purifier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Carrier Infinity Variable Speed Air Handler Installation With Carrier Infinity Air Purifier In Palm Beach Fl Air Handler Home Appliances Air Purifier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/dd/73/e1dd73408c7b421375017a7b1cbaa8aa.jpg" data-lightbox="roadtrip" data-title="Infinity 98 Modulating Gas Furnace With Greenspeed Intelligence Gas Furnace Oil Furnace Furnace">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/dd/73/e1dd73408c7b421375017a7b1cbaa8aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShPrlBr9d76am7NUvK5-8MP3w_6Oc95nWVmg';" alt="Infinity 98 Modulating Gas Furnace With Greenspeed Intelligence Gas Furnace Oil Furnace Furnace">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infinity 98 Modulating Gas Furnace With Greenspeed Intelligence Gas Furnace Oil Furnace Furnace</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/54/88/645488aaa5c4af254b4b7ef1d2c161df.jpg" data-lightbox="roadtrip" data-title="Ventilators Heating And Air Conditioning Repair Virginia Fairfax Hvac Service Heat Pump Installation Air Conditioning Repair Heating And Air Conditioning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/54/88/645488aaa5c4af254b4b7ef1d2c161df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlbtsFH62uGBpWokPK-qrjM0nGvf-YU0xWuQ';" alt="Ventilators Heating And Air Conditioning Repair Virginia Fairfax Hvac Service Heat Pump Installation Air Conditioning Repair Heating And Air Conditioning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ventilators Heating And Air Conditioning Repair Virginia Fairfax Hvac Service Heat Pump Installation Air Conditioning Repair Heating And Air Conditioning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/00/f0/ce/00f0ce4bfacd38a78282191e9110f470.jpg" data-lightbox="roadtrip" data-title="Infinity Prosperity 224 95m Panamax Bulk Carrier Built 1983 Spotted Aug 2012 Status Decommissioned Or Lost Marine Industrial Photography Aerial Drone Boat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/00/f0/ce/00f0ce4bfacd38a78282191e9110f470.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA_6Bjd3GlWGsrDqtVe2_MsKOyIvQxRth-xA';" alt="Infinity Prosperity 224 95m Panamax Bulk Carrier Built 1983 Spotted Aug 2012 Status Decommissioned Or Lost Marine Industrial Photography Aerial Drone Boat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infinity Prosperity 224 95m Panamax Bulk Carrier Built 1983 Spotted Aug 2012 Status Decommissioned Or Lost Marine Industrial Photography Aerial Drone Boat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/cd/df/9dcddf885028e9998f1c1c9c9da9db79.jpg" data-lightbox="roadtrip" data-title="Carrier Air Conditioner Prices And Performance Abilities Compare Carrier Ac Units Here Http Central Air Conditioners Air Conditioning Services Heating Repair">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/cd/df/9dcddf885028e9998f1c1c9c9da9db79.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRomFJvvREv31WMry5EA1YxYHPvOkUyZlaHMg';" alt="Carrier Air Conditioner Prices And Performance Abilities Compare Carrier Ac Units Here Http Central Air Conditioners Air Conditioning Services Heating Repair">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Carrier Air Conditioner Prices And Performance Abilities Compare Carrier Ac Units Here Http Central Air Conditioners Air Conditioning Services Heating Repair</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/ea/5e/20ea5e58cf2bbef558f814e0edd1401d.jpg" data-lightbox="roadtrip" data-title="Infinity 20 Heat Pump With Greenspeed 25vna0 Carrier Home Comfort Carrier Heat Pump Heat Pump Hvac Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/ea/5e/20ea5e58cf2bbef558f814e0edd1401d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxVzfIZzq1n1Y3tSF6WhEaXmPzrgGJXQegtQ';" alt="Infinity 20 Heat Pump With Greenspeed 25vna0 Carrier Home Comfort Carrier Heat Pump Heat Pump Hvac Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infinity 20 Heat Pump With Greenspeed 25vna0 Carrier Home Comfort Carrier Heat Pump Heat Pump Hvac Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-careers.html">Wright Patterson Air Force Base Careers</a></li>
+													<li class="list-group-item"><a href="/world-war-one-service-records-nz.html">World War One Service Records Nz</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-dorms.html">Wright Patterson Air Force Base Dorms</a></li>
+													<li class="list-group-item"><a href="/world-war-1-service-records-free.html">World War 1 Service Records Free</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-movie-theater.html">Wright Patterson Air Force Base Movie Theater</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-near-dayton-ohio.html">Wright Patterson Air Force Base Near Dayton Ohio</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-lodging-phone-number.html">Wright Patterson Air Force Base Lodging Phone Number</a></li>
+													<li class="list-group-item"><a href="/world-war-1-service-records-us.html">World War 1 Service Records Us</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-housing-office.html">Wright Patterson Air Force Base Housing Office</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-billeting-office.html">Wright Patterson Air Force Base Billeting Office</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-bah.html">Wright Patterson Air Force Base Bah</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-emergency-room.html">Wright Patterson Air Force Base Emergency Room</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-gate-12a.html">Wright Patterson Air Force Base Gate 12a</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-medical-center.html">Wright Patterson Air Force Base Medical Center</a></li>
+													<li class="list-group-item"><a href="/working-hr-for-the-army.html">Working Hr For The Army</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-id-card-hours.html">Wright Patterson Air Force Base Id Card Hours</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-directory.html">Wright Patterson Air Force Base Directory</a></li>
+													<li class="list-group-item"><a href="/work-from-home-for-military-spouses.html">Work From Home For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-inn.html">Wright Patterson Air Force Base Inn</a></li>
+													<li class="list-group-item"><a href="/world-war-1-soldiers-records-uk.html">World War 1 Soldiers Records Uk</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

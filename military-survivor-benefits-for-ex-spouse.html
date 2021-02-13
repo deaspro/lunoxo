@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Survivor Benefits For Ex Spouse - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Survivor Benefits For Ex Spouse",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/7b/8c/69/7b8c697af5198f2faaa97effcd78f408.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+survivor+benefits+for+ex+spouse",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Survivor Benefits For Ex Spouse</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">For more information see the Military Health Benefits for Divorced Spouses article in the Military Divorce Guide. This pension benefit comes as a monthly payment. Some things to consider when filing for divorce while living overseas include. <br>				
+			</p>
+										<a class="badge badge-primary" href="/why-do-i-keep-lying-to-my-husband.html">why do i keep lying to my husband</a>
+											<a class="badge badge-success" href="/why-does-my-ex-lie-about-everything.html">why does my ex lie about everything</a>
+											<a class="badge badge-primary" href="/why-does-my-husband-keep-interrupting-me.html">why does my husband keep interrupting me</a>
+											<a class="badge badge-dark" href="/why-does-my-husband-put-his-family-before-me.html">why does my husband put his family before me</a>
+											<a class="badge badge-warning" href="/why-does-my-partner-keep-lying-to-me.html">why does my partner keep lying to me</a>
+											<a class="badge badge-danger" href="/why-does-my-boyfriend-bring-out-the-worst-in-me.html">why does my boyfriend bring out the worst in me</a>
+											<a class="badge badge-dark" href="/why-does-my-husband-call-me-nasty-names.html">why does my husband call me nasty names</a>
+											<a class="badge badge-success" href="/why-do-i-lie-in-bed-all-day.html">why do i lie in bed all day</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to visit the ideal blog.  Our website provides you with hints for seeing the highest quality video and image content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7b/8c/69/7b8c697af5198f2faaa97effcd78f408.jpg" data-lightbox="roadtrip" data-title="While Divorce Is Essentially A Civil Issue There Are Certain Aspects Of A Divorce That Are Unique To T Military Divorce Military Benefits Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7b/8c/69/7b8c697af5198f2faaa97effcd78f408.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd2ps8EdlV6mS6iurfCdVYVUAU4Xve1KlqaA';" alt="While Divorce Is Essentially A Civil Issue There Are Certain Aspects Of A Divorce That Are Unique To T Military Divorce Military Benefits Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">While Divorce Is Essentially A Civil Issue There Are Certain Aspects Of A Divorce That Are Unique To T Military Divorce Military Benefits Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Oct/30/2002203586/600/400/0/191108-F-PO640-0008.JPG" data-lightbox="roadtrip" data-title="Remarriage Affects A Military Retiree S Survivor Benefit Plan Coverage Joint Base San Antonio News">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Oct/30/2002203586/600/400/0/191108-F-PO640-0008.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHiV-OfV-VPK0MG35VL1mC7oQzgBH-wzloBw';" alt="Remarriage Affects A Military Retiree S Survivor Benefit Plan Coverage Joint Base San Antonio News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Remarriage Affects A Military Retiree S Survivor Benefit Plan Coverage Joint Base San Antonio News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.scottafrc.com/s/cc_images/teaserbox_954914725.png?t=1554495102" data-lightbox="roadtrip" data-title="Scott Afb Afrc Survivor Benefit Plan">
+											<img class="card-img v-image ads-img " src="https://www.scottafrc.com/s/cc_images/teaserbox_954914725.png?t=1554495102" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz49xq1T1qJwkUOjbZXbfy_3ISVyThPdTAHA';" alt="Scott Afb Afrc Survivor Benefit Plan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scott Afb Afrc Survivor Benefit Plan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/survivor-benefit-plan-military-benefits.jpg" data-lightbox="roadtrip" data-title="Survivor Benefit Plan Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/survivor-benefit-plan-military-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyXDdQvpj7vnKypbeRq4LFP_wUVHqL7xSICw';" alt="Survivor Benefit Plan Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Survivor Benefit Plan Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/69/75/f269753b6133afd534aba9642fdbcbdb.jpg" data-lightbox="roadtrip" data-title="Survivor Benefits Infographic Survivor Infographic Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/69/75/f269753b6133afd534aba9642fdbcbdb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWo7g6z1dSSpL71PDn5RydsDH5Fo1DaiWUnw';" alt="Survivor Benefits Infographic Survivor Infographic Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Survivor Benefits Infographic Survivor Infographic Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images05.military.com/sites/default/files/media/spouse/2016/11/air-force-aid-1200x800.jpg" data-lightbox="roadtrip" data-title="Survivor Benefits Military Com">
+											<img class="card-img v-image ads-img " src="https://images05.military.com/sites/default/files/media/spouse/2016/11/air-force-aid-1200x800.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG25LyDhIunS_Eg4YolR7s4TsMt5EHB0IXAg';" alt="Survivor Benefits Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Survivor Benefits Military Com</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/9a/6b/9b/9a6b9b41e56914a274a7938c944603d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG25LyDhIunS_Eg4YolR7s4TsMt5EHB0IXAg';" alt="Survivor Benefits Military Com">
+										<div class="card-body">
+						<h3 class="h5"><b>The pay rate for this benefit has been set by Congress.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military survivor benefits for ex spouse</strong>. 
+								
+																	Claiming survivor benefits before you reach full retirement age reduces the amount of your benefit except as noted below. 
+																	At retirement full basic SBP. 
+																	Military divorce laws allow service members and their spouses to file for divorce in. 
+																	The retiree pays premiums from their military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In the broadest terms without a Survivors Benefit Plan SBP in place that provides for a survivorship interest that is payable to the former spouse upon the servicemembers death a former spouses military retirement payments will stop at the death of the servicemember. 
+																	And as with this blog post we have links after each of the benefits for a much more in-depth discussion of how the benefit works. 
+																	The Survivor Benefit Plan also referred to as SBP provides a continuing lifetime benefit to a Spouse or Former Spouse after those pension benefits terminate in the event Service Member pre-deceases SpouseFormer Spouse. 
+																	If however the service member the SM has enrolled in the Survivor Benefit Plan the SBP and named the former spouse the beneficiary then the survivor benefits will be paid as an annuity to the former spouse for the former spouses life. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The annuity which is based on a percentage of retired pay is called SBP. 
+																	Under this law former spouses may be entitled to portions of the military members retirement pay medical care and exchange and commissary benefits. 
+																	Costs and benefits under this option are identical to those for spouse coverage. 
+																	What can you tell us about Military Survivor Benefits in divorce. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This web page highlights key. 
+																	SURVIVORS BENEFIT PLAN SBP One of the most often misunderstood aspects of military divorce is what survivor benefits are available to a former spouse under military retirement. 
+																	The Survivor Benefit Plan SBP allows a retiree to ensure after death a continuous lifetime annuity for their dependents. 
+																	The Survivor Benefits Plan SBP allows selection of coverage for former spouses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Survivor Benefit Program The Survivor Benefit Plan is a Department of Defense sponsored and subsidized program that provides up to 55 percent of a service members retired pay to an eligible beneficiary upon the death of the member. 
+																	Those already in receipt of a survivors pension will be entitled to keep their. 
+																	SBP elections cannot be canceled or changed after retirement except in specific instances such as a change in your marital status or after the loss of a beneficiary. 
+																	Note also that SBP is considered paid in full after 30 years or 360 payments. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The SBP is a premium-based annuity very similar to an insurance policy designed to replace a portion of a military retirees income after their death. 
+																	These actions allow the retiree to change the beneficiary to the current spouse. 
+																	Post-911 GI Bill Benefits The Post-911 GI Bill is an extraordinarily valuable benefit which provides a member or family member with up to 160K of benefits towards a college degree comprised of a monthly housing allowance tuition reimbursement and a booksupply stipend. 
+																	It is possible to pay less and receive less the minimum benefit is 300. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	From 1 April 2015 all survivors pensions awarded to armed forces spouses and civil partners will be for life. 
+																	Military retirement payments often one of the largest assets in divorces involving military service members end at the retirees death for both the retiree and the former spouse of the retiree. 
+																	The ex-spouse and current spouse cannot be covered simultaneously. 
+																	Without an SBP plan all of the former military members retirement pay would stop at the death of the retiree. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For immediate assistance or to access confidential help call the Military OneSource toll free. 
+																	Note that the most the SBP will pay out to survivors is 55 of retirement pay which is what survivors receive in exchange for 65 of monthly retirement benefits. 
+																	Upon the death of Service Member the pension benefits disappear for all parties. 
+																	The Uniformed Services Former Spouse Protection Act is a federal law that provides certain benefits to former spouses of military members. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Survivors Pension is a tax-free monetary benefit that is payable to a low-income unmarried surviving spouse of a deceased veteran with wartime service. 
+																	A surviving spouse wants to remarry and has concerns about SBP and Dependency and Indemnity Compensation DIC payments. 
+																	A benefit available to ex-spouses of retired service members is the Survivor Benefit Plan annuity payable upon the retired service members death. 
+																	Marital status The Survivor Benefit Plan SBP is an insurance benefit that pays a portion of a military retirees pay to a named beneficiary when the retiree dies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are caring for a child from the marriage who is under the age of 16 or is disabled you will receive 75 percent of the deceased ex-spouses benefit. 
+																	Ones age at remarriage can affect survivor benefits. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.debt.org/wp-content/uploads/2020/06/shutterstock_100116671.jpg" data-lightbox="roadtrip" data-title="Military Spousal Debt Survivor Benefits Spousal Financial Benefits">
+											<img class="card-img v-image ads-img " src="https://www.debt.org/wp-content/uploads/2020/06/shutterstock_100116671.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEVXJKWM6SoOKoq5sqkN8o3irw7nSAQj3uQQ';" alt="Military Spousal Debt Survivor Benefits Spousal Financial Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spousal Debt Survivor Benefits Spousal Financial Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="f3zlFPRPn-LwxM" data-lightbox="roadtrip" data-title="Https Www Navymutual Org Tools Military Survivor Benefits Overview">
+											<img class="card-img v-image ads-img " src="f3zlFPRPn-LwxM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD-3S6BjtmkBD36Dk9Kunis_oIePN88aY2iQ';" alt="Https Www Navymutual Org Tools Military Survivor Benefits Overview">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Navymutual Org Tools Military Survivor Benefits Overview</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_MilitarySpouse1.jpg?itok=_Z72pqcw" data-lightbox="roadtrip" data-title="Explanation Of Divorced Military Spouse Benefits Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_MilitarySpouse1.jpg?itok=_Z72pqcw" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0D0IhbDAZyVxNIs2xA1O0SSEgzVTL0c5vQ';" alt="Explanation Of Divorced Military Spouse Benefits Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Explanation Of Divorced Military Spouse Benefits Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/6b/9b/9a6b9b41e56914a274a7938c944603d0.jpg" data-lightbox="roadtrip" data-title="When Debra Tainsh 39 S Veteran Husband Died Of Illness Traced To Agent Orange She Expected To Survive On His Military Marine Fitness Training Marine Barracks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/6b/9b/9a6b9b41e56914a274a7938c944603d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXOKSyk_wBC2B2NtCd35JIqV85z7XPUUL2Fg';" alt="When Debra Tainsh 39 S Veteran Husband Died Of Illness Traced To Agent Orange She Expected To Survive On His Military Marine Fitness Training Marine Barracks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When Debra Tainsh 39 S Veteran Husband Died Of Illness Traced To Agent Orange She Expected To Survive On His Military Marine Fitness Training Marine Barracks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/3b/67/133b67fd739532b5b06e448eb84bf4b5.jpg" data-lightbox="roadtrip" data-title="Are You Eligible For The Military S Unemployment Program Military Benefits Help For Veterans Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/3b/67/133b67fd739532b5b06e448eb84bf4b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSghf5gBV_7h8us_hIHhx1Idt8kpHS7itRKjQ';" alt="Are You Eligible For The Military S Unemployment Program Military Benefits Help For Veterans Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You Eligible For The Military S Unemployment Program Military Benefits Help For Veterans Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/52/c4/87/52c4870dd87d36cccf13f81ea4651991.jpg" data-lightbox="roadtrip" data-title="Here S How To Tell The Us Military S Most Elite Special Operators Apart Navy Seals Us Navy Seals United States Navy Seals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/52/c4/87/52c4870dd87d36cccf13f81ea4651991.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNiyHflqvnQ4tOMhXjy9wPLpNMPClKT2wn4A';" alt="Here S How To Tell The Us Military S Most Elite Special Operators Apart Navy Seals Us Navy Seals United States Navy Seals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S How To Tell The Us Military S Most Elite Special Operators Apart Navy Seals Us Navy Seals United States Navy Seals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="RpNDe2bEkvzw0M" data-lightbox="roadtrip" data-title="Https Www Navymutual Org Tools Survivor Benefits Plan Presentation">
+											<img class="card-img v-image ads-img " src="RpNDe2bEkvzw0M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG_03vDrCcReQqz8f-UGebBrnDdowlZvylLg';" alt="Https Www Navymutual Org Tools Survivor Benefits Plan Presentation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Navymutual Org Tools Survivor Benefits Plan Presentation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/c7/7b/cbc77b807995964817a5e35d398c4a83.jpg" data-lightbox="roadtrip" data-title="5 Military Spouse Stereotypes That Might Actually Be True Military Spouse Military Wife Life Military Spouse Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/c7/7b/cbc77b807995964817a5e35d398c4a83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjVo2CxbuWk2stGxiBwX4xh458DAkupqq7gg';" alt="5 Military Spouse Stereotypes That Might Actually Be True Military Spouse Military Wife Life Military Spouse Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Military Spouse Stereotypes That Might Actually Be True Military Spouse Military Wife Life Military Spouse Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/5d/03/055d038a5613a0ab39c7d5c44f5b6c9d.jpg" data-lightbox="roadtrip" data-title="Blue Star Mentoring Partnership How To Improve Relationship Mentor Social Activities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/5d/03/055d038a5613a0ab39c7d5c44f5b6c9d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZn2wRCsf-RT9hNlD_206Ept7cTeEUTMPebw';" alt="Blue Star Mentoring Partnership How To Improve Relationship Mentor Social Activities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Blue Star Mentoring Partnership How To Improve Relationship Mentor Social Activities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.everycrsreport.com/reports/RL31664.png" data-lightbox="roadtrip" data-title="The Military Survivor Benefit Plan A Description Of Its Provisions Everycrsreport Com">
+											<img class="card-img v-image ads-img " src="https://www.everycrsreport.com/reports/RL31664.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp9dew_GgIL4kCHkIpMBwwE6gw0G6kjsFYyg';" alt="The Military Survivor Benefit Plan A Description Of Its Provisions Everycrsreport Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Military Survivor Benefit Plan A Description Of Its Provisions Everycrsreport Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/4b/d3/634bd3a58bc178d391c55d1dfead196b.png" data-lightbox="roadtrip" data-title="Pin On Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/4b/d3/634bd3a58bc178d391c55d1dfead196b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8eeA8bi4l1kGyIKhv-UlDUDdug9IMzQcYHA';" alt="Pin On Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://themilitarywallet.com/wp-content/uploads/2016/06/military-survivor-benefit-plan-sbp-249x166.jpg" data-lightbox="roadtrip" data-title="Military Survivors Benefits Guide For Survivors Dependents">
+											<img class="card-img v-image ads-img " src="https://themilitarywallet.com/wp-content/uploads/2016/06/military-survivor-benefit-plan-sbp-249x166.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY4gB-INFWDfU-reuE5lKnI_-WxEAVQe2znw';" alt="Military Survivors Benefits Guide For Survivors Dependents">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Survivors Benefits Guide For Survivors Dependents</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mlxed8lqslwu.i.optimole.com/6SXKcrM-3v0X00ms/w:687/h:402/q:auto/https://usvetwealth.com/wp-content/uploads/2020/06/Screen-Shot-2020-06-08-at-4.34.56-PM.png" data-lightbox="roadtrip" data-title="How Not To Calculate Military Retirement Pay Us Vetwealth">
+											<img class="card-img v-image ads-img " src="https://mlxed8lqslwu.i.optimole.com/6SXKcrM-3v0X00ms/w:687/h:402/q:auto/https://usvetwealth.com/wp-content/uploads/2020/06/Screen-Shot-2020-06-08-at-4.34.56-PM.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC_Rn5rOzwvrwY2En12SGk9oL8TWooYOJr5A';" alt="How Not To Calculate Military Retirement Pay Us Vetwealth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Not To Calculate Military Retirement Pay Us Vetwealth</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-spouse-exempt-from-state-taxes-virginia.html">Military Spouse Exempt From State Taxes Virginia</a></li>
+													<li class="list-group-item"><a href="/military-spouse-federal-resume.html">Military Spouse Federal Resume</a></li>
+													<li class="list-group-item"><a href="/military-spouse-federal-employment.html">Military Spouse Federal Employment</a></li>
+													<li class="list-group-item"><a href="/military-spouse-health-insurance-after-divorce.html">Military Spouse Health Insurance After Divorce</a></li>
+													<li class="list-group-item"><a href="/military-spouse-immigration-process.html">Military Spouse Immigration Process</a></li>
+													<li class="list-group-item"><a href="/military-spouse-friendship-quotes.html">Military Spouse Friendship Quotes</a></li>
+													<li class="list-group-item"><a href="/military-spouse-id-card-application.html">Military Spouse Id Card Application</a></li>
+													<li class="list-group-item"><a href="/military-spouse-free-passport.html">Military Spouse Free Passport</a></li>
+													<li class="list-group-item"><a href="/military-spouse-going-away-gift-ideas.html">Military Spouse Going Away Gift Ideas</a></li>
+													<li class="list-group-item"><a href="/military-spouse-grants-and-scholarships.html">Military Spouse Grants And Scholarships</a></li>
+													<li class="list-group-item"><a href="/military-spouse-hiring-program.html">Military Spouse Hiring Program</a></li>
+													<li class="list-group-item"><a href="/military-spouse-financial-aid.html">Military Spouse Financial Aid</a></li>
+													<li class="list-group-item"><a href="/military-spouse-hiring-preference.html">Military Spouse Hiring Preference</a></li>
+													<li class="list-group-item"><a href="/military-spouse-flight-discounts.html">Military Spouse Flight Discounts</a></li>
+													<li class="list-group-item"><a href="/military-spouse-hardest-job.html">Military Spouse Hardest Job</a></li>
+													<li class="list-group-item"><a href="/military-spouse-first-deployment.html">Military Spouse First Deployment</a></li>
+													<li class="list-group-item"><a href="/military-spouse-farewell-gift-ideas.html">Military Spouse Farewell Gift Ideas</a></li>
+													<li class="list-group-item"><a href="/military-spouse-entitlements-during-separation.html">Military Spouse Entitlements During Separation</a></li>
+													<li class="list-group-item"><a href="/military-spouse-free-certification.html">Military Spouse Free Certification</a></li>
+													<li class="list-group-item"><a href="/military-spouse-free-drinks.html">Military Spouse Free Drinks</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

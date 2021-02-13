@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Spouse Business Association - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Spouse Business Association",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/66/7b/51/667b5169ba42e999618762bc60946ba5.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+spouse+business+association",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Spouse Business Association</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">AMSE Association of Military Spouse Entrepreneurs connects Military Spouse entrepreneurs with the tools and resources needed to become successful in launching and growing their businesses. Here S What You Need To Know About Starting A Business National Military Family Association. Small Business Administration. <br>				
+			</p>
+										<a class="badge badge-danger" href="/my-husband-and-i-have-very-different-political-views.html">my husband and i have very different political views</a>
+											<a class="badge badge-light" href="/my-husband-cheated-on-me-for-4-years.html">my husband cheated on me for 4 years</a>
+											<a class="badge badge-warning" href="/my-husband-betrayed-me-quotes.html">my husband betrayed me quotes</a>
+											<a class="badge badge-dark" href="/my-ex-spouse-passed-away-social-security.html">my ex spouse passed away social security</a>
+											<a class="badge badge-warning" href="/my-future-spouse-astrology.html">my future spouse astrology</a>
+											<a class="badge badge-dark" href="/my-ex-wife-wont-talk-to-me-anymore.html">my ex wife wont talk to me anymore</a>
+											<a class="badge badge-primary" href="/my-ex-partner-wont-let-me-see-my-child.html">my ex partner wont let me see my child</a>
+											<a class="badge badge-primary" href="/my-husband-cheated-on-me-during-pregnancy.html">my husband cheated on me during pregnancy</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to pay a visit to the right site.  Our website gives you hints for seeing the maximum quality video and image content, search and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/cc/0c/20cc0cc3a01ac51d5d1233230dd7e633.jpg" data-lightbox="roadtrip" data-title="New Affiliate Created Called Military Spouse Owned Business Giving Military Spouses Who Own Businesses T Military Spouse Veteran Owned Business Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/cc/0c/20cc0cc3a01ac51d5d1233230dd7e633.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfS2yNHAMvynRHoaoRiyQlZsfrFH4ydwcoGQ';" alt="New Affiliate Created Called Military Spouse Owned Business Giving Military Spouses Who Own Businesses T Military Spouse Veteran Owned Business Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Affiliate Created Called Military Spouse Owned Business Giving Military Spouses Who Own Businesses T Military Spouse Veteran Owned Business Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/c9/4c/16c94c68d70b939914df2387fd63f8f2.jpg" data-lightbox="roadtrip" data-title="Thank You Military Spouse Business Association For Telling Your Members About Our App Calldibsapp Milspouse Milso Milkids M Smartphone Apps Military App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/c9/4c/16c94c68d70b939914df2387fd63f8f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkQozr0n6fH5APH6Ira44utUvf9Vy149h-SQ';" alt="Thank You Military Spouse Business Association For Telling Your Members About Our App Calldibsapp Milspouse Milso Milkids M Smartphone Apps Military App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thank You Military Spouse Business Association For Telling Your Members About Our App Calldibsapp Milspouse Milso Milkids M Smartphone Apps Military App</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/1d/28/f81d281ef3af526cd2301422d6676415.jpg" data-lightbox="roadtrip" data-title="Milspousebiz Org Military Spouse Finding A New Job Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/1d/28/f81d281ef3af526cd2301422d6676415.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTCj94bj6hNT6GuJ_1ryJELn9Ex3Lrmryo5w';" alt="Milspousebiz Org Military Spouse Finding A New Job Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Milspousebiz Org Military Spouse Finding A New Job Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/c0/5a/f2c05ad2f58a66d867ebe811ab6b36f1.jpg" data-lightbox="roadtrip" data-title="Military Spouse Owned Businesses Military Spouse Military Spouse Career Military Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/c0/5a/f2c05ad2f58a66d867ebe811ab6b36f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6o0kT7_fUZe0pGUe0MNuyFnLFEHOzN-jtcQ';" alt="Military Spouse Owned Businesses Military Spouse Military Spouse Career Military Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Owned Businesses Military Spouse Military Spouse Career Military Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/90/c0/1e90c0e4f19e4bb2461223847c87005d.png" data-lightbox="roadtrip" data-title="Spouse Scholarships National Military Family Association Military Spouse Scholarships Military Family Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/90/c0/1e90c0e4f19e4bb2461223847c87005d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn6vBuBDM1xFTmf5qvCGdorCfvI2haUI6ahg';" alt="Spouse Scholarships National Military Family Association Military Spouse Scholarships Military Family Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spouse Scholarships National Military Family Association Military Spouse Scholarships Military Family Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/01/85/d8018544ae0100189486a51c130d99ea.png" data-lightbox="roadtrip" data-title="How Tailwind Can Up Your Pinterest Game Save You Time As An Entrepreneur In 2021 Entrepreneur Save Yourself Tailwind App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/01/85/d8018544ae0100189486a51c130d99ea.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO9Qpz3_lW5Qe1xZrR0bH4rHRlUJZNVMLmpQ';" alt="How Tailwind Can Up Your Pinterest Game Save You Time As An Entrepreneur In 2021 Entrepreneur Save Yourself Tailwind App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Tailwind Can Up Your Pinterest Game Save You Time As An Entrepreneur In 2021 Entrepreneur Save Yourself Tailwind App</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e9/e5/c2/e9e5c220d7e0d3a1e860e8cca5557f0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO9Qpz3_lW5Qe1xZrR0bH4rHRlUJZNVMLmpQ';" alt="How Tailwind Can Up Your Pinterest Game Save You Time As An Entrepreneur In 2021 Entrepreneur Save Yourself Tailwind App">
+										<div class="card-body">
+						<h3 class="h5"><b>The companys filing status is listed as 00 Active and its File Number is F200779-9.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military spouse business association</strong>. 
+								
+																	Says an awesome military spouse owned business and spouse made products Megan H. 
+																	They bring diverse perspectives and innovative ways of thinking. 
+																	MSBAs mission is to offer tools and resources to encourage a Military Spouse entrepreneur through the military lifestyle in order to obtain business success. 
+																	Services include business planning workshops business concept assessments one-on-one entrepreneur counseling and mentorship. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Assoc Of Military Spouse Entrepreneurs. 
+																	Company profile page for Military Spouse Business Association including stock price company news press releases executives board members and contact information. 
+																	We want to shine a light on these military spouses who are changing the world through entrepreneurship. 
+																	The SBA also partners with the Department of Defense to deliver quarterly webinars for aspiring military spouse entrepreneurs and our SBA district offices and resource partners provide counseling and training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans Business Outreach Center Program. 
+																	The Association of Military Spouse Entrepreneurs AMSE is founded by Moni Jefferson and Flossie Hall in the summer of 2019. 
+																	AMSE is an Exclusive Community for Military Spouse Entrepreneurs to Learn How to Launch Build or Scale Their Own Business. 
+																	Military Spouse Business Association is a Virginia Foreign Corporation filed on October 2 2015. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MSBA promotes Military Spouse-owned businesses in our communities and online facilitating that spouses ability to maintain meaningful self-employment as they follow and support their servicemember spouse. 
+																	Military Spouse Appreciation Day Today is MilitarySpouseDay or MilitarySpouseAppreciationDay. 
+																	Work From Anywhere Business Academy. 
+																	Military Veteran And Spouse Businesses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chamber of Commerce Military Spouse Business Association MSBA is virtual and supports military spouse entrepreneurs in overcoming the additional odds of building businesses and producing family income wherever the military assignment may take them. 
+																	Military Spouse Owned Business is part of the Veteran Owned Business network and the American Veteran Owned Small Business Association. 
+																	We are a specialised recruitment agency bridging a gap between employers and military spouses - a hugely under-utilised pool of talent. 
+																	If you are a progressive business that values dedication hardworking and tangible value to your company we can help you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Says I absolutely love being able to have a piece of history or unit pride with something that can be worn fancied up like my brooch for balls or my dressed down like my WWI button necklace. 
+																	13 Resources for military spouses 1. 
+																	The Registered Agent on file for this company is Corporation Service Company and is located at Bank Of America Center 16th Fl 1111 E Main St Richmond VA 23219-0000. 
+																	Small Business Association 2020 Military Spouse Entrepreneur Summit The Patriot Belle. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Business As A Military Spouse and have it move with you A webinar series brought to you by the Department of Defense. 
+																	Featured Resource Military Spouse Business Association Nextgen Milspouse. 
+																	Giving military spouses who own businesses the support they deserve. 
+																	Flossie and Moni connected through the power of social networking and their love for military spouse advocacy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MSBA Military Spouse Business Association Americas Military Family Chamber of Commerce announces membership in and partnership with US. 
+																	Military Spouse Business Academy. 
+																	A program developed by the Military Spouse Business Association that helps educate military spouses service members and veterans on how to start their own business. 
+																	At StreetShares were honored to support veterans and military spouse business owners because we understand the unique challenges the military community faces when it comes to career development entrepreneurship and business ownership. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Spouse Entrepreneur Guide Stars and Stripes has partnered with the Association of Military Spouse Entrepreneurs AMSE for the first-ever Military Spouse Entrepreneur Guide. 
+																	This guide features multiple topics including why spouses should choose entrepreneurship how to get started and key resources to help military spouse. 
+																	The Small Business Administrations Veterans Business Outreach Center VBOC Program provides free business training and entrepreneurial resources to transitioning servicemembers National Guard and Reserve servicemembers veterans and military spouses. 
+																	The Military Spouse Business Associations Mission. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Association of Military Spouse Entrepreneurs is proud to represent and support our incredible Black Military Spouses and stand behind every single one in solidarity. 
+																	Military spouses are also eligible for training programs the SBA supports including VWISE and Bunker Labs EPIC. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/e5/c2/e9e5c220d7e0d3a1e860e8cca5557f0b.jpg" data-lightbox="roadtrip" data-title="Military Spouse Appreciation Day Military Spouse Appreciation Thankful Interview Thank You Notes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/e5/c2/e9e5c220d7e0d3a1e860e8cca5557f0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6DPkLn6iZGOYM5rxDX4m082rQmyXwKSYiuQ';" alt="Military Spouse Appreciation Day Military Spouse Appreciation Thankful Interview Thank You Notes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Appreciation Day Military Spouse Appreciation Thankful Interview Thank You Notes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/65/39/d2653963bf1564e939f72837ec4634df.png" data-lightbox="roadtrip" data-title="Veteran Owned Business Manufacturing Verified Member Badge Large Oval Veteran Owned Businesses News Vobe In 2020 Veteran Owned Business Veteran American Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/65/39/d2653963bf1564e939f72837ec4634df.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJx473Y9a0Px-H554Y7--wVzI0HApK_cnxw';" alt="Veteran Owned Business Manufacturing Verified Member Badge Large Oval Veteran Owned Businesses News Vobe In 2020 Veteran Owned Business Veteran American Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Owned Business Manufacturing Verified Member Badge Large Oval Veteran Owned Businesses News Vobe In 2020 Veteran Owned Business Veteran American Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/61/7d/06617df2a161358f304d771144f65e6b.jpg" data-lightbox="roadtrip" data-title="Holiday Badge For The American Veteran Owned Business Association Veteran Owned Business American Veterans Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/61/7d/06617df2a161358f304d771144f65e6b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyi28sBF4k0YCEUXgaemreVvVPlJKo2oyfjA';" alt="Holiday Badge For The American Veteran Owned Business Association Veteran Owned Business American Veterans Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Holiday Badge For The American Veteran Owned Business Association Veteran Owned Business American Veterans Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/50/74/115074cb98e524aabee9832a43af6ff6.png" data-lightbox="roadtrip" data-title="National Military Family Association Nmfa Has Programs And Resources Geared Toward Helping Milit Military Spouse Scholarships Military Family Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/50/74/115074cb98e524aabee9832a43af6ff6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQixNJVE80FQ0GMN6Z_VAIoAykWF1XZs7t-iA';" alt="National Military Family Association Nmfa Has Programs And Resources Geared Toward Helping Milit Military Spouse Scholarships Military Family Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Military Family Association Nmfa Has Programs And Resources Geared Toward Helping Milit Military Spouse Scholarships Military Family Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/df/e9/93dfe9f7bb386891540e87337ba1ee84.png" data-lightbox="roadtrip" data-title="5 Tips To Look Professional On A Video Conference Military Spouse Spouse Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/df/e9/93dfe9f7bb386891540e87337ba1ee84.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrBERSpdJsaF5QntKa_X7UezhVCDRuvdL9AQ';" alt="5 Tips To Look Professional On A Video Conference Military Spouse Spouse Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Tips To Look Professional On A Video Conference Military Spouse Spouse Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/7b/51/667b5169ba42e999618762bc60946ba5.png" data-lightbox="roadtrip" data-title="Pin By Moni Jefferson On Military Spouse Entrepreneur In 2020 Military Spouse School Vacation We The People">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/7b/51/667b5169ba42e999618762bc60946ba5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRP9hrEQlXAtrXseRyEP6VHKx4NuzeIKpKLQ';" alt="Pin By Moni Jefferson On Military Spouse Entrepreneur In 2020 Military Spouse School Vacation We The People">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Moni Jefferson On Military Spouse Entrepreneur In 2020 Military Spouse School Vacation We The People</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/ce/a7/4bcea722cec52f97d16fd5860abb2625.png" data-lightbox="roadtrip" data-title="Pin On Military Spouse Entrepreneur">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/ce/a7/4bcea722cec52f97d16fd5860abb2625.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZtZykytL1iOO22RXwToFDOSilZiwYI1Cjw';" alt="Pin On Military Spouse Entrepreneur">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Spouse Entrepreneur</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/dd/5e/82/dd5e82e761698ea642b0321ad899ecbc.jpg" data-lightbox="roadtrip" data-title="3 Ways To Use Instagram Stories To Grow Your Business In 2020 Growing Your Business Instagram Story Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/dd/5e/82/dd5e82e761698ea642b0321ad899ecbc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRlDRSM941rfhudpOYjqiGTihOTUrqa2rjDw';" alt="3 Ways To Use Instagram Stories To Grow Your Business In 2020 Growing Your Business Instagram Story Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 Ways To Use Instagram Stories To Grow Your Business In 2020 Growing Your Business Instagram Story Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/4e/a1/764ea106a504f7919eec9195c820757a.jpg" data-lightbox="roadtrip" data-title="Best Project Management Tools For Entrepreneurs Project Management Tools Fun Projects Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/4e/a1/764ea106a504f7919eec9195c820757a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2MVN0Q91FC_KFHOZ_YVobnhWqho_3x7vAQw';" alt="Best Project Management Tools For Entrepreneurs Project Management Tools Fun Projects Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Project Management Tools For Entrepreneurs Project Management Tools Fun Projects Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/34/45/093445cdc2f825327abd3f07d42010f2.png" data-lightbox="roadtrip" data-title="Veteran Owned Business Verified Member Veteran Owned Business Veteran Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/34/45/093445cdc2f825327abd3f07d42010f2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpMXLwZrbNmfaPAMdQ0pyiPNqKN4SCDsFlQw';" alt="Veteran Owned Business Verified Member Veteran Owned Business Veteran Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Owned Business Verified Member Veteran Owned Business Veteran Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/58/07/0958079897a8c6f4e1f6149e9e550b05.jpg" data-lightbox="roadtrip" data-title="Veteran Owned Business Contracting Series Free Series That Includes Information About Starting A Vet Veteran Owned Business Veteran Small Business Association">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/58/07/0958079897a8c6f4e1f6149e9e550b05.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgiEZz6L097a5GlErIYpiM4OMDZRlpHCbAzw';" alt="Veteran Owned Business Contracting Series Free Series That Includes Information About Starting A Vet Veteran Owned Business Veteran Small Business Association">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Owned Business Contracting Series Free Series That Includes Information About Starting A Vet Veteran Owned Business Veteran Small Business Association</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/b8/32/60b83251c621aa7eebd0e36f0eecf787.png" data-lightbox="roadtrip" data-title="American Veteran Owned Business Association Avoba Logo And Badge Veteran Owned Business Small Business Association Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/b8/32/60b83251c621aa7eebd0e36f0eecf787.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM4yrC1uhnPr63Lj1-CogsI4CNvNBtAKIvPg';" alt="American Veteran Owned Business Association Avoba Logo And Badge Veteran Owned Business Small Business Association Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">American Veteran Owned Business Association Avoba Logo And Badge Veteran Owned Business Small Business Association Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/b0/ab/0ab0abbc5141e712424e6d7ba43e3d39.jpg" data-lightbox="roadtrip" data-title="Small Businesses Run By Military Spouses Homegrown Happiness Co Small Business Military Spouse Veteran Owned Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/b0/ab/0ab0abbc5141e712424e6d7ba43e3d39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrQ5tOQsCckXPYFqcGDHKr17aG9qIapmYH7g';" alt="Small Businesses Run By Military Spouses Homegrown Happiness Co Small Business Military Spouse Veteran Owned Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Small Businesses Run By Military Spouses Homegrown Happiness Co Small Business Military Spouse Veteran Owned Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/frontier-airlines-military-dependent-baggage-fees.html">Frontier Airlines Military Dependent Baggage Fees</a></li>
+													<li class="list-group-item"><a href="/free-college-courses-for-military-spouses.html">Free College Courses For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/free-programs-for-military-spouses.html">Free Programs For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/free-tuition-for-veterans-dependents.html">Free Tuition For Veterans Dependents</a></li>
+													<li class="list-group-item"><a href="/french-military-cap-crossword-solver.html">French Military Cap Crossword Solver</a></li>
+													<li class="list-group-item"><a href="/getting-veteran-medical-records.html">Getting Veteran Medical Records</a></li>
+													<li class="list-group-item"><a href="/free-military-spouse-education.html">Free Military Spouse Education</a></li>
+													<li class="list-group-item"><a href="/free-college-for-veteran-dependents.html">Free College For Veteran Dependents</a></li>
+													<li class="list-group-item"><a href="/getting-a-divorce-in-the-military-overseas.html">Getting A Divorce In The Military Overseas</a></li>
+													<li class="list-group-item"><a href="/free-college-tuition-for-disabled-veterans-dependents.html">Free College Tuition For Disabled Veterans Dependents</a></li>
+													<li class="list-group-item"><a href="/free-college-tuition-for-veterans-dependents-in-california.html">Free College Tuition For Veterans Dependents In California</a></li>
+													<li class="list-group-item"><a href="/french-military-hat-names.html">French Military Hat Names</a></li>
+													<li class="list-group-item"><a href="/georgia-civil-war-service-records-of-confederate-soldiers.html">Georgia Civil War Service Records Of Confederate Soldiers</a></li>
+													<li class="list-group-item"><a href="/french-military-cap-crossword-clue-4-letters.html">French Military Cap Crossword Clue 4 Letters</a></li>
+													<li class="list-group-item"><a href="/free-college-money-for-military-dependents.html">Free College Money For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/former-spouse-military-retirement-pay.html">Former Spouse Military Retirement Pay</a></li>
+													<li class="list-group-item"><a href="/german-military-hats-for-sale.html">German Military Hats For Sale</a></li>
+													<li class="list-group-item"><a href="/former-spouse-military-retirement-pay-taxes.html">Former Spouse Military Retirement Pay Taxes</a></li>
+													<li class="list-group-item"><a href="/free-korean-war-veteran-records.html">Free Korean War Veteran Records</a></li>
+													<li class="list-group-item"><a href="/free-college-tuition-for-veterans-dependents-in-texas.html">Free College Tuition For Veterans Dependents In Texas</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

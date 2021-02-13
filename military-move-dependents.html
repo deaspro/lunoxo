@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Move Dependents - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Move Dependents",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/a9/92/3a/a9923a8a5d5f6012775a020c5bc717a3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+move+dependents",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Move Dependents</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">How It Works If a military member is moved on PCS orders to a location where dependents are not authorized then the military member must inform their branch of service where their dependents are. Occupancy of government-owned or -leased unaccompanied housing if a spouse or dependents relocate at a time that differs from the service members arrival to an assigned station. The amount of household goods you are allowed to move is the same--it still depends on your final rank when you separate or retire from active military service. <br>				
+			</p>
+										<a class="badge badge-danger" href="/how-to-cut-military-fade.html">how to cut military fade</a>
+											<a class="badge badge-secondary" href="/how-to-deal-with-a-partner-who-lacks-empathy.html">how to deal with a partner who lacks empathy</a>
+											<a class="badge badge-dark" href="/how-to-donate-used-clothes-to-salvation-army.html">how to donate used clothes to salvation army</a>
+											<a class="badge badge-info" href="/how-to-deal-with-uncaring-husband.html">how to deal with uncaring husband</a>
+											<a class="badge badge-success" href="/how-to-court-your-husband.html">how to court your husband</a>
+											<a class="badge badge-secondary" href="/how-to-deal-with-name-calling-in-a-relationship.html">how to deal with name calling in a relationship</a>
+											<a class="badge badge-light" href="/how-to-deal-with-jealousy-husband.html">how to deal with jealousy husband</a>
+											<a class="badge badge-secondary" href="/how-to-deal-with-your-partners-anxiety-and-depression.html">how to deal with your partners anxiety and depression</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the right site.  Our site gives you suggestions for viewing the maximum quality video and picture content, search and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, so we recommend this video for you to view.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/f8/4d/ccf84de5a5921cc3b1244ae4ac15f9e9.jpg" data-lightbox="roadtrip" data-title="7 Deals To Remember When Pcs Ing Military Move Military Discounts Military Lifestyle">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/f8/4d/ccf84de5a5921cc3b1244ae4ac15f9e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi8Fd1xZS3L-ntUvPhwu7-VLME3wCuB-sA8w&amp;ec=45774421';" alt="7 Deals To Remember When Pcs Ing Military Move Military Discounts Military Lifestyle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Deals To Remember When Pcs Ing Military Move Military Discounts Military Lifestyle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/41/40/ff41406ad94b17163d5b66432063b65f.png" data-lightbox="roadtrip" data-title="Home Is Where The Army Sends Me Military Appreciation Home Decor In 2020 Military Appreciation Appreciation Signs Decor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/41/40/ff41406ad94b17163d5b66432063b65f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbcFBUvR41Us2Hlnj33_wXjSR7KvG05N7r8w&amp;ec=45774421';" alt="Home Is Where The Army Sends Me Military Appreciation Home Decor In 2020 Military Appreciation Appreciation Signs Decor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Is Where The Army Sends Me Military Appreciation Home Decor In 2020 Military Appreciation Appreciation Signs Decor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/08/c1/2308c1b82d90313bf99b57f9bbdcfe4d.png" data-lightbox="roadtrip" data-title="7 Ways To Save Military Travel Discounts Discount Travel Military Move Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/08/c1/2308c1b82d90313bf99b57f9bbdcfe4d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgiaIWvqSU2WUVgjNiJbaL66Bs3el73FXC-g&amp;ec=45774421';" alt="7 Ways To Save Military Travel Discounts Discount Travel Military Move Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Ways To Save Military Travel Discounts Discount Travel Military Move Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/e7/67/afe76720a6f20916db8487f4452d2c1c.png" data-lightbox="roadtrip" data-title="Pin On Home Decor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/e7/67/afe76720a6f20916db8487f4452d2c1c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiBifEaQlUbuJabwwy44GKgN0X_RkoIK_eKQ&amp;ec=45774421';" alt="Pin On Home Decor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Home Decor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/7d/0f/ea7d0f61fb1efe1c5fc426051e460e3c.jpg" data-lightbox="roadtrip" data-title="Military Spouse Military Spouse Appreciation Military Wife Life Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/7d/0f/ea7d0f61fb1efe1c5fc426051e460e3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwJFn0Zq7GfMvtk8NOL4zhrZ96fMmhFTDyjA&amp;ec=45774421';" alt="Military Spouse Military Spouse Appreciation Military Wife Life Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Military Spouse Appreciation Military Wife Life Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/0c/31/190c31f5d7481faa9098924e31893afc.png" data-lightbox="roadtrip" data-title="Home Is Where The Army Sends Me Army Life Sign In 2020 House Warming Gifts Military Gifts Country Farmhouse Decor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/0c/31/190c31f5d7481faa9098924e31893afc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP2tINqosqE5aDV9bns6P7P1kDRIqbEzHCjA&amp;ec=45774421';" alt="Home Is Where The Army Sends Me Army Life Sign In 2020 House Warming Gifts Military Gifts Country Farmhouse Decor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Is Where The Army Sends Me Army Life Sign In 2020 House Warming Gifts Military Gifts Country Farmhouse Decor</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/4e/a2/52/4ea25280af73667d4f09adf1ff4367eb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP2tINqosqE5aDV9bns6P7P1kDRIqbEzHCjA&amp;ec=45774421';" alt="Home Is Where The Army Sends Me Army Life Sign In 2020 House Warming Gifts Military Gifts Country Farmhouse Decor">
+										<div class="card-body">
+						<h3 class="h5"><b>Military Travel PCS Move Services And Allowances House Hunting Prior to a Move.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military move dependents</strong>. 
+								
+																	Travel entitlements end when one signs in at their new duty station so whether or not one can be reimbursed for dependent travel depends on the date of the marriage. 
+																	Members who are assigned to locations where dependents are not allowed to travel at government expense such as basic training and some unaccompanied overseas assignments can live in the barracks for free and still continue to receive the housing allowance for the location of their dependents in order to provide a household for their family members. 
+																	However if you have a team of people to help you the DITY move can be a fun challenge and will definitely burn some calories for the day. 
+																	Retiring or separating service members who are relocating after taking off the uniform are entitled to benefits that differ slightly from regular change-of-station moves. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Letter-In-Lieu of Orders Note. 
+																	The military will move free of charge HHG up to the members authorized weight limit which depends on rank and whether or not the member has dependents. 
+																	Airman 1st Class Janiqua. 
+																	Need to provide a copy of your official orders to the personal property office upon receipt. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A few months before your the move to your next duty station military members are allowed. 
+																	Here are some of the moving benefits you can enjoy as a service member. 
+																	If the dependents moved to the new duty station and were not accompanied by the service member a separate DD 1351-2 must be submitted for the dependents period of travel. 
+																	If a family ERDs at government expense the servicemember becomes eligible for Basic Allowance for Housing BAH at the with dependents rate for the location where the family is to reside. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Defense provides travel and relocation allowances to assist you with moving expenses. 
+																	Determine your weight entitlement. 
+																	Up to 20000 armed forces spouses may be eligible for a new National Insurance credit if they have previously joined their partners on an overseas posting ensuring that they dont miss out on. 
+																	Travel and relocation allowances. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Peak season rates mean more money for companies helping make DoD moves more competitive in vying for the packers loaders. 
+																	Movement of Dependents and Household Goods The married military member is entitled to move their dependents and personal property to the next duty station at government expense. 
+																	When submitting a separate DD 1351-2 be sure to include all lodging receipts regardless of amount and receipts for any reimbursable expense exceeding 75. 
+																	When is assigned to a 12-month remote tour military members can move their dependents anywhere they want to live in the United States at government expense while the member is away. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Per diem reimburses you for meals and lodging while en route to your new duty station and is based on a 350-mile per day travel distance. 
+																	This housing flexibility will be offered on a space-available basis that does not displace unaccompanied service members with no dependents. 
+																	A permanent change of station PCS is military jargon for moving How you get your stuff from one corner of the country or world to another depends on where you are headed and what kind of move. 
+																	Monetary Allowance in Lieu of Transportation MALT MALT is used as mileage reimbursement for service members and their dependents during a PCS move. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The following sample family includes the servicemember spouse a thirteen year-old child. 
+																	The Personally Procured Move Program formerly Do-it-Yourself DITY Move is designed to provide the military member an alternative to move their household goods on their own. 
+																	You will be responsible for all PCS costs if your move is cancelled or destination changes prior to receipt of official orders. 
+																	The government must then pay again to relocate the dependents from where they are living to the new assignment when the member returns from the remote tour. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	TLE is an allowance given to partially offset lodging and meal expenses when a member. 
+																	The Basics of the Transitional Compensation for Abused Dependents Program The program which began in 1994 provides a monthly tax-free payment equal to the amount of the Department of Veterans. 
+																	The total per diem reimbursement on your move is the sum of the allowable per diem for each family member. 
+																	Temporary Lodging Expense TLE. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Peak season for military moves is normally mid-May to the end of August. 
+																	Your orders or letter will have a funding line your current and future duty stations and show whether you have family members or other dependents authorized to move under those orders. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/d5/5d/e4d55d492fe5e84fcc4818a12f59af8e.png" data-lightbox="roadtrip" data-title="Do You Have Pcs Orders To One Of The 10 Military Bases In Hawaii Check Out This Guide To Find Out Eve Moving To Hawaii Where Is Hawaii Military Family Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/d5/5d/e4d55d492fe5e84fcc4818a12f59af8e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfNfSrkOjXYfMkBDhbfh-EbJWinsLADVvJsQ&amp;ec=45774421';" alt="Do You Have Pcs Orders To One Of The 10 Military Bases In Hawaii Check Out This Guide To Find Out Eve Moving To Hawaii Where Is Hawaii Military Family Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do You Have Pcs Orders To One Of The 10 Military Bases In Hawaii Check Out This Guide To Find Out Eve Moving To Hawaii Where Is Hawaii Military Family Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/eb/2c/fceb2c6590893cf17b0ca03b77c93ec9.png" data-lightbox="roadtrip" data-title="Home Is Where The Army Sends Me Army Life Home Decor Sign In 2020 House Warming Gifts Army Life Country Farmhouse Decor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/eb/2c/fceb2c6590893cf17b0ca03b77c93ec9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEuwb8QvTyvynolqRKzwx28BWsjmzpul41nA&amp;ec=45774421';" alt="Home Is Where The Army Sends Me Army Life Home Decor Sign In 2020 House Warming Gifts Army Life Country Farmhouse Decor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Is Where The Army Sends Me Army Life Home Decor Sign In 2020 House Warming Gifts Army Life Country Farmhouse Decor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/61/ad/4d61ad1f20c617650531c01aa3a0ead3.jpg" data-lightbox="roadtrip" data-title="6 Things To Know About Command Sponsorship Military Wife Life Military Move Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/61/ad/4d61ad1f20c617650531c01aa3a0ead3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF-AyjJk6kaaP_i7sXTJNjS4wh9hLGSpCyrQ&amp;ec=45774421';" alt="6 Things To Know About Command Sponsorship Military Wife Life Military Move Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Things To Know About Command Sponsorship Military Wife Life Military Move Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/a2/52/4ea25280af73667d4f09adf1ff4367eb.png" data-lightbox="roadtrip" data-title="Pin On Military Life Spouse Dependents Dependas Pcs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/a2/52/4ea25280af73667d4f09adf1ff4367eb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-MM33t89p4vXEKedJXXfuVoOrYOO6Dv3S3w&amp;ec=45774421';" alt="Pin On Military Life Spouse Dependents Dependas Pcs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Life Spouse Dependents Dependas Pcs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/2e/d1/542ed137cc12498da36866a2e8393df7.jpg" data-lightbox="roadtrip" data-title="Army Acronyms Aafes Army And Air Force Exchange Service This Is The Tax Free Department Store For Military Members Retir Army Life Army Wife Duty Stations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/2e/d1/542ed137cc12498da36866a2e8393df7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDJC29Y2FwxEMn-xtvrLJXxhOysTGeDA75_w&amp;ec=45774421';" alt="Army Acronyms Aafes Army And Air Force Exchange Service This Is The Tax Free Department Store For Military Members Retir Army Life Army Wife Duty Stations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Acronyms Aafes Army And Air Force Exchange Service This Is The Tax Free Department Store For Military Members Retir Army Life Army Wife Duty Stations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/83/c9/9383c9ffb789efb22b6652f3e44121bc.jpg" data-lightbox="roadtrip" data-title="Military Pcs Move Vs Partial Dity Move Housing 1 Source Military Relocation Made Easy Housing 1 Source Pcs Military Pcs Move Military Relocation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/83/c9/9383c9ffb789efb22b6652f3e44121bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDLOQZ892mx9_MmKxxKqfUhEQ_CXscS2JoOw&amp;ec=45774421';" alt="Military Pcs Move Vs Partial Dity Move Housing 1 Source Military Relocation Made Easy Housing 1 Source Pcs Military Pcs Move Military Relocation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Pcs Move Vs Partial Dity Move Housing 1 Source Military Relocation Made Easy Housing 1 Source Pcs Military Pcs Move Military Relocation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/21/17/47/21174751231b290d2b50cd41c6eb6757.jpg" data-lightbox="roadtrip" data-title="Image Result For Pcs Orders Bank Statement Military Shows Order">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/21/17/47/21174751231b290d2b50cd41c6eb6757.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROd3gcAEPAdUkCaFHTQeaqDAr3AQ6KM562yg&amp;ec=45774421';" alt="Image Result For Pcs Orders Bank Statement Military Shows Order">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Pcs Orders Bank Statement Military Shows Order</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/41/84/a9/4184a97c529eac8df54bbec6a5c1eade.jpg" data-lightbox="roadtrip" data-title="The Virtual Classroom Is A Great Option For Active Service Members Veterans And Their Dependents Since Online Progr Online College Veteran Military Personnel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/41/84/a9/4184a97c529eac8df54bbec6a5c1eade.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnWDdQoSpoe5RIhxifpEukNbANZnG8QTHJ1g&amp;ec=45774421';" alt="The Virtual Classroom Is A Great Option For Active Service Members Veterans And Their Dependents Since Online Progr Online College Veteran Military Personnel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Virtual Classroom Is A Great Option For Active Service Members Veterans And Their Dependents Since Online Progr Online College Veteran Military Personnel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/92/3a/a9923a8a5d5f6012775a020c5bc717a3.jpg" data-lightbox="roadtrip" data-title="Not Much Is Certain About Military Life But Relocation Is Almost Assuredly One Of Them Here Are A Few Things Y Military Relocation Military Move Pcs Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/92/3a/a9923a8a5d5f6012775a020c5bc717a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh1vZn-YZLKcCFcb6qAPAbc2i47EuU9iYBkQ&amp;ec=45774421';" alt="Not Much Is Certain About Military Life But Relocation Is Almost Assuredly One Of Them Here Are A Few Things Y Military Relocation Military Move Pcs Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Not Much Is Certain About Military Life But Relocation Is Almost Assuredly One Of Them Here Are A Few Things Y Military Relocation Military Move Pcs Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/fd/66/81fd66bcbeee93c5f688fac6f88473d5.jpg" data-lightbox="roadtrip" data-title="Educational Resources For Military Dependents Vista College Military Family Education Career Training Educational Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/fd/66/81fd66bcbeee93c5f688fac6f88473d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScVHgJy-cMaf-TQ-JDhU3P3z3v4uIiaH8dgA&amp;ec=45774421';" alt="Educational Resources For Military Dependents Vista College Military Family Education Career Training Educational Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Educational Resources For Military Dependents Vista College Military Family Education Career Training Educational Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/f4/de/b1f4de52c7e54a685cd72af61e86f6d8.png" data-lightbox="roadtrip" data-title="Area Guide With All You Need To Know About Moving To San Antonio Randolph Afb Lackland Afb Or Fort Sam Houston Pcsgrades San Antonio Fort Sam Houston San">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/f4/de/b1f4de52c7e54a685cd72af61e86f6d8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRUbPt0hymr1pHywW5lFGdak_oA4LjuAJSpg&amp;ec=45774421';" alt="Area Guide With All You Need To Know About Moving To San Antonio Randolph Afb Lackland Afb Or Fort Sam Houston Pcsgrades San Antonio Fort Sam Houston San">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Area Guide With All You Need To Know About Moving To San Antonio Randolph Afb Lackland Afb Or Fort Sam Houston Pcsgrades San Antonio Fort Sam Houston San</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/d8/42/3ed842389909cba6aef47e4ebcab9eae.png" data-lightbox="roadtrip" data-title="What To Expect When You Pcs To Camp Lejeune Camp Lejeune Military Life Military Family Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/d8/42/3ed842389909cba6aef47e4ebcab9eae.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVX_oLgtt88az9OF1DVyRMlS2bEMGNNqXijQ&amp;ec=45774421';" alt="What To Expect When You Pcs To Camp Lejeune Camp Lejeune Military Life Military Family Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Expect When You Pcs To Camp Lejeune Camp Lejeune Military Life Military Family Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/73/3e/1f/733e1f2f626141fb6afb82b82db4eaaf.jpg" data-lightbox="roadtrip" data-title="Many Mil Spouses Are So Focused On Putting The Needs Of Their Family In Front Of Their Own That They Face Challenge Find A Job Military Spouse Military Move">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/73/3e/1f/733e1f2f626141fb6afb82b82db4eaaf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWvgbn4zN9zpe4o7IBCq9zc2O7-CdGITwhew&amp;ec=45774421';" alt="Many Mil Spouses Are So Focused On Putting The Needs Of Their Family In Front Of Their Own That They Face Challenge Find A Job Military Spouse Military Move">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Many Mil Spouses Are So Focused On Putting The Needs Of Their Family In Front Of Their Own That They Face Challenge Find A Job Military Spouse Military Move</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/the-good-wife-military-court-episode.html">The Good Wife Military Court Episode</a></li>
+													<li class="list-group-item"><a href="/the-army-military-human-resource-record-is-comprised-of-4-pieces.html">The Army Military Human Resource Record Is Comprised Of 4 Pieces</a></li>
+													<li class="list-group-item"><a href="/the-military-wife-blog.html">The Military Wife Blog</a></li>
+													<li class="list-group-item"><a href="/the-national-archives-and-records-service-of-south-africa-act-1996.html">The National Archives And Records Service Of South Africa Act 1996</a></li>
+													<li class="list-group-item"><a href="/the-good-wife-military-lawyer.html">The Good Wife Military Lawyer</a></li>
+													<li class="list-group-item"><a href="/the-navy-wife-gifts.html">The Navy Wife Gifts</a></li>
+													<li class="list-group-item"><a href="/the-vas-dependents-educational-assistance-program.html">The Vas Dependents Educational Assistance Program</a></li>
+													<li class="list-group-item"><a href="/the-navy-wife-creed.html">The Navy Wife Creed</a></li>
+													<li class="list-group-item"><a href="/the-national-archives-and-records-service-of-south-africa.html">The National Archives And Records Service Of South Africa</a></li>
+													<li class="list-group-item"><a href="/thanks-for-being-my-partner-quotes.html">Thanks For Being My Partner Quotes</a></li>
+													<li class="list-group-item"><a href="/the-decemberists-16-military-wives-lyrics.html">The Decemberists 16 Military Wives Lyrics</a></li>
+													<li class="list-group-item"><a href="/the-military-wife.html">The Military Wife</a></li>
+													<li class="list-group-item"><a href="/the-army-military-human-resource-record-is-comprised-of-4-pieces-select-one.html">The Army Military Human Resource Record Is Comprised Of 4 Pieces Select One</a></li>
+													<li class="list-group-item"><a href="/the-choir-military-wives-documentary.html">The Choir Military Wives Documentary</a></li>
+													<li class="list-group-item"><a href="/top-careers-for-military-spouses.html">Top Careers For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/the-army-spouse-education-assistance-program.html">The Army Spouse Education Assistance Program</a></li>
+													<li class="list-group-item"><a href="/tinker-air-force-base-contact-number.html">Tinker Air Force Base Contact Number</a></li>
+													<li class="list-group-item"><a href="/tinker-air-force-base-commissary-phone-number.html">Tinker Air Force Base Commissary Phone Number</a></li>
+													<li class="list-group-item"><a href="/the-military-wives-imdb.html">The Military Wives Imdb</a></li>
+													<li class="list-group-item"><a href="/the-navy-chief-wife-poem.html">The Navy Chief Wife Poem</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

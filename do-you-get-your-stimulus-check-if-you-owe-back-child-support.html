@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Do You Get Your Stimulus Check If You Owe Back Child Support - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Do You Get Your Stimulus Check If You Owe Back Child Support",
+  "datePublished": "2021-02-13",
+  "image": "https://media.abc10.com/assets/KTHV/images/a65f984f-b4b2-46a5-b37c-9e304f5fed74/a65f984f-b4b2-46a5-b37c-9e304f5fed74_1920x1080.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=do+you+get+your+stimulus+check+if+you+owe+back+child+support",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Do You Get Your Stimulus Check If You Owe Back Child Support</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Stimulus checks should not be taken for back child support. This is different from the CARES Act which specified that if you owed back child support your stimulus. As it currently stands the Heals Act may allow the IRS to withhold some or all of. <br>				
+			</p>
+										<a class="badge badge-primary" href="/spouse-veteran-benefits-assisted-living.html">spouse veteran benefits assisted living</a>
+											<a class="badge badge-dark" href="/spouse-education-and-career-opportunities.html">spouse education and career opportunities</a>
+											<a class="badge badge-light" href="/sscn-bkn-akun.html">sscn bkn akun</a>
+											<a class="badge badge-info" href="/spouses-level-of-education-and-duration.html">spouses level of education and duration</a>
+											<a class="badge badge-info" href="/spouse-military-burial.html">spouse military burial</a>
+											<a class="badge badge-dark" href="/sscn-bkn-aceh-tamiang.html">sscn bkn aceh tamiang</a>
+											<a class="badge badge-danger" href="/spouse-military-pension.html">spouse military pension</a>
+											<a class="badge badge-warning" href="/spouse-preference-for-retired-military.html">spouse preference for retired military</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to visit the ideal site.  Our site provides you with suggestions for seeing the highest quality video and image content, search and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this movie for you to see.  You can also bring about supporting this website by sharing videos and images that you enjoy on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.abc10.com/assets/KTHV/images/a65f984f-b4b2-46a5-b37c-9e304f5fed74/a65f984f-b4b2-46a5-b37c-9e304f5fed74_1920x1080.jpg" data-lightbox="roadtrip" data-title="Verify Will Parents Who Owe Child Support Get A Stimulus Check Abc10 Com">
+											<img class="card-img v-image ads-img " src="https://media.abc10.com/assets/KTHV/images/a65f984f-b4b2-46a5-b37c-9e304f5fed74/a65f984f-b4b2-46a5-b37c-9e304f5fed74_1920x1080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpGNrR8Z0_5ltfJcLmfGzlkmztzvv8yaaO5A';" alt="Verify Will Parents Who Owe Child Support Get A Stimulus Check Abc10 Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Verify Will Parents Who Owe Child Support Get A Stimulus Check Abc10 Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/67/25/f067252d5a877df5fcc97938a30759e4.png" data-lightbox="roadtrip" data-title="If Owe Child Support You Won T Get A Stimulus Check In 2020 Child Support Supportive Child Support Payments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/67/25/f067252d5a877df5fcc97938a30759e4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRirOWjmoEs0YTWBhE8wAgH8bXsQnB4IU46A';" alt="If Owe Child Support You Won T Get A Stimulus Check In 2020 Child Support Supportive Child Support Payments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If Owe Child Support You Won T Get A Stimulus Check In 2020 Child Support Supportive Child Support Payments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cnet1.cbsistatic.com/img/MadQyrhBKZ72QQGtjViHPthxP1s=/940x0/2020/10/15/6c2600e8-c1b5-45b1-a4a1-a4071e0d3180/money-dollars-bills-sock-american-flag.jpg" data-lightbox="roadtrip" data-title="Second Stimulus Checks And Child Support Some Parents Can Get 600 Each Per Dependent Cnet">
+											<img class="card-img v-image ads-img " src="https://cnet1.cbsistatic.com/img/MadQyrhBKZ72QQGtjViHPthxP1s=/940x0/2020/10/15/6c2600e8-c1b5-45b1-a4a1-a4071e0d3180/money-dollars-bills-sock-american-flag.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRinP4dMwGo54VrhLt7xelmU3gB_e8TY21ByA';" alt="Second Stimulus Checks And Child Support Some Parents Can Get 600 Each Per Dependent Cnet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Second Stimulus Checks And Child Support Some Parents Can Get 600 Each Per Dependent Cnet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/d3/2f/f7d32ff6d28cc2509ef2a05134080003.jpg" data-lightbox="roadtrip" data-title="5 Ways Your Second Stimulus Check Could Be Smaller Than Other People S Money Owe Money Back Child Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/d3/2f/f7d32ff6d28cc2509ef2a05134080003.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY9ZLHxDuSNFCx8y1Ha6H1i30jtGTemDUWlA';" alt="5 Ways Your Second Stimulus Check Could Be Smaller Than Other People S Money Owe Money Back Child Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Ways Your Second Stimulus Check Could Be Smaller Than Other People S Money Owe Money Back Child Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/rHJrSbAQC3g/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Household Stimulus Check Intercepted Over Child Support Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/rHJrSbAQC3g/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKKgguZJa-QeH8FMrrb6AD-H3Z-BWKO-RoLQ';" alt="Household Stimulus Check Intercepted Over Child Support Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Household Stimulus Check Intercepted Over Child Support Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/R9H6PZaaj4I/hqdefault.jpg" data-lightbox="roadtrip" data-title="Will Parents Who Owe Back Child Support Get A Stimulus Check Verify Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/R9H6PZaaj4I/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2FBkPt9xGP-NPq5xZ9GS0hqf-7cU1HA1_QA';" alt="Will Parents Who Owe Back Child Support Get A Stimulus Check Verify Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Will Parents Who Owe Back Child Support Get A Stimulus Check Verify Youtube</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://media.11alive.com/assets/WCNC/images/0d11db50-190b-477a-b34e-0b4887a544c8/0d11db50-190b-477a-b34e-0b4887a544c8_1920x1080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2FBkPt9xGP-NPq5xZ9GS0hqf-7cU1HA1_QA';" alt="Will Parents Who Owe Back Child Support Get A Stimulus Check Verify Youtube">
+										<div class="card-body">
+						<h3 class="h5"><b>The second stimulus check has passed and a third payment may well be ahead.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Do you get your stimulus check if you owe back child support</strong>. 
+								
+																	If you owe back child support then your stimulus check would be withheld or you would get a reduced amount on your stimulus check. 
+																	The federal government will garnish your stimulus check if you owe back child support. 
+																	The first set of direct payments from the COVID-19 economic relief plan last spring allowed for garnishment of stimulus checks to pay back child support. 
+																	If You Owe Child Support Your Stimulus Check Could Be Garnished Parents who received a stimulus check were given 500 for each child in addition to 1200 for possible lost wages due to the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Not all people who dont pay or are behind on child support are deadbeat parents. 
+																	Theres a lot to know in this in-between space including the current situation with stimulus money that may or may not. 
+																	If I owe child support does the stimulus money go to my ex. 
+																	If you see something. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Congress continues to debate the latest coronavirus relief plan with the Heals Act and Heroes Act on the table. 
+																	You also wont have to repay a stimulus payment if. 
+																	But there are certain exceptions. 
+																	If you owe back child support your stimulus payment cannot be garnished to pay that debt. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The rules for the second stimulus check are different than they were the first time around. 
+																	Now that Congress has passed a bill for a second round of coronavirus relief Americans are wondering if and when they will receive a stimulus check and for how much. 
+																	If someone does owe back child support and theyre due a stimulus payment they will offset that check for the amount that you owe says Christina Taylor head of operations at Credit Karma Tax. 
+																	The second round of direct payments will be different from the first in several ways. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For the most part your stimulus money is yours to use as you please. 
+																	Under the CARES Act thats the first stimulus check if you owed more than 150 in overdue. 
+																	One thing thats been clear. 
+																	Although the CARES Act has suspended debts like belated students loans and back taxes that caused the garnishment of tax refunds it doesnt apply to owed back child support. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With the 1200 payments that went out earlier this year people who owed child support had their stimulus checks seized. 
+																	This will not be the case for the second. 
+																	The IRS said a payment you get this year wont reduce your tax refund in 2021 or increase the amount you owe when you file your 2020 tax return. 
+																	But if you are behind on child support payments it is a different. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But its not supposed to take stimulus payments from your current spouse. 
+																	If you owe back taxes or if you are behind on student loans the government still intends to send you a COVID-19 stimulus check. 
+																	The stimulus payment that is reduced or withheld by the child support owed will go to the appropriate collecting office for the. 
+																	Sometimes s happens in life and we are forced to miss. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The IRS said if you owe back taxes or have a payment plan with the IRS or you owe another state or federal debt the IRS said it will not garnish your stimulus check. 
+																	Or that if someone owes you child support and their payment is seized by the IRS youll get it. 
+																	It is the second-largest piece of recovery legislation ever passed in the US after the CARES Act. 
+																	So we can verify if you owe back child support dont expect your full payment from the government to hit your bank account. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to the Texas Attorney General the federal stimulus rebate payments will be subject to the Federal Tax Refund Offset program meaning those who owe child support may see their stimulus. 
+																	It will be collected from your stimulus check. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fox8.com/wp-content/uploads/sites/12/2020/04/99BBC623577840C2A36E780B8DB02234.jpg" data-lightbox="roadtrip" data-title="You May Not Get A Stimulus Check If You Owe In Child Support">
+											<img class="card-img v-image ads-img " src="https://fox8.com/wp-content/uploads/sites/12/2020/04/99BBC623577840C2A36E780B8DB02234.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStEFoM_apwo5K_1ubUDWF3-QQr9qCI2LAQig';" alt="You May Not Get A Stimulus Check If You Owe In Child Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You May Not Get A Stimulus Check If You Owe In Child Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/nzsNVnVhc8A/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Will My Stimulus Check Be Affected If I Owe Child Support Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/nzsNVnVhc8A/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwzR-Bw-6w8EzKjhHJWHTlUV_cGHBAa_KTEg';" alt="Will My Stimulus Check Be Affected If I Owe Child Support Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Will My Stimulus Check Be Affected If I Owe Child Support Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://x-default-stgec.uplynk.com/ausw/slices/4f0/7fed36643eb2467f9bc52626aec24432/4f0db88bc29f4bc8b936341ad6c1a671/poster_83f533e0c24343e4bd6e95524329ba66.jpg" data-lightbox="roadtrip" data-title="Ways 2 Help Household Stimulus Check Intercepted Over Child Support">
+											<img class="card-img v-image ads-img " src="https://x-default-stgec.uplynk.com/ausw/slices/4f0/7fed36643eb2467f9bc52626aec24432/4f0db88bc29f4bc8b936341ad6c1a671/poster_83f533e0c24343e4bd6e95524329ba66.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHpXGx9qF-fpYiVcDfzPILaMK7bDwDsunyaA';" alt="Ways 2 Help Household Stimulus Check Intercepted Over Child Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ways 2 Help Household Stimulus Check Intercepted Over Child Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kinglawoffices.com/wp-content/uploads/2020/05/Stimulus-check.jpeg" data-lightbox="roadtrip" data-title="Stimulus Checks And Child Support King Law">
+											<img class="card-img v-image ads-img " src="https://kinglawoffices.com/wp-content/uploads/2020/05/Stimulus-check.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhtStG1wqE6BIyB8B0Xp1EliImnXsvuaPMw';" alt="Stimulus Checks And Child Support King Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stimulus Checks And Child Support King Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.11alive.com/assets/WCNC/images/0d11db50-190b-477a-b34e-0b4887a544c8/0d11db50-190b-477a-b34e-0b4887a544c8_1920x1080.jpg" data-lightbox="roadtrip" data-title="Second Stimulus Check Frequently Asked Questions 11alive Com">
+											<img class="card-img v-image ads-img " src="https://media.11alive.com/assets/WCNC/images/0d11db50-190b-477a-b34e-0b4887a544c8/0d11db50-190b-477a-b34e-0b4887a544c8_1920x1080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT476CHV9i2xbMrXCgIQxFKgk2OFv79FT3etw';" alt="Second Stimulus Check Frequently Asked Questions 11alive Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Second Stimulus Check Frequently Asked Questions 11alive Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=3795403440474967" data-lightbox="roadtrip" data-title="If You Owe Back Child Support You Child Support You Owe It Pay It Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=3795403440474967" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2MaLQbeHNPBsDtYYtN_VB4aLB8HibIOQkhw';" alt="If You Owe Back Child Support You Child Support You Owe It Pay It Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Owe Back Child Support You Child Support You Owe It Pay It Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/f8KJhdATPmY/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Stimulus Checks And Child Support Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/f8KJhdATPmY/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCuGJglzbyUurpAbsESDDNOlmOoMXd4OVNg';" alt="Stimulus Checks And Child Support Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stimulus Checks And Child Support Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.newscentermaine.com/assets/KING/images/8d975580-d7e4-4bd5-b13f-b851c2f1f8a3/8d975580-d7e4-4bd5-b13f-b851c2f1f8a3_1920x1080.jpg" data-lightbox="roadtrip" data-title="Owed Child Support And Stimulus Checks Your Top Money Questions Answered Newscentermaine Com">
+											<img class="card-img v-image ads-img " src="https://media.newscentermaine.com/assets/KING/images/8d975580-d7e4-4bd5-b13f-b851c2f1f8a3/8d975580-d7e4-4bd5-b13f-b851c2f1f8a3_1920x1080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF74PgHrOpSRIBFLO4AP236xUfGNy059w7OA';" alt="Owed Child Support And Stimulus Checks Your Top Money Questions Answered Newscentermaine Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Owed Child Support And Stimulus Checks Your Top Money Questions Answered Newscentermaine Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://gray-wndu-prod.cdn.arcpublishing.com/resizer/rS6Q8HhBp1hqhnaJSG5ZfwXxZ_k=/800x533/smart/cloudfront-us-east-1.images.arcpublishing.com/gray/AOQPKU2IFNLZJPZ3E3IUJJQRUQ.jpg" data-lightbox="roadtrip" data-title="Past Due Child Support To Be Collected From Stimulus Payments">
+											<img class="card-img v-image ads-img " src="https://gray-wndu-prod.cdn.arcpublishing.com/resizer/rS6Q8HhBp1hqhnaJSG5ZfwXxZ_k=/800x533/smart/cloudfront-us-east-1.images.arcpublishing.com/gray/AOQPKU2IFNLZJPZ3E3IUJJQRUQ.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdV0P7wOZN5Tk6wl3SuSq10VGp0EeGtRxdpg';" alt="Past Due Child Support To Be Collected From Stimulus Payments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Past Due Child Support To Be Collected From Stimulus Payments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/71/1a/04/711a048f53bcf28ce407c7e54a689c4f.jpg" data-lightbox="roadtrip" data-title="Pin By John Davis On Stuff In 2020 Tax Refund Back Child Support Supportive">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/71/1a/04/711a048f53bcf28ce407c7e54a689c4f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWsujr295DnvVvlwZ4YQSwLPMWQLabx69u5Q';" alt="Pin By John Davis On Stuff In 2020 Tax Refund Back Child Support Supportive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By John Davis On Stuff In 2020 Tax Refund Back Child Support Supportive</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/59/57/8b59578ddc66c99927530ac7d6452a12.jpg" data-lightbox="roadtrip" data-title="Pin On Stimulus Checks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/59/57/8b59578ddc66c99927530ac7d6452a12.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ssrv3-MoDks5NTJhyvCwBgezT8E-0gegDg';" alt="Pin On Stimulus Checks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Stimulus Checks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.abcotvs.com/dip/images/6100114_money.bmp" data-lightbox="roadtrip" data-title="Coronavirus Stimulus Check Who Is Eligible Money Could Be Withheld For People Who Owe Child Support Abc7 Chicago">
+											<img class="card-img v-image ads-img " src="https://cdn.abcotvs.com/dip/images/6100114_money.bmp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjodHUKoaOFPdPeWawXgC84NpFBYIIkJkE0g';" alt="Coronavirus Stimulus Check Who Is Eligible Money Could Be Withheld For People Who Owe Child Support Abc7 Chicago">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus Stimulus Check Who Is Eligible Money Could Be Withheld For People Who Owe Child Support Abc7 Chicago</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://specials-images.forbesimg.com/imageserve/880861062/960x0.jpg?fit=scale" data-lightbox="roadtrip" data-title="How Do Child Support Offsets Affect Tax Refunds And Stimulus Checks">
+											<img class="card-img v-image ads-img " src="https://specials-images.forbesimg.com/imageserve/880861062/960x0.jpg?fit=scale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQheYFT54BDFx0YKwB2GnFSOD7rgsOytznkVw';" alt="How Do Child Support Offsets Affect Tax Refunds And Stimulus Checks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Do Child Support Offsets Affect Tax Refunds And Stimulus Checks</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-to-get-warrant-officer-army.html">How To Get Warrant Officer Army</a></li>
+													<li class="list-group-item"><a href="/how-to-have-a-career-as-a-military-spouse.html">How To Have A Career As A Military Spouse</a></li>
+													<li class="list-group-item"><a href="/how-to-know-if-your-spouse-is-bipolar.html">How To Know If Your Spouse Is Bipolar</a></li>
+													<li class="list-group-item"><a href="/how-to-know-my-marriage-prediction.html">How To Know My Marriage Prediction</a></li>
+													<li class="list-group-item"><a href="/how-to-know-if-your-husband-is-gaslighting-you.html">How To Know If Your Husband Is Gaslighting You</a></li>
+													<li class="list-group-item"><a href="/how-to-predict-marriage-time.html">How To Predict Marriage Time</a></li>
+													<li class="list-group-item"><a href="/how-to-put-military-time-into-excel.html">How To Put Military Time Into Excel</a></li>
+													<li class="list-group-item"><a href="/how-to-know-whether-your-husband-loves-you.html">How To Know Whether Your Husband Loves You</a></li>
+													<li class="list-group-item"><a href="/how-to-get-your-military-shot-records.html">How To Get Your Military Shot Records</a></li>
+													<li class="list-group-item"><a href="/how-to-predict-my-marriage-age.html">How To Predict My Marriage Age</a></li>
+													<li class="list-group-item"><a href="/how-to-help-my-wife-with-bipolar-disorder.html">How To Help My Wife With Bipolar Disorder</a></li>
+													<li class="list-group-item"><a href="/how-to-look-up-car-details-by-vin.html">How To Look Up Car Details By Vin</a></li>
+													<li class="list-group-item"><a href="/how-to-look-up-a-dd214.html">How To Look Up A Dd214</a></li>
+													<li class="list-group-item"><a href="/how-to-get-social-security-when-spouse-dies.html">How To Get Social Security When Spouse Dies</a></li>
+													<li class="list-group-item"><a href="/how-to-live-with-a-spouse-with-depression.html">How To Live With A Spouse With Depression</a></li>
+													<li class="list-group-item"><a href="/how-to-keep-my-military-retirement-in-a-divorce.html">How To Keep My Military Retirement In A Divorce</a></li>
+													<li class="list-group-item"><a href="/how-to-know-if-your-husband-doesnt-love-you.html">How To Know If Your Husband Doesnt Love You</a></li>
+													<li class="list-group-item"><a href="/how-to-live-with-a-wife-with-depression.html">How To Live With A Wife With Depression</a></li>
+													<li class="list-group-item"><a href="/how-to-get-smart-watch-off-military-time.html">How To Get Smart Watch Off Military Time</a></li>
+													<li class="list-group-item"><a href="/how-to-know-if-you-have-inattentive-adhd.html">How To Know If You Have Inattentive Adhd</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

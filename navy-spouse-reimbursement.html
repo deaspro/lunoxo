@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Navy Spouse Reimbursement - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Navy Spouse Reimbursement",
+  "datePublished": "2021-02-13",
+  "image": "https://www.behaviorbabe.com/Screen%20Shot%202019-07-01%20at%2011.47.55%20AM.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=navy+spouse+reimbursement",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Navy Spouse Reimbursement</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Military spouse licensure reimbursement. About spouse licensure reimbursement policies. Headquarters Marine Corps Manpower and Reserve Affairs may reimburse Marines for qualified State relicensing andor recertification costs of a spouse arising from relocation to another state due. <br>				
+			</p>
+										<a class="badge badge-dark" href="/military-spouse-jobs-that-move-with-you.html">military spouse jobs that move with you</a>
+											<a class="badge badge-success" href="/military-spouse-life-insurance-after-retirement.html">military spouse life insurance after retirement</a>
+											<a class="badge badge-info" href="/military-spouse-keeping-residency.html">military spouse keeping residency</a>
+											<a class="badge badge-info" href="/military-spouse-jobs-germany.html">military spouse jobs germany</a>
+											<a class="badge badge-secondary" href="/military-spouse-job-fair.html">military spouse job fair</a>
+											<a class="badge badge-dark" href="/military-spouse-in-hawaii.html">military spouse in hawaii</a>
+											<a class="badge badge-primary" href="/military-spouse-licensure-reimbursement-army.html">military spouse licensure reimbursement army</a>
+											<a class="badge badge-secondary" href="/military-spouse-jobs-in-south-korea.html">military spouse jobs in south korea</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to pay a visit to the ideal blog.  Our site provides you with hints for seeing the highest quality video and picture content, hunt and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie that you view.  You can also bring about supporting this website by sharing videos and images that you enjoy on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cnic.navy.mil/content/cnic/cnic_hq/ffr/family_readiness/fleet_and_family_support_program/work-and-family-life/family_employment/military-licensure-reimbursement/_jcr_content/par2/image.img.jpg/1591034444487.jpg" data-lightbox="roadtrip" data-title="Navy Spouse Licensure Reimbursement">
+											<img class="card-img v-image ads-img " src="https://www.cnic.navy.mil/content/cnic/cnic_hq/ffr/family_readiness/fleet_and_family_support_program/work-and-family-life/family_employment/military-licensure-reimbursement/_jcr_content/par2/image.img.jpg/1591034444487.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWhgQXkdFG4ITDaF6-R3CLqMDkvTCXcOnPuQ';" alt="Navy Spouse Licensure Reimbursement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Spouse Licensure Reimbursement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="WLWKroFZvoLswM" data-lightbox="roadtrip" data-title="Https Www Public Navy Mil Bupers Npc Support 21st Century Sailor Readiness Documents How 20to 20submit 20a 20claim 20for 20spouse 20licensure 20reimbursement 20 12feb20 Pdf">
+											<img class="card-img v-image ads-img " src="WLWKroFZvoLswM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT803gpx5iZ5aSOQll70LqSbtpFcUxcbfzQlQ';" alt="Https Www Public Navy Mil Bupers Npc Support 21st Century Sailor Readiness Documents How 20to 20submit 20a 20claim 20for 20spouse 20licensure 20reimbursement 20 12feb20 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Public Navy Mil Bupers Npc Support 21st Century Sailor Readiness Documents How 20to 20submit 20a 20claim 20for 20spouse 20licensure 20reimbursement 20 12feb20 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.chicago2.vip.townnews.com/militarynews.com/content/tncms/assets/v3/editorial/0/36/03651464-5335-11ea-a483-bb2607696930/5e4d64cfe8b06.image.jpg?resize=400%2C286" data-lightbox="roadtrip" data-title="Navy Increases Spouse Licensure And Certification Reimbursement Policy Norfolk Navy Flagship Militarynews Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.chicago2.vip.townnews.com/militarynews.com/content/tncms/assets/v3/editorial/0/36/03651464-5335-11ea-a483-bb2607696930/5e4d64cfe8b06.image.jpg?resize=400%2C286" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd7lh62glu5zcD9lzO3DfTpRL5D3F3_1v92w';" alt="Navy Increases Spouse Licensure And Certification Reimbursement Policy Norfolk Navy Flagship Militarynews Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Increases Spouse Licensure And Certification Reimbursement Policy Norfolk Navy Flagship Militarynews Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.587701.1561562829!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" data-lightbox="roadtrip" data-title="Navy To Reimburse Spouses For Professional Licensing After A Move U S Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.587701.1561562829!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStj5zFS3tsbYhzLkFbL8K85eD_N87DXTNuXA';" alt="Navy To Reimburse Spouses For Professional Licensing After A Move U S Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy To Reimburse Spouses For Professional Licensing After A Move U S Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.behaviorbabe.com/Screen%20Shot%202019-07-01%20at%2011.47.55%20AM.png" data-lightbox="roadtrip" data-title="Welcome To Behaviorbabe Aba And The Military">
+											<img class="card-img v-image ads-img " src="https://www.behaviorbabe.com/Screen%20Shot%202019-07-01%20at%2011.47.55%20AM.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvAQO4n2k2IeTKbGFLiYtSAUHQUnWokJw1iA';" alt="Welcome To Behaviorbabe Aba And The Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welcome To Behaviorbabe Aba And The Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Sep/24/2002186506/780/780/0/190924-F-WN543-1002.PNG" data-lightbox="roadtrip" data-title="Spouse Reimbursement Program Helping The Gunfighter Family Mountain Home Air Force Base Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Sep/24/2002186506/780/780/0/190924-F-WN543-1002.PNG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrEwIhwEvdDeDsY6sjgaQ_9H1-1oI3EohYow';" alt="Spouse Reimbursement Program Helping The Gunfighter Family Mountain Home Air Force Base Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spouse Reimbursement Program Helping The Gunfighter Family Mountain Home Air Force Base Article Display</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://media.defense.gov/2019/Sep/24/2002186506/780/780/0/190924-F-WN543-1002.PNG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrEwIhwEvdDeDsY6sjgaQ_9H1-1oI3EohYow';" alt="Spouse Reimbursement Program Helping The Gunfighter Family Mountain Home Air Force Base Article Display">
+										<div class="card-body">
+						<h3 class="h5"><b>Countless hours she says go into preparing for a military move.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Navy spouse reimbursement</strong>. 
+								
+																	Navy Spouse Licensure Reimbursement. 
+																	So far all the services policies have been retroactive so that spouses can be reimbursed for fees incurred with PCS moves since Dec. 
+																	The military spouse reimbursement program has taken away the added expense and worry that is associated with each move and the realignment of my career The Navy is now upping the ante by. 
+																	There is also the previously mentioned Education Assistance Program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WASHINGTON - Jodi Palmer knows frequent moves are just a part of Navy life. 
+																	This includes exam and registration fees. 
+																	Reimbursement will not be authorized if a Navy-funded pre-paid voucher is available. 
+																	Frequently Used Work-Life phone numbers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WASHINGTON NNS -- As part of ongoing Navy Family Framework efforts to expand and improve the experience for spouses Navy announced Sailors may be reimbursed up to 500 dollars for. 
+																	Section 556 of the National. 
+																	The 2018 National Defense Authorization Act allows each service branch to reimburse spouses up to 1000 for relicensure and certification costs resulting from relocations or PCS moves that cross US. 
+																	The Department of the Navy is dedicated to supporting families and currently provides resources and advocacy for spouse employment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can apply for reimbursement after getting your new license or certification. 
+																	- The reimbursement is authorized for relicensure costs imposed by the new State to secure a license or certification to engage in the same profession that the spouse of the member engaged in while. 
+																	The Department of the Navy is dedicated to supporting families and currently provides resources and advocacy for spouse employment. 
+																	WUSA9 uncovered the military delayed creating a program to reimburse spouses for certain employment costs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Navy is the last major branch to announce its policy. 
+																	CG SUPRT Coast Guard Employee Assistance Program 1-800-855-CGSUPRT 247-8778 Work-Life Program 1-800-872-4957. 
+																	The Navy is expected to issue its policy soon. 
+																	For those stationed in the United States Navy and Marine Corps spouses may be eligible to apply for something called the Travers Loan Program to apply for interest-free loans up to 3000 per academic year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Navy defines qualified relicensing costs as any fees or costs associated with getting the same or similar license in a new state that a spouse held at their previous location. 
+																	Its a drill she knows. 
+																	Navy Spouse Licensure Reimbursement. 
+																	For local information contact your Regional Work-Life Staff located at Regional Practices. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Other efforts include improving family programs and websites developing an official MyNavy Family website providing ombudsman registry access to command leadership spouses and increasing the availability of live webinars and self-directed. 
+																	Section 556 of the National. 
+																	If the Navys Credentials Program is expected to reimburse the credentialing exam under no circumstances shall the member or members commandorganization obligate the member or government to pay for a credentialing expense without first obtaining approval for reimbursement from the Navys. 
+																	State lines to include OCONUS to stateside moves. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NAVY SPOUSE LICENSURE REIMBURSEMENT. 
+																	Sailors can be reimbursed up to 500 to cover the cost of their spouses professional licenses or certifications if an assignment requires them to move to a different state the Navy announced. 
+																	The Department of the Navy is dedicated to supporting families and currently provides resources and advocacy for spouse employment. 
+																	The Spouse Licensure Reimbursement policy supports the Navy Family Framework objective to expand and improve the experience for Navy spouses and families. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Section 556 of the National. 
+																	The Department of the Navy is dedicated to supporting families and currently provides resources and advocacy for spouse employment. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cnic.navy.mil/content/cnic/cnic_hq/ffr/family_readiness/navy-spouse/_jcr_content/par2/image.img.jpg/1548769265657.jpg" data-lightbox="roadtrip" data-title="Navy Spouse Navigation">
+											<img class="card-img v-image ads-img " src="https://www.cnic.navy.mil/content/cnic/cnic_hq/ffr/family_readiness/navy-spouse/_jcr_content/par2/image.img.jpg/1548769265657.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTykxeja9qcgVB-Hz3qPfP8zUWhe-EzTrq69g';" alt="Navy Spouse Navigation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Spouse Navigation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/08/military-spouse-license-transfer-options-and-reimbursement.jpg" data-lightbox="roadtrip" data-title="Military Spouse License Transfer Options Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/08/military-spouse-license-transfer-options-and-reimbursement.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTim7kzehkKIiXx5uzhn0-N8OHQ1ipXKXLN2Q';" alt="Military Spouse License Transfer Options Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse License Transfer Options Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militaryfamily.org/wp-content/uploads/NDAA_Spouse_Employment_Web.jpg" data-lightbox="roadtrip" data-title="Here S What The Ndaa Does For Military Spouse Employment National Military Family Association">
+											<img class="card-img v-image ads-img " src="https://militaryfamily.org/wp-content/uploads/NDAA_Spouse_Employment_Web.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuTfGD4Ro1VdHJPWFFc-9ILk85vYCAlcfElA';" alt="Here S What The Ndaa Does For Military Spouse Employment National Military Family Association">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S What The Ndaa Does For Military Spouse Employment National Military Family Association</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mrsnavymama.com/wp-content/uploads/Mrs.-Navy-Mama-Pinterest-Images-1-650x975.png" data-lightbox="roadtrip" data-title="7 Reasons To Love Being A Military Spouse Mrs Navy Mama">
+											<img class="card-img v-image ads-img " src="https://mrsnavymama.com/wp-content/uploads/Mrs.-Navy-Mama-Pinterest-Images-1-650x975.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR48NVPc9-1CFyH4C8GfekJkLDTVZL4gbMotg';" alt="7 Reasons To Love Being A Military Spouse Mrs Navy Mama">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Reasons To Love Being A Military Spouse Mrs Navy Mama</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/mycaa-accounts.jpg" data-lightbox="roadtrip" data-title="Military Spouse Career Advancement Accounts Mycaa Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/mycaa-accounts.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThPFsUbjeDzU1fBT5DCO3IHoPU1MvmqVdtJw';" alt="Military Spouse Career Advancement Accounts Mycaa Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Career Advancement Accounts Mycaa Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e5/f4/01/e5f4015e27773ce220dbee65ce62c9c9.jpg" data-lightbox="roadtrip" data-title="All Branches To Reimburse Spouses For Occupational Licenses Military Spouse Career Military Spouse Military Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e5/f4/01/e5f4015e27773ce220dbee65ce62c9c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSKo49fjHEdNUkDpPp5m9ms2mqUBQFqHCZuQ';" alt="All Branches To Reimburse Spouses For Occupational Licenses Military Spouse Career Military Spouse Military Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All Branches To Reimburse Spouses For Occupational Licenses Military Spouse Career Military Spouse Military Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://news.usni.org/wp-content/uploads/2019/08/5582894.jpg" data-lightbox="roadtrip" data-title="Spouse Employment Childcare Highlighted In New Navy Family Framework Usni News">
+											<img class="card-img v-image ads-img " src="https://news.usni.org/wp-content/uploads/2019/08/5582894.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRut6pbXQzuKrAPD94wsneqFaL83ohrOmiP9g';" alt="Spouse Employment Childcare Highlighted In New Navy Family Framework Usni News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spouse Employment Childcare Highlighted In New Navy Family Framework Usni News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="coQ8EiGAV8U50M" data-lightbox="roadtrip" data-title="Https Www Cnic Navy Mil Content Dam Cnic Hq Pdfs N91 Fleet And Family Support Program Navyfamilyframework Navy 20family 20framework 202019 20report Pdf">
+											<img class="card-img v-image ads-img " src="coQ8EiGAV8U50M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzAdf1x5G3xWdsdnI7OhTtNi1m7e-KZHn6Mg';" alt="Https Www Cnic Navy Mil Content Dam Cnic Hq Pdfs N91 Fleet And Family Support Program Navyfamilyframework Navy 20family 20framework 202019 20report Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Cnic Navy Mil Content Dam Cnic Hq Pdfs N91 Fleet And Family Support Program Navyfamilyframework Navy 20family 20framework 202019 20report Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/67/f1/6f67f1b2c6d641caeb8d083e43eaf943.png" data-lightbox="roadtrip" data-title="Pin By Darleneswilliams Esquire Legal On Militarychannel Education And Training Teaching License Navy Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/67/f1/6f67f1b2c6d641caeb8d083e43eaf943.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1AJef59X4nJ4aCxjYUhVPv4iZp9HANt4I8Q';" alt="Pin By Darleneswilliams Esquire Legal On Militarychannel Education And Training Teaching License Navy Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Darleneswilliams Esquire Legal On Militarychannel Education And Training Teaching License Navy Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.dantes.doded.mil/img/logos/seco.png" data-lightbox="roadtrip" data-title="Dantes Military Spouse And Family Member Resources">
+											<img class="card-img v-image ads-img " src="https://www.dantes.doded.mil/img/logos/seco.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReYzz_MXLPGD3pFudMEdtNysAvK_7ejRkyGQ';" alt="Dantes Military Spouse And Family Member Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dantes Military Spouse And Family Member Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/df/84/c5df845fed1819870ece3d9db88c5fbf.png" data-lightbox="roadtrip" data-title="If You Re Making A Military Move Pcs Dity Move This Detailed Checklist Is An Excellent Tool To Help You Stay On Tra Military Move Pcs Checklist Pcs Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/df/84/c5df845fed1819870ece3d9db88c5fbf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU5-Do-iAbPHYofHKoRxqk70Bu3AUj8O0NZA';" alt="If You Re Making A Military Move Pcs Dity Move This Detailed Checklist Is An Excellent Tool To Help You Stay On Tra Military Move Pcs Checklist Pcs Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Re Making A Military Move Pcs Dity Move This Detailed Checklist Is An Excellent Tool To Help You Stay On Tra Military Move Pcs Checklist Pcs Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/85/3b/d8853b360f2c6307fa61baa6d40a0123.png" data-lightbox="roadtrip" data-title="Learn About The Benefits Of Making A Personally Procured Move From Military Spouse Lizann On Blog Brigade Moving Moving Expenses Pcs Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/85/3b/d8853b360f2c6307fa61baa6d40a0123.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFcBhZavdiYgWuMNpcec4-OZFSXDx95OWaRQ';" alt="Learn About The Benefits Of Making A Personally Procured Move From Military Spouse Lizann On Blog Brigade Moving Moving Expenses Pcs Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Learn About The Benefits Of Making A Personally Procured Move From Military Spouse Lizann On Blog Brigade Moving Moving Expenses Pcs Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://eglinlife.com/_ads/AFRC_Relicensure.jpg" data-lightbox="roadtrip" data-title="Eglinlife Com Airman Family Readiness Center">
+											<img class="card-img v-image ads-img " src="https://eglinlife.com/_ads/AFRC_Relicensure.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdhY6c8rpq6oGVVHGMhImfJ1oOSzJAwD708g';" alt="Eglinlife Com Airman Family Readiness Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eglinlife Com Airman Family Readiness Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/war-heroes-game.html">War Heroes Game</a></li>
+													<li class="list-group-item"><a href="/war-heroes-varthalu.html">War Heroes Varthalu</a></li>
+													<li class="list-group-item"><a href="/war-heroes-strategy-card-game-mod-apk.html">War Heroes Strategy Card Game Mod Apk</a></li>
+													<li class="list-group-item"><a href="/war-heroes-essay.html">War Heroes Essay</a></li>
+													<li class="list-group-item"><a href="/war-heroes-history.html">War Heroes History</a></li>
+													<li class="list-group-item"><a href="/wechat-desktop.html">Wechat Desktop</a></li>
+													<li class="list-group-item"><a href="/wechat-for-pc.html">Wechat For Pc</a></li>
+													<li class="list-group-item"><a href="/wechat-dubai.html">Wechat Dubai</a></li>
+													<li class="list-group-item"><a href="/war-heroes-hendrix.html">War Heroes Hendrix</a></li>
+													<li class="list-group-item"><a href="/wechat-api.html">Wechat Api</a></li>
+													<li class="list-group-item"><a href="/war-heroes-y8.html">War Heroes Y8</a></li>
+													<li class="list-group-item"><a href="/wechat-group-link.html">Wechat Group Link</a></li>
+													<li class="list-group-item"><a href="/war-heroes-game-strategy.html">War Heroes Game Strategy</a></li>
+													<li class="list-group-item"><a href="/war-heroes-the-game.html">War Heroes The Game</a></li>
+													<li class="list-group-item"><a href="/wechat-company.html">Wechat Company</a></li>
+													<li class="list-group-item"><a href="/war-heroes-uk.html">War Heroes Uk</a></li>
+													<li class="list-group-item"><a href="/wechat-group-chat.html">Wechat Group Chat</a></li>
+													<li class="list-group-item"><a href="/wechat-emoji-list-meaning.html">Wechat Emoji List Meaning</a></li>
+													<li class="list-group-item"><a href="/war-heroes-vs-clash-royale.html">War Heroes Vs Clash Royale</a></li>
+													<li class="list-group-item"><a href="/wechat-create-account.html">Wechat Create Account</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

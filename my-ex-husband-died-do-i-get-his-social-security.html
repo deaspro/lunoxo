@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>My Ex Husband Died Do I Get His Social Security - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "My Ex Husband Died Do I Get His Social Security",
+  "datePublished": "2021-02-13",
+  "image": "https://photos.demandstudios.com/getty/article/251/111/79166643.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=my+ex+husband+died+do+i+get+his+social+security",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>My Ex Husband Died Do I Get His Social Security</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">If your spouse was receiving Supplemental Security Income SSI you will not be able to continue receiving his SSI payments. As long as a divorced spouse. You may collect Social Security retirement benefits based on the ex-spouses work history. <br>				
+			</p>
+										<a class="badge badge-info" href="/spouse-of-army.html">spouse of army</a>
+											<a class="badge badge-primary" href="/sri-lanka-army-medical-corps-contact-number.html">sri lanka army medical corps contact number</a>
+											<a class="badge badge-primary" href="/spouse-military-law.html">spouse military law</a>
+											<a class="badge badge-primary" href="/spouse-veteran-death-benefits.html">spouse veteran death benefits</a>
+											<a class="badge badge-light" href="/spouse-survivor-benefits-military.html">spouse survivor benefits military</a>
+											<a class="badge badge-danger" href="/spouse-education-military.html">spouse education military</a>
+											<a class="badge badge-secondary" href="/spouse-goarmy.html">spouse goarmy</a>
+											<a class="badge badge-primary" href="/spouse-level-of-education-points.html">spouse level of education points</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to pay a visit to the ideal site.  Our site gives you suggestions for seeing the highest quality video and picture content, search and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie that you view.  It is also possible to contribute to supporting this website by sharing videos and images that you like on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://photos.demandstudios.com/getty/article/251/111/79166643.jpg" data-lightbox="roadtrip" data-title="Can An Ex Wife Receive Social Security Benefits From A Dead Husband">
+											<img class="card-img v-image ads-img " src="https://photos.demandstudios.com/getty/article/251/111/79166643.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU30ZTJ4qrGyp0UnKuEjuar0OHB-8_dCTCcA';" alt="Can An Ex Wife Receive Social Security Benefits From A Dead Husband">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can An Ex Wife Receive Social Security Benefits From A Dead Husband</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.aarp.net/content/dam/aarp/retirement/social-security/2018/10/1140-ss-qa-promo-yellow.imgcache.rev39acdb78c2f7aaa943f1fdba13989aaa.jpg" data-lightbox="roadtrip" data-title="Can I Collect Social Security From My Ex Spouse">
+											<img class="card-img v-image ads-img " src="https://cdn.aarp.net/content/dam/aarp/retirement/social-security/2018/10/1140-ss-qa-promo-yellow.imgcache.rev39acdb78c2f7aaa943f1fdba13989aaa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQvxQr874pIxG4zHKIfmnEw8ak3AqX7UgtSw';" alt="Can I Collect Social Security From My Ex Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can I Collect Social Security From My Ex Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.simplywise.com/blog/wp-content/uploads/2020/03/lynn2.png" data-lightbox="roadtrip" data-title="If My Spouse Dies Do I Get His Social Security And Mine Simplywise">
+											<img class="card-img v-image ads-img " src="https://www.simplywise.com/blog/wp-content/uploads/2020/03/lynn2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqzGUCeQkB0vuPOn16sWqUv7c3pE1uA5-_Yw';" alt="If My Spouse Dies Do I Get His Social Security And Mine Simplywise">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If My Spouse Dies Do I Get His Social Security And Mine Simplywise</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.aarp.net/content/dam/aarp/money/budgeting_savings/2016/03/1140-hinden-Social-Security-benefit-mailbox-divorce.web.jpg" data-lightbox="roadtrip" data-title="Divorce And Social Security Spousal Benefits">
+											<img class="card-img v-image ads-img " src="https://cdn.aarp.net/content/dam/aarp/money/budgeting_savings/2016/03/1140-hinden-Social-Security-benefit-mailbox-divorce.web.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwFPmz5cv7Bpjm1B3aMIMRoSDdmTENUKZRug';" alt="Divorce And Social Security Spousal Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Divorce And Social Security Spousal Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.aarp.net/content/dam/aarp/retirement/social-security/2018/10/1140-ss-qa-promo-red.imgcache.rev3f55873b431b88bf1fb0a5efff69ab90.jpg" data-lightbox="roadtrip" data-title="Collecting Survivor Benefits From Your Ex Spouse">
+											<img class="card-img v-image ads-img " src="https://cdn.aarp.net/content/dam/aarp/retirement/social-security/2018/10/1140-ss-qa-promo-red.imgcache.rev3f55873b431b88bf1fb0a5efff69ab90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFT6rqXxR1dtVjLaMsr1K4BQHd3Na5cFt10w';" alt="Collecting Survivor Benefits From Your Ex Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Collecting Survivor Benefits From Your Ex Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.simplywise.com/blog/wp-content/uploads/2020/04/shutterstock_502731847-4.jpg" data-lightbox="roadtrip" data-title="Can A Divorced Woman Collect Her Ex Husband S Social Security Simplywise">
+											<img class="card-img v-image ads-img " src="https://www.simplywise.com/blog/wp-content/uploads/2020/04/shutterstock_502731847-4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwsvw3MR0CoLz6CIet3Ip4-jwNTN2mND8u_A';" alt="Can A Divorced Woman Collect Her Ex Husband S Social Security Simplywise">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can A Divorced Woman Collect Her Ex Husband S Social Security Simplywise</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://bloximages.chicago2.vip.townnews.com/tucson.com/content/tncms/assets/v3/editorial/0/a0/0a0c9332-c7f9-562a-aca5-c6195e6bb5da/5ad924e15f4da.image.jpg?resize=500%2C608" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwsvw3MR0CoLz6CIet3Ip4-jwNTN2mND8u_A';" alt="Can A Divorced Woman Collect Her Ex Husband S Social Security Simplywise">
+										<div class="card-body">
+						<h3 class="h5"><b>If she collects between ages 62 and 66 there will be a reduction for taking benefits early.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>My ex husband died do i get his social security</strong>. 
+								
+																	Otherwise you will need to apply for survivor benefits by phone at 800-772-1213 or in person at your local Social Security office. 
+																	A divorced spouse may be eligible to collect Social Security benefits based on the former spouses work record. 
+																	In most cases if your spouse met the income and resources requirements for SSI you will too. 
+																	If you had previously been married to the same spouse for at least nine months divorced and remarried. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If your spouse qualified for and received SSDI then he had earnings which also counted towards Social Security retirement and survivors benefits. 
+																	If you are already drawing a small amount from your ex-husbands Social Security you should be eligible to receive a survivor benefit when he passes away. 
+																	The same rules apply for a deceased former spouse. 
+																	If your ex-spouse has died you may collect Social Security survivors benefits which follow different rules than those for a living ex-spouse. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you decide to wait until full retirement age to apply as a divorced spouse your benefit will be equal to half of your ex-spouses full retirement or disability benefit amount. 
+																	If you are already receiving a spousal benefit when your husband or wife dies Social Security will in most cases convert it automatically to a survivor benefit once the death is reported. 
+																	If you have since remarried you cant collect benefits on your former spouses record unless your later marriage ended by annulment divorce or death. 
+																	It depends on whether your spouse chose a monthly payout based solely on hisher life expectancy or a monthly payout that continues through your life - that is the joint and survivor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As with widows and widowers waiting until you reach full retirement age or FRA currently 66 gradually rising to 67 over the next several years entitles you to receive 100 percent of the amount your late ex was getting from Social Security when he or she died. 
+																	When your spouse has earned 5880 they have earned their four credits for the year. 
+																	But if you remarry before the age of 60 or before the age 50 if you are disabled you wont be able to receive benefits as a surviving ex-spouse. 
+																	If the worker dies you may receive survivor benefits as well. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Both you and any minor children in the home will likely qualify. 
+																	My advice is always be proactive and contact Social Security as soon as possible after your spouse passes away as benefits will only start once. 
+																	Claiming Social Security based on a former. 
+																	To be eligible you must have been married to your ex-spouse for 10 years or more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And if you remarry after you reach age 60 or age 50 if you are disabled you will still be eligible for survivors benefits. 
+																	How Your Spouse Earns Social Security Survivors Benefits A worker can earn up to four credits each year. 
+																	Social Security retirement and survivor benefits acknowledge contributions of the ex-spouse. 
+																	The Primary Insurance Amount PIA is the number Social Security uses to determine survivor benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If the deceased never claimed benefits you will get what he or she was eligible to receive. 
+																	You might however qualify for SSI yourself if you are over 65 or disabled and have limited resources and income. 
+																	A disabled widow or widower aged 50 to 59 would receive 715 of their spouses benefit. 
+																	The marital status of your ex-spouse at the time of his or her death has no effect on your ability to receive surviving ex-spouse disability or retirement benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can apply for benefits as early as age 60. 
+																	In 2021 for example your spouse can earn one credit for each 1470 of wages or self-employment income. 
+																	Back to spouses and ex-spouses and survivor benefits. 
+																	If your ex-spouse died after you divorced you can still qualify for widows benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you apply before your survivor full retirement age you will receive between 715 and 99 of your spouses benefit PIA. 
+																	If your ex-spouse is deceased you may qualify for survivors benefits of up to 100 though the rules for surviving divorced spouses are different. 
+																	Yes your spousal Social Security benefits you currently receive will convert to survivor benefits at the time of your ex-husbands death according to David Cechanowicz director of education. 
+																	The marriage must have lasted for at least 10 years and the divorced spouse must be. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The amount of benefits you get has no effect on the benefits your ex-spouse or his or her current spouse receives. 
+																	His ex-wife Samantha who was married to Don for 18 years before they divorced in 2010 is eligible to receive 1500 per month in Social Security benefits 3000 2 1500 if she waits until full retirement age of 66 to collect. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wiserwomen.org/wp-content/uploads/2018/04/social-security-FSL-graphic.jpg" data-lightbox="roadtrip" data-title="Social Security And Divorce What You Need To Know Wiser Women">
+											<img class="card-img v-image ads-img " src="https://www.wiserwomen.org/wp-content/uploads/2018/04/social-security-FSL-graphic.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqJyywS3DOtzXGPvhzayZ3I3lE40VlQcufVw';" alt="Social Security And Divorce What You Need To Know Wiser Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Security And Divorce What You Need To Know Wiser Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://specials-images.forbesimg.com/imageserve/5f19c8663015f6246b6281b8/960x0.jpg?fit=scale" data-lightbox="roadtrip" data-title="Ask Larry Shouldn T My Spousal Benefit Be 50 Of My Husband S Social Security Retirement Benefit">
+											<img class="card-img v-image ads-img " src="https://specials-images.forbesimg.com/imageserve/5f19c8663015f6246b6281b8/960x0.jpg?fit=scale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwzvt3VGaR-3PdxVEQIHRy5BVex9W_H3m7IQ';" alt="Ask Larry Shouldn T My Spousal Benefit Be 50 Of My Husband S Social Security Retirement Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ask Larry Shouldn T My Spousal Benefit Be 50 Of My Husband S Social Security Retirement Benefit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/c7/bb/49c7bbd6a9ddff95340548c1e5f61247.png" data-lightbox="roadtrip" data-title="How To Make A Claim On My Ex Husband S Social Security Sapling Com Ex Husbands Social Security Husband">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/c7/bb/49c7bbd6a9ddff95340548c1e5f61247.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGQ1CihryiLpS9DeV5DJyLHcfXT0PdkhU15Q';" alt="How To Make A Claim On My Ex Husband S Social Security Sapling Com Ex Husbands Social Security Husband">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Make A Claim On My Ex Husband S Social Security Sapling Com Ex Husbands Social Security Husband</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c5/b4/ec/c5b4eccf0c8d863dd0022e225aa0c627.jpg" data-lightbox="roadtrip" data-title="Can An Ex Wife Receive Social Security Benefits From A Dead Husband In 2020 Social Security Benefits Financial Aid Ex Wives">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c5/b4/ec/c5b4eccf0c8d863dd0022e225aa0c627.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9I9kQKL5-UKyph_6qon_jnzJk45uUFSO0Bg';" alt="Can An Ex Wife Receive Social Security Benefits From A Dead Husband In 2020 Social Security Benefits Financial Aid Ex Wives">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can An Ex Wife Receive Social Security Benefits From A Dead Husband In 2020 Social Security Benefits Financial Aid Ex Wives</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/b2/23/08b223637b9d8303d5953f7d60d60e29.png" data-lightbox="roadtrip" data-title="How Do Spousal Benefits Affect My Social Security Youtube Social Security Benefit Social">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/b2/23/08b223637b9d8303d5953f7d60d60e29.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKqD_iWJzxhGXXe3PdNpGqkbNPQARyjWah6A';" alt="How Do Spousal Benefits Affect My Social Security Youtube Social Security Benefit Social">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Do Spousal Benefits Affect My Social Security Youtube Social Security Benefit Social</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/ad/2b/fcad2bda12220922e05af959c057fe4b.jpg" data-lightbox="roadtrip" data-title="You May Qualify For Social Security Spousal Benefits From Your Husband Or Wife Even If You Re Divorced But Wh Social Security Social Security Benefits Social">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/ad/2b/fcad2bda12220922e05af959c057fe4b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKYlWpJ6ahVhA7uyL01bt_IoSUzqqvx9j0YA';" alt="You May Qualify For Social Security Spousal Benefits From Your Husband Or Wife Even If You Re Divorced But Wh Social Security Social Security Benefits Social">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You May Qualify For Social Security Spousal Benefits From Your Husband Or Wife Even If You Re Divorced But Wh Social Security Social Security Benefits Social</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.chicago2.vip.townnews.com/tucson.com/content/tncms/assets/v3/editorial/0/a0/0a0c9332-c7f9-562a-aca5-c6195e6bb5da/5ad924e15f4da.image.jpg?resize=500%2C608" data-lightbox="roadtrip" data-title="Social Security And You Married More Than Once Business News Tucson Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.chicago2.vip.townnews.com/tucson.com/content/tncms/assets/v3/editorial/0/a0/0a0c9332-c7f9-562a-aca5-c6195e6bb5da/5ad924e15f4da.image.jpg?resize=500%2C608" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtL8LDU4GFTpl7G18Y9IzmJK5dtd3H4ls36w';" alt="Social Security And You Married More Than Once Business News Tucson Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Security And You Married More Than Once Business News Tucson Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.aarp.net/content/dam/aarp/retirement/social-security/2018/10/1140-ss-qa-promo-blue.imgcache.revb9bd2990786c971f56d5e0f75af8e964.jpg" data-lightbox="roadtrip" data-title="How To Report A Death To Social Security">
+											<img class="card-img v-image ads-img " src="https://cdn.aarp.net/content/dam/aarp/retirement/social-security/2018/10/1140-ss-qa-promo-blue.imgcache.revb9bd2990786c971f56d5e0f75af8e964.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxIvCoAPgnmb1gOp_0Qdb2iT2NrPy9cu6UGA';" alt="How To Report A Death To Social Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Report A Death To Social Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.fidelity.com/bin-public/060_www_fidelity_com/images/Viewpoints/RET/social_security_exspouse_2019_banner.jpg" data-lightbox="roadtrip" data-title="Social Security For Divorced Spouses Fidelity">
+											<img class="card-img v-image ads-img " src="https://www.fidelity.com/bin-public/060_www_fidelity_com/images/Viewpoints/RET/social_security_exspouse_2019_banner.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8wmwkV2exMrCqWn75T3jeBAz97xNqVRP8iA';" alt="Social Security For Divorced Spouses Fidelity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Security For Divorced Spouses Fidelity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://socialsecurityintelligence.com/wp-content/uploads/2017/03/2020-Income-Limit-1024x594.png" data-lightbox="roadtrip" data-title="Social Security Survivor Benefits The Complete Guide">
+											<img class="card-img v-image ads-img " src="https://socialsecurityintelligence.com/wp-content/uploads/2017/03/2020-Income-Limit-1024x594.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTFfE7woOmqw9kRc4Q_KTsrvLvbYm9x1thtg';" alt="Social Security Survivor Benefits The Complete Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Security Survivor Benefits The Complete Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.simplywise.com/blog/wp-content/uploads/2020/02/shutterstock_1362257903.jpg" data-lightbox="roadtrip" data-title="Social Security Benefits For Divorced Spouses Simplywise">
+											<img class="card-img v-image ads-img " src="https://www.simplywise.com/blog/wp-content/uploads/2020/02/shutterstock_1362257903.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSShvZqwXujDjUZ44HKwBw-QAedDOK8viR7tw';" alt="Social Security Benefits For Divorced Spouses Simplywise">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Security Benefits For Divorced Spouses Simplywise</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/1e/4d/041e4dd3546fba3ba0607538e53efdd6.jpg" data-lightbox="roadtrip" data-title="Social Security Q A How Much Of My Spouse S Benefit Can I Get Social Security Benefits Social Security Social">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/1e/4d/041e4dd3546fba3ba0607538e53efdd6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlFQ01t2yDuCLzjOvuWpvZK2_SfAF_-DCjGA';" alt="Social Security Q A How Much Of My Spouse S Benefit Can I Get Social Security Benefits Social Security Social">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Security Q A How Much Of My Spouse S Benefit Can I Get Social Security Benefits Social Security Social</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/55/93/6255933ed5adf580446221f59cc402d0.jpg" data-lightbox="roadtrip" data-title="How True Not That I Am Getting Divorced But As A Child Of Divorce I Can T Imagine What Life Would Have Been Like Had Ex Husband Quotes Unhappy Marriage Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/55/93/6255933ed5adf580446221f59cc402d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQObxRu1l6AREcf_5ZqbgKClWUJCwPBzG3PBg';" alt="How True Not That I Am Getting Divorced But As A Child Of Divorce I Can T Imagine What Life Would Have Been Like Had Ex Husband Quotes Unhappy Marriage Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How True Not That I Am Getting Divorced But As A Child Of Divorce I Can T Imagine What Life Would Have Been Like Had Ex Husband Quotes Unhappy Marriage Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-time-are-quiet-hours.html">What Time Are Quiet Hours</a></li>
+													<li class="list-group-item"><a href="/what-is-the-meaning-of-military-vehicle.html">What Is The Meaning Of Military Vehicle</a></li>
+													<li class="list-group-item"><a href="/what-is-the-meaning-of-military-reservation.html">What Is The Meaning Of Military Reservation</a></li>
+													<li class="list-group-item"><a href="/what-is-the-meaning-of-military-outpost.html">What Is The Meaning Of Military Outpost</a></li>
+													<li class="list-group-item"><a href="/what-is-the-military-creed.html">What Is The Military Creed</a></li>
+													<li class="list-group-item"><a href="/what-is-the-meaning-of-military-education.html">What Is The Meaning Of Military Education</a></li>
+													<li class="list-group-item"><a href="/what-should-my-first-car-be-quiz.html">What Should My First Car Be Quiz</a></li>
+													<li class="list-group-item"><a href="/what-should-i-say-to-my-wife-on-her-birthday.html">What Should I Say To My Wife On Her Birthday</a></li>
+													<li class="list-group-item"><a href="/what-is-the-meaning-of-military-family.html">What Is The Meaning Of Military Family</a></li>
+													<li class="list-group-item"><a href="/what-time-is-army-time-converter.html">What Time Is Army Time Converter</a></li>
+													<li class="list-group-item"><a href="/what-schools-does-mycaa-cover.html">What Schools Does Mycaa Cover</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-the-army-are-warrant-officers.html">What Percentage Of The Army Are Warrant Officers</a></li>
+													<li class="list-group-item"><a href="/what-is-the-new-road-tax-rules.html">What Is The New Road Tax Rules</a></li>
+													<li class="list-group-item"><a href="/what-is-the-most-powerful-military-branch.html">What Is The Most Powerful Military Branch</a></li>
+													<li class="list-group-item"><a href="/what-should-i-do-if-my-partner-has-covid-symptoms.html">What Should I Do If My Partner Has Covid Symptoms</a></li>
+													<li class="list-group-item"><a href="/what-times-are-military-times.html">What Times Are Military Times</a></li>
+													<li class="list-group-item"><a href="/what-is-the-meaning-of-military-offensive.html">What Is The Meaning Of Military Offensive</a></li>
+													<li class="list-group-item"><a href="/what-is-the-nurse-hotline-number.html">What Is The Nurse Hotline Number</a></li>
+													<li class="list-group-item"><a href="/what-is-the-meaning-of-military-post.html">What Is The Meaning Of Military Post</a></li>
+													<li class="list-group-item"><a href="/what-military-bases-are-in-hawaii.html">What Military Bases Are In Hawaii</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

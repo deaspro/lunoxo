@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Retired Military Divorce In Texas - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Retired Military Divorce In Texas",
+  "datePublished": "2021-02-13",
+  "image": "http://www.bryanfagan.com/images/blog/divorce-in-the-military.jpeg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=retired+military+divorce+in+texas",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Retired Military Divorce In Texas</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Partition of Military Retired Pay in Texas Divorce Author. Texas prominence and the greater San Antonio regions prominence within the overall population of military retirees and spouses underscores the importance of qualified military divorce legal services within our home area. Good years earned by drilling reservists are counted in application of the 202020 rule. <br>				
+			</p>
+										<a class="badge badge-warning" href="/best-online-programs-for-military.html">best online programs for military</a>
+											<a class="badge badge-primary" href="/best-mycaa-schools.html">best mycaa schools</a>
+											<a class="badge badge-dark" href="/best-online-colleges-military-spouses.html">best online colleges military spouses</a>
+											<a class="badge badge-secondary" href="/birth-certificate-for-military-dependents-born-overseas.html">birth certificate for military dependents born overseas</a>
+											<a class="badge badge-danger" href="/benefits-of-navy-seal-burpee.html">benefits of navy seal burpee</a>
+											<a class="badge badge-danger" href="/best-air-force-heroes-in-top-war.html">best air force heroes in top war</a>
+											<a class="badge badge-light" href="/best-online-jobs-for-military-spouses.html">best online jobs for military spouses</a>
+											<a class="badge badge-secondary" href="/best-life-insurance-for-military-spouse.html">best life insurance for military spouse</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to visit the ideal site.  Our site gives you suggestions for seeing the maximum quality video and picture content, hunt and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/cf/21/d0/cf21d0ba071b59f1d469fc3d3561842e--military-com-military-life.jpg" data-lightbox="roadtrip" data-title="While Divorce Is Essentially A Civil Issue There Are Certain Aspects Of A Divorce That Are Unique T Military Divorce Military Spouse Support Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/cf/21/d0/cf21d0ba071b59f1d469fc3d3561842e--military-com-military-life.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3lzTJZxH7z7KS0IyPnhaB77Vu7TIH0tGbDw';" alt="While Divorce Is Essentially A Civil Issue There Are Certain Aspects Of A Divorce That Are Unique T Military Divorce Military Spouse Support Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">While Divorce Is Essentially A Civil Issue There Are Certain Aspects Of A Divorce That Are Unique T Military Divorce Military Spouse Support Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/e4/4f/90/e44f9011c7e1f362df6f3984622c8ea3.jpg" data-lightbox="roadtrip" data-title="Facebook Former Military Spouse Military Divorce Military Divorce Military Spouse Divorce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/e4/4f/90/e44f9011c7e1f362df6f3984622c8ea3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbHQpaVKxT-W4TebKsdc7OJXi1n9V5gdKqRA';" alt="Facebook Former Military Spouse Military Divorce Military Divorce Military Spouse Divorce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Facebook Former Military Spouse Military Divorce Military Divorce Military Spouse Divorce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/5b/b7/9b5bb70992e841bcbcf2c0e46d345d6f.jpg" data-lightbox="roadtrip" data-title="Essential Information For Military Divorces In Texas Military Divorce Child Support Quotes Texas Law">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/5b/b7/9b5bb70992e841bcbcf2c0e46d345d6f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDuJPmb10ac-Ad4l2NJHeYlYo_oHZiTu46YA';" alt="Essential Information For Military Divorces In Texas Military Divorce Child Support Quotes Texas Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Essential Information For Military Divorces In Texas Military Divorce Child Support Quotes Texas Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://8b21xs2yl7-flywheel.netdna-ssl.com/wp-content/uploads/2020/05/military-retirement-divorce.jpg" data-lightbox="roadtrip" data-title="How Are Military Retirement Benefits Treated In Texas Divorce Sisemore Law Firm P C">
+											<img class="card-img v-image ads-img " src="https://8b21xs2yl7-flywheel.netdna-ssl.com/wp-content/uploads/2020/05/military-retirement-divorce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg-4Qj7ZXJ2hz9JBkmWAhvvkEqo_7KMhs3Xw';" alt="How Are Military Retirement Benefits Treated In Texas Divorce Sisemore Law Firm P C">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Are Military Retirement Benefits Treated In Texas Divorce Sisemore Law Firm P C</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/73/a4/2373a4abb1f430e985fb48f6ccd95b84.png" data-lightbox="roadtrip" data-title="Military And Divorce Stuff You Ve Got To Consider Katehorrell Military Divorce Divorce Help Divorce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/73/a4/2373a4abb1f430e985fb48f6ccd95b84.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS5rUFHgCtZV1DE8FJ07w61onPkeFMR0J8cw';" alt="Military And Divorce Stuff You Ve Got To Consider Katehorrell Military Divorce Divorce Help Divorce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military And Divorce Stuff You Ve Got To Consider Katehorrell Military Divorce Divorce Help Divorce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/07/4b/36074b129dc5ca8af4ede2203cdd9ba7.jpg" data-lightbox="roadtrip" data-title="Military Divorce Tips Military And Divorce Military Divorce Divorce Books Health Care">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/07/4b/36074b129dc5ca8af4ede2203cdd9ba7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk98RntsLGudWIRHfsEDNjnK3WetH0JX7qhw';" alt="Military Divorce Tips Military And Divorce Military Divorce Divorce Books Health Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Divorce Tips Military And Divorce Military Divorce Divorce Books Health Care</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/9b/5b/b7/9b5bb70992e841bcbcf2c0e46d345d6f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk98RntsLGudWIRHfsEDNjnK3WetH0JX7qhw';" alt="Military Divorce Tips Military And Divorce Military Divorce Divorce Books Health Care">
+										<div class="card-body">
+						<h3 class="h5"><b>But military pensions carry unique functions that affect how they fit into a divorce in Dallas and Fort Worth.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Retired military divorce in texas</strong>. 
+								
+																	Federal law grants direct partial payments of military retirement to spouses married to a soldier for at least ten years but military divorce in Texas requires the division of any future military retirement benefits that accrued during the marriage regardless of its length. 
+																	It allows Texas family law courts to have the ability to treat retirement pay for veterans as either separate property owned by the veteran independent of their spouse or as community property that is subject to being divided up in the divorce. 
+																	It recognizes the right of state courts to distribute military retired pay to a spouse or former spouse. 
+																	The federal law that governs military pensions is the Uniformed Services Former Spouses Protection Act. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Loop 410 Suite 800 San Antonio Texas 78209. 
+																	In military divorce the Uniform Services Former Spouses Protection Act USFSPA recognizes the right of state courts to distribute military retired pay to a spouse or ex-spouse and provides a method of enforcing these orders through the Department of Defense. 
+																	Cramp Colonel USAF Ret August 2012 Republished November 2013 CRAMP LAW FIRM PLLC 901 NE. 
+																	Duration of marriage during military service proper documentation and capabilities of legal counsel all play integral roles in the outcome of military divorce settlements in Texas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While military divorces bear many similarities to civilian divorces federal regulations regarding military retirement benefits can complicate matters. 
+																	A Texas divorce lawyer advises clients that active duty military members are also protected by the Soldiers and Sailors Civil Relief Act 50 UCS section 521 which prevents them from being held in default for failure to respond to a divorce summons if they are on active duty. 
+																	In Texas the military retirement benefits that you accumulated during your marriage are considered COMMUITY property belonging to both you and your spouse. 
+																	Military pensions or military retirement is a complex and tedious part of a Texas divorce. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	So while the military has different rules that apply to spouses like yourselves that are divorcing the state law of Texas would apply to your divorce. 
+																	A military divorce involves a divorce where one or both spouses are in the National Guard are active duty military personnel or are reservists. 
+																	The Uniformed Services Former Spouse Protection Act USFSPA was enacted by Congress to address dividing retirement benefits in military divorces and authorize direct payment of military pay to the former spouse. 
+																	The USFSPA allows Texas to treat military disposable retired pay as marital property meaning that it can be divided during divorce. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And it provides a method of enforcing these orders through the Department of Defense. 
+																	In other words during a divorce there is a part of a retirement that a spouse has a right to ask for. 
+																	What works in one divorce may not be remotely close to the right course of action in the next. 
+																	Texas is a community property state which means that all property that you and your spouse own at the time your divorce is filed is presumed to be owned jointly by you and your spouse. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Just like civilian divorce military divorce is an emotional rollercoaster for both parties involved. 
+																	Texas legislators have long understood that military members may have difficulty getting jurisidiction in their particular state for purposes of filing a divorce which is why the law specifically allows members of the military to file in their homestate even if the member is not living that at the time of filing the case. 
+																	Along with the normal Texas property division laws the federal government has enacted the Uniformed Services Former Spouses Protection Act USFSPA that governs how military retirement benefits are calculated and divided upon divorce. 
+																	Filing for a military divorce just like a regular divorce begins in the state where the spouse has a legal residence. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Higdon of Higdon Hardy Zuflacht LLP San Antonio Texas i TABLE OF CONTENTS 1. 
+																	Military Retirement and Divorce Chapter 553 August 14-17 2006 32nd Advanced Family Law Course Marriott Rivercenter San Antonio Texas James N. 
+																	The Federal laws that cover the division of military retirement pay in Texas divorces is known as the Uniformed Services Former Spouses Protection Act USFSPA. 
+																	It allows Texas family law courts to have the ability to treat retirement pay for veterans as either separate property owned by the veteran independent of their spouse or as community property that is subject. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Federal laws that cover the division of military retirement pay in Texas divorces is known as the Uniformed Services Former Spouses Protection Act USFSPA. 
+																	This law accomplishes two things. 
+																	Generally dividing retirement plans in divorces can be complex legal and financial undertakings. 
+																	If you are a resident of Texas and are away on public service deployed or stationed somewhere else you can still file for divorce in your home county of Texas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 202020 rule applies if the marriage has lasted 20 years and the military member has at least 20 years of creditable service toward retirement and at least 20 years of this creditable military service was performed during the marriage. 
+																	Texas Military Divorce Laws. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.onlinedivorce.com/media/uploads/zinnia/2020/11/02/military-divorce-texas.png" data-lightbox="roadtrip" data-title="Military Divorce In Texas Guide 2021 Online Divorce">
+											<img class="card-img v-image ads-img " src="https://www.onlinedivorce.com/media/uploads/zinnia/2020/11/02/military-divorce-texas.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRST72XvIV5Cc971bqL-8he7gTUMVZAbmOW3g';" alt="Military Divorce In Texas Guide 2021 Online Divorce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Divorce In Texas Guide 2021 Online Divorce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3b/c0/63/3bc0632ef0e13e317548a6d5767b9c0c.jpg" data-lightbox="roadtrip" data-title="How To File For Divorce In Texas Without A Lawyer With Pictures Filingfordivorce Divorce Divorce Help Dealing With Divorce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3b/c0/63/3bc0632ef0e13e317548a6d5767b9c0c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaCxRMMDajRSupvD0zHNokPSj3Rs-SNsJE8Q';" alt="How To File For Divorce In Texas Without A Lawyer With Pictures Filingfordivorce Divorce Divorce Help Dealing With Divorce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To File For Divorce In Texas Without A Lawyer With Pictures Filingfordivorce Divorce Divorce Help Dealing With Divorce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/27/6f/85276fd50240f36f9dc72fa782f1c896.jpg" data-lightbox="roadtrip" data-title="Newhome Programs For Military Veterans Available Houston Texas Orlando Tampa Miami Flo Military Relocation Incentive Programs Veteran Owned Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/27/6f/85276fd50240f36f9dc72fa782f1c896.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb0RYdhw1FmhHsoxHgcR16onM0IcJDXrY23g';" alt="Newhome Programs For Military Veterans Available Houston Texas Orlando Tampa Miami Flo Military Relocation Incentive Programs Veteran Owned Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Newhome Programs For Military Veterans Available Houston Texas Orlando Tampa Miami Flo Military Relocation Incentive Programs Veteran Owned Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.thelarsonlawoffice.com/wp-content/uploads/2020/06/military-divorce-in-texas-300x300.jpg" data-lightbox="roadtrip" data-title="Understanding Military Divorce In Texas The Larson Law Office">
+											<img class="card-img v-image ads-img " src="http://www.thelarsonlawoffice.com/wp-content/uploads/2020/06/military-divorce-in-texas-300x300.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2uRNPpGuuCo_7jsBgi-V9fUgryWSONCL4cg';" alt="Understanding Military Divorce In Texas The Larson Law Office">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding Military Divorce In Texas The Larson Law Office</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/43/a3/7c43a357099c66b650b1dc25d868ffab.jpg" data-lightbox="roadtrip" data-title="19 Discounts Members Of The Military Did Not Know They Could Get Veterans Discounts Club Veterans Discounts Veteran Senior Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/43/a3/7c43a357099c66b650b1dc25d868ffab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Xjm6dNqT0or6_mHc-DELFsemLIyEeIbXnA';" alt="19 Discounts Members Of The Military Did Not Know They Could Get Veterans Discounts Club Veterans Discounts Veteran Senior Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">19 Discounts Members Of The Military Did Not Know They Could Get Veterans Discounts Club Veterans Discounts Veteran Senior Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.bryanfagan.com/images/blog/divorce-in-the-military.jpeg" data-lightbox="roadtrip" data-title="Military Disability Pay In A Texas Divorce Case">
+											<img class="card-img v-image ads-img " src="http://www.bryanfagan.com/images/blog/divorce-in-the-military.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0IU7LPfiKJS0l4J9bfhe9MBTZUvWpfKveDA';" alt="Military Disability Pay In A Texas Divorce Case">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Disability Pay In A Texas Divorce Case</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/5b/ce/405bce8718ea2281c1c46fd767df48d1.jpg" data-lightbox="roadtrip" data-title="Congratulations Retirement Military Service Card Zazzle Com Congratulations On Your Retirement Military Cards Military Retirement Gift">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/5b/ce/405bce8718ea2281c1c46fd767df48d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpDHSpzbJObLCDgH0CVc9BSB-nFHbHnnW_aQ';" alt="Congratulations Retirement Military Service Card Zazzle Com Congratulations On Your Retirement Military Cards Military Retirement Gift">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Congratulations Retirement Military Service Card Zazzle Com Congratulations On Your Retirement Military Cards Military Retirement Gift</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/35/32/cc3532c3da431ea87da58126ffe9bb91.jpg" data-lightbox="roadtrip" data-title="Military Retirement Party Invitation Zazzle Com Retirement Party Invitations Military Retirement Parties Retirement Parties">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/35/32/cc3532c3da431ea87da58126ffe9bb91.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuSregIKch1Z-N7GWfv47bbwCxbP85i00dZw';" alt="Military Retirement Party Invitation Zazzle Com Retirement Party Invitations Military Retirement Parties Retirement Parties">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Retirement Party Invitation Zazzle Com Retirement Party Invitations Military Retirement Parties Retirement Parties</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/a6/9f/dba69ff5d565d957f4f55afd4c294e0f.jpg" data-lightbox="roadtrip" data-title="Family Lawyer In Spring Tx Blog Undisclosed Assets Family Law Divorce Texas Law">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/a6/9f/dba69ff5d565d957f4f55afd4c294e0f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4TVqhY21tZd1IjdnfbV_xRn0tpbZbcCNUOQ';" alt="Family Lawyer In Spring Tx Blog Undisclosed Assets Family Law Divorce Texas Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Family Lawyer In Spring Tx Blog Undisclosed Assets Family Law Divorce Texas Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://filmdaily.co/wp-content/uploads/2021/01/divorce-01.jpg" data-lightbox="roadtrip" data-title="Military Divorce In Texas Film Daily">
+											<img class="card-img v-image ads-img " src="https://filmdaily.co/wp-content/uploads/2021/01/divorce-01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjCGcn2KU6Mp0P3a8lSgINjr2nJ64jO99INg';" alt="Military Divorce In Texas Film Daily">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Divorce In Texas Film Daily</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/18/30/61183080e69a41d116e2bdce4edc37ab.jpg" data-lightbox="roadtrip" data-title="Military Divorce What It S Like To Split From Your Military Spouse Military Divorce Military Spouse What Is Like">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/18/30/61183080e69a41d116e2bdce4edc37ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf47XlTn-FSuY9WWQNYCF1OReiuxIr4RTLTw';" alt="Military Divorce What It S Like To Split From Your Military Spouse Military Divorce Military Spouse What Is Like">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Divorce What It S Like To Split From Your Military Spouse Military Divorce Military Spouse What Is Like</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cramplawfirm.com/global_pictures/Armydad258149043.jpg" data-lightbox="roadtrip" data-title="Military Divorce Lawyer San Antonio Cramp Law Firm">
+											<img class="card-img v-image ads-img " src="https://cramplawfirm.com/global_pictures/Armydad258149043.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjQSPAOvngAMmCy9chIPpGRU5aJ9CKMDA1FA';" alt="Military Divorce Lawyer San Antonio Cramp Law Firm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Divorce Lawyer San Antonio Cramp Law Firm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9d/40/00/9d40009afc77e37bb9d38a78f3f10597.jpg" data-lightbox="roadtrip" data-title="The Pay Step Salary Of Texas Teachers In 2020 Cost Of Divorce Personal Loans Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9d/40/00/9d40009afc77e37bb9d38a78f3f10597.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTg6Inek3zn8BJ3vrZFnJ9HS3ujSs0hQExKw';" alt="The Pay Step Salary Of Texas Teachers In 2020 Cost Of Divorce Personal Loans Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Pay Step Salary Of Texas Teachers In 2020 Cost Of Divorce Personal Loans Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-long-is-leave-in-the-military.html">How Long Is Leave In The Military</a></li>
+													<li class="list-group-item"><a href="/how-do-i-get-an-hr-block-key-code.html">How Do I Get An Hr Block Key Code</a></li>
+													<li class="list-group-item"><a href="/how-do-i-know-if-my-spouse-is-bipolar.html">How Do I Know If My Spouse Is Bipolar</a></li>
+													<li class="list-group-item"><a href="/how-do-i-find-veterans-service-records.html">How Do I Find Veterans Service Records</a></li>
+													<li class="list-group-item"><a href="/how-does-a-military-spouse-change-state-of-residency.html">How Does A Military Spouse Change State Of Residency</a></li>
+													<li class="list-group-item"><a href="/how-do-i-get-a-copy-of-my-military-service-records.html">How Do I Get A Copy Of My Military Service Records</a></li>
+													<li class="list-group-item"><a href="/how-do-i-request-my-medical-records-from-the-military.html">How Do I Request My Medical Records From The Military</a></li>
+													<li class="list-group-item"><a href="/how-long-is-military-spouse-preference-good-for.html">How Long Is Military Spouse Preference Good For</a></li>
+													<li class="list-group-item"><a href="/how-do-military-wives-cope.html">How Do Military Wives Cope</a></li>
+													<li class="list-group-item"><a href="/how-long-after-separation-can-you-get-spousal-support.html">How Long After Separation Can You Get Spousal Support</a></li>
+													<li class="list-group-item"><a href="/how-do-i-get-my-dependent-military-medical-records.html">How Do I Get My Dependent Military Medical Records</a></li>
+													<li class="list-group-item"><a href="/how-long-after-covid-can-i-go-back-to-work.html">How Long After Covid Can I Go Back To Work</a></li>
+													<li class="list-group-item"><a href="/how-long-are-us-military-contracts.html">How Long Are Us Military Contracts</a></li>
+													<li class="list-group-item"><a href="/how-long-does-it-take-to-get-served-after-filing-for-divorce.html">How Long Does It Take To Get Served After Filing For Divorce</a></li>
+													<li class="list-group-item"><a href="/how-do-you-know-if-you-have-adhd-or-bipolar.html">How Do You Know If You Have Adhd Or Bipolar</a></li>
+													<li class="list-group-item"><a href="/how-do-i-help-my-wife-with-depression.html">How Do I Help My Wife With Depression</a></li>
+													<li class="list-group-item"><a href="/how-does-your-husband-treat-you.html">How Does Your Husband Treat You</a></li>
+													<li class="list-group-item"><a href="/how-do-i-request-military-records.html">How Do I Request Military Records</a></li>
+													<li class="list-group-item"><a href="/how-do-i-get-my-va-medical-records-online.html">How Do I Get My Va Medical Records Online</a></li>
+													<li class="list-group-item"><a href="/how-do-i-find-world-war-2-service-records.html">How Do I Find World War 2 Service Records</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

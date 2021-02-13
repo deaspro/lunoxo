@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Navy Spouse Relocation - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Navy Spouse Relocation",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/1d/8b/22/1d8b22bdf9dd64fe6431e322f07fb33d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=navy+spouse+relocation",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Navy Spouse Relocation</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The position must be in the local commuting area of the sponsors new duty station. Section 556 of the National Defense Authorization Action FY18 provides the Navy the opportunity to reimburse members up to 500 for state licensure and certification costs of a spouse of a member of the Armed Forces arising from relocation to another state due to. Your installations Military and Family Support center has other programs and services to assist with a move such as financial readiness to assist with. <br>				
+			</p>
+										<a class="badge badge-success" href="/military-hat-tilt.html">military hat tilt</a>
+											<a class="badge badge-success" href="/military-hat-with-ear-flaps.html">military hat with ear flaps</a>
+											<a class="badge badge-warning" href="/military-hats-gloves.html">military hats gloves</a>
+											<a class="badge badge-info" href="/military-hats-made-in-usa.html">military hats made in usa</a>
+											<a class="badge badge-warning" href="/military-hat-insignia.html">military hat insignia</a>
+											<a class="badge badge-danger" href="/military-hats-types-for-sale.html">military hats types for sale</a>
+											<a class="badge badge-danger" href="/military-hat-nz.html">military hat nz</a>
+											<a class="badge badge-primary" href="/military-hat-id-roblox.html">military hat id roblox</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the right site.  Our site provides you with suggestions for seeing the highest quality video and image content, hunt and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, so we recommend this video that you see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/e6/b3/e0e6b3703b22662a4c57736332e92ade.png" data-lightbox="roadtrip" data-title="Step 3 6 Vital Keys For A Successful Military Relocation Sponsored With Images Military Spouse Military Life Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/e6/b3/e0e6b3703b22662a4c57736332e92ade.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcC0DPy9KZx9AoYqDeIe7UI6pgEzPIfvI8Qw';" alt="Step 3 6 Vital Keys For A Successful Military Relocation Sponsored With Images Military Spouse Military Life Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Step 3 6 Vital Keys For A Successful Military Relocation Sponsored With Images Military Spouse Military Life Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/b9/57/78b9572a79069e79fdd572ff3c5d81b4.png" data-lightbox="roadtrip" data-title="The Smart Military Spouse S Guide To A Personally Procured Move Nextgen Milspouse Military Spouse Military Move Moving">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/b9/57/78b9572a79069e79fdd572ff3c5d81b4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuKP6_N3VYmyydECTEZipXdfEBUDneySkp8A';" alt="The Smart Military Spouse S Guide To A Personally Procured Move Nextgen Milspouse Military Spouse Military Move Moving">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Smart Military Spouse S Guide To A Personally Procured Move Nextgen Milspouse Military Spouse Military Move Moving</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/09/16/31091657ec4eba9e7d1765d9faee50d4.jpg" data-lightbox="roadtrip" data-title="Dealing With Military Relocation Military Relocation Military Move Military Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/09/16/31091657ec4eba9e7d1765d9faee50d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGkTErdeuCTXy_zJVmrmIb4cGzersvq0v6zw';" alt="Dealing With Military Relocation Military Relocation Military Move Military Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dealing With Military Relocation Military Relocation Military Move Military Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/10/4b/d0104bcba6c957edc49182e183a33a5f.jpg" data-lightbox="roadtrip" data-title="Pin On Military Love And Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/10/4b/d0104bcba6c957edc49182e183a33a5f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgVax0QQv7thmkQzE6ys1wRTHKVyAFS9s_jw';" alt="Pin On Military Love And Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Love And Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/90/22/2a9022ef978ce7ef0980f4a5f9f02158.jpg" data-lightbox="roadtrip" data-title="Navy Husband Will Do Tee Navy Husband Navy Cool Tees">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/90/22/2a9022ef978ce7ef0980f4a5f9f02158.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxZiXwMWGyj93xe11mk_zl7WNTkcjqq4ZM6g';" alt="Navy Husband Will Do Tee Navy Husband Navy Cool Tees">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Husband Will Do Tee Navy Husband Navy Cool Tees</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/95/16/97951681d474448116aa2871a0f3e875.jpg" data-lightbox="roadtrip" data-title="We Wanted One Thing And Going To Get Something Else Great For His Career But Two Totally Opposite Ends Of Th Military Wife Life Military Wife Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/95/16/97951681d474448116aa2871a0f3e875.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu4Fg__sWQ1gp4NMaX-IqS5XRlwkGu_6vTSQ';" alt="We Wanted One Thing And Going To Get Something Else Great For His Career But Two Totally Opposite Ends Of Th Military Wife Life Military Wife Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Wanted One Thing And Going To Get Something Else Great For His Career But Two Totally Opposite Ends Of Th Military Wife Life Military Wife Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d0/10/4b/d0104bcba6c957edc49182e183a33a5f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu4Fg__sWQ1gp4NMaX-IqS5XRlwkGu_6vTSQ';" alt="We Wanted One Thing And Going To Get Something Else Great For His Career But Two Totally Opposite Ends Of Th Military Wife Life Military Wife Army Wife Life">
+										<div class="card-body">
+						<h3 class="h5"><b>Relocating to a new duty station every few years typically means you must leave your place of employment.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Navy spouse relocation</strong>. 
+								
+																	If your spouse or common-law partner is being temporarily relocated you may request relocation of spouse leave for up to 5 years. 
+																	Relocation and Military Moves are an inevitable part of military life. 
+																	Collocation of Navy members with members of other uniformed services or services of other countries are much more difficult and may not always be possible. 
+																	All it requires is basic data of the software used and a vivid creativeness to capture the main points in a fascinating form. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Spouses who wish to exercise military spouse preference must relocate with the service member. 
+																	Contact Military OneSource 247. 
+																	Such as relocating on short notice or putting your own education plans on hold. 
+																	To request one of the many publications or speak directly with a Navy spouse call NSF toll-free at 1-877-673-7773 between 10 am. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Spouse collocation policy does not. 
+																	Relocation and Military Moves are an inevitable part of military life. 
+																	They put their careers second to their Sailors and often shoulder the responsibilities of parenting alone while reassuring the kids dad or mom will be home soon. 
+																	Maximum duration of leave request. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The military spouse is living in the non-domicile state as per requirements of his or her active duty. 
+																	Depending on the state you may not be eligible to receive unemployment benefits since you voluntarily left your job. 
+																	EST Monday through Friday or. 
+																	TASU supports the Royal Navy and Royal Marines before during and after deployment identifying with the unique nature of each ship. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In order for a the spouse of a member of the armed forces to be eligible to receive military spouse status the spouse must be living in a state other than that which is designated as hisher domicile. 
+																	Spouse co-location assignments are fully supported by the Chief of Naval Personnel and when requested become the highest. 
+																	They sacrifice time with their loved ones whether due to deployment or PCS relocation. 
+																	Military OneSource specialty consultants can assist you with moving help every step of the way whether youre making a PCS move or transitioning out of the military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn ways for making the process less stressful for the entire family. 
+																	In addition to the resources provided at Movemil and your local transportation office the relocation assistance program helps you plan to make connections at your new duty station. 
+																	For example a seashore marriage ceremony would have an invitation template depicting the sun and beach and frolic in the way in. 
+																	The Military and Family Support Centers relocation assistance office supports you and your family as you make a permanent change of station or PCS move. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whether its dealing with the demands of deployment or the rigours of relocation we make sure that the family and friends of Naval Service personnel have all the help guidance and support they need every day. 
+																	If your spouse or common-law partner is being permanently relocated you may request leave without pay for up to 1 year. 
+																	In the Navy spouses serve too. 
+																	Designing resignation letter due to relocation of military spouse is a fairly easy chore. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Relocating can seem like a daunting prospect but for personnel wishing to serve accompanied were here to help with relocation benefits and providing Service Family Accommodation SFA for example. 
+																	The Department of the Navy is dedicated to supporting families and currently provides resources and advocacy for spouse employment. 
+																	DISCUSS WITH YOUR DETAILER EARLY AND HAVE YOUR CO-LO REQUEST ON FILE. 
+																	As a military spouse you serve our country with the sacrifices you make for your family during your partners active-duty career. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Spouse Relocation and Transition When youre relocating let us help do some of the heavy lifting. 
+																	Like the old joke in the Navy goes if the navy wanted you to have a wife they would of issued you one in your seabag. 
+																	The spouse has relocated to that location for the sole reason of staying with the spouse. 
+																	No the Navy will not pay to relocate your wife to your current duty station. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn ways for making the process less stressful for the entire family. 
+																	You will be granted leave without pay upon request. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/e5/fd/06e5fd3b716cde591f80bc448926ce7a.jpg" data-lightbox="roadtrip" data-title="25 00 Multiple Colors Navy Wife Will Do Tank Top Navy Spouse Military Spouse Workout Top Military Family Navy Wife Workout Tops Navy Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/e5/fd/06e5fd3b716cde591f80bc448926ce7a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXgeA02H0yC_NmE61HxLBVAofis4xqh9o2ug';" alt="25 00 Multiple Colors Navy Wife Will Do Tank Top Navy Spouse Military Spouse Workout Top Military Family Navy Wife Workout Tops Navy Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">25 00 Multiple Colors Navy Wife Will Do Tank Top Navy Spouse Military Spouse Workout Top Military Family Navy Wife Workout Tops Navy Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1d/8b/22/1d8b22bdf9dd64fe6431e322f07fb33d.jpg" data-lightbox="roadtrip" data-title="Face Your Off Season Pcs Move With Confidence Military Move Military Spouse Resources Pcs Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1d/8b/22/1d8b22bdf9dd64fe6431e322f07fb33d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3ZIzKuVowE2kzciRHJqZP82H2MqPu86m9MQ';" alt="Face Your Off Season Pcs Move With Confidence Military Move Military Spouse Resources Pcs Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Face Your Off Season Pcs Move With Confidence Military Move Military Spouse Resources Pcs Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/2a/fe/e12afe50f53f63765e29841f3119e359.jpg" data-lightbox="roadtrip" data-title="Pcs Prep Tips For A Smooth Military Move Mrs Navy Mama In 2020 Military Move Military Spouse Pcs Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/2a/fe/e12afe50f53f63765e29841f3119e359.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrTvp3ivRpjyLT2rrJoELLgi4_Qahoy-VInA';" alt="Pcs Prep Tips For A Smooth Military Move Mrs Navy Mama In 2020 Military Move Military Spouse Pcs Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pcs Prep Tips For A Smooth Military Move Mrs Navy Mama In 2020 Military Move Military Spouse Pcs Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/24/c4/e624c4251cc1ea558ba9ca2634ca0f6f.png" data-lightbox="roadtrip" data-title="Military Moves The Ultimate Pcs Binder Guide With Free Printables Military Move Pcs Binder Pcs Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/24/c4/e624c4251cc1ea558ba9ca2634ca0f6f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDlHyrjfhFcxFK6af5W_MehRiLOI3Te5TO7w';" alt="Military Moves The Ultimate Pcs Binder Guide With Free Printables Military Move Pcs Binder Pcs Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Moves The Ultimate Pcs Binder Guide With Free Printables Military Move Pcs Binder Pcs Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f7/bf/e7/f7bfe7ff6190f9d0e91767792553e186.jpg" data-lightbox="roadtrip" data-title="13 Memes For A Military Pcs Pcs Military Soldier Wife Military Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f7/bf/e7/f7bfe7ff6190f9d0e91767792553e186.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9MoFNIuvQpUJ6x-e4kXrNN_YEypxaRbZyA';" alt="13 Memes For A Military Pcs Pcs Military Soldier Wife Military Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">13 Memes For A Military Pcs Pcs Military Soldier Wife Military Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/a3/95/29a395df3cbec10f910db91ef7149320.jpg" data-lightbox="roadtrip" data-title="What You Need To Know About Being Stationed At Los Angeles Air Force Base Air Force Air Force Bases Military Relocation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/a3/95/29a395df3cbec10f910db91ef7149320.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ES3RwJW4DMunetKGJ6YiDiqeu1Q4k9uOpQ';" alt="What You Need To Know About Being Stationed At Los Angeles Air Force Base Air Force Air Force Bases Military Relocation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What You Need To Know About Being Stationed At Los Angeles Air Force Base Air Force Air Force Bases Military Relocation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/56/3f/57563f5235d7f2406ae8d1e2b1f77f49.png" data-lightbox="roadtrip" data-title="Pcs Stories From Seasoned Milsos Mrs Navy Mama Military Life Military Spouse Christian Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/56/3f/57563f5235d7f2406ae8d1e2b1f77f49.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuaLQAiQqK0sKYzV9NYdBqJR3X7AC3wP3MKw';" alt="Pcs Stories From Seasoned Milsos Mrs Navy Mama Military Life Military Spouse Christian Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pcs Stories From Seasoned Milsos Mrs Navy Mama Military Life Military Spouse Christian Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/7c/6e/2b7c6ee64c84d5ec4978c14d9f2159f7.png" data-lightbox="roadtrip" data-title="Fays House Army Wife Life Military Wife Life Military Move">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/7c/6e/2b7c6ee64c84d5ec4978c14d9f2159f7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYOzTvn1MAR67BvWdYitLUY65wNFblVLoKog';" alt="Fays House Army Wife Life Military Wife Life Military Move">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fays House Army Wife Life Military Wife Life Military Move</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/6f/7f/0d6f7f47af3fc98bab006d0c3a4efb90.png" data-lightbox="roadtrip" data-title="Pcs Prep Tips For A Smooth Military Move Mrs Navy Mama In 2020 Military Move Military Spouse Support Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/6f/7f/0d6f7f47af3fc98bab006d0c3a4efb90.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwokMr-w_OkUn2POi7FFDqnVrbk6SDRJKnzA';" alt="Pcs Prep Tips For A Smooth Military Move Mrs Navy Mama In 2020 Military Move Military Spouse Support Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pcs Prep Tips For A Smooth Military Move Mrs Navy Mama In 2020 Military Move Military Spouse Support Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/b9/9e/77b99e0b153e7bbfda192f0e8a80ae0c.png" data-lightbox="roadtrip" data-title="6 Free Ebooks For Your Military Family S Pcs Military Spouse Support Military Family Military Move">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/b9/9e/77b99e0b153e7bbfda192f0e8a80ae0c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD1k31GakogCW9YmGOHVFO--1s6jc6n3CapA';" alt="6 Free Ebooks For Your Military Family S Pcs Military Spouse Support Military Family Military Move">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Free Ebooks For Your Military Family S Pcs Military Spouse Support Military Family Military Move</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/6f/d8/d46fd8b80db46c895abb19e5e46916b5.png" data-lightbox="roadtrip" data-title="25 Pcs Must Haves For Your New House Army Wife Life Military Wife Life Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/6f/d8/d46fd8b80db46c895abb19e5e46916b5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsJ-xcMadM9meKCBcwOOkYJAHCYU9RlnKkvw';" alt="25 Pcs Must Haves For Your New House Army Wife Life Military Wife Life Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">25 Pcs Must Haves For Your New House Army Wife Life Military Wife Life Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/ce/c7/61cec7f9f9ab86cae0a0e7925e769dce.jpg" data-lightbox="roadtrip" data-title="Relocating Tips For Military Kids Military Family Advisory Network Military Kids Military Girlfriend Army Military Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/ce/c7/61cec7f9f9ab86cae0a0e7925e769dce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO4qcVlyQfgnb2UIIOhGzKCn7QRn398yiklw';" alt="Relocating Tips For Military Kids Military Family Advisory Network Military Kids Military Girlfriend Army Military Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Relocating Tips For Military Kids Military Family Advisory Network Military Kids Military Girlfriend Army Military Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/2b/8f/cf2b8f83e05fedbef63ab7c4c1d15561.png" data-lightbox="roadtrip" data-title="After The Pcs Move Dust Settles Military Relocation Pcs Military Military Move">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/2b/8f/cf2b8f83e05fedbef63ab7c4c1d15561.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd0OS2qUvvA76F-5i3-honHj7lPt8GlszZdQ';" alt="After The Pcs Move Dust Settles Military Relocation Pcs Military Military Move">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">After The Pcs Move Dust Settles Military Relocation Pcs Military Military Move</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-does-a-human-resource-do-in-the-army.html">What Does A Human Resource Do In The Army</a></li>
+													<li class="list-group-item"><a href="/what-does-it-mean-when-your-husband-puts-you-down.html">What Does It Mean When Your Husband Puts You Down</a></li>
+													<li class="list-group-item"><a href="/what-does-tricare-cover-for-retirees.html">What Does Tricare Cover For Retirees</a></li>
+													<li class="list-group-item"><a href="/what-can-i-do-if-my-wife-wont-let-me-see-my-child.html">What Can I Do If My Wife Wont Let Me See My Child</a></li>
+													<li class="list-group-item"><a href="/what-does-hrms-do.html">What Does Hrms Do</a></li>
+													<li class="list-group-item"><a href="/what-careers-does-mycaa-cover.html">What Careers Does Mycaa Cover</a></li>
+													<li class="list-group-item"><a href="/what-does-a-spouse-need-to-get-a-military-id.html">What Does A Spouse Need To Get A Military Id</a></li>
+													<li class="list-group-item"><a href="/what-does-a-marine-sniper-do.html">What Does A Marine Sniper Do</a></li>
+													<li class="list-group-item"><a href="/what-did-the-military-wives-sing-at-the-albert-hall.html">What Did The Military Wives Sing At The Albert Hall</a></li>
+													<li class="list-group-item"><a href="/what-does-a-gold-star-family-license-plate-mean.html">What Does A Gold Star Family License Plate Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-anne-purcell-have-to-say-about-being-a-military-wife.html">What Does Anne Purcell Have To Say About Being A Military Wife</a></li>
+													<li class="list-group-item"><a href="/what-does-a-human-resources-officer-do.html">What Does A Human Resources Officer Do</a></li>
+													<li class="list-group-item"><a href="/what-do-i-do-if-i-test-positive-for-pregnancy.html">What Do I Do If I Test Positive For Pregnancy</a></li>
+													<li class="list-group-item"><a href="/what-do-i-do-if-my-partner-has-covid-symptoms.html">What Do I Do If My Partner Has Covid Symptoms</a></li>
+													<li class="list-group-item"><a href="/what-does-it-mean-to-be-a-military-spouse.html">What Does It Mean To Be A Military Spouse</a></li>
+													<li class="list-group-item"><a href="/what-do-i-do-if-i-received-a-stimulus-check-for-my-deceased-spouse.html">What Do I Do If I Received A Stimulus Check For My Deceased Spouse</a></li>
+													<li class="list-group-item"><a href="/what-does-an-indian-army-officer-do.html">What Does An Indian Army Officer Do</a></li>
+													<li class="list-group-item"><a href="/what-does-it-mean-when-a-man-talks-about-his-wife-all-the-time.html">What Does It Mean When A Man Talks About His Wife All The Time</a></li>
+													<li class="list-group-item"><a href="/what-disqualifies-you-from-pell-grant.html">What Disqualifies You From Pell Grant</a></li>
+													<li class="list-group-item"><a href="/what-can-i-say-to-my-wife-on-her-birthday.html">What Can I Say To My Wife On Her Birthday</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How To Vote Out Of State Military - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How To Vote Out Of State Military",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/23/a0/1b/23a01b8a4f00e5306dda47c0c27aca85.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+to+vote+out+of+state+military",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How To Vote Out Of State Military</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Citizens can receive their absentee ballots via email fax or internet download depending on the state youre registered in. Moving around the country is becoming much more common these days. This site will direct you to your states absentee voting page. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/perks-of-being-a-marine-wife.html">perks of being a marine wife</a>
+											<a class="badge badge-warning" href="/perks-of-being-a-marine-officer.html">perks of being a marine officer</a>
+											<a class="badge badge-primary" href="/online-college-classes-for-military-spouses.html">online college classes for military spouses</a>
+											<a class="badge badge-info" href="/ohio-civil-war-soldier-records.html">ohio civil war soldier records</a>
+											<a class="badge badge-light" href="/percentage-of-military-retirement-divorce.html">percentage of military retirement divorce</a>
+											<a class="badge badge-light" href="/order-va-medical-records-online.html">order va medical records online</a>
+											<a class="badge badge-danger" href="/pak-army-helpline-lahore.html">pak army helpline lahore</a>
+											<a class="badge badge-success" href="/penfed-military-heroes-fund.html">penfed military heroes fund</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to visit the right site.  Our site gives you hints for seeing the maximum quality video and picture content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, so we recommend this video that you see.  It is also possible to contribute to supporting this site by sharing videos and images that you like on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5e/ac/8c/5eac8c14d6f8834f9528fcb7c4d3f8ee.jpg" data-lightbox="roadtrip" data-title="Pin On Random">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5e/ac/8c/5eac8c14d6f8834f9528fcb7c4d3f8ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5nZOIIugV5MncPwgd9XkJE_4G0gObZhQ--A';" alt="Pin On Random">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Random</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/a6/24/d0a624b718f38f54d03b301f8e88f81d.jpg" data-lightbox="roadtrip" data-title="Why Voter Registration Drives Are Critical In 2012 August 9 2012 When Political Parties Cannot Persuade Voters On The Rightness Of The Military Voter Ballot">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/a6/24/d0a624b718f38f54d03b301f8e88f81d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN2ghyRli-1fMCIG78UBkz_3Fd9225iWLdSQ';" alt="Why Voter Registration Drives Are Critical In 2012 August 9 2012 When Political Parties Cannot Persuade Voters On The Rightness Of The Military Voter Ballot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Voter Registration Drives Are Critical In 2012 August 9 2012 When Political Parties Cannot Persuade Voters On The Rightness Of The Military Voter Ballot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/51/7b/4f517ba54dea9d00a19c3e4fc90ba182.jpg" data-lightbox="roadtrip" data-title="Learn How Your Military Family Can Register To Vote Military Family Vote Votes Matter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/51/7b/4f517ba54dea9d00a19c3e4fc90ba182.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgmy9eClC7OmWCzJFACanQgVMjFEcKhAaBtg';" alt="Learn How Your Military Family Can Register To Vote Military Family Vote Votes Matter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Learn How Your Military Family Can Register To Vote Military Family Vote Votes Matter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5e/99/94/5e999494dfc39507d9eaea27f51c8eb7.jpg" data-lightbox="roadtrip" data-title="Pin On Military Tributes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5e/99/94/5e999494dfc39507d9eaea27f51c8eb7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0QOpDycDIze8UDZdgxGDQDOvsNWhfv9Aevw';" alt="Pin On Military Tributes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Tributes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/cf/10/c4cf10f0af9b286d974de33555882959.jpg" data-lightbox="roadtrip" data-title="Pin On Neighborhood Finds">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/cf/10/c4cf10f0af9b286d974de33555882959.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHo7kTlucBQXqtS1MJf42nYFNTR0LFwaw2tw';" alt="Pin On Neighborhood Finds">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Neighborhood Finds</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/58/cd/9158cd06b38743afabbbecaa22cd35ce.jpg" data-lightbox="roadtrip" data-title="Pin By Abigail Tackett On Just Because Military Love Pray For Us Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/58/cd/9158cd06b38743afabbbecaa22cd35ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGJ2McfsHbVXLiJnGLduWqhKKhPIbpf64D3A';" alt="Pin By Abigail Tackett On Just Because Military Love Pray For Us Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Abigail Tackett On Just Because Military Love Pray For Us Military</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/0f/6c/62/0f6c62c8d20dc0a1c0393ec9c55fed0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGJ2McfsHbVXLiJnGLduWqhKKhPIbpf64D3A';" alt="Pin By Abigail Tackett On Just Because Military Love Pray For Us Military">
+										<div class="card-body">
+						<h3 class="h5"><b>2 phone call with Georgia Secretary of State Brad Raffensperger.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How to vote out of state military</strong>. 
+								
+																	Military Voter Absentee Voting Overview FVAP encourages the use of the Federal Post Card Application FPCA to start the absentee voting process as it is standardized for use across all States and will extend your eligibility to receive a ballot for all federal elections for at least one calendar year. 
+																	The original list included military personnel in its count and did not establish that any of the people it identified. 
+																	However states are increasingly allowing military and overseas voters to return completed ballots electronically. 
+																	After a qualified voter has requested an absentee ballot the voter will receive a confirmation email with instructions on how to log into the secure site. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Persons serving in the military along with their spouses andor dependents may register as a military voter in New York entitling them to receive an absentee ballot for all federal state and local races that they would be otherwise entitled to vote in if they were to go to their assigned polling place based on their New York residence. 
+																	Some states also allow ballots to be submitted electronically For military voters the Military Postal Service Agency provides a list of recommended mailing dates from those facilities. 
+																	Prior to the MOVE Act mail was the only option for these voters to return their completed ballot in the majority of states. 
+																	You should declare your voting residence as the same address that is listed on your Leave Earnings Statementyour home of record is where you technically entered military service from your hometown but your voting address is your CURRENT legal address. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In their state of legal residence rather than the state they are stationed in. 
+																	Military members may have legal residence in one state but be stationed in a different state and the Servicemembers Civil Relief Act allows military members to pay taxes register vehicles vote etc. 
+																	Be sure you know and follow the rules for your state if you decide to vote absentee. 
+																	Your local election office is in the county where you have established residency. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The ballot delivery system called Ballot Safe will allow eligible active duty military and overseas voters to receive their absentee ballot through a secure online website. 
+																	In others you need to provide a specific reason and. 
+																	Voting absentee is simple when living OCONUS and the same process as when living out of your home state. 
+																	For ballot return mail remains the only universally accepted method. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	None of the three cases involved an ineligible voter from out of state. 
+																	Military and Overseas Voters The Uniformed and Overseas Citizens Absentee Voting Act UOCAVA created special provisions for absent uniformed services and overseas citizens to vote by mail in primary general and special elections. 
+																	Every states absentee voting rules are different. 
+																	Register to VoteUpdate Your Registration opens in a new window Both federal and state laws govern absentee voting by uniformed services and overseas United States citizens. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Uniformed and Overseas Citizens Absentee Voting Act UOCAVA and the Military and Overseas Voter Empowerment MOVE Act are federal laws enacted to protect the rights of United States citizens to vote in federal elections while they are serving in the uniformed services or residing overseas. 
+																	Legal residency determines what local state tax laws a military member is subject to and in which local city county and state elections they may vote in. 
+																	The Nevada Republicans dropped their case the same day the state certified their election results giving six Electoral College votes to Democrat presidential candidate Joe Biden. 
+																	You had out-of-state voters they voted in Georgia but they were from out of state of 4925 Trump said in a Jan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fill in your selections and mail the ballot back. 
+																	Biden won Nevada by over 33500 votes. 
+																	Sign and send the FPCA to your local election office. 
+																	Our mission is to ensure public confidence in the electoral process by administering voter registration and elections with the highest level of professional standards integrity security accuracy and fairness. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Not just for military families anymore The first step is to figure out when your voting residence state says you need to be registered. 
+																	In many states no explanation is needed if youre registered in that state you can simply apply for an absentee ballot and vote by mail. 
+																	If you are overseas US. 
+																	You can fill it out online with an assistants help download a PDF version or pick up a hard copy version from your unit voting assistance officer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And to allow these individuals to use a federal write-in absentee ballot FWAB in the general election. 
+																	Simply fill out your FCPA via the Federal Voting Assistance Program website or pick up a copy of an FCPA at your local consulate or embassy. 
+																	In order to be eligible you must submit a completed Federal Post Card Application to your local election officials. 
+																	Forty-five days before the election you should receive your Federal ballot to vote. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military voters may either vote in their home of record or register to vote in the state that they currently reside. 
+																	Use Can I Vote to find out local requirements for absentee voting and apply by phone mail or online. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/f0/93/51f093d0241c293862c689d96a33b6b1.jpg" data-lightbox="roadtrip" data-title="Pin On My Military Life Style">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/f0/93/51f093d0241c293862c689d96a33b6b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpg2uzxCI4jWT18k5xcwzLofZlZltbSIldEA';" alt="Pin On My Military Life Style">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Military Life Style</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/6c/62/0f6c62c8d20dc0a1c0393ec9c55fed0b.jpg" data-lightbox="roadtrip" data-title="British Army Things On Instagram Also Check Out British Forces It S A New Account That S Dedicated To The Men And Eu Army Armed Forces British Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/6c/62/0f6c62c8d20dc0a1c0393ec9c55fed0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsDF3e4V1NIhMa0-0MUQtJMbVAgLoOIKEQaw';" alt="British Army Things On Instagram Also Check Out British Forces It S A New Account That S Dedicated To The Men And Eu Army Armed Forces British Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">British Army Things On Instagram Also Check Out British Forces It S A New Account That S Dedicated To The Men And Eu Army Armed Forces British Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/94/34/e89434b99c605da02d5348ef473fbd94.png" data-lightbox="roadtrip" data-title="Vote411 This Non Profit Site Created By The League Of Women Voters Is An All In One Tool To Compare Candidates Posi Voter Education Education Funding Voter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/94/34/e89434b99c605da02d5348ef473fbd94.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv0r7qK6TvYX0DY9c6C3yXwBCyP-aOpZFc_A';" alt="Vote411 This Non Profit Site Created By The League Of Women Voters Is An All In One Tool To Compare Candidates Posi Voter Education Education Funding Voter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vote411 This Non Profit Site Created By The League Of Women Voters Is An All In One Tool To Compare Candidates Posi Voter Education Education Funding Voter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/f5/91/bf/f591bfed185e0eef7331c9ddf6362cb4.jpg" data-lightbox="roadtrip" data-title="News Despite Nationwide State Of Emergency Several Border Incursions Leave More Than 100 Dead In East And South East Ethiopia Ethiopia Nationwide Emergency">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/f5/91/bf/f591bfed185e0eef7331c9ddf6362cb4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoQU3YX2Hx99pyKNkbEMF45YXeQO4_buXfNw';" alt="News Despite Nationwide State Of Emergency Several Border Incursions Leave More Than 100 Dead In East And South East Ethiopia Ethiopia Nationwide Emergency">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">News Despite Nationwide State Of Emergency Several Border Incursions Leave More Than 100 Dead In East And South East Ethiopia Ethiopia Nationwide Emergency</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/23/a0/1b/23a01b8a4f00e5306dda47c0c27aca85.jpg" data-lightbox="roadtrip" data-title="Pin On I Didn T Vote For Him Good 4m Me">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/23/a0/1b/23a01b8a4f00e5306dda47c0c27aca85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNIdvFhhQOC3VKd4dNPY3RyxjDVEUJWa9MIA';" alt="Pin On I Didn T Vote For Him Good 4m Me">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On I Didn T Vote For Him Good 4m Me</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/64/fb/7d/64fb7d4fe2237e536ff099f8df16942c--senate-votes-the-military.jpg" data-lightbox="roadtrip" data-title="Senate Votes To Include Women In The Draft Ranger School Female Soldier Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/64/fb/7d/64fb7d4fe2237e536ff099f8df16942c--senate-votes-the-military.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYGz0Lm1V2NRVMX3E1IkYNVvT7Rii665C4oA';" alt="Senate Votes To Include Women In The Draft Ranger School Female Soldier Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Senate Votes To Include Women In The Draft Ranger School Female Soldier Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/18/35/9a18353ad43bc3e01ed0f580ab039856.jpg" data-lightbox="roadtrip" data-title="Austin Peay State University S Rotc Has 20 Combat Veterans Meet Their Iraq War Veteran Clarksville Tn Online Iraq War Veteran War Veterans Austin Peay State University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/18/35/9a18353ad43bc3e01ed0f580ab039856.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFTnKCOuvzUb0boQeNOUdBr_0NfHdOLOYcNw';" alt="Austin Peay State University S Rotc Has 20 Combat Veterans Meet Their Iraq War Veteran Clarksville Tn Online Iraq War Veteran War Veterans Austin Peay State University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Austin Peay State University S Rotc Has 20 Combat Veterans Meet Their Iraq War Veteran Clarksville Tn Online Iraq War Veteran War Veterans Austin Peay State University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/ae/e2/1daee28389348d6d476495958cb21e38.jpg" data-lightbox="roadtrip" data-title="Pin By Randy Baeza On U S Army Thank You Military Base Military Troops">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/ae/e2/1daee28389348d6d476495958cb21e38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw7BcNtEdjB9HnHEjEZw3UovRBWNN34aHNJw';" alt="Pin By Randy Baeza On U S Army Thank You Military Base Military Troops">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Randy Baeza On U S Army Thank You Military Base Military Troops</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/9d/d6/989dd6dea3c51566aa9b1f9182490481.png" data-lightbox="roadtrip" data-title="Pin On Eoa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/9d/d6/989dd6dea3c51566aa9b1f9182490481.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzQ05IhQgM1OHuMqgRoJm3I60NDHoKE4nESQ';" alt="Pin On Eoa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Eoa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/54/fe/8d54fe1cc4b078a4c2de7b7e8983e0ea.jpg" data-lightbox="roadtrip" data-title="12 Things You May Not Know About Women In The Military Female Soldier Army Sergeant Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/54/fe/8d54fe1cc4b078a4c2de7b7e8983e0ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQAH36jPzCLLr_EDujZiD2BpbMx996nsUEMQ';" alt="12 Things You May Not Know About Women In The Military Female Soldier Army Sergeant Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 Things You May Not Know About Women In The Military Female Soldier Army Sergeant Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/86/97/bf8697a4364a85f7a506731903d2892c.jpg" data-lightbox="roadtrip" data-title="Pin On Hinduism">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/86/97/bf8697a4364a85f7a506731903d2892c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn10JjZP1kNsj2RWd6N7IEDuidYLSI-eYtGg';" alt="Pin On Hinduism">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Hinduism</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/d5/56/46d55610d0f93f00cb7303f400af0e9a.jpg" data-lightbox="roadtrip" data-title="Pin On Us Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/d5/56/46d55610d0f93f00cb7303f400af0e9a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROZFAxZHBhUENcOukWU_1uTlaoeR2abwg-HA';" alt="Pin On Us Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Us Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/95/f0/e395f065feff4c1a3f4741d1b5851faf.jpg" data-lightbox="roadtrip" data-title="Pin On Moment In Time">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/95/f0/e395f065feff4c1a3f4741d1b5851faf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVbpZsrs9OXJn_uULlav7NOg-aKuhqFoNSAA';" alt="Pin On Moment In Time">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Moment In Time</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/financial-aid-for-retired-military-dependents.html">Financial Aid For Retired Military Dependents</a></li>
+													<li class="list-group-item"><a href="/ex-husband-military-retirement-pay.html">Ex Husband Military Retirement Pay</a></li>
+													<li class="list-group-item"><a href="/foreign-military-spouse-association.html">Foreign Military Spouse Association</a></li>
+													<li class="list-group-item"><a href="/ex-spouse-opened-credit-card-in-my-name.html">Ex Spouse Opened Credit Card In My Name</a></li>
+													<li class="list-group-item"><a href="/eugene-bullard-military-hero-read-theory.html">Eugene Bullard Military Hero Read Theory</a></li>
+													<li class="list-group-item"><a href="/financial-aid-for-dependents-of-military.html">Financial Aid For Dependents Of Military</a></li>
+													<li class="list-group-item"><a href="/education-programs-for-retired-military-spouses.html">Education Programs For Retired Military Spouses</a></li>
+													<li class="list-group-item"><a href="/fbi-hrt-military-experience.html">Fbi Hrt Military Experience</a></li>
+													<li class="list-group-item"><a href="/federal-benefits-for-veterans-and-dependents-booklet.html">Federal Benefits For Veterans And Dependents Booklet</a></li>
+													<li class="list-group-item"><a href="/forgot-ncaa-eligibility-number.html">Forgot Ncaa Eligibility Number</a></li>
+													<li class="list-group-item"><a href="/eligibility-for-military-dependent-id-card.html">Eligibility For Military Dependent Id Card</a></li>
+													<li class="list-group-item"><a href="/filling-out-ncaa-eligibility-form.html">Filling Out Ncaa Eligibility Form</a></li>
+													<li class="list-group-item"><a href="/financial-assistance-for-military-spouses.html">Financial Assistance For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/essay-about-my-spouse.html">Essay About My Spouse</a></li>
+													<li class="list-group-item"><a href="/florida-scholarships-for-military-dependents.html">Florida Scholarships For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/fafsa-for-military-spouse.html">Fafsa For Military Spouse</a></li>
+													<li class="list-group-item"><a href="/english-military-heroes.html">English Military Heroes</a></li>
+													<li class="list-group-item"><a href="/employment-resources-for-military-spouses.html">Employment Resources For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/ex-spouse-military-retirement-pay.html">Ex Spouse Military Retirement Pay</a></li>
+													<li class="list-group-item"><a href="/foreign-national-military-spouse.html">Foreign National Military Spouse</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

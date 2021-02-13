@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>If My Spouse Qualifies For Medicare Do I - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "If My Spouse Qualifies For Medicare Do I",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/2b/78/63/2b786312ead46a8508c76c5025169831.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=if+my+spouse+qualifies+for+medicare+do+i",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>If My Spouse Qualifies For Medicare Do I</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Its important to understand that if your spouse is enrolling in Medicare but continuing to work past the age of 65 he or she can continue to have employer-sponsored coverage and you can continue to be covered as a spouse on that plan. Kids who qualify for Medicare at age 20 or older and have a disability are able to enroll in any part of Medicare. If you are not 62 your spouse must wait until your 62nd birthday to enroll in premium-free Medicare Part A. <br>				
+			</p>
+										<a class="badge badge-success" href="/schools-that-match-military-tuition-assistance.html">schools that match military tuition assistance</a>
+											<a class="badge badge-light" href="/scra-benefits-for-chase.html">scra benefits for chase</a>
+											<a class="badge badge-danger" href="/scra-benefits-for-veterans.html">scra benefits for veterans</a>
+											<a class="badge badge-dark" href="/scholarships-for-military-dependents-2020.html">scholarships for military dependents 2020</a>
+											<a class="badge badge-light" href="/search-ww1-soldier-records.html">search ww1 soldier records</a>
+											<a class="badge badge-primary" href="/scholarships-for-va-employee-dependents.html">scholarships for va employee dependents</a>
+											<a class="badge badge-dark" href="/scholarships-for-military-dependents-2018.html">scholarships for military dependents 2018</a>
+											<a class="badge badge-danger" href="/scra-benefits-for-credit-cards.html">scra benefits for credit cards</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to pay a visit to the ideal site.  Our site gives you suggestions for seeing the highest quality video and picture content, hunt and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, so we recommend this movie for you to see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/78/63/2b786312ead46a8508c76c5025169831.png" data-lightbox="roadtrip" data-title="Pin On Medicare Faqs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/78/63/2b786312ead46a8508c76c5025169831.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5YR209-ImhtWH1lipaQONPOWX9DUvhCipug';" alt="Pin On Medicare Faqs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Medicare Faqs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/fe/9a/6ffe9afe5f218d47cdaf3463f6feafff.jpg" data-lightbox="roadtrip" data-title="Turning 65 Follow Your Path To Medicare Medicare Advantage Medicare Medicare Supplement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/fe/9a/6ffe9afe5f218d47cdaf3463f6feafff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOflXwzeihym572u0_tCkFH_RgyyBx-MM85A';" alt="Turning 65 Follow Your Path To Medicare Medicare Advantage Medicare Medicare Supplement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Turning 65 Follow Your Path To Medicare Medicare Advantage Medicare Medicare Supplement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/f6/54/1ff654365171e142a6938747861b3fe7.jpg" data-lightbox="roadtrip" data-title="8 Things To Do For Medicare Open Enrollment Medical Social Work Health Insurance Cost Medicare">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/f6/54/1ff654365171e142a6938747861b3fe7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH14axcf3BINcDU2vbJE1Znh7_JrPeSgXB_g';" alt="8 Things To Do For Medicare Open Enrollment Medical Social Work Health Insurance Cost Medicare">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Things To Do For Medicare Open Enrollment Medical Social Work Health Insurance Cost Medicare</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/04/GettyImages-651423767_header-1024x575.jpg?w=1155&amp;h=1528" data-lightbox="roadtrip" data-title="Medicare Spouse Coverage Eligibility And Criteria">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/04/GettyImages-651423767_header-1024x575.jpg?w=1155&amp;h=1528" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF4a6s_AGuOnzEw-WwyJo6uePFpdpdgPPsYA';" alt="Medicare Spouse Coverage Eligibility And Criteria">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medicare Spouse Coverage Eligibility And Criteria</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/a3/2a/a1a32ab6123b612ac6a16e75d8a9af97.jpg" data-lightbox="roadtrip" data-title="Turning 65 Medicare Checklist My Medicare Matters Medicare Checklist Simplify">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/a3/2a/a1a32ab6123b612ac6a16e75d8a9af97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDss9lfjqYgdACOW7jeCdW3a2OaQCdCTVQtQ';" alt="Turning 65 Medicare Checklist My Medicare Matters Medicare Checklist Simplify">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Turning 65 Medicare Checklist My Medicare Matters Medicare Checklist Simplify</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/12/Couple_Senior_Cafe_Dog_Kiss-732x549-Thumbnail-1.jpg?w=1155&amp;h=1152" data-lightbox="roadtrip" data-title="What You Need To Know About Medicare Spouse Coverage">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/12/Couple_Senior_Cafe_Dog_Kiss-732x549-Thumbnail-1.jpg?w=1155&amp;h=1152" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtGLIkSAvn0eKykenDQ-wM3JMGSFgT0gjB9A';" alt="What You Need To Know About Medicare Spouse Coverage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What You Need To Know About Medicare Spouse Coverage</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/c9/25/1c/c9251cbd6d8a4f5a7e3e5de19c7a7e7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtGLIkSAvn0eKykenDQ-wM3JMGSFgT0gjB9A';" alt="What You Need To Know About Medicare Spouse Coverage">
+										<div class="card-body">
+						<h3 class="h5"><b>If your spouse is younger they must be at least 62 years old the age at which they can qualify for Social Security retirement benefits in order for you to get Medicare coverage on their.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>If my spouse qualifies for medicare do i</strong>. 
+								
+																	The spouse of a covered employee is potentially eligible to receive an extension of up to 36 months from the date the covered employee became eligible for Medicare if and only if the covered employee became entitled to Medicare before enrolling in COBRA. 
+																	Medicare does not cover personal non-medical care for any of its beneficiaries. 
+																	The spouse of a Medicare plan holder becomes eligible for their own plan upon turning 65 years of age even if they never. 
+																	Enroll in Medicare when you turn 65. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can qualify for premium-free Medicare Part A if youre 65 or older and you or your spouse worked and paid Medicare taxes for at least 10 years time. 
+																	The first piece to pull from that sentence is who is covered. 
+																	Married couples need to make less. 
+																	When you turn age 62 and your spouse is age 65 your spouse can usually receive premium-free Medicare benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Generally Medicare is available for people age 65 or older younger people with disabilities and people with End Stage Renal Disease permanent kidney failure requiring dialysis or transplant. 
+																	If your spouse is not working and is 65 years old he or she also has the option to remain on your employer health insurance policy while at the same time enrolling in Medicare Part A with no premium if you have reached 62 years of age. 
+																	If your spouse is 65 or older and you are not you will not be eligible to enroll until you reach 65. 
+																	You are eligible for premium-free Part A if you are age 65 or older and you or your spouse worked and paid Medicare taxes for at least 10 years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Medicare has two parts Part A Hospital Insurance and Part B Medicare Insurance. 
+																	Most people receive Medicare Part A automatically when they turn age 65 and pay no monthly premiums. 
+																	Delay Medicare until you lose your coverage. 
+																	You can qualify for the Extra Help program if both of these are true. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Until youre age 62 your spouse can receive Medicare Part A but will have to pay. 
+																	Many people who continue to work past age 65 have simultaneous coverage under Medicare and employer-sponsored insurance. 
+																	If youre married your spouses income is counted too and the income limit goes up to 25860. 
+																	The parts of Medicare that cover children depend on the way a child has qualified. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Unfortunately for you and millions of other couples in your position Medicare does not provide family coverage to younger spouses or dependent children when you qualify for Medicare. 
+																	A person may qualify for Medicare based on the work record of their spouse. 
+																	Despite having a clear policy there continues to be strong misperceptions surrounding this topic. 
+																	Neither you nor your spouse has 40 work credits If your current or former spouse has fewer than 30 credits he or she isnt any use to you for Medicare purposes that is because you still have to pay full premiums to get Part A benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Say the working spouse turns 65 retires and claims Medicare. 
+																	The other spouse is only 61. 
+																	Health Conditions If you are under 65 and already receiving Social Security disability benefits you may be eligible for premium-free Part A Medicare regardless of whether you or your spouse paid 40 quarters of taxes. 
+																	Your income is 19140 a year or less. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Medicare does not pay spouses to provide personal care or assistance with activities of daily living for their husbands or wives. 
+																	This is where problems begin especially when a working spouse is older than a non-working spouse. 
+																	Enroll in only Medicare Part A when you turn 65. 
+																	Medicare will only cover you not your spouse or children if they are not eligible on their own. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The years dont have to be. 
+																	Common examples of income are wages pensions and Social Security benefits. 
+																	If you are covered by your spouses employer plan and eligible for Medicare you may have a few options when it comes to getting Medicare. 
+																	If you or your spouse havent worked at least 40 quarters youll pay a monthly premium for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Specified Low-Income Medicare Beneficiary SLMB program If you make less than 1296 a month and have less than 7860 in resources you can qualify for SLMB. 
+																	Nobody can obtain Medicare benefits before age 65 unless eligible at a younger age because of disability. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/9f/9e/709f9e54a09d7a10f1d51726a8ec1b84.png" data-lightbox="roadtrip" data-title="When My Spouse Dies What Will I Get From Social Security Social Security Social Security Disability Social Security Benefits Retirement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/9f/9e/709f9e54a09d7a10f1d51726a8ec1b84.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNWvEsTK_dzBYrUENElgIV1jXKQon8MoAfEA';" alt="When My Spouse Dies What Will I Get From Social Security Social Security Social Security Disability Social Security Benefits Retirement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When My Spouse Dies What Will I Get From Social Security Social Security Social Security Disability Social Security Benefits Retirement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/16/4d/bf164d0e4cbd02b4c37200cc5a834daa.jpg" data-lightbox="roadtrip" data-title="Difference Between Medicare Medicaid Medicaid Affordable Health Medicare">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/16/4d/bf164d0e4cbd02b4c37200cc5a834daa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7xSsGw_4Bddi5ZM_A9T-P_2nnYKmuiThwHg';" alt="Difference Between Medicare Medicaid Medicaid Affordable Health Medicare">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Difference Between Medicare Medicaid Medicaid Affordable Health Medicare</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a8/f6/fa/a8f6fa348082b5ce0df56a136f72c125.jpg" data-lightbox="roadtrip" data-title="When Turning The Age 65 Many Seniors Enroll In Original Medicare Part A And Part B Part A Typi Home Health Services Nursing Home Care Skilled Nursing Facility">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a8/f6/fa/a8f6fa348082b5ce0df56a136f72c125.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjFgVj8VEwz9UTIuWjT3IRYHf602D4WtMHxg';" alt="When Turning The Age 65 Many Seniors Enroll In Original Medicare Part A And Part B Part A Typi Home Health Services Nursing Home Care Skilled Nursing Facility">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When Turning The Age 65 Many Seniors Enroll In Original Medicare Part A And Part B Part A Typi Home Health Services Nursing Home Care Skilled Nursing Facility</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/78/fc/7078fc8457aeea8371a1855c18706c76.jpg" data-lightbox="roadtrip" data-title="Understanding Medicare Related Products Medical Social Work Health Insurance Medicare">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/78/fc/7078fc8457aeea8371a1855c18706c76.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2j2SgmEdDlX7S_v5wTkU14s-lUcImHpYN5A';" alt="Understanding Medicare Related Products Medical Social Work Health Insurance Medicare">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding Medicare Related Products Medical Social Work Health Insurance Medicare</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/34/c0/a234c0b4221614d22e4639e5823e3397.png" data-lightbox="roadtrip" data-title="Pin On Practice Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/34/c0/a234c0b4221614d22e4639e5823e3397.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXr16iXXbsUszuAqzTdl-FLK6fGKMH0Pn7qw';" alt="Pin On Practice Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Practice Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/25/1c/c9251cbd6d8a4f5a7e3e5de19c7a7e7c.jpg" data-lightbox="roadtrip" data-title="Pin On Social Security Medicare Medicaid Graphics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/25/1c/c9251cbd6d8a4f5a7e3e5de19c7a7e7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn1w7Td8NEXDx0IkeqzvsyFAPTUiHO6ehfng';" alt="Pin On Social Security Medicare Medicaid Graphics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Social Security Medicare Medicaid Graphics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/d7/c3/49d7c3710162a44a8ffc828513241d99.png" data-lightbox="roadtrip" data-title="How Joint Bank Accounts And Property Affect Medicaid Eligibility Medicaid Elderly Care Bank Account">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/d7/c3/49d7c3710162a44a8ffc828513241d99.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRks3UE23oh3HvZOY7-bNwlRt7i3yf-TzBmkw';" alt="How Joint Bank Accounts And Property Affect Medicaid Eligibility Medicaid Elderly Care Bank Account">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Joint Bank Accounts And Property Affect Medicaid Eligibility Medicaid Elderly Care Bank Account</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/58/3c/3a583c16172c154e6da07aded42b133e.png" data-lightbox="roadtrip" data-title="Medicare Made Clear Http Www Allaboutseniorsinc Net Education Week Medicare Medical Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/58/3c/3a583c16172c154e6da07aded42b133e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDQjZZmaw1NtaG2-Vqj_ekxhqaQC6v6m_5PA';" alt="Medicare Made Clear Http Www Allaboutseniorsinc Net Education Week Medicare Medical Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medicare Made Clear Http Www Allaboutseniorsinc Net Education Week Medicare Medical Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/3c/6f/ac/3c6fac70b205dc0019bb4e0901d16a19.jpg" data-lightbox="roadtrip" data-title="Social Security Medicare Government Pensions By Joseph Matthews Social Security Social Security Disability Social Security Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/3c/6f/ac/3c6fac70b205dc0019bb4e0901d16a19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8p1-5fHiHdM_lu3QYuGW7GJ-xwEzh4GV4ww';" alt="Social Security Medicare Government Pensions By Joseph Matthews Social Security Social Security Disability Social Security Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Security Medicare Government Pensions By Joseph Matthews Social Security Social Security Disability Social Security Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cardinalguide.com/wp-content/uploads/2018/06/planning.jpg" data-lightbox="roadtrip" data-title="What Happens When One Spouse Goes On Medicare And The Other Isn T Eligible Cardinal Guide">
+											<img class="card-img v-image ads-img " src="https://www.cardinalguide.com/wp-content/uploads/2018/06/planning.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSd9njduPbAp9U-qgkPCAvEupTGVepMs_Ahg';" alt="What Happens When One Spouse Goes On Medicare And The Other Isn T Eligible Cardinal Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Happens When One Spouse Goes On Medicare And The Other Isn T Eligible Cardinal Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://content.money.com/wp-content/uploads/2014/06/140603_ff_qa_obamacare_illo_1.jpg?quality=60&amp;w=800" data-lightbox="roadtrip" data-title="Medicare Why Your Spouse May Qualify On Your Work Record Money">
+											<img class="card-img v-image ads-img " src="https://content.money.com/wp-content/uploads/2014/06/140603_ff_qa_obamacare_illo_1.jpg?quality=60&amp;w=800" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWtfSYbBKe8hR2kUSksKtRC4zm3sRqsKC9Vw';" alt="Medicare Why Your Spouse May Qualify On Your Work Record Money">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medicare Why Your Spouse May Qualify On Your Work Record Money</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/1a/a0/401aa0807ef6ec630e9309286d0e6053.jpg" data-lightbox="roadtrip" data-title="If This Is Not Your Favorite Reading Material We Can Help Medicare Medicare Advantage How To Find Out">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/1a/a0/401aa0807ef6ec630e9309286d0e6053.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpP_mFb8c7ld6rU_gbiiMUW-FMhYyNyzkNxA';" alt="If This Is Not Your Favorite Reading Material We Can Help Medicare Medicare Advantage How To Find Out">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If This Is Not Your Favorite Reading Material We Can Help Medicare Medicare Advantage How To Find Out</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/b6/f0/99b6f0ce824993dacf8d903818605912.png" data-lightbox="roadtrip" data-title="Openenrollment Periods Allow You To Choose A New Health Plan Or Make Changes In Your Curren Open Enrollment Health Insurance Open Enrollment Health Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/b6/f0/99b6f0ce824993dacf8d903818605912.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYrxcU3dlFkhG2m1rpPfvEekZ--Bc9dztjxQ';" alt="Openenrollment Periods Allow You To Choose A New Health Plan Or Make Changes In Your Curren Open Enrollment Health Insurance Open Enrollment Health Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Openenrollment Periods Allow You To Choose A New Health Plan Or Make Changes In Your Curren Open Enrollment Health Insurance Open Enrollment Health Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/my-wife-is-embarrassed-of-me.html">My Wife Is Embarrassed Of Me</a></li>
+													<li class="list-group-item"><a href="/my-wife-is-depressed-and-takes-it-out-on-me.html">My Wife Is Depressed And Takes It Out On Me</a></li>
+													<li class="list-group-item"><a href="/my-wife-is-getting-depressed.html">My Wife Is Getting Depressed</a></li>
+													<li class="list-group-item"><a href="/my-wife-is-depressed-and-hates-me.html">My Wife Is Depressed And Hates Me</a></li>
+													<li class="list-group-item"><a href="/my-wife-is-so-selfish-in-bed.html">My Wife Is So Selfish In Bed</a></li>
+													<li class="list-group-item"><a href="/my-wife-is-boring-and-lazy.html">My Wife Is Boring And Lazy</a></li>
+													<li class="list-group-item"><a href="/my-wife-is-cold-hearted.html">My Wife Is Cold Hearted</a></li>
+													<li class="list-group-item"><a href="/my-wife-is-selfish.html">My Wife Is Selfish</a></li>
+													<li class="list-group-item"><a href="/my-wife-hates-me-drinking.html">My Wife Hates Me Drinking</a></li>
+													<li class="list-group-item"><a href="/my-wife-is-depressed-while-pregnant.html">My Wife Is Depressed While Pregnant</a></li>
+													<li class="list-group-item"><a href="/my-wife-hates-talking-to-me.html">My Wife Hates Talking To Me</a></li>
+													<li class="list-group-item"><a href="/my-wife-hates-me-video.html">My Wife Hates Me Video</a></li>
+													<li class="list-group-item"><a href="/my-wife-is-so-lazy.html">My Wife Is So Lazy</a></li>
+													<li class="list-group-item"><a href="/my-wife-is-in-the-military-and-im-not.html">My Wife Is In The Military And Im Not</a></li>
+													<li class="list-group-item"><a href="/my-wife-is-boring-me.html">My Wife Is Boring Me</a></li>
+													<li class="list-group-item"><a href="/my-wife-hates-me-quiz.html">My Wife Hates Me Quiz</a></li>
+													<li class="list-group-item"><a href="/my-wife-is-lazy-and-does-nothing.html">My Wife Is Lazy And Does Nothing</a></li>
+													<li class="list-group-item"><a href="/my-wife-hates-me-so-much.html">My Wife Hates Me So Much</a></li>
+													<li class="list-group-item"><a href="/my-wife-hates-me-what-to-do.html">My Wife Hates Me What To Do</a></li>
+													<li class="list-group-item"><a href="/my-wife-is-bipolar-and-cheating.html">My Wife Is Bipolar And Cheating</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

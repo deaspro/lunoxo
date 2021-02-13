@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mycaa In Penn Foster - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mycaa In Penn Foster",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/c8/d2/13/c8d213c9706c3606d6796f807f5d594b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mycaa+in+penn+foster",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mycaa In Penn Foster</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Named a 2018 Military Friendly School by Victory Media Penn Foster supports the men and women who serve our country. Penn Foster Career School Penn Foster High School Student Services Center 925 Oak Street Scranton PA 18515 USA 1-800-275-4410 Penn Foster College Administrative Office 14300 N. Affordable MyCAA Education Programs. <br>				
+			</p>
+										<a class="badge badge-primary" href="/mycanal-chromecast.html">mycanal chromecast</a>
+											<a class="badge badge-danger" href="/mycanal-jeune.html">mycanal jeune</a>
+											<a class="badge badge-light" href="/mycanal-lg.html">mycanal lg</a>
+											<a class="badge badge-primary" href="/mycanal-freebox-delta.html">mycanal freebox delta</a>
+											<a class="badge badge-primary" href="/mycanal-nc.html">mycanal nc</a>
+											<a class="badge badge-light" href="/mycanal-afrique-replay.html">mycanal afrique replay</a>
+											<a class="badge badge-danger" href="/mycanal-keyword.html">mycanal keyword</a>
+											<a class="badge badge-danger" href="/mycanal-afrique-inscription.html">mycanal afrique inscription</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to visit the right site.  Our website gives you hints for viewing the maximum quality video and picture content, hunt and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this video for you to see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6c/b9/7f/6cb97f64959b0c93b55f0c69333aa202.jpg" data-lightbox="roadtrip" data-title="Military Spouses Mycaa Programs Healthcare Careers Penn Foster High School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6c/b9/7f/6cb97f64959b0c93b55f0c69333aa202.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHdc4NKiBy3lU-lVU-h55BeY-V-6vmommTag';" alt="Military Spouses Mycaa Programs Healthcare Careers Penn Foster High School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouses Mycaa Programs Healthcare Careers Penn Foster High School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/5b/59/905b5990ccebdc9d1899f5fe1e26e40c.jpg" data-lightbox="roadtrip" data-title="3 Ways To Maximize Your Mycaa Program Funding Mycaa Programs Mycaa Medical Billing And Coding">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/5b/59/905b5990ccebdc9d1899f5fe1e26e40c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS220_uDTiLqk9QCpmbK4zNbl4kxpVk_DkOvQ';" alt="3 Ways To Maximize Your Mycaa Program Funding Mycaa Programs Mycaa Medical Billing And Coding">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 Ways To Maximize Your Mycaa Program Funding Mycaa Programs Mycaa Medical Billing And Coding</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/f2/28/13f2283e2af7b06808c414b02b4a6686.jpg" data-lightbox="roadtrip" data-title="Myths Of Mycaa Busted Great Info Graphic To Help You With The Process Military Spouse Scholarships Mycaa Army Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/f2/28/13f2283e2af7b06808c414b02b4a6686.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4WohFt7pj-NfijVWX5mtW-LhqsJO9NjOidg';" alt="Myths Of Mycaa Busted Great Info Graphic To Help You With The Process Military Spouse Scholarships Mycaa Army Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Myths Of Mycaa Busted Great Info Graphic To Help You With The Process Military Spouse Scholarships Mycaa Army Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/93/32/4e93324c2d1f0281f636c5a985c96290.jpg" data-lightbox="roadtrip" data-title="Military Families Mycaa Programs Military Spouse Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/93/32/4e93324c2d1f0281f636c5a985c96290.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQrrtHSmGQqOQRR1as9gkqEICMc_FOgeMT5w';" alt="Military Families Mycaa Programs Military Spouse Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Families Mycaa Programs Military Spouse Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/b9/24/1cb92432f5f0e405f7b242d3ec8e5189.jpg" data-lightbox="roadtrip" data-title="Military Spouse Strong On Instagram Whether It S A Career Change Mycaa Scholarships Entrepre Military Spouse Appreciation Military Quotes Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/b9/24/1cb92432f5f0e405f7b242d3ec8e5189.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHuUzK9tnO0pOlqwIGa1TrR0lTTPaMShXgng';" alt="Military Spouse Strong On Instagram Whether It S A Career Change Mycaa Scholarships Entrepre Military Spouse Appreciation Military Quotes Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Strong On Instagram Whether It S A Career Change Mycaa Scholarships Entrepre Military Spouse Appreciation Military Quotes Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/67/a7/d567a7ffa6758e67670f01fed95a4d6c.jpg" data-lightbox="roadtrip" data-title="Pin By Tara On Palmetto School Of Career Development Savannah Mycaa Career Development Pharmacy Technician">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/67/a7/d567a7ffa6758e67670f01fed95a4d6c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSgoMqcT1SNBjXrTaycgvGR6-TakReJ8CnYA';" alt="Pin By Tara On Palmetto School Of Career Development Savannah Mycaa Career Development Pharmacy Technician">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Tara On Palmetto School Of Career Development Savannah Mycaa Career Development Pharmacy Technician</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/65/14/93/651493c43980d76b8c3a91caf70843cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSgoMqcT1SNBjXrTaycgvGR6-TakReJ8CnYA';" alt="Pin By Tara On Palmetto School Of Career Development Savannah Mycaa Career Development Pharmacy Technician">
+										<div class="card-body">
+						<h3 class="h5"><b>After a little searching I found a post of someone asking how to make a Vet Tech ET Plan with Penn Foster.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mycaa in penn foster</strong>. 
+								
+																	Supporting spouses of active duty military service members who are interested in using Military Spouse Career Advancement Accounts MyCAA a US. 
+																	More information Military active duty members with Penn Foster Choose2Bmore wwwpennfosteredu. 
+																	Ill upload it here for convince. 
+																	The goals of our certification programs are to provide job-specific training to enable students to be job-ready with our 10 week16-week or 20 week online programs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The answer was call the Penn Foster Military Advisor at 1-800-238-9554. 
+																	The Academys web classes are available online 24 hours a day 7 days a week for student flexibility with video lectures of live. 
+																	Penn Foster Military Group on the Penn Foster Student Community. 
+																	Northsight Blvd Suite 125 Scottsdale AZ 85260 USA 1-800-471-3232. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MyCAA has a Education and Training Plan Guidelines paper you can download under the resource tab. 
+																	Penn Foster can help you take the first step in building a brighter future. 
+																	Department of Defense funded educational support. 
+																	If you think you may be eligible or would like more information you can check with your local or regional VA office or call Penn Foster at 1-888-427-2900 to speak with a VA Support Specialist. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sharing Support experiences ideas inspirations aspirations and Penn Foster MyCAA educational possibilities. 
+																	If you are interested in using your MyCAA benefits please call 1-800-238-9554 to speak to an Admissions Specialist for more information or to enroll. 
+																	Mar 28 2013 - Penn Foster helps military dependents and children apply their benefits towards a Penn Foster education. 
+																	Our career and certificate programs are designed with the demands of military families in mind. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At Penn Foster we make it easy to get started and affordable for you to pursue your education on your own time at your own pace. 
+																	Nov 24 2017 - Penn Foster has offered the MyCAA Scholarship since it began in 2009. 
+																	MyCAA Financial Assistance for Military Spouses Get the Credentials You Need To Achieve Your Career Goal The My Career Advancement Account Scholarship Program is a workforce development program that provides up to 4000 of financial assistance for licenses certifications or Associates degrees to pursue an occupation or career field. 
+																	With Military MyCAA and Veteran benefits we aim to make Penn Foster the military friendly school that students in the armed forces choose to build better futures through our self-paced flexible programs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Oct 17 2018 - The Academy of Medical Professions is a licensed training school for military spouses. 
+																	Enroll Now Request Info. 
+																	Military Spouse Strong A Military Spouse is the definition of Strong. 
+																	The My Career Advancement Account MyCAA Scholarship Program provides up to 4000 of financial assistance to eligible Military Spouses who are pursuing a diploma certification or Associates degree in-demand fields like Veterinary Technician Pharmacy Technician early Childhood Education Small Business. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/17/72/141772936cdafa536ca6c6cc20272513.jpg" data-lightbox="roadtrip" data-title="Myseco Here With You Every Step Of The Way Career Advancement Scholarships Mycaa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/17/72/141772936cdafa536ca6c6cc20272513.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXcDcGlnIUgNYvdpCln6xas-WBChInTW2d6Q';" alt="Myseco Here With You Every Step Of The Way Career Advancement Scholarships Mycaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Myseco Here With You Every Step Of The Way Career Advancement Scholarships Mycaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/42/1c/7d421cee6a20f130cccb528fea57ef9b.jpg" data-lightbox="roadtrip" data-title="Pin On Adult Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/42/1c/7d421cee6a20f130cccb528fea57ef9b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi2OTckS9EIaaQNNJrmfAiteYCsHvH-WGBjg';" alt="Pin On Adult Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Adult Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/29/8c/00298c18806a4f301ea03bd14fd727cb.jpg" data-lightbox="roadtrip" data-title="Http Educationformilspouse Com Are You Interested To Become Dental Assistant Dental Assisti Military Spouse Scholarships Dental Assistant Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/29/8c/00298c18806a4f301ea03bd14fd727cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF0oC3iM3bvijPGprvubaKMy1Jl0sTbt2SlQ';" alt="Http Educationformilspouse Com Are You Interested To Become Dental Assistant Dental Assisti Military Spouse Scholarships Dental Assistant Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Educationformilspouse Com Are You Interested To Become Dental Assistant Dental Assisti Military Spouse Scholarships Dental Assistant Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/a6/56/cda6568a4c9da94a37c6a70d3c11a825.png" data-lightbox="roadtrip" data-title="How To Volunteer For Military Veteran Non Profits Patti Katter Military Veterans Volunteer Medical Volunteer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/a6/56/cda6568a4c9da94a37c6a70d3c11a825.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzdWMizpmmshd_fFBklujb4pVqWddCi00z-Q';" alt="How To Volunteer For Military Veteran Non Profits Patti Katter Military Veterans Volunteer Medical Volunteer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Volunteer For Military Veteran Non Profits Patti Katter Military Veterans Volunteer Medical Volunteer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/b0/71/82b071bd55777710934a3e8c91634a73.jpg" data-lightbox="roadtrip" data-title="Pin On Adult Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/b0/71/82b071bd55777710934a3e8c91634a73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEV_ZCzsnhynb4asPOlZvDOAkpe9Rhnpq4yQ';" alt="Pin On Adult Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Adult Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/ef/b2/1befb246e52e8b8dc25f104d6b9343c8.jpg" data-lightbox="roadtrip" data-title="Pin On Adult Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/ef/b2/1befb246e52e8b8dc25f104d6b9343c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ04XfNmbsrFw0PalPrFEPkBtbsGbZ49gQIA';" alt="Pin On Adult Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Adult Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/136x136/22/44/07/224407a360ab992ff5b6df358b02397f--high-school-diploma-penn.jpg" data-lightbox="roadtrip" data-title="High School Diploma Or Ged You Decide Penn Foster High School High School High School Diploma">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/136x136/22/44/07/224407a360ab992ff5b6df358b02397f--high-school-diploma-penn.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS9D4bGxcsw1nmTma0kDNm_tL9pDrmeYEfDQ';" alt="High School Diploma Or Ged You Decide Penn Foster High School High School High School Diploma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">High School Diploma Or Ged You Decide Penn Foster High School High School High School Diploma</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/85/79/7385790080754cde28022b1c1b5a67a6.jpg" data-lightbox="roadtrip" data-title="Looking To Get Into The Healthcare Industry Let Academy Of Medical Professions Guide You With New Medical Career Medical Careers Medical Coding Medical Biller">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/85/79/7385790080754cde28022b1c1b5a67a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwviaSio_QT4JjP1is1Sk8IchUXzAbEfGF4g';" alt="Looking To Get Into The Healthcare Industry Let Academy Of Medical Professions Guide You With New Medical Career Medical Careers Medical Coding Medical Biller">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Looking To Get Into The Healthcare Industry Let Academy Of Medical Professions Guide You With New Medical Career Medical Careers Medical Coding Medical Biller</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/14/93/651493c43980d76b8c3a91caf70843cc.jpg" data-lightbox="roadtrip" data-title="Medical Transcription Is The Process Of Turning Dictated Medical Information Into Typed Records Throu Medical Transcription Medical Information Medical Records">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/14/93/651493c43980d76b8c3a91caf70843cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMF93t0JllgEceSKkVOw-kAgSOf9-UuTjcwg';" alt="Medical Transcription Is The Process Of Turning Dictated Medical Information Into Typed Records Throu Medical Transcription Medical Information Medical Records">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medical Transcription Is The Process Of Turning Dictated Medical Information Into Typed Records Throu Medical Transcription Medical Information Medical Records</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/38/56/a838563b1395b0cb45ac1b16f6da5cd1.jpg" data-lightbox="roadtrip" data-title="Are You A Military Spouse Looking For A New Career Courses Are Fully Funded By Mycaa Or Va If Qualified Http Acade Military Mycaa Programs Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/38/56/a838563b1395b0cb45ac1b16f6da5cd1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnT9BSQ2sd_4idHXiRLFpET9B2hcEIKPNC8Q';" alt="Are You A Military Spouse Looking For A New Career Courses Are Fully Funded By Mycaa Or Va If Qualified Http Acade Military Mycaa Programs Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You A Military Spouse Looking For A New Career Courses Are Fully Funded By Mycaa Or Va If Qualified Http Acade Military Mycaa Programs Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ae/16/92/ae169218a5ad2a9174b7dbcfbfa18645.jpg" data-lightbox="roadtrip" data-title="Creative Housewarming Invitations For Fun Houwe Warming Party Housewarming Party Invitations House Warming Invitations Housewarming Party">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ae/16/92/ae169218a5ad2a9174b7dbcfbfa18645.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPUG5sen_s_qWDYhVSUh_K9-Gpdjts6UnUJg';" alt="Creative Housewarming Invitations For Fun Houwe Warming Party Housewarming Party Invitations House Warming Invitations Housewarming Party">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Creative Housewarming Invitations For Fun Houwe Warming Party Housewarming Party Invitations House Warming Invitations Housewarming Party</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/d2/13/c8d213c9706c3606d6796f807f5d594b.jpg" data-lightbox="roadtrip" data-title="Job Openings Job Opening Current Job Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/d2/13/c8d213c9706c3606d6796f807f5d594b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKkyhehmW6yTZL4iYf8vUzm2Af09uzMWXPxg';" alt="Job Openings Job Opening Current Job Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Job Openings Job Opening Current Job Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/62/19/8b62191589b7405bb055e888c32dbf8c.jpg" data-lightbox="roadtrip" data-title="Creative Housewarming Invitations For Fun Houwe Warming Party Housewarming Party Invitations House Warming Invitations Housewarming Party">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/62/19/8b62191589b7405bb055e888c32dbf8c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSiSvy3gCkvCoSyzon4JR0HYiLA3YrHN0SUg';" alt="Creative Housewarming Invitations For Fun Houwe Warming Party Housewarming Party Invitations House Warming Invitations Housewarming Party">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Creative Housewarming Invitations For Fun Houwe Warming Party Housewarming Party Invitations House Warming Invitations Housewarming Party</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-wives-final-salute-streaming.html">Army Wives Final Salute Streaming</a></li>
+													<li class="list-group-item"><a href="/army-wife-photo-download.html">Army Wife Photo Download</a></li>
+													<li class="list-group-item"><a href="/army-wives-denise-cheats-on-frank.html">Army Wives Denise Cheats On Frank</a></li>
+													<li class="list-group-item"><a href="/army-wives-film.html">Army Wives Film</a></li>
+													<li class="list-group-item"><a href="/army-wife-picture-frame.html">Army Wife Picture Frame</a></li>
+													<li class="list-group-item"><a href="/army-wife-poem.html">Army Wife Poem</a></li>
+													<li class="list-group-item"><a href="/army-wives-frank-sherwood.html">Army Wives Frank Sherwood</a></li>
+													<li class="list-group-item"><a href="/army-wives-does-jeremy-die.html">Army Wives Does Jeremy Die</a></li>
+													<li class="list-group-item"><a href="/army-wife-with-daughters.html">Army Wife With Daughters</a></li>
+													<li class="list-group-item"><a href="/army-wives-back-on-netflix.html">Army Wives Back On Netflix</a></li>
+													<li class="list-group-item"><a href="/army-wives-final-salute.html">Army Wives Final Salute</a></li>
+													<li class="list-group-item"><a href="/army-wives-final-salute-watch-online-free.html">Army Wives Final Salute Watch Online Free</a></li>
+													<li class="list-group-item"><a href="/army-wife-memes.html">Army Wife Memes</a></li>
+													<li class="list-group-item"><a href="/army-wife-health-care.html">Army Wife Health Care</a></li>
+													<li class="list-group-item"><a href="/army-wife-hashtags.html">Army Wife Hashtags</a></li>
+													<li class="list-group-item"><a href="/army-wife-love-images.html">Army Wife Love Images</a></li>
+													<li class="list-group-item"><a href="/army-wife-hoodie.html">Army Wife Hoodie</a></li>
+													<li class="list-group-item"><a href="/army-wives-book-pdf.html">Army Wives Book Pdf</a></li>
+													<li class="list-group-item"><a href="/army-wives-episodes-season-6.html">Army Wives Episodes Season 6</a></li>
+													<li class="list-group-item"><a href="/army-wife-welfare-association.html">Army Wife Welfare Association</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

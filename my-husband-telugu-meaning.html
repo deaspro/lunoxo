@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>My Husband Telugu Meaning - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "My Husband Telugu Meaning",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/9d/d0/19/9dd01962992a4e61e71783450efa4887.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=my+husband+telugu+meaning",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>My Husband Telugu Meaning</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Wife and Husband Quotes in Telugu Marriage Importance Quotes in Telugu Best Telugu Wife and Husband Quotes Telugu Wife and Husband Bond Messages Telugu Life Quotes on Love Family Quotes in Telugu Wife Life Quotes in Telugu He made his debut in 2006 with the film Devadasu. Need to translate I love you my husband to Telugu. Dictionary Find Word Meanings. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/ncaa-football-eligibility-rules-nfl-draft.html">ncaa football eligibility rules nfl draft</a>
+											<a class="badge badge-dark" href="/ncaa-eligibility-rules-juco.html">ncaa eligibility rules juco</a>
+											<a class="badge badge-success" href="/ncaa-eligibility-rules-d2.html">ncaa eligibility rules d2</a>
+											<a class="badge badge-danger" href="/ncaa-eligibility-rules-gpa.html">ncaa eligibility rules gpa</a>
+											<a class="badge badge-dark" href="/ncaa-football-pro-eligibility.html">ncaa football pro eligibility</a>
+											<a class="badge badge-danger" href="/ncaa-football-eligibility-rules-for-transfers.html">ncaa football eligibility rules for transfers</a>
+											<a class="badge badge-light" href="/ncaa-extra-year-eligibility-spring-sports.html">ncaa extra year eligibility spring sports</a>
+											<a class="badge badge-light" href="/ncaa-eligibility-sat-scores.html">ncaa eligibility sat scores</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to pay a visit to the right blog.  Our site provides you with suggestions for seeing the maximum quality video and image content, hunt and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video that you see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/27/3e/5e273e3ab8215c4c871ece65b5b14723.jpg" data-lightbox="roadtrip" data-title="It S In My Language Telugu But Still Sharing As The Meaning Is So Touching If Every Husband Love Quotes For Wife Husband Wife Love Quotes Husband Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/27/3e/5e273e3ab8215c4c871ece65b5b14723.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCdzMEC42dt7DoqtQDltPWADvmTXk8fsRTqg';" alt="It S In My Language Telugu But Still Sharing As The Meaning Is So Touching If Every Husband Love Quotes For Wife Husband Wife Love Quotes Husband Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">It S In My Language Telugu But Still Sharing As The Meaning Is So Touching If Every Husband Love Quotes For Wife Husband Wife Love Quotes Husband Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/73/d2/df73d2268e5c496cdcf05df19a8d03a3.jpg" data-lightbox="roadtrip" data-title="Telugu Love Definitions Great Love Quotes In Telugu Telugu Love Quotes Hd Wallpapers The Legend Love Quotes In Telugu New Love Quotes Great Love Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/73/d2/df73d2268e5c496cdcf05df19a8d03a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDFWE91atKhF7gSwj1Ef4q93WVBRavL3PEAg';" alt="Telugu Love Definitions Great Love Quotes In Telugu Telugu Love Quotes Hd Wallpapers The Legend Love Quotes In Telugu New Love Quotes Great Love Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Telugu Love Definitions Great Love Quotes In Telugu Telugu Love Quotes Hd Wallpapers The Legend Love Quotes In Telugu New Love Quotes Great Love Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/1c/5a/891c5a4de432e49df04b4f13275aacfa.jpg" data-lightbox="roadtrip" data-title="Here Is New Telugu Language Wife And Husband Love Quotes Images Famous Telugu Love Marriag Love Messages For Wife Love Quotes With Images Love Marriage Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/1c/5a/891c5a4de432e49df04b4f13275aacfa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZf430-wTA2J8gW2mwTPDDbVJedn4MAy9YLA';" alt="Here Is New Telugu Language Wife And Husband Love Quotes Images Famous Telugu Love Marriag Love Messages For Wife Love Quotes With Images Love Marriage Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here Is New Telugu Language Wife And Husband Love Quotes Images Famous Telugu Love Marriag Love Messages For Wife Love Quotes With Images Love Marriage Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6d/a6/82/6da68267bcb46040960eac2e84c92d9b.jpg" data-lightbox="roadtrip" data-title="Pin By Teejay On Good Night Good Evening Love Quotes In Telugu Good Night Sweet Dreams Love Meaning Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6d/a6/82/6da68267bcb46040960eac2e84c92d9b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6k7Mnk9e2O7LqBNwJ9mW0F27nndKwby96Ow';" alt="Pin By Teejay On Good Night Good Evening Love Quotes In Telugu Good Night Sweet Dreams Love Meaning Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Teejay On Good Night Good Evening Love Quotes In Telugu Good Night Sweet Dreams Love Meaning Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/02/38/1602380343e2011f0f4e87d894c0484d.jpg" data-lightbox="roadtrip" data-title="Best Telugu Love Meaning Quotes Images Telugu Love Greetings Online Free Telugu Love Quotations Free Love Meaning Quotes Meant To Be Quotes Love Letters Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/02/38/1602380343e2011f0f4e87d894c0484d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAe0drt4J_cbQ7UF2_KWJ7n9sFJRjE6mq08A';" alt="Best Telugu Love Meaning Quotes Images Telugu Love Greetings Online Free Telugu Love Quotations Free Love Meaning Quotes Meant To Be Quotes Love Letters Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Telugu Love Meaning Quotes Images Telugu Love Greetings Online Free Telugu Love Quotations Free Love Meaning Quotes Meant To Be Quotes Love Letters Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/51/b8/c5/51b8c55f87dcb32b386b4cea89ea8e94.jpg" data-lightbox="roadtrip" data-title="Pin By G Madhu On Friendship Love Meaning Quotes Love Quotes In Telugu Love Quotes With Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/51/b8/c5/51b8c55f87dcb32b386b4cea89ea8e94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-1uCBLrabqEgwzpJEGJaGjaly-BrXa-_WYg';" alt="Pin By G Madhu On Friendship Love Meaning Quotes Love Quotes In Telugu Love Quotes With Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By G Madhu On Friendship Love Meaning Quotes Love Quotes In Telugu Love Quotes With Images</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/16/02/38/1602380343e2011f0f4e87d894c0484d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-1uCBLrabqEgwzpJEGJaGjaly-BrXa-_WYg';" alt="Pin By G Madhu On Friendship Love Meaning Quotes Love Quotes In Telugu Love Quotes With Images">
+										<div class="card-body">
+						<h3 class="h5"><b>My husband meaning in telugu.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>My husband telugu meaning</strong>. 
+								
+																	Aunt Mothers elder Sister doDDamma. 
+																	Fellow-wife సవత Battered wifewoman అకరమగ కటటబడన భరయ సతర common law husband and wife 1. 
+																	Latin words for husband include vir maritus coniunx coniugis marito and virum tuum. 
+																	If you want to know how to say my husband in Telugu you will find the translation here. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Found 109 sentences matching phrase husbands sisterFound in 14 ms. 
+																	Aunt Fathers Sister atta. 
+																	This is my hubby steve. 
+																	This incident had us all in splits of laughter and my friend who is very. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But still sharing as the meaning is so touching. 
+																	Husbands sister translation in English-Telugu dictionary. 
+																	Husband translation in English-Telugu dictionary. 
+																	Telugu Meaning of Wife భరయ. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hubby meaning in telugu hubby ka matalab telugu me telugu meaning of hubby hubby meaning dictionary. 
+																	Video Classes with Teacher. 
+																	Aunt Mothers younger Sister pinni. 
+																	Brother-in-law Husbands Older Brother bAva gAru. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is one among the six languages designated as a classical language of India by the Government of India. 
+																	Heres how you say it. 
+																	Translation and meaning of hubby in English telugu dictionary. 
+																	Brother-in-law Husbands Sisters Husband annayya a-nna. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Me and My Husband Lyrics. 
+																	Heres how you say it. 
+																	Contextual translation of husband meaning from Tamil into Telugu. 
+																	Telugu Meaning of Fiancee - fiancee Meaning - Free English to Telugu Dictionary Online Free English to Telugu Dictionary Software Telugu Meanings for English words Downloads PDF Converter Translation Transliteration Now-Husband while visiting Dublin and though their families butted heads the fiance wife meaning in telugu is still. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Need to translate my husband to Korean. 
+																	As i Know one meaning is we call sisters Husband as Bava and Some people call their Husband or hudbe as Bava what is the inner Meaning of that word can any one help me Iam asking u this because my Hudbe told there is so much meaning and he. 
+																	Parent somebodys father or mother. 
+																	Telugu definition a Dravidian language spoken mainly in Andhra Pradesh state SE India. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dating - meaning in Telugu. 
+																	Examples translated by humans. 
+																	English Hindi Dictionary. 
+																	Telugu words for husband include భరత మగడ and పత. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I steal a few breaths from the world for a minute And then Ill be nothing forever And all of my memories And all of the things I have seen will be gone With my. 
+																	Book 1 to 1 Classes. 
+																	English is one of the most widely spoken languages across the globe and. 
+																	Yan kadipa telugu pasanga పల అరథ anbu అరథ deii అరథ. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In English your sisters husband is your Brother-in-law here is a useful chart. 
+																	A free online English telugu picture dictionary. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/cd/1d/dbcd1d6b39a2bc401e4408b328d67ff6.jpg" data-lightbox="roadtrip" data-title="My Prince Telugu Inspirational Quotes Love Meaning Quotes Meant To Be Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/cd/1d/dbcd1d6b39a2bc401e4408b328d67ff6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXCzPurYLgnWJ0_K4oFopkc1_XcITkcqgj3w';" alt="My Prince Telugu Inspirational Quotes Love Meaning Quotes Meant To Be Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Prince Telugu Inspirational Quotes Love Meaning Quotes Meant To Be Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e4/5f/c9/e45fc9762759be9a212a6d0901c6a3d3.jpg" data-lightbox="roadtrip" data-title="Pin By Parvathi Parvathi On Jeevita Anubhavam Telugu Inspirational Quotes Love Meaning Quotes Meant To Be Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e4/5f/c9/e45fc9762759be9a212a6d0901c6a3d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJcyOieVe5w63u2QTzYPctj8D2zp2B-ifzLw';" alt="Pin By Parvathi Parvathi On Jeevita Anubhavam Telugu Inspirational Quotes Love Meaning Quotes Meant To Be Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Parvathi Parvathi On Jeevita Anubhavam Telugu Inspirational Quotes Love Meaning Quotes Meant To Be Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/94/30/3e943052f95a5b9518ff31e96f67f67a.jpg" data-lightbox="roadtrip" data-title="Pin By Sreevenireddy On Relationship Life Quotes Pictures Friendship Quotes In Telugu Telugu Inspirational Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/94/30/3e943052f95a5b9518ff31e96f67f67a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkzg_biveA9ZJuunf4n6WnAuuDByu5aN3rvw';" alt="Pin By Sreevenireddy On Relationship Life Quotes Pictures Friendship Quotes In Telugu Telugu Inspirational Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sreevenireddy On Relationship Life Quotes Pictures Friendship Quotes In Telugu Telugu Inspirational Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/0a/e0/60/0ae060e9d3398827643c231708f8cc84.jpg" data-lightbox="roadtrip" data-title="Husband Wife Relationship Lesson Quotes Telugu Jokes Telugu Inspirational Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/0a/e0/60/0ae060e9d3398827643c231708f8cc84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7qCE87Ywng4t8H1OoQj9RnOgkwUuazNQoKg';" alt="Husband Wife Relationship Lesson Quotes Telugu Jokes Telugu Inspirational Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Husband Wife Relationship Lesson Quotes Telugu Jokes Telugu Inspirational Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/12/de/c1/12dec1bab7fd88d731035cc833dd6138.jpg" data-lightbox="roadtrip" data-title="Raj666 Love Quotes For Girlfriend Girlfriend Quotes Love Fail Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/12/de/c1/12dec1bab7fd88d731035cc833dd6138.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJsJKSRTAFAjCOY9ImpW5f6ITd25KFvjzyhA';" alt="Raj666 Love Quotes For Girlfriend Girlfriend Quotes Love Fail Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Raj666 Love Quotes For Girlfriend Girlfriend Quotes Love Fail Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6a/2a/a0/6a2aa04fed0788f66ebc69bc5d489bb1.jpg" data-lightbox="roadtrip" data-title="Pin By Sridevi Dandu On Quotation Love Meaning Quotes Husband Birthday Quotes Birthday Verses For Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6a/2a/a0/6a2aa04fed0788f66ebc69bc5d489bb1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQukXKf15ujd8orzjp4Kv3nJJx-A9gyKBpsVg';" alt="Pin By Sridevi Dandu On Quotation Love Meaning Quotes Husband Birthday Quotes Birthday Verses For Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sridevi Dandu On Quotation Love Meaning Quotes Husband Birthday Quotes Birthday Verses For Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7b/04/49/7b04498cd653b3c21675ba2cb9db03e5.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7b/04/49/7b04498cd653b3c21675ba2cb9db03e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQclyhXTDPEFh-zBBh0Mu9-a7rp2qhy1gzwSA';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/d0/19/9dd01962992a4e61e71783450efa4887.jpg" data-lightbox="roadtrip" data-title="Pin By Putrevu Manisunithi On Quotes Wife Quotes Image Quotes Good Life Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/d0/19/9dd01962992a4e61e71783450efa4887.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw0uEsNIk3FHbyitHZGlOfBdA52bHbnpU3bQ';" alt="Pin By Putrevu Manisunithi On Quotes Wife Quotes Image Quotes Good Life Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Putrevu Manisunithi On Quotes Wife Quotes Image Quotes Good Life Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b6/6f/10/b66f10f442404258c385c1c4af0c3809.jpg" data-lightbox="roadtrip" data-title="Pin By Raj Malhothra On Love Quotes Friendship Quotes In Telugu Love Quotes In Telugu Love Meaning Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b6/6f/10/b66f10f442404258c385c1c4af0c3809.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOamqQsgWNw1DV2iIdV2ihStns-3fP2-ftEA';" alt="Pin By Raj Malhothra On Love Quotes Friendship Quotes In Telugu Love Quotes In Telugu Love Meaning Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Raj Malhothra On Love Quotes Friendship Quotes In Telugu Love Quotes In Telugu Love Meaning Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/d9/e4/1dd9e4746d4b1fa02b4030226490fedf.jpg" data-lightbox="roadtrip" data-title="Here Is A Telugu Romantic Love Quotes And Nice Images Best Love Quotes Pictures In Telugu Telugu Good L Romantic Love Quotes Love Quotes In Telugu Quotations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/d9/e4/1dd9e4746d4b1fa02b4030226490fedf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_E_7_p6wkA2DGHFfQPOeZal5UoKjGVmDWAw';" alt="Here Is A Telugu Romantic Love Quotes And Nice Images Best Love Quotes Pictures In Telugu Telugu Good L Romantic Love Quotes Love Quotes In Telugu Quotations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here Is A Telugu Romantic Love Quotes And Nice Images Best Love Quotes Pictures In Telugu Telugu Good L Romantic Love Quotes Love Quotes In Telugu Quotations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9d/68/65/9d6865b61d4d160b7124540a154eb4e7.jpg" data-lightbox="roadtrip" data-title="Pin By Sreevenireddy On Love Quotes Sweet Romantic Quotes Love Meaning Quotes Husband Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9d/68/65/9d6865b61d4d160b7124540a154eb4e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mpjbLEF-2DkEmASvaVTnYh2E7yz1TbEC5w';" alt="Pin By Sreevenireddy On Love Quotes Sweet Romantic Quotes Love Meaning Quotes Husband Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sreevenireddy On Love Quotes Sweet Romantic Quotes Love Meaning Quotes Husband Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/37/73/50/377350ea5abbb9a9a95d0652b9778075.jpg" data-lightbox="roadtrip" data-title="Telugu Most Satisfying Words On Life Don T Blame Your Loved One Quotes In Life Quotes Pictures Friendship Quotes In Telugu Positive Quotes For Life Motivation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/37/73/50/377350ea5abbb9a9a95d0652b9778075.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS4fafZUvzLJg1Uh2_pybbBRSCcSmkS_P-eA';" alt="Telugu Most Satisfying Words On Life Don T Blame Your Loved One Quotes In Life Quotes Pictures Friendship Quotes In Telugu Positive Quotes For Life Motivation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Telugu Most Satisfying Words On Life Don T Blame Your Loved One Quotes In Life Quotes Pictures Friendship Quotes In Telugu Positive Quotes For Life Motivation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/76/44/6b76445b3f00f95940dc20e202eb5995.jpg" data-lightbox="roadtrip" data-title="Pin On Best Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/76/44/6b76445b3f00f95940dc20e202eb5995.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_QmpabWh2O0sUJoLMSm8ul5_k11g1XrgLlA';" alt="Pin On Best Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Best Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/do-military-spouses-get-free-schooling.html">Do Military Spouses Get Free Schooling</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-free-dental.html">Do Military Spouses Get Free Dental</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-pay-taxes.html">Do Military Spouses Pay Taxes</a></li>
+													<li class="list-group-item"><a href="/do-military-wives-get-insurance.html">Do Military Wives Get Insurance</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-free-medical.html">Do Military Spouses Get Free Medical</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-free-checked-bags.html">Do Military Spouses Get Free Checked Bags</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-drug-tested.html">Do Military Spouses Get Drug Tested</a></li>
+													<li class="list-group-item"><a href="/do-you-need-a-qdro-for-military-retirement.html">Do You Need A Qdro For Military Retirement</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-qualify-for-tuition-assistance.html">Do Military Spouses Qualify For Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-free-baggage.html">Do Military Spouses Get Free Baggage</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-free-cosmetic-surgery.html">Do Military Spouses Get Free Cosmetic Surgery</a></li>
+													<li class="list-group-item"><a href="/do-you-have-to-quarantine-if-you-were-around-someone-with-covid.html">Do You Have To Quarantine If You Were Around Someone With Covid</a></li>
+													<li class="list-group-item"><a href="/do-you-get-bah-if-you-are-divorced.html">Do You Get Bah If You Are Divorced</a></li>
+													<li class="list-group-item"><a href="/do-you-have-to-be-married-for-military-housing.html">Do You Have To Be Married For Military Housing</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-pay-property-taxes-in-virginia.html">Do Military Spouses Pay Property Taxes In Virginia</a></li>
+													<li class="list-group-item"><a href="/do-you-have-to-have-a-fever-to-be-contagious-with-covid.html">Do You Have To Have A Fever To Be Contagious With Covid</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-free-passports.html">Do Military Spouses Get Free Passports</a></li>
+													<li class="list-group-item"><a href="/do-you-get-paid-as-a-reserve-in-the-army.html">Do You Get Paid As A Reserve In The Army</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-tsa-precheck.html">Do Military Spouses Get Tsa Precheck</a></li>
+													<li class="list-group-item"><a href="/do-navy-wives-live-on-base.html">Do Navy Wives Live On Base</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

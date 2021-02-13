@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mycampus Login - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mycampus Login",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/bf/4a/ce/bf4aceb80f4308fb3a891e77a3a6b5fd.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mycampus+login",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mycampus Login</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Enable Screen Reader Mode. Take this quick survey for your chance to win a 250 gift card. Please call IT Support at 9057213333 or click here to go to the Service Desk portal. <br>				
+			</p>
+										<a class="badge badge-warning" href="/ncaa-eligibility-requirements-division-3.html">ncaa eligibility requirements division 3</a>
+											<a class="badge badge-primary" href="/ncaa-eligibility-center-number.html">ncaa eligibility center number</a>
+											<a class="badge badge-danger" href="/ncaa-eligibility-center-transcript-upload.html">ncaa eligibility center transcript upload</a>
+											<a class="badge badge-secondary" href="/ncaa-eligibility-center-online-courses.html">ncaa eligibility center online courses</a>
+											<a class="badge badge-success" href="/ncaa-eligibility-covid-basketball.html">ncaa eligibility covid basketball</a>
+											<a class="badge badge-light" href="/ncaa-eligibility-center-transcript-release-form.html">ncaa eligibility center transcript release form</a>
+											<a class="badge badge-danger" href="/ncaa-eligibility-requirements-pdf.html">ncaa eligibility requirements pdf</a>
+											<a class="badge badge-dark" href="/ncaa-eligibility-center-matriculation-letter.html">ncaa eligibility center matriculation letter</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the right site.  Our site provides you with hints for viewing the maximum quality video and picture content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, so we recommend this video that you see.  It is also possible to bring about supporting this website by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/62/6e/65626e1741b585dfe6951ca7cba9048b.png" data-lightbox="roadtrip" data-title="South University Student Login At Mycampus Southuniversity Edu South University Student Login Are You A Stud Student Login South University University Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/62/6e/65626e1741b585dfe6951ca7cba9048b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXmXY_961WR7ZbPNXmUMdaGhwy5tIBZlteOA';" alt="South University Student Login At Mycampus Southuniversity Edu South University Student Login Are You A Stud Student Login South University University Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">South University Student Login At Mycampus Southuniversity Edu South University Student Login Are You A Stud Student Login South University University Student</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0c/8c/6d/0c8c6d710465329bc38ba0b3c9b556f2.jpg" data-lightbox="roadtrip" data-title="Login To The American Intercontinental University Student Portal Including Virtual Campus And Mycampus To Student Portal University Student Student Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0c/8c/6d/0c8c6d710465329bc38ba0b3c9b556f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUAdGHemQ9JQ2EoKET4zeSsmbt7tkr-DCzcg';" alt="Login To The American Intercontinental University Student Portal Including Virtual Campus And Mycampus To Student Portal University Student Student Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Login To The American Intercontinental University Student Portal Including Virtual Campus And Mycampus To Student Portal University Student Student Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/89/54/25/895425f4f62611003e4f31442b6e3183.jpg" data-lightbox="roadtrip" data-title="From Resume Reviews To Mock Interviews It S All Here Student Voice Comprehensive School Student Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/89/54/25/895425f4f62611003e4f31442b6e3183.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_iKwZU_KkiQVShX55UhBMq-jYgIQr_8Po3w';" alt="From Resume Reviews To Mock Interviews It S All Here Student Voice Comprehensive School Student Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">From Resume Reviews To Mock Interviews It S All Here Student Voice Comprehensive School Student Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/68/b0/1568b0688c2f63037bcb4355da7058c1.jpg" data-lightbox="roadtrip" data-title="An Easy Way To Make Sure You Log In Each Day Is To Make Your School Login Page Your Browser S Home Page Student Portal Student Voice Student Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/68/b0/1568b0688c2f63037bcb4355da7058c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEzCX0XZW90_jyptP573vbVh0F5Dn1COCzxg';" alt="An Easy Way To Make Sure You Log In Each Day Is To Make Your School Login Page Your Browser S Home Page Student Portal Student Voice Student Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">An Easy Way To Make Sure You Log In Each Day Is To Make Your School Login Page Your Browser S Home Page Student Portal Student Voice Student Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/46/0f/2e460fef6729f4701038d7380c2c65e8.png" data-lightbox="roadtrip" data-title="Mycampus Secure Login Security Login Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/46/0f/2e460fef6729f4701038d7380c2c65e8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHpeaZN-bN6qtpMyiqU5TVULblx-0UGjyQgg';" alt="Mycampus Secure Login Security Login Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycampus Secure Login Security Login Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/3f/86/5e3f865d14c434586b02166e63e52162.png" data-lightbox="roadtrip" data-title="My Campus Link Student Portal Login Guide At Www Mycampuslink Com My Campus Link Student Login Today Here In This Post In 2020 Student Portal Student Login My Campus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/3f/86/5e3f865d14c434586b02166e63e52162.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfQO8FDoqNzlCkZsABEkTXdX-UhouCq4pDpA';" alt="My Campus Link Student Portal Login Guide At Www Mycampuslink Com My Campus Link Student Login Today Here In This Post In 2020 Student Portal Student Login My Campus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Campus Link Student Portal Login Guide At Www Mycampuslink Com My Campus Link Student Login Today Here In This Post In 2020 Student Portal Student Login My Campus</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/600x315/17/77/86/177786d68af70ec2ae70f6214e6ae47d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfQO8FDoqNzlCkZsABEkTXdX-UhouCq4pDpA';" alt="My Campus Link Student Portal Login Guide At Www Mycampuslink Com My Campus Link Student Login Today Here In This Post In 2020 Student Portal Student Login My Campus">
+										<div class="card-body">
+						<h3 class="h5"><b>Copyright 2000 2017 Oracle andor its affiliates.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mycampus login</strong>. 
+								
+																	Our dedicated team are on hand to assist you with the. 
+																	Help us improve mycampus. 
+																	This is based on your date of birth in the format YYMMDD. 
+																	The web portal MyCampus gives students and lecturers access to information concerning the educational administration of the Lucerne University of Applied Sciences and Arts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For example if your date of birth is 23121995 your temporary password will. 
+																	Reset your MyCampusDC Connect PIN. 
+																	General Read Only Access to MyCampus is available to all staff users and is dependant on a 100 pass in the MyCampus Fundamentals Moodle Quiz. 
+																	More information can be found here. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We have been unable to detect Cookie andor SSL support in this browser. 
+																	We will getting back to you as soon as possible. 
+																	Were here to help. 
+																	MyCampus for Partners is available on Mobile Tablet or Desktop ensuring ease of access. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We are currently having technical issues with our phone system. 
+																	You can use this account to. 
+																	Login Forgot your username or password. 
+																	If you continue to experience problems. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Please click here to try again. 
+																	If we can find you in the database an email will be sent to your email address with instructions how to get access again. 
+																	The University of Glasgow is a registered Scottish charity. 
+																	All university-issued email is distributed to students via their student email address. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ease of access learn when it suits you. 
+																	General Read Only Access no longer requires the completion of. 
+																	The University has secured associate member status of CIVIS an alliance of eight leading research HEIs across Europe. 
+																	The University of Glasgow is a registered Scottish charity. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your temporary GUID password. 
+																	NEXT Copyright 2002 - 2021 All Right Reserved. 
+																	In case you are unable to get in contact with us via phone please try Live Chat or Email. 
+																	MyCampus To reset your password submit your MyCampus username your EDF Energy email address below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By logging into MyCampus you are consenting to have this post-secondary institution use the submitted information for the purposes consistent with academic and support services of a post-secondary educational institution. 
+																	This is the minimum training expectation for all users. 
+																	Engaging blended courses. 
+																	DCs student information portal. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There is a wide range of engaging e-learning and blended learning courses allowing you to experience content developed by online learning professionals and dedicated subject matter experts. 
+																	All Ontario Tech University students have a MyCampus web account. 
+																	The University of Glasgow is a registered Scottish charity. 
+																	Cookies and SSL are required for this site to function. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Access information about various Student Services from Careers Service to Sport Recreation and get in touch with the Student Services Enquiry Team. 
+																	We are open and available for your learning and support during this time. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/5c/49/d75c49760863120d485c0ba1b3c69994.png" data-lightbox="roadtrip" data-title="Mycampus Weather Screenshot Lockscreen Screenshot Lockscreen">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/5c/49/d75c49760863120d485c0ba1b3c69994.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQSQTUYuVn2UcjbbskfRBOgAE0hMRk--GetQ';" alt="Mycampus Weather Screenshot Lockscreen Screenshot Lockscreen">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycampus Weather Screenshot Lockscreen Screenshot Lockscreen</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/80/86/558086aa60518b223ce70c197e303182.png" data-lightbox="roadtrip" data-title="Argosy University Student Login At Mycampus Argosy Edu Argosy University Student Login Are You A Student Of The Argos In 2020 Student Login University Student Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/80/86/558086aa60518b223ce70c197e303182.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsSzgUGJT_on1KKbln-v3k5ZDJCCMHj1lBrA';" alt="Argosy University Student Login At Mycampus Argosy Edu Argosy University Student Login Are You A Student Of The Argos In 2020 Student Login University Student Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Argosy University Student Login At Mycampus Argosy Edu Argosy University Student Login Are You A Student Of The Argos In 2020 Student Login University Student Student</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/ed/2e/d1ed2e298170d695c703a03c6dd00fc0.png" data-lightbox="roadtrip" data-title="South University Student Login South University Physician Assistant Student Login">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/ed/2e/d1ed2e298170d695c703a03c6dd00fc0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz0v_SVcK2bSOBc1nHKfNUyisc5h4gh296WQ';" alt="South University Student Login South University Physician Assistant Student Login">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">South University Student Login South University Physician Assistant Student Login</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/00/42/730042f7761d4e59fd24fcf0433f82d8.jpg" data-lightbox="roadtrip" data-title="Mycampus Secure Login Small Island Developing States West Indies Places To Go">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/00/42/730042f7761d4e59fd24fcf0433f82d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWC6qUp7nH9OuMx1A5-1H7gVlXGnqf3v0sZw';" alt="Mycampus Secure Login Small Island Developing States West Indies Places To Go">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycampus Secure Login Small Island Developing States West Indies Places To Go</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/66/af/62/66af6238883fd425cfb682c51e7965a0.jpg" data-lightbox="roadtrip" data-title="Check Out Aiu S Tutoring Resources Student Portal Online University University Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/66/af/62/66af6238883fd425cfb682c51e7965a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRFjaIWwE-t3OEqDnJHf4LE5Uix1Br71umTA';" alt="Check Out Aiu S Tutoring Resources Student Portal Online University University Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Check Out Aiu S Tutoring Resources Student Portal Online University University Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/9c/fc/42/9cfc420296ad10ea75e66c0b242ee5bf.jpg" data-lightbox="roadtrip" data-title="Take A Step Toward Your Goals Every Day Student Voice Student Services Comprehensive School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/9c/fc/42/9cfc420296ad10ea75e66c0b242ee5bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiYj9QywTYGib_O-eckPRScgqpwgpUFSj-GA';" alt="Take A Step Toward Your Goals Every Day Student Voice Student Services Comprehensive School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Take A Step Toward Your Goals Every Day Student Voice Student Services Comprehensive School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/3f/df/7b/3fdf7b57597f81d96201d4085a18e4d8.jpg" data-lightbox="roadtrip" data-title="Log In On Mondays To Get A Jump On The Week Student Voice Student Services University Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/3f/df/7b/3fdf7b57597f81d96201d4085a18e4d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv4OA_y_ag3E-30AHW6oAS_jymF47LjGpqYA';" alt="Log In On Mondays To Get A Jump On The Week Student Voice Student Services University Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Log In On Mondays To Get A Jump On The Week Student Voice Student Services University Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e0/f2/65/e0f265bc2a4b8c6c0105e1392e8baec6.jpg" data-lightbox="roadtrip" data-title="Login My Campus Link Student Account My Campus Student Accounting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e0/f2/65/e0f265bc2a4b8c6c0105e1392e8baec6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgG6lmdYlj88wF5Hq9KIeYNqerJnY6jD6O6w';" alt="Login My Campus Link Student Account My Campus Student Accounting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Login My Campus Link Student Account My Campus Student Accounting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/17/77/86/177786d68af70ec2ae70f6214e6ae47d.jpg" data-lightbox="roadtrip" data-title="Pin By Toni On Graduate Student Portal Technical University University Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/17/77/86/177786d68af70ec2ae70f6214e6ae47d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-f1_MjMQViav_VeeFtPDEld12eWSxEN5cnQ';" alt="Pin By Toni On Graduate Student Portal Technical University University Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Toni On Graduate Student Portal Technical University University Student</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c1/d3/33/c1d3338d360418e224e8d648cdf25e72.jpg" data-lightbox="roadtrip" data-title="Getting To Graduation Is A Journey Student Voice Student Portal University Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c1/d3/33/c1d3338d360418e224e8d648cdf25e72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHcAhLgBGWB_pZ8cEbLB_YOmj-IC0SCOk04g';" alt="Getting To Graduation Is A Journey Student Voice Student Portal University Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Getting To Graduation Is A Journey Student Voice Student Portal University Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/01/d9/8701d914e41e8675ff1508c68e3d56bb.png" data-lightbox="roadtrip" data-title="Mylincoln Portal My Campus Portal College Students">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/01/d9/8701d914e41e8675ff1508c68e3d56bb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRr5RPm2VHUGhHSYC6J6P3OCnEM80P0fSAgg';" alt="Mylincoln Portal My Campus Portal College Students">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mylincoln Portal My Campus Portal College Students</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/4a/ce/bf4aceb80f4308fb3a891e77a3a6b5fd.png" data-lightbox="roadtrip" data-title="Home Mycampusnewee Mobile App African Dress">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/4a/ce/bf4aceb80f4308fb3a891e77a3a6b5fd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwZ0vqHxLZbC8bxz_tVpaiPaqhsE8YWUAqjw';" alt="Home Mycampusnewee Mobile App African Dress">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Mycampusnewee Mobile App African Dress</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ca/62/27/ca6227f18d674a7ed20ffe51fcb4efc4.jpg" data-lightbox="roadtrip" data-title="Log In Often To See When Assignments Are Due Student Voice Student Services Comprehensive School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ca/62/27/ca6227f18d674a7ed20ffe51fcb4efc4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQJULjzc79LicV7raVfeZpWij-9mKFIXebZw';" alt="Log In Often To See When Assignments Are Due Student Voice Student Services Comprehensive School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Log In Often To See When Assignments Are Due Student Voice Student Services Comprehensive School</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-dependent-optometry.html">Military Dependent Optometry</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-retired.html">Military Dependent Id Card Retired</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-fort-hood.html">Military Dependent Id Card Fort Hood</a></li>
+													<li class="list-group-item"><a href="/military-dependent-register-to-vote.html">Military Dependent Register To Vote</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-renewal-form.html">Military Dependent Id Card Renewal Form</a></li>
+													<li class="list-group-item"><a href="/military-dependent-pay-rates.html">Military Dependent Pay Rates</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-renewal-locations.html">Military Dependent Id Card Renewal Locations</a></li>
+													<li class="list-group-item"><a href="/military-dependent-jobs.html">Military Dependent Jobs</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-age-requirements.html">Military Dependent Id Card Age Requirements</a></li>
+													<li class="list-group-item"><a href="/military-dependent-qualifications.html">Military Dependent Qualifications</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-number.html">Military Dependent Id Number</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-child.html">Military Dependent Id Child</a></li>
+													<li class="list-group-item"><a href="/military-dependent-pay.html">Military Dependent Pay</a></li>
+													<li class="list-group-item"><a href="/military-dependent-legal-residency.html">Military Dependent Legal Residency</a></li>
+													<li class="list-group-item"><a href="/military-dependent-parent-application.html">Military Dependent Parent Application</a></li>
+													<li class="list-group-item"><a href="/military-dependent-known-traveler-number.html">Military Dependent Known Traveler Number</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-over-21.html">Military Dependent Id Card Over 21</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-extension.html">Military Dependent Id Card Extension</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-renewal-locations.html">Military Dependent Id Renewal Locations</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-cards-orlando.html">Military Dependent Id Cards Orlando</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

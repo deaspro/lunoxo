@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Can Bipolar Disorder Be Mistaken For Adhd - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Can Bipolar Disorder Be Mistaken For Adhd",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/600x315/cd/fe/9f/cdfe9f33d28424e43d820b0c1f6f589a.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=can+bipolar+disorder+be+mistaken+for+adhd",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Can Bipolar Disorder Be Mistaken For Adhd</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Approximately 70 percent of people with bipolar disorder have ADHD. In some cases bipolar disorder may be mistaken for schizophrenia if the patient also has psychotic symptoms according to NAMI and someone with schizoaffective disorder can also be wrongfully. Use this guide from clinical instructor at Harvard Medical School Roberto Olivardia PhD. <br>				
+			</p>
+										<a class="badge badge-dark" href="/scholarships-for-college-students-with-military-parents.html">scholarships for college students with military parents</a>
+											<a class="badge badge-secondary" href="/salvation-army-emergency-number.html">salvation army emergency number</a>
+											<a class="badge badge-secondary" href="/scholarship-for-mba-students-in-karnataka-2020.html">scholarship for mba students in karnataka 2020</a>
+											<a class="badge badge-danger" href="/salvation-army-donation-text-number.html">salvation army donation text number</a>
+											<a class="badge badge-light" href="/sc-st-scholarship-for-mba-students-in-karnataka.html">sc st scholarship for mba students in karnataka</a>
+											<a class="badge badge-secondary" href="/scholarship-for-mba-for-indian-students.html">scholarship for mba for indian students</a>
+											<a class="badge badge-danger" href="/scholarships-for-mfa-programs.html">scholarships for mfa programs</a>
+											<a class="badge badge-success" href="/salvation-army-hotline-number.html">salvation army hotline number</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the right site.  Our site gives you suggestions for seeing the maximum quality video and image content, hunt and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, so we recommend this video for you to see.  It is also possible to contribute to supporting this website by sharing videos and images that you like on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.sanity.io/images/0vv8moc6/psychtimes/6c358f704e83b8bff140d471bfe2e4d5fedebe8f-2069x2598.jpg?auto=format" data-lightbox="roadtrip" data-title="Adhd Bipolar Disorder Or Borderline Personality Disorder Psychiatric Times">
+											<img class="card-img v-image ads-img " src="https://cdn.sanity.io/images/0vv8moc6/psychtimes/6c358f704e83b8bff140d471bfe2e4d5fedebe8f-2069x2598.jpg?auto=format" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT92h0VOyoGTNhHyM2U0M6opQH1nVO2Y-q2A';" alt="Adhd Bipolar Disorder Or Borderline Personality Disorder Psychiatric Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adhd Bipolar Disorder Or Borderline Personality Disorder Psychiatric Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/57/67/00576710851350a7d0ddb475eb1a40d7.jpg" data-lightbox="roadtrip" data-title="Pin On Add Adhd And Other Ld S Dyslexia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/57/67/00576710851350a7d0ddb475eb1a40d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoTwEkffRC9OnDki630VaqSknMtPmDRNx1tA';" alt="Pin On Add Adhd And Other Ld S Dyslexia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Add Adhd And Other Ld S Dyslexia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ibpf.org/wp-content/uploads/2020/11/Insta-Blog-Template-26-1080x675.png" data-lightbox="roadtrip" data-title="How To Know If You Have Bipolar Disorder Adhd Or Borderline Personality Disorder International Bipolar Foundation">
+											<img class="card-img v-image ads-img " src="https://ibpf.org/wp-content/uploads/2020/11/Insta-Blog-Template-26-1080x675.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0XLTjmwvzWnvw9wfmlmGmkosdGnuxqwZZQg';" alt="How To Know If You Have Bipolar Disorder Adhd Or Borderline Personality Disorder International Bipolar Foundation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Know If You Have Bipolar Disorder Adhd Or Borderline Personality Disorder International Bipolar Foundation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/db/ee/43dbee2f588f2757cd30a0ff1f183288.png" data-lightbox="roadtrip" data-title="Treatable Condition Could Be Mistaken For Schizophrenia Or Bipolar Disorder Bphope Com Schizophrenia Bipolar Disorder Bipolar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/db/ee/43dbee2f588f2757cd30a0ff1f183288.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Aw299xW3QGGNoecZXPfovddpLSdNATbJsQ';" alt="Treatable Condition Could Be Mistaken For Schizophrenia Or Bipolar Disorder Bphope Com Schizophrenia Bipolar Disorder Bipolar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Treatable Condition Could Be Mistaken For Schizophrenia Or Bipolar Disorder Bphope Com Schizophrenia Bipolar Disorder Bipolar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.psycom.net/wp-content/uploads/2017/11/young-man-male-handsome-model-attractive-157928-1280x429.jpeg" data-lightbox="roadtrip" data-title="Adhd Vs Bipolar How To Tell The Difference">
+											<img class="card-img v-image ads-img " src="https://static.psycom.net/wp-content/uploads/2017/11/young-man-male-handsome-model-attractive-157928-1280x429.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2nK7Gj1NU_UrZP6rU_pFFonFhNzsyzyBfNA';" alt="Adhd Vs Bipolar How To Tell The Difference">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adhd Vs Bipolar How To Tell The Difference</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/f7/60/cdf760e9a83fa5d240624385c2a397b6.jpg" data-lightbox="roadtrip" data-title="Misdiagnosis And Fas Fetal Alcohol Spectrum Disorder Fetal Alcohol Foetal Alcohol Spectrum Disorder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/f7/60/cdf760e9a83fa5d240624385c2a397b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqkGkVYru-ljLDBFAPajQw3fKSrjwnJ2Il1A';" alt="Misdiagnosis And Fas Fetal Alcohol Spectrum Disorder Fetal Alcohol Foetal Alcohol Spectrum Disorder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Misdiagnosis And Fas Fetal Alcohol Spectrum Disorder Fetal Alcohol Foetal Alcohol Spectrum Disorder</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/ca/91/08/ca9108e6bcaab06ae28005e460654e91.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqkGkVYru-ljLDBFAPajQw3fKSrjwnJ2Il1A';" alt="Misdiagnosis And Fas Fetal Alcohol Spectrum Disorder Fetal Alcohol Foetal Alcohol Spectrum Disorder">
+										<div class="card-body">
+						<h3 class="h5"><b>How to make the right diagnosis.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Can bipolar disorder be mistaken for adhd</strong>. 
+								
+																	The symptoms of ADHD such as difficulty. 
+																	However its also common for bipolar disorder and ADHD to occur together. 
+																	It is understandable that doctors confuse bipolar symptoms for those of ADHD. 
+																	With ADHD a child or teen may have rapid or impulsive speech physical restlessness trouble focusing irritability and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	ADHD is a lifelong condition generally beginning before age 12 while bipolar. 
+																	Symptoms of ADHD can have some overlap with symptoms of bipolar disorder. 
+																	Some of the symptoms even overlap. 
+																	This can sometimes make it difficult to tell the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mood swings are most commonly associated with bipolar disorder a condition characterized by dramatic shifts from euphoric mania to crippling depression. 
+																	What the research says. 
+																	But people have ADHD mood swings too. 
+																	Treatment of Comorbid ADHD and Bipolar Disorder. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thats what Timothy Wilens MD and colleagues at Massachusetts General Hospital found. 
+																	Approximately 20 percent of people with ADHD also suffer from bipolar disorder a serious mental illness characterized by depressive and manic episodes. 
+																	Both conditions involve impulsivity irritability hyperactivity emotional dysregulation sleep problems a racing brain and problems with maintaining attention. 
+																	Bipolar disorder and attention deficit hyperactivity disorder ADHD are conditions that affect many people. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But on deeper examination there are ways to distinguish one condition from the other. 
+																	In community samples almost 60 of pediatric ADHD patients have been found to have an affective illness. 
+																	To tell the symptoms of ADHD vs. 
+																	The symptoms of ADHD and bipolar disorder can overlap to some degree and result in misdiagnoses for one or the other condition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Stimulant medications have a risk of exacerbating manic episodes for someone with bipolar disorder. 
+																	Bipolar disorder is a lifelong mental condition that causes extreme shifts in mood. 
+																	Attention deficit hyperactivity disorder or ADHD misdiagnosis can happen because many of its symptoms overlap with those of other conditions. 
+																	By Marissa Kristal published June 1 2007 - last reviewed on June 9 2016. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Treatment of patients with comorbid bipolar disorder and ADHD is complicated by the fact that bipolar disorder is frequently treated with mood stabilizers while ADHD is often treated with stimulant medication. 
+																	An adult with bipolar disorder can also have attention deficit hyperactivity disorder better known as ADHD. 
+																	A persons moods can change very quickly and they may experience everything from high highs to low lows. 
+																	Theyre deeply passionate and have strong emotional reactions that can change their mood dramatically. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In people with both bipolar disorder and ADHD stabilization of mood using medications like mood stabilizers or. 
+																	A Mistaken Diagnosis Sometimes bipolar disorder is easy to miss. 
+																	1 On the other hand nearly 10 of bipolar patients are found to have comorbid ADHD. 
+																	A diagnosis may not be clear cut but you and a psychiatrist can work through the symptoms to determine if you have both bipolar disorder and autism. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The differentiation of personality disorder symptoms from bipolar disorder entails two key variables one of which is similar to the ADHD distinction. 
+																	But because symptoms of other mental health conditions such as depression and ADHD can mimic bipolar disorder getting to that diagnosis can be tricky. 
+																	In turn 20 percent of those who have an ADHD diagnosis end up being diagnosed with bipolar disorder 1 The similarities between ADHD and bipolar disorder make it easy to misdiagnose but there are key differences that distinguish one from the other. 
+																	There are many distinct differences between ADHD and bipolar disorder but they are subtle and may go unnoticed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That is if an individual struggles with. 
+																	Since both conditions share symptoms but ADHD is more common bipolar disorder is often missed or misdiagnosed. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/8f/a3/ec8fa363930776f737a3406d1867eacf.jpg" data-lightbox="roadtrip" data-title="Pin On Diagnosing Adhd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/8f/a3/ec8fa363930776f737a3406d1867eacf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuQ48JB_Hl_iCu8HKygFT_OwOqT29AGC5OLA';" alt="Pin On Diagnosing Adhd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Diagnosing Adhd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.sanity.io/images/0vv8moc6/psychtimes/d2edf4c7b0f95276548f3c89d7b7a5daed57c213-800x600.jpg?auto=format" data-lightbox="roadtrip" data-title="Adhd In Patients With Bipolar Disorder Genetics Diagnosis And Treatment Psychiatric Times">
+											<img class="card-img v-image ads-img " src="https://cdn.sanity.io/images/0vv8moc6/psychtimes/d2edf4c7b0f95276548f3c89d7b7a5daed57c213-800x600.jpg?auto=format" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4aBAtI6ajxRBQ3JsoeDJsvXiiuLi6H7-ZiQ';" alt="Adhd In Patients With Bipolar Disorder Genetics Diagnosis And Treatment Psychiatric Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adhd In Patients With Bipolar Disorder Genetics Diagnosis And Treatment Psychiatric Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://adhd-institute.com/wp-content/uploads/2019/01/Main-comorbid-psychiatric-disorders.jpg" data-lightbox="roadtrip" data-title="Psychiatric Comorbidities In Patients With Adhd Adhd Institute">
+											<img class="card-img v-image ads-img " src="https://adhd-institute.com/wp-content/uploads/2019/01/Main-comorbid-psychiatric-disorders.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdzsbYKPwcQ_bS_ongWhoUXBNAqkP6GStvLQ';" alt="Psychiatric Comorbidities In Patients With Adhd Adhd Institute">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Psychiatric Comorbidities In Patients With Adhd Adhd Institute</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.lifeworkscc.com/wp-content/uploads/2019/05/Bipolar-Disorder-vs-ADHD-What%E2%80%99s-the-Difference-Lifeworks-Counseling-Center-300x200.jpg" data-lightbox="roadtrip" data-title="Bipolar Disorder Vs Adhd What S The Difference Lifeworks">
+											<img class="card-img v-image ads-img " src="https://www.lifeworkscc.com/wp-content/uploads/2019/05/Bipolar-Disorder-vs-ADHD-What%E2%80%99s-the-Difference-Lifeworks-Counseling-Center-300x200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcA4AAokN6ZJydSI1hJj7xb4BYdhPQffbb9w';" alt="Bipolar Disorder Vs Adhd What S The Difference Lifeworks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bipolar Disorder Vs Adhd What S The Difference Lifeworks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/df/21/42df218fd2e67375bde0b2edac7578f7.jpg" data-lightbox="roadtrip" data-title="Pin On Diagnosing Adhd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/df/21/42df218fd2e67375bde0b2edac7578f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo4f2vNp8H2Q9SdDkiIGkBX63Sk_VkFiYU7A';" alt="Pin On Diagnosing Adhd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Diagnosing Adhd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/Q_1M5u_DGFU/maxresdefault.jpg" data-lightbox="roadtrip" data-title="The Differences Between Adhd Bipolar Disorder Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/Q_1M5u_DGFU/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_9mZJJwZdSFuWzhauGRCYe-dR_uETWThJw';" alt="The Differences Between Adhd Bipolar Disorder Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Differences Between Adhd Bipolar Disorder Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/2d/7a/ff/2d7aff4036964ca6f41b0cc74a04c2f0.jpg" data-lightbox="roadtrip" data-title="Pin On Adhd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/2d/7a/ff/2d7aff4036964ca6f41b0cc74a04c2f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5XTC5dFvPpiTdxjYBikXyLeE6K0f9aHncUQ';" alt="Pin On Adhd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Adhd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/dd/34/fc/dd34fcf37eb263a422e658e5baa1ed95.jpg" data-lightbox="roadtrip" data-title="Pin On Read Soon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/dd/34/fc/dd34fcf37eb263a422e658e5baa1ed95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1eanV3iQ34uzYZAe16TjGwlkFhDbd8BlzQQ';" alt="Pin On Read Soon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Read Soon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ca/91/08/ca9108e6bcaab06ae28005e460654e91.jpg" data-lightbox="roadtrip" data-title="Pin On Mental Health Blogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ca/91/08/ca9108e6bcaab06ae28005e460654e91.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEMEODVhDe7FVp46pDvtPIYy1YBfj0ooMs8w';" alt="Pin On Mental Health Blogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mental Health Blogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vistapineshealth.com/wp-content/uploads/2020/02/sonata.jpg" data-lightbox="roadtrip" data-title="Adhd Versus Bipolar Disorder What Are The Similarities And Differences">
+											<img class="card-img v-image ads-img " src="https://vistapineshealth.com/wp-content/uploads/2020/02/sonata.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROnR_SoDZURdnKtFFHDlnoLB6Psb2nqPTBGA';" alt="Adhd Versus Bipolar Disorder What Are The Similarities And Differences">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adhd Versus Bipolar Disorder What Are The Similarities And Differences</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/cd/fe/9f/cdfe9f33d28424e43d820b0c1f6f589a.jpg" data-lightbox="roadtrip" data-title="Pin On Autism Adhd Etc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/cd/fe/9f/cdfe9f33d28424e43d820b0c1f6f589a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7kWnYimthJo7aPsEilq0-ABglm0wSS0cfGQ';" alt="Pin On Autism Adhd Etc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Autism Adhd Etc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/36/de/40/36de405d0f974612fa17ef8bccc518f9.jpg" data-lightbox="roadtrip" data-title="5 Things People With Borderline Personality Disorder Do That Get Mistaken For Manipulation Borderline Personality Disorder Borderline Personality Disorder Quotes Personality Disorder Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/36/de/40/36de405d0f974612fa17ef8bccc518f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGG5g2TTdG7QvFcwe_33l6S94ABSOnXavc4g';" alt="5 Things People With Borderline Personality Disorder Do That Get Mistaken For Manipulation Borderline Personality Disorder Borderline Personality Disorder Quotes Personality Disorder Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Things People With Borderline Personality Disorder Do That Get Mistaken For Manipulation Borderline Personality Disorder Borderline Personality Disorder Quotes Personality Disorder Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.onecms.io/wp-content/uploads/sites/12/2016/02/bipolar-diagnose-150.jpg" data-lightbox="roadtrip" data-title="The Challenge Of Accurately Diagnosing Bipolar Disorder Health Com">
+											<img class="card-img v-image ads-img " src="https://static.onecms.io/wp-content/uploads/sites/12/2016/02/bipolar-diagnose-150.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyXdPAT7F73UW4o9CIQ8YOu1w128eLpgzZ-Q';" alt="The Challenge Of Accurately Diagnosing Bipolar Disorder Health Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Challenge Of Accurately Diagnosing Bipolar Disorder Health Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-hq.html">Military Hq</a></li>
+													<li class="list-group-item"><a href="/military-hours-to-minutes.html">Military Hours To Minutes</a></li>
+													<li class="list-group-item"><a href="/military-id-card-cleveland-ohio.html">Military Id Card Cleveland Ohio</a></li>
+													<li class="list-group-item"><a href="/military-hq-surplus-hawaii.html">Military Hq Surplus Hawaii</a></li>
+													<li class="list-group-item"><a href="/military-hours-vs-regular-hours.html">Military Hours Vs Regular Hours</a></li>
+													<li class="list-group-item"><a href="/military-human-resources-resume.html">Military Human Resources Resume</a></li>
+													<li class="list-group-item"><a href="/military-hours-definition.html">Military Hours Definition</a></li>
+													<li class="list-group-item"><a href="/military-id-card-dependent.html">Military Id Card Dependent</a></li>
+													<li class="list-group-item"><a href="/military-hours-calculator.html">Military Hours Calculator</a></li>
+													<li class="list-group-item"><a href="/military-hours-in-time.html">Military Hours In Time</a></li>
+													<li class="list-group-item"><a href="/military-hours-list.html">Military Hours List</a></li>
+													<li class="list-group-item"><a href="/military-id-card-jackson-tn.html">Military Id Card Jackson Tn</a></li>
+													<li class="list-group-item"><a href="/military-id-card-great-lakes.html">Military Id Card Great Lakes</a></li>
+													<li class="list-group-item"><a href="/military-hrvatska.html">Military Hrvatska</a></li>
+													<li class="list-group-item"><a href="/military-id-card-houston.html">Military Id Card Houston</a></li>
+													<li class="list-group-item"><a href="/military-hours-what.html">Military Hours What</a></li>
+													<li class="list-group-item"><a href="/military-id-card-green-bay-wi.html">Military Id Card Green Bay Wi</a></li>
+													<li class="list-group-item"><a href="/military-hourly-pay-chart.html">Military Hourly Pay Chart</a></li>
+													<li class="list-group-item"><a href="/military-hourly-child-care.html">Military Hourly Child Care</a></li>
+													<li class="list-group-item"><a href="/military-housing-on-base-cost.html">Military Housing On Base Cost</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

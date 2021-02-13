@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Navy Benefits For College Students - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Navy Benefits For College Students",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/de/f2/36/def2368c64c4d94077f7471ed341c663.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=navy+benefits+for+college+students",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Navy Benefits For College Students</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Its a win-win as you get paid to work toward your degree while serving your country. A good education is essential for your career both in uniform and out so take advantage of the education benefits youve earned. The Army and Navy offer loan repayment programs that help enlisted personnel pay off college loans accrued prior to service. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/top-jobs-for-military-spouses.html">top jobs for military spouses</a>
+											<a class="badge badge-danger" href="/the-military-wives-movie.html">the military wives movie</a>
+											<a class="badge badge-light" href="/tinker-air-force-base-deers-office.html">tinker air force base deers office</a>
+											<a class="badge badge-primary" href="/the-salvation-army-hr-director.html">the salvation army hr director</a>
+											<a class="badge badge-primary" href="/top-military-spouse-jobs.html">top military spouse jobs</a>
+											<a class="badge badge-dark" href="/the-national-archives-and-records-service-of-south-africa.html">the national archives and records service of south africa</a>
+											<a class="badge badge-primary" href="/tinker-air-force-base-fire-department.html">tinker air force base fire department</a>
+											<a class="badge badge-info" href="/tinker-air-force-base-oklahoma-phone-number.html">tinker air force base oklahoma phone number</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the ideal blog.  Our site provides you with hints for viewing the highest quality video and picture content, search and locate more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie for you to view.  It is also possible to bring about supporting this site by sharing videos and graphics that you like on this blog on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/90/b3/0090b3e6a23f5f2cf7861a6c87d8b7fa.png" data-lightbox="roadtrip" data-title="Military Education Benefits Army College Military Education Tuition Assistance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/90/b3/0090b3e6a23f5f2cf7861a6c87d8b7fa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4_YHkyM3_03Ib_Zvuxxjm46_34p26iLXF3A';" alt="Military Education Benefits Army College Military Education Tuition Assistance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Education Benefits Army College Military Education Tuition Assistance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/f2/36/def2368c64c4d94077f7471ed341c663.jpg" data-lightbox="roadtrip" data-title="Only 19 Of College Students Graduate In Four Years Will Your Gi Bill Last That Long Join Us For Colleg Support Veterans Top Universities Government Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/f2/36/def2368c64c4d94077f7471ed341c663.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn0Z7Tv-uxMoA6bvntHxP6D2Q9FhXNo4O07w';" alt="Only 19 Of College Students Graduate In Four Years Will Your Gi Bill Last That Long Join Us For Colleg Support Veterans Top Universities Government Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Only 19 Of College Students Graduate In Four Years Will Your Gi Bill Last That Long Join Us For Colleg Support Veterans Top Universities Government Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/01/7f/28017ffbb8563c9343551484db0dadf0.png" data-lightbox="roadtrip" data-title="Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/01/7f/28017ffbb8563c9343551484db0dadf0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaDVTaYO7BjRnpMQeKqJD_kwSTSHSNf_sTQ';" alt="Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/e8/40/a5e840c223f62a67946e9963eaa87373.png" data-lightbox="roadtrip" data-title="The Guide To Military And Va Education Benefits To Pay For College Financial Aid For College Grants For College Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/e8/40/a5e840c223f62a67946e9963eaa87373.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdINLWaGEcRo1qrV_MT1svRfYBuBgVr6fhDQ';" alt="The Guide To Military And Va Education Benefits To Pay For College Financial Aid For College Grants For College Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Guide To Military And Va Education Benefits To Pay For College Financial Aid For College Grants For College Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/c0/cf/eac0cf553647a55dcd996b928f25ec39.png" data-lightbox="roadtrip" data-title="Pin On Marine Aviator">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/c0/cf/eac0cf553647a55dcd996b928f25ec39.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjSStZ67PBwbENXcvOlkRkow39HeOjSS9xvA';" alt="Pin On Marine Aviator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Marine Aviator</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/ae/e0/23aee03b388b934b46433cf16c633b78.jpg" data-lightbox="roadtrip" data-title="Benefits Joining The Navy Navy Com Joining The Navy Navy Girlfriend Navy Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/ae/e0/23aee03b388b934b46433cf16c633b78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrORG1HGqRePafjwTaLgUigfsK0lAF0a2nsg';" alt="Benefits Joining The Navy Navy Com Joining The Navy Navy Girlfriend Navy Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benefits Joining The Navy Navy Com Joining The Navy Navy Girlfriend Navy Day</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b2/23/59/b223591d4b11f3ff0cb2fd8b243246ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrORG1HGqRePafjwTaLgUigfsK0lAF0a2nsg';" alt="Benefits Joining The Navy Navy Com Joining The Navy Navy Girlfriend Navy Day">
+										<div class="card-body">
+						<h3 class="h5"><b>How to qualify for travel benefits.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Navy benefits for college students</strong>. 
+								
+																	The GI Bill covers up to 36 months of benefits including tuition fees a monthly housing allowance and an annual books and supplies stipend. 
+																	NHS bursaries if youre studying certain medical dentistry or healthcare courses help with costs of travel to UK clinical. 
+																	While each program has unique processes and requirements theyre all enlistment incentives designed to help recent college graduates manage education debt. 
+																	Navy or Marine Corps. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Students taking 100 of their courses online are eligible for a monthly housing stipend of 89450 which is 12 the national average Monthly Housing Allowance. 
+																	Tuition Assistance pays for up to 100 percent of the cost of tuition or expenses up to a maximum of 250 per credit and a personal maximum of 4500 per fiscal year per student. 
+																	Students will need to work with their admissions office or office of veteran services to determine what is possible at that financial institution. 
+																	If it is a mandatory fee it may be possible to apply military college tuition benefits toward such coverage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For college students who are the beneficiaries of a parents military survivor benefits the twice-yearly requirement that they verify their enrollment status at a school just got a whole lot. 
+																	As we all know Tricare is an amazingly important part of the overall military benefits package. 
+																	To qualify the service member must have accrued six. 
+																	DEERS is a computerized database of military sponsors families and others worldwide who are entitled. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Navy and Marine Corps have exciting civilian employment opportunities for high school and college students recent college graduates and others who want to build. 
+																	College Scholarship Options The Navy offers several scholarship programs to help pay for school so you can enjoy a normal college life and focus on your studies before starting a career in the Navy. 
+																	Navy Postgraduate Dental School. 
+																	The military parent is on an accompanied tour and the rest of the family is living OCONUS with them. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Education Benefits for Military-Connected Students in College by Ashley Eneriz Whether your career path is accounting or the arts earning a quality college degree is essential in setting you apart from the others in the workforce. 
+																	In fact much of your on-the-job training and experience can directly translate to college credit. 
+																	This program is the same for full-time members in all Military Services. 
+																	College Program students may be competitively selected for Advanced Standing prior to the start of their junior year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	UNDERGRADUATE DEGREE OPPORTUNITIES You dont have to put college on hold while you pursue a career in the Navy. 
+																	These payments are considered taxable income. 
+																	Upon acceptance into Advance Standing College Program students are enlisted in the Naval Reserve and receive the same benefits as a traditional scholarship NROTC student - including a commission in the US. 
+																	As one of the most technologically superior forces in the world Americas Navy prioritizes education for its Sailors offering to help pay for the cost. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The government will pay for one round trip each fiscal year for college students if they meet the following requirements. 
+																	Under the GEV program any eligible Navy officer can receive up to 40000 towards a graduate degree provided they plan to complete program requirements when they are off-duty. 
+																	Medical social work and teacher training students You can apply for. 
+																	DEERS registration is essential for your family to be eligible for TRICARE and other benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Applicants must demonstrate leadership potential and pursue a degree relevant to the goals of the Navy. 
+																	I just had to estimate how much Tricare saved my family including my college students in the last. 
+																	Explore opportunities in NROTC undergraduate graduate and professional programs to determine whats best for you or chat with a recruiter to get the latest details. 
+																	Students - Pathways Program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While in service members have access to up to 4500 a year in. 
+																	We offer a variety of educational assistance options from scholarships to financial reimbursement salary advances to sign-on bonuses. 
+																	Each year 15 percent of the loan balance or 500 whichever is greater will be repaid by SLRP. 
+																	If this is the case the student will be sponsored by the command. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some state-level military college benefits may not cover such fees while others might. 
+																	The Army and Navy will pay back up to 65000 of student loans and the Air Force up to 10000. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e3/85/bf/e385bf9c27c1c56b2112358ccd7de380.jpg" data-lightbox="roadtrip" data-title="Is Jrotc Right For Me Accredited Schools Online Find Top Rated Accredited Programs Online College Fun Admissions Interview Online Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e3/85/bf/e385bf9c27c1c56b2112358ccd7de380.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRucRfJSzEYIUM2HY01QEdQ29kvopuShr-VFw';" alt="Is Jrotc Right For Me Accredited Schools Online Find Top Rated Accredited Programs Online College Fun Admissions Interview Online Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Is Jrotc Right For Me Accredited Schools Online Find Top Rated Accredited Programs Online College Fun Admissions Interview Online Student</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/d5/f4/51d5f456e64307f3df61b0f3b72be6ad.jpg" data-lightbox="roadtrip" data-title="Pin On Tips For Those Who Ve Served Veterans The College Process">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/d5/f4/51d5f456e64307f3df61b0f3b72be6ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfntCY5z11Dp5hvj2IMTGSRf6MqSootwRYA';" alt="Pin On Tips For Those Who Ve Served Veterans The College Process">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tips For Those Who Ve Served Veterans The College Process</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/d5/6d/ccd56db51985f0a7f0430eff8476d354.png" data-lightbox="roadtrip" data-title="Texas Educational Benefits Threatened Education Texas Benefit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/d5/6d/ccd56db51985f0a7f0430eff8476d354.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqB2bYmrAZ8wAmuuZLBKDAdiMuOxq62lBS-A';" alt="Texas Educational Benefits Threatened Education Texas Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texas Educational Benefits Threatened Education Texas Benefit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/84/3c/d9843c058ae6a07feeeca739a6c12575.png" data-lightbox="roadtrip" data-title="Care Package Ideas For Every Month Of The Year Mrs Navy Mama In 2020 Military Care Package Care Package Months In A Year">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/84/3c/d9843c058ae6a07feeeca739a6c12575.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4OBx4UiinF6yCjsZ26w1k0-0-YAVYIj1tFg';" alt="Care Package Ideas For Every Month Of The Year Mrs Navy Mama In 2020 Military Care Package Care Package Months In A Year">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Care Package Ideas For Every Month Of The Year Mrs Navy Mama In 2020 Military Care Package Care Package Months In A Year</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/8d/02/e98d025704153949c40c0f45da273d5b.jpg" data-lightbox="roadtrip" data-title="Here S A List That Is Sure To Bring A Smile To Your Face Navy Wife Life Military Spouse Magazine Navy Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/8d/02/e98d025704153949c40c0f45da273d5b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9_B8fx-6Vx2DKescGOhYYeaQL-PtpLqWggQ';" alt="Here S A List That Is Sure To Bring A Smile To Your Face Navy Wife Life Military Spouse Magazine Navy Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S A List That Is Sure To Bring A Smile To Your Face Navy Wife Life Military Spouse Magazine Navy Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/1b/e6/011be6961ae1ee3e4c03f53cd3011f6f.jpg" data-lightbox="roadtrip" data-title="Navy Federal Credit Union Offers Student Loan Consolidation To Refinance Multipl Social Media Infographic Marketing Strategy Social Media Infographic Marketing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/1b/e6/011be6961ae1ee3e4c03f53cd3011f6f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJtNrBYdzC2CN1nAvayOSx5f7l8-ZJmVIcww';" alt="Navy Federal Credit Union Offers Student Loan Consolidation To Refinance Multipl Social Media Infographic Marketing Strategy Social Media Infographic Marketing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Federal Credit Union Offers Student Loan Consolidation To Refinance Multipl Social Media Infographic Marketing Strategy Social Media Infographic Marketing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/79/96/b0799697b37d508691497b8d405b4415.jpg" data-lightbox="roadtrip" data-title="Your Benefits Explained Post 9 11 Gi Bill Veterans Affairs Gi Bill Military Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/79/96/b0799697b37d508691497b8d405b4415.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFZ-hhEE3cUl7R_2MfmBarTKASx6usIy_ibw';" alt="Your Benefits Explained Post 9 11 Gi Bill Veterans Affairs Gi Bill Military Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Your Benefits Explained Post 9 11 Gi Bill Veterans Affairs Gi Bill Military Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/d6/64/65d664c4be13dcf9b52871b05cf00d0f.jpg" data-lightbox="roadtrip" data-title="The Benefits Are Serving Part Time In The Navy Reserve Are Numerous Diverse Career Opportunities Unforge Navy Information Navy Reserve Navy Hospital Corpsman">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/d6/64/65d664c4be13dcf9b52871b05cf00d0f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvb7tcpq3jPMhQ8OlVzSB0p3W9WGpEJRY3ng';" alt="The Benefits Are Serving Part Time In The Navy Reserve Are Numerous Diverse Career Opportunities Unforge Navy Information Navy Reserve Navy Hospital Corpsman">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Benefits Are Serving Part Time In The Navy Reserve Are Numerous Diverse Career Opportunities Unforge Navy Information Navy Reserve Navy Hospital Corpsman</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/05/30/b605305f6ec015e52c1f47bef4e3c55b.png" data-lightbox="roadtrip" data-title="Pin On South Dakota Army National Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/05/30/b605305f6ec015e52c1f47bef4e3c55b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkaBJ37RtM2h0CkFSPOCw-CgSf5995yPLC0w';" alt="Pin On South Dakota Army National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On South Dakota Army National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/23/59/b223591d4b11f3ff0cb2fd8b243246ed.jpg" data-lightbox="roadtrip" data-title="Military Spouse News Stories And Advice Military Spouse Central Soldier Love Military Benefits Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/23/59/b223591d4b11f3ff0cb2fd8b243246ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLbEdCYyDacb1wcQBz1jy5nIPnhMzscXmo2w';" alt="Military Spouse News Stories And Advice Military Spouse Central Soldier Love Military Benefits Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse News Stories And Advice Military Spouse Central Soldier Love Military Benefits Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/fc/ad/90fcad25e4e7c84c514208f001ad1fda.png" data-lightbox="roadtrip" data-title="Gap Year Data Gap Year Statistics Benefits Of A Gap Year Gap Year Gap Years">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/fc/ad/90fcad25e4e7c84c514208f001ad1fda.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiob7eFD4XCbQWpR9U4FAnFghMHvLW1j6rZQ';" alt="Gap Year Data Gap Year Statistics Benefits Of A Gap Year Gap Year Gap Years">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gap Year Data Gap Year Statistics Benefits Of A Gap Year Gap Year Gap Years</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9e/a7/ad/9ea7ad86635a3aee862bf147371cc6af.jpg" data-lightbox="roadtrip" data-title="Pin On Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9e/a7/ad/9ea7ad86635a3aee862bf147371cc6af.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5NRe5TVgy8modQiOw9ozoGFfZ_NVgO3h-EA';" alt="Pin On Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/29/1b/a5291bea20bb81aef199eb3b97e2cd1b.jpg" data-lightbox="roadtrip" data-title="Education Opportunities Joining The Navy Navy Com Navy Nursing Navy Reserve Navy Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/29/1b/a5291bea20bb81aef199eb3b97e2cd1b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYaCA25e-WsX1lmyxTDLMVSe_3X8ZxBcEwEw';" alt="Education Opportunities Joining The Navy Navy Com Navy Nursing Navy Reserve Navy Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Education Opportunities Joining The Navy Navy Com Navy Nursing Navy Reserve Navy Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-heroes-government-loan-program-florida.html">Military Heroes Government Loan Program Florida</a></li>
+													<li class="list-group-item"><a href="/military-heroes-uk.html">Military Heroes Uk</a></li>
+													<li class="list-group-item"><a href="/military-health-insurance-reddit.html">Military Health Insurance Reddit</a></li>
+													<li class="list-group-item"><a href="/military-hatscom.html">Military Hatscom</a></li>
+													<li class="list-group-item"><a href="/military-heroesorg.html">Military Heroesorg</a></li>
+													<li class="list-group-item"><a href="/military-health-insurance-cost.html">Military Health Insurance Cost</a></li>
+													<li class="list-group-item"><a href="/military-hats-walmart.html">Military Hats Walmart</a></li>
+													<li class="list-group-item"><a href="/military-health-insurance-tax-form.html">Military Health Insurance Tax Form</a></li>
+													<li class="list-group-item"><a href="/military-hero-words.html">Military Hero Words</a></li>
+													<li class="list-group-item"><a href="/military-hero-romance-books.html">Military Hero Romance Books</a></li>
+													<li class="list-group-item"><a href="/military-hats-with-velcro-patches.html">Military Hats With Velcro Patches</a></li>
+													<li class="list-group-item"><a href="/military-heroes-coming-home.html">Military Heroes Coming Home</a></li>
+													<li class="list-group-item"><a href="/military-hero-dog-names.html">Military Hero Dog Names</a></li>
+													<li class="list-group-item"><a href="/military-heroes-losing-hold.html">Military Heroes Losing Hold</a></li>
+													<li class="list-group-item"><a href="/military-heroes-pics.html">Military Heroes Pics</a></li>
+													<li class="list-group-item"><a href="/military-hero-essay.html">Military Hero Essay</a></li>
+													<li class="list-group-item"><a href="/military-hero-gif.html">Military Hero Gif</a></li>
+													<li class="list-group-item"><a href="/military-hero-signs.html">Military Hero Signs</a></li>
+													<li class="list-group-item"><a href="/military-heroes-festival.html">Military Heroes Festival</a></li>
+													<li class="list-group-item"><a href="/military-hk416-devgru.html">Military Hk416 Devgru</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

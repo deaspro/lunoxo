@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Wheres My Cargo - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Wheres My Cargo",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/61/0e/b9/610eb9e107e4d9b14aa147f800149fa1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=wheres+my+cargo",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Wheres My Cargo</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">With this vessel tracker you can monitor ship positions vessel tracking ship tracking vessel position vessels traffic port activity in realtime map. Want even more key info more timely updates and to move your cargo faster. Alexa wheres my cargo. <br>				
+			</p>
+										<a class="badge badge-info" href="/air-force-one-cost-per-flight-hour.html">air force one cost per flight hour</a>
+											<a class="badge badge-dark" href="/air-force-key-spouse-of-the-year-2019.html">air force key spouse of the year 2019</a>
+											<a class="badge badge-success" href="/air-force-marriage-afi.html">air force marriage afi</a>
+											<a class="badge badge-info" href="/air-force-marriage-laws.html">air force marriage laws</a>
+											<a class="badge badge-warning" href="/air-force-joint-spouse-program.html">air force joint spouse program</a>
+											<a class="badge badge-danger" href="/air-force-key-spouse-of-the-year.html">air force key spouse of the year</a>
+											<a class="badge badge-dark" href="/air-force-officer-spouse-benefits.html">air force officer spouse benefits</a>
+											<a class="badge badge-danger" href="/air-force-jobs-vehicle-operations.html">air force jobs vehicle operations</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to visit the right blog.  Our site provides you with hints for viewing the highest quality video and image content, hunt and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video that you view.  It is also possible to contribute to supporting this website by sharing videos and images that you like on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/0e/b9/610eb9e107e4d9b14aa147f800149fa1.jpg" data-lightbox="roadtrip" data-title="Hapag Lloyd Container Tracking Where 39 S My Hapag Lloyd Container Ocean Freight Cargo Shipping Tall Ships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/0e/b9/610eb9e107e4d9b14aa147f800149fa1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm42EHDM1AlWRGAJT8w94TKKG21RISuGe6vA';" alt="Hapag Lloyd Container Tracking Where 39 S My Hapag Lloyd Container Ocean Freight Cargo Shipping Tall Ships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hapag Lloyd Container Tracking Where 39 S My Hapag Lloyd Container Ocean Freight Cargo Shipping Tall Ships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/f0/fc/f9f0fc86ff6365ebe6e80c0f42531f4d.jpg" data-lightbox="roadtrip" data-title="Pin On Logistics And Trucking">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/f0/fc/f9f0fc86ff6365ebe6e80c0f42531f4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjvywziiA-M5NSeANv4erCSdMHAxS2g45KFg';" alt="Pin On Logistics And Trucking">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Logistics And Trucking</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/5d/3c/335d3ca7cdaf8ea2dbe2a6a1fd136ddb.jpg" data-lightbox="roadtrip" data-title="Cargo Bike Niente E Impossibile Insolite Humour Insolite Velo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/5d/3c/335d3ca7cdaf8ea2dbe2a6a1fd136ddb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBOGmKaBiJqUUC1UxgtO3WXvy7Zm9KoNATxg';" alt="Cargo Bike Niente E Impossibile Insolite Humour Insolite Velo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cargo Bike Niente E Impossibile Insolite Humour Insolite Velo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/d3/d4/24d3d49d4542503c78e8a868bdfe11b3.jpg" data-lightbox="roadtrip" data-title="Now This Is Really Taking It To The Limit Think They Can Fit Another One On There Overpacking Transportation Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/d3/d4/24d3d49d4542503c78e8a868bdfe11b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5wdX8Rz32JsdwyjecP79vtCwRjKxnVSamHw';" alt="Now This Is Really Taking It To The Limit Think They Can Fit Another One On There Overpacking Transportation Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Now This Is Really Taking It To The Limit Think They Can Fit Another One On There Overpacking Transportation Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/57/e6/7357e698b64fe73c984ea3933bc80b4e.png" data-lightbox="roadtrip" data-title="Air Freight From China To Dubai Freight Uae Part 9 Air Cargo Cargo Transport Dubai">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/57/e6/7357e698b64fe73c984ea3933bc80b4e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMoSsnYtWIUglRWZEkELuo11Q2fUPoA5g5AQ';" alt="Air Freight From China To Dubai Freight Uae Part 9 Air Cargo Cargo Transport Dubai">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Freight From China To Dubai Freight Uae Part 9 Air Cargo Cargo Transport Dubai</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/74/83/ca74833c2372d7f3acd442988b53b60f.jpg" data-lightbox="roadtrip" data-title="Pin On Transport">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/74/83/ca74833c2372d7f3acd442988b53b60f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs6pxzn18RcIFdkSakh_3PuhQg_SfYgC2Qeg';" alt="Pin On Transport">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Transport</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/61/0e/b9/610eb9e107e4d9b14aa147f800149fa1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs6pxzn18RcIFdkSakh_3PuhQg_SfYgC2Qeg';" alt="Pin On Transport">
+										<div class="card-body">
+						<h3 class="h5"><b>Track Your Air Cargo Shipments by Air waybill - 001-12345675.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Wheres my cargo</strong>. 
+								
+																	A state-of-the-art deep-sea port Logistics Park offering flexible fast supply chain solutions and unmatched connectivity to markets. 
+																	Add container tracking to your website intranet or application with track. 
+																	The case underlines for insurers that courts will often take a broad approach to coverage and they must provide supporting evidence when alleging misrepresentation. 
+																	Why Wheres my cargo. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Where is my cargo. 
+																	Take the control of your shipments in one DashBoard. 
+																	This case involved. 
+																	18 November 2020 DP WORLD LONDON GATEWAY AND DHL COMMENCE WAREHOUSE BUILD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are obstacles you need to avoid to survive or your drone could crash. 
+																	Once prior this was a small beach and before the Expansion update a mountain was now the Cargo Port. 
+																	My Ship Tracking is a FREE REALTIME AIS vessel finder tracking service. 
+																	22 Wheres My Container is a tool for anyone involved in the supply chain as well as beneficial cargo owners transporting cargo in containers to understand where their containers are as they transit through DP Worlds UK ports from when they arrive to when theyll be ready to pick up. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The matter of Rosen Express v. 
+																	Northbridge is yet another case of stolen cargo for which Rosen sought coverage. 
+																	Wheres My Cargo is a platformer game that you need to deliver the cargo before your energy runs out. 
+																	VesselFinder displays real time ship positions and marine traffic detected by global AIS network. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Cargo Port sometimes is known as the Shipping Yard is a location that was added to Jailbreak on the OceanShips Update on April 4th 2020. 
+																	Vessel Name Service Phase ETA Berth Side to ETD Next port of call Ref. 
+																	Unleash the power of real-time insights of your shipments. 
+																	Where is my cargo. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VesselFinder is a FREE AIS vessel tracking web site. 
+																	Rail schedule Rail information Rail services. 
+																	Welcome to DP World London Gateway. 
+																	You take off from the platform to get your cargo and deliver it to the owner. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	12 04 2017 CHAMP Cargosystems has developed a system that allows users to make air cargo track and trace requests using Amazons Alexa voice recognition service. 
+																	Working with shipping lines through to retailers. 
+																	Upgrade to FREE 30 day trial of advanced features including real time SMS and email alerts as well as detailed history of a containers journey. 
+																	The best AIR CARGO TRACKING tool that never exist. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	THE LARGEST SITE TO DATE AT LONDON GATEWAY LOGISTICS PARK 17 November 2020 Forth Ports and DP World push forward with Thames Freeport bid View all news. 
+																	The debate regarding the traditional shipping tracking model in the air cargo industry which requires a huge effort in time is open and many experts and companies are beginning to question whether this should change. 
+																	Helps you to adapt quickly to disruption or changing customer demands driving time and cost savings throughout the supply chain. 
+																	Where is my cargo. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Track containers for 137 companies here Track with options or direct. 
+																	Home my track-trace Air cargo PostEMS. 
+																	After the delivery you have to go back to your original platform for the next level without crashing. 
+																	Click here to join your forwarder or broker to begin collaborating on the Cargologik platform. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill of lading Mobile Help Contact. 
+																	London Container Terminal provides a unique combination of Deep Sea and European Short Sea trades at the same facility. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/2b/fc/5f2bfcc1ce126f8de6f7abd361cbb2a2.jpg" data-lightbox="roadtrip" data-title="Peter Kay Forwood Trip On A Harley Davidson To India Trip Dude Where S My Car Harley Davidson">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/2b/fc/5f2bfcc1ce126f8de6f7abd361cbb2a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJFGdQnPDV32JLLsUz8wZ5fqEWpcy4NvtI5w';" alt="Peter Kay Forwood Trip On A Harley Davidson To India Trip Dude Where S My Car Harley Davidson">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Peter Kay Forwood Trip On A Harley Davidson To India Trip Dude Where S My Car Harley Davidson</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/e2/56/a1e2566a02ae0da172e16efa8e74d3fd.jpg" data-lightbox="roadtrip" data-title="Pin On Utility Bicycles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/e2/56/a1e2566a02ae0da172e16efa8e74d3fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVAzyvXbbdMhVQWW1ZuCGgOq8knhD_30V9Pg';" alt="Pin On Utility Bicycles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Utility Bicycles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/ca/3a/e8/ca3ae8ec38b66c5c41ebbe0b618ce9ad.jpg" data-lightbox="roadtrip" data-title="Transport On Bike Bike Transporting Bike Courier Bicycle">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/ca/3a/e8/ca3ae8ec38b66c5c41ebbe0b618ce9ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGqMZfzkPL4AUS6lSVpjB8nTd-qsInye00Kg';" alt="Transport On Bike Bike Transporting Bike Courier Bicycle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Transport On Bike Bike Transporting Bike Courier Bicycle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/11/3b/6f113b6305e80e464e4fa931a073c7f9.jpg" data-lightbox="roadtrip" data-title="Flower Girl Amazing Pics Dude Where S My Car Flower Delivery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/11/3b/6f113b6305e80e464e4fa931a073c7f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5cCuFBbpR4-cOdrZAloABZTlBiP2EFKKCA';" alt="Flower Girl Amazing Pics Dude Where S My Car Flower Delivery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flower Girl Amazing Pics Dude Where S My Car Flower Delivery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/03/bf/2d03bf50ef83c3ca57b909427767d3ca.jpg" data-lightbox="roadtrip" data-title="Shipping Container Cargotecture Not All It S Stacked Up To Be Smart Building Building Concept Hotel Room Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/03/bf/2d03bf50ef83c3ca57b909427767d3ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6WQS5vtFFNUcLykdvT7OAqj0d0hZ2VQ0grA';" alt="Shipping Container Cargotecture Not All It S Stacked Up To Be Smart Building Building Concept Hotel Room Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shipping Container Cargotecture Not All It S Stacked Up To Be Smart Building Building Concept Hotel Room Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/e8/96/6ae89620651f2a0bda98785a369dedec.png" data-lightbox="roadtrip" data-title="Columbia Cargo Shorts Clothes Design Cargo Shorts Plus Fashion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/e8/96/6ae89620651f2a0bda98785a369dedec.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA_1RcmpsHR_p8lo0HagKNAWtsYN1WPf-Mjw';" alt="Columbia Cargo Shorts Clothes Design Cargo Shorts Plus Fashion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Columbia Cargo Shorts Clothes Design Cargo Shorts Plus Fashion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/4d/73/42/4d7342871fd8cbe667e44d59068a0eb9.jpg" data-lightbox="roadtrip" data-title="How Much Does A Container House Cost In South Africa Building A Container Home Shipping Container Container House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/4d/73/42/4d7342871fd8cbe667e44d59068a0eb9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2ztwKHEMWYiNPQqqz2s2v0oo5wx1xO3KJ5w';" alt="How Much Does A Container House Cost In South Africa Building A Container Home Shipping Container Container House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Does A Container House Cost In South Africa Building A Container Home Shipping Container Container House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/b4/67/bbb4673b06a82245940169acd159835b.jpg" data-lightbox="roadtrip" data-title="8 Shipping Containers Equal 1 Family Home Container House Shipping Container Homes Shipping Container">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/b4/67/bbb4673b06a82245940169acd159835b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR4SeL7BB-x4DRDaN430NLljQqDHUoTuHFag';" alt="8 Shipping Containers Equal 1 Family Home Container House Shipping Container Homes Shipping Container">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Shipping Containers Equal 1 Family Home Container House Shipping Container Homes Shipping Container</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/a3/5d/dea35df792a817cfaf16f822fcfa30b0.jpg" data-lightbox="roadtrip" data-title="How Wild Is This Boat Maersk Line Shipping Container">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/a3/5d/dea35df792a817cfaf16f822fcfa30b0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5nMAp8gPULfpOr0Q0gvS5cVMZUZvGEYI5A';" alt="How Wild Is This Boat Maersk Line Shipping Container">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Wild Is This Boat Maersk Line Shipping Container</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/1a/68/8b1a68e1eca55232ed82d890aea9f96d.jpg" data-lightbox="roadtrip" data-title="K N Launches Service For Aircraft Interiors Logistics Manager Logistics Manager Logistics Management Aircraft Interiors Packaging Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/1a/68/8b1a68e1eca55232ed82d890aea9f96d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaJwh11R-6eaZqaBmkaSgrLnCKvwHjhfeQFg';" alt="K N Launches Service For Aircraft Interiors Logistics Manager Logistics Manager Logistics Management Aircraft Interiors Packaging Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">K N Launches Service For Aircraft Interiors Logistics Manager Logistics Manager Logistics Management Aircraft Interiors Packaging Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/d8/22/1cd8221e354127486ea33eacdc9af093.png" data-lightbox="roadtrip" data-title="Cargo Ship Discovery Documentary Hd In 2020 Cargo Shipping Merchant Navy Maersk Line">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/d8/22/1cd8221e354127486ea33eacdc9af093.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA2K33_VIR6SBtRQPvDuvSOwoMj0jXcAfGoQ';" alt="Cargo Ship Discovery Documentary Hd In 2020 Cargo Shipping Merchant Navy Maersk Line">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cargo Ship Discovery Documentary Hd In 2020 Cargo Shipping Merchant Navy Maersk Line</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/a5/66/fda5668d720a19d8e514680d84deebc5.png" data-lightbox="roadtrip" data-title="Pin On Where S My Walk In Closet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/a5/66/fda5668d720a19d8e514680d84deebc5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzoqwA192xw4SESwZIcKJwSoZiKBUprs2JAg';" alt="Pin On Where S My Walk In Closet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Where S My Walk In Closet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/f0/04/74/f00474462f16536902cdc8892c8c4c7c.jpg" data-lightbox="roadtrip" data-title="Volkner Mobil Performance The World S Best Motorhome Cool Rvs Motorhome Recreational Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/f0/04/74/f00474462f16536902cdc8892c8c4c7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEJSVe64cYwDEjFBNITy8st0NXq7NVzRHQzQ';" alt="Volkner Mobil Performance The World S Best Motorhome Cool Rvs Motorhome Recreational Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Volkner Mobil Performance The World S Best Motorhome Cool Rvs Motorhome Recreational Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/ww2-veteran-records-search.html">Ww2 Veteran Records Search</a></li>
+													<li class="list-group-item"><a href="/ww1-service-records-online-free.html">Ww1 Service Records Online Free</a></li>
+													<li class="list-group-item"><a href="/ww1-army-personnel-records.html">Ww1 Army Personnel Records</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-ohio-45433.html">Wright Patterson Air Force Base Ohio 45433</a></li>
+													<li class="list-group-item"><a href="/ww1-army-officers-service-records.html">Ww1 Army Officers Service Records</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-veterinary-clinic.html">Wright Patterson Air Force Base Veterinary Clinic</a></li>
+													<li class="list-group-item"><a href="/ww1-service-records-england-free.html">Ww1 Service Records England Free</a></li>
+													<li class="list-group-item"><a href="/wwwarchivesgov-military-records.html">Wwwarchivesgov Military Records</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-pharmacy-hours.html">Wright Patterson Air Force Base Pharmacy Hours</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-pharmacy.html">Wright Patterson Air Force Base Pharmacy</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-phone-directory.html">Wright Patterson Air Force Base Phone Directory</a></li>
+													<li class="list-group-item"><a href="/ww1-indian-army-service-records.html">Ww1 Indian Army Service Records</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-store.html">Wright Patterson Air Force Base Store</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-outdoor-recreation.html">Wright Patterson Air Force Base Outdoor Recreation</a></li>
+													<li class="list-group-item"><a href="/yellow-rose-of-texas-for-military-spouses.html">Yellow Rose Of Texas For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-pass-and-id.html">Wright Patterson Air Force Base Pass And Id</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-public-affairs-office.html">Wright Patterson Air Force Base Public Affairs Office</a></li>
+													<li class="list-group-item"><a href="/wwwmycanalafriquecom.html">Wwwmycanalafriquecom</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-tmo-office.html">Wright Patterson Air Force Base Tmo Office</a></li>
+													<li class="list-group-item"><a href="/xsolla-mycard.html">Xsolla Mycard</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

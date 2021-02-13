@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Can Your Spouse Come To Tech Training In Air Force - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Can Your Spouse Come To Tech Training In Air Force",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/a9/5a/62/a95a62e38527095e8c1cee2e44c58624.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=can+your+spouse+come+to+tech+training+in+air+force",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Can Your Spouse Come To Tech Training In Air Force</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">For one your Family Readiness team be it an officer group or other has probably handed you a to-do list that is several. The basic cadet trainees of the US. The Army and Air Force Exchange Service AAFES AAFES recruits for entry-level positions and management positions world-wide in retail information systems finance accounting logistics food. <br>				
+			</p>
+										<a class="badge badge-danger" href="/retired-military-scholarships-for-dependents.html">retired military scholarships for dependents</a>
+											<a class="badge badge-light" href="/royal-air-force-contact-email.html">royal air force contact email</a>
+											<a class="badge badge-light" href="/retired-military-life-insurance-for-spouse.html">retired military life insurance for spouse</a>
+											<a class="badge badge-secondary" href="/salvation-army-contact-number-halifax.html">salvation army contact number halifax</a>
+											<a class="badge badge-light" href="/salesforce-training-military-spouse.html">salesforce training military spouse</a>
+											<a class="badge badge-light" href="/salvation-army-contact-number-gainsborough.html">salvation army contact number gainsborough</a>
+											<a class="badge badge-info" href="/russian-military-hat-identification.html">russian military hat identification</a>
+											<a class="badge badge-light" href="/retired-military-spouse-benefits-after-divorce.html">retired military spouse benefits after divorce</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to pay a visit to the right site.  Our site provides you with hints for seeing the highest quality video and picture content, hunt and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this video for you to view.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ee/5c/a2/ee5ca2beb075c2f27a65d62522b6646f.jpg" data-lightbox="roadtrip" data-title="What Happens After Tech School Basic To Blues Air Force Jobs Air Force Basic Training Air Force Families">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ee/5c/a2/ee5ca2beb075c2f27a65d62522b6646f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKWfctODEKy_37gdlq1N7fBGk6Lx1sUqkf3A';" alt="What Happens After Tech School Basic To Blues Air Force Jobs Air Force Basic Training Air Force Families">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Happens After Tech School Basic To Blues Air Force Jobs Air Force Basic Training Air Force Families</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/5a/62/a95a62e38527095e8c1cee2e44c58624.jpg" data-lightbox="roadtrip" data-title="Air Force Bmt For The Spouse Graduation At Lackland Packing List Megan Voegele Air Force Girlfriend Air Force Wife Life Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/5a/62/a95a62e38527095e8c1cee2e44c58624.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe6a8e9cB4FabbIXxPj3eSqoM8rmdhq_gIAg';" alt="Air Force Bmt For The Spouse Graduation At Lackland Packing List Megan Voegele Air Force Girlfriend Air Force Wife Life Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Bmt For The Spouse Graduation At Lackland Packing List Megan Voegele Air Force Girlfriend Air Force Wife Life Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/bf/11/b0bf11751060d7b519b6d68ba3dc1eb5.jpg" data-lightbox="roadtrip" data-title="Air Force Wife Life Tech School And Graduation Megan Voegele Air Force Wife Life Tech School Air Force Girlfriend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/bf/11/b0bf11751060d7b519b6d68ba3dc1eb5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl7rUDUFDWUDaSXKQPxdtxB6hvGH8JXTHOrg';" alt="Air Force Wife Life Tech School And Graduation Megan Voegele Air Force Wife Life Tech School Air Force Girlfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Wife Life Tech School And Graduation Megan Voegele Air Force Wife Life Tech School Air Force Girlfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/6b/c6/586bc63913570970ebc3bf219db0b112.png" data-lightbox="roadtrip" data-title="The Smart Military Spouse S Guide To Military Promotions Nextgen Milspouse Military Spouse Promotion Party Promotion Celebration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/6b/c6/586bc63913570970ebc3bf219db0b112.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7DFCnJcFQYcwEMSNG3FEQInUKhRGfZlzXjA';" alt="The Smart Military Spouse S Guide To Military Promotions Nextgen Milspouse Military Spouse Promotion Party Promotion Celebration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Smart Military Spouse S Guide To Military Promotions Nextgen Milspouse Military Spouse Promotion Party Promotion Celebration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/e8/ac/64e8ac6e2ea5c67efc7eb76d976153f4.jpg" data-lightbox="roadtrip" data-title="Surviving Usaf Basic Military Training The Loved One S Edition Michaela Lorren Blog Mil Air Force Basic Training Air Force Wife Life Air Force Girlfriend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/e8/ac/64e8ac6e2ea5c67efc7eb76d976153f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvx4_P6LyXJiEOiS_xskRjPEyIPNSWlojYHQ';" alt="Surviving Usaf Basic Military Training The Loved One S Edition Michaela Lorren Blog Mil Air Force Basic Training Air Force Wife Life Air Force Girlfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Surviving Usaf Basic Military Training The Loved One S Edition Michaela Lorren Blog Mil Air Force Basic Training Air Force Wife Life Air Force Girlfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/08/51/68/0851681286b1658ab477028b62d7b35a.jpg" data-lightbox="roadtrip" data-title="Supporting Your Spouse During Als Airman Leadership School Leadership Airman Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/08/51/68/0851681286b1658ab477028b62d7b35a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3z3r8ut_UsEYsPNHH3Py50vcmFyy6F-pIvQ';" alt="Supporting Your Spouse During Als Airman Leadership School Leadership Airman Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Supporting Your Spouse During Als Airman Leadership School Leadership Airman Military Life</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/0e/8e/a7/0e8ea752a17f905f8477b223ca17f449.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3z3r8ut_UsEYsPNHH3Py50vcmFyy6F-pIvQ';" alt="Supporting Your Spouse During Als Airman Leadership School Leadership Airman Military Life">
+										<div class="card-body">
+						<h3 class="h5"><b>If he as an example only has a month left until graduation.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Can your spouse come to tech training in air force</strong>. 
+								
+																	Preparing for military family deployment can seem like an uphill battle. 
+																	Air Force Academys Class of 2017 march out to start the field portion of Basic Cadet Training in Colorado Springs Colo. 
+																	Learn about great opportunities for enlisted airmen officers and health care professionals. 
+																	Spouses are not allowed to live with their soldiers during basic training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You must carry your military ID at all times. 
+																	Welcome to the United States Air Force. 
+																	Spouses of active duty members. 
+																	The Air Forces New F-15EX Jet Just Took Its First Flight The Air Force is expected to take delivery of the first two F-15EX jets at Eglin Air Force Base by the end of March. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Immunity from Hoarding Traditionally in America you get married. 
+																	As a military spouse you have access to a number of unique resources that will help you achieve your education and career goals whether its finishing an undergraduate degree pursuing a training certificate or landing a new job McCree added. 
+																	The Air Force variant is you get The Air Force life is not an easy one. 
+																	You cannot attend off-duty educational programs or off-duty employment while assigned to a technical training squadron except for programs approved by the Air Force. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Air Force life is not an easy one. 
+																	Two weeks ago estate planner Thomas ORourke was on our Your Turn. 
+																	With that said if your spouses Tech School is over 20 weeks long the military can pay for you to move out to the Tech School. 
+																	You buy a house. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	10 2019 at Luke. 
+																	If you get married prior to him arriving in Tech School you can both move in together in base housing. 
+																	He went over an 11-point checklist that all fedsretirees should consider before retirement. 
+																	To help military spouses reach their education and career goals as they balance work-life priorities and interests the Department of Defense established a comprehensive holistic spouse-centered program called Spouse Education and Career Opportunities SECO. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Air Force Senior Airman Ryan McHone 56th Security Forces Squadron military working dog handler participates in K-9 bite training with MWD Enzo during a demonstration Dec. 
+																	But there are some key perks your civilian friends are simply missing out on. 
+																	If your spouses Tech School is 40 days long it means that the school is about 8 weeks long weekends and holidays are not counted. 
+																	While family members are free. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For the most part a week of classes is 5 days. 
+																	This program provides need-based grants to full-time college undergraduates who are dependent children of active duty Air Force members retirees or deceased members. 
+																	Soldiers are required to live on post in the barracks during this introduction to the Army. 
+																	Dont be surprised if he is denied SEPRATS Separate Rations which allows you to move onto base housing while he is in tech school and told to to command sponsor you to his next duty station. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You may be able to get written permission to visit eat with or stay overnight with your immediate family or spouse. 
+																	You fill it with crap. 
+																	Program resources include the following. 
+																	The constant moves deployments North Dakota. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But if there is a second third or fourth spouse in the picture things can get complicated. 
+																	-The answer is -it depends-. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0e/8e/a7/0e8ea752a17f905f8477b223ca17f449.jpg" data-lightbox="roadtrip" data-title="10 Best Air Force Jobs For Civilian Life In 2019 Air Force Jobs Air Force Basic Training Navy Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0e/8e/a7/0e8ea752a17f905f8477b223ca17f449.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpp-e_FPWyAh4w8LyC2O4loMxZUz30bT5A-Q';" alt="10 Best Air Force Jobs For Civilian Life In 2019 Air Force Jobs Air Force Basic Training Navy Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Best Air Force Jobs For Civilian Life In 2019 Air Force Jobs Air Force Basic Training Navy Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f4/be/32/f4be32ce3a663b4847ba25bce3eb76c9.jpg" data-lightbox="roadtrip" data-title="Getting Air Force Running Shoes In Basic Training Basic To Blues Air Force Women Air Force Mom Air Force Basic Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f4/be/32/f4be32ce3a663b4847ba25bce3eb76c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9dpPrKq9WeLE9H6UQtAgAn8IsoCw4Y0gZsQ';" alt="Getting Air Force Running Shoes In Basic Training Basic To Blues Air Force Women Air Force Mom Air Force Basic Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Getting Air Force Running Shoes In Basic Training Basic To Blues Air Force Women Air Force Mom Air Force Basic Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/2b/a6/d92ba6d4b7cb4467cc09aa1a0eecbbb9.jpg" data-lightbox="roadtrip" data-title="Your Journey To Air Force Basic Military Training Afbmt Should Start In Advance To Getting On The Air Force Basic Training Basic Military Training Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/2b/a6/d92ba6d4b7cb4467cc09aa1a0eecbbb9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCDDD2MmTmXT9xEAkcs2uhJkxoz37_54HcFQ';" alt="Your Journey To Air Force Basic Military Training Afbmt Should Start In Advance To Getting On The Air Force Basic Training Basic Military Training Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Your Journey To Air Force Basic Military Training Afbmt Should Start In Advance To Getting On The Air Force Basic Training Basic Military Training Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/50/5d/e9505db71e89b59512405ee2015ea468.jpg" data-lightbox="roadtrip" data-title="Us Air Force Bmt Graduation Air Force Women Air Force Girlfriend Air Force Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/50/5d/e9505db71e89b59512405ee2015ea468.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkWQugzYqsZpDkqvjYG2OtJGFf0ezjnjoZJg';" alt="Us Air Force Bmt Graduation Air Force Women Air Force Girlfriend Air Force Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Air Force Bmt Graduation Air Force Women Air Force Girlfriend Air Force Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/09/aa/f709aab00d91e9596c499e7e6d2fa116.jpg" data-lightbox="roadtrip" data-title="Air Force Bmt For The Spouse Graduation At Lackland Packing List Megan Voegele Air Force Joining The Military Happy Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/09/aa/f709aab00d91e9596c499e7e6d2fa116.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEV9ldQJyBCNce8fa98IAPl_BFBJ3wIggqWQ';" alt="Air Force Bmt For The Spouse Graduation At Lackland Packing List Megan Voegele Air Force Joining The Military Happy Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Bmt For The Spouse Graduation At Lackland Packing List Megan Voegele Air Force Joining The Military Happy Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/ff/e9/25ffe91b1a8a5a813d53e1bedf0e4944.jpg" data-lightbox="roadtrip" data-title="Air Force Wife Life Tech School And Graduation Megan Voegele Military Relationships Air Force Wife Life Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/ff/e9/25ffe91b1a8a5a813d53e1bedf0e4944.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkF9h2Z1FUXrXajW03uvL2lQKPLHplRZ31lg';" alt="Air Force Wife Life Tech School And Graduation Megan Voegele Military Relationships Air Force Wife Life Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Wife Life Tech School And Graduation Megan Voegele Military Relationships Air Force Wife Life Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/c0/2d/e6c02df091d57595b5e5997fe7359afd.jpg" data-lightbox="roadtrip" data-title="What To Wear To Military Graduations Megan Voegele Military Graduation Basic Training Graduation Navy Basic Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/c0/2d/e6c02df091d57595b5e5997fe7359afd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ1qhKroqKOTC5axwmy3JI52qA3w46pJ8iBQ';" alt="What To Wear To Military Graduations Megan Voegele Military Graduation Basic Training Graduation Navy Basic Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Wear To Military Graduations Megan Voegele Military Graduation Basic Training Graduation Navy Basic Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/3c/bd/e73cbdfb8f0cb5c502fb5cf2f3691208.jpg" data-lightbox="roadtrip" data-title="Air Force Bmt For The Spouse My Thoughts One Year Later Megan Voegele In 2020 Air Force Girlfriend Airforce Wife Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/3c/bd/e73cbdfb8f0cb5c502fb5cf2f3691208.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ85H_KOeBi8dCzUtVAw3XJsGsEJv1iB7qLYA';" alt="Air Force Bmt For The Spouse My Thoughts One Year Later Megan Voegele In 2020 Air Force Girlfriend Airforce Wife Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Bmt For The Spouse My Thoughts One Year Later Megan Voegele In 2020 Air Force Girlfriend Airforce Wife Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/78/f0/fe78f07f962630a983e3ef6c4d674b8c.jpg" data-lightbox="roadtrip" data-title="Air Force Card Basic Training Card Military Encouragement Card Beast Week Card Us Air Force Tech School 99 Problem Encouragement Cards Card Set Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/78/f0/fe78f07f962630a983e3ef6c4d674b8c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb2xmnzvIdNNbG-MFbfJODSSJtpqC71j-AKg';" alt="Air Force Card Basic Training Card Military Encouragement Card Beast Week Card Us Air Force Tech School 99 Problem Encouragement Cards Card Set Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Card Basic Training Card Military Encouragement Card Beast Week Card Us Air Force Tech School 99 Problem Encouragement Cards Card Set Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/cd/5e/b9cd5e1cc5df6db4c46cec05960baae3.jpg" data-lightbox="roadtrip" data-title="47 Things No One Tells You About Being A Military Wife Military Wife Life Military Wife Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/cd/5e/b9cd5e1cc5df6db4c46cec05960baae3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcC58o_5d1wLsmZYEOl2cFe7qxqQWrrC8gNw';" alt="47 Things No One Tells You About Being A Military Wife Military Wife Life Military Wife Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">47 Things No One Tells You About Being A Military Wife Military Wife Life Military Wife Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/4a/63/194a63c94a0fdc9ddb3b5dbf1ed3dd90.png" data-lightbox="roadtrip" data-title="I Ve Officially Graduated Air Force Officer Training School And Commissioned As A 2nd Lieutena Air Force Nurse Air Force Basic Training Officer Training School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/4a/63/194a63c94a0fdc9ddb3b5dbf1ed3dd90.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEJ0S1J1L4Sd1tf2L0q0jD46ufU78NYTK3RA';" alt="I Ve Officially Graduated Air Force Officer Training School And Commissioned As A 2nd Lieutena Air Force Nurse Air Force Basic Training Officer Training School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Ve Officially Graduated Air Force Officer Training School And Commissioned As A 2nd Lieutena Air Force Nurse Air Force Basic Training Officer Training School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/0b/19/ce0b1990564f4f8ebdde0b97fb625f71.jpg" data-lightbox="roadtrip" data-title="The Supporter S Guide To Surviving Basic Training Air Force Girlfriend Air Force Basic Training Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/0b/19/ce0b1990564f4f8ebdde0b97fb625f71.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0vDiOBVnMQYJmfcWPDx0EOqa0U60Gg_4EtQ';" alt="The Supporter S Guide To Surviving Basic Training Air Force Girlfriend Air Force Basic Training Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Supporter S Guide To Surviving Basic Training Air Force Girlfriend Air Force Basic Training Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/5d/4f/ba5d4f85bfed62b0e5f128f441ab3da2.jpg" data-lightbox="roadtrip" data-title="The Blooming Air Force Bride A Spouse S Bio Of Air Force Tech School Tech School Is Hard On A Spouse Tech School Airforce Wife Military Girlfriend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/5d/4f/ba5d4f85bfed62b0e5f128f441ab3da2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqiI2Y0JIb_9NTfkDdxgPLGdAPAggKIEQgeA';" alt="The Blooming Air Force Bride A Spouse S Bio Of Air Force Tech School Tech School Is Hard On A Spouse Tech School Airforce Wife Military Girlfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Blooming Air Force Bride A Spouse S Bio Of Air Force Tech School Tech School Is Hard On A Spouse Tech School Airforce Wife Military Girlfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/indian-army-with-his-wife-image.html">Indian Army With His Wife Image</a></li>
+													<li class="list-group-item"><a href="/indian-air-force-scholarship-for-college-students.html">Indian Air Force Scholarship For College Students</a></li>
+													<li class="list-group-item"><a href="/indian-army-husband-and-wife-pic.html">Indian Army Husband And Wife Pic</a></li>
+													<li class="list-group-item"><a href="/indian-army-wife-status.html">Indian Army Wife Status</a></li>
+													<li class="list-group-item"><a href="/in-state-tuition-for-veteran-dependents.html">In State Tuition For Veteran Dependents</a></li>
+													<li class="list-group-item"><a href="/if-my-spouse-passes-away-can-i-get-his-social-security.html">If My Spouse Passes Away Can I Get His Social Security</a></li>
+													<li class="list-group-item"><a href="/indian-army-husband-wife-wallpaper.html">Indian Army Husband Wife Wallpaper</a></li>
+													<li class="list-group-item"><a href="/if-my-partner-has-covid-can-i-still-go-to-work.html">If My Partner Has Covid Can I Still Go To Work</a></li>
+													<li class="list-group-item"><a href="/if-my-spouse-qualifies-for-medicare-do-i.html">If My Spouse Qualifies For Medicare Do I</a></li>
+													<li class="list-group-item"><a href="/indian-army-contact-number-gujarat.html">Indian Army Contact Number Gujarat</a></li>
+													<li class="list-group-item"><a href="/illinois-veteran-dependent-education-benefits.html">Illinois Veteran Dependent Education Benefits</a></li>
+													<li class="list-group-item"><a href="/in-state-tuition-for-military-dependents-2019.html">In State Tuition For Military Dependents 2019</a></li>
+													<li class="list-group-item"><a href="/if-my-spouse-owes-student-loans.html">If My Spouse Owes Student Loans</a></li>
+													<li class="list-group-item"><a href="/indian-army-wife-quotes.html">Indian Army Wife Quotes</a></li>
+													<li class="list-group-item"><a href="/if-you-test-positive-for-covid-how-long-should-you-quarantine.html">If You Test Positive For Covid How Long Should You Quarantine</a></li>
+													<li class="list-group-item"><a href="/indian-army-husband-and-wife-status.html">Indian Army Husband And Wife Status</a></li>
+													<li class="list-group-item"><a href="/indian-army-hrjobs.html">Indian Army Hrjobs</a></li>
+													<li class="list-group-item"><a href="/if-my-spouse-passes-away-do-i-get-his-social-security.html">If My Spouse Passes Away Do I Get His Social Security</a></li>
+													<li class="list-group-item"><a href="/if-your-spouse-has-covid-how-long-do-you-have-to-quarantine.html">If Your Spouse Has Covid How Long Do You Have To Quarantine</a></li>
+													<li class="list-group-item"><a href="/in-my-carrier.html">In My Carrier</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

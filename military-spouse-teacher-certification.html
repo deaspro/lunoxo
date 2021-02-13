@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Spouse Teacher Certification - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Spouse Teacher Certification",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/3a/63/d6/3a63d6ac422aa31e744cdf189902022b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+spouse+teacher+certification",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Spouse Teacher Certification</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Plan for your training and job search by learning which certifications or licenses you will need. About spouse licensure reimbursement policies The 2018 National Defense Authorization Act allows each service branch to reimburse spouses up to 1000 for relicensure and certification costs resulting from relocations or PCS moves that cross US. But policies can make transfers between states hard for military spouses who must recredential every two to three. <br>				
+			</p>
+										<a class="badge badge-success" href="/military-spouse-living-on-base.html">military spouse living on base</a>
+											<a class="badge badge-warning" href="/military-spouse-precheck.html">military spouse precheck</a>
+											<a class="badge badge-secondary" href="/military-spouse-online-university.html">military spouse online university</a>
+											<a class="badge badge-danger" href="/military-spouse-preference-opm.html">military spouse preference opm</a>
+											<a class="badge badge-success" href="/military-spouse-passport.html">military spouse passport</a>
+											<a class="badge badge-warning" href="/military-spouse-passport-application.html">military spouse passport application</a>
+											<a class="badge badge-info" href="/military-spouse-preference-dodea.html">military spouse preference dodea</a>
+											<a class="badge badge-success" href="/military-spouse-necklace.html">military spouse necklace</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to visit the ideal site.  Our site provides you with suggestions for seeing the highest quality video and picture content, search and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to view.  You can also bring about supporting this website by sharing videos and graphics that you enjoy on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/19/e7/bf19e7339977cd1bf28a041652cbf8fc.jpg" data-lightbox="roadtrip" data-title="Military Wife Appreciation Certificate Veterans Appreciation Certificate Of Appreciation Appreciation Letter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/19/e7/bf19e7339977cd1bf28a041652cbf8fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaJJC7-idt79iYF7c9QxmoWldBROEv4IDnoA';" alt="Military Wife Appreciation Certificate Veterans Appreciation Certificate Of Appreciation Appreciation Letter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Wife Appreciation Certificate Veterans Appreciation Certificate Of Appreciation Appreciation Letter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/8a/3e/1e8a3e9164fd1e8ea8e757b799d10f2e.jpg" data-lightbox="roadtrip" data-title="Gallery For Certificate Of Appreciation Certificate Of Appreciation Veterans Appreciation Appreciation Printable">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/8a/3e/1e8a3e9164fd1e8ea8e757b799d10f2e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUqNzp1Kzhzl1pXHdvAfX8Pgy64XvGWE4iPg';" alt="Gallery For Certificate Of Appreciation Certificate Of Appreciation Veterans Appreciation Appreciation Printable">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gallery For Certificate Of Appreciation Certificate Of Appreciation Veterans Appreciation Appreciation Printable</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/33/45/9f3345ea56ad09d896b4fdfea07c2ce6.jpg" data-lightbox="roadtrip" data-title="Military Certificates With Flag Character Is Of Army Certificate Of Appreciation Mov Certificate Templates Certificate Of Appreciation Friends Of The Library">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/33/45/9f3345ea56ad09d896b4fdfea07c2ce6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHFSjvTk33MR6KnT6EjUuOoqMP02NvSDIhyg';" alt="Military Certificates With Flag Character Is Of Army Certificate Of Appreciation Mov Certificate Templates Certificate Of Appreciation Friends Of The Library">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Certificates With Flag Character Is Of Army Certificate Of Appreciation Mov Certificate Templates Certificate Of Appreciation Friends Of The Library</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/8f/94/028f9433112a69ae1dc49d03f4a7c081.jpg" data-lightbox="roadtrip" data-title="Military Spouse Resume Infographic Best Practices Resume Tips Resume Advice Best Resume Format">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/8f/94/028f9433112a69ae1dc49d03f4a7c081.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnFnuCkCKX-VdXkGR7l9BuVS5XgVTeRA0LsQ';" alt="Military Spouse Resume Infographic Best Practices Resume Tips Resume Advice Best Resume Format">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Resume Infographic Best Practices Resume Tips Resume Advice Best Resume Format</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/b0/52/eeb0523944006ed596b2ac0b0db99dac.jpg" data-lightbox="roadtrip" data-title="Month Of The Military Child 2020 Certificate Of Appreciation Award 8 5 X11 Blank Printable Pdf With Fillable Fields Instant Download Military Kids Teacher Motivation Certificate Of Appreciation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/b0/52/eeb0523944006ed596b2ac0b0db99dac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8P3tFHXPiO0FzeTBWYVdCAREPdGK3MIvu4A';" alt="Month Of The Military Child 2020 Certificate Of Appreciation Award 8 5 X11 Blank Printable Pdf With Fillable Fields Instant Download Military Kids Teacher Motivation Certificate Of Appreciation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Month Of The Military Child 2020 Certificate Of Appreciation Award 8 5 X11 Blank Printable Pdf With Fillable Fields Instant Download Military Kids Teacher Motivation Certificate Of Appreciation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/1b/84/821b846a6d420660e2afb3159a6ff868.jpg" data-lightbox="roadtrip" data-title="Pin On Mymilitarysavings Crafts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/1b/84/821b846a6d420660e2afb3159a6ff868.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQud2RIOs4EajjiA7mWi1Jat_Fykxp2qtO8tg';" alt="Pin On Mymilitarysavings Crafts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mymilitarysavings Crafts</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/02/8f/94/028f9433112a69ae1dc49d03f4a7c081.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQud2RIOs4EajjiA7mWi1Jat_Fykxp2qtO8tg';" alt="Pin On Mymilitarysavings Crafts">
+										<div class="card-body">
+						<h3 class="h5"><b>To complete the process individuals can use an Alternative Certification Program ACP or University Teacher Preparation Program.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military spouse teacher certification</strong>. 
+								
+																	TeacherReady candidates are eligible for MyCAA funding which assists military spouses who need professional credentials. 
+																	Military services education assistance programs. 
+																	The military services continue to support military spouse employment by offering up to 1000 in licensure and certification costs resulting from relocations or military moves within the United States or OCONUS to stateside. 
+																	The programs grants and scholarships listed below will help pay for a college degree or a vocational training certificate of your choice. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But policies can make transfers between states hard for military spouses who must recredential every two to three years as they move. 
+																	Armed Forces or reserve unit may request a 2-year military extension to hisher Temporary Certificate to complete the necessary requirements for upgrade to the Professional Certificate. 
+																	1 Ratings About spouse licensure reimbursement policies. 
+																	She is currently working to help streamline difficult out of state licensure processes for military spouse teachers across the country. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military members only need the equivalent of one year of college courses and six years of experience in a vocational or technical field to begin the certification process. 
+																	Department of Defense engages states through the Defense-State Liaison Office DSLO to consider improvements to teacher licensure and certification for military spouses. 
+																	A certified educator who is the spouse of an active duty military service member of the US. 
+																	Military personnel and spouses may already have the experience and knowledge required to gain certification in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pete Ricketts would require the State Board of Education to issue a certificate or permit to a military spouse who among other requirements holds a valid certificate or permit currently in force in another state to teach administer or provide special services. 
+																	DANTES has agreements with over 50 nationally recognized certification associations. 
+																	1 2015 the Texas Education Agency TEA began waiving certain educator certification fees for eligible military service members military veterans and military spouses. 
+																	Military Spouse Teacher Certification Defense-State Liaison Office httpsstatepolicymilitaryonesourcemil 1 Key Message Teacher certification is designed to credential an educator for an extended period. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Spouse Career Advancement Accounts MyCAA is a tuition assistance program which can also provide up to 4000 to pursue a license certification or associate degree in a portable career field and occupation. 
+																	Which can help you become a teacher assistant educational aide or childcare specialist. 
+																	LB389 introduced by Bellevue Sen. 
+																	After working with states for five years more than 45 states have enacted bills featuring license endorsement temporary licensing and expedited applications. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Quickly find the progress each state is making on issues from occupational licensing for military spouses to reporting child abuse and neglect of children in military families. 
+																	State lines to include OCONUS to stateside moves. 
+																	Due to the success of the Spouses to Teachers pilot program Spouses to Teachers STT has now been incorporated into the Military Spouse Career Advancement Accounts MSCAA. 
+																	Explore the status of legislation and policies addressing 10 key issues important to service members and military families across the nation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Therefore if you are a military spouse andor veteran with a bachelors degree and want to become a teacher let us assist you. 
+																	For that reason the TeacherReady Online Certification Program provides a flexible learn anytime and anywhere option for those around the world to earn a professional teaching certificate. 
+																	But policies can make transfers between states hard for military spouses who must recredential every two to three years as they move. 
+																	Spouses to Teachers is. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As an Air Force spouse of 17 years Kim helped to launch the Military Spouse Network for Teaching Professionals which supports military spouse educators. 
+																	Teacher certification is designed to credential an educator for an extended period. 
+																	Rita Sanders at the request of Gov. 
+																	However less than 10 states have included teachers in their new laws. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Teaching Certifications and Licenses Teaching is a popular career for military spouses but it is also one of the most heavily state-regulated professions. 
+																	Fees that will be waived for eligible members of the military community include those for the standard certificate probationary certificate one-year certificate educational aide certificate and the review of credentials. 
+																	Military Spouse Teacher Certification Teacher certification is designed to credential an educator for an extended period. 
+																	As a certified educator the spouse must already have demonstrated mastery of general knowledge to be issued this extension. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military spouses are eligible for several benefits that offer aid in pursuing a postsecondary degree and advancing career goals. 
+																	The changes stem from Senate Bill 807 which the Texas Legislature passed in Spring 2015. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/7d/12/c37d12aa2120053c5fb949f55907d504.jpg" data-lightbox="roadtrip" data-title="Pin On Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/7d/12/c37d12aa2120053c5fb949f55907d504.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpT1ywqyc_CmmH42LRrqtgjp9KC_HnCX20yQ';" alt="Pin On Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/05/09/05050968e868f5fc4a52b0707bf977f1.png" data-lightbox="roadtrip" data-title="Uso Pathfinder And Skillsoft Are Offering Free Unlimited Access To An Entire Library Of Training And Certification Tools Military Spouse Appreciation Military Appreciation Christmas Bulbs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/05/09/05050968e868f5fc4a52b0707bf977f1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZOrK4Bi8az9bf0PhmuuJIFsI-WLvgBdct2w';" alt="Uso Pathfinder And Skillsoft Are Offering Free Unlimited Access To An Entire Library Of Training And Certification Tools Military Spouse Appreciation Military Appreciation Christmas Bulbs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uso Pathfinder And Skillsoft Are Offering Free Unlimited Access To An Entire Library Of Training And Certification Tools Military Spouse Appreciation Military Appreciation Christmas Bulbs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/fc/e8/34fce8c25f6d8217d51f851aff99d6e1.jpg" data-lightbox="roadtrip" data-title="Pin By Elesia Jones On Just Because Military Spouse Career Military Spouse Jobs Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/fc/e8/34fce8c25f6d8217d51f851aff99d6e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiQnHDqZLCCLwE0gG-O5T-dmSG_qDXpevfZQ';" alt="Pin By Elesia Jones On Just Because Military Spouse Career Military Spouse Jobs Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Elesia Jones On Just Because Military Spouse Career Military Spouse Jobs Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/67/f1/6f67f1b2c6d641caeb8d083e43eaf943.png" data-lightbox="roadtrip" data-title="Pin By Darleneswilliams Esquire Legal On Militarychannel Education And Training Teaching License Navy Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/67/f1/6f67f1b2c6d641caeb8d083e43eaf943.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1AJef59X4nJ4aCxjYUhVPv4iZp9HANt4I8Q';" alt="Pin By Darleneswilliams Esquire Legal On Militarychannel Education And Training Teaching License Navy Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Darleneswilliams Esquire Legal On Militarychannel Education And Training Teaching License Navy Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/78/d2/28/78d2281520219aceb94b9f9df86a6dec.jpg" data-lightbox="roadtrip" data-title="The Military Provides Education And Job Assistance Resources Training And Opportunities To Our Nation S Re Military Spouse Jobs Military Spouse Online College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/78/d2/28/78d2281520219aceb94b9f9df86a6dec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZp7h3wUfr05-2xv4co-lTbhzyRoCGEaXeXA';" alt="The Military Provides Education And Job Assistance Resources Training And Opportunities To Our Nation S Re Military Spouse Jobs Military Spouse Online College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Military Provides Education And Job Assistance Resources Training And Opportunities To Our Nation S Re Military Spouse Jobs Military Spouse Online College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/f9/5d/73f95db9652fa9279934a5ab3e3127af.jpg" data-lightbox="roadtrip" data-title="Military Promotion Invitations By Glitter Pearl Llc Us Marines Us Navy Us Air Force Us Army Promotion Party Invitations Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/f9/5d/73f95db9652fa9279934a5ab3e3127af.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMGt7Wt93kSrvpRhbpk58VR1CBC4BhTYAaeA';" alt="Military Promotion Invitations By Glitter Pearl Llc Us Marines Us Navy Us Air Force Us Army Promotion Party Invitations Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Promotion Invitations By Glitter Pearl Llc Us Marines Us Navy Us Air Force Us Army Promotion Party Invitations Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/0d/09/430d090e97004f0c693e810e8fedc5b7.jpg" data-lightbox="roadtrip" data-title="Need A Career Are You A Military Spouse We Can Help Academyofmedicalprofessions Militaryspouse Milspo Medical Healthcare Medical Online Programs Mycaa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/0d/09/430d090e97004f0c693e810e8fedc5b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeZp3N0SS-GylR2vxhzZIpw9WBgaFcVCsSFA';" alt="Need A Career Are You A Military Spouse We Can Help Academyofmedicalprofessions Militaryspouse Milspo Medical Healthcare Medical Online Programs Mycaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Need A Career Are You A Military Spouse We Can Help Academyofmedicalprofessions Militaryspouse Milspo Medical Healthcare Medical Online Programs Mycaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/70/e3/2670e3cb41b999b0babbf183fdbb4bf3.png" data-lightbox="roadtrip" data-title="Certificate And Experience Letter For Teacher From School For School Teacher Like Computer Teacher English Letter To Teacher Physics Teacher Chemistry Teacher">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/70/e3/2670e3cb41b999b0babbf183fdbb4bf3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyyhnYd1qL_JDcINJN6HsldglZrnOx-mkb9A';" alt="Certificate And Experience Letter For Teacher From School For School Teacher Like Computer Teacher English Letter To Teacher Physics Teacher Chemistry Teacher">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Certificate And Experience Letter For Teacher From School For School Teacher Like Computer Teacher English Letter To Teacher Physics Teacher Chemistry Teacher</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/fe/15/f6fe159510a9320e4e93b18897813c4b.jpg" data-lightbox="roadtrip" data-title="Xam Gace Gace Early Childhood Special Education 004 Teacher Certification Exam Paperback Walmart Com Army Wife Life Military Wife Life Homecoming Signs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/fe/15/f6fe159510a9320e4e93b18897813c4b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuJRhwAEX6ECYkrueQ-5dMJ9ZWVLqb_Ek0DA';" alt="Xam Gace Gace Early Childhood Special Education 004 Teacher Certification Exam Paperback Walmart Com Army Wife Life Military Wife Life Homecoming Signs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xam Gace Gace Early Childhood Special Education 004 Teacher Certification Exam Paperback Walmart Com Army Wife Life Military Wife Life Homecoming Signs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/63/d6/3a63d6ac422aa31e744cdf189902022b.jpg" data-lightbox="roadtrip" data-title="Infographic Education Funding Military Spouse Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/63/d6/3a63d6ac422aa31e744cdf189902022b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTybL48muAXi_QLIINSYBeBLynxNo-4AKO1gQ';" alt="Infographic Education Funding Military Spouse Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic Education Funding Military Spouse Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/f5/3e/6bf53eff76a230cb55d5b8f2e3f229e7.jpg" data-lightbox="roadtrip" data-title="The Military Spouse Career Advancement Accounts Or Mycaa Scholarship Program Is A Workforce Developmen Military Spouse Career Career Advancement Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/f5/3e/6bf53eff76a230cb55d5b8f2e3f229e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm1MXYXQmOHFzUzz5BWMWcBJmLWqQOEFi6Jw';" alt="The Military Spouse Career Advancement Accounts Or Mycaa Scholarship Program Is A Workforce Developmen Military Spouse Career Career Advancement Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Military Spouse Career Advancement Accounts Or Mycaa Scholarship Program Is A Workforce Developmen Military Spouse Career Career Advancement Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/96/ae/8296ae9fe788c26fec15bf7fc92a1068.jpg" data-lightbox="roadtrip" data-title="Attention All Military Spouses Portable Careers This Is A Great Opportunity Academyofmedicalprofessions Military Military Spouse Education And Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/96/ae/8296ae9fe788c26fec15bf7fc92a1068.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLYEFJDQ4ZNKxXGE25heDAE5gwHotqRx3D8g';" alt="Attention All Military Spouses Portable Careers This Is A Great Opportunity Academyofmedicalprofessions Military Military Spouse Education And Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Attention All Military Spouses Portable Careers This Is A Great Opportunity Academyofmedicalprofessions Military Military Spouse Education And Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/05/6c/a8056c905c26fc52046736312ec07d5c.png" data-lightbox="roadtrip" data-title="Grantham University Is Sharing The Details Of The 2017 Military Spouse Of The Year Contest Winner Check Out His Stor Military Spouse Grantham Online Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/05/6c/a8056c905c26fc52046736312ec07d5c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLDA7iU9OEL84AYHmftQwWGY1WsfwEtFYquA';" alt="Grantham University Is Sharing The Details Of The 2017 Military Spouse Of The Year Contest Winner Check Out His Stor Military Spouse Grantham Online Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grantham University Is Sharing The Details Of The 2017 Military Spouse Of The Year Contest Winner Check Out His Stor Military Spouse Grantham Online Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-dependent-id-card-colors.html">Military Dependent Id Card Colors</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-philippines.html">Military Dependent Id Philippines</a></li>
+													<li class="list-group-item"><a href="/military-dependent-over-21.html">Military Dependent Over 21</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-expired.html">Military Dependent Id Expired</a></li>
+													<li class="list-group-item"><a href="/military-dependent-residency-college.html">Military Dependent Residency College</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-without-sponsor.html">Military Dependent Id Card Without Sponsor</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-replacement.html">Military Dependent Id Card Replacement</a></li>
+													<li class="list-group-item"><a href="/military-dependent-loans.html">Military Dependent Loans</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-age-21.html">Military Dependent Id Card Age 21</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-for-airport.html">Military Dependent Id For Airport</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-renewal-requirements.html">Military Dependent Id Card Renewal Requirements</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-form.html">Military Dependent Id Form</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-stolen.html">Military Dependent Id Card Stolen</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-renewal-appointment.html">Military Dependent Id Renewal Appointment</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-divorce.html">Military Dependent Id Card Divorce</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-retired.html">Military Dependent Id Card Retired</a></li>
+													<li class="list-group-item"><a href="/military-dependent-name-change.html">Military Dependent Name Change</a></li>
+													<li class="list-group-item"><a href="/military-dependent-residency.html">Military Dependent Residency</a></li>
+													<li class="list-group-item"><a href="/military-dependent-id-card-regulations.html">Military Dependent Id Card Regulations</a></li>
+													<li class="list-group-item"><a href="/military-dependent-medical-records.html">Military Dependent Medical Records</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

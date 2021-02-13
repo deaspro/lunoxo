@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Nc In State Tuition For Military Dependents - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Nc In State Tuition For Military Dependents",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/62/7e/ac/627eacf08904b7f284b2f04e668eca24.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=nc+in+state+tuition+for+military+dependents",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Nc In State Tuition For Military Dependents</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A 150 stipend per semester is included to help with books or fees. The Higher Education Opportunity Act of 2008 requires that states offer in-state tuition to military family members who live in the state due to their active duty military members service. Chapter 165 Veterans General Statutes of North Carolina Article 4. <br>				
+			</p>
+										<a class="badge badge-danger" href="/ncaa-or-naia-eligibility-number.html">ncaa or naia eligibility number</a>
+											<a class="badge badge-success" href="/ncaa-eligibility-rules-walk-on.html">ncaa eligibility rules walk on</a>
+											<a class="badge badge-dark" href="/ncaa-eligible-receiver-rules.html">ncaa eligible receiver rules</a>
+											<a class="badge badge-success" href="/ncaa-hockey-eligibility-age.html">ncaa hockey eligibility age</a>
+											<a class="badge badge-secondary" href="/ncaa-eligibility-rules-d2.html">ncaa eligibility rules d2</a>
+											<a class="badge badge-danger" href="/ncaa-eligibility-rules-for-sophomores.html">ncaa eligibility rules for sophomores</a>
+											<a class="badge badge-warning" href="/ncaa-football-extra-eligibility.html">ncaa football extra eligibility</a>
+											<a class="badge badge-secondary" href="/ncaa-initial-eligibility-requirements.html">ncaa initial eligibility requirements</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to visit the right site.  Our site gives you suggestions for seeing the maximum quality video and image content, search and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this video for you to see.  You can also contribute to supporting this website by sharing videos and images that you enjoy on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://learnmore.uncg.edu/hs-fs/hubfs/images/Blog/Woman-Vet_iStock_68164407_Small.jpg?width=300&amp;height=250&amp;name=Woman-Vet_iStock_68164407_Small.jpg" data-lightbox="roadtrip" data-title="In State Tuition For North Carolina Veterans And Or Dependents Survivors">
+											<img class="card-img v-image ads-img " src="https://learnmore.uncg.edu/hs-fs/hubfs/images/Blog/Woman-Vet_iStock_68164407_Small.jpg?width=300&amp;height=250&amp;name=Woman-Vet_iStock_68164407_Small.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPV3dyNqPR-S1sh9EX3rftMdJUs9lTxo9TVQ';" alt="In State Tuition For North Carolina Veterans And Or Dependents Survivors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In State Tuition For North Carolina Veterans And Or Dependents Survivors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/08/states-offer-free-tuition-to-military-dependents-and-spouses.jpg" data-lightbox="roadtrip" data-title="States That Offer Free Tuition To Spouses Dependents Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/08/states-offer-free-tuition-to-military-dependents-and-spouses.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfTd5ModnOlZ_GybbBxQvdcK8tm3en5b5hQQ';" alt="States That Offer Free Tuition To Spouses Dependents Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">States That Offer Free Tuition To Spouses Dependents Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://online-distance.ncsu.edu/wp-content/uploads/2016/02/military_feature.jpg" data-lightbox="roadtrip" data-title="Admission Military And Veterans Nc State Online And Distance Education">
+											<img class="card-img v-image ads-img " src="https://online-distance.ncsu.edu/wp-content/uploads/2016/02/military_feature.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzjqMq0cJlDRRmd2HCtp_m1dxlOcezqoxfA';" alt="Admission Military And Veterans Nc State Online And Distance Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Admission Military And Veterans Nc State Online And Distance Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/4e/00/a2/4e00a2f19cc3d70e40dfd7b88f4934f3.jpg" data-lightbox="roadtrip" data-title="How Challenge Coins Are Used To Honor Military Spouses Milspouse Challengecoins Veterans Challenge Coins Challenges Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/4e/00/a2/4e00a2f19cc3d70e40dfd7b88f4934f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzkKi3GvcrgwmhC379rWON2M3s1EgaMFJnQ';" alt="How Challenge Coins Are Used To Honor Military Spouses Milspouse Challengecoins Veterans Challenge Coins Challenges Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Challenge Coins Are Used To Honor Military Spouses Milspouse Challengecoins Veterans Challenge Coins Challenges Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/07/states-that-offer-free-tuition-for-veterans.jpg" data-lightbox="roadtrip" data-title="States That Offer Free Tuition For Vets Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/07/states-that-offer-free-tuition-for-veterans.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjREWpcRINNVZfP5cnPjRpQKDR1xPCEvYFew';" alt="States That Offer Free Tuition For Vets Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">States That Offer Free Tuition For Vets Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.navigatored.com/images/Vets+graphic+two.jpg" data-lightbox="roadtrip" data-title="Veterans To Get In State Tuition In Any State">
+											<img class="card-img v-image ads-img " src="https://media.navigatored.com/images/Vets+graphic+two.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUppWanldmgwDS0sBLxpU29TQxfu86EvCZpg';" alt="Veterans To Get In State Tuition In Any State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans To Get In State Tuition In Any State</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b6/05/30/b605305f6ec015e52c1f47bef4e3c55b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUppWanldmgwDS0sBLxpU29TQxfu86EvCZpg';" alt="Veterans To Get In State Tuition In Any State">
+										<div class="card-body">
+						<h3 class="h5"><b>State law provides exceptions for active-duty military personnel their dependents and veterans when it comes to being considered as domiciled in Virginia.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Nc in state tuition for military dependents</strong>. 
+								
+																	Military and Veterans Admission Process. 
+																	Military and Veterans Resource Center. 
+																	We are honored to serve all military affiliated students and are committed to helping you successfully apply and enroll at NC State. 
+																	Be the military dependent of a member of the armed services who is stationed in North Carolina PCS orders on active duty. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This means that for any active duty service member his or her spouse and dependents at any public college or university where they are stationed for 30 days should be able to receive the in-state tuition rate. 
+																	Once military family members begin at a school and qualifies for in-state tuition under the terms of the Higher Education Opportunity Act they get to keep their in-state tuition rate even if. 
+																	Because of the Higher Education Opportunity Act of 2008 states need to offer in-state tuition to military family members who live in the state due to their active duty military service. 
+																	Im looking at you North Carolina. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As a member of the armed services the North Carolina National Guard or a military spouse or dependent if you do not qualify as North Carolina resident-for-tuition-purposes you may still be eligible to pay the in-state tuition rate if you meet the eligibility requirements for the Military Tuition Benefit NCGenStat. 
+																	Dependents of military service members stationed in Virginia are eligible for in-state college tuition rates a move that should save military families thousands of dollars in higher education costs. 
+																	Military NC State is home to nearly 3000 military connected students and has earned national recognition as a Top-Ten Military Friendly School. 
+																	To qualify for the Military Tuition Benefit as a military dependent you must. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Qualifying spouses and children of active duty service members may be eligible for the North Carolina in-state tuition rate without having to meet the 12 month residency requirement. 
+																	This means that military kids are eligible for in-state tuition where they are actually living in conjunction with their parents job. 
+																	Be registered with the Selective Service System if you are a male between the ages of 18 and 26. 
+																	State of Actual Residence. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	North Carolina Tuition Benefits For Out-Of-State GI Bill Users. 
+																	For the most updated information visit the SCHEV website. 
+																	The State of New Mexico offers free tuition to dependent children of qualifying veterans who were killed in action or died as a result of wounds sustained in battle. 
+																	They also waive undergraduate tuition and fees up to 200 quarter credits or equivalent semester credits for dependents of 100 disabled veterans who are eligible at state community colleges colleges and universities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Children between the ages of 16-26 qualify for a full tuition waiver at any state-funded post-secondary school. 
+																	Scholarships for Children of War Veterans. 
+																	These benefits alone do not provide the basis for receiving those derivative benefits under the provisions of the residence classification statute. 
+																	If youre a Veteran or dependentsurvivor looking to pursue your college education in North Carolina we have news for you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The new Military and Veterans Resource Center opened on November 28 2016 in Witherspoon Student Center. 
+																	This is allowed if the student is attending a state college using the GI Bill. 
+																	NC State University has a long and proud tradition of serving the needs of veterans active duty military personnel and their familiesWe value the dedication of servicemen and women to our country and are honored that you are considering NC State as you review all your options for higher education opportunities. 
+																	This means you may qualify for in-state tuition rates if Virginia is not your legal domicile. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These tuition benefits may be enjoyed only if the applicable requirements for admission have been met. 
+																	The new center aims to provide additional academic and campus life support to NC State military and veterans. 
+																	Active duty military personnel whose permanent duty station and location is in North Carolina and their military dependents are eligible to receive the benefit of in-state tuition even if they are not residents of North Carolina. 
+																	Be sure to understand your schools specific rules before making any decisions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In appreciation for the service and sacrifices of North Carolinas war veterans a four-year scholarship program at approved schools in North Carolina has been established for the qualifying children of certain deceased disabled combat or POWMIA veterans. 
+																	In the event the member of the armed services receives an honorable discharge from military service the dependent relative shall continue to be eligible for the in-state tuition rate and applicable mandatory fees so long as the dependent relative establishes residency within North Carolina within 30 days after the discharge and is continuously enrolled in the degree or other program in which the dependent relative was enrolled at the time the member is discharged. 
+																	Under the Veterans Access Choice and Accountability Act of 2014 if you meet certain conditions you may qualify for North Carolina in-state tuition rates without meeting the usual civilian residency requirements. 
+																	In addition a separate North Carolina statute affords tuition rate benefits to certain military personnel and their dependents even though not qualifying for the in-state tuition rate by reason of twelve months legal residence in North Carolina. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Any dependent relative of a member of the armed forces who is abiding in this State incident to active military duty as defined by the Board of Governors of the University of North Carolina and by the State Board of Community Colleges while sharing the abode of 31 that member shall be eligible to be charged the in-state tuition rate if the dependent relative qualifies for admission to an institution of higher education as defined in GS. 
+																	Be living with that service member. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/d9/26/96d92608c584681e6e99d787dfe08c55.jpg" data-lightbox="roadtrip" data-title="World Education Net Partners With The Best Universities In The U S Nc State Offers Online Career Training Progr Nc State University Career Training New Career">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/d9/26/96d92608c584681e6e99d787dfe08c55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsRCQPmtSFku6qNRVXAuzjZIvOrWXCVYE-NQ';" alt="World Education Net Partners With The Best Universities In The U S Nc State Offers Online Career Training Progr Nc State University Career Training New Career">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">World Education Net Partners With The Best Universities In The U S Nc State Offers Online Career Training Progr Nc State University Career Training New Career</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://admissions.unc.edu/wp-content/uploads/sites/1130/2020/08/033719_rotc_promotion_ceremony009.jpg" data-lightbox="roadtrip" data-title="Military And Veterans Undergraduate Admissions">
+											<img class="card-img v-image ads-img " src="https://admissions.unc.edu/wp-content/uploads/sites/1130/2020/08/033719_rotc_promotion_ceremony009.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0d5oMeHmAH8BwUWjijrL5T0Fbzewg7MYyjg';" alt="Military And Veterans Undergraduate Admissions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military And Veterans Undergraduate Admissions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/05/30/b605305f6ec015e52c1f47bef4e3c55b.png" data-lightbox="roadtrip" data-title="Pin On South Dakota Army National Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/05/30/b605305f6ec015e52c1f47bef4e3c55b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkaBJ37RtM2h0CkFSPOCw-CgSf5995yPLC0w';" alt="Pin On South Dakota Army National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On South Dakota Army National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://registrar.ncsu.edu/wp-content/uploads/2014/10/Our-State-Our-Veterans-Stickers-3X5-992x605.jpg" data-lightbox="roadtrip" data-title="Veterans Education Benefits Nc State University">
+											<img class="card-img v-image ads-img " src="https://registrar.ncsu.edu/wp-content/uploads/2014/10/Our-State-Our-Veterans-Stickers-3X5-992x605.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyu-rNdCoTgtqawjPJW5a8o-xvsKjxqrN10A';" alt="Veterans Education Benefits Nc State University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Education Benefits Nc State University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://res.cloudinary.com/highereducation/image/upload/c_fill,w_312,h_284,dpr_2.0,f_auto,g_faces:center,fl_lossy,q_auto:eco/v1601659156/TheBestSchools.org/hero-images/scholarships-military-hero.jpg" data-lightbox="roadtrip" data-title="Financial Aid Military Scholarships Thebestschools Org">
+											<img class="card-img v-image ads-img " src="https://res.cloudinary.com/highereducation/image/upload/c_fill,w_312,h_284,dpr_2.0,f_auto,g_faces:center,fl_lossy,q_auto:eco/v1601659156/TheBestSchools.org/hero-images/scholarships-military-hero.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiR8sGQrTy-2s76FPhe8fRxk3CMu2DhXSFOw';" alt="Financial Aid Military Scholarships Thebestschools Org">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Financial Aid Military Scholarships Thebestschools Org</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_680,h_454/https://collegerecon.com/wp-content/uploads/2020/05/in-state-tuition-benefits-veterans-1024x683.jpg" data-lightbox="roadtrip" data-title="Fu5dtojyiun1gm">
+											<img class="card-img v-image ads-img " src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_680,h_454/https://collegerecon.com/wp-content/uploads/2020/05/in-state-tuition-benefits-veterans-1024x683.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQzH8AoPqcNeLpeL-6iWNk3flbFxz9mPSDsA';" alt="Fu5dtojyiun1gm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fu5dtojyiun1gm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/0c/19/180c19d3314dbbfbe8270f3b5d64425a.png" data-lightbox="roadtrip" data-title="This Blog Post Dives Into Things All About The Army Reserve And Our Experience So Far Regarding T Army Reserve Military Girlfriend Army Military Spouse Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/0c/19/180c19d3314dbbfbe8270f3b5d64425a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe3Gwg_ax7UQ0MUWBSQdNZkWoAsp9X__ffuA';" alt="This Blog Post Dives Into Things All About The Army Reserve And Our Experience So Far Regarding T Army Reserve Military Girlfriend Army Military Spouse Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Blog Post Dives Into Things All About The Army Reserve And Our Experience So Far Regarding T Army Reserve Military Girlfriend Army Military Spouse Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/62/7e/ac/627eacf08904b7f284b2f04e668eca24.jpg" data-lightbox="roadtrip" data-title="New Student Merit Based Scholarships Student Financial Services Jacksonville State University Scholarships First Year Student New Students">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/62/7e/ac/627eacf08904b7f284b2f04e668eca24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjJJtxuxXP9Pf0haZTPnXCF6Dv-9dgnJIHQA';" alt="New Student Merit Based Scholarships Student Financial Services Jacksonville State University Scholarships First Year Student New Students">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Student Merit Based Scholarships Student Financial Services Jacksonville State University Scholarships First Year Student New Students</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://myarmybenefits.us.army.mil/Images/North%20Carolina/NC%20Education.jpg" data-lightbox="roadtrip" data-title="North Carolina The Official Army Benefits Website">
+											<img class="card-img v-image ads-img " src="https://myarmybenefits.us.army.mil/Images/North%20Carolina/NC%20Education.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr4cyIMwnH1udED9Aat982RO2lJd5hu_KhbA';" alt="North Carolina The Official Army Benefits Website">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">North Carolina The Official Army Benefits Website</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://today.appstate.edu/_images/_posts/2020/02/military-friendly-cadet.jpg" data-lightbox="roadtrip" data-title="App State Earns Top 10 Military Friendly School Designation For 2020 21 Appalachian Today">
+											<img class="card-img v-image ads-img " src="https://today.appstate.edu/_images/_posts/2020/02/military-friendly-cadet.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgo97eMJS9sz9b7lN4lJXh95gYwoJNg0dKEA';" alt="App State Earns Top 10 Military Friendly School Designation For 2020 21 Appalachian Today">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">App State Earns Top 10 Military Friendly School Designation For 2020 21 Appalachian Today</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.engineeringonline.ncsu.edu/wp-content/uploads/sites/23/2018/12/navy_students.jpg" data-lightbox="roadtrip" data-title="Military And Veterans Engineering Online Nc State University">
+											<img class="card-img v-image ads-img " src="https://www.engineeringonline.ncsu.edu/wp-content/uploads/sites/23/2018/12/navy_students.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYTDafGLXlbBfLynSll2PGLZdJJ8RYTWS99g';" alt="Military And Veterans Engineering Online Nc State University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military And Veterans Engineering Online Nc State University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/be/1c/8dbe1c1002a973bf1a15e95719f37121.jpg" data-lightbox="roadtrip" data-title="Love U Daddy Military Love Military Dad Military Homecoming">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/be/1c/8dbe1c1002a973bf1a15e95719f37121.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ynckeZ8wYqm9WzNSUENIOejZIW8vVCghYQ';" alt="Love U Daddy Military Love Military Dad Military Homecoming">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Love U Daddy Military Love Military Dad Military Homecoming</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images04.military.com/sites/default/files/styles/full/public/paycheck-thumbnails/2015/11/tuitionassistance.jpg?itok=C0FdW20K" data-lightbox="roadtrip" data-title="In State Tuition Rules For Military Families Military Com">
+											<img class="card-img v-image ads-img " src="https://images04.military.com/sites/default/files/styles/full/public/paycheck-thumbnails/2015/11/tuitionassistance.jpg?itok=C0FdW20K" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Zo6SYGyVcibVpBMsPy90yL4zrNKT3CJ7Aw';" alt="In State Tuition Rules For Military Families Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In State Tuition Rules For Military Families Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-are-the-duties-and-responsibilities-of-a-human-resource-officer.html">What Are The Duties And Responsibilities Of A Human Resource Officer</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-marine-wives-get.html">What Benefits Do Marine Wives Get</a></li>
+													<li class="list-group-item"><a href="/what-are-my-legal-rights-as-a-separated-wife.html">What Are My Legal Rights As A Separated Wife</a></li>
+													<li class="list-group-item"><a href="/what-are-military-hats-called.html">What Are Military Hats Called</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-of-being-a-marine-reservist.html">What Are The Benefits Of Being A Marine Reservist</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-air-force-spouses-get.html">What Benefits Do Air Force Spouses Get</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-of-being-a-military-dependent.html">What Are The Benefits Of Being A Military Dependent</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-of-military-medical-retirement.html">What Are The Benefits Of Military Medical Retirement</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-army-wives-get.html">What Benefits Do Army Wives Get</a></li>
+													<li class="list-group-item"><a href="/what-are-military-retirement-benefits.html">What Are Military Retirement Benefits</a></li>
+													<li class="list-group-item"><a href="/what-benefits-does-a-military-child-get.html">What Benefits Does A Military Child Get</a></li>
+													<li class="list-group-item"><a href="/what-are-my-rights-if-my-wife-wants-me-to-leave.html">What Are My Rights If My Wife Wants Me To Leave</a></li>
+													<li class="list-group-item"><a href="/what-are-the-pros-of-being-a-marine-biologist.html">What Are The Pros Of Being A Marine Biologist</a></li>
+													<li class="list-group-item"><a href="/what-are-the-army-core-competencies.html">What Are The Army Core Competencies</a></li>
+													<li class="list-group-item"><a href="/what-age-military-dependent-id.html">What Age Military Dependent Id</a></li>
+													<li class="list-group-item"><a href="/what-are-military-benefits.html">What Are Military Benefits</a></li>
+													<li class="list-group-item"><a href="/what-benefits-for-general-discharge.html">What Benefits For General Discharge</a></li>
+													<li class="list-group-item"><a href="/what-are-the-responsibilities-of-a-human-resource-officer.html">What Are The Responsibilities Of A Human Resource Officer</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-you-get-if-you-are-medically-retired-from-the-military.html">What Benefits Do You Get If You Are Medically Retired From The Military</a></li>
+													<li class="list-group-item"><a href="/what-benefits-are-available-for-the-widow-of-a-veteran.html">What Benefits Are Available For The Widow Of A Veteran</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

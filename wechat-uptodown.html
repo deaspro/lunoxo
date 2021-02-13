@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Wechat Uptodown - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Wechat Uptodown",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/564x/d2/35/b3/d235b386fb5e77363ad3f3afaa9b5365.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=wechat+uptodown",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Wechat Uptodown</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Hide a chat in the chat list. Send video image text and file messages. Anda bisa mengirim pesan foto video pesan suara info posisi Anda GPS dan bahkan membuat panggilan video dengan kualitas tinggi baik dalam grup ataupun individu. <br>				
+			</p>
+										<a class="badge badge-info" href="/my-spouse-refuses-to-wear-a-mask.html">my spouse refuses to wear a mask</a>
+											<a class="badge badge-secondary" href="/my-spouse-lives-in-another-country.html">my spouse lives in another country</a>
+											<a class="badge badge-danger" href="/my-spouse-uses-me-for-a-green-card.html">my spouse uses me for a green card</a>
+											<a class="badge badge-light" href="/my-spouse-just-left-me.html">my spouse just left me</a>
+											<a class="badge badge-secondary" href="/my-spouse-left-me-now-what.html">my spouse left me now what</a>
+											<a class="badge badge-primary" href="/my-spouse-needs-mental-help.html">my spouse needs mental help</a>
+											<a class="badge badge-light" href="/my-spouse-received-a-stimulus-check-but-i-did-not.html">my spouse received a stimulus check but i did not</a>
+											<a class="badge badge-light" href="/my-spouse-no-longer-loves-me.html">my spouse no longer loves me</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to pay a visit to the right blog.  Our website provides you with suggestions for seeing the maximum quality video and image content, search and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, so we recommend this movie for you to view.  You can also bring about supporting this site by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/9d/6b/fe/9d6bfe5ba17f70fd044c60d74720e963.jpg" data-lightbox="roadtrip" data-title="Wechat 7 0 9 For Android Download Send Text Message Send Text Android">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/9d/6b/fe/9d6bfe5ba17f70fd044c60d74720e963.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRigitJeSqh3xC9GT4mspz7aHe0rteVMKtwAQ';" alt="Wechat 7 0 9 For Android Download Send Text Message Send Text Android">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wechat 7 0 9 For Android Download Send Text Message Send Text Android</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/06/5c/f4/065cf40afab96c9081e08140b5ae89a0.jpg" data-lightbox="roadtrip" data-title="Wechat 7 0 9 For Android Download Send Text Message Send Text Android">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/06/5c/f4/065cf40afab96c9081e08140b5ae89a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqQB4RuWmqNllXW5Cm3L9uSN5pjcQAvCPj-w';" alt="Wechat 7 0 9 For Android Download Send Text Message Send Text Android">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wechat 7 0 9 For Android Download Send Text Message Send Text Android</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/61/ca/c7/61cac7a5622cac67461c2ceb2b5a6141.jpg" data-lightbox="roadtrip" data-title="Wechat 7 0 9 For Android Download Send Text Message Send Text Android">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/61/ca/c7/61cac7a5622cac67461c2ceb2b5a6141.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjwnjbhs5JV_vXDoUpwZOBWG_Fb8LWhMjObQ';" alt="Wechat 7 0 9 For Android Download Send Text Message Send Text Android">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wechat 7 0 9 For Android Download Send Text Message Send Text Android</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/a9/fe/fca9fee91942205e7bc0a9086ec86cca.png" data-lightbox="roadtrip" data-title="Get Whatsapp Desktop Microsoft Store Microsoft Windows Store Voice Call">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/a9/fe/fca9fee91942205e7bc0a9086ec86cca.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqc8-JVfquNXfgh3NZ0BC_Gu5jV55xsF6bw';" alt="Get Whatsapp Desktop Microsoft Store Microsoft Windows Store Voice Call">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Whatsapp Desktop Microsoft Store Microsoft Windows Store Voice Call</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f7/ab/55/f7ab55e8b7671c98ea24fc17603256ee.jpg" data-lightbox="roadtrip" data-title="Wechat 7 0 9 For Android Download Android Send Text Message Send Text">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f7/ab/55/f7ab55e8b7671c98ea24fc17603256ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYGOeLcWQPxaC31owcXbMkwrT3SoxthAlKug';" alt="Wechat 7 0 9 For Android Download Android Send Text Message Send Text">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wechat 7 0 9 For Android Download Android Send Text Message Send Text</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/b4/02/91b4023e2c5e4df6a04a3328c8dd28bc.jpg" data-lightbox="roadtrip" data-title="36 45 Hot Selling Color Your Life From Up To Down Wholesale Only For Shops Www Shopshopchina Com Collections B Shopping Fashion 2020 Color">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/b4/02/91b4023e2c5e4df6a04a3328c8dd28bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGdZozKiYd99e_zmHC5VwTmiSex8l6o-FoaA';" alt="36 45 Hot Selling Color Your Life From Up To Down Wholesale Only For Shops Www Shopshopchina Com Collections B Shopping Fashion 2020 Color">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">36 45 Hot Selling Color Your Life From Up To Down Wholesale Only For Shops Www Shopshopchina Com Collections B Shopping Fashion 2020 Color</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/06/5c/f4/065cf40afab96c9081e08140b5ae89a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGdZozKiYd99e_zmHC5VwTmiSex8l6o-FoaA';" alt="36 45 Hot Selling Color Your Life From Up To Down Wholesale Only For Shops Www Shopshopchina Com Collections B Shopping Fashion 2020 Color">
+										<div class="card-body">
+						<h3 class="h5"><b>If you need the previous version of WeChat check out the apps version history which includes all versions available to download.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Wechat uptodown</strong>. 
+								
+																	WeChat for Windows 310. 
+																	Try the latest version of WeChat for Mac 2020 for Mac. 
+																	All previous versions of WeChat are virus-free and free to download at Uptodown. 
+																	You can easily send messages and other content to your contacts from its interface which closely resembles the smartphone app. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WeChat adalah sebuah aplikasi yang membantu Anda untuk tetap terhubung dengan pengguna lain dari aplikasi yang sama baik pada sistem operasi Android atau iOS. 
+																	Download WeChat Speed 1080 for Android for free without any viruses from Uptodown. 
+																	GROUP CHAT CALLS. 
+																	Try the latest version of WeChat 2021 for Android. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Set remarks for group chats. 
+																	You can send text messages to individuals and groups pictures videos voice messages GPS information and even make video calls in high definition. 
+																	Download prior versions of WeChat for Android. 
+																	Download WeChat 801 for Android for free without any viruses from Uptodown. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can easily send messages and other content to your contacts from its interface which closely resembles the smartphone app. 
+																	WeChat lets you keep in touch with anyone who uses the same application independent of the operating system that person uses be it Android or iOS. 
+																	Try the latest version of WeChat for Windows 2020 for Windows. 
+																	Bug fixes and improvements. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Voice or video calls with up to 15 people. 
+																	WeChat es una forma alternativa de comunicarse gracias a la que sus usuarios podran entablar conversaciones entre si con inmediatez y la comodidad que caracteriza a este tipo de aplicaciones. 
+																	 
+																	Create shortcuts to make it easier to access your apps. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coba versi terbaru dari WeChat 2021 untuk Android. 
+																	Tiene una base de usuarios menor a la de otras aplicaciones de la competencia. 
+																	Create group chats with up to 500 people and group video calls up to 9 people. 
+																	Download WeChat for Windows 295 for Windows for free without any viruses from Uptodown. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Android version of the famous battle royale TikTok Asia A social network to share your musical talent. 
+																	All the best free apps you want on your Android. 
+																	WeChat इस परयजयत क इसतमल करन वल कस स भ सपरक रखन दत ह उस वयकत क परचलन ससटम Android य iOS ज कई भ हआप वयकत य समह क टकसट. 
+																	A fun summer adventure. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Download software about windows like whatsapp desktop facebook messenger for windows 7 messenger for desktop. 
+																	WeChat is a messaging and calling app that allows you to easily connect with family friends across countries. 
+																	Using APKPure App to upgrade WeChat install xapk fast free and save your internet data. 
+																	The description of WeChat App WeChat is more than a messaging and social media app it is a lifestyle for over one billion users across the world. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Download WeChat for Mac 2331 for Mac for free without any viruses from Uptodown. 
+																	Unduh WeChat 800 untuk Android secara gratis dan bebas virus di Uptodown. 
+																	WeChat for Mac is the Apple version of this Asian messaging service that lets you open conversations on your Mac. 
+																	WeChat for Windows is the PC version of this Asian messaging service that lets you open conversations on your computer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Try the latest version of WeChat Speed 2015 for Android. 
+																	Its the all-in-one communications app for text SMSMMS voice and video calls and files. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/79/74/20/797420888f14fd6231e9477918630470.jpg" data-lightbox="roadtrip" data-title="Camscanner Mod Premium Subscription Apk Download 2020 In 2020 Document Sharing Subscription Mod">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/79/74/20/797420888f14fd6231e9477918630470.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsyD7UUjd2n9Tc7y8_gzfA9_2HrjzUtMtCTw';" alt="Camscanner Mod Premium Subscription Apk Download 2020 In 2020 Document Sharing Subscription Mod">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Camscanner Mod Premium Subscription Apk Download 2020 In 2020 Document Sharing Subscription Mod</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/90/26/6c9026f12c36208a708902676bef189f.jpg" data-lightbox="roadtrip" data-title="Infographic Instant Messaging Apps Regional Preferences Instant Messaging Messaging App Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/90/26/6c9026f12c36208a708902676bef189f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZJuWO2Jfuy4gm_h1VxVP8lIqD5JWgRkCIjQ';" alt="Infographic Instant Messaging Apps Regional Preferences Instant Messaging Messaging App Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic Instant Messaging Apps Regional Preferences Instant Messaging Messaging App Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/70/91/fd/7091fd177bbbd70e2726a7e84c4f378f.jpg" data-lightbox="roadtrip" data-title="من الضروري تثبيت هذه اللعبة من تطبيق Uptodown الرسمي من هنا فملفها يحوي معطيات Obb إضافية وهذه المعطيات لا تعمل بتوافق مع رزم التثبيت ا Ultra Hd Person Mobile">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/70/91/fd/7091fd177bbbd70e2726a7e84c4f378f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-DS4z3bq3hRoL__E5jRcGOcnpbX4mlM6c-A';" alt="من الضروري تثبيت هذه اللعبة من تطبيق Uptodown الرسمي من هنا فملفها يحوي معطيات Obb إضافية وهذه المعطيات لا تعمل بتوافق مع رزم التثبيت ا Ultra Hd Person Mobile">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">من الضروري تثبيت هذه اللعبة من تطبيق Uptodown الرسمي من هنا فملفها يحوي معطيات Obb إضافية وهذه المعطيات لا تعمل بتوافق مع رزم التثبيت ا Ultra Hd Person Mobile</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/55/f2/38/55f23873d90dbef1ca8a5b7e459c61ea.jpg" data-lightbox="roadtrip" data-title="Whatsapp Business 2 19 130 For Android Download Cose">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/55/f2/38/55f23873d90dbef1ca8a5b7e459c61ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuysuTHoviZ4sDpvcQgxfEG5lhIlF9I0CVSA';" alt="Whatsapp Business 2 19 130 For Android Download Cose">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Whatsapp Business 2 19 130 For Android Download Cose</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/4d/37/934d37e8aa793a2f07731a17759218d5.jpg" data-lightbox="roadtrip" data-title="All Sim Packages Apk Download 2019 In 2020 Android Programming Personal Blog Scanner">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/4d/37/934d37e8aa793a2f07731a17759218d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ66XLyXo9dcewxleFgGpOrRYoPtL8Rpgymg';" alt="All Sim Packages Apk Download 2019 In 2020 Android Programming Personal Blog Scanner">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All Sim Packages Apk Download 2019 In 2020 Android Programming Personal Blog Scanner</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a1/29/29/a12929d36a950d5f39bd0f1ff41cfc2f.jpg" data-lightbox="roadtrip" data-title="تنزيل برنامج Uptodown App Store متجر آب تو داون للاندرويد و الويندوز مجانا ماك توبيا App App Store Store">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a1/29/29/a12929d36a950d5f39bd0f1ff41cfc2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSIm5JHnbfZl4xHWF0Q6ZUVKIQaSyybesScQ';" alt="تنزيل برنامج Uptodown App Store متجر آب تو داون للاندرويد و الويندوز مجانا ماك توبيا App App Store Store">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">تنزيل برنامج Uptodown App Store متجر آب تو داون للاندرويد و الويندوز مجانا ماك توبيا App App Store Store</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/f0/bc/d8f0bcbf9cbbab014ac5e81a035ee6be.png" data-lightbox="roadtrip" data-title="Mediafire For Android Free Apk Download In 2020 Android Apps Reading Material Android">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/f0/bc/d8f0bcbf9cbbab014ac5e81a035ee6be.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjKgkQFzeLO8pqmvleRsTnd_LXmHTqPjWLkg';" alt="Mediafire For Android Free Apk Download In 2020 Android Apps Reading Material Android">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mediafire For Android Free Apk Download In 2020 Android Apps Reading Material Android</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/cf/e6/30cfe66604a211715dad41bbcf1d68bd.png" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/cf/e6/30cfe66604a211715dad41bbcf1d68bd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgppkpvEnZCHMwhRoXNBUYv4RyMOFHGtCP1g';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/02/95/33/02953363cae148a950f3b7eef2d1f9d4.jpg" data-lightbox="roadtrip" data-title="Download Software About Messaging Android Communication Messaging App Instant Messaging Instant Messenger">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/02/95/33/02953363cae148a950f3b7eef2d1f9d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT7L2XHSTPgglZp5xQtDrfIDUfr1wacJCxIg';" alt="Download Software About Messaging Android Communication Messaging App Instant Messaging Instant Messenger">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Software About Messaging Android Communication Messaging App Instant Messaging Instant Messenger</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d2/35/b3/d235b386fb5e77363ad3f3afaa9b5365.jpg" data-lightbox="roadtrip" data-title="Download Software About Messaging Android Communication Messaging App Instant Messenger Communication">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d2/35/b3/d235b386fb5e77363ad3f3afaa9b5365.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV5a1qp0K-wVWeTCR0xERCgbF4ydOeLC1F9w';" alt="Download Software About Messaging Android Communication Messaging App Instant Messenger Communication">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Software About Messaging Android Communication Messaging App Instant Messenger Communication</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ff/a1/1a/ffa11a6f9f27e7e9de6b05064dfb7def.jpg" data-lightbox="roadtrip" data-title="Whatsapp Messenger 2 19 118 Para Android Descargar Android Musica">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ff/a1/1a/ffa11a6f9f27e7e9de6b05064dfb7def.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdlSqEIziIOhXUl7L9VGItGGcxx-Apw7PbCg';" alt="Whatsapp Messenger 2 19 118 Para Android Descargar Android Musica">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Whatsapp Messenger 2 19 118 Para Android Descargar Android Musica</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/78/3d/7e783d7136a15fb9ae3517c299cfb8ce.png" data-lightbox="roadtrip" data-title="Oneplus Community 3 3 7 0 200601163248 Fef2387 In 2020 Oneplus Android Apps Community">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/78/3d/7e783d7136a15fb9ae3517c299cfb8ce.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3r7Oe5Nrb_Cq6uXrmcrtUFJkkCML4K18d9w';" alt="Oneplus Community 3 3 7 0 200601163248 Fef2387 In 2020 Oneplus Android Apps Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oneplus Community 3 3 7 0 200601163248 Fef2387 In 2020 Oneplus Android Apps Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/63/8e/0a/638e0a797022687361c1254ddd56fbbf.jpg" data-lightbox="roadtrip" data-title="Snaptube Screenshot 35 Descargar Musica Gratis Mp3 Descargar Musica Videos De Musica">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/63/8e/0a/638e0a797022687361c1254ddd56fbbf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlecP8b7HUkTaPhfY0YkdC9qfxiKrtNT_8ng';" alt="Snaptube Screenshot 35 Descargar Musica Gratis Mp3 Descargar Musica Videos De Musica">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Snaptube Screenshot 35 Descargar Musica Gratis Mp3 Descargar Musica Videos De Musica</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/ncaa-d1-soccer-eligibility.html">Ncaa D1 Soccer Eligibility</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-deadline.html">Ncaa Eligibility Center Deadline</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-create-account.html">Ncaa Eligibility Center Create Account</a></li>
+													<li class="list-group-item"><a href="/ncaa-division-iii-eligibility-requirements.html">Ncaa Division Iii Eligibility Requirements</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-act-sliding-scale.html">Ncaa Eligibility Act Sliding Scale</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-and-compliance-forms.html">Ncaa Eligibility And Compliance Forms</a></li>
+													<li class="list-group-item"><a href="/ncaa-division-3-eligibility-rules-gpa.html">Ncaa Division 3 Eligibility Rules Gpa</a></li>
+													<li class="list-group-item"><a href="/ncaa-division-2-transfer-eligibility-rules.html">Ncaa Division 2 Transfer Eligibility Rules</a></li>
+													<li class="list-group-item"><a href="/ncaa-division-1-soccer-eligibility.html">Ncaa Division 1 Soccer Eligibility</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-fee-waiver.html">Ncaa Eligibility Center Fee Waiver</a></li>
+													<li class="list-group-item"><a href="/ncaa-division-1-hockey-eligibility.html">Ncaa Division 1 Hockey Eligibility</a></li>
+													<li class="list-group-item"><a href="/ncaa-d3-football-eligibility-rules.html">Ncaa D3 Football Eligibility Rules</a></li>
+													<li class="list-group-item"><a href="/ncaa-division-3-rules-on-eligibility.html">Ncaa Division 3 Rules On Eligibility</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-dashboard.html">Ncaa Eligibility Center Dashboard</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-for-transfer-students.html">Ncaa Eligibility Center For Transfer Students</a></li>
+													<li class="list-group-item"><a href="/ncaa-division-1-eligibility-clock.html">Ncaa Division 1 Eligibility Clock</a></li>
+													<li class="list-group-item"><a href="/ncaa-division-2-initial-eligibility.html">Ncaa Division 2 Initial Eligibility</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-center-final-transcript.html">Ncaa Eligibility Center Final Transcript</a></li>
+													<li class="list-group-item"><a href="/ncaa-eligibility-and-dual-enrollment.html">Ncaa Eligibility And Dual Enrollment</a></li>
+													<li class="list-group-item"><a href="/ncaa-division-1-and-2-eligibility-requirements.html">Ncaa Division 1 And 2 Eligibility Requirements</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>When Can Someone With Covid Symptoms Return To Work - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "When Can Someone With Covid Symptoms Return To Work",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/63/57/b7/6357b703b53191a8ff8ebdbb859d226d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=when+can+someone+with+covid+symptoms+return+to+work",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>When Can Someone With Covid Symptoms Return To Work</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">But Covid-19 patients who rush back to work could find. Most providers are recommending that you wait at least a week after your symptoms have markedly improved before resuming exercise but it can be closer to two to three weeks for those who have. Learn when to start and end quarantine. <br>				
+			</p>
+										<a class="badge badge-primary" href="/my-wife-physically-and-verbally-abuses-me.html">my wife physically and verbally abuses me</a>
+											<a class="badge badge-info" href="/my-wife-quotes-in-hindi.html">my wife quotes in hindi</a>
+											<a class="badge badge-primary" href="/my-wife-refuses-to-work-full-time.html">my wife refuses to work full time</a>
+											<a class="badge badge-primary" href="/my-wife-passed-away-what-do-i-do.html">my wife passed away what do i do</a>
+											<a class="badge badge-primary" href="/my-wife-wont-let-me-see-my-daughter.html">my wife wont let me see my daughter</a>
+											<a class="badge badge-dark" href="/my-wife-picture-quotes.html">my wife picture quotes</a>
+											<a class="badge badge-success" href="/my-wife-said-you-may-want-to-marry-me.html">my wife said you may want to marry me</a>
+											<a class="badge badge-info" href="/my-wife-tested-positive-for-covid-should-i-go-to-work.html">my wife tested positive for covid should i go to work</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to pay a visit to the right blog.  Our site gives you hints for seeing the highest quality video and picture content, search and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this movie for you to view.  It is also possible to bring about supporting this website by sharing videos and images that you like on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/4f/1c/a34f1cf44d63b199cec8c3c26da28084.png" data-lightbox="roadtrip" data-title="Pin On Diabetes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/4f/1c/a34f1cf44d63b199cec8c3c26da28084.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvscg4X54nTD4heLndgQlFbpQC9ImB28A3Fw';" alt="Pin On Diabetes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Diabetes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/f7/b6/bef7b65d13e313b7a67075cce83870f3.png" data-lightbox="roadtrip" data-title="Symptom Duration And Risk Factors For Delayed Return To Usual In 2020 Chronic Condition Risk Factors Medical Conditions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/f7/b6/bef7b65d13e313b7a67075cce83870f3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUwntF7RWTv4NQwouXk8KYvziuW4IwbrE2DA';" alt="Symptom Duration And Risk Factors For Delayed Return To Usual In 2020 Chronic Condition Risk Factors Medical Conditions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Symptom Duration And Risk Factors For Delayed Return To Usual In 2020 Chronic Condition Risk Factors Medical Conditions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/96/7c/9e967caf0245ce0cd2d740d490fd88e6.png" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/96/7c/9e967caf0245ce0cd2d740d490fd88e6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX9vcXTQ7Rm0HJ6v7Hd0gFxcj7f9BT9243Lg';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f1/be/b3/f1beb3ef8475f4e15eb17b88115a2af0.jpg" data-lightbox="roadtrip" data-title="Pin On Mrs Brady S Class">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f1/be/b3/f1beb3ef8475f4e15eb17b88115a2af0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1zsAFJ8K3CPmQRsXZFW7iy_C1aFCpORWbYg';" alt="Pin On Mrs Brady S Class">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mrs Brady S Class</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/e3/2c/94e32cec9dac2e02332136d7c7b59458.png" data-lightbox="roadtrip" data-title="Jessica Rabbit On Twitter Cold Or Allergies Allergy Cough Runny Nose">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/e3/2c/94e32cec9dac2e02332136d7c7b59458.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0KO5_zy-oI4Ne9sp4vx1PNCGjYBIVR61eAQ';" alt="Jessica Rabbit On Twitter Cold Or Allergies Allergy Cough Runny Nose">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jessica Rabbit On Twitter Cold Or Allergies Allergy Cough Runny Nose</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/81/a1/7c81a17bbd5725f74f014932d665a312.jpg" data-lightbox="roadtrip" data-title="How To Tell If Someone Has A Concussion A3 Size Workplace Safety Poster Health And Safety Poster Safety Posters Workplace Safety">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/81/a1/7c81a17bbd5725f74f014932d665a312.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvcGlPXwwjVwBkS-Vu3JSLuF_b0jfxHtGvtg';" alt="How To Tell If Someone Has A Concussion A3 Size Workplace Safety Poster Health And Safety Poster Safety Posters Workplace Safety">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Tell If Someone Has A Concussion A3 Size Workplace Safety Poster Health And Safety Poster Safety Posters Workplace Safety</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/7c/81/a1/7c81a17bbd5725f74f014932d665a312.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvcGlPXwwjVwBkS-Vu3JSLuF_b0jfxHtGvtg';" alt="How To Tell If Someone Has A Concussion A3 Size Workplace Safety Poster Health And Safety Poster Safety Posters Workplace Safety">
+										<div class="card-body">
+						<h3 class="h5"><b>Heres what the CDC says about returning to normal life --which includes going back to work.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>When can someone with covid symptoms return to work</strong>. 
+								
+																	In total the UK now has a category of 407 million doses of Covid vaccines the majority of which were bought last year in the hope at least one vaccine candidate would be proven to work. 
+																	People who are severely ill with COVID-19 might need to stay home longer than 10 days and up to 20 days after symptoms first appeared. 
+																	As the coronavirus death toll rises the UK is also seeing lots of people beating Covid-19 amid the ongoing unprecedented health crisis. 
+																	See advice for cleaning workplaces on GOVUK. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you have had a serious illness and have persistent fatigue then this may be too fast. 
+																	For those with symptoms at least 72 hours need to have passed since recovery which the CDC defines as resolution of fever without the use of fever-reducing medications and improvement in. 
+																	Four days after your symptoms are completely gone is better than just three days. 
+																	While Long Covid is not yet a formal diagnosis it is likely that as more research is conducted it could be recognised as a long term health condition and may ultimately qualify as a disability under the Equality Act 2010. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn when you can be around others after being sick. 
+																	Some people report needing additional care for as much as 6 months after their initial. 
+																	Office for National Statistics testing shows that fewer than half of people testing positive for coronavirus had any symptoms at all with cough the most common at 30 in England. 
+																	If you remain in good health and feel like you can work you can go back on the 11th day. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Talk to your healthcare provider for more information. 
+																	Covid vaccination campaigns are now under way in the UK and across the world. 
+																	For example attending work two days a week for the first week three days a week on the second and third week four days a week on the fourth and fifth weeks and full time in week six. 
+																	Quarantine keeps someone who might have been exposed to the virus away from others. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A range of vaccines is being used to reduce peoples chances of getting sick needing hospital treatment or dying. 
+																	Return to work no earlier than 10 days from symptom onset provided clinical improvement has occurred and they have been afebrile not feverish without medication for 48 hours and they are. 
+																	If you think or know you had Covid-19 and had symptoms then you can return to work when you meet the. 
+																	Returning to work after quarantine or isolation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sometimes described as long-haulers these people cycle through the symptoms of COVID-19 for weeks on end. 
+																	529 comments 1 video. 
+																	Check if you have coronavirus symptoms. 
+																	Occupational health programs and public health officials making decisions about return to work for healthcare personnel HCP with confirmed SARS-CoV-2 infection or who have suspected SARS-CoV-2 infection eg developed symptoms of COVID-19 but were never tested for SARS-CoV-2. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cases of reinfection of COVID-19 have been reported but are rare. 
+																	Find out what to do next and if you can look after yourself at home or need to get medical help. 
+																	Similarly if you can give yourself even more time to rest before returning to work try to do so. 
+																	Rayner suggests this may need to begin with as little as two hours a week. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you develop symptoms during the isolation period however you must self isolate for another 10 days. 
+																	Persons who are severely immunocompromised may require testing to determine when they can be around others. 
+																	Isolation separates someone who is infected with the virus from others. 
+																	In some cases at the very least more flexibility will be required because a standard four to six-week return may not be enough to successfully reintegrate someone with long Covid without relapse. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If staff have contact at work with someone who has coronavirus. 
+																	HCP with symptoms of COVID-19 should be prioritized for viral testing with approved nucleic. 
+																	If someone with coronavirus comes to work If someone with coronavirus comes to work the workplace does not necessarily have to close but they should follow cleaning advice. 
+																	Who this is for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some people are still experiencing these ongoing symptoms as long as six months or more after contracting COVID-19. 
+																	Typically a graded return to work takes place over six weeks. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/94/79/1d9479250737231433452c645bb77922.png" data-lightbox="roadtrip" data-title="Contact App Infographic Google Search Tracking App App Return To Work">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/94/79/1d9479250737231433452c645bb77922.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXXoPueTd5grXF8i8EFflw6MJ4wejkaBgk7A';" alt="Contact App Infographic Google Search Tracking App App Return To Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Contact App Infographic Google Search Tracking App App Return To Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/41/60/cb4160a1497c2129ef5763fb392468b8.jpg" data-lightbox="roadtrip" data-title="Pin On Infographics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/41/60/cb4160a1497c2129ef5763fb392468b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPhVGuEUqlZnQnNhxHCEeC1b7PCadd_0lg0Q';" alt="Pin On Infographics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Infographics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/d5/12/92d512d98f9cd8e09b7db0a0875bb00b.jpg" data-lightbox="roadtrip" data-title="Pin On Beaumont Infographics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/d5/12/92d512d98f9cd8e09b7db0a0875bb00b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDsBpDDzMDTStRWG0KDidkFgtxJZxxS2j6EA';" alt="Pin On Beaumont Infographics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Beaumont Infographics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/7c/39/7d7c39db1ef792e66c0771683606c80b.jpg" data-lightbox="roadtrip" data-title="Too Sick To Work How To Tell Ochsner Health Going Back To School Return To Work Body Ache">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/7c/39/7d7c39db1ef792e66c0771683606c80b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOj2_9WikEzHYrEyA4ciXRl8ZaDTUaftNo7g';" alt="Too Sick To Work How To Tell Ochsner Health Going Back To School Return To Work Body Ache">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Too Sick To Work How To Tell Ochsner Health Going Back To School Return To Work Body Ache</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8a/57/6b/8a576b42ade6da4b97d2640482df02f3.jpg" data-lightbox="roadtrip" data-title="Pin On Health And Safety Poster">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8a/57/6b/8a576b42ade6da4b97d2640482df02f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJc14ZuVl2BkJjpk3sF1huI8S0r3lD8FXriQ';" alt="Pin On Health And Safety Poster">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health And Safety Poster</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a4/5b/7c/a45b7c415125a9d1cd1cb8ce8501b924.jpg" data-lightbox="roadtrip" data-title="Welcome To Emergency Management S Home Page Nassau County Official Website In 2020 Emergency Management Nassau County Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a4/5b/7c/a45b7c415125a9d1cd1cb8ce8501b924.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX9EU2HfwAtWU7CYvgTIy_pz2LqdJaNyGgYA';" alt="Welcome To Emergency Management S Home Page Nassau County Official Website In 2020 Emergency Management Nassau County Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welcome To Emergency Management S Home Page Nassau County Official Website In 2020 Emergency Management Nassau County Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/78/51/de7851150d34cdca7e0271cad989dbb7.png" data-lightbox="roadtrip" data-title="Reopening Business U S Chamber Of Commerce Return To Work Distance Learning This Or That Questions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/78/51/de7851150d34cdca7e0271cad989dbb7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRURE4o6y1jAyDilK_2y0HDCwV7GAtRx4LCQg';" alt="Reopening Business U S Chamber Of Commerce Return To Work Distance Learning This Or That Questions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reopening Business U S Chamber Of Commerce Return To Work Distance Learning This Or That Questions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/d5/64/22d564e196900bc3ddc7b8ab887fe30f.png" data-lightbox="roadtrip" data-title="Pin On Work Fact Checking Resources Media Literacy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/d5/64/22d564e196900bc3ddc7b8ab887fe30f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiVHU2zcEhTOzcYpLO8gUPKVr7aW-_YzHB1g';" alt="Pin On Work Fact Checking Resources Media Literacy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Work Fact Checking Resources Media Literacy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/98/66/b898666aaec68d5a829b782c5e234d42.png" data-lightbox="roadtrip" data-title="Here S How To Tell If Your Child Is Too Sick For School And When It S Ok For Them To Return School Nurse Office School Health School Nurse Office Decorations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/98/66/b898666aaec68d5a829b782c5e234d42.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRUg27-z3ua2faq2PWUmpym-dC8vmnS2riCw';" alt="Here S How To Tell If Your Child Is Too Sick For School And When It S Ok For Them To Return School Nurse Office School Health School Nurse Office Decorations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S How To Tell If Your Child Is Too Sick For School And When It S Ok For Them To Return School Nurse Office School Health School Nurse Office Decorations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4e/c6/e6/4ec6e6a8af1a90ba730db04ec7ae74da.jpg" data-lightbox="roadtrip" data-title="Pin On Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4e/c6/e6/4ec6e6a8af1a90ba730db04ec7ae74da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4g1-eNgWbKWgSzkdlsiknwgOAElDwjDFuIQ';" alt="Pin On Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/57/b7/6357b703b53191a8ff8ebdbb859d226d.jpg" data-lightbox="roadtrip" data-title="Pin On Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/57/b7/6357b703b53191a8ff8ebdbb859d226d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIHNrR55hpWYDSFi6Yk9bEI_zyG6BT1JJaOQ';" alt="Pin On Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d0/7e/3c/d07e3c7ea7d254934dd48fa1c7d9e422.jpg" data-lightbox="roadtrip" data-title="Pin By Beth Day On Back To School In 2020 Kids Hygiene Back To School Hand Hygiene">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d0/7e/3c/d07e3c7ea7d254934dd48fa1c7d9e422.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1M42lsKqr_dTo1DlkwieZUlf7AKj_Y9J9og';" alt="Pin By Beth Day On Back To School In 2020 Kids Hygiene Back To School Hand Hygiene">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Beth Day On Back To School In 2020 Kids Hygiene Back To School Hand Hygiene</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/06/6f/bf/066fbf648b50c04abe3389df4e2944b8.jpg" data-lightbox="roadtrip" data-title="Pin On Copd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/06/6f/bf/066fbf648b50c04abe3389df4e2944b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuo1fLK0gXTuLLKVbW1Hcpj4x9QZjevBqJjQ';" alt="Pin On Copd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Copd</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/navy-in-san-diego.html">Navy In San Diego</a></li>
+													<li class="list-group-item"><a href="/navy-in-japanese-language.html">Navy In Japanese Language</a></li>
+													<li class="list-group-item"><a href="/navy-military-records-search-free.html">Navy Military Records Search Free</a></li>
+													<li class="list-group-item"><a href="/navy-phone-case-xr.html">Navy Phone Case Xr</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-fleet-and-family-service.html">Navy San Diego Fleet And Family Service</a></li>
+													<li class="list-group-item"><a href="/navy-in-japan-reddit.html">Navy In Japan Reddit</a></li>
+													<li class="list-group-item"><a href="/navy-pension-for-spouse.html">Navy Pension For Spouse</a></li>
+													<li class="list-group-item"><a href="/navy-officer-spouse-benefits.html">Navy Officer Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/navy-milpersman-spousal-support.html">Navy Milpersman Spousal Support</a></li>
+													<li class="list-group-item"><a href="/navy-federal-scra-for-spouse.html">Navy Federal Scra For Spouse</a></li>
+													<li class="list-group-item"><a href="/navy-officer-marriage-benefits.html">Navy Officer Marriage Benefits</a></li>
+													<li class="list-group-item"><a href="/navy-reserve-benefits-for-family.html">Navy Reserve Benefits For Family</a></li>
+													<li class="list-group-item"><a href="/navy-lodge-in-san-diego-on-coronado-island.html">Navy Lodge In San Diego On Coronado Island</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-movies.html">Navy San Diego Movies</a></li>
+													<li class="list-group-item"><a href="/navy-man-heartbroken-after-wife-lied.html">Navy Man Heartbroken After Wife Lied</a></li>
+													<li class="list-group-item"><a href="/navy-retirement-spouse-benefits.html">Navy Retirement Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/navy-jobs-for-military-spouses.html">Navy Jobs For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/navy-officer-and-wife.html">Navy Officer And Wife</a></li>
+													<li class="list-group-item"><a href="/navy-mans-heart-breaks-when-wife-lied.html">Navy Mans Heart Breaks When Wife Lied</a></li>
+													<li class="list-group-item"><a href="/navy-retirement-poem-the-watch.html">Navy Retirement Poem The Watch</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mychonny Instagram - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mychonny Instagram",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/68/6b/8b/686b8b2b280604a1117c679a5938f042.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mychonny+instagram",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mychonny Instagram</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Facebook is showing information to help you better understand the purpose of a Page. Showing mychonny photos 1-51 of 51 View. Catch MyChonny on SBS PopAsia radio every every Wednesday from 8PM or subscribe to the podcast. <br>				
+			</p>
+										<a class="badge badge-dark" href="/student-loans-and-spouse-income.html">student loans and spouse income</a>
+											<a class="badge badge-dark" href="/student-loan-spouse-divorce.html">student loan spouse divorce</a>
+											<a class="badge badge-secondary" href="/texas-college-tuition-fee-waivers-for-veterans-dependents.html">texas college tuition fee waivers for veterans dependents</a>
+											<a class="badge badge-light" href="/texas-civil-war-service-records-of-confederate-soldiers.html">texas civil war service records of confederate soldiers</a>
+											<a class="badge badge-warning" href="/swiss-military-hk.html">swiss military hk</a>
+											<a class="badge badge-primary" href="/swiss-military-hanowa-hk.html">swiss military hanowa hk</a>
+											<a class="badge badge-warning" href="/t-http-wwwarchivesgovveteransmilitary-service-records.html">t http wwwarchivesgovveteransmilitary service records</a>
+											<a class="badge badge-info" href="/telos-military-base-hk-droid.html">telos military base hk droid</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to pay a visit to the ideal blog.  Our website gives you suggestions for viewing the highest quality video and picture content, hunt and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie that you see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/84/1b/db841bfa86a09c00a1d7319a29099408.jpg" data-lightbox="roadtrip" data-title="7 817 Likes 65 Comments Dalena Cake On Instagram Hellooo It S Been Awhile And I Ve Missed You All">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/84/1b/db841bfa86a09c00a1d7319a29099408.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ-fef1w5ounHb0f35hzmuwhTHyea7sJBUNQ';" alt="7 817 Likes 65 Comments Dalena Cake On Instagram Hellooo It S Been Awhile And I Ve Missed You All">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 817 Likes 65 Comments Dalena Cake On Instagram Hellooo It S Been Awhile And I Ve Missed You All</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/ce/36/32ce365fb7416936695238b70dfc16db.jpg" data-lightbox="roadtrip" data-title="Pin On Youtubers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/ce/36/32ce365fb7416936695238b70dfc16db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiCDMUVG2YN3fnyXpZyu_zM-qPmOyeBGzHwA';" alt="Pin On Youtubers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Youtubers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/d3/bc/d2/d3bcd26cbe7aa08f44f1debd76d32648.jpg" data-lightbox="roadtrip" data-title="Mychonny Youtube Stars Make Me Smile Youtube">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/d3/bc/d2/d3bcd26cbe7aa08f44f1debd76d32648.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_bPvTDiSFdYhHmIUnqC9viqcjyrjy1eCHmg';" alt="Mychonny Youtube Stars Make Me Smile Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mychonny Youtube Stars Make Me Smile Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/12/aa/4312aa941dad73a8ba99444cb6723de9.jpg" data-lightbox="roadtrip" data-title="Mychonny We Love This Kid Youtube Stars Kpop Funny Youtubers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/12/aa/4312aa941dad73a8ba99444cb6723de9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmR8utyjDocpzzSb-ci4NBtQr8J0oq5uO_Qw';" alt="Mychonny We Love This Kid Youtube Stars Kpop Funny Youtubers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mychonny We Love This Kid Youtube Stars Kpop Funny Youtubers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/30/42/8830427ee2b1ac27ad8c8d024549550c.jpg" data-lightbox="roadtrip" data-title="Pin On Mychonny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/30/42/8830427ee2b1ac27ad8c8d024549550c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyBo3fvYgtMxe4zhzCN2ybZKjog5DtIcMYjQ';" alt="Pin On Mychonny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mychonny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/51/01/a1/5101a13cf663c2b247f789c8b6429e3f.jpg" data-lightbox="roadtrip" data-title="Mychonny Youtube John Luc Mychonny Boy Celebrities Youtube I Movie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/51/01/a1/5101a13cf663c2b247f789c8b6429e3f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnJnPFfGdR2adFzy7f88QSM0bJrJVYJ7ojEw';" alt="Mychonny Youtube John Luc Mychonny Boy Celebrities Youtube I Movie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mychonny Youtube John Luc Mychonny Boy Celebrities Youtube I Movie</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/c1/51/f2/c151f248fce9a27417cfdadd7151c847.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnJnPFfGdR2adFzy7f88QSM0bJrJVYJ7ojEw';" alt="Mychonny Youtube John Luc Mychonny Boy Celebrities Youtube I Movie">
+										<div class="card-body">
+						<h3 class="h5"><b>9 Followers 0 Following 0 Posts - See Instagram photos and videos from mychonny.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mychonny instagram</strong>. 
+								
+																	See actions taken by the people who manage and post content. 
+																	The latest tweets from mychonny. 
+																	In this episode the PM has been kidnapped and the Family must find him before 3PM mychonny liked a video 4 years ago. 
+																	Well she says hiToday we play Whos most likely to and it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MyChonny Podcasts tracks Ep 70. 
+																	Mychonny pic submitted by young_drac_vamp. 
+																	145k Likes 98 Comments - Dalena dalenacake on Instagram. 
+																	Toni Pepperoni submitted by Pucca83. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mychonny pic submitted by young. 
+																	Around May 16th 2021 rough estimate based on current trend. 
+																	Also BONUS VLOG out today. 
+																	1441k Followers 356 Following 326 Posts - See Instagram photos and videos from Dalena dalenacake. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thanks to kiaaustralia for the surprise Drive Day in the new kiaseltos Make. 
+																	1974 Posts - See Instagram photos and videos from mychonny hashtag. 
+																	Toni Pepperoni submitted by Pucca83. 
+																	The latest tweets from mychony. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1069k Followers 65 Following 273 Posts - See Instagram photos and videos from Sugoi Boi lechonny. 
+																	Chonny and Joe reminisce on their fave memories at SBS PopAsia by MyChonny Podcast published on 2017-07-13T004833Z. 
+																	9786 Likes 75 Comments - Dalena dalenacake on Instagram. 
+																	Mychonny pic submitted by young_drac_vamp. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He joined YouTube in March 2008 and as of July 2018 has over 1 million subscribers. 
+																	He has five YouTube channels mychonny yourchonny chonnyday a gaming channel called chobbygame and. 
+																	MYCHONNY Yo what up Immaturity keeps me young - mychonny. 
+																	Toni Pepperoni submitted by Pucca83. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chonnys girlfirend co-hosts and reveals a lot of verrry interesting things about him by MyChonny Podcast published on 2017-07-06T001911Z. 
+																	2574 Followers 332 Following 476 Posts - See Instagram photos and videos from NJBIZ njbiz. 
+																	Its Chonny and Dalena. 
+																	Toni Pepperoni submitted by Pucca83. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	YAYAYY Link in bio. 
+																	This is the last episode of Mychonny Moves In. 
+																	LoL submitted by salt_and_pepper. 
+																	My fave fruit of all time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	January 18 1991 1991-01-18 age 30 better known online as Mychonny is a Melbourne-based Vietnamese-Chinese Australian who makes Asianese videos of himself friends and family. 
+																	Toni Pepperoni submitted by Pucca83. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/96/20/ef96206f369b35d0ee0408e0e478bc1b.jpg" data-lightbox="roadtrip" data-title="When An Asian Visits An Aussie Family Ft Mychonny Asian Kids Family Video Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/96/20/ef96206f369b35d0ee0408e0e478bc1b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDZUfj2KK2lJ1VY2k_-wbiaKe9--CFswaDbQ';" alt="When An Asian Visits An Aussie Family Ft Mychonny Asian Kids Family Video Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When An Asian Visits An Aussie Family Ft Mychonny Asian Kids Family Video Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/ad/80/09ad802a74a9853a69486e10dfb317b7.jpg" data-lightbox="roadtrip" data-title="Pin On Body Goals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/ad/80/09ad802a74a9853a69486e10dfb317b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdpY2TM3ZCYgwjr1dJAy3R1WbAvc54gT9a3g';" alt="Pin On Body Goals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Body Goals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/18/cc/d218ccc67f136cc311479807fd18a1c9.jpg" data-lightbox="roadtrip" data-title="Dusty Rose Dusty Rose Hair Dusty Rose Hair Color Rose Blonde Hair">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/18/cc/d218ccc67f136cc311479807fd18a1c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFAKkjCSkMWOu_0Sp2S-OaU44yJySg0kmS5g';" alt="Dusty Rose Dusty Rose Hair Dusty Rose Hair Color Rose Blonde Hair">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dusty Rose Dusty Rose Hair Dusty Rose Hair Color Rose Blonde Hair</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/51/f2/c151f248fce9a27417cfdadd7151c847.jpg" data-lightbox="roadtrip" data-title="Chonny Ehhhhh Kpop Memes Funny Kpop Memes Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/51/f2/c151f248fce9a27417cfdadd7151c847.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQM5TpTnSQzfBSVxAcXr-7ak5unS2bGKsvTA';" alt="Chonny Ehhhhh Kpop Memes Funny Kpop Memes Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chonny Ehhhhh Kpop Memes Funny Kpop Memes Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/6e/32/696e324b9d5625d092f4505f8b3ba215.jpg" data-lightbox="roadtrip" data-title="The Difference Between Wogs Aussies Holidays Youtube Aussie Holiday Mens Tshirts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/6e/32/696e324b9d5625d092f4505f8b3ba215.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTSUaaX02RBs7Y0TosMgTOr74E4jo5G2wq4Q';" alt="The Difference Between Wogs Aussies Holidays Youtube Aussie Holiday Mens Tshirts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Difference Between Wogs Aussies Holidays Youtube Aussie Holiday Mens Tshirts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/bd/9f/c9bd9fa38c05c879a221572ba619f33b.jpg" data-lightbox="roadtrip" data-title="Lil Moco S Car Shop Playlist Car Shop Lil People">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/bd/9f/c9bd9fa38c05c879a221572ba619f33b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToR6h_yZmQ3ywi4EGBdRJ_x07T3oC0k_BKNw';" alt="Lil Moco S Car Shop Playlist Car Shop Lil People">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lil Moco S Car Shop Playlist Car Shop Lil People</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/a5/aa/faa5aaad3aae32791f8f6502d997b5f6.jpg" data-lightbox="roadtrip" data-title="Pin On My Magic How To Super Easy Witch Witchy Spells">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/a5/aa/faa5aaad3aae32791f8f6502d997b5f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPhBnFgLGic25ONL0tUmmNX5tjc64zPjOmWg';" alt="Pin On My Magic How To Super Easy Witch Witchy Spells">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Magic How To Super Easy Witch Witchy Spells</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/1b/47/241b47d36bea3291d623b3ee87c148ec.jpg" data-lightbox="roadtrip" data-title="Pin On Pyew Iyeriye And Cutiepiemarzia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/1b/47/241b47d36bea3291d623b3ee87c148ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzKXBSmWD83bDX0pKqFifJlG_Zjko246IJPA';" alt="Pin On Pyew Iyeriye And Cutiepiemarzia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pyew Iyeriye And Cutiepiemarzia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/d4/10/49/d41049bb2d8f377a98d19c8f367d5f94.jpg" data-lightbox="roadtrip" data-title="It Has Begun Bananapocalypse Yomyomf Youoffendmeyouoffendmyfamily Ryan Higa Talk Show Lol">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/d4/10/49/d41049bb2d8f377a98d19c8f367d5f94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9EKAIkt-PMtxRWRRAusVpMd0YClVANh9YBw';" alt="It Has Begun Bananapocalypse Yomyomf Youoffendmeyouoffendmyfamily Ryan Higa Talk Show Lol">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">It Has Begun Bananapocalypse Yomyomf Youoffendmeyouoffendmyfamily Ryan Higa Talk Show Lol</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/4e/a5/2f4ea5489b6aca56a3e0a4a477cb3bb3.jpg" data-lightbox="roadtrip" data-title="Wogs Visit Aussies On Australia Day Australia Day Happy Australia Day Aussie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/4e/a5/2f4ea5489b6aca56a3e0a4a477cb3bb3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsb3ewxW2iFbtowod9Hhl_DBdxH7H9ZlcIbw';" alt="Wogs Visit Aussies On Australia Day Australia Day Happy Australia Day Aussie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wogs Visit Aussies On Australia Day Australia Day Happy Australia Day Aussie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/1e/55/d61e55c3fb94d48983ccb56bf3f14401.jpg" data-lightbox="roadtrip" data-title="Spookiest Game Ever Spooky Games Pewdiepie Vodafone Logo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/1e/55/d61e55c3fb94d48983ccb56bf3f14401.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK-RDHWMeMAhqlowSpgZu9ukqV5KV0d78ECQ';" alt="Spookiest Game Ever Spooky Games Pewdiepie Vodafone Logo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spookiest Game Ever Spooky Games Pewdiepie Vodafone Logo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/6b/8b/686b8b2b280604a1117c679a5938f042.jpg" data-lightbox="roadtrip" data-title="Close Up Daryl Dixon Norman Reedus Norman">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/6b/8b/686b8b2b280604a1117c679a5938f042.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-WS2YQmuty0eGaTT07oQdEjs01zhyyGwUkQ';" alt="Close Up Daryl Dixon Norman Reedus Norman">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Close Up Daryl Dixon Norman Reedus Norman</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/d9/a3/b5d9a36a8ddbcbc9d0c3bbd3294d1177.jpg" data-lightbox="roadtrip" data-title="Skelanimals Quote Tattoos Girls Phrase Tattoos Elephant Tattoos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/d9/a3/b5d9a36a8ddbcbc9d0c3bbd3294d1177.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzoaIvoM5Ge6-hNAEz_lh4hsMCtjE9X2Hj-w';" alt="Skelanimals Quote Tattoos Girls Phrase Tattoos Elephant Tattoos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Skelanimals Quote Tattoos Girls Phrase Tattoos Elephant Tattoos</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/my-husband-tamil-meaning.html">My Husband Tamil Meaning</a></li>
+													<li class="list-group-item"><a href="/my-husband-wants-a-divorce-will-he-change-his-mind.html">My Husband Wants A Divorce Will He Change His Mind</a></li>
+													<li class="list-group-item"><a href="/my-husband-wants-a-divorce-and-i-dont.html">My Husband Wants A Divorce And I Dont</a></li>
+													<li class="list-group-item"><a href="/my-husband-tested-positive-for-covid-what-do-i-do.html">My Husband Tested Positive For Covid What Do I Do</a></li>
+													<li class="list-group-item"><a href="/my-husband-wants-a-divorce-every-time-we-fight.html">My Husband Wants A Divorce Every Time We Fight</a></li>
+													<li class="list-group-item"><a href="/my-husband-wants-a-divorce-after-one-year-of-marriage.html">My Husband Wants A Divorce After One Year Of Marriage</a></li>
+													<li class="list-group-item"><a href="/my-husband-sweet-quotes.html">My Husband Sweet Quotes</a></li>
+													<li class="list-group-item"><a href="/my-husband-undermines-me-all-the-time.html">My Husband Undermines Me All The Time</a></li>
+													<li class="list-group-item"><a href="/my-husband-wants-a-divorce-but-i-love-him.html">My Husband Wants A Divorce But I Love Him</a></li>
+													<li class="list-group-item"><a href="/my-husband-wants-a-divorce-because-i-am-infertile.html">My Husband Wants A Divorce Because I Am Infertile</a></li>
+													<li class="list-group-item"><a href="/my-husband-wants-to-travel-during-covid.html">My Husband Wants To Travel During Covid</a></li>
+													<li class="list-group-item"><a href="/my-husband-verbally-abuses-me-everyday.html">My Husband Verbally Abuses Me Everyday</a></li>
+													<li class="list-group-item"><a href="/my-husband-refuses-to-work-what-should-i-do.html">My Husband Refuses To Work What Should I Do</a></li>
+													<li class="list-group-item"><a href="/my-husband-shouts-at-me-islam.html">My Husband Shouts At Me Islam</a></li>
+													<li class="list-group-item"><a href="/my-husband-wants-a-divorce-but-hasnt-filed.html">My Husband Wants A Divorce But Hasnt Filed</a></li>
+													<li class="list-group-item"><a href="/my-husband-wants-a-divorce-out-of-nowhere.html">My Husband Wants A Divorce Out Of Nowhere</a></li>
+													<li class="list-group-item"><a href="/my-husband-rejects-me-in-bed.html">My Husband Rejects Me In Bed</a></li>
+													<li class="list-group-item"><a href="/my-husband-wants-a-divorce-what-do-i-do.html">My Husband Wants A Divorce What Do I Do</a></li>
+													<li class="list-group-item"><a href="/my-husband-tested-positive-and-i-tested-negative-for-covid.html">My Husband Tested Positive And I Tested Negative For Covid</a></li>
+													<li class="list-group-item"><a href="/my-husband-says-he-has-fallen-out-of-love-with-me.html">My Husband Says He Has Fallen Out Of Love With Me</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

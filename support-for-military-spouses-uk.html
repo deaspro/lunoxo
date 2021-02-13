@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Support For Military Spouses Uk - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Support For Military Spouses Uk",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/736x/64/0e/1d/640e1ded5a6d861820edb02476439741.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=support+for+military+spouses+uk",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Support For Military Spouses Uk</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Finding her way as a military spouse. RFS is a specialist recruitment company focussed on providing support advice and ultimately work for military spouses in the UK. Support Military Spouses mission is to honor assist encourage spouses who keep the home fires burning as their loved ones defend our freedom. <br>				
+			</p>
+										<a class="badge badge-danger" href="/mychart-grady.html">mychart grady</a>
+											<a class="badge badge-primary" href="/mychart-elmhurst.html">mychart elmhurst</a>
+											<a class="badge badge-info" href="/mycarrier-futuresg.html">mycarrier futuresg</a>
+											<a class="badge badge-warning" href="/mycarriertms.html">mycarriertms</a>
+											<a class="badge badge-success" href="/mychart-jmu.html">mychart jmu</a>
+											<a class="badge badge-info" href="/mycarx431com-crp129.html">mycarx431com crp129</a>
+											<a class="badge badge-light" href="/mycarrier-front.html">mycarrier front</a>
+											<a class="badge badge-light" href="/mychart-login-mount-sinai.html">mychart login mount sinai</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to visit the right site.  Our website provides you with suggestions for viewing the highest quality video and image content, hunt and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie for you to see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/38/f3/9c/38f39c70fa6bf448ef27228da7bb2880.jpg" data-lightbox="roadtrip" data-title="21 Best Deployment Quotes For Military Spouses And Significant Others Deployment Quotes Military Wife Quotes Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/38/f3/9c/38f39c70fa6bf448ef27228da7bb2880.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLrRyQCvVQSZ-oyuFPkaqQZlA-kVhE70YEMg';" alt="21 Best Deployment Quotes For Military Spouses And Significant Others Deployment Quotes Military Wife Quotes Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">21 Best Deployment Quotes For Military Spouses And Significant Others Deployment Quotes Military Wife Quotes Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/95/be/bb95bec9719255e1630e4562527e029b.png" data-lightbox="roadtrip" data-title="Military Spouses Are A Unique Breed We Are One Of The Support Systems Behind America S Military We Deal Wit Military Wife Life Military Spouse Navy Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/95/be/bb95bec9719255e1630e4562527e029b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo_cQ9D0o8n337mqQW6HC-E0oRmMVCq9M-nA';" alt="Military Spouses Are A Unique Breed We Are One Of The Support Systems Behind America S Military We Deal Wit Military Wife Life Military Spouse Navy Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouses Are A Unique Breed We Are One Of The Support Systems Behind America S Military We Deal Wit Military Wife Life Military Spouse Navy Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/bf/c2/81bfc2c33b93875bd9aa1de2b8c4d0a5.jpg" data-lightbox="roadtrip" data-title="Mylifebelikehooah Military Quotes Army Wife Life Military Love Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/bf/c2/81bfc2c33b93875bd9aa1de2b8c4d0a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14dPPY9dkknjiyJdB4A92BQokJCQpUXU3jg';" alt="Mylifebelikehooah Military Quotes Army Wife Life Military Love Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mylifebelikehooah Military Quotes Army Wife Life Military Love Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d7/47/53/d74753851efc0a3199ec0bd740b4c511.jpg" data-lightbox="roadtrip" data-title="To The Military Spouse That Didn T Marry A Service Member Military Spouse Military Spouse Support Soldier Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d7/47/53/d74753851efc0a3199ec0bd740b4c511.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxwh3Bm7mXpAPC-s7VMoropjJRAscr0NMyyw';" alt="To The Military Spouse That Didn T Marry A Service Member Military Spouse Military Spouse Support Soldier Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">To The Military Spouse That Didn T Marry A Service Member Military Spouse Military Spouse Support Soldier Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/b8/a2/1cb8a22edd3e32eeef387f2658cb8629.jpg" data-lightbox="roadtrip" data-title="Pin On My Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/b8/a2/1cb8a22edd3e32eeef387f2658cb8629.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRydLU0x46Ndn0WPN-Au1AN4ss3kbJl3yGy6Q';" alt="Pin On My Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/5f/5f/9f5f5f3d0e6e5ca878405b2fa89bf40a.jpg" data-lightbox="roadtrip" data-title="Small Businesses Run By Military Spouses Homegrown Happiness Co Military Spouse Opening Your Own Business Small Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/5f/5f/9f5f5f3d0e6e5ca878405b2fa89bf40a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6D7G_YmztDgJffA7JLdbw-ynkrkLBCJSIOw';" alt="Small Businesses Run By Military Spouses Homegrown Happiness Co Military Spouse Opening Your Own Business Small Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Small Businesses Run By Military Spouses Homegrown Happiness Co Military Spouse Opening Your Own Business Small Business</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/bb/95/be/bb95bec9719255e1630e4562527e029b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6D7G_YmztDgJffA7JLdbw-ynkrkLBCJSIOw';" alt="Small Businesses Run By Military Spouses Homegrown Happiness Co Military Spouse Opening Your Own Business Small Business">
+										<div class="card-body">
+						<h3 class="h5"><b>By leading the discussion in agile working we remain committed to working with businesses to change the way they approach their recruitment.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Support for military spouses uk</strong>. 
+								
+																	The group was all about a network of women who totally and utterly got it. 
+																	AWS-HQ-IATmoduk SSAFA are a military charity who support Service families and can be contacted via the SSAFA Forcesline. 
+																	Please see a list of support you could receive here. 
+																	To contact RfS email. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	01904 882053 or 882054 or email. 
+																	The new scheme will provide advice from specially trained career coaches. 
+																	Frequent moves relatively isolated locations and employer reluctance often impact the ability for military spouses and partners to build normal lives and careers. 
+																	You can learn more about mental health and seek nearby support. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	RFEAs Families Employment Programme supports civilian spouses and partners of serving and ex-Forces personnel on their journey into employment. 
+																	Serving Military Families With Gods Love. 
+																	Personalised career support for hundreds of military spouses Hundreds of partners of UK Armed Forces personnel will receive personalised career support as part of a targeted training scheme. 
+																	Families can offer considerable support to those serving or those who have served in the armed forces. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Armed Forces Covenant can support spousespartners in their career progression. 
+																	Defence Medical Welfare Service DMWS The DMWS is a registered charity that works for the MoD and with other charities to provide practical and emotional support to military personnel their families and other entitled civilians when theyre in hospital rehabilitation. 
+																	There are many organisations that offer free employment and financial support for Armed Forces spouses partners. 
+																	Find our address telephone number and key email addresses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Issued by Recruit for Spouses RfS an award-winning independent social enterprise run largely by people whose spouses are serving in the Armed Forces that helps military spouses into the workplace. 
+																	Each of the 3 services has its own Welfare Support and Information Service Teams and Defence Medical Welfare Service DMWS. 
+																	However charities and support groups recognise that military life including regular relocations can impact on the social connections and the support received through those connections that help families cope during times of stress and other challenges to mental wellbeing. 
+																	The Army Families Federation AFF believes that in the UK there are four main areas that could impact on the wellbeing of spouses and military families and raise the risk of illnesses such as depression. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While Tom was in Afghanistan Victoria joined a group called the Wifles a support group made up of other wives and girlfriends of the battalion who were out on deployment. 
+																	They knew what to say and what not to say she says. 
+																	Its available to all spouses and partners of any serving or recently discharged. 
+																	Various services and organisations provide support for the mental wellbeing of spouses and dependants of service and ex-Service people. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many experience challenges finding jobs and barriers to returning to work after breaks. 
+																	The SES helped military spouses search for and find employment by providing training grants of up to 879 and specialist career support. 
+																	We are open 0900 - 1730 Monday to Friday. 
+																	RBLI Lifeworks is a fully funded support service to help military spouses and partners get the job they want. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Network many organisations have set up a network for those staff members that have a connections to the Military community. 
+																	Ministry of Defence Veterans UK Veterans Advisory and Pensions Committees Defence. 
+																	Support services for military and defence personnel and their families. 
+																	The NHS Choices website can help you find specialist advice for a range of issues. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can talk to your GP who can refer you to a specialist. 
+																	The pilot was open to 195 spouses of RAF personnel across 22 bases in the UK and 240 spouses of Joint Forces Command across four locations in Cyprus. 
+																	Hundreds of spouses and partners of UK Armed Forces personnel will receive personalised career support as part of a targeted training scheme the Minister for Defence People and Veterans Johnny. 
+																	Call us to speak to one of our Forcesline advisors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This provides support within the workplace and also gives the organisation the opportunity to raise new ideas and suggest possible future projects that are specific to the Military community. 
+																	The Army Welfare Service can also provide support and to contact the AWS Intake and Assessment Teams IAT call. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fb/5a/6b/fb5a6bb3fea3cf05d7850579a4104e98.jpg" data-lightbox="roadtrip" data-title="Married To The Military Military Spouse Support Military Spouse Navy Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fb/5a/6b/fb5a6bb3fea3cf05d7850579a4104e98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3qTFTFcQ3_zNSuafEI0xloYDLlxjdO6CMow';" alt="Married To The Military Military Spouse Support Military Spouse Navy Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Married To The Military Military Spouse Support Military Spouse Navy Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/9a/7f/709a7f5a5987c95724a65f7358f56a70.jpg" data-lightbox="roadtrip" data-title="Memes That Explain Exactly What Life As A Military Spouse Is Really Like Military Spouse Military Spouse Support Soldier Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/9a/7f/709a7f5a5987c95724a65f7358f56a70.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-2RUXdfxIP-HjFJYHhn_VhmYYvedjObDIOA';" alt="Memes That Explain Exactly What Life As A Military Spouse Is Really Like Military Spouse Military Spouse Support Soldier Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Memes That Explain Exactly What Life As A Military Spouse Is Really Like Military Spouse Military Spouse Support Soldier Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/34/7d/fc347d0c8d81c395e4700879e6974af7.jpg" data-lightbox="roadtrip" data-title="Military Spouses Military Spouse Military Support Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/34/7d/fc347d0c8d81c395e4700879e6974af7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB8sXAM_gg4HsVJ1QQ90aW2cKFb3c8dNOYmw';" alt="Military Spouses Military Spouse Military Support Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouses Military Spouse Military Support Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/79/0b/70790be3db34913588cda827825a9561.jpg" data-lightbox="roadtrip" data-title="23 Memes That Explain What Going Through A Deployment Is Really Like Military Wife Quotes Military Wife Life Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/79/0b/70790be3db34913588cda827825a9561.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWsMQ2NWRdFwScAzvOat5ZUtA7FIemqU4fGA';" alt="23 Memes That Explain What Going Through A Deployment Is Really Like Military Wife Quotes Military Wife Life Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">23 Memes That Explain What Going Through A Deployment Is Really Like Military Wife Quotes Military Wife Life Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/4e/d2/ef4ed22834d6cc17261c2337f7d832c2.jpg" data-lightbox="roadtrip" data-title="How Can We Support Military Kids Seasoned Spouse Military Kids Military Spouse Support Military Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/4e/d2/ef4ed22834d6cc17261c2337f7d832c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC0-7RD1mMvrezI3DYGDMiSwUf-Pac49fF5w';" alt="How Can We Support Military Kids Seasoned Spouse Military Kids Military Spouse Support Military Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Can We Support Military Kids Seasoned Spouse Military Kids Military Spouse Support Military Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/44/05/864405a2fa31381ca4a7ee94a09788a2.jpg" data-lightbox="roadtrip" data-title="I Could Never Do It Soldier Wife Military Wife Life Military Spouse Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/44/05/864405a2fa31381ca4a7ee94a09788a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv6SID8M28rbIaTjxfx9eBrfv28rk3E0VFvw';" alt="I Could Never Do It Soldier Wife Military Wife Life Military Spouse Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Could Never Do It Soldier Wife Military Wife Life Military Spouse Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/1c/11/6d1c117f186590bf4e6c7cc489adfdfd.png" data-lightbox="roadtrip" data-title="Are Soldiers Faithful During Deployment Military Divorce Cheating Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/1c/11/6d1c117f186590bf4e6c7cc489adfdfd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdXd_cMxD0m7x5ZBZ8z_wienZqAxk8AZ4TMQ';" alt="Are Soldiers Faithful During Deployment Military Divorce Cheating Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are Soldiers Faithful During Deployment Military Divorce Cheating Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/64/0e/1d/640e1ded5a6d861820edb02476439741.jpg" data-lightbox="roadtrip" data-title="What You Might Miss The Most During A Deployment Military Spouse Support Deployment Soldier Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/64/0e/1d/640e1ded5a6d861820edb02476439741.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfB8yYT-GO-C9_R-unW_7OjWCwaMCCPMLucA';" alt="What You Might Miss The Most During A Deployment Military Spouse Support Deployment Soldier Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What You Might Miss The Most During A Deployment Military Spouse Support Deployment Soldier Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/c6/5e/17c65e6c7d16a6a369fdbe4b30ea4346.png" data-lightbox="roadtrip" data-title="A Military Dad Military Dad Military Spouse Support Soldier Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/c6/5e/17c65e6c7d16a6a369fdbe4b30ea4346.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1cEymVwsFxw96NYyDM5ojtTgXc0LBojkIgQ';" alt="A Military Dad Military Dad Military Spouse Support Soldier Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Military Dad Military Dad Military Spouse Support Soldier Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e1/ac/99/e1ac996c679d8fa89d36d66092d2a7e4.jpg" data-lightbox="roadtrip" data-title="10 Ways To Support A Military Spouse Countdowns And Cupcakes Military Spouse Blog Military Wife Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e1/ac/99/e1ac996c679d8fa89d36d66092d2a7e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShD9HCsSyfKglc5jS70nx47i0-Rn0RWXlChw';" alt="10 Ways To Support A Military Spouse Countdowns And Cupcakes Military Spouse Blog Military Wife Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Ways To Support A Military Spouse Countdowns And Cupcakes Military Spouse Blog Military Wife Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/31/4a/aa/314aaa8755ce26327611c863281560e5.jpg" data-lightbox="roadtrip" data-title="16 Fun Memes For Military Spouses Living The Military Spouse Life Military Spouse Support Soldier Wife Military Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/31/4a/aa/314aaa8755ce26327611c863281560e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHrPJqpjv-97G-N3d18gkVY_9XFJ_4zummBQ';" alt="16 Fun Memes For Military Spouses Living The Military Spouse Life Military Spouse Support Soldier Wife Military Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">16 Fun Memes For Military Spouses Living The Military Spouse Life Military Spouse Support Soldier Wife Military Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/bf/06/8ebf0618804028b13971d1a5df920227.jpg" data-lightbox="roadtrip" data-title="We Value And Support All Military Families And The Spouses That Support Them Investment Property For Sale New Home Construction Military Spouse Appreciation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/bf/06/8ebf0618804028b13971d1a5df920227.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeSSqmn7u8m8k3rdKrxQvC4W0oTj7RnMRB4A';" alt="We Value And Support All Military Families And The Spouses That Support Them Investment Property For Sale New Home Construction Military Spouse Appreciation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Value And Support All Military Families And The Spouses That Support Them Investment Property For Sale New Home Construction Military Spouse Appreciation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/83/7a/dc837a4f453d43fba045d81d4f69b1f2.png" data-lightbox="roadtrip" data-title="What S It Like When Your Husband Leaves For Ranger School And You Re Eight Weeks Pregnant Military Spouse Nora Shares Her St Ranger School Army Rangers Ranger">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/83/7a/dc837a4f453d43fba045d81d4f69b1f2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZNr3BKPXNoO4WsBbzAuS6E1zQ_cB1cxAIUA';" alt="What S It Like When Your Husband Leaves For Ranger School And You Re Eight Weeks Pregnant Military Spouse Nora Shares Her St Ranger School Army Rangers Ranger">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What S It Like When Your Husband Leaves For Ranger School And You Re Eight Weeks Pregnant Military Spouse Nora Shares Her St Ranger School Army Rangers Ranger</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/world-war-1-army-personnel-records.html">World War 1 Army Personnel Records</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-job-fair-2020.html">Wright Patterson Air Force Base Job Fair 2020</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-bx-hours.html">Wright Patterson Air Force Base Bx Hours</a></li>
+													<li class="list-group-item"><a href="/world-war-1-service-records-scotland.html">World War 1 Service Records Scotland</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-jobs.html">Wright Patterson Air Force Base Jobs</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-gym.html">Wright Patterson Air Force Base Gym</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-location.html">Wright Patterson Air Force Base Location</a></li>
+													<li class="list-group-item"><a href="/wright-patt-air-force-base-weather.html">Wright Patt Air Force Base Weather</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-address-and-phone-number.html">Wright Patterson Air Force Base Address And Phone Number</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-fire-department.html">Wright Patterson Air Force Base Fire Department</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-building-map.html">Wright Patterson Air Force Base Building Map</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-dental-clinic.html">Wright Patterson Air Force Base Dental Clinic</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-nasic.html">Wright Patterson Air Force Base Nasic</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-main-gate.html">Wright Patterson Air Force Base Main Gate</a></li>
+													<li class="list-group-item"><a href="/world-war-one-army-service-records.html">World War One Army Service Records</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-hospital-phone-number.html">Wright Patterson Air Force Base Hospital Phone Number</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-in-ohio.html">Wright Patterson Air Force Base In Ohio</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-fitness-center.html">Wright Patterson Air Force Base Fitness Center</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-billeting-office.html">Wright Patterson Air Force Base Billeting Office</a></li>
+													<li class="list-group-item"><a href="/wright-patterson-air-force-base-appointment-line.html">Wright Patterson Air Force Base Appointment Line</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

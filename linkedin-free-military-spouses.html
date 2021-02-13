@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Linkedin Free Military Spouses - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Linkedin Free Military Spouses",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/4e/f2/e0/4ef2e0591428b7fe8ee8108072262f60.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=linkedin+free+military+spouses",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Linkedin Free Military Spouses</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Thats why were proud to support the military and veterans community. Its the premiere milspouse network and central hub for helpful resources and connections. Military Spouse is your premiere online milspouse community with resources on all things military life marriage military spouse jobs and education pcs moves military discounts and more. <br>				
+			</p>
+										<a class="badge badge-light" href="/mychart-hopkins.html">mychart hopkins</a>
+											<a class="badge badge-danger" href="/mychart-nghs.html">mychart nghs</a>
+											<a class="badge badge-dark" href="/mychart-ecommunity.html">mychart ecommunity</a>
+											<a class="badge badge-success" href="/mychart-fairview.html">mychart fairview</a>
+											<a class="badge badge-primary" href="/mycarriertms.html">mycarriertms</a>
+											<a class="badge badge-dark" href="/mychart-beaumont.html">mychart beaumont</a>
+											<a class="badge badge-info" href="/mychart-questionnaires.html">mychart questionnaires</a>
+											<a class="badge badge-secondary" href="/mychart-login.html">mychart login</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to visit the ideal site.  Our website gives you suggestions for seeing the maximum quality video and image content, search and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, so we recommend this video for you to see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/30/e8/8830e8e23d5d481fe4022f5c4043d8eb.jpg" data-lightbox="roadtrip" data-title="Military Spouses Get 1 Year Of Linkedin Premium After Moves Linkedin Profile Social Media Local Business Marketing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/30/e8/8830e8e23d5d481fe4022f5c4043d8eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLtvC-6_K9cFZeiK5ha7NPcmCXWrxQJdagw';" alt="Military Spouses Get 1 Year Of Linkedin Premium After Moves Linkedin Profile Social Media Local Business Marketing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouses Get 1 Year Of Linkedin Premium After Moves Linkedin Profile Social Media Local Business Marketing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/42/14/d0/4214d096a00b22c5680d0f14757d13b0.jpg" data-lightbox="roadtrip" data-title="Military Spouses Will Get One Free Year Of Linkedin Premium After Moves Family Posing Military Spouse Working Mom Blogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/42/14/d0/4214d096a00b22c5680d0f14757d13b0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU4PvOX3GVgBWxOl2eqFl0BQKxEdm4OiZHww';" alt="Military Spouses Will Get One Free Year Of Linkedin Premium After Moves Family Posing Military Spouse Working Mom Blogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouses Will Get One Free Year Of Linkedin Premium After Moves Family Posing Military Spouse Working Mom Blogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/91/36/dd9136c2a84428fc6e8d7bdbf7692b66.jpg" data-lightbox="roadtrip" data-title="7 Ways To Get Moving On Linkedin Social Media Work Blog Social Media Military Spouse Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/91/36/dd9136c2a84428fc6e8d7bdbf7692b66.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9xIi3xsphoY0e-Qzgi8dTWadp7KRcpngtBg';" alt="7 Ways To Get Moving On Linkedin Social Media Work Blog Social Media Military Spouse Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Ways To Get Moving On Linkedin Social Media Work Blog Social Media Military Spouse Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/1a/59/fc1a5919e7515fa73895dd32b7fb4aad.png" data-lightbox="roadtrip" data-title="Pin On Air Force Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/1a/59/fc1a5919e7515fa73895dd32b7fb4aad.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp-W41Ba-MOJCxmBK2LXr1v5IFWf3JNVX9fg';" alt="Pin On Air Force Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Air Force Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/62/71/cc6271ba9a815bdb9e1314447e658c65.png" data-lightbox="roadtrip" data-title="From Tools That Help With Promotion Or Relocation Milspouses With A Myseco Account Can Manage Their Career W Military Spouse Military First Military Community">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/62/71/cc6271ba9a815bdb9e1314447e658c65.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRStx479BfSV1S7cO_rBlolEUqcLJh6fzuO6w';" alt="From Tools That Help With Promotion Or Relocation Milspouses With A Myseco Account Can Manage Their Career W Military Spouse Military First Military Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">From Tools That Help With Promotion Or Relocation Milspouses With A Myseco Account Can Manage Their Career W Military Spouse Military First Military Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/dc/16/44/dc1644aaf56b0764b78ed370e8b7f7eb.jpg" data-lightbox="roadtrip" data-title="Pin On Job Hunting Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/dc/16/44/dc1644aaf56b0764b78ed370e8b7f7eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR4HpD_zCBhodLLsfvRAw8KDkpKqY5_cBTeA';" alt="Pin On Job Hunting Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Job Hunting Skills</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/88/30/e8/8830e8e23d5d481fe4022f5c4043d8eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR4HpD_zCBhodLLsfvRAw8KDkpKqY5_cBTeA';" alt="Pin On Job Hunting Skills">
+										<div class="card-body">
+						<h3 class="h5"><b>LinkedIn and the Defense Department will provide one year of free access to LInkedIn Premium to military spouses making a move.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Linkedin free military spouses</strong>. 
+								
+																	Here a LinkedIn employee provides information at a Hiring Our Heroes. 
+																	Spouses of military veterans can also redeem a free one-year Premium subscription within six months of separation from the military or if theyre moving due to a permanent change of station. 
+																	Veterans and spouses can now benefit from free premium LinkedIn services for an entire year. 
+																	How Do I Sign Up for the LinkedIn Premium. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Free 1-year Premium subscription Were proud to. 
+																	Military Spouse Jobs 9917 followers on LinkedIn. 
+																	Military Spouse is a monthly full color glossy magazine that addresses the unique needs and interests of over 11 million military spouses. 
+																	Veterans and spouses can now benefit from free premium LinkedIn services for an entire year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Linkedins free year of Premium membership can be obtained at the Linkedin For Veterans page September 2015. 
+																	Beginning this July well provide one year of LinkedIn Premium to every military spouse during each of their moves to new installations to help their career transitions and once again upon. 
+																	Start your job hunt and build networks See how your education experience and skills compare with other job candidates Access more than 12000 online LinkedIn Learning courses to develop new skills refresh old ones and become a more. 
+																	From finding a job to connecting with others in your field LinkedIn continues to offer the military community amazing resources unavailable elsewhere. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The majority of contributors are military spouses. 
+																	Duty Calls - We Deliver The Military Spouse Corporate Career Network MSCCN is a 501 c3 nonprofit that provides employment referral. 
+																	Start your job hunt and build networks through LinkedIn including access to LinkedIns vast online library with a learning path designed specifically for military spouses. 
+																	As you launch the next stage of your career or as your family moves from base to base were offering eligible members of the military community one year of free access to LinkedIn Premium and LinkedIn Learning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans Program joined forces to give military spouses a free one-year upgrade to LinkedIn Premium. 
+																	LinkedIn the social media network for professionals is bringing Coast Guard spouses families of the fallen and caregivers for veterans into the pool of those eligible for free access to its. 
+																	Linkedin changed the military Job Seeker membership upgrade process in November 2014. 
+																	This partnership between LinkedIn and the DoD aims to help veterans and military spouses build their professional networks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military spouses have access to a free year-long LinkedIn Premium membership thanks to a partnership between the Department of Defense Spouse Education and Career Opportunities program and LinkedIns Military and Veterans Program. 
+																	Find information and advice on deployment PCSing relationships benefits military families and more. 
+																	This partnership between LinkedIn and the DoD aims to help veterans and military spouses build their professional networks. 
+																	Linkedin changed their link again. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Through LinkedIn training and resources and via our public-private partnerships we are committed to supporting the military and veterans community. 
+																	See who you know at Support Military Spouses leverage your professional network and get hired. 
+																	Access LinkedIn Premium for Free With LinkedIn Premium you can. 
+																	The professional social media networking site is expanding their free upgraded account program to military spouses starting in July LinkedIn officials announced today. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn about working at Support Military Spouses. 
+																	While this service is free it does require a bit of legwork to set up. 
+																	Click on the Job Seeker link in the first sentence Note. 
+																	LinkedIn believes every military veteran can go on to do great things. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Join LinkedIn today for free. 
+																	Spouses service members and. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/49/ee/9949eef0af39e52ad54099f68f264865.jpg" data-lightbox="roadtrip" data-title="Call Dibs The Free Online Marketplace For Buying And Selling Personal Goods Exclusively Within Your Military Com Military Spouse Forced Labor Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/49/ee/9949eef0af39e52ad54099f68f264865.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4D7gQyiDL8CFbGTvfgHDhK_zLImb7vbXaaw';" alt="Call Dibs The Free Online Marketplace For Buying And Selling Personal Goods Exclusively Within Your Military Com Military Spouse Forced Labor Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Call Dibs The Free Online Marketplace For Buying And Selling Personal Goods Exclusively Within Your Military Com Military Spouse Forced Labor Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d0/72/96/d0729679568847785ce3d07db27a8ada.jpg" data-lightbox="roadtrip" data-title="Linkedin Launches New Career Opportunities Resources For Military Spouses Working Mom Humor Professional Networking Career Help">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d0/72/96/d0729679568847785ce3d07db27a8ada.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU4pxUjzB_2TVpqi-P-NREHaV_KPYDiEC7pg';" alt="Linkedin Launches New Career Opportunities Resources For Military Spouses Working Mom Humor Professional Networking Career Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Linkedin Launches New Career Opportunities Resources For Military Spouses Working Mom Humor Professional Networking Career Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/53/62/56536276329db373292f0e35052dd655.jpg" data-lightbox="roadtrip" data-title="Skip The Rat Race Join The Msep Spouse Group On Linkedin Job Posting Employment Navy Families">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/53/62/56536276329db373292f0e35052dd655.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJzk1U1bH8zBOiGCsqajQdsRUKvUJ7k2VTeA';" alt="Skip The Rat Race Join The Msep Spouse Group On Linkedin Job Posting Employment Navy Families">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Skip The Rat Race Join The Msep Spouse Group On Linkedin Job Posting Employment Navy Families</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/2b/f3/462bf3af2787165ff75bead60d30562f.jpg" data-lightbox="roadtrip" data-title="Linkedin Launches New Career Opportunities Resources For Military Spouses Ice Breakers For Work Small Business Consulting Successful Fundraisers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/2b/f3/462bf3af2787165ff75bead60d30562f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQmkLCfCOmq0X_KFQLghv5BgpEBtflB9iOPw';" alt="Linkedin Launches New Career Opportunities Resources For Military Spouses Ice Breakers For Work Small Business Consulting Successful Fundraisers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Linkedin Launches New Career Opportunities Resources For Military Spouses Ice Breakers For Work Small Business Consulting Successful Fundraisers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/45/20/f345200044fe00bc8b2c576b2bb6b86b.jpg" data-lightbox="roadtrip" data-title="Did You Know Seco Partnership With Linkedin Allows Military Spouse S Access To Linkedin Premium During A Pcs Or Withi Free Moving Boxes Moving Help Moving Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/45/20/f345200044fe00bc8b2c576b2bb6b86b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShoL-d-DuDDS89QT-Cm-288HEPn5mAO4wV0g';" alt="Did You Know Seco Partnership With Linkedin Allows Military Spouse S Access To Linkedin Premium During A Pcs Or Withi Free Moving Boxes Moving Help Moving Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Did You Know Seco Partnership With Linkedin Allows Military Spouse S Access To Linkedin Premium During A Pcs Or Withi Free Moving Boxes Moving Help Moving Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/8f/94/028f9433112a69ae1dc49d03f4a7c081.jpg" data-lightbox="roadtrip" data-title="Military Spouse Resume Infographic Best Practices Resume Tips Resume Advice Best Resume Format">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/8f/94/028f9433112a69ae1dc49d03f4a7c081.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnFnuCkCKX-VdXkGR7l9BuVS5XgVTeRA0LsQ';" alt="Military Spouse Resume Infographic Best Practices Resume Tips Resume Advice Best Resume Format">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Resume Infographic Best Practices Resume Tips Resume Advice Best Resume Format</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c7/26/04/c72604deb1432c2f4a4305f310ce9041.jpg" data-lightbox="roadtrip" data-title="Here S How Milspouses Can Get 360 In Free Career Tools Every Time They Pcs Military Spouse Military Lifestyle Military Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c7/26/04/c72604deb1432c2f4a4305f310ce9041.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsJJR2VvMSK_qfc1FduIkXiGZXttIUYkhANQ';" alt="Here S How Milspouses Can Get 360 In Free Career Tools Every Time They Pcs Military Spouse Military Lifestyle Military Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S How Milspouses Can Get 360 In Free Career Tools Every Time They Pcs Military Spouse Military Lifestyle Military Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/4b/2f/324b2fd96981b64dc88fe97dedbd0c34.jpg" data-lightbox="roadtrip" data-title="Vets On Instagram We Are Hosting A Linkedin Workshop For Veterans And Military Spouses On Feb Military Spouse Business Headshots High School Senior Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/4b/2f/324b2fd96981b64dc88fe97dedbd0c34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqKnjyQtJaSkXuTzSv6WKuss0y9o-A3D8JCw';" alt="Vets On Instagram We Are Hosting A Linkedin Workshop For Veterans And Military Spouses On Feb Military Spouse Business Headshots High School Senior Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vets On Instagram We Are Hosting A Linkedin Workshop For Veterans And Military Spouses On Feb Military Spouse Business Headshots High School Senior Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/5e/d3/6d5ed3538d55b51fef541722bf2edca3.png" data-lightbox="roadtrip" data-title="Want To Grow Your Linkedin Network Effectively Follow These Expert Tips Xploraverse Linkedin Network Linkedin Networking">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/5e/d3/6d5ed3538d55b51fef541722bf2edca3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmbXbrarKxs0sxngmjY9g-h0NWIqkOBrzOzA';" alt="Want To Grow Your Linkedin Network Effectively Follow These Expert Tips Xploraverse Linkedin Network Linkedin Networking">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Want To Grow Your Linkedin Network Effectively Follow These Expert Tips Xploraverse Linkedin Network Linkedin Networking</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7d/5d/0b/7d5d0bb7082dce04a0ce9ad0ab63b4b6.jpg" data-lightbox="roadtrip" data-title="Which Social Media Networks Should I Be Using Career For Military Spouses Virtual Assistant Business Social Media Network Social Media Virtual Assistant Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7d/5d/0b/7d5d0bb7082dce04a0ce9ad0ab63b4b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCzZjRUU94pB4D-wXBOXFTNF3XE8dvRNxMog';" alt="Which Social Media Networks Should I Be Using Career For Military Spouses Virtual Assistant Business Social Media Network Social Media Virtual Assistant Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Which Social Media Networks Should I Be Using Career For Military Spouses Virtual Assistant Business Social Media Network Social Media Virtual Assistant Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/f2/e0/4ef2e0591428b7fe8ee8108072262f60.png" data-lightbox="roadtrip" data-title="Language Translators Are Available Through Military Onesource To Military Family Members Who Need Help Translating Do Language Translation Language Translation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/f2/e0/4ef2e0591428b7fe8ee8108072262f60.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIL5qMCUjt_gqqiO2WUqZw8gOXots_WP3-gQ';" alt="Language Translators Are Available Through Military Onesource To Military Family Members Who Need Help Translating Do Language Translation Language Translation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Language Translators Are Available Through Military Onesource To Military Family Members Who Need Help Translating Do Language Translation Language Translation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/50/f0/83/50f083410b8db1ee4ed3040a39513b71.jpg" data-lightbox="roadtrip" data-title="Pin On Air Force Girlfriend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/50/f0/83/50f083410b8db1ee4ed3040a39513b71.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRht634x6tNLM2FcJONoc0gezCHIgivXs1EPQ';" alt="Pin On Air Force Girlfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Air Force Girlfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/44/d1/c044d19025e6939e49af34610e2694d7.png" data-lightbox="roadtrip" data-title="Linkedin Is Now More Than Just A Resume And Job Search Site It Has Evolved Into A Professional Social Media Site Whe Online Social Networks Logos Social Media">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/44/d1/c044d19025e6939e49af34610e2694d7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpImywu3A9voYwfj4oAU2OsxcARrRT_grLew';" alt="Linkedin Is Now More Than Just A Resume And Job Search Site It Has Evolved Into A Professional Social Media Site Whe Online Social Networks Logos Social Media">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Linkedin Is Now More Than Just A Resume And Job Search Site It Has Evolved Into A Professional Social Media Site Whe Online Social Networks Logos Social Media</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/navy-seal-officer-attrition-rate.html">Navy Seal Officer Attrition Rate</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-on-trial.html">Navy Seal Officer On Trial</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-age-limit.html">Navy Seal Officer Age Limit</a></li>
+													<li class="list-group-item"><a href="/navy-seal-gallagher-hulu.html">Navy Seal Gallagher Hulu</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-video.html">Navy Seal Edward Gallagher Video</a></li>
+													<li class="list-group-item"><a href="/navy-san-diego-psd.html">Navy San Diego Psd</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-lateral-transfer.html">Navy Seal Officer Lateral Transfer</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-what-did-he-do.html">Navy Seal Edward Gallagher What Did He Do</a></li>
+													<li class="list-group-item"><a href="/navy-seal-gallagher-pics.html">Navy Seal Gallagher Pics</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-dress-uniform.html">Navy Seal Officer Dress Uniform</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-gpa.html">Navy Seal Officer Gpa</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-salary.html">Navy Seal Edward Gallagher Salary</a></li>
+													<li class="list-group-item"><a href="/navy-seal-and-his-wife-killed-couple.html">Navy Seal And His Wife Killed Couple</a></li>
+													<li class="list-group-item"><a href="/navy-seal-eddie-gallagher-documentary.html">Navy Seal Eddie Gallagher Documentary</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-ranks.html">Navy Seal Officer Ranks</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-trial.html">Navy Seal Edward Gallagher Trial</a></li>
+													<li class="list-group-item"><a href="/navy-seal-officer-interservice-transfer.html">Navy Seal Officer Interservice Transfer</a></li>
+													<li class="list-group-item"><a href="/navy-seal-edward-gallagher-accusations.html">Navy Seal Edward Gallagher Accusations</a></li>
+													<li class="list-group-item"><a href="/navy-seal-eddie-gallagher-jocko-willink.html">Navy Seal Eddie Gallagher Jocko Willink</a></li>
+													<li class="list-group-item"><a href="/navy-seal-gallagher-photo.html">Navy Seal Gallagher Photo</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

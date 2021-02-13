@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Jobs For Civil Engineering - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Jobs For Civil Engineering",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/49/c6/36/49c636e966153db47a5996716b33b4dd.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+jobs+for+civil+engineering",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Jobs For Civil Engineering</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Those entering the Civil Engineer Corps must first attend Officer Candidate School OCS in Newport RI followed by Civil Engineer Corps Officer School where youll receive specialized training needed for Navy projects including management administration contract management public works and specialized military roles such as Construction Battalions. 3 days ago Those entering the Civil Engineer Corps must first attend Officer Candidate School OCS in Newport RI followed by Civil Engineer Corps Officer School where youll receive specialized training needed for Navy projects including management administration contract. Displayed here are job ads that match your query. <br>				
+			</p>
+										<a class="badge badge-info" href="/man-utd-vs-chelsea-prediction.html">man utd vs chelsea prediction</a>
+											<a class="badge badge-warning" href="/marine-corps-spouse-college-pay.html">marine corps spouse college pay</a>
+											<a class="badge badge-dark" href="/man-utd-vs-chelsea-on-gotv.html">man utd vs chelsea on gotv</a>
+											<a class="badge badge-danger" href="/manycam-gratuit-windows-7.html">manycam gratuit windows 7</a>
+											<a class="badge badge-info" href="/man-utd-vs-chelsea-players-ratings.html">man utd vs chelsea players ratings</a>
+											<a class="badge badge-primary" href="/mandy-patinkin-and-wife.html">mandy patinkin and wife</a>
+											<a class="badge badge-dark" href="/man-utd-vs-chelsea-live-dimana.html">man utd vs chelsea live dimana</a>
+											<a class="badge badge-primary" href="/man-utd-vs-chelsea-live-bt-sport.html">man utd vs chelsea live bt sport</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to visit the ideal site.  Our website gives you suggestions for viewing the maximum quality video and picture content, search and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie that you see.  It is also possible to bring about supporting this site by sharing videos and graphics that you enjoy on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6d/9a/a3/6d9aa30fef98cf7f4b7318af9375271c.jpg" data-lightbox="roadtrip" data-title="Pin By Nax Host On Places To Visit Job Circular Military Jobs Civil Engineering Degree">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6d/9a/a3/6d9aa30fef98cf7f4b7318af9375271c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqqMUo3OWfL2lI73886GvHpCHsL4Jm_lvVJg';" alt="Pin By Nax Host On Places To Visit Job Circular Military Jobs Civil Engineering Degree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Nax Host On Places To Visit Job Circular Military Jobs Civil Engineering Degree</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/48/98/51489878f60abcc41b882869df1ade0d.png" data-lightbox="roadtrip" data-title="Kbr Job Openings 2021 Afghanistan Usa Uae Ksa Iraq Kuwait Bahrain Uk India In 2021 Job Opening Staff Recruitment Job Shop">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/48/98/51489878f60abcc41b882869df1ade0d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGLmIzLbmyCos_wi9ov7gPyDbQqgCt1Lsig';" alt="Kbr Job Openings 2021 Afghanistan Usa Uae Ksa Iraq Kuwait Bahrain Uk India In 2021 Job Opening Staff Recruitment Job Shop">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kbr Job Openings 2021 Afghanistan Usa Uae Ksa Iraq Kuwait Bahrain Uk India In 2021 Job Opening Staff Recruitment Job Shop</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/90/57/52/905752fad2cc5c10cac355b950b48795.jpg" data-lightbox="roadtrip" data-title="Required Civil Engineers Site Inspector Quantity Survey Civil Engineering Engineering Jobs In Pakistan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/90/57/52/905752fad2cc5c10cac355b950b48795.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnbU6GCafZmt0qCwGcKxvudhFWgZgnLWqeWg';" alt="Required Civil Engineers Site Inspector Quantity Survey Civil Engineering Engineering Jobs In Pakistan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Required Civil Engineers Site Inspector Quantity Survey Civil Engineering Engineering Jobs In Pakistan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/f3/30/e8f33049af1a7f0d95675a6aface9be8.jpg" data-lightbox="roadtrip" data-title="Latest Engineering Engineering Job Jobs In Pakistan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/f3/30/e8f33049af1a7f0d95675a6aface9be8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ338uwUpyleTMyo7R8WYDFWq_QBOeXRep4Hg';" alt="Latest Engineering Engineering Job Jobs In Pakistan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Latest Engineering Engineering Job Jobs In Pakistan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/a7/92/06a792610a2547daf8b42e216d61e6ad.jpg" data-lightbox="roadtrip" data-title="Aircraft Maintenance Technology Salary Philippines 2020 Aircraft Maintenance Technology Aircraft Maintenance High Paying Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/a7/92/06a792610a2547daf8b42e216d61e6ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_PK_cZ3miHIw38OYoegw22Ts72ESyf_4InA';" alt="Aircraft Maintenance Technology Salary Philippines 2020 Aircraft Maintenance Technology Aircraft Maintenance High Paying Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aircraft Maintenance Technology Salary Philippines 2020 Aircraft Maintenance Technology Aircraft Maintenance High Paying Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/eb/7d/18eb7d640a8cbed8ce259fae8d7dbb71.jpg" data-lightbox="roadtrip" data-title="Engineering Sample Resumes Engineering Resume Templates Resume Cover Letter Examples Engineering Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/eb/7d/18eb7d640a8cbed8ce259fae8d7dbb71.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHerVRTG_B3ZUgtsuicjrqwv1iTVt4Qgsl2g';" alt="Engineering Sample Resumes Engineering Resume Templates Resume Cover Letter Examples Engineering Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Engineering Sample Resumes Engineering Resume Templates Resume Cover Letter Examples Engineering Resume</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/51/48/98/51489878f60abcc41b882869df1ade0d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHerVRTG_B3ZUgtsuicjrqwv1iTVt4Qgsl2g';" alt="Engineering Sample Resumes Engineering Resume Templates Resume Cover Letter Examples Engineering Resume">
+										<div class="card-body">
+						<h3 class="h5"><b>Army perform missions that range from building maintenance master planning environmental management energy management military housing and infrastructure support that includes roads water sewer and natural disaster planning.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military jobs for civil engineering</strong>. 
+								
+																	Mechanical electrical civil or industrial engineering are all possible choices for a military engineer. 
+																	See the job advert for full location information. 
+																	Military Civil Engineering Jobs. 
+																	Navy military engineers are part of the Civil Engineering Corps which requires an engineering-related bachelors degree and completion of a 12-week Officer Candidate School program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Frequently ABET-accredited engineering degrees consist of four-year intensive programs. 
+																	They execute construction operation and repair of structures and facilities. 
+																	Engineer Officer 12A An engineer officer is responsible for providing full support to the wide range of engineering duties in the Army. 
+																	Our premiere development scheme for graduates is Fast Stream although many graduates also enter through applying for vacancies on Civil Service Jobs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find jobs like this Learn more about this job. 
+																	In peace time military engineers also plays the role of civil engineers by taking part in the civil-works project. 
+																	Indeed may be compensated by these employers helping keep Indeed free for jobseekers. 
+																	Page 1 of 1040 jobs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Civil engineers provide essential infrastructure through the US. 
+																	Army Corps of Engineers the worlds largest public engineering design and construction management agency. 
+																	To make the next step in your engineering career start searching jobs now or register your CV with Engineering Jobs to receive instant job matches. 
+																	The role is based at Upavon Wiltshire. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	From civil and industrial to technology and software these engineers are key to the growth of modern society. 
+																	Apply to Civil Engineer Engineer Assistant Engineer and more. 
+																	They can help build structures develop civil works programs and even provide combat support. 
+																	Officer Active Duty Army Reserve. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our civil servants are a central part of this Whole Force developing strategy making policy supporting ministerial decision-making and Parliamentary processes. 
+																	Defence commercial graduate programme The. 
+																	Apply to Quality Assurance Analyst Para Educator Program Analyst and more. 
+																	Military Engineers are mainly involved in the construction design of infrastructure for use in combat zones military bases occupied areas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At the front they support the rest of the Army bridging rivers using explosives to destroy bridges or clearing routes through minefields. 
+																	Military jobs now available. 
+																	There are several paths to success if youre getting out or thinking about getting out of the military after just one tour. 
+																	The Royal Engineers are combat soldiers with a technical edge and have a role in every area of the battlefield. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Civil engineers oversee the repair maintenance and operation of heavy equipment. 
+																	Engineers in the US. 
+																	Lately however the team has been working at home in accordance with Government COVID-19 advice. 
+																	Indeed ranks Job Ads based on a combination of employer bids and relevance such as your search terms and other activity on Indeed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A significant degree of remote working is likely to continue for the immediate foreseeable future. 
+																	There are a variety of civil engineering disciplines all of which play a rewarding role in military operations. 
+																	Some recruiters are listed below. 
+																	Engineering Jobs Modern engineers make and keep the world around us working. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We advertise jobs for engineers in all specialisms whether youre looking for an entry level role a postgraduate job or youre an experienced engineer looking for a managerial position. 
+																	Our success depends on our people our Whole Force regular and reservist military civil servants and contractors all working as one working together seamlessly to deliver for us. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/9a/3e/34/9a3e34f69a171d5ef4311e7a01167fd4.jpg" data-lightbox="roadtrip" data-title="Civil Engineer Resume Examples Luxury Cv Templates Engineering Civil Civil Engineering Cv Template Structur Resume Examples Resume Skills Resume Skills Section">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/9a/3e/34/9a3e34f69a171d5ef4311e7a01167fd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmDsAPd0tlU7K_iQB3DfA3inNs8jPABmBEgQ';" alt="Civil Engineer Resume Examples Luxury Cv Templates Engineering Civil Civil Engineering Cv Template Structur Resume Examples Resume Skills Resume Skills Section">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civil Engineer Resume Examples Luxury Cv Templates Engineering Civil Civil Engineering Cv Template Structur Resume Examples Resume Skills Resume Skills Section</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/67/c8/b567c8f45ba10d175bb9e1f9dedaf2b2.jpg" data-lightbox="roadtrip" data-title="A Female Civil Engineer Around The World Airman To Mom Civil Engineering Engineering Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/67/c8/b567c8f45ba10d175bb9e1f9dedaf2b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl2xUqcTvphrO6f9tBaz02BxjAvtDWTyxJrw';" alt="A Female Civil Engineer Around The World Airman To Mom Civil Engineering Engineering Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Female Civil Engineer Around The World Airman To Mom Civil Engineering Engineering Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/c6/36/49c636e966153db47a5996716b33b4dd.jpg" data-lightbox="roadtrip" data-title="Civil Engineer Walk In Interview In Abu Dhabi Civil Engineering Job Shop Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/c6/36/49c636e966153db47a5996716b33b4dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdlBI542U8DpwSMBS_NTgTB2vBuFThmvG8Ng';" alt="Civil Engineer Walk In Interview In Abu Dhabi Civil Engineering Job Shop Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civil Engineer Walk In Interview In Abu Dhabi Civil Engineering Job Shop Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ae/5a/31/ae5a3141b12fcbf198d9bb9dff603223.jpg" data-lightbox="roadtrip" data-title="Frontier Works Organization Fwo Jobs 2018 Apply Online Army Jobs Job It Works">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ae/5a/31/ae5a3141b12fcbf198d9bb9dff603223.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4xenmXcwpbG7oouSlDmEK0Q11b47ndxXWpw';" alt="Frontier Works Organization Fwo Jobs 2018 Apply Online Army Jobs Job It Works">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Frontier Works Organization Fwo Jobs 2018 Apply Online Army Jobs Job It Works</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/96/dd/aa/96ddaad6327e1c76f0319fe50ce6d023.jpg" data-lightbox="roadtrip" data-title="Gilgit Baltistan Career Educational Social Forum Pakistan Military Engineer Services Pakistan Annou Engineering Military Positivity">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/96/dd/aa/96ddaad6327e1c76f0319fe50ce6d023.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrvks07hT1LQNDIep9D_Y-PXU53Z2YvG3usQ';" alt="Gilgit Baltistan Career Educational Social Forum Pakistan Military Engineer Services Pakistan Annou Engineering Military Positivity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gilgit Baltistan Career Educational Social Forum Pakistan Military Engineer Services Pakistan Annou Engineering Military Positivity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/b5/74/1bb574fefffe61525588e80a9a5a7440.png" data-lightbox="roadtrip" data-title="Civil Engineer Salary Civil Engineering Civil Engineering Jobs Electrical Engineering Technology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/b5/74/1bb574fefffe61525588e80a9a5a7440.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1I_mPPXYkCboDEW6bHC8I9rXVxAPf2f7hBQ';" alt="Civil Engineer Salary Civil Engineering Civil Engineering Jobs Electrical Engineering Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civil Engineer Salary Civil Engineering Civil Engineering Jobs Electrical Engineering Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/bb/5a/96bb5a4d4231fc442952c6275bd34566.jpg" data-lightbox="roadtrip" data-title="Paf Civilian Jobs 2020 Pakistan Civil Engineer Civil Inspector Others In 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/bb/5a/96bb5a4d4231fc442952c6275bd34566.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8aKTOI8zD7pg8budjsiGhM8VpvtLgtHowYg';" alt="Paf Civilian Jobs 2020 Pakistan Civil Engineer Civil Inspector Others In 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paf Civilian Jobs 2020 Pakistan Civil Engineer Civil Inspector Others In 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a3/40/93/a3409315747b0a5f587ce1d4f6f738eb.jpg" data-lightbox="roadtrip" data-title="Civil Engineering Intern Resume Inspirational Civil Engineer Resume Samples Engineering Resume Civil Engineer Resume Engineering Resume Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a3/40/93/a3409315747b0a5f587ce1d4f6f738eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsz2bt5WjmHAbVEagxgnNq0dzMj-Ca2sDBaw';" alt="Civil Engineering Intern Resume Inspirational Civil Engineer Resume Samples Engineering Resume Civil Engineer Resume Engineering Resume Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civil Engineering Intern Resume Inspirational Civil Engineer Resume Samples Engineering Resume Civil Engineer Resume Engineering Resume Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/2e/f1/a42ef1c776245d963dde04663de58135.png" data-lightbox="roadtrip" data-title="Tcil Jobs 2016 Apply For Senior Junior Engineer Posts In Civil Engineering Apply Now Aermech In Civil Engineering Engineering How To Apply">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/2e/f1/a42ef1c776245d963dde04663de58135.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ59g1faObuTUiR-ad9j4CsnVjaTLAPXKz0A';" alt="Tcil Jobs 2016 Apply For Senior Junior Engineer Posts In Civil Engineering Apply Now Aermech In Civil Engineering Engineering How To Apply">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tcil Jobs 2016 Apply For Senior Junior Engineer Posts In Civil Engineering Apply Now Aermech In Civil Engineering Engineering How To Apply</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a6/79/9a/a6799a4ddced26de314cad3726d6fcdc.jpg" data-lightbox="roadtrip" data-title="Overseas Employment Wanted Staff For Qatar Applications Are Invited For The Following Positions By Our Valued Engineering Jobs Jobs In Pakistan Overseas Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a6/79/9a/a6799a4ddced26de314cad3726d6fcdc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEsOrh1rW5s11DFmErT_gDECoqQJPa2FQ1hg';" alt="Overseas Employment Wanted Staff For Qatar Applications Are Invited For The Following Positions By Our Valued Engineering Jobs Jobs In Pakistan Overseas Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Overseas Employment Wanted Staff For Qatar Applications Are Invited For The Following Positions By Our Valued Engineering Jobs Jobs In Pakistan Overseas Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/f8/5f/c4f85f5523edd3fa3f828e98a163bdbf.png" data-lightbox="roadtrip" data-title="Jobs In Abudhabi Uae Accountant Aaiwa Civilengineer Estimation Foreman In 2020 Receptionist Jobs Marketing Jobs Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/f8/5f/c4f85f5523edd3fa3f828e98a163bdbf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTutwwrK8-tTguu5qtX9vKPmzf2otUB08URZw';" alt="Jobs In Abudhabi Uae Accountant Aaiwa Civilengineer Estimation Foreman In 2020 Receptionist Jobs Marketing Jobs Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jobs In Abudhabi Uae Accountant Aaiwa Civilengineer Estimation Foreman In 2020 Receptionist Jobs Marketing Jobs Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/fc/38/d8fc383cec5b556c7b86b5d9afd09328.jpg" data-lightbox="roadtrip" data-title="Lecturer Department Of Civil Engineering Department Of Civil Engineering Civil Engineering Civil Engineering Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/fc/38/d8fc383cec5b556c7b86b5d9afd09328.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe20iKOND2UE6_6eWQtzVUeFA52r6l0Ny3VQ';" alt="Lecturer Department Of Civil Engineering Department Of Civil Engineering Civil Engineering Civil Engineering Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lecturer Department Of Civil Engineering Department Of Civil Engineering Civil Engineering Civil Engineering Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/81/21/4381210f13b0579158ed5147aee94ef0.jpg" data-lightbox="roadtrip" data-title="Civil Engineer Intern Resume Inspirational Civil Engineer Resume Samples In 2020 Civil Engineer Resume Engineering Resume Project Manager Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/81/21/4381210f13b0579158ed5147aee94ef0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd1FwleiYJ_FZLRA3a8Rrr40cJGwb_hrRD5A';" alt="Civil Engineer Intern Resume Inspirational Civil Engineer Resume Samples In 2020 Civil Engineer Resume Engineering Resume Project Manager Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civil Engineer Intern Resume Inspirational Civil Engineer Resume Samples In 2020 Civil Engineer Resume Engineering Resume Project Manager Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/air-force-spouse-retirement-pin.html">Air Force Spouse Retirement Pin</a></li>
+													<li class="list-group-item"><a href="/air-force-shadow-hrvatska.html">Air Force Shadow Hrvatska</a></li>
+													<li class="list-group-item"><a href="/air-force-reserves-retirement-benefits.html">Air Force Reserves Retirement Benefits</a></li>
+													<li class="list-group-item"><a href="/air-force-survivor-benefit-plan-calculator.html">Air Force Survivor Benefit Plan Calculator</a></li>
+													<li class="list-group-item"><a href="/air-force-rom-guidance.html">Air Force Rom Guidance</a></li>
+													<li class="list-group-item"><a href="/air-force-vacancy-for-female-2020.html">Air Force Vacancy For Female 2020</a></li>
+													<li class="list-group-item"><a href="/air-force-spouse-id-card.html">Air Force Spouse Id Card</a></li>
+													<li class="list-group-item"><a href="/air-force-rome-labs.html">Air Force Rome Labs</a></li>
+													<li class="list-group-item"><a href="/air-force-training-for-youth.html">Air Force Training For Youth</a></li>
+													<li class="list-group-item"><a href="/air-force-song-hogans-heroes.html">Air Force Song Hogans Heroes</a></li>
+													<li class="list-group-item"><a href="/air-force-spouse-jobs.html">Air Force Spouse Jobs</a></li>
+													<li class="list-group-item"><a href="/air-force-reserve-marriage-benefits.html">Air Force Reserve Marriage Benefits</a></li>
+													<li class="list-group-item"><a href="/air-force-scholarships-for-spouses.html">Air Force Scholarships For Spouses</a></li>
+													<li class="list-group-item"><a href="/air-force-rop-acronym.html">Air Force Rop Acronym</a></li>
+													<li class="list-group-item"><a href="/air-force-spouse-benefits.html">Air Force Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/air-force-retirement-benefits-for-spouse.html">Air Force Retirement Benefits For Spouse</a></li>
+													<li class="list-group-item"><a href="/air-force-spouse-retirement-benefits.html">Air Force Spouse Retirement Benefits</a></li>
+													<li class="list-group-item"><a href="/air-force-rods-from-god.html">Air Force Rods From God</a></li>
+													<li class="list-group-item"><a href="/air-force-spouse-logo.html">Air Force Spouse Logo</a></li>
+													<li class="list-group-item"><a href="/air-force-reserve-survivor-benefits.html">Air Force Reserve Survivor Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

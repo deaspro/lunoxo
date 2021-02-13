@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>My Canal Plus Mon Compte - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "My Canal Plus Mon Compte",
+  "datePublished": "2021-02-13",
+  "image": "https://img.bfmtv.com/c/0/708/f93/e0b27f93af7623516ba056a5be5bc.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=my+canal+plus+mon+compte",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>My Canal Plus Mon Compte</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Plus Mentions et Credits Photos LEspace Client CANAL est votre espace personnel securise permettant de gerer en toute simplicite votre abonnement votre materiel et vos coordonnees. Le programme TV de ce soir de la TNT. Profitez de la presse en illimite avec Cafeyn. <br>				
+			</p>
+										<a class="badge badge-light" href="/my-partner-tested-positive-covid.html">my partner tested positive covid</a>
+											<a class="badge badge-dark" href="/my-partner-shouts-at-me-in-public.html">my partner shouts at me in public</a>
+											<a class="badge badge-danger" href="/my-partner-is-depressed-and-pushing-me-away.html">my partner is depressed and pushing me away</a>
+											<a class="badge badge-success" href="/my-partner-never-wants-to-do-anything-with-me.html">my partner never wants to do anything with me</a>
+											<a class="badge badge-warning" href="/my-partner-kicked-me-out.html">my partner kicked me out</a>
+											<a class="badge badge-danger" href="/my-partner-just-tested-positive-for-covid.html">my partner just tested positive for covid</a>
+											<a class="badge badge-danger" href="/my-partner-is-being-tested-for-covid-can-i-go-to-work.html">my partner is being tested for covid can i go to work</a>
+											<a class="badge badge-success" href="/my-partner-has-tested-positive-for-covid-what-should-i-do.html">my partner has tested positive for covid what should i do</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to pay a visit to the ideal site.  Our website provides you with hints for viewing the maximum quality video and picture content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie for you to view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.eu-west-1.amazonaws.com/canalint-content-prod/content/0001/05/47806285138fbea240e72126214dff2f9a47219d.png" data-lightbox="roadtrip" data-title="Mon Compte Canal Canal Afrique">
+											<img class="card-img v-image ads-img " src="https://s3.eu-west-1.amazonaws.com/canalint-content-prod/content/0001/05/47806285138fbea240e72126214dff2f9a47219d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlIuSK3tXpWbs64PC6LG9yDMZuyeJGRX9M1Q';" alt="Mon Compte Canal Canal Afrique">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mon Compte Canal Canal Afrique</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://tel.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Ftel.2F2019.2F06.2F04.2F0cbeb8ef-35cb-4a2f-b7d3-00c844a9734a.2Ejpeg/1200x600/crop-from/top/quality/80/cr/wqkgQ2FwdHVyZSBteUNhbmFs/focus-point/623,274/qu-est-ce-que-mycanal-le-service-en-ligne-de-canal.jpg" data-lightbox="roadtrip" data-title="Qu Est Ce Que Mycanal Le Service En Ligne De Canal">
+											<img class="card-img v-image ads-img " src="https://tel.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Ftel.2F2019.2F06.2F04.2F0cbeb8ef-35cb-4a2f-b7d3-00c844a9734a.2Ejpeg/1200x600/crop-from/top/quality/80/cr/wqkgQ2FwdHVyZSBteUNhbmFs/focus-point/623,274/qu-est-ce-que-mycanal-le-service-en-ligne-de-canal.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSqnhwiEBdRaY1eZuaEdfFGVLrs99_fzlvw';" alt="Qu Est Ce Que Mycanal Le Service En Ligne De Canal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qu Est Ce Que Mycanal Le Service En Ligne De Canal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://blog.ariase.com/hs-fs/hubfs/Ariase/Ariase-blog-dossiers/canal/mycanal-creer-compte.jpg?width=600&amp;name=mycanal-creer-compte.jpg" data-lightbox="roadtrip" data-title="Mycanal Tout Savoir Pour Acceder A Canal Partout Et Tout Le Temps">
+											<img class="card-img v-image ads-img " src="https://blog.ariase.com/hs-fs/hubfs/Ariase/Ariase-blog-dossiers/canal/mycanal-creer-compte.jpg?width=600&amp;name=mycanal-creer-compte.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9DLt49IFS23iYToRN8dfKGwaYgfsXOec9Kg';" alt="Mycanal Tout Savoir Pour Acceder A Canal Partout Et Tout Le Temps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycanal Tout Savoir Pour Acceder A Canal Partout Et Tout Le Temps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.bfmtv.com/c/0/708/f93/e0b27f93af7623516ba056a5be5bc.png" data-lightbox="roadtrip" data-title="Abonnes Canal Comment Creer Gratuitement Votre Compte Disney">
+											<img class="card-img v-image ads-img " src="https://img.bfmtv.com/c/0/708/f93/e0b27f93af7623516ba056a5be5bc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8vbmerS9w6gMvU6m3ASK-KY-y-RrmW6ix-A';" alt="Abonnes Canal Comment Creer Gratuitement Votre Compte Disney">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Abonnes Canal Comment Creer Gratuitement Votre Compte Disney</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://tel.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Ftel.2F2019.2F07.2F01.2F1828c08b-d784-4fbd-8d31-9c6a43556b7b.2Ejpeg/1200x500/crop-from/top/quality/80/cr/wqkgbXlDQU5BTA%3D%3D/mycanal-comment-faire-pour-telecharger-l-application.jpg" data-lightbox="roadtrip" data-title="Mycanal Comment Faire Pour Telecharger L Application">
+											<img class="card-img v-image ads-img " src="https://tel.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Ftel.2F2019.2F07.2F01.2F1828c08b-d784-4fbd-8d31-9c6a43556b7b.2Ejpeg/1200x500/crop-from/top/quality/80/cr/wqkgbXlDQU5BTA%3D%3D/mycanal-comment-faire-pour-telecharger-l-application.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ1JuatoaJSTdJ37PDTb3a7rAxIwYBpjApOQ';" alt="Mycanal Comment Faire Pour Telecharger L Application">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycanal Comment Faire Pour Telecharger L Application</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://tel.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Ftel.2F2020.2F11.2F27.2Fed7d6986-c090-4a02-8fb3-4e0bd1d84e33.2Ejpeg/1200x600/crop-from/top/quality/80/cr/wqkgTXlDQU5BTA%3D%3D/mycanal-mon-compte-a-ete-pirate-que-faire.jpg" data-lightbox="roadtrip" data-title="Mycanal Mon Compte A Ete Pirate Que Faire">
+											<img class="card-img v-image ads-img " src="https://tel.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Ftel.2F2020.2F11.2F27.2Fed7d6986-c090-4a02-8fb3-4e0bd1d84e33.2Ejpeg/1200x600/crop-from/top/quality/80/cr/wqkgTXlDQU5BTA%3D%3D/mycanal-mon-compte-a-ete-pirate-que-faire.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA9xYoX34YoGkQ3MjMFB0iTbKXsUrLESB_jA';" alt="Mycanal Mon Compte A Ete Pirate Que Faire">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycanal Mon Compte A Ete Pirate Que Faire</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://ouvrircompte.fr/wp-content/uploads/2020/04/inscription-canal-plus-afrique.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA9xYoX34YoGkQ3MjMFB0iTbKXsUrLESB_jA';" alt="Mycanal Mon Compte A Ete Pirate Que Faire">
+										<div class="card-body">
+						<h3 class="h5"><b>Le programme TV de ce soir de la TNT et de toutes les chaines est gratuit.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>My canal plus mon compte</strong>. 
+								
+																	Pour creer votre compte munissez vous de. 
+																	Plus de 200 chaines et la TNT en direct live et replay. 
+																	Se connecter Creer un compte Pas encore abonne. 
+																	Les series Creation Originale CANAL toutes les grandes series internationales des. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Deux grands matchs de Ligue 1 Uber Eats de la Premier League le meilleur du TOP 14 les Grands Prix de Formule 1 et de Moto GP. 
+																	Du grand spectacle pour toute la famille ou encore du cinema independant. 
+																	Cafeyn est un service inclus dans les offres CANAL. 
+																	Pas encore de compte CANAL. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Le programme TV de ce soir de la TNT et de toutes les chaines est gratuit. 
+																	Poste par CANAL. 
+																	MON COMPTE CANAL Sidentifier Champ requis Champ requis. 
+																	Utiliser ce service vaut acceptation de notre politique. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ce site utilise des cookies. 
+																	Votre numero de decodeur. 
+																	Plusieurs raisons peuvent expliquer le non fonctionnement ou la mauvaise qualite dune video. 
+																	Pour profiter de cette page connectez-vous ou creez un compte CANAL. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	La video que jessaye de regarder ne fonctionne pas ou ne me semble pas dune qualite optimale. 
+																	Sidentifier Champ requis Champ requis. 
+																	Votre numero dabonne. 
+																	Ce site utilise des cookies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mot de passe oublie. 
+																	Cela nous permet de personnaliser vos contenus ou publicites. 
+																	Le site de streaming le plus complet et le seul qui reunit vos films vos series en HD VF et VOST toute la TNT et les plus belles competitions sportives en direct ou en replay. 
+																	Modifier mon email Modifier mon mot de passe. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mot de passe oublie. 
+																	Le site de streaming le plus complet et le seul qui reunit vos films vos series en HD VF et VOST toute la TNT et les plus belles competitions sportives en direct ou en replay. 
+																	Pour creer votre compte munissez vous de. 
+																	Utiliser ce service vaut acceptation de notre politique. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Votre numero dabonne. 
+																	Pas encore de compte CANAL. 
+																	Avec Cafeyn vous reveillez votre curiosite avec un catalogue de plus de 1000 titres de presse francais et internationaux a lire sur ordinateur tablette et smartphone. 
+																	Votre numero de decodeur. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Le cinema ultra-recent avec plus de 300 films inedits par an avec CANAL. 
+																	Inclus dans votre abonnement. 
+																	Pourquoi vous nallez. 
+																	Cela nous permet de personnaliser vos contenus ou publicites. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Le site de streaming le plus complet et le seul qui reunit vos films vos series en HD VF et VOST toute la TNT et les plus belles competitions sportives en direct ou en replay. 
+																	LEspace Client CANAL est votre espace personnel securise permettant de gerer en toute simplicite votre abonnement votre materiel et vos coordonnees. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn-0.probleme-paiement.fr/wp-content/uploads/2020/09/creer-compte-canal-plus-577x640.png?ezimgfmt=rs:382x424/rscb19/ng:webp/ngcb19" data-lightbox="roadtrip" data-title="Mycanal Comment Se Connecter A Votre Espace Client">
+											<img class="card-img v-image ads-img " src="https://cdn-0.probleme-paiement.fr/wp-content/uploads/2020/09/creer-compte-canal-plus-577x640.png?ezimgfmt=rs:382x424/rscb19/ng:webp/ngcb19" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuOOZQiKnnOF7gppOhq1A3NHXEP56DRNQSUg';" alt="Mycanal Comment Se Connecter A Votre Espace Client">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycanal Comment Se Connecter A Votre Espace Client</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://creercompte.net/wp-content/uploads/2020/04/mon-compte-canal-plus-afrique.gif" data-lightbox="roadtrip" data-title="Canalplus Afrique Com Inscription Creer Un Compte Canal">
+											<img class="card-img v-image ads-img " src="https://creercompte.net/wp-content/uploads/2020/04/mon-compte-canal-plus-afrique.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZWYuX7zJawvc-JNDQQYKoMkwZu4PKqkRJZw';" alt="Canalplus Afrique Com Inscription Creer Un Compte Canal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canalplus Afrique Com Inscription Creer Un Compte Canal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.echosdunet.net/sites/default/files/styles/article/public/offres-mycanal-825x293.png?itok=_yNdX5cU" data-lightbox="roadtrip" data-title="Mycanal Vos Programmes En Live Ou En Replay Sur Tous Vos Ecrans">
+											<img class="card-img v-image ads-img " src="https://www.echosdunet.net/sites/default/files/styles/article/public/offres-mycanal-825x293.png?itok=_yNdX5cU" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl7xiTufkN15Tf9hI87RspkRUTHiND4hRoDg';" alt="Mycanal Vos Programmes En Live Ou En Replay Sur Tous Vos Ecrans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycanal Vos Programmes En Live Ou En Replay Sur Tous Vos Ecrans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://tel.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Ftel.2F2020.2F07.2F06.2F9a5e2f96-44e8-4ce2-b9a0-66cb903f5fa8.2Ejpeg/1200x600/crop-from/top/quality/80/cr/wqkgTXlDQU5BTA%3D%3D/focus-point/1572,510/comment-debloquer-son-compte-mycanal.jpg" data-lightbox="roadtrip" data-title="Comment Debloquer Son Compte Mycanal">
+											<img class="card-img v-image ads-img " src="https://tel.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Ftel.2F2020.2F07.2F06.2F9a5e2f96-44e8-4ce2-b9a0-66cb903f5fa8.2Ejpeg/1200x600/crop-from/top/quality/80/cr/wqkgTXlDQU5BTA%3D%3D/focus-point/1572,510/comment-debloquer-son-compte-mycanal.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4SIhYLPk8_42K0CoZLTlRCnR0I8ESclmCwA';" alt="Comment Debloquer Son Compte Mycanal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Comment Debloquer Son Compte Mycanal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://tel.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Ftel.2F2020.2F07.2F27.2Fc7fc88a5-bfbd-4a07-80ad-81e1d377387e.2Ejpeg/1200x600/crop-from/top/quality/80/cr/wqkgRFIgTXlDQU5BTA%3D%3D/focus-point/1378,495/comment-creer-son-compte-mycanal.jpg" data-lightbox="roadtrip" data-title="Comment Creer Son Compte Mycanal">
+											<img class="card-img v-image ads-img " src="https://tel.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Ftel.2F2020.2F07.2F27.2Fc7fc88a5-bfbd-4a07-80ad-81e1d377387e.2Ejpeg/1200x600/crop-from/top/quality/80/cr/wqkgRFIgTXlDQU5BTA%3D%3D/focus-point/1378,495/comment-creer-son-compte-mycanal.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-SdbuDTwgfcaBF9ucoiWCp0Mm09NifVWsPg';" alt="Comment Creer Son Compte Mycanal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Comment Creer Son Compte Mycanal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/yAOZ0cO2yE4/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Mycanal Comment Creer Son Compte Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/yAOZ0cO2yE4/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStxT_jos5f4W59G7ZRBceQoaUtzYtz1-G8QA';" alt="Mycanal Comment Creer Son Compte Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycanal Comment Creer Son Compte Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ouvrircompte.fr/wp-content/uploads/2020/04/inscription-canal-plus-afrique.png" data-lightbox="roadtrip" data-title="S Inscrire Sur Canalplus Afrique Com Et Creer Un Compte Mycanal Afrique">
+											<img class="card-img v-image ads-img " src="https://ouvrircompte.fr/wp-content/uploads/2020/04/inscription-canal-plus-afrique.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLAoAipspBrtaPc-vzfbRp-OXyfQR_FEMNDg';" alt="S Inscrire Sur Canalplus Afrique Com Et Creer Un Compte Mycanal Afrique">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">S Inscrire Sur Canalplus Afrique Com Et Creer Un Compte Mycanal Afrique</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.les-bons-plans.net/wp-content/uploads/canal-plus-my-canal-promotion-free-ventes-privees.png" data-lightbox="roadtrip" data-title="Canal Mycanal 4 Astuces Pour Payer Moins Cher Votre Abonnement">
+											<img class="card-img v-image ads-img " src="https://www.les-bons-plans.net/wp-content/uploads/canal-plus-my-canal-promotion-free-ventes-privees.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdTFvJ2dyamWi-BmoH_D83Bs4tJiKGLUlczg';" alt="Canal Mycanal 4 Astuces Pour Payer Moins Cher Votre Abonnement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canal Mycanal 4 Astuces Pour Payer Moins Cher Votre Abonnement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.numerama.com/content/uploads/2020/12/mycanal-interface-5-1024x612.png" data-lightbox="roadtrip" data-title="Canal Comment Acceder A Netflix Ocs Et Disney Dans L Application Mycanal">
+											<img class="card-img v-image ads-img " src="https://www.numerama.com/content/uploads/2020/12/mycanal-interface-5-1024x612.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXBz8clsdHZPYl1iEgE0Eu3Q8CqTD8kUR0AA';" alt="Canal Comment Acceder A Netflix Ocs Et Disney Dans L Application Mycanal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canal Comment Acceder A Netflix Ocs Et Disney Dans L Application Mycanal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.universfreebox.com/wp-content/uploads/2020/03/mycanal1122-800x450-c-default.jpg" data-lightbox="roadtrip" data-title="Maj Abonnes Freebox Avec Tv By Canal Un Incident Mycanal Peut Empecher L Acces Aux Chaines En Direct Sur Android Et Android Tv">
+											<img class="card-img v-image ads-img " src="https://www.universfreebox.com/wp-content/uploads/2020/03/mycanal1122-800x450-c-default.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbffz3GYZQuANWY7IciO_pwjr9Vg8-nS6p4A';" alt="Maj Abonnes Freebox Avec Tv By Canal Un Incident Mycanal Peut Empecher L Acces Aux Chaines En Direct Sur Android Et Android Tv">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maj Abonnes Freebox Avec Tv By Canal Un Incident Mycanal Peut Empecher L Acces Aux Chaines En Direct Sur Android Et Android Tv</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://thumb.canalplus.pro/http/unsafe/%7BresolutionXY%7D/smart/creativemedia-image.canalplus.pro/content/0001/25/9aaf4e586cceaf87ad6c2980b379e42235dc2310.png" data-lightbox="roadtrip" data-title="Ajouter Un Pack Ou Une Option A Mon Abonnement Espace Client Canal">
+											<img class="card-img v-image ads-img " src="https://thumb.canalplus.pro/http/unsafe/%7BresolutionXY%7D/smart/creativemedia-image.canalplus.pro/content/0001/25/9aaf4e586cceaf87ad6c2980b379e42235dc2310.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQDGa-6CkHVJh4ZZ46RWqd4qqV2E3NcdLszw';" alt="Ajouter Un Pack Ou Une Option A Mon Abonnement Espace Client Canal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ajouter Un Pack Ou Une Option A Mon Abonnement Espace Client Canal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EQ0ysIeWsAALfcW.jpg" data-lightbox="roadtrip" data-title="Info Abonne Canal در توییتر Bonjour Lors De La Creation De Votre Compte Canal Cliquez Sur Ou Trouver Mon Numero Client Afin De Le Recevoir Par Sms Pour Creer Votre Compte">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EQ0ysIeWsAALfcW.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThDKwpDZJz7du0Ocw81GBt-lzGslnqupUvNg';" alt="Info Abonne Canal در توییتر Bonjour Lors De La Creation De Votre Compte Canal Cliquez Sur Ou Trouver Mon Numero Client Afin De Le Recevoir Par Sms Pour Creer Votre Compte">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Info Abonne Canal در توییتر Bonjour Lors De La Creation De Votre Compte Canal Cliquez Sur Ou Trouver Mon Numero Client Afin De Le Recevoir Par Sms Pour Creer Votre Compte</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://secure-media.canal-plus.com/image/04/8/511048.png" data-lightbox="roadtrip" data-title="Canal Canalsat La Vost Disponible Sur Les Programmes Live Avec Mycanal Via Iphone Et Ipad">
+											<img class="card-img v-image ads-img " src="https://secure-media.canal-plus.com/image/04/8/511048.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyc6PyWyLqMxKCMiB7UPMMzXLDVRMpgRnsug';" alt="Canal Canalsat La Vost Disponible Sur Les Programmes Live Avec Mycanal Via Iphone Et Ipad">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canal Canalsat La Vost Disponible Sur Les Programmes Live Avec Mycanal Via Iphone Et Ipad</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-disability-dependent-education-benefits.html">Veterans Disability Dependent Education Benefits</a></li>
+													<li class="list-group-item"><a href="/war-heroes-being-killed-hoi4.html">War Heroes Being Killed Hoi4</a></li>
+													<li class="list-group-item"><a href="/vietnam-veterans-childrens-benefits.html">Vietnam Veterans Childrens Benefits</a></li>
+													<li class="list-group-item"><a href="/war-heroes-comic.html">War Heroes Comic</a></li>
+													<li class="list-group-item"><a href="/veterans-dependents-health-insurance.html">Veterans Dependents Health Insurance</a></li>
+													<li class="list-group-item"><a href="/visored-military-cap-crossword-clue.html">Visored Military Cap Crossword Clue</a></li>
+													<li class="list-group-item"><a href="/veterans-dependents-educational-benefits.html">Veterans Dependents Educational Benefits</a></li>
+													<li class="list-group-item"><a href="/war-heroes-alliance.html">War Heroes Alliance</a></li>
+													<li class="list-group-item"><a href="/vietnam-veterans-spousal-support.html">Vietnam Veterans Spousal Support</a></li>
+													<li class="list-group-item"><a href="/vidyasiri-scholarship-for-mba-students.html">Vidyasiri Scholarship For Mba Students</a></li>
+													<li class="list-group-item"><a href="/veterans-spouse-death-benefits.html">Veterans Spouse Death Benefits</a></li>
+													<li class="list-group-item"><a href="/veterans-burial-benefits-for-divorced-spouses.html">Veterans Burial Benefits For Divorced Spouses</a></li>
+													<li class="list-group-item"><a href="/vietnam-veteran-benefits-for-dependents.html">Vietnam Veteran Benefits For Dependents</a></li>
+													<li class="list-group-item"><a href="/veterans-dependent-tuition-waiver-oregon.html">Veterans Dependent Tuition Waiver Oregon</a></li>
+													<li class="list-group-item"><a href="/virtual-jobs-for-military-spouses.html">Virtual Jobs For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/veterans-dependents-tuition-assistance.html">Veterans Dependents Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/veterans-records-lost-in-fire.html">Veterans Records Lost In Fire</a></li>
+													<li class="list-group-item"><a href="/veterans-dependent-college-grants.html">Veterans Dependent College Grants</a></li>
+													<li class="list-group-item"><a href="/veterans-dependents-tuition-waiver.html">Veterans Dependents Tuition Waiver</a></li>
+													<li class="list-group-item"><a href="/virginia-military-divorce-retirement-pay.html">Virginia Military Divorce Retirement Pay</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mycart Express Opening Hours - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mycart Express Opening Hours",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/d8/0d/53/d80d53176cc944424cfb830db0902dda.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mycart+express+opening+hours",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mycart Express Opening Hours</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">We are open Monday - Friday 9am - 6pm and Saturdays 9am - 3pm. JT Express Malaysia will have minor adjustment on our daily operation hours effective 24th March 2020. Talk with us directly using LiveChat. <br>				
+			</p>
+										<a class="badge badge-primary" href="/ncaa-eligibility-requirements-division-2.html">ncaa eligibility requirements division 2</a>
+											<a class="badge badge-light" href="/ncaa-eligibility-covid-football.html">ncaa eligibility covid football</a>
+											<a class="badge badge-danger" href="/ncaa-eligibility-covid-basketball.html">ncaa eligibility covid basketball</a>
+											<a class="badge badge-info" href="/ncaa-eligibility-rule-book.html">ncaa eligibility rule book</a>
+											<a class="badge badge-info" href="/ncaa-eligibility-center-send-test-scores.html">ncaa eligibility center send test scores</a>
+											<a class="badge badge-primary" href="/ncaa-eligibility-registration-deadline.html">ncaa eligibility registration deadline</a>
+											<a class="badge badge-warning" href="/ncaa-eligibility-center-task-list.html">ncaa eligibility center task list</a>
+											<a class="badge badge-danger" href="/ncaa-eligibility-gpa-act.html">ncaa eligibility gpa act</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to visit the ideal site.  Our site gives you hints for seeing the maximum quality video and picture content, hunt and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, so we recommend this video for you to see.  It is also possible to contribute to supporting this site by sharing videos and images that you enjoy on this blog on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/7a/fd/fe7afdf055ae5c272c3336a5d0fcdb94.png" data-lightbox="roadtrip" data-title="My Cart Dresslily Com Fashion Outfits Dresses Style">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/7a/fd/fe7afdf055ae5c272c3336a5d0fcdb94.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9JH5o-RhQfi4YAHnAiaWtdjJB03z4LD3N3g';" alt="My Cart Dresslily Com Fashion Outfits Dresses Style">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Cart Dresslily Com Fashion Outfits Dresses Style</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/11/16/f91116382834f05ab0ac7a066fe71f33.png" data-lightbox="roadtrip" data-title="Use White Rabbi Express To Buy Items From Japan Amazon With Service Fee Japan Globe Icon Expressions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/11/16/f91116382834f05ab0ac7a066fe71f33.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW_Omfe5Zq-eyTaTrDhkQ4c1UGMadmAPIjmg';" alt="Use White Rabbi Express To Buy Items From Japan Amazon With Service Fee Japan Globe Icon Expressions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Use White Rabbi Express To Buy Items From Japan Amazon With Service Fee Japan Globe Icon Expressions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/7c/62/407c62678ed27c66542192e8a7b21bdf.png" data-lightbox="roadtrip" data-title="Valentino Rockstud Belt Bag Leather Belt Bag Bags Belt Bag">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/7c/62/407c62678ed27c66542192e8a7b21bdf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv5bK2OjCoqr_Zi4OtEVpQ1GeHoVqEnINuKA';" alt="Valentino Rockstud Belt Bag Leather Belt Bag Bags Belt Bag">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Valentino Rockstud Belt Bag Leather Belt Bag Bags Belt Bag</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/65/df/5d65df1fdf94c77c528712249785d79c.png" data-lightbox="roadtrip" data-title="Pin By Sylvia Rae On Hoco In 2020 Red Formal Dress Dresses Formal Dresses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/65/df/5d65df1fdf94c77c528712249785d79c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKlwkcCg-ijjbKcbJzjW_rL4qRhM1oxRLEhA';" alt="Pin By Sylvia Rae On Hoco In 2020 Red Formal Dress Dresses Formal Dresses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sylvia Rae On Hoco In 2020 Red Formal Dress Dresses Formal Dresses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7a/74/30/7a74304b9711079bc364a74ba8619414.jpg" data-lightbox="roadtrip" data-title="Shopify Dropshipping Ideas Of Dropshipping Shopifydropshipping Create A Website Make A Business Website W Jeans Store Shopify Theme Online Clothing Stores">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7a/74/30/7a74304b9711079bc364a74ba8619414.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHCUwhj9u0SHFDIHqob89EPDTfbqGHsrqG0A';" alt="Shopify Dropshipping Ideas Of Dropshipping Shopifydropshipping Create A Website Make A Business Website W Jeans Store Shopify Theme Online Clothing Stores">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shopify Dropshipping Ideas Of Dropshipping Shopifydropshipping Create A Website Make A Business Website W Jeans Store Shopify Theme Online Clothing Stores</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/45/6b/c6456b3c2df99670744c82cf5f80e669.png" data-lightbox="roadtrip" data-title="Billy Food Drink Ecommerce Bootstrap4 Template Food Website Food Special Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/45/6b/c6456b3c2df99670744c82cf5f80e669.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6grY_Hdx-ts-8gmB0utvrr6GtbRJ4Uhj9Ow';" alt="Billy Food Drink Ecommerce Bootstrap4 Template Food Website Food Special Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billy Food Drink Ecommerce Bootstrap4 Template Food Website Food Special Recipes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/f9/11/16/f91116382834f05ab0ac7a066fe71f33.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6grY_Hdx-ts-8gmB0utvrr6GtbRJ4Uhj9Ow';" alt="Billy Food Drink Ecommerce Bootstrap4 Template Food Website Food Special Recipes">
+										<div class="card-body">
+						<h3 class="h5"><b>Vision Express Opening Times The regular opening times of most Vision Express establishments are from Monday to Friday 9AM-530PM on Saturday 9AM-530PM most are closed on Sunday.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mycart express opening hours</strong>. 
+								
+																	On this page you can also find the contact details and addresses of these shops. 
+																	Online Shopping With real-time Support Earn Cash Back and Free delivery across Mauritius on thousands of products - Mobile Phones Electronics Home appliance Appliances Mauritius Computers and laptop shop in Mauritius we sell electronics at the best price. 
+																	This number is to be placed on all packages being shipped to MyCart Express Cayman and acts as an account number for you. 
+																	Closes in 4 h 8 min. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Click Here to Learn how to choose Rates Read More. 
+																	Shop online ship from the US to Jamaica. 
+																	What are your opening hours. 
+																	Find a Tesco Express near you and view opening hours address get driving directions in maps and check what services are available at your local branch. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Register now for your Free USA mailing Address and track. 
+																	MyCart Express Kingston Jamaica. 
+																	- The Weight-age of Orders above 25kg will not be entertained as Express Delivery. 
+																	Aldi supermarket profile financial reports shopping information share price opening times more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Download MyCart Express apk 503 for Android. 
+																	Lidl All Lidl stores will be closed for New Years Day however stores within the M25 will be open from 10am to 6pm. 
+																	All opening hours of Expresso stores open on 23 May Pentecost. 
+																	1244 likes 5 talking about this 5 were here. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Provide your user name and password. 
+																	1500- and above using Express Delivery as Shipping Method. 
+																	MCMC Gives Credit and Praise to JT Express Malaysia 2018 Grand Opening of JT Express Office in Johor 2018 Grand Opening of JT Express Office in Sarawak 2018 Grand Opening of JT. 
+																	0 Packages Shipped Air Freight Coming soon Sea Freight Air Freight Coming soon Sea Freight Delivery time 3-6Days 7-12Days Cost 1st LB 700 Based on value and dimensions Processing Fee Real Time Tracking Account Manager See Rates NBThe Default shipping method is Air Freight. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to mycartpk. 
+																	China Express opening times. 
+																	- Offer is valid for Karachi Customers only. 
+																	All products direct you to amazon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Track your packages on the go. 
+																	Aldi news offers deals and jobs. 
+																	Jamaicas 1 choice for shipping from the US to Jamaica. 
+																	We have this page site created to help you choose the best products available in the Internet. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lidl will then use their normal opening hours from Wednesday January 2. 
+																	MyCart Express is a premium freight forwarding company that takes what is in your cart to your door in Jamaica. 
+																	14B Cargill Ave Suite 1 Kingston 10 Head Office6 South Ave Shop 1 Dragon Center Kingston 10 Pick Up Only. 
+																	Find the actual opening hours of Vision Express in our branch locator. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to Cart Saathi. 
+																	200- CashBack on shopping of Rs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/8d/39/0b8d398fb1464c16431a8601aac10eb9.jpg" data-lightbox="roadtrip" data-title="Warning I Have A Coupon For Every Item In My Cart Ha I Want This Shirt Coupon Loving Chicks T Shirts For Women Graphic Sweatshirt Shirts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/8d/39/0b8d398fb1464c16431a8601aac10eb9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMTYNWTaFFLI8BejXzSIguBDwvstKGTGsGHQ';" alt="Warning I Have A Coupon For Every Item In My Cart Ha I Want This Shirt Coupon Loving Chicks T Shirts For Women Graphic Sweatshirt Shirts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Warning I Have A Coupon For Every Item In My Cart Ha I Want This Shirt Coupon Loving Chicks T Shirts For Women Graphic Sweatshirt Shirts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/8e/9d/138e9dce250d25da804a406ed7e549c6.png" data-lightbox="roadtrip" data-title="5 25express Sz M Silky Rayon Tee Blue Grey M In 2020 Long Sleeve Tshirt Men Tees Slub Knit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/8e/9d/138e9dce250d25da804a406ed7e549c6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Y7_thvhLoaNNAiZWqvAdsGt-vvo8tn1S7A';" alt="5 25express Sz M Silky Rayon Tee Blue Grey M In 2020 Long Sleeve Tshirt Men Tees Slub Knit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 25express Sz M Silky Rayon Tee Blue Grey M In 2020 Long Sleeve Tshirt Men Tees Slub Knit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/83/ca/2783ca1562dc15de63eb74b8fdb44b6f.png" data-lightbox="roadtrip" data-title="Steering Digital Messaging With Behavioral Science Insights Behavioral Science Long Sleeve Tshirt Men Insight">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/83/ca/2783ca1562dc15de63eb74b8fdb44b6f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOyI8-V7Q53vFR_kn7VhNMUSjtIRdNd82AHg';" alt="Steering Digital Messaging With Behavioral Science Insights Behavioral Science Long Sleeve Tshirt Men Insight">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Steering Digital Messaging With Behavioral Science Insights Behavioral Science Long Sleeve Tshirt Men Insight</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/7e/db/e57edb9f9272c62fe60498a1c13ebb7f.png" data-lightbox="roadtrip" data-title="Sephora Spring Bonus Sale What S In My Cart Crystal June Sephora It Cosmetics Cc Cream Marc Jacobs Mascara">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/7e/db/e57edb9f9272c62fe60498a1c13ebb7f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU7uu-U_nwhCmoNG43FwCFMeYfhCqaUtreSA';" alt="Sephora Spring Bonus Sale What S In My Cart Crystal June Sephora It Cosmetics Cc Cream Marc Jacobs Mascara">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sephora Spring Bonus Sale What S In My Cart Crystal June Sephora It Cosmetics Cc Cream Marc Jacobs Mascara</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/2b/c2/d42bc211514075b7cd10f5f452c651f3.jpg" data-lightbox="roadtrip" data-title="Drones E Commerce Psd Template Psd Templates Templates Retro Logos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/2b/c2/d42bc211514075b7cd10f5f452c651f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyY5sj7koZ9IrchY74to6RMtCsE528gwkcsw';" alt="Drones E Commerce Psd Template Psd Templates Templates Retro Logos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Drones E Commerce Psd Template Psd Templates Templates Retro Logos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/73/82/40738223a37693cb31ff3bcf4ababd4d.jpg" data-lightbox="roadtrip" data-title="Ladies And Gents It S Weekend Time But More Importantly It S Blackfriday Which Means Shoppingtime So Shop Sh Shop Till You Drop Black Friday Sale Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/73/82/40738223a37693cb31ff3bcf4ababd4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoL0igVGzdXbklmyYHM4389E5kF9bAro04lQ';" alt="Ladies And Gents It S Weekend Time But More Importantly It S Blackfriday Which Means Shoppingtime So Shop Sh Shop Till You Drop Black Friday Sale Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ladies And Gents It S Weekend Time But More Importantly It S Blackfriday Which Means Shoppingtime So Shop Sh Shop Till You Drop Black Friday Sale Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9c/c7/52/9cc7529180fe98e451f6ad256e9a57e1.jpg" data-lightbox="roadtrip" data-title="Pin On Mycart">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9c/c7/52/9cc7529180fe98e451f6ad256e9a57e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJooQ2w_5Wx27Kw6NbqdRwW2bLLcXHn7aFcA';" alt="Pin On Mycart">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mycart</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/97/93/03/9793031a096c379b1107c4a217aaa009.jpg" data-lightbox="roadtrip" data-title="I Didn T Put That In My Cart My Little Pony Twilight My Little Pony Friendship My Little Pony">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/97/93/03/9793031a096c379b1107c4a217aaa009.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5msPEsi8jOO5b2GVs8LTEmF3z2ruXF1VKfw';" alt="I Didn T Put That In My Cart My Little Pony Twilight My Little Pony Friendship My Little Pony">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Didn T Put That In My Cart My Little Pony Twilight My Little Pony Friendship My Little Pony</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/0d/53/d80d53176cc944424cfb830db0902dda.jpg" data-lightbox="roadtrip" data-title="Pin On Essential Oils Usage Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/0d/53/d80d53176cc944424cfb830db0902dda.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXqkfJTB1mdXftLWBhdZfUCX7NdbQgT6D4yA';" alt="Pin On Essential Oils Usage Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Essential Oils Usage Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c5/0c/06/c50c061d979457aa7cb1f700040c85b4.jpg" data-lightbox="roadtrip" data-title="My Cart The Personalized Gift Book That Says Why You Love Someone Lovebook Online Book Gifts Loving Someone Personalized Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c5/0c/06/c50c061d979457aa7cb1f700040c85b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsSGVkhsVpPBG6vaaN2xTUHjabQHa44-5R-g';" alt="My Cart The Personalized Gift Book That Says Why You Love Someone Lovebook Online Book Gifts Loving Someone Personalized Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Cart The Personalized Gift Book That Says Why You Love Someone Lovebook Online Book Gifts Loving Someone Personalized Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b2/80/cd/b280cdd781f08b669c94abc65105931f.jpg" data-lightbox="roadtrip" data-title="Tap And Write Emergent Readers Cvc Short Vowel Words Writing Workshop Kindergarten Writing Cvc Words Short Vowel Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b2/80/cd/b280cdd781f08b669c94abc65105931f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdw5tTgm2KM6DhhIoo5kuI5yazUe5n7wjBKA';" alt="Tap And Write Emergent Readers Cvc Short Vowel Words Writing Workshop Kindergarten Writing Cvc Words Short Vowel Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tap And Write Emergent Readers Cvc Short Vowel Words Writing Workshop Kindergarten Writing Cvc Words Short Vowel Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/54/92/d3549295de04fd72efb8ae25f66e53af.jpg" data-lightbox="roadtrip" data-title="13 Powerful Manifestation Techniques That Actually Get Results Manifestation Subliminal Manifestation Affirmations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/54/92/d3549295de04fd72efb8ae25f66e53af.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwPysYL44L0FBtJNTUFaETGyFxYR25s-OLlA';" alt="13 Powerful Manifestation Techniques That Actually Get Results Manifestation Subliminal Manifestation Affirmations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">13 Powerful Manifestation Techniques That Actually Get Results Manifestation Subliminal Manifestation Affirmations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/c6/3a/e8c63abe9d18eefd6365b49013a756f0.jpg" data-lightbox="roadtrip" data-title="Register For This Year S American Express Shop Small Business American Expre Small Business Saturday Sale Small Business Saturday American Express Shop Small">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/c6/3a/e8c63abe9d18eefd6365b49013a756f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROHBhvuxwWNvtSWyUzNLj_G-el9CR_gfbZMA';" alt="Register For This Year S American Express Shop Small Business American Expre Small Business Saturday Sale Small Business Saturday American Express Shop Small">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Register For This Year S American Express Shop Small Business American Expre Small Business Saturday Sale Small Business Saturday American Express Shop Small</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/msn-uk-wiki.html">Msn Uk Wiki</a></li>
+													<li class="list-group-item"><a href="/msn-uk-news-and-sport.html">Msn Uk News And Sport</a></li>
+													<li class="list-group-item"><a href="/msn-usa-news-english.html">Msn Usa News English</a></li>
+													<li class="list-group-item"><a href="/msn-uk-sign-in.html">Msn Uk Sign In</a></li>
+													<li class="list-group-item"><a href="/msn-uk-sign-up.html">Msn Uk Sign Up</a></li>
+													<li class="list-group-item"><a href="/msn-uk-register.html">Msn Uk Register</a></li>
+													<li class="list-group-item"><a href="/msn-us-news-headlines.html">Msn Us News Headlines</a></li>
+													<li class="list-group-item"><a href="/msn-usa-in-english.html">Msn Usa In English</a></li>
+													<li class="list-group-item"><a href="/msn-us-news-in-english.html">Msn Us News In English</a></li>
+													<li class="list-group-item"><a href="/msn-weather-uk-belgrade.html">Msn Weather Uk Belgrade</a></li>
+													<li class="list-group-item"><a href="/msn-us-news-homepage.html">Msn Us News Homepage</a></li>
+													<li class="list-group-item"><a href="/msn-usa-en.html">Msn Usa En</a></li>
+													<li class="list-group-item"><a href="/msn-us-outlook.html">Msn Us Outlook</a></li>
+													<li class="list-group-item"><a href="/msn-uk-login-hotmail.html">Msn Uk Login Hotmail</a></li>
+													<li class="list-group-item"><a href="/msn-uk-world-news.html">Msn Uk World News</a></li>
+													<li class="list-group-item"><a href="/msn-uk-horoscope.html">Msn Uk Horoscope</a></li>
+													<li class="list-group-item"><a href="/msn-uk-new-account.html">Msn Uk New Account</a></li>
+													<li class="list-group-item"><a href="/msn-us-breaking-news.html">Msn Us Breaking News</a></li>
+													<li class="list-group-item"><a href="/msn-us-corona.html">Msn Us Corona</a></li>
+													<li class="list-group-item"><a href="/msn-usa-news-today.html">Msn Usa News Today</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Does It Mean When Your Partner Belittles You - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Does It Mean When Your Partner Belittles You",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/e5/5b/e8/e55be88a3b7ef62f9a84294d0464706c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+does+it+mean+when+your+partner+belittles+you",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Does It Mean When Your Partner Belittles You</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">It can also be a sign of contempt which is the death knell for a marriage. October 24 2020 References A condescending spouse can make you feel worthless frustrated and sad. But if you feel like all youre doing is giving and getting little in return its time to take a closer look at how seriously your needs are being treated by your partner. <br>				
+			</p>
+										<a class="badge badge-primary" href="/will-army-pay-for-masters-degree.html">will army pay for masters degree</a>
+											<a class="badge badge-secondary" href="/will-the-military-pay-for-my-college-loans.html">will the military pay for my college loans</a>
+											<a class="badge badge-secondary" href="/will-military-pay-for-spouse-college.html">will military pay for spouse college</a>
+											<a class="badge badge-info" href="/will-the-military-take-someone-with-depression.html">will the military take someone with depression</a>
+											<a class="badge badge-secondary" href="/why-my-wife-doesnt-love-me-anymore.html">why my wife doesnt love me anymore</a>
+											<a class="badge badge-light" href="/will-he-come-back-after-leaving-for-another-woman.html">will he come back after leaving for another woman</a>
+											<a class="badge badge-danger" href="/will-ta-pay-for-a-masters-degree.html">will ta pay for a masters degree</a>
+											<a class="badge badge-primary" href="/wife-of-marine-veteran-deported.html">wife of marine veteran deported</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to visit the right site.  Our website gives you suggestions for viewing the maximum quality video and image content, hunt and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video that you see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/90/61/049061ef0ee8a7562e6f20a5f78068d7.png" data-lightbox="roadtrip" data-title="How To Recover Self Esteem After Someone Belittles You Belittle Quotes Belittle Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/90/61/049061ef0ee8a7562e6f20a5f78068d7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFpwzf3hydYKogYfZvhh1pm3j4KkNS8IWQZA';" alt="How To Recover Self Esteem After Someone Belittles You Belittle Quotes Belittle Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Recover Self Esteem After Someone Belittles You Belittle Quotes Belittle Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lessonslearnedinlife.com/wp-content/uploads/Someone-who-loves-you-well.1.jpg" data-lightbox="roadtrip" data-title="Lessons Learned In Lifesomeone Who Loves You Well Lessons Learned In Life">
+											<img class="card-img v-image ads-img " src="https://lessonslearnedinlife.com/wp-content/uploads/Someone-who-loves-you-well.1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToLpFVr2ygyKxdWJ24HGkO-XVxFHqfP2UdTw';" alt="Lessons Learned In Lifesomeone Who Loves You Well Lessons Learned In Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lessons Learned In Lifesomeone Who Loves You Well Lessons Learned In Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/0d/a2/cd0da24ef4f8750cb7297f3fd1921954.jpg" data-lightbox="roadtrip" data-title="On Belittling Others The Minute You Think You Have The Right To Belittle Others Because You Think You Re Better Th Belittle Quotes Words Inspirational Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/0d/a2/cd0da24ef4f8750cb7297f3fd1921954.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_K2j-sulgsotc2hfUJjIqk695JZNV01qUw';" alt="On Belittling Others The Minute You Think You Have The Right To Belittle Others Because You Think You Re Better Th Belittle Quotes Words Inspirational Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">On Belittling Others The Minute You Think You Have The Right To Belittle Others Because You Think You Re Better Th Belittle Quotes Words Inspirational Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.bonobology.com/wp-content/uploads/2020/10/beautiful-young-girl-sitting-bed-looking-sad-while-hers-boyfriends-pay-attention-her-he-is-smiling-looking-his-tablet_232070-6565-1.jpg" data-lightbox="roadtrip" data-title="What To Do When Your Husband Belittles You">
+											<img class="card-img v-image ads-img " src="https://www.bonobology.com/wp-content/uploads/2020/10/beautiful-young-girl-sitting-bed-looking-sad-while-hers-boyfriends-pay-attention-her-he-is-smiling-looking-his-tablet_232070-6565-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_j2a9vUhF4CWCYeoQXwEsQz6a98uAb64akA';" alt="What To Do When Your Husband Belittles You">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Do When Your Husband Belittles You</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/8f/c1/4e8fc147c5fd3fbb202353389d442501.png" data-lightbox="roadtrip" data-title="Quotes When Someone Tries To Belittle You Or Doesn T Give You The Respect You Deserve Remember Somet Positive Quotes For Life Wisdom Quotes Motivational Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/8f/c1/4e8fc147c5fd3fbb202353389d442501.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgWE_Y3B1CR07H2R50wrMrVz17EsLA8zfx0Q';" alt="Quotes When Someone Tries To Belittle You Or Doesn T Give You The Respect You Deserve Remember Somet Positive Quotes For Life Wisdom Quotes Motivational Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Quotes When Someone Tries To Belittle You Or Doesn T Give You The Respect You Deserve Remember Somet Positive Quotes For Life Wisdom Quotes Motivational Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://qph.fs.quoracdn.net/main-qimg-e82275faa103a613a4da2aab0d691491.webp" data-lightbox="roadtrip" data-title="Why Would Someone Try To Belittle You In Front Of People Quora">
+											<img class="card-img v-image ads-img " src="https://qph.fs.quoracdn.net/main-qimg-e82275faa103a613a4da2aab0d691491.webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_WdyaKRhYH77IAg45KECbbiMBmHp7SIS_g';" alt="Why Would Someone Try To Belittle You In Front Of People Quora">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Would Someone Try To Belittle You In Front Of People Quora</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://lessonslearnedinlife.com/wp-content/uploads/Someone-who-loves-you-well.1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_WdyaKRhYH77IAg45KECbbiMBmHp7SIS_g';" alt="Why Would Someone Try To Belittle You In Front Of People Quora">
+										<div class="card-body">
+						<h3 class="h5"><b>No matter whether you are right or not he never takes your side.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What does it mean when your partner belittles you</strong>. 
+								
+																	It is a vow that you and your partner will support each other no matter what. 
+																	You are you and you are fine as you are. 
+																	Nevertheless this is not something your disrespectful husband ever does. 
+																	It can feel earth-shaking and downright humiliating when your partner puts you down however playfully in front co-workers family or friends. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If your husband belittles you or puts you down in any other way those are warning signs that you have a disrespectful husband or that theres not much respect in your relationship. 
+																	These are all red flags and some of the warning signs of a disrespectful husband even border on potential abuse depending on what warning signs youre noticing. 
+																	Regardless of your culture socio-demographics. 
+																	5 Your partner tries to control everything. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Instead he thinks that others are always right and that you are wrong. 
+																	Your partner cares about you hopefully even if they are acting this way and will care that they have upset you. 
+																	If youre starting to feel undervalued in your relationship here are five signs that can mean your partner doesnt care enough about you. 
+																	A partner who views every interaction you have as being flirtatious is suspicious or threatened by multiple people you come in contact with or faults you for innocent interactions because they. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I hope it hasnt been a long time since you reminded yourself of that but I suspect it has. 
+																	Dont engage with your partner while theyre irate. 
+																	When your partner shames you for your weight appearance etc not only is it cruel immature and based in patriarchal falsehoods but it can also be a manipulative way to convince you that. 
+																	When you love somebody you hold their opinion of you in the highest esteem which means any doubts they have about you will affect you more than the doubts of your family friends or coworkers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dont try to talk them out of their mood just inform them that you recognize that they are upset and will speak with them when theyre more level-headed. 
+																	If you yell or cry your spouse may only hear the emotion and miss the point you want to make. 
+																	Often a husband belittles his wife it is not taken seriously at least initially as they are not seen to be overtly abusive. 
+																	Instead of putting up a wall Covy suggests taking a direct approach by discussing whats bothering you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While everyone has their own way of doing things if you have a your way or no way mentality and make that apparent to your partner you may be unexpectedly belittling them. 
+																	11 Reasons Good Men Wont Cheat. 
+																	It may not be a pleasant or comfortable conversation but unlike saying nothing it might actually help resolve your issues. 
+																	If your spouse is condescending to you either in private or in front of others this behavior must not only be dealt with but changed as well. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Being judgmental and the loud tone of voice is rude and unkind angry words and unkind speech of your partner hurt you emotionally and they know it very well if they still choose to do it it is a clear sign that they dont respect you. 
+																	They Disregard Your Feelings. 
+																	If your partner starts belittling you its okay to just say you dont agree or you dont like it when they behave this way. 
+																	Many of us get so caught up in how we feel that we forget to express ourselves. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If your partner belittles you calls you to name intentionally and hurts your feelings it is a sign that your partner doesnt respect you. 
+																	What arent fine here are your relationship and the way. 
+																	If you can contrive to keep yourself at sufficient emotional distance from your partners verbal assault you can listen to them at the same time you manage not to have their words puncture you. 
+																	Essentially it means you are subtly shown your place and it is always secondary to him. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If your partner does respect youas they should in any healthy relationshipthen you should notice them making more of an effort to reflect that in their behavior. 
+																	Use a softer tone. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.aconsciousrethink.com/wp-content/uploads/2020/11/belittling-husband-boyfriend-702x336.jpg" data-lightbox="roadtrip" data-title="How To Deal With Belittling In A Relationship 6 Highly Effective Tips">
+											<img class="card-img v-image ads-img " src="https://www.aconsciousrethink.com/wp-content/uploads/2020/11/belittling-husband-boyfriend-702x336.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR83K-f17hXFr3i4bi_KJfKlLvayIlYaLRKfQ';" alt="How To Deal With Belittling In A Relationship 6 Highly Effective Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Deal With Belittling In A Relationship 6 Highly Effective Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/aa/8a/94aa8a8210597e96c16aae222ecf9b82.jpg" data-lightbox="roadtrip" data-title="Toni Payne Quotes Love Motivational Life Success Quotes Belittle Quotes Mean People Quotes People Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/aa/8a/94aa8a8210597e96c16aae222ecf9b82.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5sY30V8OKGCy0bD1B7yqrrmN92BvUOj8cUg';" alt="Toni Payne Quotes Love Motivational Life Success Quotes Belittle Quotes Mean People Quotes People Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Toni Payne Quotes Love Motivational Life Success Quotes Belittle Quotes Mean People Quotes People Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/5f/ed/485fed3d2ef035a5394a6fee73b3a6fd.jpg" data-lightbox="roadtrip" data-title="Never Let Anyone Belittle You You Deserve Better If The One You Love Can T Respect And See You Be True To Yourself Simple Reminders Quotes You Deserve Better">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/5f/ed/485fed3d2ef035a5394a6fee73b3a6fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP0Cae-cow40ZO-Tgi5rF_iGHT2MbcO1UEvA';" alt="Never Let Anyone Belittle You You Deserve Better If The One You Love Can T Respect And See You Be True To Yourself Simple Reminders Quotes You Deserve Better">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Never Let Anyone Belittle You You Deserve Better If The One You Love Can T Respect And See You Be True To Yourself Simple Reminders Quotes You Deserve Better</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dxuoddg10rgxw.cloudfront.net/wp-content/uploads/2012/04/17023426/belittle.jpg" data-lightbox="roadtrip" data-title="Meaning Of Belittle">
+											<img class="card-img v-image ads-img " src="https://dxuoddg10rgxw.cloudfront.net/wp-content/uploads/2012/04/17023426/belittle.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2ycUdoBroXzBT9VDAlYqVgm9Yj7goRe5RIg';" alt="Meaning Of Belittle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meaning Of Belittle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/e1/00/f2e1002c37aaac1596d69fccdceb84d0.jpg" data-lightbox="roadtrip" data-title="Pin By Theresa Shea On We All Desire L O V E Heartfelt Quotes Words Love Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/e1/00/f2e1002c37aaac1596d69fccdceb84d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScghTTceWRhR0sNk9Bc45cilm7xsxIEvgdIQ';" alt="Pin By Theresa Shea On We All Desire L O V E Heartfelt Quotes Words Love Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Theresa Shea On We All Desire L O V E Heartfelt Quotes Words Love Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/n8F6_q9pVj8/maxresdefault.jpg" data-lightbox="roadtrip" data-title="How To Deal With A Partner Who Is Mean Belittling And Puts Me Down The Asknick Show 13 Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/n8F6_q9pVj8/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJsgbfTAmPV-SCj7ft5hYcfUC4-nyIs0wIiQ';" alt="How To Deal With A Partner Who Is Mean Belittling And Puts Me Down The Asknick Show 13 Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Deal With A Partner Who Is Mean Belittling And Puts Me Down The Asknick Show 13 Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/0d/da/b80dda530f70c0df84e32f1d97259080.jpg" data-lightbox="roadtrip" data-title="Do Not Belittle Someone For Doing The Right Thing There S A Message Somewhere In That Guys Words Inspirational Quotes True Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/0d/da/b80dda530f70c0df84e32f1d97259080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlF2XDYs67_ji99hK_WXfPv69ucfFtQHQeZw';" alt="Do Not Belittle Someone For Doing The Right Thing There S A Message Somewhere In That Guys Words Inspirational Quotes True Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do Not Belittle Someone For Doing The Right Thing There S A Message Somewhere In That Guys Words Inspirational Quotes True Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/53/27/965327c14d7c9090718c31db09bdc046.jpg" data-lightbox="roadtrip" data-title="Never Belittle Your Self As A Women To Please Any Man You Are A Beautiful Women Who Deserves The Best Funny Quotes For Teens Words Quotes Funny Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/53/27/965327c14d7c9090718c31db09bdc046.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWwQkt306l7_fdSg2F9Um9DlbtL50MD0g42Q';" alt="Never Belittle Your Self As A Women To Please Any Man You Are A Beautiful Women Who Deserves The Best Funny Quotes For Teens Words Quotes Funny Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Never Belittle Your Self As A Women To Please Any Man You Are A Beautiful Women Who Deserves The Best Funny Quotes For Teens Words Quotes Funny Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e4/0e/e3/e40ee39e458c8b634693a27d5f576d64--your-insecurities-are-showing-insecure-people-truths.jpg" data-lightbox="roadtrip" data-title="Pin On Positive And Good Thoughts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e4/0e/e3/e40ee39e458c8b634693a27d5f576d64--your-insecurities-are-showing-insecure-people-truths.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR8nReTfgLUWHlgY5nDyFcekDEnw_fQfjyeA';" alt="Pin On Positive And Good Thoughts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Positive And Good Thoughts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/75/64/6a756477f38e1c35c5d38272fd8559be.jpg" data-lightbox="roadtrip" data-title="Pin On Truth">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/75/64/6a756477f38e1c35c5d38272fd8559be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI-IyHBMPhxW81Ft2Mkrhfszy4ppoCnu3Xew';" alt="Pin On Truth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Truth</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/7c/9d/367c9d0e5e4036e7b935de20ff5d6b8b.jpg" data-lightbox="roadtrip" data-title="My Own Little World Belittle Quotes Wisdom Quotes Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/7c/9d/367c9d0e5e4036e7b935de20ff5d6b8b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2_FH06OwpEHuL9dpoSKFPVL4BMtndyYc3IQ';" alt="My Own Little World Belittle Quotes Wisdom Quotes Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Own Little World Belittle Quotes Wisdom Quotes Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/5b/e8/e55be88a3b7ef62f9a84294d0464706c.jpg" data-lightbox="roadtrip" data-title="Pin By Julie Ewing On Yes Inspirational Quotes For Kids Be Yourself Quotes Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/5b/e8/e55be88a3b7ef62f9a84294d0464706c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Y0a2VnNSfffieLDXhLR-_v_T9jr7uX2KRQ';" alt="Pin By Julie Ewing On Yes Inspirational Quotes For Kids Be Yourself Quotes Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Julie Ewing On Yes Inspirational Quotes For Kids Be Yourself Quotes Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/34/a8/ca34a8a1cdad0fe8682db56e79f81ee5.jpg" data-lightbox="roadtrip" data-title="Keep Away From People Who Try To Belittle Your Ambitions Small People Always Do That But Really Grat Make You Feel That You Too Can Become Great Marktwain">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/34/a8/ca34a8a1cdad0fe8682db56e79f81ee5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_G7VkbTsUp9VCA7sw1i9sOHZSXuGOQNCzRg';" alt="Keep Away From People Who Try To Belittle Your Ambitions Small People Always Do That But Really Grat Make You Feel That You Too Can Become Great Marktwain">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Keep Away From People Who Try To Belittle Your Ambitions Small People Always Do That But Really Grat Make You Feel That You Too Can Become Great Marktwain</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/does-24-hour-have-guest-passes.html">Does 24 Hour Have Guest Passes</a></li>
+													<li class="list-group-item"><a href="/does-24-hour-fitness-do-military-discount.html">Does 24 Hour Fitness Do Military Discount</a></li>
+													<li class="list-group-item"><a href="/dod-spouse-education-and-career-opportunities.html">Dod Spouse Education And Career Opportunities</a></li>
+													<li class="list-group-item"><a href="/do-retired-military-spouses-get-id-cards.html">Do Retired Military Spouses Get Id Cards</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-military-discounts.html">Do Military Spouses Get Military Discounts</a></li>
+													<li class="list-group-item"><a href="/do-military-wives-live-on-base.html">Do Military Wives Live On Base</a></li>
+													<li class="list-group-item"><a href="/does-a-military-spouse-keep-benefits-after-divorce.html">Does A Military Spouse Keep Benefits After Divorce</a></li>
+													<li class="list-group-item"><a href="/do-weekends-count-as-military-leave-days.html">Do Weekends Count As Military Leave Days</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-free-plastic-surgery.html">Do Military Spouses Get Free Plastic Surgery</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-have-to-pay-out-of-state-tuition.html">Do Military Spouses Have To Pay Out Of State Tuition</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-qualify-for-in-state-tuition.html">Do Military Spouses Qualify For In State Tuition</a></li>
+													<li class="list-group-item"><a href="/do-reservists-get-tuition-assistance.html">Do Reservists Get Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/do-you-lose-your-military-survivor-benefits-if-you-remarry.html">Do You Lose Your Military Survivor Benefits If You Remarry</a></li>
+													<li class="list-group-item"><a href="/dod-whistleblower-hotline-poster.html">Dod Whistleblower Hotline Poster</a></li>
+													<li class="list-group-item"><a href="/do-veterans-with-100-disability-benefits.html">Do Veterans With 100 Disability Benefits</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-veterans-preference.html">Do Military Spouses Get Veterans Preference</a></li>
+													<li class="list-group-item"><a href="/do-military-widows-receive-pension.html">Do Military Widows Receive Pension</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-life-insurance.html">Do Military Spouses Get Life Insurance</a></li>
+													<li class="list-group-item"><a href="/do-military-wives-get-discounts.html">Do Military Wives Get Discounts</a></li>
+													<li class="list-group-item"><a href="/do-military-spouses-get-military-id.html">Do Military Spouses Get Military Id</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

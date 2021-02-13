@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Jobs For Environmental Science Majors - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Jobs For Environmental Science Majors",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/b8/66/0b/b8660bf09a50ee20fdac93ff59921d19.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+jobs+for+environmental+science+majors",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Jobs For Environmental Science Majors</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The careers covered below contribute to the safe and secure enforcement of regulations in each of the branches. Individuals who pursue an environmental science degree have several options when it comes to jobs including a career as a microbiologist environmental scientist and environmental engineer. Environmental science and protection technicians also called environmental health technicians in the military are used by the armed forces to monitor bacteria and health hazards in the. <br>				
+			</p>
+										<a class="badge badge-primary" href="/air-force-benefits-fact-sheet.html">air force benefits fact sheet</a>
+											<a class="badge badge-secondary" href="/air-force-benefits-calculator.html">air force benefits calculator</a>
+											<a class="badge badge-danger" href="/air-force-family-separation-pay-regulation.html">air force family separation pay regulation</a>
+											<a class="badge badge-success" href="/air-force-enlistment-buddy-program.html">air force enlistment buddy program</a>
+											<a class="badge badge-dark" href="/air-force-aircraft-cost-per-flying-hour.html">air force aircraft cost per flying hour</a>
+											<a class="badge badge-danger" href="/air-force-benefits-fact-sheet-2020-pdf.html">air force benefits fact sheet 2020 pdf</a>
+											<a class="badge badge-info" href="/air-force-benefits-married.html">air force benefits married</a>
+											<a class="badge badge-success" href="/air-force-academy-visitor-center-hours.html">air force academy visitor center hours</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to pay a visit to the right site.  Our website gives you suggestions for viewing the maximum quality video and picture content, search and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie for you to see.  You can also bring about supporting this site by sharing videos and graphics that you enjoy on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/c8/62/cbc862e96a403ebc273b9bda8f133a8f.jpg" data-lightbox="roadtrip" data-title="Army Education News Health Health Care Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/c8/62/cbc862e96a403ebc273b9bda8f133a8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2oqvgq86cuPufLai5wi401UKvUp4a0QeJOQ';" alt="Army Education News Health Health Care Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Education News Health Health Care Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/c8/f6/aac8f6338539a849798caac308788aed.jpg" data-lightbox="roadtrip" data-title="Pin On Careers In">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/c8/f6/aac8f6338539a849798caac308788aed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe03lT0qbqTidjMcC_0qjhs9wzxEDt8UeABQ';" alt="Pin On Careers In">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Careers In</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/61/cd/ea61cd0aa2a3c9624f9f6f37a7b78166.png" data-lightbox="roadtrip" data-title="Change The World Become An Environmental Scientist Environmental Scientist Environmental Research Scientist">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/61/cd/ea61cd0aa2a3c9624f9f6f37a7b78166.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjCnCvqzbl7DCw5EYMdzJ0XQxYXiAos_hCCQ';" alt="Change The World Become An Environmental Scientist Environmental Scientist Environmental Research Scientist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Change The World Become An Environmental Scientist Environmental Scientist Environmental Research Scientist</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/5b/e5/805be5c6daf6daf74922da372712ff16.jpg" data-lightbox="roadtrip" data-title="Air Force Career Examples Explore The Infographic Below To See How Asvab Scores Relate To Air Force Careers Air Force Jobs Air Force Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/5b/e5/805be5c6daf6daf74922da372712ff16.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqAEqjbBaYOCETfQqZDHowUBiJ5OIdfjPfeQ';" alt="Air Force Career Examples Explore The Infographic Below To See How Asvab Scores Relate To Air Force Careers Air Force Jobs Air Force Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Career Examples Explore The Infographic Below To See How Asvab Scores Relate To Air Force Careers Air Force Jobs Air Force Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0c/67/8d/0c678d3e3800ef778adf8fa573c3c277.jpg" data-lightbox="roadtrip" data-title="Environmental Science Articles In 2020 Science Articles Environmental Science Major High School Environmental Science">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0c/67/8d/0c678d3e3800ef778adf8fa573c3c277.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI71Go_xUChl2E1EnZ9hTuTDWTliio6L_0mw';" alt="Environmental Science Articles In 2020 Science Articles Environmental Science Major High School Environmental Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Environmental Science Articles In 2020 Science Articles Environmental Science Major High School Environmental Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c4/dc/63/c4dc636be895f9147ac8d22c762e2ea6.jpg" data-lightbox="roadtrip" data-title="Environmental Science Books Environmental Science Activities High School Environmental Science Environmental Science Major">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c4/dc/63/c4dc636be895f9147ac8d22c762e2ea6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2MyNjXbrL5tws42KzPBx4sIZnGv6h178FOA';" alt="Environmental Science Books Environmental Science Activities High School Environmental Science Environmental Science Major">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Environmental Science Books Environmental Science Activities High School Environmental Science Environmental Science Major</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/cb/c8/62/cbc862e96a403ebc273b9bda8f133a8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2MyNjXbrL5tws42KzPBx4sIZnGv6h178FOA';" alt="Environmental Science Books Environmental Science Activities High School Environmental Science Environmental Science Major">
+										<div class="card-body">
+						<h3 class="h5"><b>In this article we explore 20 of the top jobs you can pursue with an environmental science degree and the skills you should list on your resume to help you get.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military jobs for environmental science majors</strong>. 
+								
+																	These guys work for universities or army training academies and educate the new crop of military scientists and officers. 
+																	By CollegeXpress and Terry Ward. 
+																	Most Common Jobs for Environmental Science Majors. 
+																	For example hydrologists and biologists require a minimum 3-year university degree. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Environmental scientists will need at least a bachelors degree in environmental science or a related field such as chemistry or biology. 
+																	If you have a love for the outdoors and a desire to protect its inhabitants check out these majors in environmental sciences and find the right one for you. 
+																	Serving in a military science career requires a passion for knowledge and science as well as dedication to military life. 
+																	If you have a passion for passing your knowledge on to other people you could seek work as a military science instructor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As an Environmental ScienceEngineering Officer youll identify and evaluate potential health risks and develop a course of action to control or prevent disease illness and injury. 
+																	2 days ago Environmental science and protection technicians also called environmental health technicians in the military are used by the armed forces to monitor bacteria and health hazards in the environment. 
+																	An environmental science degree equips you with the skills and knowledge for a range of jobs in areas such as conservation sustainability and environmental research and education. 
+																	In the mid-range salary these environmental science positions earn anywhere in the range of 65000-70000. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The role of military science is pertinent to the health and strength of our military. 
+																	In a nutshell environmental scientists are tasked with studying analyzing and potentially providing sustainable solutions to environmental problems including pollution biodiversity loss and climate change. 
+																	As a student in this field youll need the ability to understand and apply complex concepts in biology chemistry geology and physics. 
+																	Environmental scientists aspiring to academic careers will need a doctoral degrees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Environmental Jobs in the Military. 
+																	This video discusses my TOP 12 CAREERS for Environmental Majors and choosing a major. 
+																	Keep in mind the path you choose may require additional education experience training andor other qualifications beyond obtaining a degree in environmental science. 
+																	If youre an environmental studies or environmental science ES major youre preparing yourself for a range of careers that can do just that. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	ES majors ground their idealism in scientific rigor. 
+																	Read more about getting an online environmental science degree. 
+																	These careers allow you to utilize the skills you have developed but definitely allow you to engage with immediate real-world problems rather than researching in a laboratory. 
+																	The following options are only a sampling of the varying directions you might consider. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are many career paths to explore within the environmental science field. 
+																	Mid-Range Environmental Science Salary Careers 65000-70000 As we move higher in the salary range we see more specialized skilled professions. 
+																	Watch this if you are going to college for environmental scienceLIN. 
+																	Jobs directly related to your degree include. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Environmental Science Majors and Potential Jobs. 
+																	Global warming deforestation and water pollution--major challenges the environment is affected by each day. 
+																	People entering the. 
+																	A bachelors degree in biology may also qualify you for a job as a clinical laboratory scientist in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply to Environmental Scientist Entry Level Scientist Natural Resource Technician and more. 
+																	Those pursuing advanced degrees may do well to major in a specific natural science such as chemistry biology physics or geology rather than a broader environmental science degree. 
+																	The job involves supervising scientific research for environmental health and industrial hygiene. 
+																	According to BLS data over 20000 military and Coast Guard active duty personnel and officers work in engineering science and technical positions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The field of environmental science is growing at a faster rate than ever due to issues such as climate change and pollution. 
+																	Common routes for environmental science graduates include resource management environmental advocacy teaching and planning and development. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/51/e1/0251e1e37b5f0ff3205cbf7419a34fa8.png" data-lightbox="roadtrip" data-title="Anthropology Major Jobs Advice For Undergraduate Majors Anthropology Major Environmental Studies Anthropology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/51/e1/0251e1e37b5f0ff3205cbf7419a34fa8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfHdDyX1DYLjY4KboEdzSI9EUdBqwFj4h7gQ';" alt="Anthropology Major Jobs Advice For Undergraduate Majors Anthropology Major Environmental Studies Anthropology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Anthropology Major Jobs Advice For Undergraduate Majors Anthropology Major Environmental Studies Anthropology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/36/49/a4/3649a431344975f5159dd3d9d2a8706a--military-spending-politics.jpg" data-lightbox="roadtrip" data-title="Arms Trade Infographic Infographic Military Spending Job Creators">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/36/49/a4/3649a431344975f5159dd3d9d2a8706a--military-spending-politics.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8X_1a2EBOsy7_PBqM98R7-7B1ZGBvN8G10w';" alt="Arms Trade Infographic Infographic Military Spending Job Creators">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arms Trade Infographic Infographic Military Spending Job Creators</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/18/ea/7718eace46954f059d0373fd1cedfefe.gif" data-lightbox="roadtrip" data-title="5 Best Job Search Engines Jobinterviewtipsmart Com List Of Jobs Job Search Websites Job Portal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/18/ea/7718eace46954f059d0373fd1cedfefe.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVsowm-lSc01obS-6FX2PcGJyk8uriFU8uBQ';" alt="5 Best Job Search Engines Jobinterviewtipsmart Com List Of Jobs Job Search Websites Job Portal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Best Job Search Engines Jobinterviewtipsmart Com List Of Jobs Job Search Websites Job Portal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/49/13/29/491329418e9fad508ff81feb52c828ac.jpg" data-lightbox="roadtrip" data-title="Technical Studies A A S Industrial Technical Applied Science Career Advancement Work Experience">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/49/13/29/491329418e9fad508ff81feb52c828ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW_Gjmq8mnknd1R-kvA8iOPPNRvTubcDhIBw';" alt="Technical Studies A A S Industrial Technical Applied Science Career Advancement Work Experience">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Technical Studies A A S Industrial Technical Applied Science Career Advancement Work Experience</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/66/0b/b8660bf09a50ee20fdac93ff59921d19.jpg" data-lightbox="roadtrip" data-title="Pin On Career And Technical Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/66/0b/b8660bf09a50ee20fdac93ff59921d19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqRJ3p4zqoz8mDFiMcQSrUVcWrx1n8FaDX8A';" alt="Pin On Career And Technical Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Career And Technical Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/f7/9d/a6f79d7ea5403bd6930c3bd7a58a3d5f.jpg" data-lightbox="roadtrip" data-title="2013 Stressful Jobs Infograph Jobs In The Military Once Again Top The Careercast Com Jobs Rated Rankings O Stressful Job Most Stressful Jobs Public Relations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/f7/9d/a6f79d7ea5403bd6930c3bd7a58a3d5f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsGyH1_nIlU_fqZyYUlNiWoHGCseMxLE2RHg';" alt="2013 Stressful Jobs Infograph Jobs In The Military Once Again Top The Careercast Com Jobs Rated Rankings O Stressful Job Most Stressful Jobs Public Relations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2013 Stressful Jobs Infograph Jobs In The Military Once Again Top The Careercast Com Jobs Rated Rankings O Stressful Job Most Stressful Jobs Public Relations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/e7/b6/85e7b682d0f05b2710fac69e48e45b40.jpg" data-lightbox="roadtrip" data-title="122 Careers For A Philosophy Major Philosophy Major College Majors Online College Degrees">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/e7/b6/85e7b682d0f05b2710fac69e48e45b40.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNTayVPehxfWTLijG6sC4AdHxB8xZ2uOa4xQ';" alt="122 Careers For A Philosophy Major Philosophy Major College Majors Online College Degrees">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">122 Careers For A Philosophy Major Philosophy Major College Majors Online College Degrees</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/95/4d/54/954d54aa54e3741f2632a8c87db4af11.jpg" data-lightbox="roadtrip" data-title="Pin On Job Career Fairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/95/4d/54/954d54aa54e3741f2632a8c87db4af11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1UWAgojYHpKIvbwmOvKJHuHBkiU1q9l2YBg';" alt="Pin On Job Career Fairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Job Career Fairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/28/8f/b9288f6792b9991742352e5b28225b41.png" data-lightbox="roadtrip" data-title="The Military Insignia Includes A Variety Of Different Symbols And Insignias Used Within The Navy On Caps Badges A Navy Rank Insignia Military Ranks Army Ranks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/28/8f/b9288f6792b9991742352e5b28225b41.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGhBjFojdXrdtFjuVb8sBHCEwo-nt19HX_Q';" alt="The Military Insignia Includes A Variety Of Different Symbols And Insignias Used Within The Navy On Caps Badges A Navy Rank Insignia Military Ranks Army Ranks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Military Insignia Includes A Variety Of Different Symbols And Insignias Used Within The Navy On Caps Badges A Navy Rank Insignia Military Ranks Army Ranks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/cc/9b/20cc9b817426ea93eb44b01ca3e5a1c3.jpg" data-lightbox="roadtrip" data-title="Pin On Women In Stem">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/cc/9b/20cc9b817426ea93eb44b01ca3e5a1c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCF8j-v6H6tC_OLdWYIIuVAwHWjVUV3YzHIA';" alt="Pin On Women In Stem">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Women In Stem</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c7/a0/2b/c7a02b69a74a2f798913cba8f4d192d7.jpg" data-lightbox="roadtrip" data-title="Navy Medicine Researchers Will Present Findings At Military Health System Research Symposium Health System Behavioral Science Medical Research">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c7/a0/2b/c7a02b69a74a2f798913cba8f4d192d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJUFhmsl_Z7ztbA_FhuKBdqeJza9Xi3q7Etw';" alt="Navy Medicine Researchers Will Present Findings At Military Health System Research Symposium Health System Behavioral Science Medical Research">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Medicine Researchers Will Present Findings At Military Health System Research Symposium Health System Behavioral Science Medical Research</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/24/a8/e724a857b651416b319e8e8c5fda4e07.png" data-lightbox="roadtrip" data-title="12 Jobs For Computer Science Majors The University Network Computer Science Major Computer Science Computer Science Engineering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/24/a8/e724a857b651416b319e8e8c5fda4e07.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuqe8I0vXelZ7jWWIj7BtRyEpIphtg_yec3w';" alt="12 Jobs For Computer Science Majors The University Network Computer Science Major Computer Science Computer Science Engineering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 Jobs For Computer Science Majors The University Network Computer Science Major Computer Science Computer Science Engineering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/b1/fc/deb1fc8d0cd84d48dd3a54bb00e3eed0.jpg" data-lightbox="roadtrip" data-title="Discountfilters Com Resource Center History Infographic Womens History Month Women In History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/b1/fc/deb1fc8d0cd84d48dd3a54bb00e3eed0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsllHNl9N7Hk2Y4mn2Fqi89AWOn25OWJnIgw';" alt="Discountfilters Com Resource Center History Infographic Womens History Month Women In History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Discountfilters Com Resource Center History Infographic Womens History Month Women In History</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-spouse-benefits-national-guard.html">Military Spouse Benefits National Guard</a></li>
+													<li class="list-group-item"><a href="/military-spouse-career-advancement-accounts-mycaa-scholarship.html">Military Spouse Career Advancement Accounts Mycaa Scholarship</a></li>
+													<li class="list-group-item"><a href="/military-spouse-covid-vaccine.html">Military Spouse Covid Vaccine</a></li>
+													<li class="list-group-item"><a href="/military-spouse-college-scholarship.html">Military Spouse College Scholarship</a></li>
+													<li class="list-group-item"><a href="/military-spouse-certification-grants.html">Military Spouse Certification Grants</a></li>
+													<li class="list-group-item"><a href="/military-spouse-college-discounts.html">Military Spouse College Discounts</a></li>
+													<li class="list-group-item"><a href="/military-spouse-college-financial-aid.html">Military Spouse College Financial Aid</a></li>
+													<li class="list-group-item"><a href="/military-spouse-club.html">Military Spouse Club</a></li>
+													<li class="list-group-item"><a href="/military-spouse-baggage.html">Military Spouse Baggage</a></li>
+													<li class="list-group-item"><a href="/military-spouse-bah-rights.html">Military Spouse Bah Rights</a></li>
+													<li class="list-group-item"><a href="/military-spouse-benefits-after-discharge.html">Military Spouse Benefits After Discharge</a></li>
+													<li class="list-group-item"><a href="/military-spouse-college-grants.html">Military Spouse College Grants</a></li>
+													<li class="list-group-item"><a href="/military-spouse-benefits-after-divorce.html">Military Spouse Benefits After Divorce</a></li>
+													<li class="list-group-item"><a href="/military-spouse-benefits-reddit.html">Military Spouse Benefits Reddit</a></li>
+													<li class="list-group-item"><a href="/military-spouse-benefits-after-death.html">Military Spouse Benefits After Death</a></li>
+													<li class="list-group-item"><a href="/military-spouse-benefits-after-retirement.html">Military Spouse Benefits After Retirement</a></li>
+													<li class="list-group-item"><a href="/military-spouse-community-college.html">Military Spouse Community College</a></li>
+													<li class="list-group-item"><a href="/military-spouse-college-assistance.html">Military Spouse College Assistance</a></li>
+													<li class="list-group-item"><a href="/military-spouse-career-statistics.html">Military Spouse Career Statistics</a></li>
+													<li class="list-group-item"><a href="/military-spouse-blog-topics.html">Military Spouse Blog Topics</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

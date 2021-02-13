@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>My Spouse Was Exposed To Covid What Should I Do - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "My Spouse Was Exposed To Covid What Should I Do",
+  "datePublished": "2021-02-13",
+  "image": "https://www.houstonmethodist.org/-/media/Images/Contenthub/Article-Images/Coronavirus/Hub_CaregivingCOVID19_Social.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=my+spouse+was+exposed+to+covid+what+should+i+do",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>My Spouse Was Exposed To Covid What Should I Do</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Stay home and monitor your health. If your partner is exhibiting symptomsor has been able to take a test and its positiveknow that leaving to stay with other family or in a hotel is advised against by health officials. But if you do then you have something you can fall back on to say Weve already had the hard conversation when it was easy to do so The less confusion the better off everyone is. <br>				
+			</p>
+										<a class="badge badge-primary" href="/ncaa-spring-eligibility-relief.html">ncaa spring eligibility relief</a>
+											<a class="badge badge-secondary" href="/new-zealand-military-24-hour-ration-packs.html">new zealand military 24 hour ration packs</a>
+											<a class="badge badge-primary" href="/ncaa-wrestling-eligibility-relief.html">ncaa wrestling eligibility relief</a>
+											<a class="badge badge-primary" href="/new-military-wife-advice.html">new military wife advice</a>
+											<a class="badge badge-danger" href="/nellis-air-force-base-pharmacy-hours.html">nellis air force base pharmacy hours</a>
+											<a class="badge badge-primary" href="/ncaa-rules-on-academic-eligibility.html">ncaa rules on academic eligibility</a>
+											<a class="badge badge-warning" href="/netflix-appli-mycanal.html">netflix appli mycanal</a>
+											<a class="badge badge-secondary" href="/new-mexico-army-national-guard-human-resources.html">new mexico army national guard human resources</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to pay a visit to the right site.  Our site provides you with suggestions for seeing the highest quality video and image content, hunt and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.toiimg.com/thumb/77053784.cms?width=680&amp;height=512&amp;imgsize=884019" data-lightbox="roadtrip" data-title="What To Do If You Have Been Exposed To Someone Tested Positive For Coronavirus The Times Of India">
+											<img class="card-img v-image ads-img " src="https://static.toiimg.com/thumb/77053784.cms?width=680&amp;height=512&amp;imgsize=884019" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgcXTA7fDPxzmUbfVp2AOUdUaJpEptM2xfmg';" alt="What To Do If You Have Been Exposed To Someone Tested Positive For Coronavirus The Times Of India">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Do If You Have Been Exposed To Someone Tested Positive For Coronavirus The Times Of India</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.todaysparent.com/wp-content/uploads/2020/06/kids-coronavirus-symptoms-1280x720-767x431.jpg" data-lightbox="roadtrip" data-title="Kids Coronavirus Symptoms How To Spot And Treat Them In Your Child">
+											<img class="card-img v-image ads-img " src="https://www.todaysparent.com/wp-content/uploads/2020/06/kids-coronavirus-symptoms-1280x720-767x431.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFiiAfSBQrgJ-i4wL-vN605_1KGpVXQ7ALJg';" alt="Kids Coronavirus Symptoms How To Spot And Treat Them In Your Child">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kids Coronavirus Symptoms How To Spot And Treat Them In Your Child</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.irishtimes.com/polopoly_fs/1.4207009.1584631350!/image/image.jpg_gen/derivatives/box_620_330/image.jpg" data-lightbox="roadtrip" data-title="Coronavirus More Of Your Questions Answered By Experts">
+											<img class="card-img v-image ads-img " src="https://www.irishtimes.com/polopoly_fs/1.4207009.1584631350!/image/image.jpg_gen/derivatives/box_620_330/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwtDcZXwBhXi89qFsuFF97fwdl_6N1O87BQ';" alt="Coronavirus More Of Your Questions Answered By Experts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus More Of Your Questions Answered By Experts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Il7LTwwfihBuHM" data-lightbox="roadtrip" data-title="Https Www Connecticutchildrens Org Wp Content Uploads 2020 03 Self Quarantine Faqs Pdf">
+											<img class="card-img v-image ads-img " src="Il7LTwwfihBuHM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkeq-ExEmgtjygwmAZM_0rqnIpFAJAlmfRwA';" alt="Https Www Connecticutchildrens Org Wp Content Uploads 2020 03 Self Quarantine Faqs Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Connecticutchildrens Org Wp Content Uploads 2020 03 Self Quarantine Faqs Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.sanity.io/images/0vv8moc6/contagion/8941af5f29116eb02eff7a8232803025bf278435-800x450.jpg?auto=format" data-lightbox="roadtrip" data-title="Spouses Adults Most Likely To Get Covid 19 Infection From Household Member Contagion Live">
+											<img class="card-img v-image ads-img " src="https://cdn.sanity.io/images/0vv8moc6/contagion/8941af5f29116eb02eff7a8232803025bf278435-800x450.jpg?auto=format" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5r7MBMuo6afeWWC56GgWtz7UMBSmNputheQ';" alt="Spouses Adults Most Likely To Get Covid 19 Infection From Household Member Contagion Live">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spouses Adults Most Likely To Get Covid 19 Infection From Household Member Contagion Live</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.houstonmethodist.org/-/media/Images/Contenthub/Article-Images/Coronavirus/Hub_CaregivingCOVID19_Social.jpg" data-lightbox="roadtrip" data-title="Caregiving During Coronavirus How To Care For Someone Vulnerable To Severe Illness Houston Methodist On Health">
+											<img class="card-img v-image ads-img " src="https://www.houstonmethodist.org/-/media/Images/Contenthub/Article-Images/Coronavirus/Hub_CaregivingCOVID19_Social.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxzoH5tiM9kC1tvNGACkWvmfL_LWosXfe_CA';" alt="Caregiving During Coronavirus How To Care For Someone Vulnerable To Severe Illness Houston Methodist On Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Caregiving During Coronavirus How To Care For Someone Vulnerable To Severe Illness Houston Methodist On Health</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="http://news.vcu.edu/image/17304/600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxzoH5tiM9kC1tvNGACkWvmfL_LWosXfe_CA';" alt="Caregiving During Coronavirus How To Care For Someone Vulnerable To Severe Illness Houston Methodist On Health">
+										<div class="card-body">
+						<h3 class="h5"><b>Now if your friend tested and was positive then you were exposed to the positive person then you would do a 14- 10- or possibly a seven-day quarantine Dr.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>My spouse was exposed to covid what should i do</strong>. 
+								
+																	This helps stop the virus spreading to other people. 
+																	You just want to limit that persons interaction with other people and around common-touch surfaces like the kitchen says Adalja. 
+																	Self-isolation is when you do not leave your home because you have or might have coronavirus COVID-19. 
+																	Wear a mask if you have to leave your house. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Once a partner or household contact has a known exposure or tests positive for COVID-19 its vital for all household members to wear masks and for the infected individual to self-isolate. 
+																	Other people living with you do not need to self-isolate with you if you arent displaying symptoms of the virus though you should take extra care to keep your distance wherever possible. 
+																	Preparation is the key to a good plan. 
+																	The reason why is if you get tested too soon its more likely that test will be a false negative or it will say you dont have COVID Dr. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When Rowan Tekampe 30 found out they may have been exposed to COVID-19 during a recent hospital stay in Sarasota Fla their. 
+																	Or your roommate starts feeling achy exhausted and short of breath after finding out a coworker tested positive for COVID-19. 
+																	Infection risk was highest for spouses followed by non-spouse. 
+																	Self-isolation is different to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If possible stay away from others especially people who are at higher risk for getting very sick from COVID-19. 
+																	Stay home for 14 days after your last contact with a person who has COVID-19. 
+																	Living with someone who was exposed means you are at higher risk of getting and spreading COVID. 
+																	Avoid contact with people at high risk for getting very sick from COVID-19 like your grandparents or friends with asthma or who are immune-suppressed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What to do if youve been exposed to someone who has tested positive for Covid If someone you have been in contact with tests positive you must self-isolate at home for at least 14 days from the. 
+																	Even if youre in the process of developing it. 
+																	Thomas Kirsch MD a physician and public health expert who had to self-quarantine after a possible exposure to COVID-19. 
+																	Wash wash your hands Chris Clark Spectrum Health Beat Initially the symptoms of COVID-19 are similar to having a colda sore throat runny nose maybe a headache. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Do frequent cleaning using Lysol or bleach-based cleaners. 
+																	However if youve been possibly exposed schedule a test for five to seven days after the exposure. 
+																	As defined by the CDC quarantine is used to keep someone who might have been exposed to COVID-19 away from others If you were in close contact with someone who tests positive youre advised to stay home for 14 days whether or not COVID-19 symptoms appear. 
+																	14 is based on 54 studies that span 20 countries and nearly 78000 subjectsAccording to the researchers findings in more than one in three casesabout 378 percentpatients passed COVID on to their spouses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you live with or recently spent time with someone who believes they were exposed to COVID you dont need to quarantine according to the CDC but you do need to monitor yourself for symptoms. 
+																	Instead someone else in the house should prepare food for the. 
+																	The new meta-analysis out of the University of Florida which was published in the journal JAMA Network Open on Dec. 
+																	Your spouse develops a dry cough and says they feel feverish. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Experts dont discourage the rest of the household from quarantining too. 
+																	Your household does not need to self-isolate with you if you do not have symptoms of COVID-19 but they should take extra care to follow the guidance on social distancing handwashing and. 
+																	Not every sick spouse can afford the risk of infecting the other. 
+																	These tips come from the Center for Disease Control CDC and someone who knows firsthand. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Emphasize hand hygiene for the whole household Dr. 
+																	But you can take steps to limit your risk of spreading the virus to others. 
+																	Before anyone in your family or community gets sick the CDC suggests checking in with loved ones relatives neighbors and friends to exchange phone numbers. 
+																	Watch for fever 1004 F cough shortness of breath or other symptoms of COVID-19. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That means staying in a separate room and using a separate bathroom if possible. 
+																	Social distancing general advice for everyone to avoid close contact with other people. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://news.vcu.edu/image/17304/600" data-lightbox="roadtrip" data-title="You Ve Been Exposed To Someone With Covid 19 What Should You Do">
+											<img class="card-img v-image ads-img " src="http://news.vcu.edu/image/17304/600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1nM9FwXp1SbPRYtRC_LFz98nT6XtRzDKTiA';" alt="You Ve Been Exposed To Someone With Covid 19 What Should You Do">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Ve Been Exposed To Someone With Covid 19 What Should You Do</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.scripps.org/sparkle-assets/seo_thumbnails/news_items/6947/facebook-0cce8d0faef4dc55aa1b288b4a93bf84.jpg" data-lightbox="roadtrip" data-title="What To Do If Someone At Home Has Covid 19 Symptoms Scripps Health">
+											<img class="card-img v-image ads-img " src="https://www.scripps.org/sparkle-assets/seo_thumbnails/news_items/6947/facebook-0cce8d0faef4dc55aa1b288b4a93bf84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBao5S02BpZs7IP4U_idDNcADmsvUSptzn9A';" alt="What To Do If Someone At Home Has Covid 19 Symptoms Scripps Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Do If Someone At Home Has Covid 19 Symptoms Scripps Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="tW0naoQpEVIGfM" data-lightbox="roadtrip" data-title="Https Www Countyofnapa Org Documentcenter View 18010 If An Employees Household Member Tests Positive And Ongoing Exposure Occurs">
+											<img class="card-img v-image ads-img " src="tW0naoQpEVIGfM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6nFrIl_9LSA-y1FKFaQv8UmvdATl6jM3wPQ';" alt="Https Www Countyofnapa Org Documentcenter View 18010 If An Employees Household Member Tests Positive And Ongoing Exposure Occurs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Countyofnapa Org Documentcenter View 18010 If An Employees Household Member Tests Positive And Ongoing Exposure Occurs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/ZkCGNRyG-Vk/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Covid 19 Tips To Protect Your Family If You Ve Been Exposed Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/ZkCGNRyG-Vk/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBFSVKYwE4MfYeFyijfGaSm-7cy7JQwveDVQ';" alt="Covid 19 Tips To Protect Your Family If You Ve Been Exposed Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 Tips To Protect Your Family If You Ve Been Exposed Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.sanity.io/images/0vv8moc6/infenctioncontrol/dbc1d96cfafddfd22e2af6a54ea176cd11619ec5-630x640.png?auto=format" data-lightbox="roadtrip" data-title="What Happened When Covid 19 Visited A Hair Salon Infection Control Today">
+											<img class="card-img v-image ads-img " src="https://cdn.sanity.io/images/0vv8moc6/infenctioncontrol/dbc1d96cfafddfd22e2af6a54ea176cd11619ec5-630x640.png?auto=format" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYJZPkJjp0Z-QvNziPEwesoKbVfqyq-fObSw';" alt="What Happened When Covid 19 Visited A Hair Salon Infection Control Today">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Happened When Covid 19 Visited A Hair Salon Infection Control Today</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.aarp.net/content/dam/aarp/caregiving/2020/03/1140x655-caregivers-cleaning-during-coronavirus.web.jpg" data-lightbox="roadtrip" data-title="Expert Advice For Caregivers Worried About Coronavirus Exposure">
+											<img class="card-img v-image ads-img " src="https://cdn.aarp.net/content/dam/aarp/caregiving/2020/03/1140x655-caregivers-cleaning-during-coronavirus.web.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-j92lF2TdAC4GR76ARxIPVcclLO2NWliSoA';" alt="Expert Advice For Caregivers Worried About Coronavirus Exposure">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Expert Advice For Caregivers Worried About Coronavirus Exposure</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.wired.com/photos/5fd164973df9cf7176d399a6/125:94/w_2124,h_1597,c_limit/Biz-Covid-Testing-1229847010.jpg" data-lightbox="roadtrip" data-title="I Tested Positive For Covid 19 What Does That Really Mean Wired">
+											<img class="card-img v-image ads-img " src="https://media.wired.com/photos/5fd164973df9cf7176d399a6/125:94/w_2124,h_1597,c_limit/Biz-Covid-Testing-1229847010.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShBs8MlFruOpv2E82_ZCjZKX0IG0Xoc4lzqw';" alt="I Tested Positive For Covid 19 What Does That Really Mean Wired">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Tested Positive For Covid 19 What Does That Really Mean Wired</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.uchealth.com/content/dam/uchealth/images/media-room/covid-19/iStock-1134952723.jpg/_jcr_content/renditions/cq5dam.web.1920.1080.jpeg" data-lightbox="roadtrip" data-title="Self Quarantine Who Needs It Uc Health Covid 19 Resources">
+											<img class="card-img v-image ads-img " src="https://www.uchealth.com/content/dam/uchealth/images/media-room/covid-19/iStock-1134952723.jpg/_jcr_content/renditions/cq5dam.web.1920.1080.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Hf2v-IQLuIkIqc_1BL5xlDFmemZfkLUHzQ';" alt="Self Quarantine Who Needs It Uc Health Covid 19 Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Self Quarantine Who Needs It Uc Health Covid 19 Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/03/woman_vaping_outside-1296x728-header.jpg?w=1155&amp;h=1528" data-lightbox="roadtrip" data-title="Secondhand Vape Exposure Effects Who S At Risk And More">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/03/woman_vaping_outside-1296x728-header.jpg?w=1155&amp;h=1528" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWredwvIM2U33Mnm__WnQgkZYKJ_-Bsp6Evw';" alt="Secondhand Vape Exposure Effects Who S At Risk And More">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Secondhand Vape Exposure Effects Who S At Risk And More</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ba/69/ee/ba69eef07567d645c5bc031e4c210181.jpg" data-lightbox="roadtrip" data-title="4 Things The Happiest Couples Do To Stay Head Over Heels In Love Healthy Relationships Relationship Virgo Men In Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ba/69/ee/ba69eef07567d645c5bc031e4c210181.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwOWCkpoeWeMA_OsyJbOuldyx1Vm6P67BzGg';" alt="4 Things The Happiest Couples Do To Stay Head Over Heels In Love Healthy Relationships Relationship Virgo Men In Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Things The Happiest Couples Do To Stay Head Over Heels In Love Healthy Relationships Relationship Virgo Men In Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.riversideonline.com/images/self-iso-or-self-quarantine.jpg" data-lightbox="roadtrip" data-title="Covid 19 When And How To Self Isolate Or Self Quarantine">
+											<img class="card-img v-image ads-img " src="https://www.riversideonline.com/images/self-iso-or-self-quarantine.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOi2Eiqg27aXo-uyIqPWJnUJuJ5fLC5zzAEw';" alt="Covid 19 When And How To Self Isolate Or Self Quarantine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 When And How To Self Isolate Or Self Quarantine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="qXHlg084J_UlPM" data-lightbox="roadtrip" data-title="Http Www Pwwemslaw Com Sites Default Files Answer 20 20pww 20covid 20faq 20employee 20leave 20question 207 Pdf">
+											<img class="card-img v-image ads-img " src="qXHlg084J_UlPM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa0p_e4d9j1sQ4WW8GZzrRVRyG7iFQt_4XPg';" alt="Http Www Pwwemslaw Com Sites Default Files Answer 20 20pww 20covid 20faq 20employee 20leave 20question 207 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Pwwemslaw Com Sites Default Files Answer 20 20pww 20covid 20faq 20employee 20leave 20question 207 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/cd/1f/c3/cd1fc36889d5d3b4cee8a32ada708c06.jpg" data-lightbox="roadtrip" data-title="Georgian Boyfriend Mug Funny Valentine Gift For Gf My Girlfriend Her Girl Georgia Bf With Images Funny Valentines Gifts Diy Gifts For Boyfriend Valentine Gifts For Husband">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/cd/1f/c3/cd1fc36889d5d3b4cee8a32ada708c06.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnZRrdQwkrqkqScEH2Z8m0-1oLnMemLYGG1Q';" alt="Georgian Boyfriend Mug Funny Valentine Gift For Gf My Girlfriend Her Girl Georgia Bf With Images Funny Valentines Gifts Diy Gifts For Boyfriend Valentine Gifts For Husband">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Georgian Boyfriend Mug Funny Valentine Gift For Gf My Girlfriend Her Girl Georgia Bf With Images Funny Valentines Gifts Diy Gifts For Boyfriend Valentine Gifts For Husband</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/does-my-husband-lack-empathy.html">Does My Husband Lack Empathy</a></li>
+													<li class="list-group-item"><a href="/does-military-spouse-get-discounts.html">Does Military Spouse Get Discounts</a></li>
+													<li class="list-group-item"><a href="/does-military-tuition-assistance-cover-real-estate-license.html">Does Military Tuition Assistance Cover Real Estate License</a></li>
+													<li class="list-group-item"><a href="/does-military-id-expire.html">Does Military Id Expire</a></li>
+													<li class="list-group-item"><a href="/does-hr-block-give-veterans-discount.html">Does Hr Block Give Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/does-military-pension-go-to-spouse.html">Does Military Pension Go To Spouse</a></li>
+													<li class="list-group-item"><a href="/does-depression-make-you-push-your-partner-away.html">Does Depression Make You Push Your Partner Away</a></li>
+													<li class="list-group-item"><a href="/does-scra-apply-to-veterans.html">Does Scra Apply To Veterans</a></li>
+													<li class="list-group-item"><a href="/does-domestic-partnership-count-as-a-qualifying-event.html">Does Domestic Partnership Count As A Qualifying Event</a></li>
+													<li class="list-group-item"><a href="/does-my-spouse-get-my-military-disability-when-i-die.html">Does My Spouse Get My Military Disability When I Die</a></li>
+													<li class="list-group-item"><a href="/does-military-qualify-for-student-loan-forgiveness.html">Does Military Qualify For Student Loan Forgiveness</a></li>
+													<li class="list-group-item"><a href="/does-military-spouse-pay-state-taxes.html">Does Military Spouse Pay State Taxes</a></li>
+													<li class="list-group-item"><a href="/does-scra-apply-to-spouses-student-loans.html">Does Scra Apply To Spouses Student Loans</a></li>
+													<li class="list-group-item"><a href="/does-merchant-marine-qualify-for-va-benefits.html">Does Merchant Marine Qualify For Va Benefits</a></li>
+													<li class="list-group-item"><a href="/does-jeremy-die-on-army-wives.html">Does Jeremy Die On Army Wives</a></li>
+													<li class="list-group-item"><a href="/does-military-tuition-assistance-cover-masters-degree.html">Does Military Tuition Assistance Cover Masters Degree</a></li>
+													<li class="list-group-item"><a href="/does-a-spouse-count-as-a-dependent-in-the-military.html">Does A Spouse Count As A Dependent In The Military</a></li>
+													<li class="list-group-item"><a href="/does-scra-cover-spouses.html">Does Scra Cover Spouses</a></li>
+													<li class="list-group-item"><a href="/does-scra-apply-to-spouses-credit-cards.html">Does Scra Apply To Spouses Credit Cards</a></li>
+													<li class="list-group-item"><a href="/does-scra-apply-to-disabled-veterans.html">Does Scra Apply To Disabled Veterans</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

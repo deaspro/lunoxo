@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Wechat Zalo - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Wechat Zalo",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/7f/bf/2e/7fbf2e68dc1aa185a9f35612e17b213f.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=wechat+zalo",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Wechat Zalo</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">84919438333 viber whatsapp wechat Zalo cap nhat chi tiet. VOCKE Refrigeration Equipment COLTD. SHENG KAI PRECISION INDUSTRIAL CO LTD. <br>				
+			</p>
+										<a class="badge badge-light" href="/gonzaga-campus-climate-survey.html">gonzaga campus climate survey</a>
+											<a class="badge badge-success" href="/grants-for-military-spouses-2019.html">grants for military spouses 2019</a>
+											<a class="badge badge-success" href="/guess-my-career.html">guess my career</a>
+											<a class="badge badge-danger" href="/gold-star-wives-t-shirt.html">gold star wives t shirt</a>
+											<a class="badge badge-secondary" href="/gonzaga-campus-in-florence-italy.html">gonzaga campus in florence italy</a>
+											<a class="badge badge-light" href="/gotomycareer.html">gotomycareer</a>
+											<a class="badge badge-warning" href="/gifts-for-military-spouses.html">gifts for military spouses</a>
+											<a class="badge badge-secondary" href="/gonzaga-campus-photos.html">gonzaga campus photos</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to visit the right site.  Our website gives you hints for seeing the highest quality video and image content, search and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, so we recommend this movie that you view.  You can also bring about supporting this site by sharing videos and graphics that you enjoy on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/77/ce/2777ceb6d30a0c4ab9053c10b8ef34ff.jpg" data-lightbox="roadtrip" data-title="Sticker For Instagram Zalo Line Viber Wechat Whatsapp Tango Screenshot Stickers Tango Best Apps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/77/ce/2777ceb6d30a0c4ab9053c10b8ef34ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqEaX-aAy7AmTfeyZqcfN0eFa6gPIE3gK0Hg';" alt="Sticker For Instagram Zalo Line Viber Wechat Whatsapp Tango Screenshot Stickers Tango Best Apps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sticker For Instagram Zalo Line Viber Wechat Whatsapp Tango Screenshot Stickers Tango Best Apps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/47/39/1f473938e7fd67f17cf98b31c18e9da8.jpg" data-lightbox="roadtrip" data-title="If You Have Any Requirement Please Contact Me Zalo Wechat Whatsapp 86 151 3715 4380 Stainlesssteelhose Metalhose Metalhose">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/47/39/1f473938e7fd67f17cf98b31c18e9da8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgvE5Es2pRRbPKZYXC1AHMhknAiQLZlRLudg';" alt="If You Have Any Requirement Please Contact Me Zalo Wechat Whatsapp 86 151 3715 4380 Stainlesssteelhose Metalhose Metalhose">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Have Any Requirement Please Contact Me Zalo Wechat Whatsapp 86 151 3715 4380 Stainlesssteelhose Metalhose Metalhose</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/bf/2e/7fbf2e68dc1aa185a9f35612e17b213f.png" data-lightbox="roadtrip" data-title="After Our Holidays Of Spring Festival In China We Start To Work From Today If You Have Any New Inquiry Please Feel F Festivals In China Qingdao Spring Festival">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/bf/2e/7fbf2e68dc1aa185a9f35612e17b213f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm8wH0vmt4eadhR7cBHtVohztDgdiZHrx5gA';" alt="After Our Holidays Of Spring Festival In China We Start To Work From Today If You Have Any New Inquiry Please Feel F Festivals In China Qingdao Spring Festival">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">After Our Holidays Of Spring Festival In China We Start To Work From Today If You Have Any New Inquiry Please Feel F Festivals In China Qingdao Spring Festival</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/0e/ab/e30eab79b5807ec05900bd8866b2dbe0.png" data-lightbox="roadtrip" data-title="Block April 8 For Super Apps Asia A New Summit Organized By Entrepnr With Key Insights On The Issues At The He In 2020 Paid Advertising On The Issues Loyalty Program">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/0e/ab/e30eab79b5807ec05900bd8866b2dbe0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUk_CCkW5rOgmEFu9QHvtWgGwxZ-0ohvr1ZQ';" alt="Block April 8 For Super Apps Asia A New Summit Organized By Entrepnr With Key Insights On The Issues At The He In 2020 Paid Advertising On The Issues Loyalty Program">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Block April 8 For Super Apps Asia A New Summit Organized By Entrepnr With Key Insights On The Issues At The He In 2020 Paid Advertising On The Issues Loyalty Program</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/93/b8/0e93b85f447ce867ac019e87e602a1e3.jpg" data-lightbox="roadtrip" data-title="Traffic Touch Button From Noble The Machine Can With Sound Or Without Sound It Can Be Working With Any Traffic Control System Control System Traffic System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/93/b8/0e93b85f447ce867ac019e87e602a1e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbHOIPp6wVvx45dK7f_YlCGdCSUFTdmTzArA';" alt="Traffic Touch Button From Noble The Machine Can With Sound Or Without Sound It Can Be Working With Any Traffic Control System Control System Traffic System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Traffic Touch Button From Noble The Machine Can With Sound Or Without Sound It Can Be Working With Any Traffic Control System Control System Traffic System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d2/4c/f0/d24cf0e10e93304aa2a6d7e1e3a2f189.jpg" data-lightbox="roadtrip" data-title="Horn And Lacquer Pendant Horn Bracelet Horn Pendant Jewelry Factory">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d2/4c/f0/d24cf0e10e93304aa2a6d7e1e3a2f189.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSob_9ALnms-P1zIKpC588OIqBgCClqF7LGtw';" alt="Horn And Lacquer Pendant Horn Bracelet Horn Pendant Jewelry Factory">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Horn And Lacquer Pendant Horn Bracelet Horn Pendant Jewelry Factory</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/9d/14/de/9d14de7c164b1e7ce20a9273ac5332e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSob_9ALnms-P1zIKpC588OIqBgCClqF7LGtw';" alt="Horn And Lacquer Pendant Horn Bracelet Horn Pendant Jewelry Factory">
+										<div class="card-body">
+						<h3 class="h5"><b>New_update newthings Lien he.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Wechat zalo</strong>. 
+								
+																	Asian American Diaspora on social media. 
+																	Hide a chat in the chat list. 
+																	Find out which is better and their overall performance in the messaging app ranking. 
+																	Huong dan djang ky Wechat bang cach quet ma QR Cach Djang Nhap Wechat Bang Ma Xac Minh SMS. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This Page is automatically generated based on what Facebook users are interested in and not affiliated with or endorsed by anyone associated with the topic. 
+																	Tai Zalo PC cho may tinh dje su dung cac tinh nang vuot troi nhu gui file 1GB Chup man hinh Phan loai nhom. 
+																	Chinese clients tend to use WeChat and send files on WeChat as the main way of communication she says. 
+																	Set remarks for group chats. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Oct 5 2020 - Sheng Kai Precision Six Lobe Punch with Convex Marking All kinds of Punch and Die Tools Customized Punch and Die Tools Taiwan Punch Die Supplier Taiwan Punch Tools Taiwan Screw Dies Made in Taiwan If you are interested in our products services please do not hesitate to contact us via. 
+																	Interestingly both apps have a mobile look around function that allows users to interact with people. 
+																	What is the difference between WeChat and Zalo. 
+																	Download this free icon in SVG PSD PNG EPS format or as webfonts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Flaticon the largest database of free vector icons. 
+																	WeChat is experiencing explosive growth both at home and abroad while Zalo has a laser focus on Vietnam with its Vietnamese-only interface. 
+																	Tuntun Orderr China Tao Wechat Zalo Call 0912132291 Bac Giang thanh pho. 
+																	Chinas WeChat and Vietnams Zalo are both increasingly popular chat apps and mobile social networks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	January 10 at 805 PM. 
+																	Zalo Web gui hinh video cuc nhanh len djen 1GB phan loai khach hang quan ly nhom tien loi. 
+																	WeChat for Windows 310. 
+																	HttpsyoutubeYj9y-99iLMQ Djang ky Wechat thanh. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Djang nhap Zalo Web dje chat ngay tren may tinh. 
+																	WeChat is experiencing explosive growth both at home and abroad while Zalo has a laser focus on Vietnam. 
+																	Late adopters With over a billion users in China WeChat is a super app that is. 
+																	VOCKE Refrigeration Equipment COLTD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bug fixes and improvements. 
+																	Hotline Zalo Wechat. 
+																	Jul 29 2020 - Sheng Kai Precision Nut Punch Tool All kinds of Punch and Die Tools Customized Punch and Die Tools Made in Taiwan If you are interested in our. 
+																	TAIWAN Phone886 7-6225921. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	January 8 at 455 PM. 
+																	Voice or video calls with up to 15 people. 
+																	WeChat is experiencing explosive growth both at home and abroad while Zalo has a laser focus on Vietnam with its Vietnamese-only interface. 
+																	Interestingly both apps have a mobile look around function that allows users to interact with people. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Download Zalo tren cac nen tang Windows Mac OS. 
+																	Chinas WeChat and Vietnams Zalo are both increasingly popular chat apps and mobile social networks. 
+																	Chinas WeChat and Vietnams Zalo are both increasingly popular chat apps and mobile social networks. 
+																	Asian American Diaspora on social media. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Nhan djat hang qua hinh anh bao gia san pham gia xuongdjam phan chu xuong djat theo kich thuoc yeu cau. 
+																	8613856004350 ZaloLine 8618505512207 Web. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/48/86/994886ccfdf1898b71fc880482c3b471.jpg" data-lightbox="roadtrip" data-title="I Am Distributing This Product If You Need Please Contact Me At The Following Telephone Number 84 907 049 365 84 985 123 298 Viber Zalo Wechat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/48/86/994886ccfdf1898b71fc880482c3b471.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_r7araGd2qnahuBdu70B5xJWCxWFeLh-ONA';" alt="I Am Distributing This Product If You Need Please Contact Me At The Following Telephone Number 84 907 049 365 84 985 123 298 Viber Zalo Wechat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Am Distributing This Product If You Need Please Contact Me At The Following Telephone Number 84 907 049 365 84 985 123 298 Viber Zalo Wechat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/14/de/9d14de7c164b1e7ce20a9273ac5332e9.jpg" data-lightbox="roadtrip" data-title="Sheng Kai Precision Punch And Die Sets In 2020 Celestial Bodies Celestial Saturn">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/14/de/9d14de7c164b1e7ce20a9273ac5332e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZL-2SZasS_7xyBlg-PCqsDUe9_ggoNEASGw';" alt="Sheng Kai Precision Punch And Die Sets In 2020 Celestial Bodies Celestial Saturn">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sheng Kai Precision Punch And Die Sets In 2020 Celestial Bodies Celestial Saturn</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/6b/20/e66b209ccaef4de93bc3179ac9367188.jpg" data-lightbox="roadtrip" data-title="Sheng Kai Precision Punch And Die Sets School Logos Logos Cal Logo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/6b/20/e66b209ccaef4de93bc3179ac9367188.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTJL1IwhV_k71K1RodgoWR_HlE5aul1hRclA';" alt="Sheng Kai Precision Punch And Die Sets School Logos Logos Cal Logo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sheng Kai Precision Punch And Die Sets School Logos Logos Cal Logo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/c3/51/70c35134ed9070fc09f639c9efe1c99b.jpg" data-lightbox="roadtrip" data-title="Wiko Sunny 2 Plus Ma Bảo Vệ Reset Google Remove Password And Reset Frp How To Remove Reset Bao">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/c3/51/70c35134ed9070fc09f639c9efe1c99b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0UYdL5NZr2aZT19A4ZlEqBkEtXz-7ITS25A';" alt="Wiko Sunny 2 Plus Ma Bảo Vệ Reset Google Remove Password And Reset Frp How To Remove Reset Bao">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wiko Sunny 2 Plus Ma Bảo Vệ Reset Google Remove Password And Reset Frp How To Remove Reset Bao</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/b5/1a/73b51aa86daeee16d4ff2dc33617cf84.jpg" data-lightbox="roadtrip" data-title="Sheng Kai Precision Punch And Die Sets Retail Logos Lululemon Logo Logos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/b5/1a/73b51aa86daeee16d4ff2dc33617cf84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF9_um0bEfRBQgKt5Gt3cZ_Ie_gtsXVsj4mA';" alt="Sheng Kai Precision Punch And Die Sets Retail Logos Lululemon Logo Logos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sheng Kai Precision Punch And Die Sets Retail Logos Lululemon Logo Logos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/77/3e/af773e5fcff9c3ef68ccb2f8b8c44dc0.jpg" data-lightbox="roadtrip" data-title="I Am Distributing This Product If You Need Please Contact Me At The Following Telephone Number 84 907 049 365 84 985 123 298 Viber Zalo Wechat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/77/3e/af773e5fcff9c3ef68ccb2f8b8c44dc0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEu3hGYsL9to6VKjpW4jzoxYMydjoXFZhI5Q';" alt="I Am Distributing This Product If You Need Please Contact Me At The Following Telephone Number 84 907 049 365 84 985 123 298 Viber Zalo Wechat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Am Distributing This Product If You Need Please Contact Me At The Following Telephone Number 84 907 049 365 84 985 123 298 Viber Zalo Wechat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/0e/32/ae0e32979491366c7cc0956f8ed960e3.jpg" data-lightbox="roadtrip" data-title="Pin On Punch And Die Sets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/0e/32/ae0e32979491366c7cc0956f8ed960e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvtpZ86370A90b7GWnGNid1xVoW70EENUoog';" alt="Pin On Punch And Die Sets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Punch And Die Sets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/57/95/98/579598e7f9dfbb56bb508302220ef134.jpg" data-lightbox="roadtrip" data-title="Vivo Y53 Pettren Unlock Password Unlock Frp Unlock Full Factory Reset Unlock Vivo Passwords">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/57/95/98/579598e7f9dfbb56bb508302220ef134.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTujbwQICgHGce6azGRM7dvlbkReWz9u4GLaQ';" alt="Vivo Y53 Pettren Unlock Password Unlock Frp Unlock Full Factory Reset Unlock Vivo Passwords">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vivo Y53 Pettren Unlock Password Unlock Frp Unlock Full Factory Reset Unlock Vivo Passwords</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/c2/f2/e1c2f2c6cb3c874649054624f7fd3c98.jpg" data-lightbox="roadtrip" data-title="Cuff Horn Bracelet Horn Bracelet Horn Earrings Jewelry For Her">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/c2/f2/e1c2f2c6cb3c874649054624f7fd3c98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRar31zv4njILm1rS2A8nbim0T7DXm5cnsJ-g';" alt="Cuff Horn Bracelet Horn Bracelet Horn Earrings Jewelry For Her">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cuff Horn Bracelet Horn Bracelet Horn Earrings Jewelry For Her</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/86/7a/dc867aba9268f60e56ce7ac5517b8ef2.jpg" data-lightbox="roadtrip" data-title="Kingtools 1 4 Pro Released Official Review By A Nam Unlock Phone Phone Unlock Release">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/86/7a/dc867aba9268f60e56ce7ac5517b8ef2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9MmtLE8Rx2S5f3fEE8Z_NT5q-6-nDQsORBg';" alt="Kingtools 1 4 Pro Released Official Review By A Nam Unlock Phone Phone Unlock Release">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kingtools 1 4 Pro Released Official Review By A Nam Unlock Phone Phone Unlock Release</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/03/3a/37033af5550d2d16ffc2d1e6ebf8da53.jpg" data-lightbox="roadtrip" data-title="Firmware Oppo Find 5 Mini R827 4gb 8gb File Flash Oppo R827 Logo Res Firmware 8gb Xiaomi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/03/3a/37033af5550d2d16ffc2d1e6ebf8da53.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixPusp7OGBav9UxNutRiDO5kAcCRvw94-lw';" alt="Firmware Oppo Find 5 Mini R827 4gb 8gb File Flash Oppo R827 Logo Res Firmware 8gb Xiaomi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Firmware Oppo Find 5 Mini R827 4gb 8gb File Flash Oppo R827 Logo Res Firmware 8gb Xiaomi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/b5/61/82b561f138f5c8189cdf6edf80b3f4a0.jpg" data-lightbox="roadtrip" data-title="Sheng Kai Precision Punch And Die Sets In 2020 Punch Sik Kai">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/b5/61/82b561f138f5c8189cdf6edf80b3f4a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT35N6uTRz_NfqlKkYLd5beH6I55zefMIENQA';" alt="Sheng Kai Precision Punch And Die Sets In 2020 Punch Sik Kai">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sheng Kai Precision Punch And Die Sets In 2020 Punch Sik Kai</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/c0/9e/99c09e2124853f800070b542888bbe89.jpg" data-lightbox="roadtrip" data-title="Xiaomi Redmi 6a Bypass Google Account Redmi 6a Reset Frp Bypass Solution Xiaomi Google Account Solutions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/c0/9e/99c09e2124853f800070b542888bbe89.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeCefQ10582QgW_Bu048W6ePVM6D-LewayGg';" alt="Xiaomi Redmi 6a Bypass Google Account Redmi 6a Reset Frp Bypass Solution Xiaomi Google Account Solutions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xiaomi Redmi 6a Bypass Google Account Redmi 6a Reset Frp Bypass Solution Xiaomi Google Account Solutions</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/scholarship-for-mba-students-in-india-2020.html">Scholarship For Mba Students In India 2020</a></li>
+													<li class="list-group-item"><a href="/scholarship-for-mba-in-london.html">Scholarship For Mba In London</a></li>
+													<li class="list-group-item"><a href="/salvation-army-number-for-help.html">Salvation Army Number For Help</a></li>
+													<li class="list-group-item"><a href="/salvation-army-human-resources-department.html">Salvation Army Human Resources Department</a></li>
+													<li class="list-group-item"><a href="/salvation-army-pickup-furniture-number.html">Salvation Army Pickup Furniture Number</a></li>
+													<li class="list-group-item"><a href="/scholarship-for-mba-programs.html">Scholarship For Mba Programs</a></li>
+													<li class="list-group-item"><a href="/salvation-army-phone-number-to-pick-up-furniture.html">Salvation Army Phone Number To Pick Up Furniture</a></li>
+													<li class="list-group-item"><a href="/salvation-army-email-portal.html">Salvation Army Email Portal</a></li>
+													<li class="list-group-item"><a href="/scholarship-for-mba-in-oxford-university.html">Scholarship For Mba In Oxford University</a></li>
+													<li class="list-group-item"><a href="/scholarships-for-family-members-of-veterans.html">Scholarships For Family Members Of Veterans</a></li>
+													<li class="list-group-item"><a href="/salvation-army-donation-pick-up-number.html">Salvation Army Donation Pick Up Number</a></li>
+													<li class="list-group-item"><a href="/salvation-army-hr-phone-number.html">Salvation Army Hr Phone Number</a></li>
+													<li class="list-group-item"><a href="/scholarships-for-dependents-of-active-duty-military.html">Scholarships For Dependents Of Active Duty Military</a></li>
+													<li class="list-group-item"><a href="/scholarship-for-mba-quora.html">Scholarship For Mba Quora</a></li>
+													<li class="list-group-item"><a href="/salvation-army-human-resources-jobs.html">Salvation Army Human Resources Jobs</a></li>
+													<li class="list-group-item"><a href="/scholarship-for-mba-in-canada-for-indian-students.html">Scholarship For Mba In Canada For Indian Students</a></li>
+													<li class="list-group-item"><a href="/scholarship-for-mba-students-in-canada.html">Scholarship For Mba Students In Canada</a></li>
+													<li class="list-group-item"><a href="/scholarships-for-canadian-military-dependents.html">Scholarships For Canadian Military Dependents</a></li>
+													<li class="list-group-item"><a href="/salvation-army-phone-number-for-assistance.html">Salvation Army Phone Number For Assistance</a></li>
+													<li class="list-group-item"><a href="/sao-hr-the-inhuman-army.html">Sao Hr The Inhuman Army</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

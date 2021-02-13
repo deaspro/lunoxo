@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Spouse Employment Rights - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Spouse Employment Rights",
+  "datePublished": "2021-02-13",
+  "image": "https://www.boozallen.com/assets/boozallen_site/esg/images/body/landscape/improving-veteran-and-military-spouse-job-opportunities-.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+spouse+employment+rights",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Spouse Employment Rights</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Good jobs can be hard to find and keep for military spouses who move frequently. Of over 2000 military spouse entrepreneur respondents 87 believe that entrepreneurship is the right choice for their family. A assessment of small business activity the secretary of defense shall submit to congress a report setting forth an assessment of the feasibility and advisability of encouraging entrepreneurship among military spouses by permitting military spouses to engage in small business activities on military installations and in partnership with commissaries exchange stores and other morale welfare and recreation facilities of the armed forces. <br>				
+			</p>
+										<a class="badge badge-primary" href="/states-that-offer-in-state-tuition-for-military-dependents.html">states that offer in state tuition for military dependents</a>
+											<a class="badge badge-light" href="/sscnverifikasibkngoid-login.html">sscnverifikasibkngoid login</a>
+											<a class="badge badge-secondary" href="/sscnbkngoid-pendaftaran-pppk-p3k-guru-2021.html">sscnbkngoid pendaftaran pppk p3k guru 2021</a>
+											<a class="badge badge-secondary" href="/stokke-mycarrier-grey.html">stokke mycarrier grey</a>
+											<a class="badge badge-danger" href="/stokke-mycarrier-newborn.html">stokke mycarrier newborn</a>
+											<a class="badge badge-light" href="/sscnbkngoid-way-kanan.html">sscnbkngoid way kanan</a>
+											<a class="badge badge-danger" href="/sscnbkngoid-2020-skb.html">sscnbkngoid 2020 skb</a>
+											<a class="badge badge-secondary" href="/sscnbkngoid-login-2018-registrasi.html">sscnbkngoid login 2018 registrasi</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to visit the ideal site.  Our website provides you with hints for seeing the highest quality video and picture content, search and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie for you to view.  It is also possible to bring about supporting this website by sharing videos and graphics that you enjoy on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.uschamberfoundation.org/sites/default/files/styles/detail_image_1180/public/Screen%20Shot%202017-06-13%20at%207.21.22%20PM.png?itok=hFekuKGN" data-lightbox="roadtrip" data-title="Military Spouses In The Workplace U S Chamber Of Commerce Foundation">
+											<img class="card-img v-image ads-img " src="https://www.uschamberfoundation.org/sites/default/files/styles/detail_image_1180/public/Screen%20Shot%202017-06-13%20at%207.21.22%20PM.png?itok=hFekuKGN" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOSPnyKjKE-gWTp3oFSwytltuAuMAW6oRdLw';" alt="Military Spouses In The Workplace U S Chamber Of Commerce Foundation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouses In The Workplace U S Chamber Of Commerce Foundation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/08/military-spouse-license-transfer-options-and-reimbursement.jpg" data-lightbox="roadtrip" data-title="Military Spouse License Transfer Options Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/08/military-spouse-license-transfer-options-and-reimbursement.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTim7kzehkKIiXx5uzhn0-N8OHQ1ipXKXLN2Q';" alt="Military Spouse License Transfer Options Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse License Transfer Options Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.amazonaws.com/rm-marketing-production/ample_admin/attachments/files/000/000/566/large_cropped/Military%20Spouse.jpg?1469802745" data-lightbox="roadtrip" data-title="Military Spouses Make Good Employees Recruitmilitary">
+											<img class="card-img v-image ads-img " src="https://s3.amazonaws.com/rm-marketing-production/ample_admin/attachments/files/000/000/566/large_cropped/Military%20Spouse.jpg?1469802745" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxyKaYyri6PqjY3VhogvGoDh9AUuZkroO-OQ';" alt="Military Spouses Make Good Employees Recruitmilitary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouses Make Good Employees Recruitmilitary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2019/04/about-hoh.jpg" data-lightbox="roadtrip" data-title="Military Spouse Employment Advisory Council Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2019/04/about-hoh.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST7MjyGWFgbaDZbj809ZeEs-NYya3a0Uadow';" alt="Military Spouse Employment Advisory Council Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Employment Advisory Council Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2019/03/Make-the-Commitment.jpg" data-lightbox="roadtrip" data-title="Hiring 100 000 Military Spouses Campaign Surpasses 12 300 Commitments Hiring Our Heroes Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2019/03/Make-the-Commitment.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4G4kpH5UPPuQ-Y30acr16cM0TKx5HvFmz5Q';" alt="Hiring 100 000 Military Spouses Campaign Surpasses 12 300 Commitments Hiring Our Heroes Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hiring 100 000 Military Spouses Campaign Surpasses 12 300 Commitments Hiring Our Heroes Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images01.military.com/sites/default/files/styles/full/public/media/spouse/2016/05/spouse-retirement-ceremony-1200x800.jpg?itok=kNIGpM4j" data-lightbox="roadtrip" data-title="Are There Any Military Spouse Retirement Benefits Military Com">
+											<img class="card-img v-image ads-img " src="https://images01.military.com/sites/default/files/styles/full/public/media/spouse/2016/05/spouse-retirement-ceremony-1200x800.jpg?itok=kNIGpM4j" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlg-zR8ALQWtuZAkw3uFd08oLLHZ7LmHpHPg';" alt="Are There Any Military Spouse Retirement Benefits Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are There Any Military Spouse Retirement Benefits Military Com</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://jnj-content-lab.brightspotcdn.com/dims4/default/3a6c973/2147483647/strip/true/crop/265x265+43+0/resize/220x220!/quality/90/?url=http%3A%2F%2Fjnj-brightspot.s3.amazonaws.com%2Fb7%2Fdc%2Fcab34ce14ac1968394294960faaa%2Fmilitary-spouse.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlg-zR8ALQWtuZAkw3uFd08oLLHZ7LmHpHPg';" alt="Are There Any Military Spouse Retirement Benefits Military Com">
+										<div class="card-body">
+						<h3 class="h5"><b>A related difficulty borne by military spouses is that their jobs are not always transferable across states.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military spouse employment rights</strong>. 
+								
+																	A Outreach on availability of MyCAA program 1 I N GENERALThe Secretary of Defense shall take appropriate actions to ensure that military spouses who are eligible for participation in the My Career Advancement Account MyCAA program of the Department of Defense are to extent practicable made aware of the program and their eligibility for the program. 
+																	Department of Labor to reduce employment barriers and enhance career opportunities for military spouses. 
+																	Military spouse employment act. 
+																	Because the permission to practice many occupations is controlled by each state government through the issuance of a license those who are allowed to practice an occupation in one state are often prevented from practicing that occupation in another state until they undergo costly and time-consuming relicensing procedures. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And over 31 are working part-time even if they would prefer to work full-time. 
+																	Of Milspouse Entrepreneurs Feel its Right for Their Family. 
+																	The Office of Federal Contract Compliance Programs OFCCP supports and honors our veterans by supporting military spouses in employment. 
+																	Dependants of HM armed forces and those exempt must first and foremost be able to show that they are the spouse civil partner unmarried partner same-sex partner or child of a member of the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Though it might sound like these are historic data points. 
+																	Military Spouse is your premiere online milspouse community with resources on all things military life marriage military spouse jobs and education pcs moves military discounts and more. 
+																	No specific rules related to self-employment are listed. 
+																	Being denied employment as a military spouse is something that companies could continue to get away with but we can all be advocates for each other by sharing our experiences. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The initiative aims to provide employment opportunities through inventories pools and other staffing options. 
+																	Military spouses can work on the economy but may be required to pay Japanese taxes in addition to US. 
+																	In 2008 President Bush established Executive Order 13473 the noncompetitive. 
+																	Have YOU ever been discriminated against for your military spouse status. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Military Spouse Employment Initiative MSEI provides military spouses and common-law partners with tools and resources to develop their skills and pursue their careers within the federal Public Service. 
+																	The report released July 22 is based on military spouse employment and demographics data collected from nonprofits and the government. 
+																	We can create positive change through our stories. 
+																	Spouse employment issues can even cause service members to reconsider their military career path. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Active duty military spouses face a 24 unemployment rate. 
+																	The Vietnam Era Veterans Readjustment Assistance Acts VEVRAA implementing regulations prohibit federal contractors from discriminating in employment on the basis of veteran status a protection that includes not only protected veterans but also their spouses and other family members. 
+																	Military spouses serve a pivotal role in contributing to the financial and personal success of military families. 
+																	KILLEEN Texas KWTX - It can be a struggle for military spouses to find jobs but through the Department of Defense Military Spouse Employment Partnership more companies are promising to hire them. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youre a military spouse your spouses career moves have probably affected your career. 
+																	Malott wasnt quite sure how his employment would play into his spouses career but now hes glad it doesnt really have. 
+																	The prospect of steady employment as a military spouse is a game changer. 
+																	The legislation is called the Military Spouse Employment Act. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Currently you cannot use USPS services or any military-related discounted products in order to conduct on-base businesses military Exchanges etc. 
+																	Nearly half of ALL military spouses turn to business ownership or self employment as a viable career option. 
+																	Use the Military Spouse Interstate License Recognition Options map to find out the rights of a military spouse. 
+																	Many states support military spouse license recognition options by allowing for expedited applications temporary licenses or complete license recognition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department for Work and Pensions Ministry of Defence Baroness Altmann CBE and The Rt Hon Sir Michael Fallon Up to 20000 armed forces spouses may be eligible for a new National Insurance credit. 
+																	What did you do. 
+																	It is the policy of the US. 
+																	Childcare needs further complicate the job search. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Pentagon has long focused on influencing military spouse. 
+																	Military spouse employment rights. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://msepjobs.militaryonesource.mil/msep/assets/images/become-a-partner/commitment-1.jpg" data-lightbox="roadtrip" data-title="Military Spouse Employment Partnership">
+											<img class="card-img v-image ads-img " src="https://msepjobs.militaryonesource.mil/msep/assets/images/become-a-partner/commitment-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfqzPd6aawt0MQqhaoDdraf02jGKdG71H9vA';" alt="Military Spouse Employment Partnership">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Employment Partnership</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/education-benefits-military-spouses.jpg" data-lightbox="roadtrip" data-title="Military Spouse Education Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/education-benefits-military-spouses.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_72tPrpqxaEs4K7BYfkApdd_P1WqFb3CrQ';" alt="Military Spouse Education Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Education Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images02.military.com/sites/default/files/styles/full/public/media/education/2016/01/transition.jpg?itok=1esnOT_L" data-lightbox="roadtrip" data-title="Where To Find Military Spouse Employment Resources Military Com">
+											<img class="card-img v-image ads-img " src="https://images02.military.com/sites/default/files/styles/full/public/media/education/2016/01/transition.jpg?itok=1esnOT_L" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE9SoihaxNCMqTXPbY84nYaV8z3CV6iJLleg';" alt="Where To Find Military Spouse Employment Resources Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Where To Find Military Spouse Employment Resources Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2013/12/military-spouse-male-with-soldier-wife-cropped.jpg" data-lightbox="roadtrip" data-title="How To Translate Military Spouse Skills To Job Skills Flexjobs">
+											<img class="card-img v-image ads-img " src="https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2013/12/military-spouse-male-with-soldier-wife-cropped.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHd_bG7cqQzr83F-b00vdwyx1r1tN-4GiO2g';" alt="How To Translate Military Spouse Skills To Job Skills Flexjobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Translate Military Spouse Skills To Job Skills Flexjobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militaryfamilieslearningnetwork.org/wp-content/uploads/2018/06/Employment-Resources-for-Military-Families-1-e1588184042310.jpg" data-lightbox="roadtrip" data-title="Unemployment Benefits For Military Spouses After A Permanent Change Of Station Military Families Learning Network">
+											<img class="card-img v-image ads-img " src="https://militaryfamilieslearningnetwork.org/wp-content/uploads/2018/06/Employment-Resources-for-Military-Families-1-e1588184042310.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzIp2SqikVsmR6Ce4WRJ3FM0JUGUF2y86b5w';" alt="Unemployment Benefits For Military Spouses After A Permanent Change Of Station Military Families Learning Network">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Benefits For Military Spouses After A Permanent Change Of Station Military Families Learning Network</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images03.military.com/sites/default/files/styles/full/public/media/news/people/2014/05/alissa-600.jpg?itok=7lUs_djk" data-lightbox="roadtrip" data-title="Real Spouse Employment Elementary Teacher Military Com">
+											<img class="card-img v-image ads-img " src="https://images03.military.com/sites/default/files/styles/full/public/media/news/people/2014/05/alissa-600.jpg?itok=7lUs_djk" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRADlaL9mi56wsc31uhzxfZlP4nOw5A2SKn7w';" alt="Real Spouse Employment Elementary Teacher Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Real Spouse Employment Elementary Teacher Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncsl.org/portals/1/ImageLibrary/WebImages/employment/Licensing/Fig2_veterans_DOL.jpg" data-lightbox="roadtrip" data-title="Barriers To Work Veterans And Military Spouses">
+											<img class="card-img v-image ads-img " src="https://www.ncsl.org/portals/1/ImageLibrary/WebImages/employment/Licensing/Fig2_veterans_DOL.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_U0cx-2yHajoTeakdLEIeMGvr7KelCbRwEg';" alt="Barriers To Work Veterans And Military Spouses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Barriers To Work Veterans And Military Spouses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.boozallen.com/assets/boozallen_site/esg/images/body/landscape/improving-veteran-and-military-spouse-job-opportunities-.jpg" data-lightbox="roadtrip" data-title="Improving Veteran Military Spouse Job Opportunities">
+											<img class="card-img v-image ads-img " src="https://www.boozallen.com/assets/boozallen_site/esg/images/body/landscape/improving-veteran-and-military-spouse-job-opportunities-.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf6Jnt4Cb6AKdgVxAwCBBlA1vrk7pZ2pO3Gg';" alt="Improving Veteran Military Spouse Job Opportunities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Improving Veteran Military Spouse Job Opportunities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hiringourheroes.org/wp-content/uploads/2019/04/hiring100k.jpg" data-lightbox="roadtrip" data-title="Our Partners Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+											<img class="card-img v-image ads-img " src="https://www.hiringourheroes.org/wp-content/uploads/2019/04/hiring100k.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhOTEvRKvu-iuJcMydCFJLP-RqVQcEzdeR5A';" alt="Our Partners Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Our Partners Hiring Our Heroes Veteran Military Spouse Employment Nonprofit Hiring Our Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://jnj-content-lab.brightspotcdn.com/dims4/default/3a6c973/2147483647/strip/true/crop/265x265+43+0/resize/220x220!/quality/90/?url=http%3A%2F%2Fjnj-brightspot.s3.amazonaws.com%2Fb7%2Fdc%2Fcab34ce14ac1968394294960faaa%2Fmilitary-spouse.jpg" data-lightbox="roadtrip" data-title="Supporting And Engaging Our Military Connected Community Johnson Johnson">
+											<img class="card-img v-image ads-img " src="https://jnj-content-lab.brightspotcdn.com/dims4/default/3a6c973/2147483647/strip/true/crop/265x265+43+0/resize/220x220!/quality/90/?url=http%3A%2F%2Fjnj-brightspot.s3.amazonaws.com%2Fb7%2Fdc%2Fcab34ce14ac1968394294960faaa%2Fmilitary-spouse.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMcMq-zC266P1i_A0_D6FRYcE7_w0-bxEKmQ';" alt="Supporting And Engaging Our Military Connected Community Johnson Johnson">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Supporting And Engaging Our Military Connected Community Johnson Johnson</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.militaryspouse.com/wp-content/uploads/2019/08/Where-to-Turn-for-Legal-Assistance-as-a-Military-Spouse.jpg" data-lightbox="roadtrip" data-title="Where To Turn For Legal Assistance As A Military Spouse Military Spouse">
+											<img class="card-img v-image ads-img " src="https://www.militaryspouse.com/wp-content/uploads/2019/08/Where-to-Turn-for-Legal-Assistance-as-a-Military-Spouse.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD-w49OANBKlyzadJVSpj7ksL3krXYZcvuFg';" alt="Where To Turn For Legal Assistance As A Military Spouse Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Where To Turn For Legal Assistance As A Military Spouse Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://specials-images.forbesimg.com/imageserve/5e970f0c1048ea0006cbdaab/960x0.jpg?fit=scale" data-lightbox="roadtrip" data-title="Instant Teams Bringing Remote And Freelance Opportunity To Military Spouses All Over The World">
+											<img class="card-img v-image ads-img " src="https://specials-images.forbesimg.com/imageserve/5e970f0c1048ea0006cbdaab/960x0.jpg?fit=scale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYpgGsHEyK5Ff3jnc9Ho-kUHNQf5PFuEMrLQ';" alt="Instant Teams Bringing Remote And Freelance Opportunity To Military Spouses All Over The World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Instant Teams Bringing Remote And Freelance Opportunity To Military Spouses All Over The World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/01/05082312/military-spouse-friendly-employers-353x177.png" data-lightbox="roadtrip" data-title="Military Spouses Use These 10 Resources For Your Job Search Flexjobs">
+											<img class="card-img v-image ads-img " src="https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/01/05082312/military-spouse-friendly-employers-353x177.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLfBPKLiixOM2iSXzdd2wxeDK3zeYDETqa_A';" alt="Military Spouses Use These 10 Resources For Your Job Search Flexjobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouses Use These 10 Resources For Your Job Search Flexjobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-many-military-spouses-are-unemployed.html">How Many Military Spouses Are Unemployed</a></li>
+													<li class="list-group-item"><a href="/how-much-do-hr-officers-earn.html">How Much Do Hr Officers Earn</a></li>
+													<li class="list-group-item"><a href="/how-much-do-military-wives-get-paid.html">How Much Do Military Wives Get Paid</a></li>
+													<li class="list-group-item"><a href="/how-many-days-do-i-have-to-quarantine-after-testing-positive.html">How Many Days Do I Have To Quarantine After Testing Positive</a></li>
+													<li class="list-group-item"><a href="/how-many-dependents-does-the-military-pay-for.html">How Many Dependents Does The Military Pay For</a></li>
+													<li class="list-group-item"><a href="/how-much-does-an-army-recruiter-make-per-recruit.html">How Much Does An Army Recruiter Make Per Recruit</a></li>
+													<li class="list-group-item"><a href="/how-many-years-of-ncaa-eligibility-do-i-have-d3.html">How Many Years Of Ncaa Eligibility Do I Have D3</a></li>
+													<li class="list-group-item"><a href="/how-much-alimony-does-a-military-wife-get.html">How Much Alimony Does A Military Wife Get</a></li>
+													<li class="list-group-item"><a href="/how-long-is-spouse-green-card-valid.html">How Long Is Spouse Green Card Valid</a></li>
+													<li class="list-group-item"><a href="/how-much-does-the-us-spend-on-military-per-hour.html">How Much Does The Us Spend On Military Per Hour</a></li>
+													<li class="list-group-item"><a href="/how-many-military-spouses-are-there.html">How Many Military Spouses Are There</a></li>
+													<li class="list-group-item"><a href="/how-long-should-a-person-with-covid-quarantine.html">How Long Should A Person With Covid Quarantine</a></li>
+													<li class="list-group-item"><a href="/how-much-is-family-separation-pay-army.html">How Much Is Family Separation Pay Army</a></li>
+													<li class="list-group-item"><a href="/how-much-is-your-military-retirement-taxed.html">How Much Is Your Military Retirement Taxed</a></li>
+													<li class="list-group-item"><a href="/how-much-do-us-spend-on-military.html">How Much Do Us Spend On Military</a></li>
+													<li class="list-group-item"><a href="/how-much-does-mycaa-cover.html">How Much Does Mycaa Cover</a></li>
+													<li class="list-group-item"><a href="/how-much-does-a-surviving-spouse-get-from-military-retirement.html">How Much Does A Surviving Spouse Get From Military Retirement</a></li>
+													<li class="list-group-item"><a href="/how-to-accept-that-your-husband-doesnt-love-you-anymore.html">How To Accept That Your Husband Doesnt Love You Anymore</a></li>
+													<li class="list-group-item"><a href="/how-much-does-a-pharmacist-in-the-military-make.html">How Much Does A Pharmacist In The Military Make</a></li>
+													<li class="list-group-item"><a href="/how-long-will-military-mres-last.html">How Long Will Military Mres Last</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

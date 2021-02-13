@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Are Ex Wives Entitled To Military Pension - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Are Ex Wives Entitled To Military Pension",
+  "datePublished": "2021-02-13",
+  "image": "https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fkotlikoff%2Ffiles%2F2017%2F05%2FForbes-SSA-logo.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=are+ex+wives+entitled+to+military+pension",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Are Ex Wives Entitled To Military Pension</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A world class pension scheme for your military service. These benefits are statutory and are not subject to negotiation in the divorce. We must tread cautiously in defining our terms. <br>				
+			</p>
+										<a class="badge badge-primary" href="/salvation-army-covid-19-hotline.html">salvation army covid 19 hotline</a>
+											<a class="badge badge-primary" href="/retired-military-medical-records-st-louis-mo.html">retired military medical records st louis mo</a>
+											<a class="badge badge-primary" href="/retired-military-spouse-divorce-rights.html">retired military spouse divorce rights</a>
+											<a class="badge badge-secondary" href="/royal-air-force-personnel-numbers.html">royal air force personnel numbers</a>
+											<a class="badge badge-warning" href="/retired-military-spouse-education-benefits.html">retired military spouse education benefits</a>
+											<a class="badge badge-warning" href="/retired-military-spouse-medical-benefits.html">retired military spouse medical benefits</a>
+											<a class="badge badge-info" href="/retired-military-new-spouse-benefits.html">retired military new spouse benefits</a>
+											<a class="badge badge-primary" href="/royal-navy-wife-hoodie.html">royal navy wife hoodie</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to pay a visit to the right blog.  Our site provides you with suggestions for viewing the maximum quality video and picture content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie for you to view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/c6/c8/54c6c8860b739efce6a74a6379b42775.jpg" data-lightbox="roadtrip" data-title="How To Split The Pension In A Divorce Dealing With Divorce Stages Of Grief Reasons For Divorce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/c6/c8/54c6c8860b739efce6a74a6379b42775.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn0sgseU5L34_8_kdJUQIudSg95QELqBfv0g';" alt="How To Split The Pension In A Divorce Dealing With Divorce Stages Of Grief Reasons For Divorce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Split The Pension In A Divorce Dealing With Divorce Stages Of Grief Reasons For Divorce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/13/36/c51336b7ae682f39bf4bd62e6dd3deed.jpg" data-lightbox="roadtrip" data-title="Va Aid Attendance Benefits This Is An Awesome Va Benefit Many Wartime Vets And Their Families Do Not Kno Alzheimer S And Dementia Veterans Benefits Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/13/36/c51336b7ae682f39bf4bd62e6dd3deed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6cGcSDmM0qQ3pIql_hmFqeosV6lLSaGVM7w';" alt="Va Aid Attendance Benefits This Is An Awesome Va Benefit Many Wartime Vets And Their Families Do Not Kno Alzheimer S And Dementia Veterans Benefits Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Aid Attendance Benefits This Is An Awesome Va Benefit Many Wartime Vets And Their Families Do Not Kno Alzheimer S And Dementia Veterans Benefits Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://batsonnolan.com/wp-content/uploads/2019/10/divorce-words3_640-3.jpg" data-lightbox="roadtrip" data-title="Ex Wife Entitled To Military Pension If Remarries Batson Nolan Plc">
+											<img class="card-img v-image ads-img " src="https://batsonnolan.com/wp-content/uploads/2019/10/divorce-words3_640-3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlQQlI5Xi3c34Qstfl6VItuLsq9HIicE-SEA';" alt="Ex Wife Entitled To Military Pension If Remarries Batson Nolan Plc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ex Wife Entitled To Military Pension If Remarries Batson Nolan Plc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.goldbergjones-sandiego.com/wp-content/uploads/2016/04/military-pensions-and-divorce-878x481.jpg" data-lightbox="roadtrip" data-title="How Are Military Pensions Divided In Divorce Goldberg Jones">
+											<img class="card-img v-image ads-img " src="https://www.goldbergjones-sandiego.com/wp-content/uploads/2016/04/military-pensions-and-divorce-878x481.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWW-qNSW2YebZee5LflNqlkU3wiC2SGvyHpg';" alt="How Are Military Pensions Divided In Divorce Goldberg Jones">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Are Military Pensions Divided In Divorce Goldberg Jones</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ohioexecutivedivorce.com/images/easyblog_articles/263/b2ap3_amp_114536_PensionDivorce_1_082317.jpg" data-lightbox="roadtrip" data-title="4 Facts You Need To Know About Pensions And Divorce Jack S Law Office">
+											<img class="card-img v-image ads-img " src="https://ohioexecutivedivorce.com/images/easyblog_articles/263/b2ap3_amp_114536_PensionDivorce_1_082317.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD2P8uKrwEdlpks8EBXnk8cuqEJVSMeitYfQ';" alt="4 Facts You Need To Know About Pensions And Divorce Jack S Law Office">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Facts You Need To Know About Pensions And Divorce Jack S Law Office</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://4axl9y3o7mpg2nx33m1asrx2-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/FLM-top-10-articles-2020.jpg" data-lightbox="roadtrip" data-title="Taxes And Military Pensions The Long And Short Of It">
+											<img class="card-img v-image ads-img " src="https://4axl9y3o7mpg2nx33m1asrx2-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/FLM-top-10-articles-2020.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEsI-_iLAP5aozvQmAUo3PXcHp7rEqtMBaww';" alt="Taxes And Military Pensions The Long And Short Of It">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Taxes And Military Pensions The Long And Short Of It</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://ohioexecutivedivorce.com/images/easyblog_articles/263/b2ap3_amp_114536_PensionDivorce_1_082317.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEsI-_iLAP5aozvQmAUo3PXcHp7rEqtMBaww';" alt="Taxes And Military Pensions The Long And Short Of It">
+										<div class="card-body">
+						<h3 class="h5"><b>Those already in receipt of a survivors pension will be entitled to keep their.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Are ex wives entitled to military pension</strong>. 
+								
+																	However if the ex-spouse is eligible commissary exchange and medical benefits are available. 
+																	If your husband wife or civil partner died as a result of serving in the Armed Forces you may get a War Widows or War Widowers pension. 
+																	Yes your ex wife could make a claim on the pension as all financial assets are looked at upon divorce. 
+																	Under the state pension system as it existed until 5 April 2016 it was possible for women to claim a pension on the basis of the contribution record of their husband their. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For more information contact Veterans UK. 
+																	That rule says an ex-military spouse gets to keep some military benefits if their former. 
+																	When a member of the armed forces reaches their retirement age they receive one of the most generous pensions available in the UK. 
+																	This so-called 1010 Rule has created a myth that spouses with fewer than 10 years of marriage are not entitled to a share of the military retirement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We must press on though because the nagging question is can your ex-wife or soon-to-be ex-wife get her hands on some of that VA benefit here in VA. 
+																	But as long as the couple was married for at least 10 years during the members career DFAS will pay the former spouses share directly to the former spouse. 
+																	This is a harsh option but it has happened with military members leaving the military early before 20 years to avoid the obligation of splitting military retirement pay and other benefits. 
+																	The Court will consider the length of your marriage the needs of both people and the matrimonial assets when making a financial. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However whether she would be successful in making a claim on the pension in the circumstances you have outlined is a different matter. 
+																	From 1 April 2015 all survivors pensions awarded to armed forces spouses and civil partners will be for life. 
+																	24042019 at 527 pm. 
+																	Were here to help you We have specialist family lawyers to advise on all aspects of relationship breakdown including divorce and civil partnership dissolution financial settlement after divorce and child custody and support. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many military spouse divorcees qualify for benefits after divorce under a policy known as the 202020 rule. 
+																	Splitting a Military Pension in Divorce Often one of the largest assets in a military family is a pension and therefore it is worth considering your options when making an agreement to settle your finances. 
+																	Under this law former spouses may be entitled to portions of the military members retirement pay medical care and exchange and commissary benefits. 
+																	Heres the word from our experienced military divorce lawyers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ex-spouses of military service members are not automatically entitled to continued military benefits. 
+																	Thank you for your comment. 
+																	A spouse is entitled to widowswidowers benefits until they are legally divorced even if they are separated from the member Soldiers often assume that because there was no need to get divorced that this period of separation wont affect their pension on divorce they are wrong. 
+																	Former spouses retain access to many types of military benefits after getting divorced subject to varying conditions for different types of benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is based on your husband wife or civil partners pay. 
+																	In addition to a share of the service members pension the former spouse may be entitled to receive certain military benefits so long as the spouse meets required criteria. 
+																	However in order for the Department of Defense to make direct payments of a military members retired pay to the former spouse the former spouse must have been married to the military member for. 
+																	VA Benefits Disability Income. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If the period of marriage overlapped by only 15 years the ex-spouse is entitled to health care benefits for one year following the final divorce decree. 
+																	The Uniformed Services Former Spouse Protection Act is a federal law that provides certain benefits to former spouses of military members. 
+																	So briefly the answer is yes your ex-wife can get her hands on your pension if you havent yet obtained a clean break order. 
+																	The Uniformed Services Former Spouse Protection Act. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However there are some exceptions and ex-wives and ex-husbands who remarry can lose their eligibility to receive pension payments based on their former spouses military service. 
+																	A divorced military member can serve 199 years and not get retirement benefits for himself herself and therefore the ex-spouse would also not be entitled to any benefits. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/6a/06/4c6a0633aab1feaef337c9bdf8278618.jpg" data-lightbox="roadtrip" data-title="Does Virginia Have Child Support Arrears Forgiveness Child Support Enforcement Child Custody Child Support Payments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/6a/06/4c6a0633aab1feaef337c9bdf8278618.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjdLs1vtF-Yr5byaD6qOVepN3RN9k1U7dEGw';" alt="Does Virginia Have Child Support Arrears Forgiveness Child Support Enforcement Child Custody Child Support Payments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Does Virginia Have Child Support Arrears Forgiveness Child Support Enforcement Child Custody Child Support Payments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/72/5e/e6725e6d5625cc2bb9781fd0bbcaf438.png" data-lightbox="roadtrip" data-title="Http Www Alarm Security Us Securitycameras Homesecuritysystems Homesecuritycameras Wirel The Motley Fool Social Security Benefits Retirement Social Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/72/5e/e6725e6d5625cc2bb9781fd0bbcaf438.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUE1Ma2i_0t5o1z6yjJaQVtrgXufhZQC2Xvw';" alt="Http Www Alarm Security Us Securitycameras Homesecuritysystems Homesecuritycameras Wirel The Motley Fool Social Security Benefits Retirement Social Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Alarm Security Us Securitycameras Homesecuritysystems Homesecuritycameras Wirel The Motley Fool Social Security Benefits Retirement Social Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://forcespensionsociety.org/wp-content/uploads/2019/11/Gunner-58-Squadron-RAF-Regiment.jpg" data-lightbox="roadtrip" data-title="Forces Pensions Explained Military Pension Advice From Forces Pension Society">
+											<img class="card-img v-image ads-img " src="https://forcespensionsociety.org/wp-content/uploads/2019/11/Gunner-58-Squadron-RAF-Regiment.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKt3t12crQq-LGUZEGE25Dw_2TejbCdEdfjg';" alt="Forces Pensions Explained Military Pension Advice From Forces Pension Society">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Forces Pensions Explained Military Pension Advice From Forces Pension Society</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2017/01/17/Photos/Processed/PensionCalculator-k6S--621x414@LiveMint.jpg" data-lightbox="roadtrip" data-title="How Much Tax Is Applicable On Pension And Family Pension">
+											<img class="card-img v-image ads-img " src="https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2017/01/17/Photos/Processed/PensionCalculator-k6S--621x414@LiveMint.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdh5XHy5KIerLS6mUH-BkaJDhe8Va38voagw';" alt="How Much Tax Is Applicable On Pension And Family Pension">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Tax Is Applicable On Pension And Family Pension</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.familylawpartners.co.uk/wp-content/uploads/2016/03/shutterstock_222603916.jpg" data-lightbox="roadtrip" data-title="Armed Forces Pensions On Divorce Part 1 Family Law Partners">
+											<img class="card-img v-image ads-img " src="https://www.familylawpartners.co.uk/wp-content/uploads/2016/03/shutterstock_222603916.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8eeD9fOCEIjeCtfip7tw77fSwmYP0WxRunQ';" alt="Armed Forces Pensions On Divorce Part 1 Family Law Partners">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armed Forces Pensions On Divorce Part 1 Family Law Partners</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.livemint.com/img/2019/04/03/600x338/army_1554316030433.jpg" data-lightbox="roadtrip" data-title="Benefits And Challenges Military Personnel And Their Families Face">
+											<img class="card-img v-image ads-img " src="https://images.livemint.com/img/2019/04/03/600x338/army_1554316030433.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfM6XRLYYOLwtSxA4zrESlzcvEhm5-0iecRw';" alt="Benefits And Challenges Military Personnel And Their Families Face">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benefits And Challenges Military Personnel And Their Families Face</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wiserwomen.org/wp-content/uploads/2018/04/widowhood-FSL-graphic.jpg" data-lightbox="roadtrip" data-title="Pension And Survivor Benefits Wiser Women">
+											<img class="card-img v-image ads-img " src="https://www.wiserwomen.org/wp-content/uploads/2018/04/widowhood-FSL-graphic.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo6g5SBtLa14hQhbaiJj7iSdSEW6jTGhapYg';" alt="Pension And Survivor Benefits Wiser Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pension And Survivor Benefits Wiser Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/Veteran%203.jpg?itok=mmPlH0bd" data-lightbox="roadtrip" data-title="Calculation Of Military Retirement Pay Shares Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/Veteran%203.jpg?itok=mmPlH0bd" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIOD4H4NSDb5ZTQmLLbtIwZpAmXXNer1RF-g';" alt="Calculation Of Military Retirement Pay Shares Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Calculation Of Military Retirement Pay Shares Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fkotlikoff%2Ffiles%2F2017%2F05%2FForbes-SSA-logo.jpg" data-lightbox="roadtrip" data-title="Ask Larry Will My Spouse S Pension Reduce My Social Security Benefit">
+											<img class="card-img v-image ads-img " src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fkotlikoff%2Ffiles%2F2017%2F05%2FForbes-SSA-logo.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ12-qqb4tmIMKIkejbBz3TZr6h6XAuXjeXjg';" alt="Ask Larry Will My Spouse S Pension Reduce My Social Security Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ask Larry Will My Spouse S Pension Reduce My Social Security Benefit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bjmediationservices.com/wp-content/uploads/2014/06/iStock_000032330410Small-e1553248080762.jpg" data-lightbox="roadtrip" data-title="Anything But My Pension Divorce Math">
+											<img class="card-img v-image ads-img " src="https://bjmediationservices.com/wp-content/uploads/2014/06/iStock_000032330410Small-e1553248080762.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN-dY9Uj525I8mipro0pDq8ig8y1FNI61Fxw';" alt="Anything But My Pension Divorce Math">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Anything But My Pension Divorce Math</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.iamexpat.de/sites/default/files/styles/article--full/public/pensions-retirement-age-germany.jpg?itok=7giHUzgL" data-lightbox="roadtrip" data-title="Pensions Retirement Age In Germany">
+											<img class="card-img v-image ads-img " src="https://www.iamexpat.de/sites/default/files/styles/article--full/public/pensions-retirement-age-germany.jpg?itok=7giHUzgL" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO7J0EEPSyMuritokBfEuS0zuxWYD5YVavMQ';" alt="Pensions Retirement Age In Germany">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pensions Retirement Age In Germany</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fjefflanders%2Ffiles%2F2014%2F04%2Fdivorce_02.jpg" data-lightbox="roadtrip" data-title="How Divorcing Women Should Handle Retirement Accounts And Pension Plans">
+											<img class="card-img v-image ads-img " src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fjefflanders%2Ffiles%2F2014%2F04%2Fdivorce_02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNbfMgWVW7ZTGAjSc2P5cTrTbh7Q5rJyO2hQ';" alt="How Divorcing Women Should Handle Retirement Accounts And Pension Plans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Divorcing Women Should Handle Retirement Accounts And Pension Plans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://assets1.cleartax-cdn.com/s/img/2017/04/19163058/Commuted-value-of-pension.png" data-lightbox="roadtrip" data-title="Are Pensions Taxable Pension Is Taxed As Salary Except When Received By Family">
+											<img class="card-img v-image ads-img " src="https://assets1.cleartax-cdn.com/s/img/2017/04/19163058/Commuted-value-of-pension.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_p5slChEXNV4kU5Yvo6rA22X4vQ0BQrR_Fg';" alt="Are Pensions Taxable Pension Is Taxed As Salary Except When Received By Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are Pensions Taxable Pension Is Taxed As Salary Except When Received By Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-recruitment-line-opening-hours.html">Army Recruitment Line Opening Hours</a></li>
+													<li class="list-group-item"><a href="/army-navy-imus-delivery-hotline.html">Army Navy Imus Delivery Hotline</a></li>
+													<li class="list-group-item"><a href="/army-ptsd-support.html">Army Ptsd Support</a></li>
+													<li class="list-group-item"><a href="/army-reserve-benefits-list.html">Army Reserve Benefits List</a></li>
+													<li class="list-group-item"><a href="/army-regulation-for-paying-spousal-support.html">Army Regulation For Paying Spousal Support</a></li>
+													<li class="list-group-item"><a href="/army-reserve-benefits-australia.html">Army Reserve Benefits Australia</a></li>
+													<li class="list-group-item"><a href="/army-navy-bgc-contact-number.html">Army Navy Bgc Contact Number</a></li>
+													<li class="list-group-item"><a href="/army-officer-wife-quora.html">Army Officer Wife Quora</a></li>
+													<li class="list-group-item"><a href="/army-pension-office-contact-details.html">Army Pension Office Contact Details</a></li>
+													<li class="list-group-item"><a href="/army-pension-for-surviving-spouse.html">Army Pension For Surviving Spouse</a></li>
+													<li class="list-group-item"><a href="/army-periodic-health-assessment-pha-online.html">Army Periodic Health Assessment Pha Online</a></li>
+													<li class="list-group-item"><a href="/army-reserve-college-tuition-assistance.html">Army Reserve College Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/army-officer-wife-life.html">Army Officer Wife Life</a></li>
+													<li class="list-group-item"><a href="/army-pension-contact-phone-number.html">Army Pension Contact Phone Number</a></li>
+													<li class="list-group-item"><a href="/army-officer-life-reddit.html">Army Officer Life Reddit</a></li>
+													<li class="list-group-item"><a href="/army-recruitment-luzon-contact-number.html">Army Recruitment Luzon Contact Number</a></li>
+													<li class="list-group-item"><a href="/army-regulation-on-bah-to-spouse.html">Army Regulation On Bah To Spouse</a></li>
+													<li class="list-group-item"><a href="/army-recruitment-office-contact-number.html">Army Recruitment Office Contact Number</a></li>
+													<li class="list-group-item"><a href="/army-pay-chart-with-spouse.html">Army Pay Chart With Spouse</a></li>
+													<li class="list-group-item"><a href="/army-reg-on-spousal-support.html">Army Reg On Spousal Support</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

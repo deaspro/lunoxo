@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Navy Wife Chicken Enchilada Pasta - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Navy Wife Chicken Enchilada Pasta",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/5b/5b/2d/5b5b2d9a15a5077ef14ae9bb1e148b43.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=navy+wife+chicken+enchilada+pasta",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Navy Wife Chicken Enchilada Pasta</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Dec 27 2012 - The Kitchen Life of a Navy Wife. Apr 18 2013 - The Kitchen Life of a Navy Wife. See more ideas about recipes food favorite recipes. <br>				
+			</p>
+										<a class="badge badge-dark" href="/navy-family-separation-pay.html">navy family separation pay</a>
+											<a class="badge badge-warning" href="/navy-face-mask-colors.html">navy face mask colors</a>
+											<a class="badge badge-success" href="/navy-chiefs-wife-poem.html">navy chiefs wife poem</a>
+											<a class="badge badge-danger" href="/navy-face-mask-womens.html">navy face mask womens</a>
+											<a class="badge badge-dark" href="/naval-wife-quotes.html">naval wife quotes</a>
+											<a class="badge badge-primary" href="/navy-face-mask-dressy.html">navy face mask dressy</a>
+											<a class="badge badge-light" href="/navy-chief-gift-ideas.html">navy chief gift ideas</a>
+											<a class="badge badge-success" href="/navy-chief-wife-meme.html">navy chief wife meme</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to visit the ideal site.  Our website gives you hints for seeing the maximum quality video and image content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie for you to see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/bd/09/32bd0974a89b91c8ddb9cc331e3a7553.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Chicken Enchilada Pasta Recipes Food Food Dishes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/bd/09/32bd0974a89b91c8ddb9cc331e3a7553.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeCF3ei-US-Ed35wzodytWN10V1hQLCqpq9g';" alt="The Kitchen Life Of A Navy Wife Chicken Enchilada Pasta Recipes Food Food Dishes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Chicken Enchilada Pasta Recipes Food Food Dishes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/2a/39/ff2a390d64c3f74dd061d22d0bec4686.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Chicken Enchilada Pasta Enchilada Pasta Chicken Enchilada Pasta Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/2a/39/ff2a390d64c3f74dd061d22d0bec4686.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr66VOPvB2XplaR4Syouya7b_fMVcyDPiOfw';" alt="The Kitchen Life Of A Navy Wife Chicken Enchilada Pasta Enchilada Pasta Chicken Enchilada Pasta Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Chicken Enchilada Pasta Enchilada Pasta Chicken Enchilada Pasta Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/5b/2d/5b5b2d9a15a5077ef14ae9bb1e148b43.jpg" data-lightbox="roadtrip" data-title="Chicken Enchilada Pasta Foodraf Enchilada Pasta Recipes Chicken Enchilada Pasta">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/5b/2d/5b5b2d9a15a5077ef14ae9bb1e148b43.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTfrIBMPG25bcT4lfYBSLwqcfoJjjzecNJpA';" alt="Chicken Enchilada Pasta Foodraf Enchilada Pasta Recipes Chicken Enchilada Pasta">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chicken Enchilada Pasta Foodraf Enchilada Pasta Recipes Chicken Enchilada Pasta</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/3a/a8/333aa8f8ee85dbe41862cd8294d73006.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Buffalo Chicken Pasta Salad Buffalo Chicken Pasta Buffalo Chicken Pasta Salad Chicken Pasta Salad Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/3a/a8/333aa8f8ee85dbe41862cd8294d73006.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS--_2v0cX10lk_ra1rc0FxNseKQS2anoyaOQ';" alt="The Kitchen Life Of A Navy Wife Buffalo Chicken Pasta Salad Buffalo Chicken Pasta Buffalo Chicken Pasta Salad Chicken Pasta Salad Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Buffalo Chicken Pasta Salad Buffalo Chicken Pasta Buffalo Chicken Pasta Salad Chicken Pasta Salad Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/12/88/82/128882aa1099e9b98c45e56158fb6122.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Chicken Enchilada Spaghetti Mexican Food Recipes Chicken Enchiladas Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/12/88/82/128882aa1099e9b98c45e56158fb6122.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtEo6TNIxC8WjH0dZvrU2XyGLR1JhD-VM7vQ';" alt="The Kitchen Life Of A Navy Wife Chicken Enchilada Spaghetti Mexican Food Recipes Chicken Enchiladas Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Chicken Enchilada Spaghetti Mexican Food Recipes Chicken Enchiladas Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/79/fe/fe79fe0b52ec84d2ea6ba10589b0b7ae.jpg" data-lightbox="roadtrip" data-title="Pin On Recipes To Try">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/79/fe/fe79fe0b52ec84d2ea6ba10589b0b7ae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTucuHgJu7BCere1FvWltwN8DzdOZFRd7E1Ug';" alt="Pin On Recipes To Try">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Recipes To Try</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/56/67/b9/5667b9d5be2f91f5e45ab1b610cac171.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTucuHgJu7BCere1FvWltwN8DzdOZFRd7E1Ug';" alt="Pin On Recipes To Try">
+										<div class="card-body">
+						<h3 class="h5"><b>Heat olive oil in a deep skillet and cook onions for 3-5 minutes.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Navy wife chicken enchilada pasta</strong>. 
+								
+																	Get the best of Insurance or Free Credit Report browse our section on Cell Phones or learn about Life Insurance. 
+																	Apr 17 2012 - This Pin was discovered by Bernadette Gawne. 
+																	Cook chicken drain and shred you could use a rotisserie chicken to make it even easier. 
+																	Add cheese and stir until the cheese is melted and heated through. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bacon Wrapped Chicken Stuffed Zucchini. 
+																	Get the best of Insurance or Free Credit Report browse our section on Cell Phones or learn about Life Insurance. 
+																	Apr 18 2013 - The Kitchen Life of a Navy Wife. 
+																	Jun 7 2018 - Chicken Enchilada Pasta - The Kitchen Life of a Navy Wife. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apr 17 2012 - This Pin was discovered by Shaelin Barrow. 
+																	Boil pasta according to package. 
+																	May 24 2013 - Explore Tammy Saunderss board The Kitchen Life of a Navy Wife followed by 454 people on Pinterest. 
+																	Add cooked chicken green chiles cumin chili powder salt and enchilada sauces. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Heat olive oil in a deep. 
+																	Let sauce simmer for about 8-10 minutes. 
+																	Get the best of Insurance or Free Credit Report browse our section on Cell Phones or learn about Life Insurance. 
+																	Discover and save your own Pins on Pinterest. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Boil pasta according to package. 
+																	Avocado Mac N Cheese. 
+																	The Kitchen Life of a Navy Wife. 
+																	Add garlic and red pepper and cook for another 3-5 minutes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When oil is hot enough add onions and cook them for about 3-5 minutes. 
+																	Toddler Dinner Recipes. 
+																	Shred chicken I recommend doing this earlier in the day or even the day before to save time as well as chopping the veggies. 
+																	Home Broiled Cajun Shrimp Candy Corn Fruit Cups. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While chicken is cooking boil pasta according to package and chop the veggies. 
+																	Discover and save your own Pins on Pinterest. 
+																	Chicken Enchilada Pasta - The Kitchen Life of a Navy Wife. 
+																	Bacon Ranch Pasta Salad. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Clean Eating Snack Recipes. 
+																	Saved from navywifecook. 
+																	Apr 18 2013 - The Kitchen Life of a Navy Wife. 
+																	Apr 18 2013 - The Kitchen Life of a Navy Wife. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Heat the olive oil in a deep skillet over medium-low heat. 
+																	Jun 7 2018 - Chicken Enchilada Pasta - The Kitchen Life of a Navy Wife. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/6f/50/146f5014fbc93672dfb5786a55b0e4a4.png" data-lightbox="roadtrip" data-title="Skillet Chicken Enchilada Pasta Table For Seven Chicken Enchilada Pasta Enchilada Pasta Pasta Dishes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/6f/50/146f5014fbc93672dfb5786a55b0e4a4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8uDhDED-v-GPDTdB08QL-KbZDen0IsXv0Jw';" alt="Skillet Chicken Enchilada Pasta Table For Seven Chicken Enchilada Pasta Enchilada Pasta Pasta Dishes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Skillet Chicken Enchilada Pasta Table For Seven Chicken Enchilada Pasta Enchilada Pasta Pasta Dishes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/1f/49/7e1f491456f44aff3fdd5d61e116c771.jpg" data-lightbox="roadtrip" data-title="Opal And Halo Diamond Ring Side Stone Accents Sterling Silver 1 05ct Recipes Pasta Casserole Mexican Food Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/1f/49/7e1f491456f44aff3fdd5d61e116c771.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAti6KHM29PdoHkBwWxP7XVN8DCGVgPayBtg';" alt="Opal And Halo Diamond Ring Side Stone Accents Sterling Silver 1 05ct Recipes Pasta Casserole Mexican Food Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Opal And Halo Diamond Ring Side Stone Accents Sterling Silver 1 05ct Recipes Pasta Casserole Mexican Food Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/5c/4e/805c4e626acc72e34d93c7cbd6c24886.jpg" data-lightbox="roadtrip" data-title="Enchilada Pasta Casserole Pasta Dishes Delicious Beef Recipe Main Dish Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/5c/4e/805c4e626acc72e34d93c7cbd6c24886.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Un33if9V6qkAgw58pB99WyuKmKS4f0Yaig';" alt="Enchilada Pasta Casserole Pasta Dishes Delicious Beef Recipe Main Dish Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Enchilada Pasta Casserole Pasta Dishes Delicious Beef Recipe Main Dish Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/d4/b3/04d4b3e1938eb10fd782a179e7ad1fd4.jpg" data-lightbox="roadtrip" data-title="Pin On Mis Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/d4/b3/04d4b3e1938eb10fd782a179e7ad1fd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkScceuKlHGVwh-sZrmdr5qAkHTMAPGt4RxA';" alt="Pin On Mis Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mis Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/39/c8/9939c86324f7c9f418ef7bdc6bb75ec2.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Spinach Artichoke Pasta Spinach Artichoke Pasta Artichoke Pasta Pasta Salad With Spinach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/39/c8/9939c86324f7c9f418ef7bdc6bb75ec2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH_rTVYcPiL9bI1byao3OnVMVzPhcWFvs4zw';" alt="The Kitchen Life Of A Navy Wife Spinach Artichoke Pasta Spinach Artichoke Pasta Artichoke Pasta Pasta Salad With Spinach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Spinach Artichoke Pasta Spinach Artichoke Pasta Artichoke Pasta Pasta Salad With Spinach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/f8/f6/3af8f6a19bfa1eda9efa89251f62175e.jpg" data-lightbox="roadtrip" data-title="Chicken Enchilada Pasta 30 Minutes Video Sweet And Savory Meals Recipe Chicken Enchilada Pasta Recipes Enchilada Pasta">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/f8/f6/3af8f6a19bfa1eda9efa89251f62175e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW68n2p6VnHhWbIfACFwssMbvhkO_eMB1ihQ';" alt="Chicken Enchilada Pasta 30 Minutes Video Sweet And Savory Meals Recipe Chicken Enchilada Pasta Recipes Enchilada Pasta">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chicken Enchilada Pasta 30 Minutes Video Sweet And Savory Meals Recipe Chicken Enchilada Pasta Recipes Enchilada Pasta</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/0d/3f/2a0d3f6fb6d775ba08faaf67bf23f835.png" data-lightbox="roadtrip" data-title="Bubble Up Chicken Enchilada Casserole Dinner Recipes Easy Family Top Dinner Recipes Popular Dinner Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/0d/3f/2a0d3f6fb6d775ba08faaf67bf23f835.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQjxX2bvz-twAZpCtryw4pNjrZUrg-jEkQAg';" alt="Bubble Up Chicken Enchilada Casserole Dinner Recipes Easy Family Top Dinner Recipes Popular Dinner Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bubble Up Chicken Enchilada Casserole Dinner Recipes Easy Family Top Dinner Recipes Popular Dinner Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/67/b9/5667b9d5be2f91f5e45ab1b610cac171.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Roasted Garlic Macaroni And Cheese Macaroni And Cheese Roasted Garlic Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/67/b9/5667b9d5be2f91f5e45ab1b610cac171.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt2NiEbdHYU5tUBCydYGkXcS8CE1taKjPlRQ';" alt="The Kitchen Life Of A Navy Wife Roasted Garlic Macaroni And Cheese Macaroni And Cheese Roasted Garlic Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Roasted Garlic Macaroni And Cheese Macaroni And Cheese Roasted Garlic Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/50/5d/0d505dfc93f72f1f7ea59bc43f6e9303.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Cornbread Chicken With Jalapeno Sauce Poultry Recipes Chicken Cornbread Chicken Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/50/5d/0d505dfc93f72f1f7ea59bc43f6e9303.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTord1KqLEvdPDcejoTbXIuBADsoFV5ahOuA';" alt="The Kitchen Life Of A Navy Wife Cornbread Chicken With Jalapeno Sauce Poultry Recipes Chicken Cornbread Chicken Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Cornbread Chicken With Jalapeno Sauce Poultry Recipes Chicken Cornbread Chicken Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ba/17/4c/ba174cb469b613965b85f60c9249f43b.jpg" data-lightbox="roadtrip" data-title="Instant Pot Green Chile Chicken Enchilada Soup The Cookin Chicks Recipe Green Chile Chicken Enchiladas Chicken Enchilada Soup Enchilada Soup">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ba/17/4c/ba174cb469b613965b85f60c9249f43b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL6W_VrwrV02DX1wl1gDIHRAxzvtF3VCXpdA';" alt="Instant Pot Green Chile Chicken Enchilada Soup The Cookin Chicks Recipe Green Chile Chicken Enchiladas Chicken Enchilada Soup Enchilada Soup">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Instant Pot Green Chile Chicken Enchilada Soup The Cookin Chicks Recipe Green Chile Chicken Enchiladas Chicken Enchilada Soup Enchilada Soup</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/c0/93/8cc093f85b2b8bbb184e6cbf9f45f306.jpg" data-lightbox="roadtrip" data-title="Chicken Cordon Blue Roll Ups Best Chicken Recipes Baked Dinner Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/c0/93/8cc093f85b2b8bbb184e6cbf9f45f306.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNi8cJBUKtcQY6QzWctb1O9St_VTDcUb2edg';" alt="Chicken Cordon Blue Roll Ups Best Chicken Recipes Baked Dinner Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chicken Cordon Blue Roll Ups Best Chicken Recipes Baked Dinner Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/90/11/35/90113550c0a0d3e6b556ab8d4ece39de.jpg" data-lightbox="roadtrip" data-title="This Lazy Beef Noodles Is The Perfect Easy Weeknight Recipe Simple To Make And Ready In Just A Beef And Noodles Beef Recipes For Dinner Quick Dinner Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/90/11/35/90113550c0a0d3e6b556ab8d4ece39de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ87UUiVLDFlBkrPFGP-342hucWjWjJfuw1A';" alt="This Lazy Beef Noodles Is The Perfect Easy Weeknight Recipe Simple To Make And Ready In Just A Beef And Noodles Beef Recipes For Dinner Quick Dinner Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Lazy Beef Noodles Is The Perfect Easy Weeknight Recipe Simple To Make And Ready In Just A Beef And Noodles Beef Recipes For Dinner Quick Dinner Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/ea/c9/6beac913ecd6cb37e0f910f3421d92cc.jpg" data-lightbox="roadtrip" data-title="The Kitchen Life Of A Navy Wife Wonton Soup Homemade Soup Delicious Soup Wonton Soup">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/ea/c9/6beac913ecd6cb37e0f910f3421d92cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Ca2l9lk9sooDHY7_8dnvlgH7-TXnY9rO1Q';" alt="The Kitchen Life Of A Navy Wife Wonton Soup Homemade Soup Delicious Soup Wonton Soup">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Kitchen Life Of A Navy Wife Wonton Soup Homemade Soup Delicious Soup Wonton Soup</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/my-career-meaning.html">My Career Meaning</a></li>
+													<li class="list-group-item"><a href="/my-career-view.html">My Career View</a></li>
+													<li class="list-group-item"><a href="/my-career-growth.html">My Career Growth</a></li>
+													<li class="list-group-item"><a href="/my-career-attribute-upgrade.html">My Career Attribute Upgrade</a></li>
+													<li class="list-group-item"><a href="/my-career-dream.html">My Career Dream</a></li>
+													<li class="list-group-item"><a href="/my-career-plan-example.html">My Career Plan Example</a></li>
+													<li class="list-group-item"><a href="/my-career-vision-essay.html">My Career Vision Essay</a></li>
+													<li class="list-group-item"><a href="/my-career-kundali.html">My Career Kundali</a></li>
+													<li class="list-group-item"><a href="/my-career-nba-2k20-offline.html">My Career Nba 2k20 Offline</a></li>
+													<li class="list-group-item"><a href="/my-career-is-ruined.html">My Career Is Ruined</a></li>
+													<li class="list-group-item"><a href="/my-career-wwe-2k18.html">My Career Wwe 2k18</a></li>
+													<li class="list-group-item"><a href="/my-career-ambition.html">My Career Ambition</a></li>
+													<li class="list-group-item"><a href="/my-career-dunk-contest-2k20.html">My Career Dunk Contest 2k20</a></li>
+													<li class="list-group-item"><a href="/my-care-portal-parkview.html">My Care Portal Parkview</a></li>
+													<li class="list-group-item"><a href="/my-career-goal.html">My Career Goal</a></li>
+													<li class="list-group-item"><a href="/my-career-roadmap.html">My Career Roadmap</a></li>
+													<li class="list-group-item"><a href="/my-career-yoruba-movie.html">My Career Yoruba Movie</a></li>
+													<li class="list-group-item"><a href="/my-career-on-2k20.html">My Career On 2k20</a></li>
+													<li class="list-group-item"><a href="/my-care-portal-acn.html">My Care Portal Acn</a></li>
+													<li class="list-group-item"><a href="/my-career-login.html">My Career Login</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

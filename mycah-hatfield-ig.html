@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mycah Hatfield Ig - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mycah Hatfield Ig",
+  "datePublished": "2021-02-13",
+  "image": "https://s.hdnux.com/photos/01/03/47/64/17726765/3/rawImage.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mycah+hatfield+ig",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mycah Hatfield Ig</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">1476 Photos and videos. Sections of this page. Press alt to open this menu. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/msn-uk-homepage-not-responding.html">msn uk homepage not responding</a>
+											<a class="badge badge-success" href="/msn-uk-ftse.html">msn uk ftse</a>
+											<a class="badge badge-info" href="/msn-messenger-us.html">msn messenger us</a>
+											<a class="badge badge-danger" href="/msn-to-usa-flights.html">msn to usa flights</a>
+											<a class="badge badge-secondary" href="/msn-news-uk.html">msn news uk</a>
+											<a class="badge badge-warning" href="/msc-shipping-company-careers.html">msc shipping company careers</a>
+											<a class="badge badge-secondary" href="/msn-uk-facebook.html">msn uk facebook</a>
+											<a class="badge badge-dark" href="/msn-uk-business-news.html">msn uk business news</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to visit the ideal site.  Our site provides you with hints for viewing the highest quality video and picture content, hunt and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie that you view.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/ext_tw_video_thumb/1226168518888099842/pu/img/w-LtTIrP54T8V5dW.jpg" data-lightbox="roadtrip" data-title="Mycah Hatfield On Twitter I Ve Got The Latest For You On The Fire At A Chemical Plant In Baytown This Morning Https T Co Zrco0dlkhs">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/ext_tw_video_thumb/1226168518888099842/pu/img/w-LtTIrP54T8V5dW.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUgjj1qC9E5BA_JCk6P6WcRSjNjq2bi5Rk4g';" alt="Mycah Hatfield On Twitter I Ve Got The Latest For You On The Fire At A Chemical Plant In Baytown This Morning Https T Co Zrco0dlkhs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycah Hatfield On Twitter I Ve Got The Latest For You On The Fire At A Chemical Plant In Baytown This Morning Https T Co Zrco0dlkhs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/profile_images/1221467353332027393/mUS6xKpT_400x400.jpg" data-lightbox="roadtrip" data-title="Mycah Hatfield Mycahabc13 Twitter">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/profile_images/1221467353332027393/mUS6xKpT_400x400.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROJN6pOmHBOgLXaQtYyLMarbykjjpG2FkOVg';" alt="Mycah Hatfield Mycahabc13 Twitter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycah Hatfield Mycahabc13 Twitter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/DpF2tMhVsAAFttG.jpg" data-lightbox="roadtrip" data-title="Mycah Hatfield On Twitter I Am So Beyond Honored To Have Been The Only Member Of The Media To Receive The Governor S Disability Employment Excellence Award I Was Nominated By A New">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/DpF2tMhVsAAFttG.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBEnDrhhboxnm6XDtyeqvoYNeHqv6FXcuruA';" alt="Mycah Hatfield On Twitter I Am So Beyond Honored To Have Been The Only Member Of The Media To Receive The Governor S Disability Employment Excellence Award I Was Nominated By A New">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycah Hatfield On Twitter I Am So Beyond Honored To Have Been The Only Member Of The Media To Receive The Governor S Disability Employment Excellence Award I Was Nominated By A New</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1195258667322668" data-lightbox="roadtrip" data-title="Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1195258667322668" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMHcPSPVjoXmtgz8a2esQTc7D63zFgrr_LgQ';" alt="Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=889246834573694" data-lightbox="roadtrip" data-title="Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=889246834573694" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmtwtxsHq85THsKG3q0vLBOcIqglWy8Xojwg';" alt="Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1354367624745104" data-lightbox="roadtrip" data-title="Abc13 Mycah Hatfield You Guys I Really Try To Stay Very Professional At Work At All Times But Yesterday I Had The Biggest Fan Girl Moment Ever I Got To Take A">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1354367624745104" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGXNrs-eECf3cjT7SUfs35_sz7bIuL0VpDvw';" alt="Abc13 Mycah Hatfield You Guys I Really Try To Stay Very Professional At Work At All Times But Yesterday I Had The Biggest Fan Girl Moment Ever I Got To Take A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Abc13 Mycah Hatfield You Guys I Really Try To Stay Very Professional At Work At All Times But Yesterday I Had The Biggest Fan Girl Moment Ever I Got To Take A</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=889246834573694" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGXNrs-eECf3cjT7SUfs35_sz7bIuL0VpDvw';" alt="Abc13 Mycah Hatfield You Guys I Really Try To Stay Very Professional At Work At All Times But Yesterday I Had The Biggest Fan Girl Moment Ever I Got To Take A">
+										<div class="card-body">
+						<h3 class="h5"><b>Mycah covered countless natural disasters the.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mycah hatfield ig</strong>. 
+								
+																	Daytona Beach Screamers ParkLocation-25 s Atlantic ave Daytona beach Fl 32118SlingShotPrices 25-Per Person20-video15 T-ShirtsPackage 1 1 Rider50 1-U. 
+																	Mycah grew up in the Spring area but has spent almost the last decade outside of Texas. 
+																	Pages Liked by This Page. 
+																	See more of ABC13-Erica Simon on Facebook. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jul 11 2020 - 23 Likes 1 Comments - Ƭ princestakeout on Instagram. 
+																	ABC13-Mycah Hatfield is on Facebook. 
+																	Facebook gives people the power to share and makes the world more open and connected. 
+																	Mycah Hatfield MycahABC13 June 9 2017. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Everyone has been to friendly and so welcoming. 
+																	We are in the early stages of this investigation. 
+																	Native Houstonian Mycah Hatfield is excited to be back in her hometown. 
+																	HOUSTON Texas KTRK -- A reckless driver on East Freeway ended up fleeing from police overnight but not before crashing and exchanging gunfire with officers according to Houston police. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	6225 Followers 77 Following 523 Posts - See Instagram photos and videos from Mycah Hatfield mycahabc13. 
+																	Navy VW-4 Hurricane Hunters. 
+																	The investigation is just beginning. 
+																	ABC13 - Chelsey Hernandez. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Previously I worked in Tulsa as a reporter and was part of Emmy winning coverage of the August 2017 tornado and placed first in General News for the 2018 AP Broadcaster Awards. 
+																	See more of ABC13-Erica Simon on Facebook. 
+																	Join Facebook to connect with ABC13-Mycah Hatfield and others you may know. 
+																	My name is Mycah Hatfield and currently I am a reporterMMJ at ABC 13 in Houston Texas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The multimedia journalist began reporting at Houstons KTRK abc13 in June. 
+																	Im determined to create more IG content this year. 
+																	Fort Bend County law enforcement agencies have come together to send the. 
+																	And ended in the 7500 block of East Freeway at Wayside Drive. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The construction is a mixture of new office and residential space public projects and renovations to existing buildings. 
+																	I often forget to post or am just too lazy to take a pic. 
+																	Previously I worked in Tulsa as a reporter and was part of Emmy winning coverage of the August 2017 tornado and placed first in General News for the 2018 AP Broadcaster Awards. 
+																	Mycah Hatfield on Instagram. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MycahABC13 Houston TX. 
+																	1476 Photos and videos. 
+																	Previously she reported in Tulsa Okla. 
+																	I covered all nine days of the historic teacher walk out and First Lady Melania Trumps visit to a Tulsa school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	HTX Reporter for abc13houston OU Grad IG FB. 
+																	Mycah Sasaki Instagram Mycah Sasaki Pics Mycah Sasaki Tik Tok Shaina Salazar Mycah Sasaki Beach Mycah Sasaki Dance Mycah Sasaki Body Mycah Sasaki Boyfriend Mycah Sasaki Bathing Suit Mycah Zazaki Mycha Sasaki Mycah Sasski Micah Sasaki Tik Tok Mycah Sasaki Picutre Mycah Reiland Instagram Mycah Sasaki Two Piece Mycah Sasaki Look a Like Mycah Hatfield Hot Bikini. 
+																	A short time later the man died at a nearby hospital. 
+																	Rip vannesaguillen so sad to hear this did not give us all the outcome we hoped for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I woke up this morning to the horrific news that the guy everyone describes as the best Willie Dixon had suddenly passed away. 
+																	MARIA F - Woke. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/ESsLaKPXsAE9xaO.jpg" data-lightbox="roadtrip" data-title="Mycah Hatfield On Twitter Happy Monday Everyone Someone Decided To Photobomb My Selfie At The Rodeo This Weekend Https T Co Olcgpl0mor">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/ESsLaKPXsAE9xaO.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSxU33bRnDD3YDXS9UzovyUdlmaZf8EpvHeg';" alt="Mycah Hatfield On Twitter Happy Monday Everyone Someone Decided To Photobomb My Selfie At The Rodeo This Weekend Https T Co Olcgpl0mor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycah Hatfield On Twitter Happy Monday Everyone Someone Decided To Photobomb My Selfie At The Rodeo This Weekend Https T Co Olcgpl0mor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.hdnux.com/photos/01/03/47/64/17726765/3/rawImage.jpg" data-lightbox="roadtrip" data-title="Houston Native Mycah Hatfield Joins Houston S Ktrk Abc13 The Hour">
+											<img class="card-img v-image ads-img " src="https://s.hdnux.com/photos/01/03/47/64/17726765/3/rawImage.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3hDt5SYOYYsjSOQlAtO1ERBk7xvKd3Hd_VQ';" alt="Houston Native Mycah Hatfield Joins Houston S Ktrk Abc13 The Hour">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Houston Native Mycah Hatfield Joins Houston S Ktrk Abc13 The Hour</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EHQMApNWwAA92vR.jpg" data-lightbox="roadtrip" data-title="Mycah Hatfield On Twitter I M Ready For Tonight S Game Are You I Acted Like Academy Was My Personal Closet Today Can You Tell">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EHQMApNWwAA92vR.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxRoQP9aIXgUiRHAWE6NsBx9UpVkqe6DJbOw';" alt="Mycah Hatfield On Twitter I M Ready For Tonight S Game Are You I Acted Like Academy Was My Personal Closet Today Can You Tell">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycah Hatfield On Twitter I M Ready For Tonight S Game Are You I Acted Like Academy Was My Personal Closet Today Can You Tell</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/41/7c/d7/417cd73b61af31d9442bfcfb11068beb.jpg" data-lightbox="roadtrip" data-title="Mycah Hatfield On Twitter They Lied To Our Faces Every Single Day This Press Conference Has Been Hard To Watch Fort Hood Soldier Vanessa Guillen S Famil">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/41/7c/d7/417cd73b61af31d9442bfcfb11068beb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzP5cvcLL8SYfHf_rTqv6Bfb8HH4t-P0H1A';" alt="Mycah Hatfield On Twitter They Lied To Our Faces Every Single Day This Press Conference Has Been Hard To Watch Fort Hood Soldier Vanessa Guillen S Famil">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycah Hatfield On Twitter They Lied To Our Faces Every Single Day This Press Conference Has Been Hard To Watch Fort Hood Soldier Vanessa Guillen S Famil</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=891866090995262" data-lightbox="roadtrip" data-title="Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=891866090995262" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ6JomLYE9-k76uSS1sDL37cbdS9ofuxtdKg';" alt="Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1407491099432756" data-lightbox="roadtrip" data-title="Abc13 Mycah Hatfield Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1407491099432756" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDoVR-iQg6MmDOMsoV5p6yw9nitppOt6F53w';" alt="Abc13 Mycah Hatfield Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Abc13 Mycah Hatfield Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2247402412179067" data-lightbox="roadtrip" data-title="Travis Guillory It Looks Like Mycah Hatfield And I Are Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2247402412179067" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2VjGrsXYpIfHRu6-SdDM-xOF31613t95i8g';" alt="Travis Guillory It Looks Like Mycah Hatfield And I Are Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Travis Guillory It Looks Like Mycah Hatfield And I Are Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/ESTkGH2WkAUhAtE.jpg:large" data-lightbox="roadtrip" data-title="Mycah Hatfield On Twitter The Harkins Family Of Six Lost Their Home In A Fire Over The Weekend This Is The Second Time In Less Than Four Years Their House Has Burned">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/ESTkGH2WkAUhAtE.jpg:large" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4vyV5_OCDLoM1qu2nFzTv07j28pVNFJfr-w';" alt="Mycah Hatfield On Twitter The Harkins Family Of Six Lost Their Home In A Fire Over The Weekend This Is The Second Time In Less Than Four Years Their House Has Burned">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycah Hatfield On Twitter The Harkins Family Of Six Lost Their Home In A Fire Over The Weekend This Is The Second Time In Less Than Four Years Their House Has Burned</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/ERvVAYaXYAAFZy8.jpg" data-lightbox="roadtrip" data-title="Mycah Hatfield On Twitter Less Than A Week Until Rodeohouston I Can T Wait To See All My Sweet Friends At The Petting Zoo Https T Co Olcgpl0mor Https T Co 3rzobqf2qa">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/ERvVAYaXYAAFZy8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqoUL3bRjS0ytio58jgRWb8nQfziNKMepPAw';" alt="Mycah Hatfield On Twitter Less Than A Week Until Rodeohouston I Can T Wait To See All My Sweet Friends At The Petting Zoo Https T Co Olcgpl0mor Https T Co 3rzobqf2qa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycah Hatfield On Twitter Less Than A Week Until Rodeohouston I Can T Wait To See All My Sweet Friends At The Petting Zoo Https T Co Olcgpl0mor Https T Co 3rzobqf2qa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EVrhRKWXkAE2ple.jpg" data-lightbox="roadtrip" data-title="Mycah Hatfield On Twitter I Figured Why Not Join In And Share My Senior Pictures To The 2020 Seniors The Best Is Yet To Come Abc13houston Seniorpicturechallenge Https T Co Zjxychoerd">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EVrhRKWXkAE2ple.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhz2Ahoj0ek3fZl24b7fiPUIyx4NjDJH8KwQ';" alt="Mycah Hatfield On Twitter I Figured Why Not Join In And Share My Senior Pictures To The 2020 Seniors The Best Is Yet To Come Abc13houston Seniorpicturechallenge Https T Co Zjxychoerd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycah Hatfield On Twitter I Figured Why Not Join In And Share My Senior Pictures To The 2020 Seniors The Best Is Yet To Come Abc13houston Seniorpicturechallenge Https T Co Zjxychoerd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.newyork1.vip.townnews.com/theadvocate.com/content/tncms/assets/v3/editorial/0/9d/09d4b7e2-5d70-5e2f-ae66-c21f982b5c98/575205bca9da7.image.jpg" data-lightbox="roadtrip" data-title="Patricia Gannon The Way We Were Patricia Gannon Theadvocate Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.newyork1.vip.townnews.com/theadvocate.com/content/tncms/assets/v3/editorial/0/9d/09d4b7e2-5d70-5e2f-ae66-c21f982b5c98/575205bca9da7.image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEq-XgPQnuWXYafjyFqRDXyqz-oTp0vH9tGA';" alt="Patricia Gannon The Way We Were Patricia Gannon Theadvocate Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Patricia Gannon The Way We Were Patricia Gannon Theadvocate Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EcavXFcXYAQJbDE.jpg" data-lightbox="roadtrip" data-title="Mycah Hatfield On Twitter Happiest Birthday To Willie Even Though He S Not Here So We Can Celebrate With Him We Are Going To Have A Celebration Anyway We All Miss Him And">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EcavXFcXYAQJbDE.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGV0uXsHrU8uHq7C4sqBmRHm43U-_Oq5WhjQ';" alt="Mycah Hatfield On Twitter Happiest Birthday To Willie Even Though He S Not Here So We Can Celebrate With Him We Are Going To Have A Celebration Anyway We All Miss Him And">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycah Hatfield On Twitter Happiest Birthday To Willie Even Though He S Not Here So We Can Celebrate With Him We Are Going To Have A Celebration Anyway We All Miss Him And</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/D1tIunMW0AA2NtK.jpg" data-lightbox="roadtrip" data-title="Mycah Hatfield On Twitter A Group Of Moms Are Outside Of The Tulsa Municipal Courthouse Are Having A Nurse In In Support Of A Mother Reportedly Told Not To Breastfeed In The Hallway">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/D1tIunMW0AA2NtK.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTZvk7zTwAzZGpR_ek-x2y8DN1nyBXBAq86g';" alt="Mycah Hatfield On Twitter A Group Of Moms Are Outside Of The Tulsa Municipal Courthouse Are Having A Nurse In In Support Of A Mother Reportedly Told Not To Breastfeed In The Hallway">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycah Hatfield On Twitter A Group Of Moms Are Outside Of The Tulsa Municipal Courthouse Are Having A Nurse In In Support Of A Mother Reportedly Told Not To Breastfeed In The Hallway</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-do-military-spouses-find-jobs.html">How Do Military Spouses Find Jobs</a></li>
+													<li class="list-group-item"><a href="/how-do-you-deal-with-a-boring-husband.html">How Do You Deal With A Boring Husband</a></li>
+													<li class="list-group-item"><a href="/how-do-you-find-death-records-for-free.html">How Do You Find Death Records For Free</a></li>
+													<li class="list-group-item"><a href="/how-do-i-get-my-husband-back-after-i-cheated.html">How Do I Get My Husband Back After I Cheated</a></li>
+													<li class="list-group-item"><a href="/how-is-it-being-a-navy-wife.html">How Is It Being A Navy Wife</a></li>
+													<li class="list-group-item"><a href="/how-does-military-tuition-assistance-work.html">How Does Military Tuition Assistance Work</a></li>
+													<li class="list-group-item"><a href="/how-does-military-spousal-support-work.html">How Does Military Spousal Support Work</a></li>
+													<li class="list-group-item"><a href="/how-do-i-get-a-copy-of-my-military-service-records.html">How Do I Get A Copy Of My Military Service Records</a></li>
+													<li class="list-group-item"><a href="/how-do-you-know-if-your-husband-doesnt-love-anymore.html">How Do You Know If Your Husband Doesnt Love Anymore</a></li>
+													<li class="list-group-item"><a href="/how-does-tricare-work-for-military-spouses.html">How Does Tricare Work For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/how-do-i-know-if-my-husband-is-emotionally-abusive.html">How Do I Know If My Husband Is Emotionally Abusive</a></li>
+													<li class="list-group-item"><a href="/how-long-is-alc-in-the-army.html">How Long Is Alc In The Army</a></li>
+													<li class="list-group-item"><a href="/how-long-do-military-recruiters-keep-records.html">How Long Do Military Recruiters Keep Records</a></li>
+													<li class="list-group-item"><a href="/how-long-does-tricare-cover-dependents-after-retirement.html">How Long Does Tricare Cover Dependents After Retirement</a></li>
+													<li class="list-group-item"><a href="/how-long-are-military-mres-good-for.html">How Long Are Military Mres Good For</a></li>
+													<li class="list-group-item"><a href="/how-long-do-i-have-to-quarantine-after-testing-positive-for-coronavirus.html">How Long Do I Have To Quarantine After Testing Positive For Coronavirus</a></li>
+													<li class="list-group-item"><a href="/how-do-you-do-military-time-in-excel.html">How Do You Do Military Time In Excel</a></li>
+													<li class="list-group-item"><a href="/how-do-i-know-if-my-husband-is-mentally-abusive.html">How Do I Know If My Husband Is Mentally Abusive</a></li>
+													<li class="list-group-item"><a href="/how-does-social-security-work-when-a-spouse-passes-away.html">How Does Social Security Work When A Spouse Passes Away</a></li>
+													<li class="list-group-item"><a href="/how-long-is-42a-ait.html">How Long Is 42a Ait</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Do Army Pension Transfer To Spouse On Death - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Do Army Pension Transfer To Spouse On Death",
+  "datePublished": "2021-02-13",
+  "image": "https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_MilitarySpouse1.jpg?itok=_Z72pqcw",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=do+army+pension+transfer+to+spouse+on+death",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Do Army Pension Transfer To Spouse On Death</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The death need not be related to service. This is not a pension and is paid separately from any dependants pensions which may be payable. Only AFPS 05 and AFPS 15 provide pensions to unmarried partners. <br>				
+			</p>
+										<a class="badge badge-light" href="/military-dependent-benefits.html">military dependent benefits</a>
+											<a class="badge badge-danger" href="/military-dependent-florida-drivers-license.html">military dependent florida drivers license</a>
+											<a class="badge badge-light" href="/military-dependent-check.html">military dependent check</a>
+											<a class="badge badge-dark" href="/military-dependent-benefits-age.html">military dependent benefits age</a>
+											<a class="badge badge-secondary" href="/military-dependent-flu-shot.html">military dependent flu shot</a>
+											<a class="badge badge-warning" href="/military-death-benefits-for-spouse.html">military death benefits for spouse</a>
+											<a class="badge badge-warning" href="/military-dependent-baggage-fees.html">military dependent baggage fees</a>
+											<a class="badge badge-danger" href="/military-community-resources.html">military community resources</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to pay a visit to the ideal blog.  Our site gives you suggestions for seeing the maximum quality video and image content, hunt and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this video that you see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://forcespensionsociety.org/wp-content/uploads/2019/11/Gunner-58-Squadron-RAF-Regiment.jpg" data-lightbox="roadtrip" data-title="Forces Pensions Explained Military Pension Advice From Forces Pension Society">
+											<img class="card-img v-image ads-img " src="https://forcespensionsociety.org/wp-content/uploads/2019/11/Gunner-58-Squadron-RAF-Regiment.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKt3t12crQq-LGUZEGE25Dw_2TejbCdEdfjg';" alt="Forces Pensions Explained Military Pension Advice From Forces Pension Society">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Forces Pensions Explained Military Pension Advice From Forces Pension Society</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.veteransunited.com/assets/craft/images/blog/young-soldier-looking-out-of-window_1.jpg" data-lightbox="roadtrip" data-title="Should I Stay Or Should I Go Pros And Cons Of Leaving The Service">
+											<img class="card-img v-image ads-img " src="https://www.veteransunited.com/assets/craft/images/blog/young-soldier-looking-out-of-window_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuecRYI8s5iJlhCeV3lsEsvub3UExuIIWV2w';" alt="Should I Stay Or Should I Go Pros And Cons Of Leaving The Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should I Stay Or Should I Go Pros And Cons Of Leaving The Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.livemint.com/img/2019/04/03/600x338/army_1554316030433.jpg" data-lightbox="roadtrip" data-title="Benefits And Challenges Military Personnel And Their Families Face">
+											<img class="card-img v-image ads-img " src="https://images.livemint.com/img/2019/04/03/600x338/army_1554316030433.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfM6XRLYYOLwtSxA4zrESlzcvEhm5-0iecRw';" alt="Benefits And Challenges Military Personnel And Their Families Face">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benefits And Challenges Military Personnel And Their Families Face</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://e5kmqzbcgt9.exactdn.com/wp-content/uploads/retire_navy_credit.jpg?strip=all&amp;lossy=1&amp;ssl=1" data-lightbox="roadtrip" data-title="Csrs Fers Is Buying Back Military Time Worth It">
+											<img class="card-img v-image ads-img " src="https://e5kmqzbcgt9.exactdn.com/wp-content/uploads/retire_navy_credit.jpg?strip=all&amp;lossy=1&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgrIijBmARE3BZEpspusYotGBvIKPxwahO5Q';" alt="Csrs Fers Is Buying Back Military Time Worth It">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Csrs Fers Is Buying Back Military Time Worth It</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/104716840-GettyImages-849101490-military-afghanistan.jpg?v=1532563759" data-lightbox="roadtrip" data-title="Us Service Members Face Big Changes To Retirement Plan">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/104716840-GettyImages-849101490-military-afghanistan.jpg?v=1532563759" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHlrFkvgCA8i9ITI1erRIkKWqTQ3jKcx_Jkw';" alt="Us Service Members Face Big Changes To Retirement Plan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Service Members Face Big Changes To Retirement Plan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://forcespensionsociety.org/wp-content/uploads/2021/02/Army-Web.png" data-lightbox="roadtrip" data-title="How Afps75 Pension Benefits Are Structured Forces Pension Society">
+											<img class="card-img v-image ads-img " src="https://forcespensionsociety.org/wp-content/uploads/2021/02/Army-Web.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZTtqYQQHkNP1035Pw2RSObDRgKltNkiTqkw';" alt="How Afps75 Pension Benefits Are Structured Forces Pension Society">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Afps75 Pension Benefits Are Structured Forces Pension Society</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://images.livemint.com/img/2019/04/03/600x338/army_1554316030433.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZTtqYQQHkNP1035Pw2RSObDRgKltNkiTqkw';" alt="How Afps75 Pension Benefits Are Structured Forces Pension Society">
+										<div class="card-body">
+						<h3 class="h5"><b>When your husband or wife dies you may be entitled to receive part or all of their pension.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Do army pension transfer to spouse on death</strong>. 
+								
+																	The base amount begins at a minimum of 300. 
+																	From 1 April 2015 all survivors pensions awarded to armed forces spouses and civil partners will be for life. 
+																	If you marry later you can add your spouse but they must be married to you for at least one year prior to your. 
+																	The way you take your pension will affect how you can leave it to your beneficiary the person who inherits it when you die. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For service on or after 31March 1973 a Short Term Family Pension equal to your rate of basic pay for death in Service or the pension in payment at the time of your death will be paid for 13. 
+																	This type of pension usually also pays a taxable survivors pension to the deceaseds spouse civil partner or dependent child. 
+																	This largely depends on the type of pension your spouse had the age at which heshe died and your age. 
+																	The pension holder has control of when the pension is drawn down and what amount is taken as a lump sum. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youll have to pay tax on those payments if the pension provider does not pay it for you. 
+																	The main pension rule governing State Pensions in death is whether you reached State Pension age before or after recent State Pension changes came into effect on 6 April 2016. 
+																	Those already in receipt of a survivors pension will be entitled to keep their. 
+																	The rules may be more complicated if marriages or civil partnerships took place after leaving service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To transfer your pension to your spouse in the event of your death simply ensure that your pension provider has up-to-date details of your chosen beneficiary and is aware of your wishes. 
+																	If you get extra money from pensions annuities benefits or an inheritance you may need to pay more tax. 
+																	When both partners reach State Pension age after April 6 2016 a surviving spouse or civil partner will be able to inherit 50 percent of any protected payment that exists when one of them dies. 
+																	Yes the transfer after death rules are different for private personal pensions including a Self-invested Personal Pension SIPP than for company pensions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pension Attachment Order This enables a share of the pension holders pension to be allocated to their spouse. 
+																	War Widows or Widowers Pension You may be able to get War Widows or Widower Pension - if your husband. 
+																	When the pension is drawn down the spouse will receive a percentage of the lump sum and a share of the monthly income. 
+																	The government is changing the rules of the Armed Forces Pension Scheme which mean the members lump sum death benefit will automatically go to their current spouse or civil partner. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	So for example if your spouses full military retirement pay is 4000 per month and he elects to use his full retirement pay in the Survivor Benefits Plan you receive 55 percent or 2200 per month upon his death. 
+																	When a member of AFPS 05 or AFPS 15 dies a lump sum death benefit may be payable under the pension scheme rules. 
+																	The person who benefits from a share of your pension neednt automatically be your husband wife or civil partner. 
+																	The rules also differ between pension types and other details including the age of the pension holder when they died and the person or people the pension will be transferred to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If the deceased was retired. 
+																	Its possible to pass on your State Pension payments after death but this can only go to your spouse or civil partner. 
+																	Nomination of Lump Sum Death Benefits AFPS 05 and AFPS 15 only. 
+																	Your income will probably change after the death of your husband wife or civil partner. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The surviving spouse be a widow or widower who was married to you when you enrolled. 
+																	All three schemes offer spouse and civil partner pensions to those who meet the criteria. 
+																	So if your spouse hasnt retired yet your best bet is usually to make sure he or she chooses joint and survivor - or you may be in serious financial jeopardy if your spouse dies before you do. 
+																	Most pension options allow anyone to inherit your pension they dont. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Survivors Pension benefit which may also be referred to as Death Pension is a tax-free monetary benefit payable to a low-income un-remarried surviving spouse andor unmarried child ren of a deceased Veteran with wartime service. 
+																	If the deceased was in receipt of a pension from a defined benefit scheme a reduced pension will often continue to be paid to a spouse civil partner or other dependent until they die. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="4QSl1v3RAFu4WM" data-lightbox="roadtrip" data-title="Https Www Indianarmy Nic In Writereaddata Documents Updated 20leave 20rules 20fourth 20edition Pdf">
+											<img class="card-img v-image ads-img " src="4QSl1v3RAFu4WM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhPj6qEV9ifk7KvM_OKLhu90jZyhC6x1sn8Q';" alt="Https Www Indianarmy Nic In Writereaddata Documents Updated 20leave 20rules 20fourth 20edition Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Indianarmy Nic In Writereaddata Documents Updated 20leave 20rules 20fourth 20edition Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images01.military.com/sites/default/files/2019-02/military-report-social-share-sm.jpg" data-lightbox="roadtrip" data-title="Suicide Can Impact Survivor Benefits Military Com">
+											<img class="card-img v-image ads-img " src="https://images01.military.com/sites/default/files/2019-02/military-report-social-share-sm.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHcQ0ms8Fx3SrM27TgQ3wLD2J5QYTeCUQBJA';" alt="Suicide Can Impact Survivor Benefits Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Suicide Can Impact Survivor Benefits Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3-us-west-1.amazonaws.com/contentlab.studiod/getty/56a1d2283d5345b99283f3a4f164734e.jpg" data-lightbox="roadtrip" data-title="Can You Sign Up For The Army If You Get Kicked Out Of The Navy">
+											<img class="card-img v-image ads-img " src="https://s3-us-west-1.amazonaws.com/contentlab.studiod/getty/56a1d2283d5345b99283f3a4f164734e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBh2n12FroYmBwo9flip5_VuaCZQbs2bMVFg';" alt="Can You Sign Up For The Army If You Get Kicked Out Of The Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can You Sign Up For The Army If You Get Kicked Out Of The Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.everycrsreport.com/reports/RL31663.png" data-lightbox="roadtrip" data-title="Military Benefits For Former Spouses Legislation And Policy Issues Everycrsreport Com">
+											<img class="card-img v-image ads-img " src="https://www.everycrsreport.com/reports/RL31663.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCrhNurhkH8aVAn1n4QQrvix6a4yU0YIwlOA';" alt="Military Benefits For Former Spouses Legislation And Policy Issues Everycrsreport Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Benefits For Former Spouses Legislation And Policy Issues Everycrsreport Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/d8/a7/ded8a7180d1f730c0965b13fded2d469.jpg" data-lightbox="roadtrip" data-title="North Africa 1940 42 Australian Soldiers Examine A Captured Fiat Ansaldo M13 40 Tank The Captured Tanks Were Later Us World War Two World War Anzac Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/d8/a7/ded8a7180d1f730c0965b13fded2d469.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8zDm_tTlfhZ7t0HekwF4MU83GNLG1wNXpBg';" alt="North Africa 1940 42 Australian Soldiers Examine A Captured Fiat Ansaldo M13 40 Tank The Captured Tanks Were Later Us World War Two World War Anzac Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">North Africa 1940 42 Australian Soldiers Examine A Captured Fiat Ansaldo M13 40 Tank The Captured Tanks Were Later Us World War Two World War Anzac Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2012/04/military-family-benefits.jpg" data-lightbox="roadtrip" data-title="Military Family Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2012/04/military-family-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHlb1fmTcpXynRX06pqMRw17VLWiLyRbQnA';" alt="Military Family Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Family Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.everycrsreport.com/reports/RL32769.png" data-lightbox="roadtrip" data-title="Military Death Benefits Status And Proposals Everycrsreport Com">
+											<img class="card-img v-image ads-img " src="https://www.everycrsreport.com/reports/RL32769.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTIRcoqFsxkV8MvPEf0olucUZYkHyIdjK-SA';" alt="Military Death Benefits Status And Proposals Everycrsreport Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Death Benefits Status And Proposals Everycrsreport Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_MilitarySpouse1.jpg?itok=_Z72pqcw" data-lightbox="roadtrip" data-title="Explanation Of Divorced Military Spouse Benefits Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_MilitarySpouse1.jpg?itok=_Z72pqcw" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0D0IhbDAZyVxNIs2xA1O0SSEgzVTL0c5vQ';" alt="Explanation Of Divorced Military Spouse Benefits Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Explanation Of Divorced Military Spouse Benefits Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/top-military-spouse-benefits.jpg" data-lightbox="roadtrip" data-title="5 Top Military Spouse Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/top-military-spouse-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF0oveY9ro574qkxemJ221vg2HzcoRtgskAA';" alt="5 Top Military Spouse Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Top Military Spouse Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.zeebiz.com/sites/default/files/styles/zeebiz_850x478/public/2019/04/27/84397-sbi-defence.jpg?itok=9bQhjMkW" data-lightbox="roadtrip" data-title="Sbi Salary Account For Defence Personnel Check Out Benefits Of Defence Salary Package Account Zee Business">
+											<img class="card-img v-image ads-img " src="https://cdn.zeebiz.com/sites/default/files/styles/zeebiz_850x478/public/2019/04/27/84397-sbi-defence.jpg?itok=9bQhjMkW" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLtwtXHyWtcdP1HzONs3zmEXKOzB3eBgfvSw';" alt="Sbi Salary Account For Defence Personnel Check Out Benefits Of Defence Salary Package Account Zee Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sbi Salary Account For Defence Personnel Check Out Benefits Of Defence Salary Package Account Zee Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5d/91/70/5d91704ede2babb792e744550cea9fe7.jpg" data-lightbox="roadtrip" data-title="11 Died In Enugu School Bus Crash In 2020 Enugu Catholic Diocese School Bus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5d/91/70/5d91704ede2babb792e744550cea9fe7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRNdio3SKwTlfPG6Y9qz0KqKSM27lKpfxPKA';" alt="11 Died In Enugu School Bus Crash In 2020 Enugu Catholic Diocese School Bus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 Died In Enugu School Bus Crash In 2020 Enugu Catholic Diocese School Bus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/50/f5/08/50f508249ca28de2ca27f945e94b555a.jpg" data-lightbox="roadtrip" data-title="The Sea Dogs Of Elizabeth I Letter Of Marque Pirates William Kidd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/50/f5/08/50f508249ca28de2ca27f945e94b555a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkHEqiI6V0ZUcxYmMTMJhoF33I1vdIATmwNQ';" alt="The Sea Dogs Of Elizabeth I Letter Of Marque Pirates William Kidd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Sea Dogs Of Elizabeth I Letter Of Marque Pirates William Kidd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.op-f.org/Images/memberHandbook.jpg" data-lightbox="roadtrip" data-title="Member Handbook">
+											<img class="card-img v-image ads-img " src="http://www.op-f.org/Images/memberHandbook.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTveB0XNJcQy6A5LfWV5zDS5SdijeM7n3R_Zw';" alt="Member Handbook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Member Handbook</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/scholarship-for-mba-in-canada-for-indian-students.html">Scholarship For Mba In Canada For Indian Students</a></li>
+													<li class="list-group-item"><a href="/scholarships-for-active-duty-military-dependents.html">Scholarships For Active Duty Military Dependents</a></li>
+													<li class="list-group-item"><a href="/scholarship-programs-for-military-spouses.html">Scholarship Programs For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/scholarships-for-dependents-of-100-disabled-veterans.html">Scholarships For Dependents Of 100 Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/scholarship-for-mba-in-uk-for-indian-students.html">Scholarship For Mba In Uk For Indian Students</a></li>
+													<li class="list-group-item"><a href="/salvation-army-emergency-assistance-number.html">Salvation Army Emergency Assistance Number</a></li>
+													<li class="list-group-item"><a href="/salvation-army-emergency-assistance-near-me.html">Salvation Army Emergency Assistance Near Me</a></li>
+													<li class="list-group-item"><a href="/salvation-army-human-resources-phone-number.html">Salvation Army Human Resources Phone Number</a></li>
+													<li class="list-group-item"><a href="/salvation-army-phone-number-donations.html">Salvation Army Phone Number Donations</a></li>
+													<li class="list-group-item"><a href="/salvation-army-phone-number-near-me.html">Salvation Army Phone Number Near Me</a></li>
+													<li class="list-group-item"><a href="/salvation-army-hotline-number.html">Salvation Army Hotline Number</a></li>
+													<li class="list-group-item"><a href="/scholarships-and-grants-for-military-spouses.html">Scholarships And Grants For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/scholarship-for-mba-programs.html">Scholarship For Mba Programs</a></li>
+													<li class="list-group-item"><a href="/salvation-army-emergency-relief-number.html">Salvation Army Emergency Relief Number</a></li>
+													<li class="list-group-item"><a href="/scholarships-for-disabled-veteran-dependents.html">Scholarships For Disabled Veteran Dependents</a></li>
+													<li class="list-group-item"><a href="/salvation-army-pick-up-nj-phone-number.html">Salvation Army Pick Up Nj Phone Number</a></li>
+													<li class="list-group-item"><a href="/salvation-army-hr-contact.html">Salvation Army Hr Contact</a></li>
+													<li class="list-group-item"><a href="/salvation-army-hr-contact-number.html">Salvation Army Hr Contact Number</a></li>
+													<li class="list-group-item"><a href="/sc-st-scholarship-for-mba-students-in-karnataka.html">Sc St Scholarship For Mba Students In Karnataka</a></li>
+													<li class="list-group-item"><a href="/salvation-army-hats-for-sale-uk.html">Salvation Army Hats For Sale Uk</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>

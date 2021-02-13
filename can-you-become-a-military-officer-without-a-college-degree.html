@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Can You Become A Military Officer Without A College Degree - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Can You Become A Military Officer Without A College Degree",
+  "datePublished": "2021-02-13",
+  "image": "https://i.pinimg.com/originals/e3/63/5d/e3635d3f5b77ac4c5f2360f193bbb3a5.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lunox",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=can+you+become+a+military+officer+without+a+college+degree",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+	<meta name="google-site-verification" content="6e92zGn_e3WU6YYcsjj0oAqrZlmxP5zL_cBBL94-dNo" />
+	<meta name="yandex-verification" content="53b2aae100301ab2" />
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Lunox" class="navbar-brand mb-1">Lunox</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Can You Become A Military Officer Without A College Degree</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">They offer great responsibility and personal satisfaction for those who decide to pursue them. Although you still need to complete basic combat training the 10-week program that teaches you the basic skills necessary to be a soldier youll be able to go directly to Officer Candidate School. The Officer Training School at Maxwell AFB near Montgomery Alabama provides people with a bachelors degree to earn a commission. <br>				
+			</p>
+										<a class="badge badge-warning" href="/what-are-the-benefits-of-being-an-army-wife.html">what are the benefits of being an army wife</a>
+											<a class="badge badge-danger" href="/what-benefits-do-veterans-dependents-get.html">what benefits do veterans dependents get</a>
+											<a class="badge badge-dark" href="/what-are-the-benefits-of-being-a-military-dependent.html">what are the benefits of being a military dependent</a>
+											<a class="badge badge-danger" href="/what-are-the-benefits-of-being-a-us-marine.html">what are the benefits of being a us marine</a>
+											<a class="badge badge-primary" href="/what-benefits-do-spouses-of-deceased-veterans-get.html">what benefits do spouses of deceased veterans get</a>
+											<a class="badge badge-light" href="/what-can-i-claim-after-my-husbands-death.html">what can i claim after my husbands death</a>
+											<a class="badge badge-warning" href="/what-are-military-death-benefits.html">what are military death benefits</a>
+											<a class="badge badge-info" href="/what-benefits-does-a-navy-wife-get.html">what benefits does a navy wife get</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to visit the ideal blog.  Our website gives you suggestions for seeing the highest quality video and picture content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video that you view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ung.edu/news/_uploads/images/articles/2015/03/BranchDay-18.jpg" data-lightbox="roadtrip" data-title="6 Traits Of Top Military Officers">
+											<img class="card-img v-image ads-img " src="https://ung.edu/news/_uploads/images/articles/2015/03/BranchDay-18.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-MFuQtoTp6wQy55GGTggnm8P2bBarXPyxhg';" alt="6 Traits Of Top Military Officers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Traits Of Top Military Officers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/25/c9/e8/25c9e8bfa06eb65b78ba8686e6a6073c.jpg" data-lightbox="roadtrip" data-title="Search For The Best Online Military Friendly Schools 2018 Online Education Master Degree Programs Best Online Colleges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/25/c9/e8/25c9e8bfa06eb65b78ba8686e6a6073c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzMukgfQLoTqxGzXzVxJcrW1OjhTXuL71Cgg';" alt="Search For The Best Online Military Friendly Schools 2018 Online Education Master Degree Programs Best Online Colleges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Search For The Best Online Military Friendly Schools 2018 Online Education Master Degree Programs Best Online Colleges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.asvabprogram.com/media-center-content/thumbnails/Whats_the_Difference_img.jpg" data-lightbox="roadtrip" data-title="Asvab Cep What S The Difference Enlisted Vs Officer">
+											<img class="card-img v-image ads-img " src="https://www.asvabprogram.com/media-center-content/thumbnails/Whats_the_Difference_img.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZHHABCf1UOn4FCvTe5Xzh0ZYv73ZpdIymfA';" alt="Asvab Cep What S The Difference Enlisted Vs Officer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Asvab Cep What S The Difference Enlisted Vs Officer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/22/16/022216e5652eb9bedb1ace804fcc3194.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/22/16/022216e5652eb9bedb1ace804fcc3194.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0dTG59Fuo4ErWwQdS-dZzAFH8OM9PGfkUeA';" alt="Pin On Guard Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/ef/2a/ecef2a71aa9c194c0d816f2f8d11eea7.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/ef/2a/ecef2a71aa9c194c0d816f2f8d11eea7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJEbABFg1m4GUHkRnXpYE1mDmnq8OczIgYGQ';" alt="Pin On Guard Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4a/ee/44/4aee446dd6b58951c8c29421e0cbc4bd.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4a/ee/44/4aee446dd6b58951c8c29421e0cbc4bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSYZK1x-Czj4VAnrLoIJJCu9SxQqCniCW-5w';" alt="Pin On Guard Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Benefits</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/25/c9/e8/25c9e8bfa06eb65b78ba8686e6a6073c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSYZK1x-Czj4VAnrLoIJJCu9SxQqCniCW-5w';" alt="Pin On Guard Benefits">
+										<div class="card-body">
+						<h3 class="h5"><b>But I was wondering if I could automatically go to OCS straight out of the military or if I have to go to college first.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Can you become a military officer without a college degree</strong>. 
+								
+																	If you enter the Air Force with a degree already earned and you meet the other requirements of flight training you may be able to fast-track your career in the direction you want. 
+																	I know for a fact that I want to be enlisted and serve active duty for at least the 3 years my contract says I have to serve. 
+																	And Ive come to realize that I dont really need school to learn what I need in the cyber field. 
+																	If you join as an officer you will have the same opportunities to develop your career whether you are a graduate or not. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Im trying to go in for cyber security and have realized by the time i get my degree Ill be about 25-26 years old. 
+																	The Military Still Requires Officers To Have College Degrees. 
+																	Hello people im 21 years of age and am going to school for Computer Science. 
+																	If you go back just a few wars or a few decades say WWIIKorea era you would find most of your troops had about an eighth grade education perfectly acceptable for working t. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By enlisting with a college degree in your pocket youll skip a few steps on the ladder. 
+																	Service academies and senior military colleges offer a four-year higher education experience while fully immersing students in military culture. 
+																	There is a long history of credential inflation that plays into this. 
+																	With the Army it was always preferred for officers to be college four-year educated and the primary source for officers tended to be West Point other military schools such as VMI and the Citadel and ROTC with OCS Officers Candidate School. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For example military service cannot replace a four-year degree according to the FBI careers website. 
+																	Before you can be commissioned as an officer in the Air Force you must have a college degree. 
+																	But the majority only require that you be at least 21 clean record possess high character with good reputation and a high school diploma. 
+																	The recruitment process for officers is generally open to school leavers with two good A levels regardless of the subjects studied. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Officer careers require a college degree. 
+																	With that being said I must warn you that there are a few police departments out there but not many that require at least a 2 year college degree or a military background before you can apply. 
+																	Youll be sent to officer candidate school at Quantico VA where youll take a 13 week basic training in addition to the basic training you took at PI or San Diego and then go to school. 
+																	Military Officers Dont Need College Degrees There are other ways for candidates to gain the skills they need. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We cant figure out which enlisted would make good officers without the help of adjunct faculty at some third-tier university. 
+																	Its rigorous 14-week program guides college graduates or degree. 
+																	You dont have to go to university to get a leadership role in the armed forces. 
+																	Whether planning to join the Air Force Army Marines Navy or Coast Guard each of these military branches allow students with four-year degrees to bypass general enlistment and move directly into officer training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your personal qualities are regarded as at least as important as your qualifications and promotion is on merit. 
+																	In addition to saving time spent working up the ranks officers take on leadership roles and earn higher salaries. 
+																	Im currently in high school now in the Marine Corps JROTC program and I want to be in the Marines when I get out of high school. 
+																	Joining the Military After College. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I have already taught myself Java and C and now Im curious on getting my certs for cyber security. 
+																	Yes you can on recommendation from your commanding officer at battalion level or higher and after passing a review board of three officers and one senior NCO. 
+																	A Foot in the Door The FBI careers website notes that FBI special agents must be US. 
+																	Whether you obtained your leadership position through becoming a commissioned officer or became an officer by rising through the enlisted ranks earning one of the 2020 best degrees for military officers will help you lead in your current military career field while also preparing you for a career outside the military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I graduate from high school next year after I plan on enlisting with the military and ill see how long I can stay in being a police officer sounds interesting I wouldnt mind the hours and it sounds like a very interesting career but can you become an officer without a college degree if you have 4 or 8 years prior military active duty service. 
+																	These are the ways to become an officer. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/fa/8a/e6fa8a85fadcf73297730236971531f3.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/fa/8a/e6fa8a85fadcf73297730236971531f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmJhPbGuJO4TuAze7i5k6weaqcDCehk9sZiQ';" alt="Pin On Guard Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/7b/c9/d77bc9689022d07537d752f58232116f.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/7b/c9/d77bc9689022d07537d752f58232116f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ZveMn_QuNCfg85NzMJ4zVKPU9LUP470v1A';" alt="Pin On Guard Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/e2/01/d9e2016d323f175514ee315cf908b238.jpg" data-lightbox="roadtrip" data-title="It S The Moment You Ve Worked Hard For To Take The Oath Of Office Promising To Support And Defend The Career Double Breasted Suit Jacket Double Breasted Suit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/e2/01/d9e2016d323f175514ee315cf908b238.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLQpBjkXTRlFa75fHJMel89NhSkvGm_-trJw';" alt="It S The Moment You Ve Worked Hard For To Take The Oath Of Office Promising To Support And Defend The Career Double Breasted Suit Jacket Double Breasted Suit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">It S The Moment You Ve Worked Hard For To Take The Oath Of Office Promising To Support And Defend The Career Double Breasted Suit Jacket Double Breasted Suit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/05/19/08051980bf955133ea3a787e44e3ea00.jpg" data-lightbox="roadtrip" data-title="Career Planning For Active Duty Military Members Military Jobs Military Veterans Veteran Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/05/19/08051980bf955133ea3a787e44e3ea00.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Qyv67EYcDWsZf4za8tMjR4MpxWp98czkOA';" alt="Career Planning For Active Duty Military Members Military Jobs Military Veterans Veteran Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Career Planning For Active Duty Military Members Military Jobs Military Veterans Veteran Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/37/05/663705dceb310743361a6095636dafce.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/37/05/663705dceb310743361a6095636dafce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDrnYXo9CyCYx8XqtTm4PzCz_kClhJGj2PBw';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://onlinemilitaryeducation.org/uploads/posts/2019-12/1576699556_what-rank-do-you-start-out-in-the-military-with-a-college-degree.jpg" data-lightbox="roadtrip" data-title="What Rank Do You Start Out In The Military With A College Degree">
+											<img class="card-img v-image ads-img " src="https://onlinemilitaryeducation.org/uploads/posts/2019-12/1576699556_what-rank-do-you-start-out-in-the-military-with-a-college-degree.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3BgKbUxe0oMRmySVhtsaiIfRx_xVWdrpX-A';" alt="What Rank Do You Start Out In The Military With A College Degree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Rank Do You Start Out In The Military With A College Degree</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/5b/6f/925b6f12986adf24b922c6c5b54f3f10.jpg" data-lightbox="roadtrip" data-title="The Uniform In Which You Re Not Obligated To Salute Salute Blues Officer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/5b/6f/925b6f12986adf24b922c6c5b54f3f10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSbo2Pqad3AS600RnDo46jh0iLiCH9nmumeQ';" alt="The Uniform In Which You Re Not Obligated To Salute Salute Blues Officer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Uniform In Which You Re Not Obligated To Salute Salute Blues Officer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/74/ca/94/74ca94ef75d1021d495ee3fbb1cd0986.jpg" data-lightbox="roadtrip" data-title="Pin On My Soldier My Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/74/ca/94/74ca94ef75d1021d495ee3fbb1cd0986.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmsAAYcVccnpi31bCWipK_UVEeSC9ioAABkg';" alt="Pin On My Soldier My Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Soldier My Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/63/5d/e3635d3f5b77ac4c5f2360f193bbb3a5.jpg" data-lightbox="roadtrip" data-title="Military Nurse Career Guide Military Nurses Nurse Salary Army Nurse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/63/5d/e3635d3f5b77ac4c5f2360f193bbb3a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTys30qEGpeTbB1oCb7Zj4yFROIjUFqvzWCUA';" alt="Military Nurse Career Guide Military Nurses Nurse Salary Army Nurse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Nurse Career Guide Military Nurses Nurse Salary Army Nurse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.k-state.edu/k-publisher/custom-images/2012-Aug-29_1322_01-GenDemp.jpg" data-lightbox="roadtrip" data-title="Nation S Highest Ranking Military Officer Gen Martin Dempsey Presenting Landon">
+											<img class="card-img v-image ads-img " src="https://www.k-state.edu/k-publisher/custom-images/2012-Aug-29_1322_01-GenDemp.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcDN9U85ETDGdlWuMylP8JaECSvEEtTHRLzw';" alt="Nation S Highest Ranking Military Officer Gen Martin Dempsey Presenting Landon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nation S Highest Ranking Military Officer Gen Martin Dempsey Presenting Landon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/da/af/92daaf75b96f83350ccbf12193cb94f1.jpg" data-lightbox="roadtrip" data-title="The 10 Highest Paying Jobs That Don T Require A Bachelor S Degree Police Officer Requirements Law Enforcement Jobs High Paying Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/da/af/92daaf75b96f83350ccbf12193cb94f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPhjvG5PpUe-1i19KfZpl4BY8-aee3kQLDMg';" alt="The 10 Highest Paying Jobs That Don T Require A Bachelor S Degree Police Officer Requirements Law Enforcement Jobs High Paying Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 10 Highest Paying Jobs That Don T Require A Bachelor S Degree Police Officer Requirements Law Enforcement Jobs High Paying Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ll.mit.edu/sites/default/files/styles/hero_large_generic/public/page/image/2018-04/512459-003D.jpg?h=45c60dd8&amp;itok=0zo9eRMp" data-lightbox="roadtrip" data-title="Programs For Military Officers Mit Lincoln Laboratory">
+											<img class="card-img v-image ads-img " src="https://www.ll.mit.edu/sites/default/files/styles/hero_large_generic/public/page/image/2018-04/512459-003D.jpg?h=45c60dd8&amp;itok=0zo9eRMp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi238O16SvINDa_ivdJ2IG3l7vyPh0wjj4bA';" alt="Programs For Military Officers Mit Lincoln Laboratory">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Programs For Military Officers Mit Lincoln Laboratory</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/58/5b/e8/585be890d051cbd0a6c62d327bf43f78.jpg" data-lightbox="roadtrip" data-title="Pin By Lou Williams On Commercial Aviation In 2020 College Degree 21 Years Old Commercial Aviation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/58/5b/e8/585be890d051cbd0a6c62d327bf43f78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNO36M5q2xIbkjv7hEVH6nAzZtU_M4uVFYlw';" alt="Pin By Lou Williams On Commercial Aviation In 2020 College Degree 21 Years Old Commercial Aviation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Lou Williams On Commercial Aviation In 2020 College Degree 21 Years Old Commercial Aviation</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-tuition-assistance-taxes.html">Military Tuition Assistance Taxes</a></li>
+													<li class="list-group-item"><a href="/military-timesheet-calculator.html">Military Timesheet Calculator</a></li>
+													<li class="list-group-item"><a href="/military-tuition-assistance-cap.html">Military Tuition Assistance Cap</a></li>
+													<li class="list-group-item"><a href="/military-tuition-assistance-wgu.html">Military Tuition Assistance Wgu</a></li>
+													<li class="list-group-item"><a href="/military-tuition-assistance-rules.html">Military Tuition Assistance Rules</a></li>
+													<li class="list-group-item"><a href="/military-tuition-assistance-vocational.html">Military Tuition Assistance Vocational</a></li>
+													<li class="list-group-item"><a href="/military-veteran-dependent-id-card.html">Military Veteran Dependent Id Card</a></li>
+													<li class="list-group-item"><a href="/military-times-navy.html">Military Times Navy</a></li>
+													<li class="list-group-item"><a href="/military-tuition-assistance-rates.html">Military Tuition Assistance Rates</a></li>
+													<li class="list-group-item"><a href="/military-times-gallagher.html">Military Times Gallagher</a></li>
+													<li class="list-group-item"><a href="/military-uniform-hat-name.html">Military Uniform Hat Name</a></li>
+													<li class="list-group-item"><a href="/military-tuition-assistance-form.html">Military Tuition Assistance Form</a></li>
+													<li class="list-group-item"><a href="/military-times-midway-review.html">Military Times Midway Review</a></li>
+													<li class="list-group-item"><a href="/military-times-zoom.html">Military Times Zoom</a></li>
+													<li class="list-group-item"><a href="/military-tuition-assistance-pilot-license.html">Military Tuition Assistance Pilot License</a></li>
+													<li class="list-group-item"><a href="/military-times-housing.html">Military Times Housing</a></li>
+													<li class="list-group-item"><a href="/military-times-veterans.html">Military Times Veterans</a></li>
+													<li class="list-group-item"><a href="/military-times-guantanamo-bay.html">Military Times Guantanamo Bay</a></li>
+													<li class="list-group-item"><a href="/military-tricare-for-dependents.html">Military Tricare For Dependents</a></li>
+													<li class="list-group-item"><a href="/military-tuition-assistance-for-dependents.html">Military Tuition Assistance For Dependents</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad -->
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    
+</body>
+</html>
